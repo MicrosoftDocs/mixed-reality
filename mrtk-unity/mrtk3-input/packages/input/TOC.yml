@@ -2,6 +2,8 @@
   href: overview.md
 - name: Input simulation
   href: input-simulation.md
+- name: Input simulation quick reference
+  href: input-simulation-quick-ref.md  
 - name: Speech input
   href: speech.md
 - name: System keyboard
