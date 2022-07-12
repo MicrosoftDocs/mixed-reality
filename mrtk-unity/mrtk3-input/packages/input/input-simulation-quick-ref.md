@@ -28,6 +28,10 @@ Press the right mouse button and then rotate the mouse scroll wheel forward and 
 
 ## Use the simulated hands
 
+A simulated hand appears as a pattern of cubes shaped to indicate a hand.
+
+![An image showing the cube-based patterns that make up the simulated hands.](../images/simulated-hands.jpg)
+
 **To enable the simulated hands**:
 Press T (for left hand) or Y (for right hand). To remove the hand, press the same key again.
 
