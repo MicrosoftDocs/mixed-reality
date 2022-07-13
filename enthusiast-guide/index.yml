@@ -24,15 +24,15 @@ metadata:
 highlightedContent:
   items:
     # Card
-    - title: Understand Windows Mixed Reality PC hardware requirements
+    - title: Understand PC hardware requirements
       itemType: concept
       url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
     # Card
-    - title: Shop for Windows Mixed Reality immersive headsets
+    - title: Shop for immersive headsets
       itemType: quickstart
       url: https://www.microsoft.com/mixed-reality/windows-mixed-reality
     # Card
-    - title: Using your Windows Mixed Reality headset
+    - title: Using your VR headset
       itemType: overview
       url: vr-journey.md
     # Card
@@ -40,11 +40,11 @@ highlightedContent:
       itemType: how-to-guide
       url: enterprise-scenarios.md
     # Card
-    - title: Health and safety guidance for Windows Mixed Reality
+    - title: Health and safety guidance
       itemType: concept
       url: wmr-health-safety-comfort.md
     # Card
-    - title: Troubleshoot common issues using Windows Mixed Reality
+    - title: Troubleshoot common issues
       itemType: reference
       url: troubleshooting-windows-mixed-reality.md
 
