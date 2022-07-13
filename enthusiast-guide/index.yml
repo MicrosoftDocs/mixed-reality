@@ -32,7 +32,7 @@ highlightedContent:
       itemType: quickstart
       url: https://www.microsoft.com/mixed-reality/windows-mixed-reality
     # Card
-    - title: Using your VR headset
+    - title: Use your VR headset
       itemType: overview
       url: vr-journey.md
     # Card
