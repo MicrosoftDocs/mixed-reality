@@ -1,8 +1,8 @@
 # [Windows Mixed Reality enthusiast documentation](index.yml)
-## [Start your VR journey](vr-journey.md)
 
 ## Getting started
 ### [Before you start](before-you-start.md)
+### [Start your VR journey](vr-journey.md)
 ### [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 ### [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [Get help with PC compatibility](get-help-with-pc-compatibility.md)
