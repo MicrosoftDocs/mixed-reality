@@ -2,7 +2,7 @@
 title: World Locking Tools concepts
 description: Explains the problems World Locking Tools solves, and how it solves them.
 author: fast-slow-still
-ms.author: mfinch
+ms.author: vinnietieto
 ms.date: 10/06/2021
 ms.prod: mixed-reality
 ms.localizationpriority: high
