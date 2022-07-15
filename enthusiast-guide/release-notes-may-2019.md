@@ -64,4 +64,4 @@ Use the [Feedback Hub app on your Windows 10 PC](/windows/mixed-reality/give-us-
 * [Immersive headset support (external link)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
 * [Install the tools](/windows/mixed-reality/develop/install-the-tools)
-* [Give us feedback](/windows/mixed-reality/give-us-feedback
+* [Give us feedback](/windows/mixed-reality/give-us-feedback)
