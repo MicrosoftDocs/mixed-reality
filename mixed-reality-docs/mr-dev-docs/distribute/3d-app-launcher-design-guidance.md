@@ -1,8 +1,8 @@
 ---
 title: 3D app launcher design guidance
 description: A 3D app launcher is a “physical” object in the user’s mixed reality house that they can select to launch an app.
-author: thmignon
-ms.author: thmignon
+author: BrandonBray
+ms.author: branbray
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, live cube, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP, Win32, lighting, color
