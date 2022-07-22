@@ -1,8 +1,8 @@
 ---
 title: Implement 3D app launchers (UWP apps)
 description: Learn how to create 3D app launchers and logos for Windows Mixed Reality UWP apps and games on HoloLens and VR headsets. 
-author: thmignon
-ms.author: thmignon
+author: BrandonBray
+ms.author: branbray
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep link, secondarytile, secondary tile, UWP, mixed reality headset, windows mixed reality headset, virtual reality headset, XML, bounding box, unity

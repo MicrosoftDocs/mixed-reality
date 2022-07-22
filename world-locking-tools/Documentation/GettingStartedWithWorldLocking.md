@@ -2,7 +2,7 @@
 title: Getting started with World Locking Tools
 description: Introduction to World Locking Tools for Unity (WLT) and WLT documentation.
 author: fast-slow-still
-ms.author: mafinc
+ms.author: vinnietieto
 ms.date: 10/06/2021
 ms.prod: mixed-reality
 ms.localizationpriority: high
