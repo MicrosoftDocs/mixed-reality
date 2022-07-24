@@ -182,8 +182,8 @@ We very much encourage you to provide any and all feedback to help shape the fin
 
 :::row:::
     :::column:::
-       [![Introducing MRTK3](https://docs.microsoft.com/video/media/17a1b928-7f9e-4826-8716-9710f9468fd4/MRDD-June8-04-IntroducingMRTK3-1920x1080_w800.png)](https://docs.microsoft.com/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)
-        **[Introducing MRTK3 – Shaping the future of the MR Developer Experience](https://docs.microsoft.com/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)**<br>
+       [![Introducing MRTK3](https://docs.microsoft.com/video/media/17a1b928-7f9e-4826-8716-9710f9468fd4/MRDD-June8-04-IntroducingMRTK3-1920x1080_w800.png)](/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)
+        **[Introducing MRTK3 – Shaping the future of the MR Developer Experience](/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)**<br>
     :::column-end:::
     :::column:::
         [![Getting started with your first MRTK3 project](https://docs.microsoft.com/video/media/a1345a3e-3312-4211-aaef-270c0a279936/MRDD-04-Getting%20StartedMRTK3-1920x1080_w800.png)](https://docs.microsoft.com/events/mixed-reality-dev-days/getting-started-with-your-first-mrtk3-project/)
