@@ -21,14 +21,14 @@ Make sure you have all the tools in this link before starting:
 > [!div class="nextstepaction"]
 > [Install the tools](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 
->[!NOTE]
->Please make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) before choosing a Unity version.
+> [!NOTE]
+> Make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) before choosing a Unity version.
 
 ## Path 1: Clone the repository and try out the sample Unity Project
 
-The easiest way of acquiring and trying out MRTK3 is to do so by way of our preconfigured project with references to all of the current MRTK3 packages. Please clone our project at [our GitHub repo](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3) and check out the `mrtk3` branch. After that you can simply launch Unity (2020.3.33f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the [sample scenes](scenes.md) in the Editor via remoting or deployment to devices.
+The easiest way to acquire and try out MRTK3 is by way of our preconfigured project with references to all of the current MRTK3 packages. Clone our project at [our GitHub repo](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3) and check out the `mrtk3` branch. After that, you can simply launch Unity (2020.3.33f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the [sample scenes](scenes.md) in the Editor via remoting or deployment to devices.
 
-For information on the sample scenes included in the preview, please see [Using and creating scenes](scenes.md).
+For information on the sample scenes included in the preview, see [Using and creating scenes](scenes.md).
 
 ## Path 2: Adding MRTK3 to a new Unity project
 
@@ -38,7 +38,7 @@ Create a new Unity project with Unity 2020.3.35f1 or newer / Unity 2021.3.4f1 or
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
-There are a handful of packages that MRTK3 uses that aren't part of this preview. To obtain these, please use the [`Mixed Reality Feature Tool`](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the Discover Features step. 
+There are a handful of packages that MRTK3 uses that aren't part of this preview. To obtain these, use the [`Mixed Reality Feature Tool`](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the **Discover Features** step. 
 
 **Since MRTK3 is in early preview release, you need to check 'Show preview releases' under Settings > Feature tab.** 
 
@@ -52,29 +52,29 @@ For MRTK3 packages, we highly recommend the following two packages to help you g
 - **MRTK3 → MRTK Input** (Required for this setup)
 - **MRTK3 → MRTK UX Components**
 
-These two packages, along with their dependencies (automatically added by the Feature Tool), will enable you to explore most of our UX offerings and create projects ready to be deployed to various XR devices. Remember you can always come back to the Feature Tool and add more packages to your project later.
+These two packages, along with their dependencies (automatically added by the Feature Tool), will enable you to explore most of our UX offerings and create projects ready to be deployed to various XR devices. You can always come back to the Feature Tool and add more packages to your project later.
 
->[!NOTE]
->For more information on MRTK3 packages, please refer to the [package overview page](packages/packages-overview.md).
+> [!NOTE]
+> For more information on MRTK3 packages, see the [package overview page](packages/packages-overview.md).
 
 When you're finished selecting packages, click **Get features** and then follow the instructions in the Mixed Reality Feature Tool to import the selected packages into your Unity project.
 
 ### 3. Open the Unity project
 
-Open the Unity project and wait for Unity to finish importing the newly added packages. There may be two pop-ups in this process:
+Open the Unity project and wait for Unity to finish importing the newly added packages. There may be two pop-up messages in this process:
 
-1. The first pop-up asks whether you want to enable the new input backend. Select **yes**.
-1. The second pop-up asks whether you want to update XR InteractionLayerMask. Select **No Thanks**.
+1. The first message asks whether you want to enable the new input backend. Select **yes**.
+1. The second message asks whether you want to update XR InteractionLayerMask. Select **No Thanks**.
 
 Unity might restart a few times during this process--wait for it to finish before proceeding.
 
 ### 4. Configure MRTK profile after import
 
-Once imported, MRTK3 requires a profile to be set for standalone and each additional target platform.
+Once imported, MRTK3 requires a profile to be set for the standalone target platform and each additional target platform.
 
 1. Navigate to **Edit > Project Settings**.
-1. Under **Project Settings**, navigate to **MRTK3** and switch to the standalone tab. Note that the profile is initially unspecified.
-1. Populate the field with the default MRTK profile that ships wih the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window; make sure you search in `All`. Alternatively you can find the profile under `Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset`.
+1. Under **Project Settings**, navigate to **MRTK3** and then switch to the standalone tab. Note that the profile is initially unspecified.
+1. Populate the field with the default MRTK profile that ships wih the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window; make sure you search in `All`. Alternatively, you can find the profile under `Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset`.
    >[!NOTE]
    > Not all of the MRTK subsystems are shown in the screenshot below. The MRTK subsystems that you see may be different depending on the MRTK3 packages you've added to your project.
 
@@ -86,14 +86,14 @@ Once imported, MRTK3 requires a profile to be set for standalone and each additi
 Once imported, MRTK3 requires some configuration on OpenXR if you're targeting an XR device such as HoloLens 2 or Quest.
 
 > [!NOTE]
-> The following instructions apply to HoloLens 2 or WMR headsets. If you're targeting Quest, please refer to the instructions on the [Quest deployment page](deployment/quest-deployment.md#deployment-prerequisites).
+> The following instructions apply to HoloLens 2 or WMR headsets. If you're targeting Quest, refer to the instructions on the [Quest deployment page](deployment/quest-deployment.md#deployment-prerequisites).
 
 1. Navigate to **Edit > Project Settings**.
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management** and enable **OpenXR** under both the Standalone and UWP tabs. Under each tab, ensure that **Initialize XR on Startup** is selected and that the **Windows Mixed Reality feature group under Standalone** and the **Microsoft HoloLens feature group under UWP** are enabled.
 
     > [!NOTE]
-    > A yellow warning icon may appear after checking the **OpenXR** option. Click on that icon to open the **OpenXR Project Validation** tool. Click **Fix all** and ignore the interaction profile issue that cannot be auto fixed. The profiles will be added in the step below.
+    > A yellow warning icon may appear after checking the **OpenXR** option. Click that icon to open the **OpenXR Project Validation** tool. Click **Fix all** and ignore the interaction profile issue that can't be auto-fixed. The profiles will be added in the step below.
 
    For standalone:
 
@@ -112,9 +112,6 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
     > [!NOTE]
     > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
 
-   > [!NOTE]
-   > You may need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
-
    For standalone:
 
    [![Standalone OpenXR](images/standalone-openxr.png)](images/standalone-openxr.png)
@@ -127,7 +124,7 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
 
 ### 6. Congratulations, the project setup is now finished!
 
-Please proceed to [create a new MRTK3 scene](scenes.md#creating-a-new-scene-with-mrtk3).
+Proceed to [creating a new MRTK3 scene](scenes.md#creating-a-new-scene-with-mrtk3).
 
 ## Next steps
 
