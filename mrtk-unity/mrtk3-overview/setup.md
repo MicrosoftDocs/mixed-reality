@@ -30,7 +30,7 @@ The easiest way to acquire and try out MRTK3 is by way of our preconfigured proj
 
 For information on the sample scenes included in the preview, see [Using and creating scenes](scenes.md).
 
-## Path 2: Adding MRTK3 to a new Unity project
+## Path 2: Add MRTK3 to a new Unity project
 
 ### 1. Create a new Unity project
 
