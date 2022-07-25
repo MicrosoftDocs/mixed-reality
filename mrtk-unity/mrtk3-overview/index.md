@@ -182,30 +182,30 @@ We very much encourage you to provide any and all feedback to help shape the fin
 
 :::row:::
     :::column:::
-       [![Introducing MRTK3](https://docs.microsoft.com/video/media/17a1b928-7f9e-4826-8716-9710f9468fd4/MRDD-June8-04-IntroducingMRTK3-1920x1080_w800.png)](/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)
+       [![Introducing MRTK3](/video/media/17a1b928-7f9e-4826-8716-9710f9468fd4/MRDD-June8-04-IntroducingMRTK3-1920x1080_w800.png)](/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)
         **[Introducing MRTK3 – Shaping the future of the MR Developer Experience](/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)**<br>
     :::column-end:::
     :::column:::
-        [![Getting started with your first MRTK3 project](https://docs.microsoft.com/video/media/a1345a3e-3312-4211-aaef-270c0a279936/MRDD-04-Getting%20StartedMRTK3-1920x1080_w800.png)](/events/mixed-reality-dev-days/getting-started-with-your-first-mrtk3-project/)
+        [![Getting started with your first MRTK3 project](/video/media/a1345a3e-3312-4211-aaef-270c0a279936/MRDD-04-Getting%20StartedMRTK3-1920x1080_w800.png)](/events/mixed-reality-dev-days/getting-started-with-your-first-mrtk3-project/)
         **[Getting started with your first MRTK3 project](/events/mixed-reality-dev-days/getting-started-with-your-first-mrtk3-project/)**<br>
     :::column-end:::
     :::column:::
-        [![MRTK3 Interaction building blocks](https://docs.microsoft.com/video/media/e4cf7225-1823-49ac-a49e-a89fb400f473/MRDD-07-MRTK3BuildingBlocks-1920x1080_w800.png)](/events/mixed-reality-dev-days/mrtk3-interaction-building-blocks/)
+        [![MRTK3 Interaction building blocks](/video/media/e4cf7225-1823-49ac-a49e-a89fb400f473/MRDD-07-MRTK3BuildingBlocks-1920x1080_w800.png)](/events/mixed-reality-dev-days/mrtk3-interaction-building-blocks/)
         **[MRTK3 Interaction building blocks](/events/mixed-reality-dev-days/mrtk3-interaction-building-blocks/)**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [![Building Rich UI for MR in MRTK3](https://docs.microsoft.com/video/media/18744ab3-14f6-44da-92a3-ae9bff841e24/MRDD-10-BuildingRichUI-1920x1080_w800.png)](/events/mixed-reality-dev-days/building-rich-ui-for-mr-in-mrtk3/)
+       [![Building Rich UI for MR in MRTK3](/video/media/18744ab3-14f6-44da-92a3-ae9bff841e24/MRDD-10-BuildingRichUI-1920x1080_w800.png)](/events/mixed-reality-dev-days/building-rich-ui-for-mr-in-mrtk3/)
         **[Building Rich UI for MR in MRTK3](/events/mixed-reality-dev-days/building-rich-ui-for-mr-in-mrtk3/)**<br>
     :::column-end:::
     :::column:::
-        [![Working with Dynamic Data and Theming in MRTK3](https://docs.microsoft.com/video/media/5f8761b7-e300-42e2-82c6-7235695a6c5d/MRDD-12-WorkingWithDynamicData-1920x1080_w800.png)](/events/mixed-reality-dev-days/working-with-dynamic-data-and-theming-in-mrtk3)
+        [![Working with Dynamic Data and Theming in MRTK3](/video/media/5f8761b7-e300-42e2-82c6-7235695a6c5d/MRDD-12-WorkingWithDynamicData-1920x1080_w800.png)](/events/mixed-reality-dev-days/working-with-dynamic-data-and-theming-in-mrtk3)
         **[Working with Dynamic Data and Theming in MRTK3](/events/mixed-reality-dev-days/working-with-dynamic-data-and-theming-in-mrtk3)**<br>
     :::column-end:::
     :::column:::
-        [![#Open - Deploy Everywhere with OpenXR and MRTK3](https://docs.microsoft.com/video/media/67a5f644-a10a-461b-9d3c-d5792256fcdb/MRDD-15-HashOpenDeploy-1920x1080_w800.png)](/events/mixed-reality-dev-days/open-deploy-everywhere-with-openxr-and-mrtk3)
+        [![#Open - Deploy Everywhere with OpenXR and MRTK3](/video/media/67a5f644-a10a-461b-9d3c-d5792256fcdb/MRDD-15-HashOpenDeploy-1920x1080_w800.png)](/events/mixed-reality-dev-days/open-deploy-everywhere-with-openxr-and-mrtk3)
         **[#Open - Deploy Everywhere with OpenXR and MRTK3](/events/mixed-reality-dev-days/open-deploy-everywhere-with-openxr-and-mrtk3)**<br>
     :::column-end:::
 :::row-end:::
