@@ -1,6 +1,6 @@
 ---
 title: Babylon.js tutorial to interact with 3D objects
-description: Learn how to use babylon.js and interact with 3D objects.
+description: Learn how to use Babylon.js and interact with 3D objects.
 author: bgener
 ms.author: ayyonet
 ms.date: 03/05/2021
@@ -13,7 +13,7 @@ ms.contributors: ayyonet-03232021
 
 # Tutorial: Interact with 3D object
 
-Learn how to create 3D objects and interactions for a Mixed Reality experience using babylon.js. In this section, you'll start with something simple, like painting the faces of a cube when you select the object.
+Learn how to create 3D objects and interactions for a Mixed Reality experience using Babylon.js. In this section, you'll start with something simple, like painting the faces of a cube when you select the object.
 
 This tutorial covers the following topics:
 
@@ -327,13 +327,13 @@ The following are the most important takeaways from this tutorial:
 
 ## Next steps
 
-Congratulations! You've completed our series of babylon.js tutorials and learned how to:
+Congratulations! You've completed our series of Babylon.js tutorials and learned how to:
 > [!div class="checklist"]
 > * Set up a development environment
 > * Create a new web page to display results
-> * The babylon.js API to create and interact with basic 3D elements
+> * The Babylon.js API to create and interact with basic 3D elements
 > * Run and test the application in a Windows Mixed Reality Simulator
 
 For more information on Mixed Reality JavaScript development see [JavaScript development overview](/javascript-development-overview.md).
 
-If you're looking for another babylon.js tutorial, checkout the [Piano-building Tutorial Series](../babylonjs-webxr-piano/introduction-01.md) to learn how to build a piano in the VR space using babylon.js.
+If you're looking for another Babylon.js tutorial, checkout the [Piano-building Tutorial Series](../babylonjs-webxr-piano/introduction-01.md) to learn how to build a piano in the VR space using Babylon.js.

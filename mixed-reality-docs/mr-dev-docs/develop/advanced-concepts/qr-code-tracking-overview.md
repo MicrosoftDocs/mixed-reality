@@ -114,8 +114,6 @@ We recommend configuring your app to ignore QR codes older than a specific times
 
 QR code data aren’t app-specific. Upon app launch, there will be a list of available QR codes being provided. The app developer will determine which QR codes are relevant to this app.
 
-See also [How to clear the codes from my app?](#managing-qr-code-data)
-
 ### QR code placement in a space
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
 
@@ -232,7 +230,7 @@ We're working on adding symbols to the next release. In the meantime, you should
 For more information, see [Configuring Visual Studio’s settings](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/#configuring-visual-studios-settings).
 
 ## See also
-* [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
+* [QR code tracking with native C++ and C# samples](../native/qr-code-tracking-cs-cpp.md)
 * [QR code tracking in Unity](../unity/qr-code-tracking-unity.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
 * [Azure Spatial Anchors](/azure/spatial-anchors/overview)

@@ -20,6 +20,7 @@ Whether you're using DirectX or Unity to develop your mixed reality app, Visual 
 
 1. See [Install the Tools](../../develop/install-the-tools.md#installation-checklist) for installation instructions.
 2. Create a new mixed reality project in [Unity](../unity/unity-development-overview.md) or [Visual Studio](../../develop/native/directx-development-overview.md).
+3. Build your Unity project per our [instructions](../unity/new-openxr-project-with-mrtk.md)
 
 ## Enabling Developer Mode
 

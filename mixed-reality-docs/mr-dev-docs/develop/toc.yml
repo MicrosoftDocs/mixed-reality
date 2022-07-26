@@ -25,6 +25,8 @@
     href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
   - name: Updating 2D UWP apps for Windows Mixed Reality
     href: porting-apps/building-2d-apps.md
+  - name: Input mapping guide for Unity
+    href: porting-apps/input-porting-guide-for-unity.md
 - name: Unity
   items:
   - name: Unity development for HoloLens
@@ -37,6 +39,8 @@
     items:
       - name: Overview
         href: unity/tutorials.md
+      - name: MRTK3 Zappy's Playground
+        href: unity/playground-tutorial.md        
       - name: HoloLens 2 tutorials
         items:
           - name: HoloLens 2 Fundamentals Tutorials
@@ -125,7 +129,7 @@
           href: unity/importing-features.md
         - name: Package details
           href: unity/viewing-package-details.md
-        - name: Reviewing changes
+        - name: Approve changes
           href: unity/reviewing-changes.md
   - name: Basic building blocks
     items:
@@ -250,7 +254,7 @@
   - name: Tutorials
     items:
       - name: HoloLens 2 Mixed Reality Production
-        href: https://www.unrealengine.com/onlinelearning-courses/hololens-2-mixed-reality-production-for-unreal-engine
+        href: https://dev.epicgames.com/community/learning/courses/M97/hololens-2-mixed-reality-production-for-unreal-engine/orLB/introduction-to-hololens-2-mixed-reality-production-for-unreal-engine
       - name: Build a chess app with MRTK UX Tools
         items:
           - name: Getting started

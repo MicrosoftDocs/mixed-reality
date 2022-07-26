@@ -26,14 +26,14 @@ For answers on your developer questions from the community developer ecosystem, 
 
 ### Post a question on Reddit
 <div class='icon is-large'>
-    <img alt='Reddit' src='https://docs.microsoft.com/media/logos/logo_reddit.svg'>
+    <img alt='Reddit' src='/media/logos/logo_reddit.svg'>
 </div><br/>
 
 - [Windows Mixed Reality on Reddit](https://www.reddit.com/r/WindowsMR/)
 
 ### Post a question on Stack Overflow
 <div class='icon is-large'>
-    <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
+    <img alt='Stack Overflow' src='/media/logos/logo_stackoverflow.svg'>
 </div><br/>
 
 - [Windows Mixed Reality on Stack Overflow](https://stackoverflow.com/questions/tagged/windows-mixed-reality)

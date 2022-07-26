@@ -1009,7 +1009,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/openxr-getting-started.md",
 			"redirect_url": "/windows/mixed-reality/develop/unity/xr-project-setup",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/gaze-in-unity.md",
@@ -1068,12 +1068,12 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-getting-started.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
+			"redirect_url": "/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/develop/unity/mrtk-getting-started.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
+			"redirect_url": "/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": true
 		},
 		{
@@ -2252,7 +2252,11 @@
 			"redirect_document_id": false
 
 		},
-
+		{
+			"source_path": "enthusiast-guide/pc-compatibility.md",
+			"redirect_url": "/windows/mixed-reality/enthusiast-guide/get-help-with-pc-compatibility",
+			"redirect_document_id": false
+		},
 		{	"source_path": "ignore",
 			"redirect_url": "ignore",
 			"redirect_document_id": false,
