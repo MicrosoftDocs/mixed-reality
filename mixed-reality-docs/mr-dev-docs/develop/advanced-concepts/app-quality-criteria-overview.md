@@ -72,7 +72,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 #### Tools and tutorials
 
 * [Mixed Reality Toolkit, FPS counter display](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
-* [Mixed Reality Toolkit, Shaders](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
+* [Mixed Reality Toolkit, Shaders](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/db7bbec0e72a7ff0b853b5a37283d41a416f8398/Assets/MRTK/SDK/StandardAssets/Shaders)
 
 #### External references
 
