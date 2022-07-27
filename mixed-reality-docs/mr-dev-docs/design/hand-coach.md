@@ -16,7 +16,7 @@ Hand coach triggers 3D modeled hands when the system doesn't detect the user’s
 
 ## Hand coach provided
 
-The current interaction model represents a wide variety of gesture controls such as scrolling, far select, and near tap. Below is a full list of existing hand gestures provided in<a href="windows/mixed-reality/mrtk-unity/mrtk2/"> MRTK</a>:
+The current interaction model represents a wide variety of gesture controls such as scrolling, far select, and near tap. Below is a full list of existing hand gestures provided in [MRTK](windows/mixed-reality/mrtk-unity/mrtk2/):
 
 :::row:::
     :::column:::
