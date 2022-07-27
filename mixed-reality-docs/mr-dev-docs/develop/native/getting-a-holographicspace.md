@@ -13,7 +13,7 @@ keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, spatial input, re
 > [!NOTE]
 > This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
-The <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> class is your portal into the holographic world. It controls immersive rendering, provides camera data, and provides access to spatial reasoning APIs. You'll create one for your UWP app's <a href="/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> or your Win32 app's HWND.
+The <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> class is your portal into the holographic world. It controls immersive rendering, provides camera data, and provides access to spatial reasoning APIs. You'll create one for your UWP app's [CoreWindow](/uwp/api/Windows.UI.Core.CoreWindow) or your Win32 app's HWND.
 
 ## Set up the holographic space
 
