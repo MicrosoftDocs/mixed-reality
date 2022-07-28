@@ -60,7 +60,7 @@ See [Chapter 5 of the spatializer tutorial](/learn/modules/spatial-audio-tutoria
 ## Unity spatial sound examples
 
 For examples of spatial sound in Unity, see:
-* [MRTK demos](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio)
+* [MRTK demos](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/Audio)
 * The [Microsoft Spatializer sample project](https://github.com/microsoft/spatialaudio-unity/tree/master/Samples/MicrosoftSpatializerSample)
 
 ## Next Development Checkpoint
