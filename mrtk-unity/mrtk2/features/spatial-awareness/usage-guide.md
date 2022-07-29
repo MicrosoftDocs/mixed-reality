@@ -79,7 +79,7 @@ meshes known to that Mesh Observer via the [`IMixedRealitySpatialAwarenessMeshOb
 
 If running in editor, one can use the [`AssetDatabase.CreateAsset()`](https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateAsset.html) to save the `Mesh` object to an asset file.
 
-If running on device, there are many community and store plugins available to serialize the `MeshFilter` data into a model file type([OBJ Example](http://wiki.unity3d.com/index.php/ObjExporter)).
+If running on device, there are many community and store plugins available to serialize the `MeshFilter` data into a model file type.
 
 ```c#
 // Get the first Mesh Observer available, generally we have only one registered

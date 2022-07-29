@@ -41,7 +41,7 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 
 | To suggest a change to the docs, follow these steps: | Screenshots |
 | :------------------- | :--------: |
-| 1. If you're viewing a Docs.microsoft.com page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide). | ![Edit Button](images/edit_button.jpg) |
+| 1. If you're viewing a Docs.microsoft.com page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the GitHub repository. | ![Edit Button](images/edit_button.jpg) |
 | 2. If you don't already have a GitHub account, click **Sign Up** in the upper right and create a new account. | ![Signup button](images/signup-for-github-button.png)|
 | 3. On the corresponding GitHub page that opens, click Edit (the pencil icon). | ![Pencil button](images/pencil_button.jpg)|
 | 4. In the Edit file pane, [update the files metadata](#updating-metadata) and use Markdown language to change the content. ([How to write markdown.](https://help.github.com/articles/basic-writing-and-formatting-syntax/))| ![Edit File](images/edit-in-github.png)|
@@ -124,7 +124,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 ## Working with Branches
 
-The [Mixed Reality Enthusiast Guide GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilizes two main parent branches: [Main](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/main), this content can be reviewed on the [staging site](/windows/mixed-reality/enthusiast-guide), and [Live](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), for content appearing on the [live site](/windows/mixed-reality/enthusiast-guide).
+The Mixed Reality Enthusiast Guide GitHub repository utilizes two main parent branches: Main, this content can be reviewed on the [staging site](/windows/mixed-reality/enthusiast-guide), and Live, for content appearing on the [live site](/windows/mixed-reality/enthusiast-guide).
 
 When making contributions, please submit your Pull Request (PR) to the **Main** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live. You may also create and submit a branch with your own unique branch name which can be selected and viewed in the staging site. (The **Live** branch is only allowed for use by the content administrators.)
 
@@ -134,7 +134,7 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/markdown-reference)
 
 ### Adding tables
 
@@ -237,7 +237,7 @@ The following Visual Studio Code extensions are useful when editing documentatio
 
 ## Using issues to provide feedback on Windows Mixed Reality Enthusiast Guide
 
-To provide feedback, or point out a problem, rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/issues) and the content owners will do their best to address the issue in a timely fashion.
+To provide feedback, or point out a problem, rather than directly modifying actual documentation pages, create an issue and the content owners will do their best to address the issue in a timely fashion.
 
 Be sure to include the topic title and the URL if you are creating an issue regarding a specific page.
 
