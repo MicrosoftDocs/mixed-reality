@@ -28,16 +28,17 @@ var worldOrigin = SpatialCoordinateSystem.FromNativePtr(unityWorldOriginPtr);
 
 ## Conditionally include WinRT API calls
 
-You can also use the WinRT APIs in Unity projects built for the Universal Windows Platform and Xbox One platform by using preprocessor directives. Any code that you write in Unity scripts that target WinRT APIs must be conditionally included for only those builds. 
+You can also use the WinRT APIs in Unity projects built for the Universal Windows Platform and Xbox One platform by using preprocessor directives. Any code that you write in Unity scripts that target WinRT APIs must be conditionally included for only those builds.
 
 This can be done via two steps in Unity:
-1) API compatibility level must be set to **.NET 4.6** or **.NET Standard 2.0** in the player settings
+
+1. API compatibility level must be set to **.NET 4.6** or **.NET Standard 2.0** in the player settings
     - **Edit** > **Project Settings** > **Player** > **Configuration** > **Api Compatibility Level** to **.NET 4.6** or **.NET Standard 2.0**
-2) The preprocessor directive **ENABLE_WINMD_SUPPORT** must be wrapped around any WinRT-leveraged code
+1. The preprocessor directive **ENABLE_WINMD_SUPPORT** must be wrapped around any WinRT-leveraged code
 
 The following code snippet is from the Unity manual page for [Universal Windows Platform: WinRT API in C# scripts](https://docs.unity3d.com/Manual/windowsstore-scripts.html). In this example, an advertising ID is returned, but only on UWP and Xbox One builds:
 
-```
+```cs
 using UnityEngine;
 public class WinRTAPI : MonoBehaviour {
     void Update() {
@@ -60,5 +61,6 @@ public class WinRTAPI : MonoBehaviour {
 When you double-click a script in the Unity editor, it will by default launch your script in an editor project. The WinRT APIs will appear to be unknown because the Visual Studio project doesn't reference the Windows Runtime. The **ENABLE_WINMD_SUPPORT** directive is undefined and any *#if* wrapped code is ignored until you build your project into a UWP Visual Studio solution.
 
 ## See also
-* [Build and deploy a Unity Visual Studio solution to the Hololens](build-and-deploy-to-hololens.md)
-* [Windows Runtime Support Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)
+
+- [Build and deploy a Unity Visual Studio solution to the HoloLens](build-and-deploy-to-hololens.md)
+- [Windows Runtime Support Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)
