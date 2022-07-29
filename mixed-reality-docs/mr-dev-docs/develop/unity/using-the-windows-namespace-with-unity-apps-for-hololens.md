@@ -16,15 +16,21 @@ This page describes how to make use of WinRT APIs in your Unity project for Holo
 
 A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. Most APIs in the Windows. Perception and Windows.UI.Input.Spatial namespaces are included and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](/windows/mixed-reality/unity-play-mode). To use this projection, make the following modifications to your project:
 
-1) Add a reference to the [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity).
-2) Prefix references to the `Windows` namespace with `Microsoft.`:
-```cs
-using namespace Microsoft.Windows.Perception.Spatial;
-```
-3) Replace native pointer casts with `FromNativePtr`:
-```cs
-var worldOrigin = SpatialCoordinateSystem.FromNativePtr(unityWorldOriginPtr);
-```
+1. Add a reference to the Mixed Reality WinRT Projections UPM package using the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
+
+    ![A listing of the Mixed Reality WinRT Projections package under the Platform Support header in the Mixed Reality Feature Tool.](images/DotNetWinRT.png)
+
+1. Prefix references to the `Windows` namespace with `Microsoft.`:
+
+    ```cs
+    using namespace Microsoft.Windows.Perception.Spatial;
+    ```
+
+1. Replace native pointer casts with `FromNativePtr`:
+
+    ```cs
+    var worldOrigin = SpatialCoordinateSystem.FromNativePtr(unityWorldOriginPtr);
+    ```
 
 ## Conditionally include WinRT API calls
 
