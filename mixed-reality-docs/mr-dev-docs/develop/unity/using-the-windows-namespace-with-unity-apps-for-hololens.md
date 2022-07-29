@@ -26,6 +26,10 @@ A Mixed Reality focused subset of the Windows SDK has been made available in a .
     using namespace Microsoft.Windows.Perception.Spatial;
     ```
 
+    > [!NOTE]
+    > Importing this package can cause namespace resolution issues if your project has inline references to any `Windows.*` namespaces, with the compiler attempting to resolve against a corresponding `Microsoft.Windows.*` namespace.
+    > In this case, it's recommended to either update those references to use `global::Windows.*` or to update those scripts to import the specific `Windows.*` namespace as a `using` statement.
+
 1. Replace native pointer casts with `FromNativePtr`:
 
     ```cs
