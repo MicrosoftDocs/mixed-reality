@@ -1,2 +1,6 @@
 - name: Overview
   href: overview.md
+- name: Release Notes
+  href: release-notes.md
+- name: Known Issues
+  href: known-issues.md  
