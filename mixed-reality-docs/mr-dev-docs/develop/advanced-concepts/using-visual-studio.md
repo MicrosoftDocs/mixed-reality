@@ -75,7 +75,7 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
     To learn more about the build configurations, see the "Types of build configurations" table in the [Unity documentation](https://docs.unity3d.com/Manual/VisualStudioprojectgenerationWindows.html).
 
     > [!NOTE]
-    > For HoloLens, you'll typically build for the ARM architecture. However, there's a known issue in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, for a Unity project, follow this step before you generate your Unity build: go to **Edit** > **Project Settings** > **Player** > **Other Settings** and then disable **Graphics Jobs**.
+    > For deployment to the HoloLens 2 device, choose the ARM64 or the ARM architecture.
     >
     > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the **Solution Explorer**, right-click your project, and then select **Set as StartUp Project**.
 
