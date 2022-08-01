@@ -20,7 +20,7 @@ To continuously track performance over the lifetime of development, it is highly
 Furthermore, it is particularly important to utilize the Visual Profiler to track framerate when running on the device as opposed to running in Unity editor or an emulator. The most accurate performance results will be depicted when running on the device with [Release configuration builds](/visualstudio/debugger/how-to-set-debug-and-release-configurations?preserve-view=true&view=vs-2019).
 
 > [!NOTE]
-> If building for Windows Mixed Reality, deploy with [MASTER configuration builds](/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
+> If building for Windows Mixed Reality, deploy with MASTER configuration builds.
 
 ![Visual Profiler Interface](../features/images/Diagnostics/VisualProfiler.png)
 
@@ -218,14 +218,14 @@ MRTK Standard shader statistics example
 - [Unity Performance Optimization Tutorials](https://unity3d.com/learn/tutorials/topics/performance-optimization)
 - [Unity Optimization Best Practices](https://docs.unity3d.com/Documentation/Manual/BestPracticeUnderstandingPerformanceInUnity.html)
 - [Optimizing graphics performance](https://docs.unity3d.com/Manual/OptimizingGraphicsPerformance.html)
-- [Mobile Optimization Practical Guide](https://docs.unity3d.com/Manual/MobileOptimizationPracticalGuide.html)
+- [Mobile Optimization Practical Guide](https://docs.unity3d.com/2020.1/Documentation/Manual/MobileOptimizationPracticalGuide.html)
 
 ### Windows Mixed Reality
 
 - [Recommended Settings for Unity](/windows/mixed-reality/recommended-settings-for-unity)
 - [Understanding Performance for Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality)
 - [Performance recommendations for Unity](/windows/mixed-reality/performance-recommendations-for-unity)
-- [Event Tracing for Windows Unity Guide](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
+- [Event Tracing for Windows Unity Guide](https://docs.unity3d.com/2017.2/Documentation/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 
 ### Oculus
 
