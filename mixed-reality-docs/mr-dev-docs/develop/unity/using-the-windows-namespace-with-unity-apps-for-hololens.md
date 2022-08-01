@@ -14,7 +14,7 @@ This page describes how to make use of WinRT APIs in your Unity project for Holo
 
 ## Mixed Reality APIs
 
-A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. Most APIs in the Windows. Perception and Windows.UI.Input.Spatial namespaces are included and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](/windows/mixed-reality/unity-play-mode). To use this projection, make the following modifications to your project:
+A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. Most APIs in the Windows.Perception and Windows.UI.Input.Spatial namespaces are included and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](/windows/mixed-reality/develop/unity/preview-and-debug-your-app). To use this projection, make the following modifications to your project:
 
 1. Add a reference to the Mixed Reality WinRT Projections UPM package using the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
 
