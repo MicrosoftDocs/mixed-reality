@@ -65,7 +65,7 @@ The [audio occlusion example](https://github.com/microsoft/MixedRealityToolkit-U
 
 ![Audio Influencer Controller settings](images/audioInfluencerControllerSettings.png)
 
-***Attach to*** : Sound emitting object
+**Attach to** : Sound emitting object
 
 The audio influencer controller manages the effects applied to the sound source. It is responsible for ensuring that the effects specified on the sound source or other objects are intelligently applied and realistically simulate the same scenario in the physical world.
 
