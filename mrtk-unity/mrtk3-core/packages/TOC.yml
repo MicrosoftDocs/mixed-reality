@@ -2,6 +2,8 @@
   href: ../../mrtk3-overview/packages/packages-overview.md
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
+- name: Audio
+  href: ../../mrtk3-audio/packages/audio/overview.md
 - name: Core
   href: core/toc.yml
 - name: Data binding and theming

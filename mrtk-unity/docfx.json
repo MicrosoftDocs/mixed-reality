@@ -110,6 +110,8 @@
         "./mrtk3-overview/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-overview/breadcrumb/toc.json",
         "./mrtk3-accessibility/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-accessibility/breadcrumb/toc.json",
         "./mrtk3-accessibility/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-accessibility/breadcrumb/toc.json",
+        "./mrtk3-audio/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-audio/breadcrumb/toc.json",
+        "./mrtk3-audio/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-audio/breadcrumb/toc.json",
         "./mrtk3-core/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-core/breadcrumb/toc.json",
         "./mrtk3-core/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-core/breadcrumb/toc.json",
         "./mrtk3-data/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-data/breadcrumb/toc.json",
