@@ -85,11 +85,9 @@ that the game object has a BoxCollider. it's possible to use this with non-BoxCo
 case the 'Bounds' and 'Local Center' properties much be manually set to configure the touchable plane (i.e.
 Bounds should be set to a non-zero-zero value).
 
-1. On the GameObject that should be touchable, add a BoxCollider and a [`NearInteractionTouchable`]
-   (xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) component.
+1. On the GameObject that should be touchable, add a BoxCollider and a [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) component.
 
-    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`]
-       (xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) interface in your
+    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) interface in your
        component script below.
 
     1. Click **Fix bounds** and **Fix center**
@@ -98,8 +96,7 @@ Bounds should be set to a non-zero-zero value).
 
 1. On that object or one of its ancestors, add a script component that implements the
    [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
-   interface. Any ancestor of the object with the [`NearInteractionTouchable`]
-   (xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) will be able to receive
+   interface. Any ancestor of the object with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) will be able to receive
    pointer events, as well.
 
 > [!NOTE]
@@ -112,17 +109,14 @@ This is useful to enable situations where the game object needs to be touchable 
 face. For example, this can be used to enable touch interactions for an object with a SphereCollider, where
 the entire collider needs to be touchable.
 
-1. On the GameObject that should be touchable, add a collider and a [`NearInteractionTouchableVolume`]
-   (xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableVolume) component.
+1. On the GameObject that should be touchable, add a collider and a [`NearInteractionTouchableVolume`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableVolume) component.
 
-    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`]
-       (xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) interface in your component
+    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) interface in your component
        script below.
 
 1. On that object or one of its ancestors, add a script component that implements the
    [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
-   interface. Any ancestor of the object with the [`NearInteractionTouchable`]
-   (xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) will be able to receive
+   interface. Any ancestor of the object with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) will be able to receive
    pointer events, as well.
 
 ### Unity UI

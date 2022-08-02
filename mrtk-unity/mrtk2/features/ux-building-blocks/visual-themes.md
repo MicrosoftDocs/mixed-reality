@@ -123,16 +123,15 @@ As stated, a Theme Engine is defined as a class that extends from the [`Interact
 
 #### Mandatory implementations
 
-`public abstract void SetValue(ThemeStateProperty property, int index, float percentage)`
-(xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.SetValue)
+[`public abstract void SetValue(ThemeStateProperty property, int index, float percentage)`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.SetValue)
 
 For the given property, which can be identified by `ThemeStateProperty.Name`, set its current state value on the targeted GameObject host (i.e set the material color, etc). The *index* indicates the current state value to access and the *percentage*, a float between 0 and 1, is used for easing/lerping between values.
 
-`public abstract ThemePropertyValue GetProperty(ThemeStateProperty property)`(xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.GetProperty)
+[`public abstract ThemePropertyValue GetProperty(ThemeStateProperty property)`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.GetProperty)
 
 For the given property, which can be identified by `ThemeStateProperty.Name`, return the current value set on the targeted Host  GameObject (i.e the current material color, the current local position offset, etc). This is primarily used for caching the start value when easing between states.
 
-`public abstract ThemeDefinition GetDefaultThemeDefinition()`(xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.GetDefaultThemeDefinition)
+[`public abstract ThemeDefinition GetDefaultThemeDefinition()`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.GetDefaultThemeDefinition)
 
 Returns a [`ThemeDefinition`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) object that defines the default properties and configuration needed for the custom theme
 
