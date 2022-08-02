@@ -43,26 +43,19 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 
 1. On the menu bar, select **Edit > Project Settings**.
 1. In the left-side column, select **XR plug-in Management**.
-1. Ensure that you're in the **Universal Windows Platform settins** tab.
+1. In the **XR Plug-in Management** section, select **Microsoft HoloLens feature group** and **Holographic Remoting remote app feature group**.
+1. Unselect **Initialize XR on Startup**:
 
-    ![Screenshot that shows the XR-Plug in Management window with the Universal Windows Platform tab selected.](images/038-uwp-tab.png)
+    ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/001-openxr-features.png)
 
-1. In the **OpenXR** plug-in section, select **Microsoft HoloLens feature group** and **Holographic Remoting remote app feature group**.
+1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. Refer to the sample app distributed with the [Mixed Reality OpenXR Plugin](new-openxr-project-with-mrtk.md#unity-sample-projects) containing AppRemoting.cs for more details.
 
-    ![Screenshot that shows the OpenXr plug-in with "Microsoft HoloLens feature group" and "Holographic Remoting remote app feature group" selected.](images/039-select-holo-remoting.png)
-
-1. Unselect the **Initialize XR on Startup** check box.
-
-    ![Screenshot of the XR Plug-in Management window with "Initialize XR on Startup" unselected.](images/040-unselect-unit-xr.png)
-
-1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. To see an example, download our [Open XR Unity Mixed Reality samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) and then, in the **RemotingSample** project, view the **AppRemoting.cs** script.
-
-1. For Mode 1, the **Connect** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the Inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
+1. For Mode 1, the **Connect** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
     ```
-1. For Mode 2, the **Listen** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the Inspector. Calling `Listen` will set the configuration and wait for a connection from the Holographic Remoting sample player, which is why it must be called as a coroutine:
+1. For Mode 2, the **Listen** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the **Inspector**. Calling `Listen` will set the configuration and wait for a connection from the Holographic Remoting sample player, which is why it must be called as a coroutine:
 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Listen(remotingListenConfiguration));
@@ -102,8 +95,6 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 
 - Once the connection is established, the Holographic Remoting Sample Player app running on HoloLens 2 will start "Receiving".
 
-> [!TIP]
-> For best results, make sure your app properly sets the [../focus point](focus-point-in-unity.md). This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.
 
 ## Migrate from previous Holographic Remoting APIs
 
