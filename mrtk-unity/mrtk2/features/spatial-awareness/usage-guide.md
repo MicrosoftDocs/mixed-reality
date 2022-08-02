@@ -13,9 +13,9 @@ This article will discuss some of the key mechanisms and APIs to programmaticall
 
 ## Accessing mesh observers
 
-Mesh Observer classes that implement the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) interface provide platform-specific mesh data to the Spatial Awareness system. Multiple Observers can be configured in the Spatial Awareness profile.
+Mesh Observer classes that implement the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface provide platform-specific mesh data to the Spatial Awareness system. Multiple Observers can be configured in the Spatial Awareness profile.
 
-Accessing the data providers of the Spatial Awareness system is mostly the same as for any other Mixed Reality Toolkit service. The Spatial Awareness service must be casted to the [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) interface to access via the `GetDataProvider<T>` APIs, which can then be utilized to access the Mesh Observer objects directly at runtime.
+Accessing the data providers of the Spatial Awareness system is mostly the same as for any other Mixed Reality Toolkit service. The Spatial Awareness service must be casted to the [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface to access via the `GetDataProvider<T>` APIs, which can then be utilized to access the Mesh Observer objects directly at runtime.
 
 ```c#
 // Use CoreServices to quickly get access to the IMixedRealitySpatialAwarenessSystem
@@ -40,7 +40,7 @@ var spatialObjectMeshObserver = dataProviderAccess.GetDataProvider<IMixedReality
 
 ## Starting and stopping mesh observation
 
-One of the most common tasks when dealing with the Spatial Awareness system is turning the feature off/on dynamically at runtime. This is done per Observer via the [`IMixedRealitySpatialAwarenessObserver.Resume`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume) and [`IMixedRealitySpatialAwarenessObserver.Suspend`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Suspend) APIs.
+One of the most common tasks when dealing with the Spatial Awareness system is turning the feature off/on dynamically at runtime. This is done per Observer via the [`IMixedRealitySpatialAwarenessObserver.Resume`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`IMixedRealitySpatialAwarenessObserver.Suspend`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Suspend?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) APIs.
 
 ```c#
 // Get the first Mesh Observer available, generally we have only one registered
@@ -62,7 +62,7 @@ CoreServices.SpatialAwarenessSystem.ResumeObserver<IMixedRealitySpatialAwareness
 
 ### Starting and stopping all mesh observation
 
-It is generally convenient to start/stop all mesh observation in the application. This can be achieved through the helpful Spatial Awareness system APIs, [`ResumeObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.ResumeObservers) and [`SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers).
+It is generally convenient to start/stop all mesh observation in the application. This can be achieved through the helpful Spatial Awareness system APIs, [`ResumeObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.ResumeObservers?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ```c#
 // Resume Mesh Observation from all Observers
@@ -75,7 +75,7 @@ CoreServices.SpatialAwarenessSystem.SuspendObservers();
 ## Enumerating and accessing the meshes
 
 Accessing the meshes can be done per Observer and then enumerating through the
-meshes known to that Mesh Observer via the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) API.
+meshes known to that Mesh Observer via the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) API.
 
 If running in editor, one can use the [`AssetDatabase.CreateAsset()`](https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateAsset.html) to save the `Mesh` object to an asset file.
 
@@ -155,4 +155,4 @@ public class MyMeshObservationExample : MonoBehaviour, SpatialAwarenessHandler
 
 - [Spatial Awareness Getting Started](spatial-awareness-getting-started.md)
 - [Configuring the Spatial Awareness Mesh Observer](configuring-spatial-awareness-mesh-observer.md)
-- [Spatial Awareness API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
+- [Spatial Awareness API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)

@@ -49,7 +49,7 @@ The component name and priority can also be adjusted.
 
 ## Accessing an extension service
 
-Extension services are accessed, in code, using the [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)
+Extension services are accessed, in code, using the [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 as shown in the example below.
 
 ```c#
@@ -64,5 +64,5 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 
 - [Systems, extension services and data providers](../../architecture/systems-extensions-providers.md)
 - [Extension service creation wizard](../tools/extension-service-creation-wizard.md)
-- [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)
-- [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)
+- [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
