@@ -58,15 +58,15 @@ All code must be located in a folder beneath MRTK/Providers (ex: MRTK/Providers/
 
 The first step in creating a camera settings provider is determining the type of data (ex: meshes or planes) it will provide to applications.
 
-All spatial data objects must implement the [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+All spatial data objects must implement the [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 interface.
 
 ## Implement the settings provider
 
 ### Specify interface and/or base class inheritance
 
-All camera settings providers must implement the [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-interface, which specifies the minimum functionality required by the camera system. The MRTK foundation includes the [`BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+All camera settings providers must implement the [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+interface, which specifies the minimum functionality required by the camera system. The MRTK foundation includes the [`BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 class which provides a default implementation of the required functionality.
 
 ```c#
@@ -79,7 +79,7 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 #### Apply the MixedRealityDataProvider attribute
 
-A key step in creating a camera settings provider is to apply the [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+A key step in creating a camera settings provider is to apply the [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 attribute to the class. This step enables setting the default profile and platform(s) for the data provider, when selected in the Camera System profile as well as name, folder path, and more.
 
 ```c#
@@ -95,10 +95,10 @@ attribute to the class. This step enables setting the default profile and platfo
 
 ### Implement the IMixedRealityDataProvider methods
 
-Once the class has been defined, the next step is to provide the implementation of the [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface.
+Once the class has been defined, the next step is to provide the implementation of the [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface.
 
 > [!NOTE]
-> The [`BaseDataProvider`](xref:Microsoft.MixedReality.Toolkit.BaseDataProvider`1?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class, via the [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class, provides empty implementations for [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) methods. The details of these methods are generally data provider specific.
+> The [`BaseDataProvider`](xref:Microsoft.MixedReality.Toolkit.BaseDataProvider`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class, via the [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class, provides empty implementations for [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) methods. The details of these methods are generally data provider specific.
 
 The methods that should be implemented by the data provider are:
 
@@ -114,7 +114,7 @@ The methods that should be implemented by the data provider are:
 
 ### Implement the data provider logic
 
-The next step is to add the logic of the settings provider by implementing [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true). This portion of the data provider will typically be camera configuration specific.
+The next step is to add the logic of the settings provider by implementing [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). This portion of the data provider will typically be camera configuration specific.
 
 ## Create the profile and inspector
 
@@ -169,7 +169,7 @@ The `CreateAssetMenu` attribute can be applied to the profile class to enable cu
 
 ### Implement the inspector
 
-Profile inspectors are the user interface for configuring and viewing profile contents. Each profile inspector should extend the [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class.
+Profile inspectors are the user interface for configuring and viewing profile contents. Each profile inspector should extend the [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
 The `CustomEditor` attribute informs Unity the type of asset to which the inspector applies.
 
@@ -214,6 +214,6 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 ## See also
 
 - [Camera System Overview](camera-system-overview.md)
-- [`BaseCameraSettingsProvider` class](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-- [`IMixedRealityCameraSettingsProvider` interface](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-- [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [`BaseCameraSettingsProvider` class](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityCameraSettingsProvider` interface](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)

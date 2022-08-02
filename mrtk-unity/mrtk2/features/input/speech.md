@@ -21,7 +21,7 @@ Speech input providers, like *Windows Speech Input*, don't create any controller
 
 ## Handling speech input
 
-The [**`Speech Input Handler`**](xref:Microsoft.MixedReality.Toolkit.Input.SpeechInputHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) script can be added to a GameObject to handle speech commands using [**UnityEvents**](https://docs.unity3d.com/Manual/UnityEvents.html). It automatically shows the list of the defined keywords from the **Speech Commands Profile**.
+The [**`Speech Input Handler`**](xref:Microsoft.MixedReality.Toolkit.Input.SpeechInputHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script can be added to a GameObject to handle speech commands using [**UnityEvents**](https://docs.unity3d.com/Manual/UnityEvents.html). It automatically shows the list of the defined keywords from the **Speech Commands Profile**.
 
 <img src="../images/input/SpeechCommands_SpeechInputHandler1.png" width="450px" alt="Speech Input handler">
 
@@ -29,10 +29,10 @@ Assign optional **SpeechConfirmationTooltip.prefab** to display animated confirm
 
 <img src="../images/input/SpeechCommands_SpeechInputHandler2.png" alt="Sppech input handler 2">
 
-Alternatively, developers can implement the [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface in a custom script component to [handle speech input events](input-events.md#input-event-interface-example).
+Alternatively, developers can implement the [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface in a custom script component to [handle speech input events](input-events.md#input-event-interface-example).
 
 ## Example scene
 
-The **SpeechInputExample** scene, in `MRTK/Examples/Demos/Input/Scenes/Speech`, shows how to use speech. You can also listen to speech command events directly in your own script by implementing [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) (see table of [event handlers](input-events.md)).
+The **SpeechInputExample** scene, in `MRTK/Examples/Demos/Input/Scenes/Speech`, shows how to use speech. You can also listen to speech command events directly in your own script by implementing [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) (see table of [event handlers](input-events.md)).
 
 <img src="../images/input/SpeechExampleScene.png" width="750px" alt="Speech Example scene">

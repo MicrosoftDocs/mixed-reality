@@ -15,7 +15,7 @@ This control enables moving objects in and out of predetermined positions, to cr
 
 ## Features
 
-- Supports any number of dock positions and layouts (works great with [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true))
+- Supports any number of dock positions and layouts (works great with [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true))
 - Docked objects automatically move away to make space for new objects
 - Objects scale to fit the docked space, then resize to their original position when dragged out.
 
@@ -23,12 +23,12 @@ This control enables moving objects in and out of predetermined positions, to cr
 
 - Create a GameObject with the Dock component and add some children GameObjects to it.
 - Add the DockPosition component to each of the children.
-- Add the Dockable component to any number of objects in the scene to allow them to be docked. They must have the [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component and a Collider as well.
-- *Optional:* use a [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to the Dock to automatically lay out the DockPositions.
+- Add the Dockable component to any number of objects in the scene to allow them to be docked. They must have the [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component and a Collider as well.
+- *Optional:* use a [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to the Dock to automatically lay out the DockPositions.
 
 ### Prerequisites
 
-- Every dockable object must have a collider with an [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) or [`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+- Every dockable object must have a collider with an [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) or [`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 - If you want an object to start Docked when the scene loads, assign it to any DockPosition's docked object property.
 
 ## How it works

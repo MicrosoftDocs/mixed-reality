@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Dictation &#8212; MRTK2
 
-Dictation allows users to record audio clips and obtain a transcription. To use it make sure that a dictation system is registered in the *Input System Profile*. **Windows Dictation Input Provider** is the dictation system provided out of the box but alternative dictation systems can be created implementing [`IMixedRealityDictationSystem`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationSystem?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+Dictation allows users to record audio clips and obtain a transcription. To use it make sure that a dictation system is registered in the *Input System Profile*. **Windows Dictation Input Provider** is the dictation system provided out of the box but alternative dictation systems can be created implementing [`IMixedRealityDictationSystem`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationSystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ## Requirements
 
@@ -26,7 +26,7 @@ for more details on voice input in Unity.
 
 <img src="../images/input/DictationDataProvider.png" width="80%" class="center" alt="Data provider">
 
-Once you have a dictation service set up, you can use the [`DictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.DictationHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) script to start and stop recording sessions and obtain the transcription results via UnityEvents.
+Once you have a dictation service set up, you can use the [`DictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.DictationHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script to start and stop recording sessions and obtain the transcription results via UnityEvents.
 
 <img src="../images/input/DictationHandler.png" width="80%" alt="Dictation Handler" class="center">
 
@@ -37,6 +37,6 @@ Once you have a dictation service set up, you can use the [`DictationHandler`](x
 
 ## Example scene
 
-**Dictation** scene in `MRTK/Examples/Demos/Input/Scenes/Dictation` shows the `DictationHandler` script in use. If you need more control, you can either extend this script or create your own implementing [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to receive dictation events directly.
+**Dictation** scene in `MRTK/Examples/Demos/Input/Scenes/Dictation` shows the `DictationHandler` script in use. If you need more control, you can either extend this script or create your own implementing [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to receive dictation events directly.
 
 <img src="../images/input/DictationDemo.png" width="80%" alt="Dictation Demo" class="center">

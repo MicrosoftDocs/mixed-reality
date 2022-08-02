@@ -36,7 +36,7 @@ void EnableTeleportSystem()
 
 ## Events
 
-The teleport system exposes events through the [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+The teleport system exposes events through the [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 interface to provide signals on when teleport actions begin, end, or get cancelled.
 See the linked API documentation for more details on the mechanics of the events
 and their associated payload.

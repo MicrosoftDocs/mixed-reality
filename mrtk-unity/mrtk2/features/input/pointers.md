@@ -17,7 +17,7 @@ Pointers are instanced automatically at runtime when a new controller is detecte
 
 ## Pointer configuration
 
-Pointers are configured as part of the Input System in MRTK via a [`MixedRealityPointerProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerProfile?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true). This type of profile is assigned to a [`MixedRealityInputSystemProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystemProfile?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) in the MRTK Configuration inspector. The Pointer profile determines the cursor, types of Pointers available at runtime, and how those pointers communicate with each other to decide which one is active.
+Pointers are configured as part of the Input System in MRTK via a [`MixedRealityPointerProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerProfile?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). This type of profile is assigned to a [`MixedRealityInputSystemProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystemProfile?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) in the MRTK Configuration inspector. The Pointer profile determines the cursor, types of Pointers available at runtime, and how those pointers communicate with each other to decide which one is active.
 
 - *Pointing Extent* - Defines the max distance for which a Pointer can interact with a GameObject.
 
@@ -46,7 +46,7 @@ It is possible to have multiple pointers associated with a controller. For examp
 the articulated hand controller is associated with the *PokePointer*, *GrabPointer*, and the *DefaultControllerPointer* (i.e hand rays).
 
 > [!NOTE]
-> MRTK provides a set of pointer prefabs in *Assets/MRTK/SDK/Features/UX/Prefabs/Pointers*. A new custom prefab can be built as long as it contains one of the pointer scripts in *Assets/MRTK/SDK/Features/UX/Scripts/Pointers* or any other script implementing [`IMixedRealityPointer`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+> MRTK provides a set of pointer prefabs in *Assets/MRTK/SDK/Features/UX/Prefabs/Pointers*. A new custom prefab can be built as long as it contains one of the pointer scripts in *Assets/MRTK/SDK/Features/UX/Scripts/Pointers* or any other script implementing [`IMixedRealityPointer`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ### Cursor configuration
 
@@ -64,46 +64,46 @@ The following classes are the out-of-box MRTK pointers available and defined in 
 
 #### Far pointers
 
-##### [`LinePointer`](xref:Microsoft.MixedReality.Toolkit.Input.LinePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`LinePointer`](xref:Microsoft.MixedReality.Toolkit.Input.LinePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
- *LinePointer*, a base pointer class, draws a line from the source of the input (i.e. the controller) in the pointer direction and supports a single ray cast in this direction. Generally, children classes such as the [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and the teleport pointers are instantiated and utilized (which also draw lines to indicate where teleportation will end up at) instead of this class which primarily provides common functionality.
+ *LinePointer*, a base pointer class, draws a line from the source of the input (i.e. the controller) in the pointer direction and supports a single ray cast in this direction. Generally, children classes such as the [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and the teleport pointers are instantiated and utilized (which also draw lines to indicate where teleportation will end up at) instead of this class which primarily provides common functionality.
 
 For motion controllers like in Oculus, Vive, and Windows Mixed Reality, the rotation will match the rotation of the controller. For other controllers like HoloLens 2 articulated hands, the rotation matches the system-provided pointing pose of the hand.
 
 <img src="../images/pointers/MRTK_Pointers_Line.png" width="400" alt="MRTK Pointer Line">
 
-##### [`CurvePointer`](xref:Microsoft.MixedReality.Toolkit.Input.CurvePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`CurvePointer`](xref:Microsoft.MixedReality.Toolkit.Input.CurvePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 *CurvePointer* extends the *LinePointer* class by allowing for multi-step ray casts along a curve. This base pointer class is useful for curved instances such as teleportation pointers where the line consistently bends into a parabola.
 
-##### [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
-The implementation of *ShellHandRayPointer*, which extends from [`LinePointer`](xref:Microsoft.MixedReality.Toolkit.Input.MousePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true), is used as the default for the *MRTK Pointer Profile*. The *DefaultControllerPointer* prefab implements the [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class.
+The implementation of *ShellHandRayPointer*, which extends from [`LinePointer`](xref:Microsoft.MixedReality.Toolkit.Input.MousePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), is used as the default for the *MRTK Pointer Profile*. The *DefaultControllerPointer* prefab implements the [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
-##### [`GGVPointer`](xref:Microsoft.MixedReality.Toolkit.Input.GGVPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`GGVPointer`](xref:Microsoft.MixedReality.Toolkit.Input.GGVPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 Also known as the *Gaze/Gesture/Voice (GGV)* pointer, the GGVPointer powers HoloLens 1-style look and tap interactions, primarily via Gaze and Air Tap or Gaze and voice Select interaction. The GGV pointer's position and direction is driven by the head's position and rotation.
 
-##### [`TouchPointer`](xref:Microsoft.MixedReality.Toolkit.Input.TouchPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`TouchPointer`](xref:Microsoft.MixedReality.Toolkit.Input.TouchPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 The *TouchPointer* is responsible for working with Unity Touch input (i.e. touchscreen). These are 'far interactions' because the act of touching the screen will cast a ray from the camera to a potentially far location in the scene.
 
-##### [`MousePointer`](xref:Microsoft.MixedReality.Toolkit.Input.MousePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`MousePointer`](xref:Microsoft.MixedReality.Toolkit.Input.MousePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 The *MousePointer* powers a screen to world raycast for far interactions, but for mouse instead of touch.
 
 ![Mouse pointer](../images/pointers/MRTK_MousePointer.png)
 
 > [!NOTE]
-> Mouse support is not available by default in MRTK but can be enabled by adding a new *Input Data Provider* of type [`MouseDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.MouseDeviceManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to the MRTK input profile and assigning the [`MixedRealityMouseInputProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to the data provider.
+> Mouse support is not available by default in MRTK but can be enabled by adding a new *Input Data Provider* of type [`MouseDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.MouseDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to the MRTK input profile and assigning the [`MixedRealityMouseInputProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to the data provider.
 
 #### Near pointers
 
-##### [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
-The *[PokePointer](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)* is used to interact with game objects that support “near interaction touchable.” which are GameObjects that have an attached [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) script. In the case of UnityUI, this pointer looks for NearInteractionTouchableUnityUIs.  The PokePointer uses a SphereCast to determine the closest touchable element and is used to power things like the pressable buttons.
+The *[PokePointer](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)* is used to interact with game objects that support “near interaction touchable.” which are GameObjects that have an attached [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script. In the case of UnityUI, this pointer looks for NearInteractionTouchableUnityUIs.  The PokePointer uses a SphereCast to determine the closest touchable element and is used to power things like the pressable buttons.
 
- When configuring the GameObject with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component, make sure to configure the *localForward* parameter to point out of the front of the button or other object that should be made touchable. Also make sure that the touchable's *bounds* matches the bounds of the touchable object.
+ When configuring the GameObject with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component, make sure to configure the *localForward* parameter to point out of the front of the button or other object that should be made touchable. Also make sure that the touchable's *bounds* matches the bounds of the touchable object.
 
 Useful Poke Pointer properties:
 
@@ -114,9 +114,9 @@ Useful Poke Pointer properties:
 
 <img src="../images/pointers/MRTK_PokePointer.png" width="400" alt="Poke Pointer">
 
-##### [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+##### [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
-The *[SpherePointer](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)* uses [UnityEngine.Physics.OverlapSphere](https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html) in order to identify the closest [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) object for interaction, which is useful for "grabbable" input like the `ManipulationHandler`. Similar to the [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)/[`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) functional pair, in order to be interactable with the Sphere Pointer, the game object must contain a component that is the [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) script.
+The *[SpherePointer](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)* uses [UnityEngine.Physics.OverlapSphere](https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html) in order to identify the closest [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) object for interaction, which is useful for "grabbable" input like the `ManipulationHandler`. Similar to the [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)/[`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) functional pair, in order to be interactable with the Sphere Pointer, the game object must contain a component that is the [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script.
 
 <img src="../images/pointers/MRTK_GrabPointer.jpg" width="400" alt="Grab Pointer">
 
@@ -140,8 +140,8 @@ a grabbable but cannot see it. The *Visual FOV* is defined via a cone instead of
 
 #### Teleport pointers
 
-- [`TeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.TeleportPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will raise a teleport request when action is taken (i.e the teleport button is pressed) in order to move the user.
-- [`ParabolicTeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.ParabolicTeleportPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will raise a teleport request when action is taken (i.e the teleport button is pressed) with a parabolic line raycast in order to move the user.
+- [`TeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.TeleportPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will raise a teleport request when action is taken (i.e the teleport button is pressed) in order to move the user.
+- [`ParabolicTeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.ParabolicTeleportPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will raise a teleport request when action is taken (i.e the teleport button is pressed) with a parabolic line raycast in order to move the user.
 
 <img src="../images/pointers/MRTK_Pointers_Parabolic.png" width="400" alt="Pointer Parabolic">
 
@@ -166,13 +166,13 @@ MonoBehaviours that implement one or more of the following interfaces and are as
 
 | Event | Description | Handler |
 | --- | --- | --- |
-| Before Focus Changed / Focus Changed | Raised on both the game object losing focus and the one gaining it every time a pointer changes focus. | [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
-Focus Enter / Exit | Raised on the game object gaining focus when the first pointer enters it and on the one losing focus when the last pointer leaves it. | [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-Pointer Down / Dragged / Up / Clicked | Raised to report pointer press, drag and release. | [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-Touch Started / Updated / Completed | Raised by touch-aware pointers like [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to report touch activity. | [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+| Before Focus Changed / Focus Changed | Raised on both the game object losing focus and the one gaining it every time a pointer changes focus. | [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
+Focus Enter / Exit | Raised on the game object gaining focus when the first pointer enters it and on the one losing focus when the last pointer leaves it. | [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+Pointer Down / Dragged / Up / Clicked | Raised to report pointer press, drag and release. | [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+Touch Started / Updated / Completed | Raised by touch-aware pointers like [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to report touch activity. | [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 > [!NOTE]
-> [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) should be handled in the objects they are raised on. It is possible to receive focus events globally but, unlike other input events, global event handler won't block receiving events based on focus (the event will be received by both global handler and a corresponding object in focus).
+> [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) should be handled in the objects they are raised on. It is possible to receive focus events globally but, unlike other input events, global event handler won't block receiving events based on focus (the event will be received by both global handler and a corresponding object in focus).
 
 #### Pointer input events in action
 
@@ -183,7 +183,7 @@ Pointer input events are recognized and handled by the MRTK input system in a si
 1. The input system determines which GameObject is in focus for the pointer that fired the event
     1. The input system utilizes the [Unity's Event System](https://docs.unity3d.com/Manual/EventSystem.html) to fire the relevant interface function for all matching components on the focused GameObject
     1. If at any point an input event has been [marked as used](input-events.md#how-to-stop-input-events), the process will end and no further GameObjects will receive callbacks.
-        - Example: Components implementing the interface [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will be searched for a GameObject gains or loses focus
+        - Example: Components implementing the interface [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will be searched for a GameObject gains or loses focus
         - Note: The Unity Event System will bubble up to search the parent GameObject if no components matching the desired interface are found on the current GameObject..
 1. If no global input handlers are registered and no GameObject is found with a matching component/interface, then the input system will call each fallback registered input handlers
 
@@ -273,13 +273,13 @@ private void OnDisable()
 }
 ```
 
-The `PrimaryPointerExample` (Assets/MRTK/Examples/Demos/Input/Scenes/PrimaryPointer) scene shows how to use the [`PrimaryPointerChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PrimaryPointerChangedHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) for events to respond to a new primary pointer.
+The `PrimaryPointerExample` (Assets/MRTK/Examples/Demos/Input/Scenes/PrimaryPointer) scene shows how to use the [`PrimaryPointerChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PrimaryPointerChangedHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) for events to respond to a new primary pointer.
 
 <img src="../images/pointers/PrimaryPointerExample.png" alt="Primary Pointer Example">
 
 ### Pointer result
 
-The pointer [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) property contains the current result for the scene query used to determine the object with focus. For a raycast pointer, like the ones created by default for motion controllers, gaze input and hand rays, it will contain the location and normal of the raycast hit.
+The pointer [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) property contains the current result for the scene query used to determine the object with focus. For a raycast pointer, like the ones created by default for motion controllers, gaze input and hand rays, it will contain the location and normal of the raycast hit.
 
 ```c#
 private void IMixedRealityPointerHandler.OnPointerClicked(MixedRealityPointerEventData eventData)
@@ -291,13 +291,13 @@ private void IMixedRealityPointerHandler.OnPointerClicked(MixedRealityPointerEve
 }
 ```
 
-The `PointerResultExample` scene (Assets/MRTK/Examples/Demos/Input/Scenes/PointerResult/PointerResultExample.unity) shows how to use the pointer [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to spawn an object at the hit location.
+The `PointerResultExample` scene (Assets/MRTK/Examples/Demos/Input/Scenes/PointerResult/PointerResultExample.unity) shows how to use the pointer [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to spawn an object at the hit location.
 
 <img src="../images/input/PointerResultExample.png" alt="Pointer Result">
 
 ### Disable pointers
 
-To turn enable and disable pointers (for example, to disable the hand ray), set the [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) for a given pointer type via [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+To turn enable and disable pointers (for example, to disable the hand ray), set the [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) for a given pointer type via [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ```c#
 // Disable the hand rays
@@ -320,11 +320,11 @@ public void SetHoloLens1()
 }
 ```
 
-See [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and [`TurnPointersOnOff`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.DisablePointersExample?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) for more examples.
+See [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`TurnPointersOnOff`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.DisablePointersExample?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) for more examples.
 
 ## Pointer interactions via editor
 
-For pointer events handled by [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true), MRTK provides further convenience in the form of the [`PointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PointerHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component, which allows pointer events to be handled directly via Unity Events.
+For pointer events handled by [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), MRTK provides further convenience in the form of the [`PointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PointerHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component, which allows pointer events to be handled directly via Unity Events.
 
 <img src="../images/pointers/PointerHandler.png" alt="Pointer Handler">
 
@@ -335,7 +335,7 @@ By default, this value is set to 10 meters. This value was chosen to remain cons
 of the HoloLens shell.
 
 This can be changed by updating the `DefaultControllerPointer` prefab's
-[`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component's
+[`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component's
 fields:
 
 *Pointer Extent* - This controls the maximum distance that pointers will interact with.

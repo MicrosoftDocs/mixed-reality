@@ -90,7 +90,7 @@ You will be able to see the new data providers under the XR SDK tab in Unity 201
 Add the following data providers
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 ![Legacy camera settings](../features/images/xrsdk/CameraSystemLegacy.png)
 
@@ -100,14 +100,14 @@ to
 ::: moniker range=">= mrtkunity-2021-05"
 | OpenXR Plugin | Windows XR Plugin |
 |---------------|-------------------|
-| [`XRSDK.OpenXR.OpenXRCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
-| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
+| [`XRSDK.OpenXR.OpenXRCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
 | OpenXR Plugin | Windows XR Plugin |
 |---------------|-------------------|
-| | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
-| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
+| | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
 ::: moniker-end
 
 ![XR SDK camera settings](../features/images/xrsdk/CameraSystemXRSDK.png)
@@ -118,7 +118,7 @@ to
 Add the following data providers
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 ![Legacy input settings](../features/images/xrsdk/InputSystemWMRLegacy.png)
 
@@ -127,7 +127,7 @@ to
 
 | OpenXR Plugin | Windows XR Plugin |
 |---------------|-------------------|
-| [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
+| [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
 
 __OpenXR__:
 
@@ -143,7 +143,7 @@ __Windows Mixed Reality__:
 Add the following data providers
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 ![Legacy boundary settings](../features/images/xrsdk/BoundarySystemLegacy.png)
 
@@ -152,7 +152,7 @@ to
 
 | OpenXR Plugin | Windows XR Plugin |
 |---------------|-------------------|
-| [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
+| [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
 
 ![XR SDK boundary settings](../features/images/xrsdk/BoundarySystemXRSDK.png)
 
@@ -162,7 +162,7 @@ to
 Add the following data providers
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 ![Legacy spatial awareness settings](../features/images/xrsdk/SpatialAwarenessLegacy.png)
 
@@ -172,13 +172,13 @@ to
 ::: moniker range=">= mrtkunity-2021-05"
 | OpenXR Plugin | Windows XR Plugin |
 |---------------|-------------------|
-| [`XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) (for UWP) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) (for UWP) |
-| [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) (for non-UWP) | |
+| [`XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) (for UWP) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) (for UWP) |
+| [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) (for non-UWP) | |
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
 | OpenXR Plugin | Windows XR Plugin |
 |---------------|-------------------|
-| [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) |
+| [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
 ::: moniker-end
 
 ![XR SDK spatial awareness settings](../features/images/xrsdk/SpatialAwarenessXRSDK.png)

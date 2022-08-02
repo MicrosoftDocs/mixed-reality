@@ -119,7 +119,7 @@ There are two types of tests that can be added for new code
 
 MRTK play mode tests have the ability to test how your new feature responds to different input sources such as hands or eyes.
 
-New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) or the skeleton below can be used.
+New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) or the skeleton below can be used.
 
 To create a new play mode test:
 
@@ -296,8 +296,8 @@ This section shows some of the commonly used code snippets / methods when writin
 
 There are two Utility classes that help with setting up MRTK and testing interactions with components in MRTK
 
-* [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+* [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 TestUtilities provide the following methods to set up your MRTK scene and GameObjects:
 
@@ -315,6 +315,6 @@ TestUtilities.InitializePlayspace();
 TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
-Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and
-[`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) for further methods
+Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and
+[`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) for further methods
 of these util classes as they're extended on a regular basis while new tests get added to MRTK.

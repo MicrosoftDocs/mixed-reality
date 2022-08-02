@@ -11,11 +11,11 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, InputSta
 
 It's possible to directly query the state of all inputs in MRTK by iterating over the controllers attached to the input sources. MRTK also provides convenience methods for accessing the position and rotation of the eyes, hands, head, and motion controller.
 
-See the InputDataExample scene for an example of querying input both via iterating over controllers, and by using the [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class.
+See the InputDataExample scene for an example of querying input both via iterating over controllers, and by using the [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
 ## Example: Access position, rotation of head, hands, eyes in MRTK
 
-MRTK's [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class provides convenience methods for accessing the hand ray, head ray, eye gaze ray, and motion controller rays.
+MRTK's [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class provides convenience methods for accessing the hand ray, head ray, eye gaze ray, and motion controller rays.
 
 ```c#
 // Get the head ray

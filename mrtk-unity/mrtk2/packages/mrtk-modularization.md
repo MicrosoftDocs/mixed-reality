@@ -57,7 +57,7 @@ When selecting an application architecture, it is important to consider design f
 
 #### MixedRealityToolkit service locator
 
-MRTK enables (and automatically configures) application scenes to use the default [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) service locator component. This component includes support for configuring MRTK systems and data providers via configuration inspectors and manages component lifespans and core behaviors (ex: when to update).
+MRTK enables (and automatically configures) application scenes to use the default [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) service locator component. This component includes support for configuring MRTK systems and data providers via configuration inspectors and manages component lifespans and core behaviors (ex: when to update).
 
 All systems are represented in the core configuration inspector, regardless of whether or not they are present or enabled in the project. Please see the [Mixed Reality Configuration Guide](../configuration/mixed-reality-configuration-guide.md) for more
 information.
@@ -66,18 +66,18 @@ information.
 
 Some developers have expressed a desire to include individual service components into the application scene hierarchy. To enable this usage, services will either need to be encapsulated in a custom registrar or be self-registering / self-managing.
 
-A self-registering service would implement the [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and register itself so that application code could discover the service instance via a registry.
+A self-registering service would implement the [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and register itself so that application code could discover the service instance via a registry.
 
 A self-managing service could be implemented as a singleton object in the scene hierarchy. This object would provide
 and instance property which application code could use to directly access service functionality.
 
 #### Custom service locator
 
-Some developers have requested the ability to create a custom service locator component. Custom service locators would implement the [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface and manage the life cycle and core behaviors of active services.
+Some developers have requested the ability to create a custom service locator component. Custom service locators would implement the [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface and manage the life cycle and core behaviors of active services.
 
 #### Hybrid architecture
 
-MRTK will support a hybrid architecture in which developers can combine the previous approaches as needed or desired. For example, a developer could start with the [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) service locator and add a self-registering
+MRTK will support a hybrid architecture in which developers can combine the previous approaches as needed or desired. For example, a developer could start with the [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) service locator and add a self-registering
 service.
 
 > [!NOTE]

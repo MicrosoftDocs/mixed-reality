@@ -29,9 +29,9 @@ To enable auto scroll, simply add the following two scripts to your collider com
 
 ### ScrollRectTransf
 
-To scroll through a [TextMesh](https://docs.unity3d.com/ScriptReference/TextMesh.html) or more generally speaking a [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html) component you can use the [ScrollRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollRectTransf?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) script.
-If you want to scroll through a texture instead of a [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html), use [ScrollTexture](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollTexture?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) instead of [ScrollRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollRectTransf?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
-In the following, the parameters of [ScrollRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollRectTransf?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) that are available in the Unity Editor are explained in more detail:
+To scroll through a [TextMesh](https://docs.unity3d.com/ScriptReference/TextMesh.html) or more generally speaking a [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html) component you can use the [ScrollRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollRectTransf?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script.
+If you want to scroll through a texture instead of a [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html), use [ScrollTexture](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollTexture?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) instead of [ScrollRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollRectTransf?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
+In the following, the parameters of [ScrollRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ScrollRectTransf?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) that are available in the Unity Editor are explained in more detail:
 
 Parameters | Description
 :---- | :----
@@ -56,8 +56,8 @@ The scroll sample demonstrates scrolling text that starts when the user *looks* 
 ## Gaze-supported pan and zoom
 
 Who hasn't used a virtual map before to search for their home or to explore entirely new places? Eye tracking allows you to directly dive into exactly the parts that you're interested in and once zoomed in, you can smoothly follow the course of a street to explore your neighborhood!
-This is not only useful for exploring geographical maps, but also to checking out details in photographs, data visualizations or even live-streamed medical imagery. To use this capability in your app is easy! For content rendered to a [Texture]( https://docs.unity3d.com/ScriptReference/Texture.html) (e.g., a photo, streamed data), simply add the [PanZoomTexture](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomTexture?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) script.
-For a [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html) use [PanZoomRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomRectTransf?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true). Extending the [Auto Scroll](#auto-scroll) capability, we essentially enable to scroll both vertically and horizontally at the same time and magnify content right around the user's current focus point.
+This is not only useful for exploring geographical maps, but also to checking out details in photographs, data visualizations or even live-streamed medical imagery. To use this capability in your app is easy! For content rendered to a [Texture]( https://docs.unity3d.com/ScriptReference/Texture.html) (e.g., a photo, streamed data), simply add the [PanZoomTexture](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomTexture?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script.
+For a [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html) use [PanZoomRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomRectTransf?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). Extending the [Auto Scroll](#auto-scroll) capability, we essentially enable to scroll both vertically and horizontally at the same time and magnify content right around the user's current focus point.
 
 Parameters | Description
 :---- | :----
@@ -84,13 +84,13 @@ SkimProofUpdateSpeed | The lower the value, the slower the scrolling will speed 
 
 Imagine looking at a 3D object and the parts you want to see more closely magically turn toward you - as if the system would read your mind and know to turn the item toward you!
 That is the idea for attention-based 3D rotations which enable you to investigate all side of a hologram without lifting a finger.
-To enable this behavior, simply add the [OnLookAtRotateByEyeGaze](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) script to the part of your GameObject with a [Collider](https://docs.unity3d.com/ScriptReference/Collider.html) component.
+To enable this behavior, simply add the [OnLookAtRotateByEyeGaze](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script to the part of your GameObject with a [Collider](https://docs.unity3d.com/ScriptReference/Collider.html) component.
 You can tweak several parameters that are listed below to limit how fast and in which directions the hologram will turn.
 
 As you can imagine, having this behavior active at all times may quickly become pretty distracting in a crowded scene.
 This is why you may want to start out with this behavior disabled and then enable it quickly using voice commands.
 Alternatively, we added an example in `EyeTrackingDemo-03-Navigation` (Assets/MRTK/Examples/Demos/EyeTracking/Scenes)
-to use [TargetMoveToCamera](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.TargetMoveToCamera?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) for which you can select a focused target and it flies in front of you - simply say *"Come to me"*.
+to use [TargetMoveToCamera](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.TargetMoveToCamera?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) for which you can select a focused target and it flies in front of you - simply say *"Come to me"*.
 
 Once in the near mode, the auto rotation mode is automatically enabled.
 In that mode, you can observe it from all sides either simply leaning back and looking at it, walking around it or reaching out to grab and rotate it with your hand. When you dismiss the target (look & pinch or say *"Send back"*), it will return to its original location and will stop reacting to you from afar.

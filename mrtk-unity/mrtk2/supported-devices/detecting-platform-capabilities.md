@@ -15,7 +15,7 @@ provides a way to identify specific capabilities at runtime, (e.g. if the curren
 
 ## Capabilities
 
-The Mixed Reality Toolkit provides the [`MixedRealityCapability`](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+The Mixed Reality Toolkit provides the [`MixedRealityCapability`](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 enumeration, which defines a set of capabilities for which an application can query at runtime.
 
 ### Input system capabilities
@@ -67,5 +67,5 @@ if (capabilityCheck != null)
 
 ## See also
 
-- [IMixedRealityCapabilityCheck API documentation](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-- [MixedRealityCapability enum documentation](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [IMixedRealityCapabilityCheck API documentation](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [MixedRealityCapability enum documentation](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)

@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Interact
 
 ![Interactable](../images/interactable/InteractableExamples.png)
 
-The [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component is an all-in-one container to make any object easily *interactable* and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech etc and funnel these interactions into [events](#events) and [visual theme](visual-themes.md) responses. This component provides an easy way to make buttons, change color on objects with focus, and more.
+The [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component is an all-in-one container to make any object easily *interactable* and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech etc and funnel these interactions into [events](#events) and [visual theme](visual-themes.md) responses. This component provides an easy way to make buttons, change color on objects with focus, and more.
 
 ## How to configure Interactable
 
@@ -33,7 +33,7 @@ The **DefaultInteractableStates** (Assets/MRTK/SDK/Features/UX/Interactable/Stat
 
 ![States ScriptableObject example in inspector](../images/interactable/DefaultInteractableStates.png)
 
-The *DefaultInteractableStates* asset contains four states and utilizes the [`InteractableStates`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableStates?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) state model implementation.
+The *DefaultInteractableStates* asset contains four states and utilizes the [`InteractableStates`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableStates?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) state model implementation.
 
 * **Default**: Nothing is happening, this is the most isolated base state.
 
@@ -54,38 +54,38 @@ A bit value (#) is assigned to the state depending on the order in the list.
 > * Toggled: The button is in a toggled state or Dimension index is an odd number.
 > * Gesture: The hand or controller was pressed and has moved from the original position.
 > * VoiceCommand: A speech command was used to trigger the Interactable.
-> * PhysicalTouch: A touch input is currently detected, use [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to enable.
-> * Grab: A hand is currently grabbing in the bounds of the object, use [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to enable
+> * PhysicalTouch: A touch input is currently detected, use [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to enable.
+> * Grab: A hand is currently grabbing in the bounds of the object, use [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to enable
 
 **Enabled**
 
-Toggles whether an Interactable will start enabled or not. This corresponds to the [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) in code.
+Toggles whether an Interactable will start enabled or not. This corresponds to the [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) in code.
 
-An *Interactable's* enabled property is different than the enabled property configured via GameObject/Component (i.e SetActive etc). Disabling the GameObject or *Interactable* MonoBehaviour will disable everything in the class from running including input, visual themes, events, etc. Disabling via [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will disable most input handling, resetting related input states. However, the class will still run every frame and receive input events which will be ignored. This is useful for displaying the Interactable in a disabled state which can be done via Visual Themes. A typical example of this would be a submit button waiting for all the required input fields to be completed.
+An *Interactable's* enabled property is different than the enabled property configured via GameObject/Component (i.e SetActive etc). Disabling the GameObject or *Interactable* MonoBehaviour will disable everything in the class from running including input, visual themes, events, etc. Disabling via [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will disable most input handling, resetting related input states. However, the class will still run every frame and receive input events which will be ignored. This is useful for displaying the Interactable in a disabled state which can be done via Visual Themes. A typical example of this would be a submit button waiting for all the required input fields to be completed.
 
 **Input Actions**
 
 Select the [input action](../input/input-actions.md) from the input configuration or controller mapping profile that the *Interactable* component should react to.
 
-This property can be configured at runtime in code via [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+This property can be configured at runtime in code via [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 **IsGlobal**
 
 If true, this will mark the component as a global input listener for the selected [input action](../input/input-actions.md). Default behavior is false which will restrict input to only this *Interactable* collider/GameObject.
 
-This property can be configured at runtime in code via [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+This property can be configured at runtime in code via [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 **Speech Command**
 
 [Speech command](../input/speech.md), from the MRTK Speech Commands Profile, to trigger an OnClick event for voice interaction.
 
-This property can be configured at runtime in code via [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+This property can be configured at runtime in code via [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 **Requires Focus**
 
 If true, the voice command will only activate the *Interactable* if and only if it already has focus from a pointer. If false, then the *Interactable* will act as a global listener for the selected voice command. The default behavior is true, as multiple global speech listeners can be difficult to organize in a scene.
 
-This property can be configured at runtime in code via [`Interactable.VoiceRequiresFocus`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceRequiresFocus?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+This property can be configured at runtime in code via [`Interactable.VoiceRequiresFocus`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceRequiresFocus?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 **Selection Mode**
 
@@ -99,7 +99,7 @@ The selection modes available are:
 
 *Interactable* also allows for multiple Themes to be defined per *Dimension*. For example when *SelectionMode=Toggle*, one theme may be applied when the *Interactable* is *deselected* and another theme applied when the component is *selected*.
 
-The current Selection Mode can be queried at runtime via [`Interactable.ButtonMode`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.ButtonMode?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true). Updating the mode at runtime can be achieved by setting the  [`Interactable.Dimensions`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.Dimensions?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) property to match the desired functionality. Furthermore, the current dimension, useful for *Toggle* and *Multi-Dimension* modes, can be accessed via [`Interactable.CurrentDimension`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.CurrentDimension?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+The current Selection Mode can be queried at runtime via [`Interactable.ButtonMode`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.ButtonMode?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). Updating the mode at runtime can be achieved by setting the  [`Interactable.Dimensions`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.Dimensions?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) property to match the desired functionality. Furthermore, the current dimension, useful for *Toggle* and *Multi-Dimension* modes, can be accessed via [`Interactable.CurrentDimension`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.CurrentDimension?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ### Interactable profiles
 
@@ -123,16 +123,16 @@ Click the *Add Event* button to add a new type of Event Receiver definition. Onc
 
 There are different types of event receivers to respond to different types of input. MRTK ships with the following set of receivers out-of-box.
 
-* [`InteractableAudioReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableAudioReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`InteractableOnClickReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnClickReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`InteractableOnFocusReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`InteractableOnGrabReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnGrabReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`InteractableOnHoldReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`InteractableOnPressReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnPressReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`InteractableOnToggleReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnToggleReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`InteractableOnTouchReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnTouchReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+* [`InteractableAudioReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableAudioReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`InteractableOnClickReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnClickReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`InteractableOnFocusReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`InteractableOnGrabReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnGrabReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`InteractableOnHoldReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`InteractableOnPressReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnPressReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`InteractableOnToggleReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnToggleReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`InteractableOnTouchReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnTouchReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
-A custom receiver can be created by making a new class that extends [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
+A custom receiver can be created by making a new class that extends [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ![Event Toggle Receiver Example](../images/interactable/Event_toggle.png)
 
@@ -140,9 +140,9 @@ A custom receiver can be created by making a new class that extends [`ReceiverBa
 
 ### Interactable receivers
 
- The [`InteractableReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component allows for events to be defined outside of the source *Interactable* component. The *InteractableReceiver* will listen for a filtered event type fired by another *Interactable*. If the *Interactable* property is not directly assigned, then the *Search Scope* property defines the direction the *InteractableReceiver* listens for events which is either on itself, in a parent, or in a child GameObject.
+ The [`InteractableReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component allows for events to be defined outside of the source *Interactable* component. The *InteractableReceiver* will listen for a filtered event type fired by another *Interactable*. If the *Interactable* property is not directly assigned, then the *Search Scope* property defines the direction the *InteractableReceiver* listens for events which is either on itself, in a parent, or in a child GameObject.
 
-[`InteractableReceiverList`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiverList?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) acts in a similar fashion but for a list of matching events.
+[`InteractableReceiverList`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiverList?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) acts in a similar fashion but for a list of matching events.
 
 <img src="../images/interactable/InteractableReceiver.png" width="450" alt="Interactable reciver">
 
@@ -152,13 +152,13 @@ Like [Visual Themes](visual-themes.md#custom-theme-engines), events can be exten
 
 Custom events can be created in two main ways:
 
-1) Extend the [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class to create a custom event that will show up in the dropdown list of event types. A Unity event is provided by default, but additional Unity events can be added or the event can be set to hide Unity events. This functionality allows a designer to work with an engineer on a project to create a custom event that the designer can setup in the editor.
+1) Extend the [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class to create a custom event that will show up in the dropdown list of event types. A Unity event is provided by default, but additional Unity events can be added or the event can be set to hide Unity events. This functionality allows a designer to work with an engineer on a project to create a custom event that the designer can setup in the editor.
 
-1) Extend the [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class to create a completely custom event component that can reside on the *Interactable* or another object. The [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will reference the *Interactable* to detect state changes.
+1) Extend the [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class to create a completely custom event component that can reside on the *Interactable* or another object. The [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will reference the *Interactable* to detect state changes.
 
 #### Example of extending `ReceiverBase`
 
-The [`CustomInteractablesReceiver`](xref:Microsoft.MixedReality.Toolkit.UI?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class displays status information about an *Interactable* and is an example of how to create a custom Event Receiver.
+The [`CustomInteractablesReceiver`](xref:Microsoft.MixedReality.Toolkit.UI?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class displays status information about an *Interactable* and is an example of how to create a custom Event Receiver.
 
 ```c#
 public CustomInteractablesReceiver(UnityEvent ev) : base(ev, "CustomEvent")
@@ -167,7 +167,7 @@ public CustomInteractablesReceiver(UnityEvent ev) : base(ev, "CustomEvent")
 }
 ```
 
-The following methods are useful to override/implement when creating a custom Event Receiver. [`ReceiverBase.OnUpdate()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) is an abstract method that can be used to detect state patterns/transitions. Furthermore, the [`ReceiverBase.OnVoiceCommand()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and [`ReceiverBase.OnClick()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) methods are useful for creating custom event logic when the *Interactable* is selected.
+The following methods are useful to override/implement when creating a custom Event Receiver. [`ReceiverBase.OnUpdate()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) is an abstract method that can be used to detect state patterns/transitions. Furthermore, the [`ReceiverBase.OnVoiceCommand()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`ReceiverBase.OnClick()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) methods are useful for creating custom event logic when the *Interactable* is selected.
 
 ```c#
 public override void OnUpdate(InteractableStates state, Interactable source)
@@ -198,7 +198,7 @@ public virtual void OnClick(InteractableStates state,
 
 ##### Displaying custom event receiver fields in the inspector
 
-*ReceiverBase* scripts use [`InspectorField`](xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.InspectorField?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) attributes to expose custom properties in the inspector. Here's an example of Vector3, a custom property with tooltip and label information. This property will show up as configurable in the inspector when an *Interactable* GameObject is selected and has the associated *Event Receiver* type added.
+*ReceiverBase* scripts use [`InspectorField`](xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.InspectorField?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) attributes to expose custom properties in the inspector. Here's an example of Vector3, a custom property with tooltip and label information. This property will show up as configurable in the inspector when an *Interactable* GameObject is selected and has the associated *Event Receiver* type added.
 
 ```c#
 [InspectorField(Label = "<Property label>",Tooltip = "<Insert tooltip info>",Type = InspectorField.FieldTypes.Vector3)]
@@ -214,21 +214,21 @@ One can create a simple button by adding the *Interactable* component to a GameO
 Take the button one step further, by creating a new profile, assigning the GameObject itself and creating a new theme. Furthermore, use the *OnClick* event to make something happen.
 
 > [!NOTE]
-> Making a [button pressable](button.md) requires the [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component. Additionally, the [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component is needed to funnel press events to the *Interactable* component.
+> Making a [button pressable](button.md) requires the [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component. Additionally, the [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component is needed to funnel press events to the *Interactable* component.
 
 ### Creating toggle and multi-dimension buttons
 
 #### Toggle button
 
-To make a button Toggle-able, change the [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) field to type `Toggle`. In the *Profiles* section, a new toggled theme is added for each profile that is used when the *Interactable* is toggled on.
+To make a button Toggle-able, change the [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) field to type `Toggle`. In the *Profiles* section, a new toggled theme is added for each profile that is used when the *Interactable* is toggled on.
 
-While the [`SelectionMode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) is set to Toggle, the *IsToggled* check box can be used to set the default value of the control at runtime initialization.
+While the [`SelectionMode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) is set to Toggle, the *IsToggled* check box can be used to set the default value of the control at runtime initialization.
 
 *CanSelect* means the *Interactable* can go from *off* to *on* while the *CanDeselect* means the inverse.
 
 ![Profile Toggle Visual Themes Example](../images/interactable/Profile_toggle.png)
 
-Developers can utilize the [`SetToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and [`IsToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interfaces to get/set the toggle state of an *Interactable* via code.
+Developers can utilize the [`SetToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`IsToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interfaces to get/set the toggle state of an *Interactable* via code.
 
 ```c#
 // If using SelectionMode = Toggle (i.e Dimensions == 2)
@@ -244,7 +244,7 @@ bool isSelected = myInteractable.IsToggled;
 
 It is common to have a list of toggle buttons where only one can be active at any given time, also known as a radial set or radio buttons etc.
 
-Use the [`InteractableToggleCollection`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableToggleCollection?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component to enable this functionality. This control ensures only one *Interactable* is toggled on at any given time. The *RadialSet* (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/RadialSet.prefab) is also a great starting point out-of-box.
+Use the [`InteractableToggleCollection`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableToggleCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component to enable this functionality. This control ensures only one *Interactable* is toggled on at any given time. The *RadialSet* (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/RadialSet.prefab) is also a great starting point out-of-box.
 
 To create a custom radial button group:
 
@@ -266,7 +266,7 @@ Every click event will advance the `DimensionIndex` by 1 at runtime until the `D
 
 ![Multi-Dimensional profile example](../images/interactable/Profile_multiDimensions.png)
 
-Developers can assess the [`DimensionIndex`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to determine which dimension is currently active.
+Developers can assess the [`DimensionIndex`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to determine which dimension is currently active.
 
 ```c#
 // If using SelectionMode = Multi-dimension (i.e Dimensions >= 3)
@@ -319,7 +319,7 @@ interactable.TriggerOnClick()
 
 ### Interactable events via code
 
-One can add an action to the base [`Interactable.OnClick`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.OnClick?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) event via code with the following example.
+One can add an action to the base [`Interactable.OnClick`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.OnClick?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) event via code with the following example.
 
 ```c#
 public static void AddOnClick(Interactable interactable)
@@ -328,9 +328,9 @@ public static void AddOnClick(Interactable interactable)
 }
 ```
 
-Use the [`Interactable.AddReceiver<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) function to add event receivers dynamically at runtime.
+Use the [`Interactable.AddReceiver<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) function to add event receivers dynamically at runtime.
 
-The example code below demonstrates how to add an [InteractableOnFocusReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true), which listens for focus enter/exit, and furthermore define action code to perform when the event instances fire.
+The example code below demonstrates how to add an [InteractableOnFocusReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), which listens for focus enter/exit, and furthermore define action code to perform when the event instances fire.
 
 ```c#
 public static void AddFocusEvents(Interactable interactable)
@@ -342,7 +342,7 @@ public static void AddFocusEvents(Interactable interactable)
 }
 ```
 
-The example code below demonstrates how to add an [InteractableOnToggleReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true), which listens for selected/deselected state transitions on toggle-able *Interactables*, and furthermore defines action code to perform when the event instances fire.
+The example code below demonstrates how to add an [InteractableOnToggleReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), which listens for selected/deselected state transitions on toggle-able *Interactables*, and furthermore defines action code to perform when the event instances fire.
 
 ```c#
 public static void AddToggleEvents(Interactable interactable)

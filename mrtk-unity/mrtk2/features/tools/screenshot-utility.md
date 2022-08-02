@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Screenshot utility &#8212; MRTK2
 
-Often taking screenshots in Unity for documentation and promotional imagery can be burdensome and the output often looks less than desirable. This is where the [`ScreenshotUtility`](xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.ScreenshotUtility?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class comes into play.
+Often taking screenshots in Unity for documentation and promotional imagery can be burdensome and the output often looks less than desirable. This is where the [`ScreenshotUtility`](xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.ScreenshotUtility?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class comes into play.
 
 The ScreenshotUtility class aides in taking screenshots via menu items and public APIs within the Unity editor. Screenshots can be captured at various resolutions and with transparent clear colors for use in easy post compositing of images. Taking screenshots from a standalone build is not supported by this tool.
 

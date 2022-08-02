@@ -21,7 +21,7 @@ Three key steps are required to listen for touch and/or grab input events on a p
 
 1. Ensure a [SpherePointer](pointers.md#spherepointer) is registered in the *MRTK Pointer profile*.
 
-    The default MRTK profile and the default HoloLens 2 profile already contain a *SpherePointer*. One can confirm a SpherePointer will be created by selecting the MRTK Configuration Profile and navigating to **Input** > **Pointers** > **Pointer Options**. The default `GrabPointer` prefab (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) should be listed with a *Controller Type* of *Articulated Hand*. A custom prefab can be utilized as long as it implements the [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class.
+    The default MRTK profile and the default HoloLens 2 profile already contain a *SpherePointer*. One can confirm a SpherePointer will be created by selecting the MRTK Configuration Profile and navigating to **Input** > **Pointers** > **Pointer Options**. The default `GrabPointer` prefab (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) should be listed with a *Controller Type* of *Articulated Hand*. A custom prefab can be utilized as long as it implements the [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
     ![Grab Pointer Profile Example](../images/input/Pointers/GrabPointer_MRTKProfile.png)
 
@@ -29,15 +29,15 @@ Three key steps are required to listen for touch and/or grab input events on a p
 
     ![Conical Grab Pointer](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
 
-1. On the GameObject that should be grabbable, add a [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true), as well as a collider.
+1. On the GameObject that should be grabbable, add a [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), as well as a collider.
 
     Make sure the layer of the GameObject is on a grabbable layer. By default, all layers except *Spatial Awareness* and *Ignore Raycasts* are grabbable. See which layers are grabbable by inspecting the *Grab Layer Masks* in your *GrabPointer* prefab.
 
-1. On the GameObject or one of its ancestors, add a script component that implements the [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface. Any ancestor of the object with the [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will be able to receive pointer events, as well.
+1. On the GameObject or one of its ancestors, add a script component that implements the [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface. Any ancestor of the object with the [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will be able to receive pointer events, as well.
 
 ### Grab code example
 
-Below is a script that will print if an event is a touch or grab. In the relevant *IMixedRealityPointerHandler* interface function, one can look at the type of pointer that triggers that event via the [`MixedRealityPointerEventData`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerEventData?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true). If the pointer is a *SpherePointer*, the interaction is a grab.
+Below is a script that will print if an event is a touch or grab. In the relevant *IMixedRealityPointerHandler* interface function, one can look at the type of pointer that triggers that event via the [`MixedRealityPointerEventData`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerEventData?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). If the pointer is a *SpherePointer*, the interaction is a grab.
 
 ```c#
 public class PrintPointerEvents : MonoBehaviour, IMixedRealityPointerHandler
@@ -66,7 +66,7 @@ The process for adding touch interactions on UnityUI elements is different than 
 
 For **both** types of UX elements though, ensure a [PokePointer](pointers.md#pokepointer) is registered in the *MRTK Pointer profile*.
 
-The default MRTK profile and the default HoloLens 2 profile already contain a *PokePointer*. One can confirm a PokePointer will be created by selecting the MRTK Configuration Profile and navigate to **Input** > **Pointers** > **Pointer Options**. The default `PokePointer` (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) prefab should be listed with a *Controller Type* of *Articulated Hand*. A custom prefab can be utilized as long as it implements the [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class.
+The default MRTK profile and the default HoloLens 2 profile already contain a *PokePointer*. One can confirm a PokePointer will be created by selecting the MRTK Configuration Profile and navigate to **Input** > **Pointers** > **Pointer Options**. The default `PokePointer` (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) prefab should be listed with a *Controller Type* of *Articulated Hand*. A custom prefab can be utilized as long as it implements the [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
 ![Poke Pointer Profile Example](../images/input/Pointers/PokePointer_MRTKProfile.png)
 
@@ -85,9 +85,9 @@ that the game object has a BoxCollider. it's possible to use this with non-BoxCo
 case the 'Bounds' and 'Local Center' properties much be manually set to configure the touchable plane (i.e.
 Bounds should be set to a non-zero-zero value).
 
-1. On the GameObject that should be touchable, add a BoxCollider and a [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component.
+1. On the GameObject that should be touchable, add a BoxCollider and a [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component.
 
-    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface in your
+    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface in your
        component script below.
 
     1. Click **Fix bounds** and **Fix center**
@@ -95,8 +95,8 @@ Bounds should be set to a non-zero-zero value).
     ![NearInteractionTouchable Setup](../images/input/Pointers/NearInteractionTouchableSetup.gif)
 
 1. On that object or one of its ancestors, add a script component that implements the
-   [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-   interface. Any ancestor of the object with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will be able to receive
+   [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+   interface. Any ancestor of the object with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will be able to receive
    pointer events, as well.
 
 > [!NOTE]
@@ -109,35 +109,35 @@ This is useful to enable situations where the game object needs to be touchable 
 face. For example, this can be used to enable touch interactions for an object with a SphereCollider, where
 the entire collider needs to be touchable.
 
-1. On the GameObject that should be touchable, add a collider and a [`NearInteractionTouchableVolume`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableVolume?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component.
+1. On the GameObject that should be touchable, add a collider and a [`NearInteractionTouchableVolume`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableVolume?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component.
 
-    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface in your component
+    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface in your component
        script below.
 
 1. On that object or one of its ancestors, add a script component that implements the
-   [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-   interface. Any ancestor of the object with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will be able to receive
+   [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+   interface. Any ancestor of the object with the [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will be able to receive
    pointer events, as well.
 
 ### Unity UI
 
 1. Add/ensure there is a [UnityUI canvas](https://docs.unity3d.com/Manual/UICanvas.html) in the scene.
 
-1. On the GameObject that should be touchable, add a [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component.  
+1. On the GameObject that should be touchable, add a [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component.  
 
-    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface in your component script below.
+    1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface in your component script below.
 
-1. On that object or one of its ancestors, add a script component that implements the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface. Any ancestor of the object with the [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will be able to receive pointer events as well.
+1. On that object or one of its ancestors, add a script component that implements the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface. Any ancestor of the object with the [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will be able to receive pointer events as well.
 
 > [!IMPORTANT]
 > Objects may not behave as expected if they are located on overlapping canvas objects. To ensure consistent behavior, never overlap canvas objects in your scene.
 
 > [!IMPORTANT]
-> On the `NearInteractionTouchable` script component, for the property *Events to Receive* there are two options: *Pointer* and *Touch*. Set *Events to Receive* to *Pointer* if using the [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface and set to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface in your component script that responds/handles the input events.
+> On the `NearInteractionTouchable` script component, for the property *Events to Receive* there are two options: *Pointer* and *Touch*. Set *Events to Receive* to *Pointer* if using the [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface and set to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface in your component script that responds/handles the input events.
 
 #### Touch code example
 
-The code below demonstrates a MonoBehaviour that can be attached to a GameObject with a [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) variant component and respond to touch input events.
+The code below demonstrates a MonoBehaviour that can be attached to a GameObject with a [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) variant component and respond to touch input events.
 
 ```c#
 public class TouchEventsExample : MonoBehaviour, IMixedRealityTouchHandler
@@ -204,12 +204,12 @@ public static void MakeNearDraggable(GameObject target)
 
 ## Useful APIs
 
-* [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`NearInteractionTouchableVolume`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableVolume?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
-* [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+* [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`NearInteractionTouchableVolume`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableVolume?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 ## See also
 

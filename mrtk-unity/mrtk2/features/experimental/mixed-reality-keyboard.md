@@ -15,21 +15,21 @@ Note that the system keyboard will behave according to the target platform's cap
 
 ## MixedRealityKeyboard
 
-[`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) is a component that provides methods for launching and closing a system keyboard, as well as interacting with text entered by the keyboard.  
+[`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) is a component that provides methods for launching and closing a system keyboard, as well as interacting with text entered by the keyboard.  
 
 ### How to Use
 
-1. Attach the [`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component to any object.
+1. Attach the [`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component to any object.
 2. Call `ShowKeyboard(string text = "", bool multiLine = false)` `HideKeyboard()` to show and hide the keyboard, and handle the `OnShowKeyboard`, `OnHideKeyboard` and `OnCommitText` events to handle when the keyboard is shown, hidden, and when the enter key is pressed.
 
 ## Input fields TMP_KeyboardInputField, and UI_KeyboardInputField
 
-The [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) classes are components that can be added to text input fields to automatically invoke the system keyboard when clicked and update the text input field contents as the user enters text.
+The [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) classes are components that can be added to text input fields to automatically invoke the system keyboard when clicked and update the text input field contents as the user enters text.
 
 ### How to use
 
 1. Create an input field for either UnityUI or TextMeshPro.
-2. Add the corresponding [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) or [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component to the input field game object.
+2. Add the corresponding [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) or [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component to the input field game object.
 
 Prefabs for both UnityUI input fields and TextMeshPro (TMPro) input fields are available at "Assets\MRTK\Experimental\MixedRealityKeyboard\Prefabs"
 

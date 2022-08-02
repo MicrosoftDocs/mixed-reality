@@ -74,5 +74,5 @@ The quality settings value indicates the graphics quality that Unity should use 
 
 ## See also
 
-- [Camera System API Documentation](xref:Microsoft.MixedReality.Toolkit.CameraSystem?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [Camera System API Documentation](xref:Microsoft.MixedReality.Toolkit.CameraSystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 - [Creating a Camera Settings Provider](create-settings-provider.md)
