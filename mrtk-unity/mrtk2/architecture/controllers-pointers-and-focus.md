@@ -15,7 +15,7 @@ Controllers, pointers, and focus are higher-level concepts that build upon the f
 
 Controllers are representations of a physical controller (6-degrees of freedom, articulated hand, etc). They are created by device managers and are responsible for communicating with the corresponding underlying system and translating that data into MRTK-shaped data and events.a
 
-For example, on the Windows Mixed Reality platform, the [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) is a controller that is responsible for interfacing with the underlying Windows [hand tracking APIs](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) to get information about the joints, pose, and other properties of the hand. It is responsible for turning this data into relevant MRTK events (for example, by calling RaisePoseInputChanged or RaiseHandJointsUpdated) and by updating its own internal state so that queries for [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) will return correct data.
+For example, on the Windows Mixed Reality platform, the [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) is a controller that is responsible for interfacing with the underlying Windows [hand tracking APIs](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) to get information about the joints, pose, and other properties of the hand. It is responsible for turning this data into relevant MRTK events (for example, by calling RaisePoseInputChanged or RaiseHandJointsUpdated) and by updating its own internal state so that queries for [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) will return correct data.
 
 Generally, a controller's lifecycle will involve:
 
@@ -49,16 +49,16 @@ Pointers generally fall into one of the following categories:
 
 Because a single controller can have multiple pointers (for example, the articulated hand can have both near and far interaction pointers), there exists a component that is responsible for mediating which pointer should be active.
 
-For example, as the user’s hand approaches a pressable button, the [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer) should stop showing, and the [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) should be engaged.
+For example, as the user’s hand approaches a pressable button, the [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) should stop showing, and the [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) should be engaged.
 
-This is handled by the [`DefaultPointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator),
-which is responsible for determining which pointers are active, based on the state of all pointers. One of the key things this does is disable far pointers when a near pointer is close to an object (please see [`DefaultPointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator)).
+This is handled by the [`DefaultPointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true),
+which is responsible for determining which pointers are active, based on the state of all pointers. One of the key things this does is disable far pointers when a near pointer is close to an object (please see [`DefaultPointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)).
 
-It's possible to provide an alternate implementation of the pointer mediator by changing the [`PointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerProfile.PointerMediator) property on the pointer profile.
+It's possible to provide an alternate implementation of the pointer mediator by changing the [`PointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerProfile.PointerMediator?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) property on the pointer profile.
 
 ### How to disable pointers
 
-Because the pointer mediator runs every frame, it ends up controlling the active / inactive state of all pointers. Therefore, if you set a pointer's IsInteractionEnabled property in code, it will get overwritten by the pointer mediator every frame. Instead, you can specify the [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior) to control whether pointers should be on or off yourself. Note that this will only work if you are using the default [`FocusProvider`](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider) and [`DefaultPointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator) in MRTK.
+Because the pointer mediator runs every frame, it ends up controlling the active / inactive state of all pointers. Therefore, if you set a pointer's IsInteractionEnabled property in code, it will get overwritten by the pointer mediator every frame. Instead, you can specify the [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to control whether pointers should be on or off yourself. Note that this will only work if you are using the default [`FocusProvider`](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and [`DefaultPointerMediator`](xref:Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) in MRTK.
 
 #### Example: Disable hand rays in MRTK
 
@@ -85,11 +85,11 @@ The following code will force hand rays to be on, regardless if near a grabbable
 PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOn);
 ```
 
-See [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils) and [`TurnPointersOnOff`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.DisablePointersExample) for more examples.
+See [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and [`TurnPointersOnOff`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.DisablePointersExample?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) for more examples.
 
 ### FocusProvider
 
-The [`FocusProvider`](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider) is the workhorse that is responsible for
+The [`FocusProvider`](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) is the workhorse that is responsible for
 iterating over the list of all pointers and figuring out what the focused object is for each pointer.
 
 In each `Update()` call, this will:
@@ -104,7 +104,7 @@ In each `Update()` call, this will:
 
 The lifetime of a pointer is generally the following:
 
-1. A device manager will detect the presence of a controller. This device manager will then create the set of pointers associated with the controller via a call to [`RequestPointers`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager).
+1. A device manager will detect the presence of a controller. This device manager will then create the set of pointers associated with the controller via a call to [`RequestPointers`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
 
 2. The FocusProvider, in its Update() loop, will iterate over all of the valid pointers and do the associated raycast or hit detection logic. This is used to determine the object that is focused by each particular pointer.
 

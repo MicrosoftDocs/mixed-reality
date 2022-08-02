@@ -19,7 +19,7 @@ Examples of how to use progress indicators can be found in the `ProgressIndicato
 
 ## Example: Open, update & close a progress indicator
 
-Progress indicators implement the [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator) interface. This interface can be retrieved from a GameObject using `GetComponent`.
+Progress indicators implement the [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface. This interface can be retrieved from a GameObject using `GetComponent`.
 
 ```c#
 [SerializedField]

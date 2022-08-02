@@ -33,7 +33,7 @@ You can also check out, how the input profile _EyeTrackingDemoPointerProfile_ fr
 
 ### How to keep gaze pointer always on
 
-To avoid having the head or eye gaze pointers automatically suppressed once a hand is detected, the gaze [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior) can be specified to control whether it should be on or off.
+To avoid having the head or eye gaze pointers automatically suppressed once a hand is detected, the gaze [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) can be specified to control whether it should be on or off.
 
 ```c#
 // Turn on gaze pointer

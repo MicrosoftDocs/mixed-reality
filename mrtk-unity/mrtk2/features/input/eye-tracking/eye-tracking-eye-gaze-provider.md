@@ -14,7 +14,7 @@ Accessing eye tracking data in a MonoBehaviour script is easy! Simply use *CoreS
 
 ## IMixedRealityEyeGazeProvider
 
-Eye tracking configuration in MRTK is configured via the [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) interface. Using [CoreServices.InputSystem.EyeGazeProvider](eye-tracking-eye-gaze-provider.md) provides the default gaze provider implementation registered in the toolkit at runtime.
+Eye tracking configuration in MRTK is configured via the [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface. Using [CoreServices.InputSystem.EyeGazeProvider](eye-tracking-eye-gaze-provider.md) provides the default gaze provider implementation registered in the toolkit at runtime.
 Useful properties of the `EyeGazeProvider` is outlined below.
 
 - **IsEyeTrackingEnabled**:
@@ -47,7 +47,7 @@ Again, if `IsEyeGazeValid` is false, this will be based on the user's *head* gaz
 
 ## Examples for using CoreServices.InputSystem.EyeGazeProvider
 
-Here is an example from the [FollowEyeGaze.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze):
+Here is an example from the [FollowEyeGaze.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true):
 
 - Get the point of a hologram that the user is looking at:
 

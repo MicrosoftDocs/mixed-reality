@@ -23,19 +23,19 @@ The MRTK scrolling object collection is an UX component that enables scrolling o
 ### Setting up the scrolling object
 
 1. Create an empty game object in the scene and change its position to (0, 0, 1).
-1. Add a [scrolling object collection](xref:Microsoft.MixedReality.Toolkit.UI.ScrollingObjectCollection) component to the game object.
+1. Add a [scrolling object collection](xref:Microsoft.MixedReality.Toolkit.UI.ScrollingObjectCollection?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component to the game object.
 
-    When the scrolling object collection is added, a box collider and a [near interaction touchable](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) component will be automatically attached to the root game object. These components allow the scroll object to listen to near and far interaction input events, like a pointer touch or click.  
+    When the scrolling object collection is added, a box collider and a [near interaction touchable](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) component will be automatically attached to the root game object. These components allow the scroll object to listen to near and far interaction input events, like a pointer touch or click.  
 
     The MRTK scrolling object collection has two important elements that are created as child game objects under the root scrolling object hierarchy:
     * `Container` - All scrolling content objects must be children of the container game object.
-    * `Clipping bounds` - If scrolling content masking is enabled, the clipping bounds element ensures that only the scrollable content inside its boundaries is visible. The clipping bounds game object has two components: a disabled box collider and a [clipping box](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox).
+    * `Clipping bounds` - If scrolling content masking is enabled, the clipping bounds element ensures that only the scrollable content inside its boundaries is visible. The clipping bounds game object has two components: a disabled box collider and a [clipping box](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
 
 ![Scrolling object collection elements](../images/scrolling-collection/ScrollingObjectCollection.png)
 
 ### Adding content to the scrolling object
 
-The scrolling object collection can be combined with a [grid object collection](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) to layout content in a grid of aligned elements that have uniform size and spacing.
+The scrolling object collection can be combined with a [grid object collection](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to layout content in a grid of aligned elements that have uniform size and spacing.
 
 1. Create an empty game object as a child of the scroll container.
 1. Add a grid object collection component to the game object.
@@ -75,7 +75,7 @@ Notice how the content objects lying outside the scrolling viewable area are now
 
 The MRTK scrolling object collection exposes a few public methods that allow moving the scrolling container by snapping its position according to the `pagination` properties configuration.
 
-An example of how to access the scrolling object collection pagination interface is available to use under the ``MRTK/Examples/Demos/ScrollingObjectCollection/Scripts`` folder. The [scrollable pagination](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.ScrollablePagination) example script can be linked to any existing scrolling object collection in the scene. The script can then be referenced by scene components exposing Unity events (e.g, [MRTK button](button.md)).
+An example of how to access the scrolling object collection pagination interface is available to use under the ``MRTK/Examples/Demos/ScrollingObjectCollection/Scripts`` folder. The [scrollable pagination](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.ScrollablePagination?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) example script can be linked to any existing scrolling object collection in the scene. The script can then be referenced by scene components exposing Unity events (e.g, [MRTK button](button.md)).
 
 ```c#
 public class ScrollablePagination : MonoBehaviour

@@ -49,22 +49,22 @@ visualization turned off in player (because they incur a performance hit).
 
 ## Scripting
 
-Position and rotation can be requested from the input system for each individual hand joint as a [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose).
+Position and rotation can be requested from the input system for each individual hand joint as a [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
 
 Alternatively the system allows access to [GameObjects](https://docs.unity3d.com/ScriptReference/GameObject.html) that follow the joints. This can be useful if another GameObject should track a joint continuously.
 
-Available joints are listed in the [`TrackedHandJoint`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint) enum.
+Available joints are listed in the [`TrackedHandJoint`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) enum.
 
 > [!NOTE]
 > Joint object are destroyed when hand tracking is lost! Make sure that any scripts using the joint object handle the `null` case gracefully to avoid errors!
 
 ### Accessing a given hand controller
 
-A specific hand controller is often available, e.g. when handling input events. In this case the joint data can be requested directly from the device, using the [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) interface.
+A specific hand controller is often available, e.g. when handling input events. In this case the joint data can be requested directly from the device, using the [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface.
 
 #### Polling joint pose from controller
 
-The [`TryGetJoint`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand.TryGetJoint*) function returns `false` if the requested joint is not available for some reason. In that case the resulting pose will be [`MixedRealityPose.ZeroIdentity`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose.ZeroIdentity).
+The [`TryGetJoint`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand.TryGetJoint*?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) function returns `false` if the requested joint is not available for some reason. In that case the resulting pose will be [`MixedRealityPose.ZeroIdentity`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose.ZeroIdentity?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
 
 ```c#
 public void OnSourceDetected(SourceStateEventData eventData)
@@ -82,7 +82,7 @@ public void OnSourceDetected(SourceStateEventData eventData)
 
 #### Joint transform from hand visualizer
 
-Joint objects can be requested from the [controller visualizer](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityController.Visualizer).
+Joint objects can be requested from the [controller visualizer](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityController.Visualizer?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
 
 ```c#
 public void OnSourceDetected(SourceStateEventData eventData)
@@ -104,7 +104,7 @@ If no specific controller is given then utility classes are provided for conveni
 
 #### Polling joint pose from HandJointUtils
 
-[`HandJointUtils`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils) is a static class that queries the first active hand device.
+[`HandJointUtils`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) is a static class that queries the first active hand device.
 
 ```c#
 if (HandJointUtils.TryGetJointPose(TrackedHandJoint.IndexTip, Handedness.Right, out MixedRealityPose pose))
@@ -115,7 +115,7 @@ if (HandJointUtils.TryGetJointPose(TrackedHandJoint.IndexTip, Handedness.Right, 
 
 #### Joint transform from hand joint service
 
-[`IMixedRealityHandJointService`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointService) keeps a persistent set of [GameObjects](https://docs.unity3d.com/ScriptReference/GameObject.html) for tracking joints.
+[`IMixedRealityHandJointService`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointService?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) keeps a persistent set of [GameObjects](https://docs.unity3d.com/ScriptReference/GameObject.html) for tracking joints.
 
 ```c#
 var handJointService = CoreServices.GetInputSystemDataProvider<IMixedRealityHandJointService>();
@@ -132,7 +132,7 @@ The input system provides events as well, if polling data from controllers direc
 
 #### Joint events
 
-[`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) handles updates of joint positions.
+[`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) handles updates of joint positions.
 
 ```c#
 public class MyHandJointEventHandler : IMixedRealityHandJointHandler
@@ -154,7 +154,7 @@ public class MyHandJointEventHandler : IMixedRealityHandJointHandler
 
 #### Mesh events
 
-[`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) handles changes of the articulated hand mesh.
+[`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) handles changes of the articulated hand mesh.
 
 Note that hand meshes are not enabled by default.
 

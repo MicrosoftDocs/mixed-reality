@@ -14,14 +14,14 @@ MixedRealityServiceRegistry and IMixedRealityServiceRegistrar.
 
 ## MixedRealityServiceRegistry
 
-The [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) is
+The [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) is
 the component that contains instances of each registered service (core systems and extension services).
 
 > [!NOTE]
 > The MixedRealityServiceRegistry contains instances of objects that
-implement [IMixedRealityService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) interface, including [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService).
+implement [IMixedRealityService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) interface, including [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true).
 >
->Objects implementing the [IMixedRealityDataProvider](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) (a subclass of IMixedRealityService) are explicitly not registered in the MixedRealityServiceRegistry. These objects are managed by the individual services (ex: Spatial Awareness).
+>Objects implementing the [IMixedRealityDataProvider](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) (a subclass of IMixedRealityService) are explicitly not registered in the MixedRealityServiceRegistry. These objects are managed by the individual services (ex: Spatial Awareness).
 
 The MixedRealityServiceRegistry is implemented as a static C# class and is the recommended pattern to
 use to acquire service instances in application code.
@@ -39,22 +39,22 @@ if (!MixedRealityServiceRegistry.TryGetService<IMixedRealityInputSystem>(out inp
 
 ## IMixedRealityServiceRegistrar
 
-The [IMixedRealityServiceRegistrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar)
+The [IMixedRealityServiceRegistrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
 is the interface that defines the functionality implemented by components that manage the registration
 of one or more services. Components that implement IMixedRealityServiceRegistrar are responsible for
-adding and removing the data within the MixedRealityServiceRegistry. The [MixedRealityToolkit](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit)
+adding and removing the data within the MixedRealityServiceRegistry. The [MixedRealityToolkit](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
 object is one such component.
 
 Other registrars can be found in the MRTK/SDK/Experimental/Features
 folder. These components can be used to add single service (ex: Spatial Awareness) support
 to an application. These single service managers are listed below.
 
-- [BoundarySystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Boundary.BoundarySystemManager)
-- [CameraSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.CameraSystem.CameraSystemManager)
-- [DiagnosticsSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Diagnostics.DiagnosticsSystemManager)
-- [InputSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Input.InputSystemManager)
-- [SpatialAwarenessSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSystemManager)
-- [TeleportSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Teleport.TeleportSystemManager)
+- [BoundarySystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Boundary.BoundarySystemManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [CameraSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.CameraSystem.CameraSystemManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [DiagnosticsSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Diagnostics.DiagnosticsSystemManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [InputSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Input.InputSystemManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [SpatialAwarenessSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSystemManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [TeleportSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Teleport.TeleportSystemManager?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
 
 Each of the above components, with the exception of the InputSystemManager, are responsible for
 managing the registration and status of a single service type. The InputSystem requires some additional
@@ -67,5 +67,5 @@ to behave unpredictably (ex: a cached service instance may become invalid).
 
 ## See also
 
-- [IMixedRealityServiceRegistrar API documentation](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar)
-- [MixedRealityServiceRegistry API documentation](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)
+- [IMixedRealityServiceRegistrar API documentation](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)
+- [MixedRealityServiceRegistry API documentation](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true)

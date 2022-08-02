@@ -417,9 +417,9 @@ The following public properties on the MixedRealityToolkit object have been depr
 
 - `RegisteredMixedRealityServices` no longer contains the collection of registered extensions services and data providers.
 
-To access extension services, use `MixedRealityServiceRegistry.TryGetService<T>`. To access data providers, cast the service instance to [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) and use `GetDataProvider<T>`.
+To access extension services, use `MixedRealityServiceRegistry.TryGetService<T>`. To access data providers, cast the service instance to [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) and use `GetDataProvider<T>`.
 
-Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) or [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) instead for the following deprecated properties
+Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) or [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) instead for the following deprecated properties
 
 - `ActiveSystems`
 - `InputSystem`
@@ -432,7 +432,7 @@ Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRea
 
 **CoreServices**
 
-The [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) class is the replacement for the static system accessors (ex: BoundarySystem) found in the `MixedRealityToolkit` object.
+The [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) class is the replacement for the static system accessors (ex: BoundarySystem) found in the `MixedRealityToolkit` object.
 
 >[!IMPORTANT]
 >The `MixedRealityToolkit` system accessors have been deprecated in version 2.0.0 and will be removed in a future release of MRTK.
@@ -604,7 +604,7 @@ Some solver components and the SolverHandler manager class has changed to fix va
 
 **Buttons**
 
-- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) now has `DistanceSpaceMode` property set to `Local` as default. This allows buttons to be scaled while still be pressable
+- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) now has `DistanceSpaceMode` property set to `Local` as default. This allows buttons to be scaled while still be pressable
 
 **Clipping Sphere**
 
@@ -631,7 +631,7 @@ The `PointerClickHandler` class has been deprecated. The `PointerHandler` should
 
 **HoloLens clicker support**
 
-The HoloLens clicker's controller mappings have changed from being an unhanded [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) to being an unhanded [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand). To account for this, an automatic updater will run the first time you open your ControllerMapping profile. Please open any custom profiles at least once after upgrading to 2.0.0 in order to trigger this one-time migration step.
+The HoloLens clicker's controller mappings have changed from being an unhanded [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true) to being an unhanded [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand?view=mixed-reality-toolkit-unity-2019-dotnet-2.8.0&preserve-view=true). To account for this, an automatic updater will run the first time you open your ControllerMapping profile. Please open any custom profiles at least once after upgrading to 2.0.0 in order to trigger this one-time migration step.
 
 **InteractableHighlight**
 
