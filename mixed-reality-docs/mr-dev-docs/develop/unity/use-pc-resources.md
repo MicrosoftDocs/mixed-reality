@@ -53,7 +53,7 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 
 1. Unselect the **Initialize XR on Startup** check box.
 
-    ![Screenshot of the XR Plug-in Management window with "Initialize XR on Startup" unselected.](images/040-unselect-unit-xr.png)
+    ![Screenshot of the XR Plug-in Management window with "Initialize XR on Startup" unselected.](images/040-unselect-init-xr.png)
 
 1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. To see an example, download our [Open XR Unity Mixed Reality samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) and then, in the **RemotingSample** project, view the **AppRemoting.cs** script.
 
