@@ -63,7 +63,7 @@ Your PC requires a WDDM 2.2 or later graphics driver in order to complete the Wi
 
 Your PC may not have the full-sized video ports and/or USB ports required to connect your HMD. Additionally, you might also need a Bluetooth adapter to meet the [Mixed Reality Portal](https://apps.microsoft.com/store/detail/mixed-reality-portal/9NG1H8B3ZC7M?hl=en-us&gl=US) requirements and successfully connect your HMD and motion controllers to your PC. 
 
-Make sure to review the [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) page to review the list of supported adapter types, information on port compatibility, and recommended adaptor models.
+Make sure to review the [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) page to review the list of supported adapter types, information on port compatibility, and recommended adapter models.
 
 ## Make sure that you have the necessary input devices
 
