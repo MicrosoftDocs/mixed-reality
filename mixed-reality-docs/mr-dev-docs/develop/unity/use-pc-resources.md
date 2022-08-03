@@ -37,7 +37,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 ![Screenshot of the Holographic Remoting Player running in the HoloLens](images/openxr-features-img-01.png)
 
-To use Holographic Remoting in both modes specified above, you need to clone [Holographic Remoting Sample player](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/player/sample/SamplePlayer.sln) and deploy it to HoloLens 2 using Visual Studio.
+To use Holographic Remoting in both modes specified above, you need to clone [Holographic Remoting Sample player](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/player/sample/SamplePlayer.sln) and deploy it to the HoloLens 2 using Visual Studio.
 
 ## Build a remote app running on PC for Holographic Remoting using Unity
 
@@ -84,11 +84,11 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 - In the **Command Line Arguments** field, add "-listen".
 ![har-sample-player-app-listenmode-configuration](images/har-sample-player-listening.png)
 
-- To deploy the SamplePlayer solution on HoloLens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on HoloLens 2, displaying that it is "Waiting for a connection on IP address of HoloLens 2."
+- To deploy the SamplePlayer solution on the HoloLens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on the HoloLens 2, displaying that it is "Waiting for a connection on IP address of the HoloLens 2."
 
 - In the remote app running on the host PC, add the IP address of the HoloLens 2 displayed above and then select **Connect**.
 
-- After the connection is established, the Holographic Remoting Player app running on HoloLens 2 will start "Receiving".
+- After the connection is established, the Holographic Remoting Player app running on the HoloLens 2 will start "Receiving".
 
 ### Mode 2: Run the remote app on your PC in Listen Mode and the HAR player app in Connect Mode:
 
