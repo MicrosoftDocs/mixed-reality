@@ -2419,6 +2419,11 @@
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-sharing-05.md",
 			"redirect_url": "/learn/modules/azure-spatial-anchors-tutorials/",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/unity-play-mode.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-overview",
+			"redirect_document_id": false
 		}
 
 	]
