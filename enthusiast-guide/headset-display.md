@@ -121,7 +121,7 @@ This means that the application isn't able to hit frame rate on your PC and the 
 The system may not be able to render content to the headset, or the tracking system may be experiencing problems:
 
 1. Open Task Manager to make sure that your PC has enough compute resources. You should have 80% of CPU free, 400 MB of RAM, and disk IO should be below 80%.
-2. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-graphics-driver).
+2. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-gpu-driver).
 3. Make sure the room has enough light.
 4. Unplug the device, close Windows Mixed Reality, and plug it in again.
 5. Restart your PC.
