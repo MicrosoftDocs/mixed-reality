@@ -1,6 +1,6 @@
 ---
 title: Before you start
-description: Learn how to make sure your PC is compatible and ready for a variety of Windows Mixed Reality application experiences.
+description: Learn how to make sure your PC is compatible and ready for various Windows Mixed Reality application experiences.
 author: qianw211
 ms.author: qianwen
 ms.date: 8/3/2022
@@ -24,7 +24,7 @@ appliesto:
 
 ## Make sure your PC is compatible with Windows Mixed Reality
 
-Check the [Windows Mixed Reality minimum PC hardware compatability guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) or run the [Windows Mixed Reality Portal](https://apps.microsoft.com/store/detail/mixed-reality-portal/9NG1H8B3ZC7M?hl=en-us&gl=US) app on your PC to check for Windows Mixed Reality compatibility.
+Check the [Windows Mixed Reality minimum PC hardware compatibility guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) or run the [Windows Mixed Reality Portal](https://apps.microsoft.com/store/detail/mixed-reality-portal/9NG1H8B3ZC7M?hl=en-us&gl=US) app on your PC to check for Windows Mixed Reality compatibility.
 
 Read up on [PC compatibility issues](get-help-with-pc-compatibility.md) for more details.
 
@@ -63,7 +63,7 @@ Your PC requires a WDDM 2.2 or later graphics driver in order to complete the Wi
 
 Your PC may not have the full-sized video ports and/or USB ports required to connect your HMD. Additionally, you might also need a Bluetooth adapter to meet the [Mixed Reality Portal](https://apps.microsoft.com/store/detail/mixed-reality-portal/9NG1H8B3ZC7M?hl=en-us&gl=US) requirements and successfully connect your HMD and motion controllers to your PC. 
 
-Make sure to review the [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) page to review the list of supported adapter types, information on port compatability, and recommended adaptor models.
+Make sure to review the [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) page to review the list of supported adapter types, information on port compatibility, and recommended adaptor models.
 
 ## Make sure that you have the necessary input devices
 
@@ -75,7 +75,7 @@ You can also use an Xbox gamepad or a mouse and keyboard.
 
 To safely move around while using Windows Mixed Reality, you'll need to have a large open space for your virtual room boundary.  During initial setup, you'll be asked to choose between "Set me up for all experiences" or "Set me up for seated and standing". Choose "Set me up for all experiences" and set up a room boundary if you plan to move around in room-scale experiences. Review the [Windows Mixed Reality health, safety, and comfort guidelines](wmr-health-safety-comfort.md) to better understand the space requirements.
 
-### Seated and standing (does not require room boundary)
+### Seated and standing (doesn't require room boundary)
 
 If you select "Set me up for seated and standing," you'll be using your HMD without a boundary. This means you'll need to stay in one location when using the HMD to avoid any physical obstacles or potential tripping hazards. You'll still be able to sit down and stand up with this setup, but you shouldn't move around. Certain apps may require a room boundary and might not work or provide the same experience if you attempt to use them without one.
 
