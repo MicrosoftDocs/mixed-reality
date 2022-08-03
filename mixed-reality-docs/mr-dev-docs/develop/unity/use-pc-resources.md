@@ -79,12 +79,14 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 - Open the Holographic Remoting Sample Player app using VS 2019. In order to run on a HoloLens 2 that's attached to your PC using a USB cable, configure as follows:
 ![running-har-sample-player-sol](images/har-sample-player-run-sol.png)
 
-- Open the **Properties** page for your project, navigate to **Configuration Properties** > **Debugging** > **Remote Machine**, and then, in the **Command Line Arguments** field, add "-listen".
+- Open the **Properties** page for your project, and then navigate to **Configuration Properties** > **Debugging**.
+- Click the **Debugger to launch** drop-down, and then select ________ (INTERNAL NOTE: the choices are "Remote Machine" or "Device." The previous instructions said "Remote Machine," but the related image shows "Device." Please clarify which one it is.)
+- In the **Command Line Arguments** field, add "-listen".
 ![har-sample-player-app-listenmode-configuration](images/har-sample-player-listening.png)
 
 - To deploy the SamplePlayer solution on HoloLens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on HoloLens 2, displaying that it is "Waiting for a connection on IP address of HoloLens 2."
 
-- In the remote app running on the host PC, add the IP address of HoloLens 2 displayed above and then select **Connect**.
+- In the remote app running on the host PC, add the IP address of the HoloLens 2 displayed above and then select **Connect**.
 
 - After the connection is established, the Holographic Remoting Player app running on HoloLens 2 will start "Receiving".
 
@@ -95,12 +97,15 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 - Open the Holographic Remoting Sample Player app using VS 2019. In order to run on a HoloLens 2 that's attached to your PC using a USB cable, configure as follows:
 ![running-har-sample-player-sol](images/har-sample-player-run-sol.png)
 
-- Give in the IP address of the host PC as command line argument to the SamplePlayer app. Right click on SamplePlayer project → Properties→ Configuration Properties → Debugging → Command Line Arguments
+- Open the **Properties** page for your project, and then navigate to **Configuration Properties** > **Debugging**.
+- Click the **Debugger to launch** drop-down, and then select ________ (INTERNAL NOTE: the current page doesn't specify which one it should be, but the related image shows "Device." Please clarify which one it is.)
+- In the **Command Line Arguments** field, add the IP address of the host PC.
+
 ![har-sample-player-app-connectmode-configuration](images/har-sample-player-connecting.png)
 
-- To deploy the SamplePlayer solution on HoloLens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on HoloLens 2, displaying that it is "Connecting to IP address given in command line arguments"
+- To deploy the Sample Player solution to the HoloLens 2, in the Visual Studio solution, click the play button. You'll be able to see the HAR Sample player running on the HoloLens 2, displaying that it's "Connecting to IP address given in command line arguments."
 
-- Once the connection is established, the Holographic Remoting Sample Player app running on HoloLens 2 will start "Receiving".
+- After the connection is established, the Holographic Remoting Sample Player app running on the HoloLens 2 will start "Receiving".
 
 > [!TIP]
 > For best results, make sure your app properly sets the [../focus point](focus-point-in-unity.md). This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.
