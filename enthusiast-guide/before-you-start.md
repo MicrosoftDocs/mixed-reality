@@ -77,7 +77,7 @@ To safely move around while using Windows Mixed Reality, you'll need to have a l
 
 ### Seated and standing (doesn't require room boundary)
 
-If you select "Set me up for seated and standing," you'll be using your HMD without a boundary. This means you'll need to stay in one location when using the HMD to avoid any physical obstacles or potential tripping hazards. You'll still be able to sit down and stand up with this setup, but you shouldn't move around. Certain apps may require a room boundary and might not work or provide the same experience if you attempt to use them without one.
+If you select "Set me up for seated and standing," you'll be using your HMD without a room boundary. This means you'll need to stay in one location when using the HMD to avoid any physical obstacles or potential tripping hazards. You'll still be able to sit down and stand up with this setup, but you shouldn't move around. Certain apps may require a room boundary and might not work or provide the same experience if you attempt to use them without one.
 
 ### All experiences (requires room boundary)
 
