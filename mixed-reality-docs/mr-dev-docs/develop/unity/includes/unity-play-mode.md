@@ -51,3 +51,6 @@ The following steps assume that you have already set up your project to use Open
 1. For **Remote Machine**, enter the IP address of your HoloLens.
 1. Select **Connect**. You should see **Connection Status** change to **Connected** and see the screen go blank in the HoloLens.
 1. Select the Play button to start Play Mode and experience the app on your HoloLens. To debug C# scripts in play mode, [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows).
+
+> [!TIP]
+> For best results, make sure your app properly sets the [../focus point](focus-point-in-unity.md). This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.
