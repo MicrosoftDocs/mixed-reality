@@ -29,7 +29,7 @@ The MRTK/Standard shading system is an "uber shader" that uses [Unity's shader p
 
 ## Material inspector
 
-A custom material inspector exists for the MRTK/Standard shader called [`MixedRealityStandardShaderGUI.cs`](xref:Microsoft.MixedReality.Toolkit.Editor.MixedRealityStandardShaderGUI). The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **please hover over each property in the Unity Editor for a tooltip.**
+A custom material inspector exists for the MRTK/Standard shader called [`MixedRealityStandardShaderGUI.cs`](xref:Microsoft.MixedReality.Toolkit.Editor.MixedRealityStandardShaderGUI?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **please hover over each property in the Unity Editor for a tooltip.**
 
 ![Material Inspector](../images/mrtk-standard-shader/MRTK_MaterialInspector.jpg)
 
@@ -103,11 +103,11 @@ After the upgrade occurs, the MRTK/Standard shader will be altered and any magen
 
 ## UGUI support
 
-The MRTK Standard shading system works with Unity's built in [UI system](https://docs.unity3d.com/Manual/UISystem.html). On Unity UI components, the unity_ObjectToWorld matrix is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many MRTK/Standard shader effects require object scale to be known. To solve this issue, the [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) will store scaling information into UV channel attributes during UI mesh construction.
+The MRTK Standard shading system works with Unity's built in [UI system](https://docs.unity3d.com/Manual/UISystem.html). On Unity UI components, the unity_ObjectToWorld matrix is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many MRTK/Standard shader effects require object scale to be known. To solve this issue, the [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will store scaling information into UV channel attributes during UI mesh construction.
 
 Note, when using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
 
-A Canvas within MRTK will prompt for the addition of a [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) when one is required:
+A Canvas within MRTK will prompt for the addition of a [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) when one is required:
 
 ![scale mesh effect](../images/mrtk-standard-shader/MRTK_ScaleMeshEffect.jpg)
 
@@ -148,7 +148,7 @@ Many mesh outline techniques are done using a [post processing](https://docs.uni
 
 <img src="../images/mrtk-standard-shader/MRTK_MeshOutline.jpg" width="900" alt="Mesh Outline">
 
-[`MeshOutline.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutline) and [`MeshOutlineHierarchy.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutlineHierarchy) can be used to render an outline around a mesh renderer. Enabling this component introduces an additional render pass of the object being outlined, but is designed to run performantly on mobile Mixed Reality devices and does not utilize any post processes. Limitations of this effect include it not working well on objects which are not watertight (or required to be two sided) and depth sorting issues can occur on overlapping objects.
+[`MeshOutline.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutline?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`MeshOutlineHierarchy.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutlineHierarchy?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can be used to render an outline around a mesh renderer. Enabling this component introduces an additional render pass of the object being outlined, but is designed to run performantly on mobile Mixed Reality devices and does not utilize any post processes. Limitations of this effect include it not working well on objects which are not watertight (or required to be two sided) and depth sorting issues can occur on overlapping objects.
 
 The outline behaviors are designed to be used in conjunction with the MRTK/Standard shader. Outline materials are usually a solid unlit color, but can be configured to achieve a wide array of effects. The default configuration of a outline material is as follows:
 
@@ -156,13 +156,13 @@ The outline behaviors are designed to be used in conjunction with the MRTK/Stand
 
 1. Depth Write - should be disabled for outline materials to make sure the outline does not prevent other objects from rendering.
 2. Vertex Extrusion - needs to be enabled to render the outline.
-3. Use Smooth Normals - this setting is optional for some meshes. Extrusion occurs by moving a vertex along a vertex normal, on some meshes extruding along the default normals will cause discontinuities in the outline. To fix these discontinuities, you can check this box to use another set of smoothed normals which get generated by [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother)
+3. Use Smooth Normals - this setting is optional for some meshes. Extrusion occurs by moving a vertex along a vertex normal, on some meshes extruding along the default normals will cause discontinuities in the outline. To fix these discontinuities, you can check this box to use another set of smoothed normals which get generated by [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
-[`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother) is a component which can be used to automatically generate smoothed normals on a mesh. This method groups vertices in a mesh that share the same location in space then averages the normals of those vertices. This process creates a copy of the underlying mesh and should be used only when required.
+[`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) is a component which can be used to automatically generate smoothed normals on a mesh. This method groups vertices in a mesh that share the same location in space then averages the normals of those vertices. This process creates a copy of the underlying mesh and should be used only when required.
 
 <img src="../images/mrtk-standard-shader/MRTK_SmoothNormals.jpg" width="450" alt="Smooth Normals Outline">
 
-1. Smooth normals generated via [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother).
+1. Smooth normals generated via [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 2. Default normals used, notice the artifacts around the cube corners.
 
 ### Stencil testing

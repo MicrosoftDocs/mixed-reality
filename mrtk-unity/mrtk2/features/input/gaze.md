@@ -32,7 +32,7 @@ to use eye gaze.
 ## GazeProvider
 
 Gaze functionality (both head and eye) is provided by the
-[GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.GazeProvider). This provider can be configured
+[GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.GazeProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). This provider can be configured
 in the *Pointer* section of the input system profile:
 
 ![Gaze Configuration Entrypoint](../images/input/GazeConfigurationEntrypoint.png)
@@ -44,8 +44,8 @@ and is not configured through a profile.
 
 It is possible to replace the stock GazeProvider with an alternate implementation by changing
 *Gaze Provider Type* to reference a different class that implements
-[IMixedRealityGazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider)
-and [IMixedRealityEyeGazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider).
+[IMixedRealityGazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+and [IMixedRealityEyeGazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 It's generally recommended to use the stock GazeProvider (and filing issues in when finding
 bugs) as re-implementing the GazeProvider is non-trivial.
 
