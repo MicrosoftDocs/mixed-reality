@@ -130,7 +130,7 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/markdown-reference)
 
 ### Adding tables
 
