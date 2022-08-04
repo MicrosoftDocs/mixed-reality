@@ -96,10 +96,10 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
     ![Screen shot of the Visual Studio build settings for if the user building to the HoloLens using Wifi.](images/041-build-settings-for-wifi.png)
 
     - Open the **Properties** page for the project, and then navigate to **Configuration Properties** > **Debugging**.
-    - Click the **Debugger to launch** drop-down, and then select **Device**.
-    - In the **Command Line Arguments** field, add "-listen".
+    - Click the **Debugger to launch** drop-down, and then select **Remote Machine**.
+    - In the **Command Line Arguments** field, add the Wifi IP address of the HoloLens.
 
-    ![Screen shot of the Machine Name build settings for if the user building to the HoloLens using Wifi.](images/042-connect-via-wifi.png)
+    ![Screen shot of the Machine Name build settings for if the user building to the HoloLens using Wifi.](images/043-ip-address-host-machine.png)
 
 1. To deploy the SamplePlayer solution to the HoloLens 2, press the play button in Visual Studio. You'll be able to see the HAR Sample player running on HoloLens 2, displaying that it's "Waiting for a connection on IP address of HoloLens 2."
 
