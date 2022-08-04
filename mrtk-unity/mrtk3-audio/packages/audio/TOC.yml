@@ -3,4 +3,6 @@
 - name: Release notes
   href: release-notes.md
 - name: Known issues
-  href: known-issues.md  
+  href: known-issues.md
+- name: API reference
+  href: https://aka.ms/mrtk3audioapi

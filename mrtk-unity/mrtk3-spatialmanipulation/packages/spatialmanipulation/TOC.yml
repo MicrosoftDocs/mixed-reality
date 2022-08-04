@@ -8,3 +8,5 @@
   href: object-manipulator.md
 - name: Solvers
   href: solvers/TOC.yml
+- name: API reference
+  href: https://aka.ms/mrtk3spmanipapi
