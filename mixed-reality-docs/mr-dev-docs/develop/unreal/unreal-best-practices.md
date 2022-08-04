@@ -2,7 +2,7 @@
 title: General best practices
 description: Stay up to date on all the recommended best practices for developing mixed reality applications in Unreal engine.
 author: hferrone
-ms.author: safarooq
+ms.author: vinnietieto
 ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
