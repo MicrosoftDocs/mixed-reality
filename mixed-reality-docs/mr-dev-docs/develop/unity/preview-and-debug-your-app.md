@@ -3,7 +3,7 @@ title: Preview and debug your app with Holographic Remoting for Play mode
 description: Use Holographic Remoting for Play mode to preview and debug your app
 author: vtieto
 ms.author: vinnietieto
-ms.date: 08/01/2022
+ms.date: 08/04/2022
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
 ---
@@ -34,19 +34,19 @@ The following steps assume that you have already set up your project to use Open
 1. On your HoloLens 2, launch and play the Player. Note that on the Start menu, the tile for the Player says **Holographic Remoting**. After launching the Player, make sure to press the "Play" button which appears in the middle of the Player's interface. 
 1. In Unity, on the menu bar, select **Mixed Reality** > **Remoting** > **Holographic remoting for play mode**.
 
-    ![Screenshot of project settings panel open in the Unity Editor with XR Plug-in management highlighted.](../images/openxr-features-img-02.png)
+    ![Screenshot of project settings panel open in the Unity Editor with XR Plug-in management highlighted.](images/openxr-features-img-02.png)
 
 1. In the **Holographic Remoting for Play Mode** window, in the **Remote Host Name** box, enter the IP address of your HoloLens 2.
 
     > [!TIP]
     > The IP address of your HoloLens 2 can be found on the first screen of the Player after you click "Play" to start it.
 
-    ![Screenshot of the Holographic Remoting Player running on the HoloLens 2 with IP address circled.](../images/openxr-features-img-06.png)
+    ![Screenshot of the Holographic Remoting Player running on the HoloLens 2 with IP address circled.](images/openxr-features-img-06.png)
 
 1. Change other settings as needed.
 1. Click the **Enable Holographic Remoting for Play Mode** button.
 
-    ![Screenshot of the Holographic Remoting for Play Mode window.](../images/openxr-features-img-07.png)
+    ![Screenshot of the Holographic Remoting for Play Mode window.](images/openxr-features-img-07.png)
 
 1. Select the Play button to enter Play Mode, and then view the app in your HoloLens 2.
 
