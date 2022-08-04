@@ -24,5 +24,7 @@
   href: roadmap.md
 - name: Contributing
   href: contributing/toc.yml
+- name: API reference
+  href: https://aka.ms/mrtk2api
 - name: MRTK3 (Public Preview)
   href: ../mrtk3-overview/index.md

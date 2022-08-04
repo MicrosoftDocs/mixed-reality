@@ -4,3 +4,5 @@
   href: known-issues.md
 - name: Release notes
   href: release-notes.md
+- name: API reference
+  href: https://aka.ms/mrtk3winspeechapi

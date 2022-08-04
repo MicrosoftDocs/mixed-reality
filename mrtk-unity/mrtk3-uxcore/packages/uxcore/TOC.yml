@@ -4,3 +4,5 @@
   href: canvas-ui.md
 - name: State visualizer
   href: state-visualizer.md
+- name: API reference
+  href: https://aka.ms/mrtk3uxcoreapi
