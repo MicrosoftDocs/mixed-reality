@@ -2422,7 +2422,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/unity-play-mode.md",
-			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-overview",
+			"redirect_url": "/windows/mixed-reality/develop/unity/preview-and-debug-your-app",
 			"redirect_document_id": false
 		}
 
