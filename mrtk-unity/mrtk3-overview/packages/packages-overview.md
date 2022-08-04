@@ -12,9 +12,6 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, packag
 
 Microsoft MRTK3 is distributed as a set of packages that are imported into Unity using the Mixed Reality Feature Tool for Unity and the Unity Package Manager (UPM). These packages enable developers to customize the MRTK within their projects.
 
-> [!Note]
-> For the MRTK3 Private Preview, the Mixed Reality Feature Tool won't be used. For more information on importing MRTK packages, please review [Initial setup](../setup.md).
-
 ## Dependencies
 
 Some MRTK3 packages require additional packages, provided by Microsoft and/or Unity, in order to correctly function. Some of these packages are optional and will enable additional functionality.
