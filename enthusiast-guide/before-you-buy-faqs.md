@@ -87,7 +87,7 @@ Find out more about [inside-out tracking](./tracking-system.md).
 | Lenovo Explorer | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Lenovo](https://support.lenovo.com/us/en/solutions/pd500067-overview-for-lenovo-explorer) |
 | Medion ERAZER MR X1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Medion](https://www.medion.com/de/shop/p/gaming-zubehoer-medion-erazer-x1000-mr-glasses-inkl-2-motion-controller-7-34-cm-2-89--lc-display-gaming-zubehoer-bis-zu-105-sichtfeld-2-kameras-zur-bewegungserfassung-30023616A1?clear=true#specs) |
 | Samsung HMD Odyssey | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | None | Mechanical | Fall 2017 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-mixed-reality/) |
-| Samsung HMD Odyssey+ | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | Built-in | Mechanical | Fall 2018 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-plus-mixed-reality//hmd-odyssey-windows-mixed-reality-headset-xe800zba-hc1us/)  |
+| Samsung HMD Odyssey+ | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | Built-in | Mechanical | Fall 2018 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-plus-mixed-reality/)  |
 | 3Glasses Blubur S2 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [3Glasses](http://3glasses.com/goods.action?gid=30) |
 
 Technical details listed above are referenced from manufacturer specifications and are subject to change.

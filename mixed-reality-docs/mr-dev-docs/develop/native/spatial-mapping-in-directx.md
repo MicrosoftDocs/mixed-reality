@@ -245,7 +245,7 @@ Our code sample is also configured to respond to these events. Let's walk throug
 
 **NOTE:** This might not be the most efficient way for your app to handle mesh data. This code is written for clarity and isn't optimized.
 
-The surface mesh data is provided in a read-only map that stores [SpatialSurfaceInfo](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) objects using [Platform::Guids](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx) as key values.
+The surface mesh data is provided in a read-only map that stores [SpatialSurfaceInfo](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) objects using Platform::Guids as key values.
 
 ```cpp
 IMapView<Guid, SpatialSurfaceInfo^>^ const& surfaceCollection = sender->GetObservedSurfaces();

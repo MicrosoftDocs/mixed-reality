@@ -159,7 +159,7 @@ Designing without a cursor is recommended when the sense of immersion is a key c
 
 ## Cursor in MRTK (Mixed Reality Toolkit) for Unity
 
-By default, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides a cursor prefab([DefaultCursor.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) which has the same visual state as the shell's system cursor. It's assigned in MRTK's Input profile, under Pointers. You can replace/customize this cursor for your experience. For the experience with eye-tracking input, MRTK also provides EyeGazeCursor, which has subtle visual to minimize the distraction.
+By default, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides a cursor prefab([DefaultCursor.prefab](/windows/mixed-reality/design/cursors)) which has the same visual state as the shell's system cursor. It's assigned in MRTK's Input profile, under Pointers. You can replace/customize this cursor for your experience. For the experience with eye-tracking input, MRTK also provides EyeGazeCursor, which has subtle visual to minimize the distraction.
 
 * [MRTK - Pointer profile](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
 * [MRTK - Input system](/windows/mixed-reality/mrtk-unity/features/input/overview)
