@@ -20,14 +20,15 @@ To learn more about Holographic Remoting, see [Holographic Remoting Overview](..
 
 Note that you can also use Holographic Remoting if [you want to preview and debug your app during the development process](preview-and-debug-your-app.md).
 
-## Two modes in Holographic Remoting are available
+## Two available modes in Holographic Remoting
 
-|Mode   |Remote App running on PC        | Holographic Remoting player app running on HoloLens 2|
-|-------|--------------------------------|------------------------------------------------------|
-|Mode 1 |Connect mode                    |   Listen mode                                        |
-|Mode 2 |Listen mode                     |   Connect mode                                       |
+**Mode 1: Remote app running on PC in Connect mode, Player running on the HoloLens 2 in Listen mode.**
 
+The Player listens to the incoming connections while the remote app tries to connect.
 
+**Mode 2: Remote app running on PC in Listen mode, Player running on the HoloLens 2 in connect mode.**
+
+The remote app listens for incoming connections while the Player tries to connect.
 
 ## Set up the Holographic Remoting Player app
 
