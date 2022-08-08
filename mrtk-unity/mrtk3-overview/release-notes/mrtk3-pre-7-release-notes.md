@@ -15,9 +15,9 @@ Hello reality mixers!
 
 We're pleased to announce the `pre.7` release for MRTK3. It's a snapshot of all MRTK3 packages as of... right now, and is available as a numbered `pre.7` release on the MR Feature Tool. 
 
-I wanted to take a moment to thank everyone who's with us on this exciting public preview journey, both those who are taking the leap early and trying out the future of MRTK, as well as those who have been actively reporting issues, engaging in discussion, and even contributing some fixes back already! We definitely didn't expect such amazing community engagement this early on in the MRTK3 journey, and so we're extremely grateful and excited to be working with you all.
+I wanted to take a moment to thank everyone who's with us on this exciting public preview journey, both those who are taking the leap early and trying out the future of MRTK, as well as those who have been actively reporting issues, engaging in discussion, and even contributing some fixes back already! We definitely didn't expect such amazing community engagement this early on in the MRTK3 journey, and so we're grateful and excited to be working with you all.
 
-A note on versioning: as a reminder, we are *currently* versioning all MRTK3 packages in lockstep as we release this private preview updates, but in the near future/GA we will be moving to independent semantically versioned packages; so, don't be too worried if suddenly your version numbers stop lining up! We intend for this to more clearly communicate patch/minor/breaking changes, and make the inter-package dependencies clearer and less directly coupled.
+A note on versioning: as a reminder, we are *currently* versioning all MRTK3 packages in lockstep as we release this private preview update, but in the near future/GA we will be moving to independent semantically versioned packages. So, don't be too worried if suddenly your version numbers stop lining up! We intend for this versioning scheme to more clearly communicate patch/minor/breaking changes, and make the inter-package dependencies clearer and less directly coupled.
 
 With that out of the way, let's talk about everything we've added/fixed/changed since the last public preview release!
 
@@ -49,11 +49,11 @@ With that out of the way, let's talk about everything we've added/fixed/changed 
 
 All of the existing known issues in the docs should still apply. In addition, check the current issue board and filter by `label:MRTK3` for active MRTK3 issues.
 
-The most notable issue that folks will see is that Quest still lacks proper Grab/Select actions when using hand tracking. We're actively working on this, but it requires both some changes on the MR OpenXR plugin side as well as some changes on our side (#10749). Stay tuned!
+The most notable issue that folks will see is that Quest still lacks proper Grab/Select actions when using hand tracking. We're actively working on this issue, but it requires both some changes on the MR OpenXR plugin side and some changes on our side (#10749). Stay tuned!
 
 ## Breaking changes
 
-The only breaking change for this release is the formatting of the `TrackedHandJoint` enum. We've reshuffled some of the indices to match OpenXR format, so please check your indices and makes sure they point to the joint(s) you actually want!
+The only breaking change for this release is the formatting of the `TrackedHandJoint` enum. We've reshuffled some of the indices to match OpenXR format, so check your indices and makes sure they point to the joint(s) you actually want!
 
 ## Thanks!
 
