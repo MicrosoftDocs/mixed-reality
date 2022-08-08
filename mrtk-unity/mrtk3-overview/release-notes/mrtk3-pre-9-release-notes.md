@@ -17,7 +17,7 @@ As always, a huge thank-you to all of the intrepid MR enthusiasts and developers
 
 Today's update has some nice bug fixes, better defaults for the sample project, and fully functional interactions with Quest hand tracking. As of this release, you should have full-functional hand rays, grabbing, and poking on Quest, essentially at parity with HoloLens 2. You may notice slightly more wobbly hand rays on Quest; we're actively working on improving our ray fallback.
 
-# Changelog
+## Changelog
 ### [pre.9] - 2022-08-03 - `2ed522e`
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
