@@ -15,7 +15,7 @@
 - name: Known issues
   href: known-issues.md
 - name: Release notes
-  href: release-notes.md
+  href: release-notes/toc.yml
 - name: API reference
   href: api-reference.md
 - name: MRTK2.x documentation
