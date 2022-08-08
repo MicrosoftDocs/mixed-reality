@@ -10,4 +10,4 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, known 
 
 # Known issues &#8212; MRTK3
 
-For known issues in MRTK3 public preview, please refer to [the issues page](https://github.com/microsoft/MixedRealityToolkit-Unity/issues) of our GitHub repo.
+For known issues in MRTK3 public preview, refer to [the issues page](https://github.com/microsoft/MixedRealityToolkit-Unity/issues) of our GitHub repo.
