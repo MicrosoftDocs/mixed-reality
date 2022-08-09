@@ -7,7 +7,10 @@ ms.date: 08/08/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, MRTK3 preview, MRTK3 public preview, changelog, MRTK3 changelog
 ---
 
-# Changelog for MRTK3 pre.7 - 2022-07-18
+# Changelog for MRTK3 pre.7
+
+## [pre.7] - 2022-07-18
+
 The release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/10760) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
 -  [Our first community contribution!] Fixed `WindowsPhraseRecognitionSubsystem` going into an endless Destroy/Start loop (#10632, thanks @LocalJoost!)
