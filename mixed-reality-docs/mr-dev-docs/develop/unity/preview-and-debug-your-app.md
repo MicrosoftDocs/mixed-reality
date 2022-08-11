@@ -28,7 +28,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 # [Unity 2020 + OpenXR](#tab/openxr)
 
-The following steps assume that you have already set up your project to use OpenXR (in other words, you've imported the required packages and chosen settings for the OpenXR plug-in). If you haven't yet done this, see our articles describing how to set up a new OpenXR project [with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk) or [without it](/windows/mixed-reality/develop/unity/new-openxr-project-without-mrtk).
+The following steps assume that you have already set up your project to use OpenXR (in other words, you've imported the required packages and chosen settings for the OpenXR plug-in). If you haven't yet done this, see our articles describing how to set up a new OpenXR project [with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk) or [without MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-without-mrtk).
 
 1. On your HoloLens 2, go to the **Microsoft Store** and install the [Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)**.
 1. On your HoloLens 2, launch and play the Player. Note that on the Start menu, the tile for the Player says **Holographic Remoting**. After launching the Player, make sure to press the "Play" button which appears in the middle of the Player's interface. 
