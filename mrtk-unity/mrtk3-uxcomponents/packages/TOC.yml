@@ -22,6 +22,8 @@
   href: ../../mrtk3-spatialmanipulation/packages/spatialmanipulation/overview.md
 - name: Standard assets
   href: ../../mrtk3-standardassets/packages/standardassets/overview.md
+- name: Tools
+  href: ../../mrtk3-tools/packages/tools/overview.md
 - name: UX components
   href: uxcomponents/toc.yml
 - name: UX core

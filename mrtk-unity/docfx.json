@@ -130,6 +130,8 @@
         "./mrtk3-spatialmanipulation/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-spatialmanipulation/breadcrumb/toc.json",
         "./mrtk3-standardassets/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-standardassets/breadcrumb/toc.json",
         "./mrtk3-standardassets/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-standardassets/breadcrumb/toc.json",
+        "./mrtk3-tools/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-tools/breadcrumb/toc.json",
+        "./mrtk3-tools/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-tools/breadcrumb/toc.json",
         "./mrtk3-uxcomponents/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents/breadcrumb/toc.json",
         "./mrtk3-uxcomponents/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents/breadcrumb/toc.json",
         "./mrtk3-uxcore/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcore/breadcrumb/toc.json",
