@@ -28,3 +28,31 @@ If you wish to contribute changes to the samples, you must make a temporary loca
 
 >[!TIP]
 > Failing to invoke the **Window > Graphics Tools > Hide Samples** menu item after editing samples will result in git thinking all sample files have changed. Once samples are hidden the actual files changed should be apparent in git.
+
+## Updating the documentation
+
+### API reference documentation
+
+For documentation comments, use the [recommended](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/documentation-comments#d2-introduction) inline style below:
+
+```csharp
+/// <summary>
+/// Class <c>Point</c> models a point in a two-dimensional plane.
+/// </summary>
+public class Point
+{
+    /// <summary>
+    /// Method <c>Draw</c> renders the point.
+    /// </summary>
+    void Draw() {...}
+}
+```
+
+### Conceptual documentation
+
+For updating the conceptual docs, the Mixed Reality docs repository lives [here](https://github.com/MicrosoftDocs/mixed-reality). 
+
+Start by following these [recomendations for contributing to Microsoft docs](https://docs.microsoft.com/en-us/contribute/) and the guide for [Contributing to Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/blob/docs/mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
+
+>[!Tip]
+>Articles related to GraphicsTools can be found in this folder [mixed-reality/mrtk-unity/mrtk3-graphicstools/](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/mrtk-unity/mrtk3-graphicstools)
