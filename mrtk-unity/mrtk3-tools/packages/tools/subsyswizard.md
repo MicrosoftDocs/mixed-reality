@@ -15,7 +15,7 @@ Welcome to the Mixed Reality Toolkit Subsystem Wizard. This tool is used to exte
 > [!NOTE]
 > As a general rule, it is recommended to use subsystems to implement platform or provider abstractions.
 
-To use the Subsystem Wizard, you must first import the MRTK3 Tools package using the [Mixed Reality Feature Tool](todo link).
+To use the Subsystem Wizard, you must first import the MRTK3 Tools package using the [Mixed Reality Feature Tool](https://aka.ms/mrfeaturetool).
 
 ## Getting Started
 
@@ -74,7 +74,11 @@ Once complete, the Subsystem Wizard will list the set of steps required to compl
 
 ### Add your code
 
-todo
+The generated code contains indications of where required (and optional) code should be added. These indicators are in the form of a comment beginning with the word TODO and containing a description of the code to be added. For example:
+
+```c#
+// TODO: Apply the configuration to the provider.
+```
 
 ### Enable the subsystem
 
