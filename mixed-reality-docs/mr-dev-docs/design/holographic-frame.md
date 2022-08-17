@@ -60,15 +60,19 @@ The holographic frame presents a tool for the developer to trigger interactions 
 
 Gaze can also be used to track user attention through an experience and see which objects or parts of the scene the user paid the most attention to. This can be especially use for debugging an experience, allowing for analytical tools like heatmaps to see where users are spending the most time or are missing certain objects or interaction. Gaze tracking can also provide a powerful tool for facilitators in experiences (see the [Lowe's Kitchen](holographic-frame.md#lowes-kitchen) example).
 
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below:
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
+
 <br>
 
 ---
 
 ## Performance
 
-Proper use of the holographic frame is fundamental to the [performance quality](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) experiences. A common technical (and usability) challenge is overloading the user's frame with digital content, causing rendering performance to degrade. Consider instead using the full space around the user to arrange digital content, using the techniques described above, to lessen the burden of rendering and ensure an optimal display quality.
-
-Digital content within the holographic frame of the HoloLens can also be paired with the [stabilization plane](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) for optimal performance and [hologram stability](../develop/platform-capabilities-and-apis/hologram-stability.md).
+Proper use of the holographic frame is fundamental to the [performance quality](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md) experiences. A common technical (and usability) challenge is overloading the user's frame with digital content, causing rendering performance to degrade. Consider instead using the full space around the user to arrange digital content, using the techniques described above, to lessen the burden of rendering and ensure an optimal display quality.
 
 <br>
 
@@ -78,7 +82,7 @@ Digital content within the holographic frame of the HoloLens can also be paired 
 
 ### Volvo Cars
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/DilzwF90vec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="940" height="530" src="https://www.youtube.com/embed/cvLdbpICVGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In the showroom experience from Volvo Cars, customers are invited to learn about a new car's capabilities in a HoloLens experience guided by a Volvo associate. Volvo faced a challenge with the holographic frame: a full-size car is too large to put right next to a user. The solution was to begin the experience with a physical landmark, a central table in the showroom, with a smaller digital model of the car placed on top of the table. This ensures the user is seeing the full car when it's introduced, allowing for a sense of spatial understanding once the car grows to its real-world scale later in the experience.
 
@@ -139,4 +143,4 @@ The realistic representation of Buzz provided a powerful focal point, complete w
 * [Comfort](comfort.md)
 * [Scale](scale.md)
 * [Head-gaze and dwell](gaze-and-dwell.md)
-* [Hologram stability](../develop/platform-capabilities-and-apis/hologram-stability.md)
+* [Hologram stability](../develop/advanced-concepts/hologram-stability.md)

@@ -1,9 +1,9 @@
 ---
 title: Using Microsoft Edge in Windows Mixed Reality
 description: Get ready for the new Microsoft Edge in Windows Mixed Reality. Includes changes to expect, updates to look out for, and known issues.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 11/11/2020
+author: qianw211
+ms.author: qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Navigate, Get around, apps, games, Microsoft Edge, chromium, Edge, 360, 360 video, 360 viewer
 ---
@@ -15,13 +15,13 @@ The [new Microsoft Edge](https://www.microsoft.com/edge) is available for downlo
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) on the desktop. This creates better compatibility for customers and less fragmentation for web developers. It will also support WebXR at launch, which is the new standard for creating immersive web experiences for VR headsets, in place of WebVR.
 
 >[!IMPORTANT]
->When you install Microsoft Edge on an up-to-date Windows 10 device, it will replace the previous (legacy) version on your PC.
+>When you install Microsoft Edge on an up-to-date Windows 10 or Windows 11 device, it will replace the previous (legacy) version on your PC.
 
 ## Installing the new Microsoft Edge 
 
-Before you install the new Microsoft Edge, **upgrade to Windows 10 Version 1903 or later for native Win32 application support like the new Microsoft Edge** in Windows Mixed Reality. Check Windows Update or [manually install the latest version of Windows 10](https://www.microsoft.com/software-download/windows10).
+Before you install the new Microsoft Edge, **upgrade to Windows 10 Version 1903 or later or Windows 11 for native Win32 application support like the new Microsoft Edge** in Windows Mixed Reality. Check Windows Update or [manually install the latest version of Windows 10](https://www.microsoft.com/software-download/windows10) or Windows 11.
 
-Once you have Windows 10 Version 1903 or later, you're ready for the new Microsoft Edge! The new Microsoft Edge is rolling out via Windows Update, but you can manually install the new Microsoft Edge from the [Microsoft Edge website](https://www.microsoft.com/edge) if you want it sooner.
+Once you have Windows 10 Version 1903 or later or Windows 11, you're ready for the new Microsoft Edge! The new Microsoft Edge is rolling out via Windows Update, but you can manually install the new Microsoft Edge from the [Microsoft Edge website](https://www.microsoft.com/edge) if you want it sooner.
 
 >[!IMPORTANT]
 >The new Microsoft Edge launches with support for WebXR, the new standard for creating immersive web experiences for VR headsets. When you install the new Microsoft Edge, you will no longer be able to play WebVR experiences in Microsoft Edge. 
@@ -43,7 +43,7 @@ After taking the 2020-01 Cumulative update for Windows 10 Version 1903 or later,
 
 **Why this happens**
 
-Support for classic Win32 applications in Windows Mixed Reality was introduced with the [Windows 10 May 2019 Update](/windows/mixed-reality/release-notes-may-2019). To enable this support, a virtual monitor must be created to host the Win32 application. Each time a new Win32 application is launched, another virtual monitor has to be created. Unfortunately, creating a virtual monitor is an intensive task that can cause the headset display to briefly freeze. Customers offered feedback that the experience was uncomfortable and disruptive. Because of that feedback, alongside increased usage of Win32 applications, we decided to pre-allocate three virtual monitors during startup of Windows Mixed Reality to prevent this disruption and enable customers to launch up to three concurrent Win32 applications without experiencing the headset display freeze.
+Support for classic Win32 applications in Windows Mixed Reality was introduced with the [Windows 10 May 2019 Update](/windows/mixed-reality/enthusiast-guide/release-notes-may-2019). To enable this support, a virtual monitor must be created to host the Win32 application. Each time a new Win32 application is launched, another virtual monitor has to be created. Unfortunately, creating a virtual monitor is an intensive task that can cause the headset display to briefly freeze. Customers offered feedback that the experience was uncomfortable and disruptive. Because of that feedback, alongside increased usage of Win32 applications, we decided to pre-allocate three virtual monitors during startup of Windows Mixed Reality to prevent this disruption and enable customers to launch up to three concurrent Win32 applications without experiencing the headset display freeze.
 
 **Workaround**
 

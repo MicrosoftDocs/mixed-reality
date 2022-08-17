@@ -1,5 +1,5 @@
 ---
-title: Managed debugging with Unity IL2CPP
+title: Managed debugging with Unity
 description: This article covers how to run a managed debugger on your Unity IL2CPP UWP project.
 author: keveleigh
 ms.author: kurtie
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: unity, visual studio, debugging, il2cpp, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP
 ---
 
-# Managed debugging with Unity IL2CPP
+# Managed debugging with Unity
 
 Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build for HoloLens and HoloLens 2.
 
@@ -36,3 +36,7 @@ Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build f
 10. Select your device in the list and click "OK" to attach.
 
     ![Device List](images/il2cpp-debugging-machines.png)
+
+## See also 
+
+* [C# debugging](/visualstudio/get-started/csharp/tutorial-debugger)

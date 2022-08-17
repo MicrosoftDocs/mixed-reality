@@ -28,8 +28,8 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Spatial mapping</td>
@@ -59,9 +59,17 @@ These volumes may be stationary (in a fixed location based on the real world) or
 
 As the HoloLens gathers new data about the environment, and as changes to the environment occur, spatial surfaces will appear, disappear, and change.
 
+## Spatial Awareness design concepts demo
+
+If you'd like to see Spatial Awareness design concepts in action, check out our **Designing Holograms - Spatial Awareness** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
+
 ## Spatial Mapping vs. Scene Understanding WorldMesh
 
-For HoloLens 2, it's possible to query a static version of the spatial mapping data using [Scene understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two ways of accessing the spatial mapping data:
+For HoloLens 2, it's possible to query a static version of the spatial mapping data using [Scene understanding SDK](../develop/unity/scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two ways of accessing the spatial mapping data:
 * Spatial Mapping API:
    * Limited range: the spatial mapping data available to applications in a limited size cached 'bubble' around the user.
    * Provides low latency updates of changed mesh regions through SurfacesChanged events.
@@ -212,7 +220,7 @@ There are three primary ways in which spatial mapping meshes tend to be used for
    * However, it may be useful to keep certain geometry visible even when it's occluded, and to modify its appearance when occluded as a way of providing visual feedback to the user. For example, this allows the application to show the user the location of an object while making it clear that is behind a real-world surface.
    * To achieve this, render the geometry a second time with a different shader that creates the desired 'occluded' appearance. Before rendering the geometry for the second time, make two changes to your [depth-stencil state](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). First, set the depth function to "greater than or equal" so that the geometry will be visible only where it's **further** from the camera than all previously rendered geometry. Second, set the DepthWriteMask to zero, so that the depth buffer won't be modified (the depth buffer should continue to represent the depth of the geometry **closest** to the camera).
 
-[Performance](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) is an important concern when rendering spatial mapping meshes. Here are some rendering performance techniques specific to rendering spatial mapping meshes:
+[Performance](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md) is an important concern when rendering spatial mapping meshes. Here are some rendering performance techniques specific to rendering spatial mapping meshes:
 * Adjust triangle density
    * When requesting spatial surface meshes from your surface observer, request the lowest density of triangle meshes that will suffice for your needs.
    * It may make sense to vary triangle density on a surface by surface basis, depending on the surface's distance from the user, and its relevance to the user experience.
@@ -352,9 +360,9 @@ Here are some examples of different types of mesh processing that you may find u
 
 ### Useful tools
 
-* The [HoloLens emulator](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md) can be used to develop applications using spatial mapping without access to a physical HoloLens. It allows you to simulate a live session on a HoloLens in a realistic environment, with all of the data your application would normally consume, including HoloLens motion, spatial coordinate systems, and spatial mapping meshes. This can be used to provide reliable, repeatable input, which can be useful for debugging problems and evaluating changes to your code.
+* The [HoloLens emulator](../develop/advanced-concepts/using-the-hololens-emulator.md) can be used to develop applications using spatial mapping without access to a physical HoloLens. It allows you to simulate a live session on a HoloLens in a realistic environment, with all of the data your application would normally consume, including HoloLens motion, spatial coordinate systems, and spatial mapping meshes. This can be used to provide reliable, repeatable input, which can be useful for debugging problems and evaluating changes to your code.
 * To reproduce a scenario, capture spatial mapping data over the network from a live HoloLens, then save it to disk and reuse it in later debugging sessions.
-* The [Windows device portal 3D view](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#3d-view) provides a way to see all of the spatial surfaces currently available via the spatial mapping system. This provides a basis of comparison for the spatial surfaces inside your application; for example, you can easily tell if any spatial surfaces are missing or are being displayed in the wrong place.
+* The [Windows device portal 3D view](../develop/advanced-concepts/using-the-windows-device-portal.md#3d-view) provides a way to see all of the spatial surfaces currently available via the spatial mapping system. This provides a basis of comparison for the spatial surfaces inside your application; for example, you can easily tell if any spatial surfaces are missing or are being displayed in the wrong place.
 
 ### General prototyping guidance
 

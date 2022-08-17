@@ -61,7 +61,7 @@ Bounding is the standard interface for object manipulation in Mixed Reality. Thi
 
 <br>
 
-**For Unity app development, see [Bounding box in the Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
+**For Unity app development, see [Bounding box in the Mixed Reality Toolkit-Unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
 
 <br>
 
@@ -90,7 +90,7 @@ The App bar is an object-level menu, which contains a series of buttons displaye
 ## Bounding box in MRTK (Mixed Reality Toolkit) for Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and prefabs for the Bounding box and App bar. You can add a Bounding box by assigning the BoundingBox.cs script onto any object.
 
-* [MRTK - Bounding Box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+* [MRTK - Bounding Box](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)
 
 
 <br>

@@ -76,6 +76,7 @@ It's important to provide the user information about what is happening. In mixed
 ---
 
 ## Best practices
+
 * Tightly couple [billboarding or tag-along](billboarding-and-tag-along.md) to the display of Progress since the user can easily move their head into empty space and lose context. Your app might look like it has crashed if the user is unable to see anything. Billboarding and tag-along is built into the Progress prefab.
 * It's always good to provide status information about what is happening to the user. The Progress prefab provides various visual styles including the Windows standard ring-type progress for providing status. You can also use a custom mesh with an animation if you want the style of your progress to align to your app’s brand.
 
@@ -85,8 +86,8 @@ It's important to provide the user information about what is happening. In mixed
 
 ## Progress indicator in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - Progress indicator prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
-* [MRTK - Scene transition service](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
+* [MRTK - Progress indicator prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
+* [MRTK - Scene transition service](/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
 
 
 <br>

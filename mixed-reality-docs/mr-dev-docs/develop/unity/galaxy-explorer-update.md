@@ -8,23 +8,23 @@ ms.topic: article
 keywords: galaxy explorer, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-# The Making of Galaxy Explorer for HoloLens 2
+# The making of Galaxy Explorer for HoloLens 2
+
+![New Galaxy Explorer logo](../images/GalaxyExplorer2.jpg)
+
 
 Welcome to the updated Galaxy Explorer for HoloLens 2 application! [Galaxy Explorer](/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") was originally developed as an open-source application for HoloLens (first gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we're updating it for the [new and exciting capabilities of HoloLens 2](https://www.microsoft.com/hololens/hardware).
 
-As one of the [Microsoft Mixed Reality Studios](galaxy-explorer-update.md#mixed-reality-studios), we usually develop commercial grade solutions and are developing & testing on target platforms throughout the creative and development process. We're embarking on this project using the frameworks and tools (like [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) as they become available to us and the community - and we want to bring you along for the ride.
+As one of the [Microsoft Mixed Reality Studios](galaxy-explorer-update.md#mixed-reality-studios), we usually develop commercial grade solutions and are developing & testing on target platforms throughout the creative and development process. We're embarking on this project using the frameworks and tools (like [MRTK](/windows/mixed-reality/mrtk-unity/)) as they become available to us and the community - and we want to bring you along for the ride.
 
 Just like the original Galaxy Explorer, [our team](galaxy-explorer-update.md#meet-the-team) will be [open sourcing the project on GitHub](https://github.com/Microsoft/GalaxyExplorer) to ensure the community has full access. We'll also be documenting our journey here in complete transparency about how we ported from MRTK v1 to MRTK v2, enhanced the experience with new features available in HoloLens 2, and ensured that Galaxy Explorer remained a multi-platform experience. Whether you're viewing Galaxy Explorer on HoloLens (first gen), HoloLens 2, a Windows Mixed Reality headset or on your Windows 10 desktop, we want to make sure you're enjoying the journey as much as we are!
 
 This page will expand as we progress through the project with links to more detailed articles, code, design artifacts, and additional MRTK documentation to provide you with an insider's look at the project.
 
-## Unveiling the new logo
+## Download app from Microsoft Store in HoloLens 2
+If you have HoloLens 2 device, you can directly download and install the app in your device.
 
-We're excited to kick off with a preview of the new Galaxy Explorer logo! While paying homage to the original logo by featuring the Milky Way, we've designed a realistic visualization and updated the typography to provide a more modern feel. Included in the logo is a sneak peek at one of the new icons.
-
-![New Galaxy Explorer logo](images/ge-update-app-icon.png)
-
-The design and typography of the logo will set the tone for the overall look and feel of UI elements throughout the experience. 
+<a href='//www.microsoft.com/store/apps/9nblggh4q4jg?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px"/></a>
 
 ## Thinking about interactions
 

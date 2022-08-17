@@ -2,8 +2,8 @@
 title: Color, light, and materials
 description: Designing content for mixed reality requires careful consideration of color, lighting, and materials for all visual assets.
 author: mavitazk
-ms.author: pinkb 
-ms.date: 03/21/2018
+ms.author: vinnietieto 
+ms.date: 03/10/2022
 ms.topic: article
 keywords: Windows Mixed Reality, design, color, light, materials, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
@@ -20,7 +20,7 @@ Below are guidelines specific to rendering assets on both immersive and holograp
 
 Content rendered in immersive headsets will appear visually different when compared to content rendered in holographic headsets. While immersive headsets generally render content much as you would expect on a 2D screen, holographic headsets like HoloLens use color-sequential, see-through RGB displays to renders holograms.
 
-Always take time to test your holographic experiences in a holographic headset. The appearance of content, even if it's built specifically for holographic devices, will differ as seen on secondary monitors, snapshots, and in spectator view. Remember to walk around experiences with a device, testing the lighting of holograms and observing from all sides (as well as from above and below) how your content renders. Be sure to test with a range of brightness settings on the device. It's unlikely all users will share an assumed default, and a diverse set of lighting conditions.
+Always take time to test your holographic experiences in a holographic headset. The appearance of content, even if it's built specifically for holographic devices, will differ as seen on secondary monitors or in snapshots. Remember to walk around experiences with a device, testing the lighting of holograms and observing from all sides (as well as from above and below) how your content renders. Be sure to test with a range of brightness settings on the device. It's unlikely all users will share an assumed default, and a diverse set of lighting conditions.
 
 ## Fundamentals of rendering on holographic devices
 
@@ -28,7 +28,7 @@ Always take time to test your holographic experiences in a holographic headset. 
 
 * **Colors impact varies with the user’s environment** – There are many diverse lighting conditions in a user’s room. Create content with appropriate levels of contrast to help with clarity.
 
-* **Avoid dynamic lighting** – Holograms that are uniformly lit in holographic experiences are the most efficient. Using advanced, dynamic lighting will likely exceed the capabilities of mobile devices. When dynamic lighting is required, it's recommended to use the [Mixed Reality Toolkit Standard shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md). 
+* **Avoid dynamic lighting** – Holograms that are uniformly lit in holographic experiences are the most efficient. Using advanced, dynamic lighting will likely exceed the capabilities of mobile devices. When dynamic lighting is required, it's recommended to use the [Mixed Reality Toolkit Standard shader](/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader). 
 
 ## Designing with color
 
@@ -50,7 +50,7 @@ Because of the nature of additive displays, certain colors can appear different 
 
 * **Aliasing** - Be considerate of aliasing, jagged or “stair steps” where the edge of a hologram’s geometry meets the real world. Using textures with high detail can aggravate this effect. Textures should be mapped and filtering enabled. Consider fading the edges of holograms or adding a texture that creates a black edge border around objects. Avoid thin geometry where possible.
 
-* **Alpha channel** - You must clear your alpha channel to fully transparent for any parts where you aren't rendering a hologram. Leaving the alpha undefined leads to visual artifacts when taking images/videos from the device or with Spectator View.
+* **Alpha channel** - You must clear your alpha channel to fully transparent for any parts where you aren't rendering a hologram. Leaving the alpha undefined leads to visual artifacts when taking images/videos from the device.
 
 * **Texture softening** - Since light is additive in holographic displays, it's best to avoid large regions of bright, solid color as they often don't produce the intended visual effect.
 
@@ -83,7 +83,7 @@ Light and color can help make your holograms appear more naturally in a user's e
     :::column:::
 Materials are crucial elements for making realistic holograms. By providing proper visual characteristics, you can make compelling holographic objects that can blend well with the physical environment. Materials are also important for providing visual feedback for the various types of user input interactions.  
 
-[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides an MRTK Standard Shader with various visual effect options that can be used for visual feedback. For example, you can use 'Proximity Light' property to provide a lighting effect when the user's finger is approaching the object's surface. Learn more about [MRTK Standard Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
+[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides an MRTK Standard Shader with various visual effect options that can be used for visual feedback. For example, you can use 'Proximity Light' property to provide a lighting effect when the user's finger is approaching the object's surface. Learn more about [MRTK Standard Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
     :::column-end:::
         :::column:::
     *Video loop: Example of visual feedback based on proximity to a bounding box*
@@ -97,7 +97,7 @@ Materials are crucial elements for making realistic holograms. By providing prop
 
 ## See also
 * [Designing content for holographic display](designing-content-for-holographic-display.md)
-* [Color Separation](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
+* [Color Separation](../develop/advanced-concepts/hologram-stability.md#color-separation)
 * [Holograms](../discover/hologram.md)
 * [Microsoft Design Language - color](https://www.microsoft.com/design/color)
 * [Universal Windows Platform - color](/windows/uwp/style/color)

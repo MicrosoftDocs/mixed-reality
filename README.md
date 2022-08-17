@@ -4,10 +4,10 @@ Welcome to Mixed Reality documentation, the place for all things MR, VR, and AR 
 
 ## Contributing
 
-If you're contributing or updating docs content, please make your pull requests are targeting the correct sub-docset (mr-dev-docs, enthusiast-guide, and so on). New contributors should check out our more detailed contribution guidelines for each subdocset:
+If you're contributing or updating docs content, please make sure your pull requests are targeting the correct sub-docset (mr-dev-docs, enthusiast-guide, and so on). New contributors should check out our more detailed contribution guidelines for each subdocset:
 
 * [Mixed Reality contributors](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
-* [VR Enthusiast Guide contributors](mixed-reality-docs/enthusiast-guide/CONTRIBUTING.md)
+* [VR Enthusiast Guide contributors](enthusiast-guide/CONTRIBUTING.md)
 
 For docs-related issues, use the footers at the bottom of each doc, or submit directly to [MicrosoftDocs/mixed-reality/issues](https://github.com/MicrosoftDocs/mixed-reality/issues).
 
@@ -53,4 +53,4 @@ This project welcomes contributions and suggestions. Most contributions require 
 
 ## Microsoft Open Source Code of Conduct
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

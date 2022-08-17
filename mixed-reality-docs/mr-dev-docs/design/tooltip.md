@@ -20,7 +20,7 @@ A tooltip is a short description that is linked to another control or object. Th
 
 ## Tooltip in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - Tooltip](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html)
+* [MRTK - Tooltip](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip)
 
 <br>
 

@@ -1,23 +1,24 @@
 ---
-title: Use spatial sound in mixed-reality applications
-description: Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed-reality applications.
+title: Spatial audio best practices
+description: Spatial audio is a powerful tool for immersion, accessibility, and UX design in mixed-reality applications.
 author: kegodin
-ms.author: v-hferrone
+ms.author: vinnietieto
 ms.date: 11/02/2019
 ms.topic: article
 keywords: Windows Mixed Reality, spatial sound, design, style, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, gestures, interactions, attenuation
 ---
 
-# How to use sound in mixed-reality applications
+# Spatial sound best practices
+
+If you're new to working with spatial sound, see our [Spatial sound overview](spatial-sound.md).
 
 You can use sound to inform and reinforce the user's mental model of application state. Use spatialization, when appropriate, to place sounds in the mixed-reality world. When you connect the auditory and the visual in this way, you deepen the intuitive nature of interactions and increase user confidence.
-<br><br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## When to add sounds
 
-Mixed-reality applications often have a greater need for sound than 2D apps, because of their lack of a tactile interface. Add sounds when they inform the user or reinforce interactions.
+Mixed-reality applications often have a greater need for sound than 2D apps because of their lack of a tactile interface. Add sounds when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
 
@@ -47,8 +48,8 @@ Interaction types in mixed reality include gesture, direct manipulation, and voi
 ### Gesture interactions
 
 In mixed reality, users may interact with buttons by using a mouse. Button actions generally occur when the user releases rather than presses the button to give the user a chance to cancel the interaction. Use sounds to reinforce these stages. To assist users in targeting distant buttons, also consider using a pointer-hover sound.
-* Button-press sounds should be a short, tactile "click."<br/>Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* Button-"unpress" sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion.<br/>Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+* Button-press sounds should be a short, tactile "click."<br/>Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* Button-"unpress" sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion.<br/>Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 * For hover sounds, consider using a subtle and non-threatening sound, such as a low-frequency thud or bump.
 
 ### Direct manipulation
@@ -56,12 +57,12 @@ In mixed reality, users may interact with buttons by using a mouse. Button actio
 On HoloLens 2, articulated hand tracking supports direct manipulation of user-interface elements. Sounds are important when there's no other physical feedback.
 
 A *button press* sound is important because the user doesn't get any other indication when they reach the bottom of the key stroke. Sound indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should get a short, tactile sound like a click. Unpresses should have a similar click sound but with raised pitch.
-* Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+* Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 
 It's difficult to visually confirm a grab or release action. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world visual analog of "grabbing." Sounds can effectively communicate successful grab and release interactions.
-* Grab actions should have a short, somewhat-muffled tactile sound that prompts the idea of fingers closing around an object. Sometimes there's also a "whoosh" sound that leads up to the grabbing sound to communicate the motion of the hand.<br/>Example: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
-* Release actions should get a similarly short and tactile sound. It's usually lower pitched than the grab sound and in reverse order, with an impact and then a "whoosh" to communicate that the object is settling into place.<br/>Example: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
+* Grab actions should have a short, somewhat-muffled tactile sound that prompts the idea of fingers closing around an object. Sometimes there's also a "whoosh" sound that leads up to the grabbing sound to communicate the motion of the hand.<br/>Example: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/db7bbec0e72a7ff0b853b5a37283d41a416f8398/Assets/MRTK/StandardAssets/Audio/MRTK_Move_Start.wav)
+* Release actions should get a similarly short and tactile sound. It's usually lower pitched than the grab sound and in reverse order, with an impact and then a "whoosh" to communicate that the object is settling into place.<br/>Example: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
 A *drawing* interaction should get a persistent, looping sound with volume determined by the user's hand movement. It should be silent when the user's hand is still and loudest when the hand is moving quickly.
 

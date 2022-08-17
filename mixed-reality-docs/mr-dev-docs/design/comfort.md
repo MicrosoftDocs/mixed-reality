@@ -85,11 +85,11 @@ Windows Mixed Reality immersive HMDs have no automatic calibration for IPD or VO
 
 ## Rendering rates
 
-Mixed reality apps are unique because users can move freely in the world and interact with virtual content like as though they were real objects. To maintain this impression, it's critical to render holograms so they appear stable in the world and animate smoothly. Rendering at a [minimum of 60 frames per second (FPS)](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) helps achieve this goal. There are some Mixed Reality devices that support rendering at framerates higher than 60 FPS and for these devices it's recommended to render at the higher framerates to provide an optimal user experience.
+Mixed reality apps are unique because users can move freely in the world and interact with virtual content like as though they were real objects. To maintain this impression, it's critical to render holograms so they appear stable in the world and animate smoothly. Rendering at a [minimum of 60 frames per second (FPS)](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md) helps achieve this goal. There are some Mixed Reality devices that support rendering at framerates higher than 60 FPS and for these devices it's recommended to render at the higher framerates to provide an optimal user experience.
 
 **Diving deeper**
 
-To draw holograms to look,  like [they're stable in the real or virtual world](../develop/platform-capabilities-and-apis/hologram-stability.md), apps need to render images from the user's position. Since image rendering takes time, HoloLens and other Windows Mixed Reality devices predict where a user's head will be when the images are shown in the displays. This prediction algorithm is an approximation. Windows Mixed Reality algorithms and hardware adjust the rendered image to account for the discrepancy between the predicted head position and the actual head position. This process makes the image seen by the user appear as if it were rendered from the correct location, and holograms feel stable. The updates work best for small changes in head position, and they can't completely account for some rendered image differences, like those caused by motion-parallax.
+To draw holograms to look,  like [they're stable in the real or virtual world](../develop/advanced-concepts/hologram-stability.md), apps need to render images from the user's position. Since image rendering takes time, HoloLens and other Windows Mixed Reality devices predict where a user's head will be when the images are shown in the displays. This prediction algorithm is an approximation. Windows Mixed Reality algorithms and hardware adjust the rendered image to account for the discrepancy between the predicted head position and the actual head position. This process makes the image seen by the user appear as if it were rendered from the correct location, and holograms feel stable. The updates work best for small changes in head position, and they can't completely account for some rendered image differences, like those caused by motion-parallax.
 
 **By rendering at a minimum framerate of 60 FPS, you're doing two things to help make stable holograms:**
 1. Reducing the appearance of judder, which is characterized by uneven motion and double images. Faster hologram motion and lower render rates are associated with more pronounced judder. Therefore, striving to always maintain 60 FPS (or your device’s maximum render rate) will help avoid judder for moving holograms.
@@ -161,7 +161,7 @@ To avoid eye and neck strain, content should be designed so that excessive eye a
 * **Avoid** gaze angles more than 60 degrees below the horizon (vertical movement)
 * **Avoid** neck rotations more than 45-degrees off-center (horizontal movement)
 
-The optimal (resting) gaze angle is considered between 10-20 degrees below horizontal, as the head tends to tilt downward slightly, especially during activities.
+The optimal (resting) gaze angle is considered between 10-20 degrees below horizon, as the head tends to tilt downward slightly, especially during activities.
 
 ## Arm positions
 
@@ -169,7 +169,7 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 
 ## See also
 * [Gaze](gaze-and-commit.md)
-* [Hologram stability](../develop/platform-capabilities-and-apis/hologram-stability.md)
+* [Hologram stability](../develop/advanced-concepts/hologram-stability.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Holographic frame](holographic-frame.md)
 * [Calibration](/hololens/hololens-calibration)

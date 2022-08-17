@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 311 - Microsoft Graph
+title: HoloLens (1st gen) and Azure 311 - Microsoft Graph
 description: Complete this course to learn how to leverage Microsoft Graph, and connect to the data that drives productivity, within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-# MR and Azure 311 - Microsoft Graph
+# HoloLens (1st gen) and Azure 311 - Microsoft Graph
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
 In this course, you will learn how to use *Microsoft Graph* to log in into your Microsoft account using secure authentication within a mixed reality application. You will then retrieve and display your scheduled meetings in the application interface.
 
-![](images/AzureLabs-Lab311-00.png)
+![Screenshot that shows the scheduled meetings in the application interface.](images/AzureLabs-Lab311-00.png)
 
 *Microsoft Graph* is a set of APIs designed to enable access to many of Microsoft's services. Microsoft describes Microsoft Graph as being a matrix of resources connected by relationships, meaning it allows an application to access all sorts of connected user data. For more information, visit the [Microsoft Graph page](https://developer.microsoft.com/graph).
 
@@ -32,9 +32,9 @@ In your application, it is up to you as to how you will integrate the results wi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 311: Microsoft Graph</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+<td> MR and Azure 311: Microsoft Graph</td><td> ✔️</td><td> </td>
 </tr>
 </table>
 
@@ -75,34 +75,34 @@ In this Chapter you will also find the Service Key that will allow you to make c
 
 2.  In the **My applications** section, click on the button **Add an app**.
 
-    ![](images/AzureLabs-Lab311-01.png)![](images/AzureLabs-Lab311-02.png)
+    ![Screenshot that shows where to select Add an app.](images/AzureLabs-Lab311-01.png)
 
     > [!IMPORTANT]
     > The **Application Registration Portal** can look different, depending on whether you have previously worked with *Microsoft Graph*. The below screenshots display these different versions.
 
 3.  Add a name for your application and click **Create**.
 
-    ![](images/AzureLabs-Lab311-03.png)
+    ![Screenshot that shows where to add a name for your application.](images/AzureLabs-Lab311-03.png)
 
 4.  Once the application has been created, you will be redirected to the application main page. Copy the **Application Id** and make sure to note this value somewhere safe, you will use it soon in your code.
 
-    ![](images/AzureLabs-Lab311-04.png)
+    ![Screenshot that shows where to view the Application Id.](images/AzureLabs-Lab311-04.png)
 
 5.  In the **Platforms** section, make sure **Native Application** is displayed. If *not* click on **Add Platform** and select **Native Application**.
 
-    ![](images/AzureLabs-Lab311-05.png)
+    ![Screenshot that highlights the Native Application section.](images/AzureLabs-Lab311-05.png)
 
 6.  Scroll down in the same page and in the section called **Microsoft Graph Permissions** you will need to add additional permissions for the application. Click on **Add** next to **Delegated Permissions**.
 
-    ![](images/AzureLabs-Lab311-06.png)
+    ![Screenshot that shows where to select Add next to Delegated Permissions.](images/AzureLabs-Lab311-06.png)
 
 7.  Since you want your application to access the user's Calendar, check the box called **Calendars.Read** and click **OK**.
 
-    ![](images/AzureLabs-Lab311-07.png)
+    ![Screenshot that shows the Calendars.Read checkbox.](images/AzureLabs-Lab311-07.png)
 
 8.  Scroll to the bottom and click the **Save** button.
 
-    ![](images/AzureLabs-Lab311-08.png)
+    ![Screenshot that shows where to select Save.](images/AzureLabs-Lab311-08.png)
 
 9.  Your save will be confirmed, and you can log out from the **Application Registration Portal**.
 
@@ -112,19 +112,19 @@ The following is a typical set up for developing with mixed reality, and as such
 
 1.  Open *Unity* and click **New**.
 
-    ![](images/AzureLabs-Lab311-09.png)
+    ![Screenshot that shows the Unity interface.](images/AzureLabs-Lab311-09.png)
 
 2.  You need to provide a Unity project name. Insert **MSGraphMR**. Make sure the project template is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![](images/AzureLabs-Lab311-10.png)
+    ![Screenshot that shows where to select Create Project.](images/AzureLabs-Lab311-10.png)
 
 3.	With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit** > **Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
-    ![](images/AzureLabs-Lab311-11.png)
+    ![Screenshot that shows where to set the External Script Editor to Visual Studio 2017.](images/AzureLabs-Lab311-11.png)
 
 4.  Go to **File** > **Build Settings** and select **Universal Windows Platform**, then click on the **Switch Platform** button to apply your selection.
 
-    ![](images/AzureLabs-Lab311-12.png)
+    ![Screenshot that shows where to select Switch Platform.](images/AzureLabs-Lab311-12.png)
 
 5.	While still in **File** > **Build Settings**, make sure that:
 
@@ -137,15 +137,15 @@ The following is a typical set up for developing with mixed reality, and as such
 
         1. Do this by selecting **Add Open Scenes**. A save window will appear.
 
-            ![](images/AzureLabs-Lab311-13.png)
+            ![Screenshot that shows where to select Add Open Scenes.](images/AzureLabs-Lab311-13.png)
 
         2. Create a new folder for this, and any future, scene. Select the **New folder** button, to create a new folder, name it **Scenes**.
 
-            ![](images/AzureLabs-Lab311-14.png)
+            ![Screenshot that shows where to name the new folder.](images/AzureLabs-Lab311-14.png)
 
         3. Open your newly created **Scenes** folder, and then in the *File name*: text field, type **MR_ComputerVisionScene**, then click **Save**.
 
-            ![](images/AzureLabs-Lab311-15.png)
+            ![Screenshot that shows where to type the file name.](images/AzureLabs-Lab311-15.png)
 
             > [!IMPORTANT] 
             > Be aware, you must save your Unity scenes within the *Assets* folder, as they must be associated with the Unity project. Creating the scenes folder (and other similar folders) is a typical way of structuring a Unity project.
@@ -154,7 +154,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
 6.  In the *Build Settings* window, click on the **Player Settings** button, this will open the related panel in the space where the *Inspector* is located. 
 
-    ![](images/AzureLabs-Lab311-16.png)
+    ![Screenshot that shows the Player Settings dialog box.](images/AzureLabs-Lab311-16.png)
 
 7. In this panel, a few settings need to be verified:
 
@@ -166,17 +166,17 @@ The following is a typical set up for developing with mixed reality, and as such
 
         3. **API Compatibility Level** should be **.NET 4.6**
 
-            ![](images/AzureLabs-Lab311-17.png)
+            ![Screenshot that shows where to check the API compatibility level.](images/AzureLabs-Lab311-17.png)
 
     2.  Within the **Publishing Settings** tab, under **Capabilities**, check:
 
         - **InternetClient**
 
-            ![](images/AzureLabs-Lab311-18.png)
+            ![Screenshot that shows where to select the InternetClient option.](images/AzureLabs-Lab311-18.png)
 
     3.  Further down the panel, in **XR Settings** (found below **Publish Settings**), check **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added.
 
-        ![](images/AzureLabs-Lab311-19.png)
+        ![Screenshot that shows where to add Windows Mixed Reality SDK.](images/AzureLabs-Lab311-19.png)
 
 8.  Back in *Build Settings*, *Unity C# Projects* is no longer greyed out; check the checkbox next to this.
 
@@ -204,17 +204,17 @@ To import the package:
 
 2.  In the **Import Unity Package** box that pops up, ensure everything under (and including) **Plugins** is selected.
 
-    ![](images/AzureLabs-Lab311-20.png)
+    ![Screenshot that shows the selected configuration parameters under Plugins.](images/AzureLabs-Lab311-20.png)
 
 3.  Click the **Import** button to add the items to your project.
 
 4.  Go to the **MSGraph** folder under **Plugins** in the *Project Panel* and select the plugin called **Microsoft.Identity.Client**.
 
-    ![](images/AzureLabs-Lab311-21.png)
+    ![Screenshot that shows the Microsoft.Identity.Client plugin.](images/AzureLabs-Lab311-21.png)
 
 5.  With the *plugin* selected, ensure that **Any Platform** is unchecked, then ensure that **WSAPlayer** is also unchecked, then click **Apply**. This is just to confirm that the files are configured correctly.
 
-    ![](images/AzureLabs-Lab311-22.png)
+    ![Screenshot that shows where to confirm that Any Platform and WSAPlayer aren't checked.](images/AzureLabs-Lab311-22.png)
 
     > [!NOTE] 
     > Marking these plugins configures them to only be used in the Unity Editor. There are a different set of DLLs in the WSA folder which will be used after the project is exported from Unity as a Universal Windows Application.
@@ -227,7 +227,7 @@ To import the package:
 
     -   Ensure that **Don't process** is **checked**.
 
-        ![](images/AzureLabs-Lab311-23.png)
+        ![Screenshot that shows that Don't Process is selected.](images/AzureLabs-Lab311-23.png)
 
 7.  Click **Apply**.
 
@@ -249,11 +249,11 @@ During this Chapter you will set up the Main Camera of your scene:
 
     5.  Set the **Background Color** of the Camera Component to **Black, Alpha 0** **(Hex Code: #00000000)**
 
-        ![](images/AzureLabs-Lab311-24.png)
+        ![Screenshot that highlights where to set the background color.](images/AzureLabs-Lab311-24.png)
 
 3.  The final object structure in the *Hierarchy Panel* should be like the one shown in the image below:
 
-    ![](images/AzureLabs-Lab311-25.png)
+    ![Screenshot that shows the final object structure in the Hierarchy Panel.](images/AzureLabs-Lab311-25.png)
 
 ## Chapter 5 - Create MeetingsUI class
 
@@ -263,12 +263,12 @@ To create this class:
 
 1.  Right-click on the **Assets** folder in the *Project Panel*, then select **Create** > **Folder**. Name the folder **Scripts**.
 
-    ![](images/AzureLabs-Lab311-26.png)
-    ![](images/AzureLabs-Lab311-27.png)
+    ![Screenshot that shows where to find the Assets folder.](images/AzureLabs-Lab311-26.png)
+    ![Screenshot that shows where to create the Scripts folder.](images/AzureLabs-Lab311-27.png)
 
 2.  Open the **Scripts** folder then, within that folder, right-click, **Create** > **C# Script**. Name the script **MeetingsUI.**
 
-    ![](images/AzureLabs-Lab311-28.png)
+    ![Screenshot that shows where to create the MeetingsUI folder.](images/AzureLabs-Lab311-28.png)
 
 3.  Double-click on the new **MeetingsUI** script to open it with *Visual Studio*.
 
@@ -908,7 +908,7 @@ In this Chapter you need to place the **Interactions** script onto the **Main Ca
 
 -  From the **Scripts** folder in the *Project Panel*, drag the script **Interactions** to the **Main Camera** object, as pictured below.
 
-    ![](images/AzureLabs-Lab311-29.png)
+    ![Screenshot that shows where to drag the Interactions script.](images/AzureLabs-Lab311-29.png)
 
 ## Chapter 10 - Setting up the Tag
 
@@ -920,15 +920,15 @@ To create the Tag:
 
 2.  In the *Inspector Panel* click on the **MainCamera** *Tag* to open a drop-down list. Click on **Add Tag...**
 
-    ![](images/AzureLabs-Lab311-30.png)
+    ![Screenshot that highlights the Add Tag... option.](images/AzureLabs-Lab311-30.png)
 
 3.  Click on the **+** button.
 
-    ![](images/AzureLabs-Lab311-31.png)
+    ![Screenshot that shows the + button.](images/AzureLabs-Lab311-31.png)
 
 4.  Write the Tag name as **SignInButton** and click Save.
 
-    ![](images/AzureLabs-Lab311-32.png)
+    ![Screenshot that shows where to add the SignInButton tag name.](images/AzureLabs-Lab311-32.png)
 
 ## Chapter 11 - Build the Unity project to UWP
 
@@ -936,7 +936,7 @@ Everything needed for the Unity section of this project has now been completed, 
 
 1.  Navigate to *Build Settings* (**File* > *Build Settings**).
 
-    ![](images/AzureLabs-Lab311-33.png)
+    ![Screenshot that shows the Build Settings dialog box.](images/AzureLabs-Lab311-33.png)
 
 2.  If not already, tick **Unity C\# Projects**.
 
@@ -968,7 +968,7 @@ To deploy on HoloLens:
 
 4.  In the **Solution Platform**, select **x86, Remote Machine**. You will be prompted to insert the **IP address** of a remote device (the HoloLens, in this case, which you noted).
 
-    ![](images/AzureLabs-Lab311-34.png)
+    ![Screenshot that shows where to select x86 and Remote Machine.](images/AzureLabs-Lab311-34.png)
 
 5.  Go to **Build** menu and click on **Deploy Solution** to sideload the application to your HoloLens.
 
@@ -978,7 +978,7 @@ To deploy on HoloLens:
 
 Congratulations, you built a mixed reality app that leverages the Microsoft Graph, to read and display user Calendar data.
 
-![](images/AzureLabs-Lab311-00.png)
+![Screenshot that shows the completed mixed reality app.](images/AzureLabs-Lab311-00.png)
 
 ## Bonus exercises
 

@@ -1,6 +1,9 @@
 ---
 title: Set up Windows Mixed Reality
 description: How to set up your Windows Mixed Reality motion controllers, speech, and audio, and define your room boundary for a safe play space.
+author: qianw211
+ms.author: qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, motion controller, controller, speech, audio, seated, standing, boundary, graphics drivers, Microsoft Edge, chromium
 ---
@@ -117,7 +120,7 @@ If you connect a headset with higher resolution displays to your PC, for example
     * Your PC doesn't meet the minimum graphics hardware requirements for your headset with higher resolution displays
     * You're seeing graphics performance issues
 
-This setting is available on Windows 10, version 1903, or newer.
+This setting is available on Windows 10, version 1903, or newer, and on Windows 11.
 
 ### Calibration
 
@@ -141,11 +144,11 @@ This setting controls the behavior of Windows Mixed Reality in response to your 
 * **Automatically switch using headset presence sensor** (default): Windows will automatically direct input (keyboard, mouse...) to Windows Mixed Reality whenever you're wearing your headset. You can override this at any time with Win + Y.
 * **Manually switch using Windows logo key + Y**: Windows won't use the headset presence sensor to detect when you're wearing your headset. You'll need to use Win + Y to switch your input between your PC desktop and Windows Mixed Reality.
 
-This setting is available on Windows 10, version 1903, or newer.
+This setting is available on Windows 10, version 1903, or newer, and on Windows 11.
 
 ## Installing Microsoft Edge 
 
-To use the new Chromium-based Microsoft Edge in Windows Mixed Reality home, upgrade to Windows 10 Version 1903 or later for native support of Win32 applications (like the new Microsoft Edge) in Windows Mixed Reality home. Check Windows Update or [manually install the latest version of Windows 10](https://www.microsoft.com/software-download/windows10).
+To use the new Chromium-based Microsoft Edge in Windows Mixed Reality home, upgrade to Windows 10 Version 1903 or later, or Windows 11 for native support of Win32 applications (like the new Microsoft Edge) in Windows Mixed Reality home. Check Windows Update, [manually install the latest version of Windows 10](https://www.microsoft.com/software-download/windows10), or [install the latest version of Windows 11](https://www.microsoft.com/software-download/windows11).
 
 >[!IMPORTANT]
 >The new Microsoft Edge launches with support for WebXR, the new standard for creating immersive web experiences for VR headsets. You will no longer be able to play WebVR experiences in Microsoft Edge if you install the new Microsoft Edge.
@@ -177,7 +180,7 @@ Entering mixed reality a second time is as easy as putting the headset back on w
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting installation](installation_errors.md)
-* [Troubleshooting setup](wmr-setup-faq.md)
+* [Troubleshooting setup](wmr-setup-faq.yml)
 * [Learn Mixed Reality](learn-mixed-reality.md)
 * [Motion controllers](controllers-in-wmr.md)
 * [How inside-out tracking works](tracking-system.md)

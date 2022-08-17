@@ -10,7 +10,7 @@ keywords: Scene understanding, Spatial Mapping, Windows Mixed Reality, Unity, mi
 
 # Scene understanding
 
-Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene understanding generates representations of 3D environments that are similar to those you may have used in frameworks such as Unity or ARKit/ARCore. The Scene understanding entry point begins with a Scene Observer, which is called by your application to compute a new scene. Today, the technology can generate 3 distinct but related object categories: 
+Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene understanding generates representations of 3D environments that are similar to those you may have used in frameworks such as Unity or ARKit/ARCore. The Scene understanding entry point begins with a Scene Observer, which is called by your application to compute a new scene. Today, the technology can generate 3 distinct but related object categories:
 
 * Simplified watertight environment meshes that infer the planar room structure without clutter
 * Plane regions for placement that we call Quads
@@ -18,13 +18,17 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 
 ![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.png)
 
-This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share.
+This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share. If you'd like to see Scene Understanding in action, check out our **Designing Holograms - Spatial Awareness** video demo below:
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
 ## Developing with Scene Understanding
 
 This article only serves to introduce the Scene Understanding runtime and concepts. If you're looking for documentation on how to develop with Scene Understanding, you may be interested in the following articles:
 
-[Scene Understanding SDK overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+[Scene Understanding SDK overview](../develop/unity/scene-understanding-SDK.md)
 
 You can download the Scene Understanding Sample app from the sample GitHub site:
 
@@ -36,7 +40,7 @@ If you don't have a device and wish to access sample scenes to try Scene Underst
 
 ### SDK
 
-If you're looking for specific details on developing with Scene Understanding, see the [Scene Understanding SDK overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) documentation.
+If you're looking for specific details on developing with Scene Understanding, see the [Scene Understanding SDK overview](../develop/unity/scene-understanding-SDK.md) documentation.
 
 ### Sample
 
@@ -52,8 +56,8 @@ If you're looking for specific details on developing with Scene Understanding, s
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Scene understanding</td>
@@ -92,7 +96,7 @@ Scene understanding provides new constructs designed to simplify placement scena
 <br>
 
 
-If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more information on this topic, see the [Scene understanding SDK reference](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more information on this topic, see the [Scene understanding SDK reference](../develop/unity/scene-understanding-SDK.md)
 
 **Note** For legacy placement code that depends on the spatial mapping mesh, the spatial mapping mesh can be computed along with SceneQuads by setting EnableWorldMesh setting. If Scene understanding API doesn't satisfy your application's latency requirements, we recommend you continue to use the [Spatial mapping API](spatial-mapping.md#placement).
 
@@ -120,5 +124,5 @@ Additionally, the total number of surfaces returned by Spatial Mapping is limite
 
 ### See Also
 
-* [Scene understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+* [Scene understanding SDK](../develop/unity/scene-understanding-SDK.md)
 * [Spatial mapping](spatial-mapping.md)

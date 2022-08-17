@@ -1,8 +1,8 @@
 ---
 title: Install Windows Mixed Reality software
 description: After plugging in your Windows Mixed Reality headset, use the Mixed Reality Portal app to get started and download Windows Mixed Reality features.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, Mixed Reality Portal
@@ -91,5 +91,5 @@ You'll see a "Getting ready to set you up" message on your screen with a spinnin
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting Installation](installation_errors.md)
-* [Troubleshooting Setup](wmr-setup-faq.md)
+* [Troubleshooting Setup](wmr-setup-faq.yml)
 * [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)

@@ -1,5 +1,5 @@
 ---
-title: MR Sharing 240 - Multiple HoloLens devices
+title: HoloLens (1st gen) Sharing 240 - Multiple HoloLens devices
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of sharing holograms.
 author: keveleigh
 ms.author: kurtie
@@ -8,10 +8,10 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, sharing, networking, academy, tutorial, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10
 ---
 
-# MR Sharing 240: Multiple HoloLens devices
+# HoloLens (1st gen) Sharing 240: Multiple HoloLens devices
 
->[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](./mr-learning-base-01.md) has been posted for HoloLens 2.
+>[!IMPORTANT]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen), Unity 2017, and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices. These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2 and may not be compatible with newer versions of Unity.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 Holograms are given presence in our world by remaining in place as we move about in space. HoloLens keeps holograms in place by using various [coordinate systems](../../../design/coordinate-systems.md) to keep track of the location and orientation of objects. When we share these coordinate systems between devices, we can create a shared experience that allows us to take part in a shared holographic world.
 
@@ -26,9 +26,9 @@ In this tutorial, we will:
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Sharing 240: Multiple HoloLens devices</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+<td>MR Sharing 240: Multiple HoloLens devices</td><td> ✔️</td><td> </td>
 </tr>
 </table>
 
@@ -37,7 +37,7 @@ In this tutorial, we will:
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md) with Internet access.
-* At least two HoloLens devices [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* At least two HoloLens devices [configured for development](../../../develop/advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -102,7 +102,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
     * Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
     * Leave the **Authentication Mode** set to **Universal**.
     * Click **Select**
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/advanced-concepts/using-visual-studio.md#pairing-your-device).
 * Put on your HoloLens and find the EnergyHub hologram.
 
 ## Chapter 2 - Interaction

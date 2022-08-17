@@ -1,15 +1,14 @@
 ---
 title: Before you buy - FAQs
 description: Answers to frequently asked questions potential buyers may have before purchasing a Windows Mixed reality headset and compatible PC.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/16/2020
+author: qianw211    
+ms.author: qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, pre-sale, research, purchase, before you buy
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
-
 
 # Before you buy frequently asked questions
 
@@ -41,11 +40,11 @@ appliesto:
 
 **Quick Answer:** Mixed Reality refers to the full spectrum of spatial computing, from augmented reality and holograms to virtual reality. Windows Mixed Reality platform supports devices across Virtual Reality (VR) and Augmented Reality (AR). We currently support two device types with similar technology on that spectrum: HoloLens (AR) and Windows Mixed Reality (VR) headsets with motion controllers.
 
-Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
+Learn more about Mixed Reality here: </windows/mixed-reality/mixed-reality>
 
 ### What is the difference between Windows Mixed Reality and other VR headsets
 
-**Quick Answer:** Windows Mixed Reality headsets feature inside-out tracking (tracking cameras are in the headset) and plug-and-play setup with Windows 10.
+**Quick Answer:** Windows Mixed Reality headsets feature inside-out tracking (tracking cameras are in the headset) and plug-and-play setup with Windows 10 and Windows 11.
 
 **More detail**: Windows Mixed Reality offers several features, including easy setup (no need for external sensors to track you and your controllers), your choice of headsets to meet your comfort and price-point, headsets that have competitive resolutions, and finally a unique user experience that features a spatial interface, which allows you to use thousands of apps from the Microsoft Store.
 
@@ -55,9 +54,9 @@ Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-r
 
 ### What is inside-out tracking? How is it different than outside-in tracking or lighthouse tracking
 
-* **Inside-out tracking** Windows Mixed Reality uses inside-out tracking. With inside-out tracking cameras are built into the headset and track changes in the environment to determine the headsets position based on the environment as you move around.
+* **Inside-out tracking** Windows Mixed Reality, Oculus Quest, and Vive/Index systems use inside-out tracking. With inside-out tracking cameras are built into the headset and track changes in the environment to determine the headset's position based on the environment as you move around. Some systems, such as the HTC Vive and Valve Index, use infrared sensors instead of cameras and depend on external "lighthouses" or "base stations" that project infrared light to track their environment.
 
-* **Outside-in tracking** Oculus, Vive and others use outside-in tracking.  With outside-in tracking, the headset is tracked by one or more external devices. Camera(s) are built into those external devices, placed around the environment and are used to determine the position of the headset based on the environment.
+* **Outside-in tracking** Systems such as the Oculus Rift and PlayStation VR use outside-in tracking.  With outside-in tracking, the headset is tracked by one or more external devices. Camera(s) are built into those external devices, placed around the environment and are used to determine the position of the headset based on the environment.
 
 Find out more about [inside-out tracking](./tracking-system.md).
 
@@ -69,181 +68,27 @@ Find out more about [inside-out tracking](./tracking-system.md).
 
 **Quick Answer:** All smartphone-based VR products, including the Samsung Gear VR and Google Daydream, use three Degrees Of Freedom (3DOF) head position tracking systems. 3DOF based systems allow you to move your head **only** from the neck up in the virtual world. Windows MR on the other hand uses a six Degrees of Freedom (6DOF) head and controllers position tracking systems. 6DOF based systems allow you to move your entire body in the virtual world; so you can walk around an object and see it from different perspectives, just like you can in the physical world. The Rift and the Vive are also 6DOF based systems.
 
-* Read more about 3DOF and 6DOF here: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
-* Read more about Positional Tracking and Degree's of Freedom (DOF) here: <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
+* Read more about [3DOF and 6DOF.](./index.yml)
+* Read more about [Positional Tracking and Degree's of Freedom (DOF).](https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof)
 
 ## Technical specifications
 
-<table>
-<tr>
-<th style="width:25%"> Headset </th>
-<th style="width:15%"> Resolution </th>
-<th style="width:10%"> Display </th>
-<th style="width:10%"> Refresh Rate </th>
-<th style="width:10%"> FOV </th>
-<th style="width:15%"> Audio </th>
-<th style="width:10%"> Bluetooth </th>
-<th style="width:10%"> IPD Adjustment </th>
-<th style="width:10%"> Release Date </th>
-<th style="width:25%"> More info </th>
-</tr>
-
-<tr>
-<td> Acer AH101 </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 100˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
-</tr>
-
-<tr>
-<td> Acer OJO 500 </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 100˚ </td>
-<td> Integrated + 3.5-mm jack </td>
-<td> Built-in </td>
-<td style="text-align: center;">Mechanical</td>
-<td> Fall 2018 </td>
-<td> <a href="https://www.acer.com/ac/en/US/press/2018/427890">Acer</a> </td>
-</tr>
-
-<tr>
-<td> ASUS HC102 </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 95˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASUS</a> </td>
-</tr>
-
-<tr>
-<td> Dell Visor </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 105˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Dell</a> </td>
-</tr>
-
-<tr>
-<td> Fujitsu FMV Headset </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 105˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
-</tr>
-
-<tr>
-<td> HP Reverb </td>
-<td> 4320x2160 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 114˚ </td>
-<td> Integrated + 3.5-mm jack </td>
-<td> Built-in </td>
-<td style="text-align: center;">Software</td>
-<td> Spring 2019 </td>
-<td> <a href="https://www8.hp.com/us/en/workstations/mixed-reality-headset/index.html">HP</a> </td>
-</tr>
-
-<tr>
-<td> HP VR1000 </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 105˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
-</tr>
-
-<tr>
-<td> Lenovo Explorer </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 105˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
-</tr>
-
-<tr>
-<td> Medion ERAZER MR X1000 </td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 105˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
-</tr>
-
-<tr>
-<td> Samsung HMD Odyssey</td>
-<td> 2880x1600 </td>
-<td> AMOLED </td>
-<td> Up to 90 Hz </td>
-<td> 110˚ </td>
-<td> Integrated </td>
-<td> None </td>
-<td style="text-align: center;">Mechanical</td>
-<td> Fall 2017 </td>
-<td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
-</tr>
-
-<tr>
-<td> Samsung HMD Odyssey+</td>
-<td> 2880x1600 </td>
-<td> AMOLED </td>
-<td> Up to 90 Hz </td>
-<td> 110˚ </td>
-<td> Integrated </td>
-<td> Built-in </td>
-<td style="text-align: center;">Mechanical</td>
-<td> Fall 2018 </td>
-<td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/hmd-odyssey-windows-mixed-reality-headset-xe800zba-hc1us/">Samsung</a> </td>
-</tr>
-
-<tr>
-<td> 3Glasses Blubur S2</td>
-<td> 2880x1440 </td>
-<td> LCD </td>
-<td> Up to 90 Hz </td>
-<td> 105˚ </td>
-<td> 3.5-mm jack </td>
-<td> None </td>
-<td style="text-align: center;">Software</td>
-<td> Fall 2017 </td>
-<td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
-</tr>
-</table>
+| Headset | Resolution | Display | Refresh Rate | FOV | Audio | Bluetooth | IPD Adjustment | Release Date | More info |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Acer AH101 | 2880x1440 | LCD | Up to 90 Hz | 100˚ | 3.5-mm jack | None | Software | Fall 2017 | [Acer](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002) |
+| Acer OJO 500 | 2880x1440 | LCD | Up to 90 Hz | 100˚ | Integrated + 3.5-mm jack | Built-in | Mechanical | Fall 2018 | [Acer](https://www.acer.com/ac/en/US/content/acerdesign-ojo-500) |
+| ASUS HC102 | 2880x1440 | LCD | Up to 90 Hz | 95˚ | 3.5-mm jack | None | Software | Fall 2017 | [ASUS](https://www.vr-compare.com/headset/asushc102) |
+| Dell Visor | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software| Fall 2017 | [Dell](https://www.vr-compare.com/headset/dellvisor) |
+| Fujitsu FMV Headset | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None |Software | Fall 2017 | [Fujitsu](http://pr.fujitsu.com/jp/news/2017/10/17.html) |
+| HP Reverb | 4320x2160 | LCD | Up to 90 Hz | 114˚ | Integrated + 3.5-mm jack | Built-in |Software | Spring 2019| [HP](https://www.vr-compare.com/headset/hpreverb) |
+| HP VR1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [HP](https://www.hp.com/us-en/shop/cv/mixed-reality-headset) |
+| HP Reverb G2 | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Fall 2020 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-virtual-reality-headset) |
+| HP Reverb G2 Omnicept | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Spring 2021 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-omnicept-edition-%282e5q4av%29) |
+| Lenovo Explorer | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Lenovo](https://support.lenovo.com/us/en/solutions/pd500067-overview-for-lenovo-explorer) |
+| Medion ERAZER MR X1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Medion](https://www.medion.com/de/shop/p/gaming-zubehoer-medion-erazer-x1000-mr-glasses-inkl-2-motion-controller-7-34-cm-2-89--lc-display-gaming-zubehoer-bis-zu-105-sichtfeld-2-kameras-zur-bewegungserfassung-30023616A1?clear=true#specs) |
+| Samsung HMD Odyssey | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | None | Mechanical | Fall 2017 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-mixed-reality/) |
+| Samsung HMD Odyssey+ | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | Built-in | Mechanical | Fall 2018 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-plus-mixed-reality/)  |
+| 3Glasses Blubur S2 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [3Glasses](http://3glasses.com/goods.action?gid=30) |
 
 Technical details listed above are referenced from manufacturer specifications and are subject to change.
 
@@ -283,19 +128,19 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Will my PC work with Windows Mixed Reality? What are the minimum specs?
 
-**Quick Answer:** You can find the minimum specs [here](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) or you can download and run [Mixed Reality Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC will work with Windows Mixed Reality.
+**Quick Answer:** You can find the minimum specs [here](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) or you can download and run [Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC will work with Windows Mixed Reality.
 
 ### Will Windows Mixed Reality work with my Xbox?
 
-**Quick Answer:** No, Windows Mixed Reality only works with PCs. Download and run [Mixed Reality Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
+**Quick Answer:** No, Windows Mixed Reality only works with PCs. Download and run [Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
 
 ### What PCs have been badged for Windows Mixed Reality?
 
-**Quick Answer:** The full list of badged PCs hasn't been published yet, but will be later this year. Download and run [Mixed Reality Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
+**Quick Answer:** The full list of badged PCs hasn't been published yet, but will be later this year. Download and run [Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
 
 ### What Windows version supports Windows Mixed Reality?
 
-**Quick Answer:** You must have Windows 10 Fall Creators Update (version 1709) or greater installed. Download and run [Mixed Reality Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
+**Quick Answer:** You must have Windows 10 Fall Creators Update (version 1709) or greater, or Windows 11 installed. Download and run [Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
 
 ### Does the Windows Mixed Reality platform support Rift and Vive hardware?
 
@@ -320,7 +165,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Will the controller's work with Bluetooth 3.1 or do I need Bluetooth 4.0?
 
-**Quick Answer:** The minimum supported specification for Windows Mixed Reality is Bluetooth 4.0. If your PC has Bluetooth 3.1, you won’t be blocked from using the controllers, but the best experience is on BT 4.0. Download and run [Mixed Reality Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
+**Quick Answer:** The minimum supported specification for Windows Mixed Reality is Bluetooth 4.0. If your PC has Bluetooth 3.1, you won’t be blocked from using the controllers, but the best experience is on BT 4.0. Download and run [Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
 
 ### Will Windows Mixed Reality controllers work with HoloLens?
 
@@ -328,11 +173,11 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Will Windows Mixed Reality work with my Oculus Touch controllers or HTC Vive headsets / controllers?
 
-**Quick Answer:** No, Windows Mixed Reality will only work with approved headsets / controllers. See <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Quick Answer:** No, Windows Mixed Reality will only work with approved headsets / controllers. See <https://www.microsoft.com/store/collections/VRandMixedrealityheadsets>
 
 ### Will Windows Mixed Reality work with my SteamVR Knuckle controllers?
 
-**Quick Answer:** No, Windows Mixed Reality will only work with approved headsets / controllers. See <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Quick Answer:** No, Windows Mixed Reality will only work with approved headsets / controllers. See <https://www.microsoft.com/store/collections/VRandMixedrealityheadsets>
 
 ### Will Windows Mixed Reality support my Xbox One controller with the wireless Xbox adapter?
 
@@ -350,7 +195,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Can I see my keyboard from inside a Windows Mixed Reality headset?
 
-**Quick Answer:** You can't see your physical keyboard from the headset, but you can use our software keyboard. Additionally, many Windows Mixed Reality headsets have a front hinged display, so you can flip the headset up while working. More details: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
+**Quick Answer:** You can't see your physical keyboard from the headset, but you can use our software keyboard. Additionally, many Windows Mixed Reality headsets have a front hinged display, so you can flip the headset up while working. More details: <https://www.microsoft.com/windows/windows-mixed-reality#specs>
 
 ### What games require a gamepad as opposed to motion controllers?
 
@@ -368,7 +213,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### What games and apps run on Windows Mixed Reality?
 
-**Quick Answer:** Windows Mixed Reality is compatible with the SteamVR library and with content available in the [Microsoft store](https://www.microsoft.com/en-us/store/collections/MR-All-ImmersiveContent/pc?rtc=2). Look for the Windows Mixed Reality logo on Steam for game compatibility.  
+**Quick Answer:** Windows Mixed Reality is compatible with the SteamVR library and with content available in the [Microsoft store](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/pc?rtc=2). Look for the Windows Mixed Reality logo on Steam for game compatibility.  
 
 ### Will Vive be able to run Windows Mixed Reality content?
 
@@ -376,7 +221,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Can I play my Xbox One games in Windows Mixed Reality?
 
-**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our instructions here: <http://support.xbox.com/en-US/games/game-setup/how-to-use-game-streaming>
+**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10 and Windows 11. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our instructions here: <http://support.xbox.com/games/game-setup/how-to-use-game-streaming>
 
 ## SteamVR
 
@@ -384,6 +229,6 @@ Technical details listed above are referenced from manufacturer specifications a
 
 **Quick Answer:** You can run SteamVR with the Ultra PC requirements for Windows Mixed Reality. However, we recommend running the SteamVR Preview on a PC with a GTX 1070 video card (or better) and an Intel Core i7 processor. We're continuing to review feedback and optimize the performance to support additional system configurations in future updates. Your PC won't be blocked from running Windows Mixed Reality SteamVR if you don't meet these higher specs, however, this will impact the performance and quality of the overall experience.
 
-### Are all Steam VR games be supported?
+### Are all Steam VR games supported?
 
 **Quick Answer:** Our intent is to support as wide a range of Steam games as possible, but keep in mind that Steam games can take dependencies on specific hardware and controller configurations based on the game developer's decisions during development.

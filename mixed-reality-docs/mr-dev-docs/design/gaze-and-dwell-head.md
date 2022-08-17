@@ -1,8 +1,8 @@
 ---
 title: Head-gaze and dwell
 description: Get started with an overview of the head-gaze and dwell input model, including common scenarios and design principles.
-author:  hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Mixed Reality, gaze, dwell, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, ux, guidelines, list view
@@ -28,8 +28,8 @@ Head-gaze and dwell is great in scenarios where a person's hands are busy with o
     <tr>
         <td><strong>Input model</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Head-gaze and dwell</td>

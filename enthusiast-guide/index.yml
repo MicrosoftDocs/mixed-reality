@@ -1,18 +1,20 @@
 ### YamlMime:Hub
 
-title: Windows Mixed Reality VR documentation # < 60 chars
-summary: Experience the thrill of virtual reality in gaming, travel, and streaming. Here you can learn how to get started and advance with VR in Windows Mixed Reality. # < 160 chars
+title: Windows Mixed Reality VR # < 60 chars
+summary: Jump into the expansive world of virtual reality and experience next-level immersive gaming, travel, and streaming. Here you can learn how to get started and advance with VR using Windows Mixed Reality. 
+  # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: windows
 
 metadata:
-  title: Windows Mixed Reality VR documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Experience the thrill of virtual reality in gaming, travel, and streaming. Here you can learn how to get started and advance with VR in Windows Mixed Reality # Required; article description that is displayed in search results. < 160 chars.
+  title: Windows Mixed Reality VR # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Jump into the expansive world of virtual reality and experience next-level immersive gaming, travel, and streaming. Here you can learn how to get started and advance with VR using Windows Mixed Reality. 
+  # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: hub-page # Required
   ms.prod: mixed-reality
   ms.technology: enthusiast-guide
-  author: mattwojo #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mattwoj #Required; microsoft alias of author; optional team alias.
+  author: qianw211 #Required; your GitHub user alias, with correct capitalization.
+  ms.author: qianwen #Required; microsoft alias of author; optional team alias.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -22,81 +24,72 @@ metadata:
 highlightedContent:
   items:
     # Card
-    - title: About Windows Mixed Reality VR
+    - title: Understand PC hardware requirements
+      itemType: concept
+      url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+    # Card
+    - title: Shop for immersive headsets
+      itemType: quickstart
+      url: https://www.microsoft.com/mixed-reality/windows-mixed-reality
+    # Card
+    - title: Use your VR headset
       itemType: overview
       url: vr-journey.md
     # Card
-    - title: How to buy a headset
-      itemType: learn
-      url: https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1
-    # Card
-    - title: Understand the hardware requirements
-      itemType: learn
-      url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
-    # Card
-    - title: Getting started with Virtual Reality
-      itemType: get-started
-      url: set-up-windows-mixed-reality.md
+    - title: Explore solutions for Enterprise and Location-Based Entertainment
+      itemType: how-to-guide
+      url: enterprise-scenarios.md
     # Card
     - title: Health and safety guidance
       itemType: concept
       url: wmr-health-safety-comfort.md
     # Card
-    - title: Mixed Reality software overview and release history
-      itemType: concept
-      url: mixed-reality-software.md
-    
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Start with Windows Mixed Reality  # < 60 chars (optional)
-  summary: Find additional information about Mixed Reality software, hardware, and troubleshooting. # < 160 chars (optional)
+    - title: Troubleshoot common issues
+      itemType: reference
+      url: troubleshooting-windows-mixed-reality.md
+
+# productDirectory section (optional)
+productDirectory:
+  title: Explore more with Windows Mixed Reality # < 60 chars (optional)
+  summary: Find additional information about Windows Mixed Reality features, capabilities, games, experiences, and more!  # < 160 chars (optional)
   items:
     # Card
     - title: How-to's
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: images/WMR_Docs_Landing_How-To's.png
       links:
         - url: plug-in-your-headset.md
-          itemType: quickstart
           text: Connect your headset
         - url: install-windows-mixed-reality.md
-          itemType: quickstart
           text: Install Windows Mixed Reality software
-        - url: learn-mixed-reality.md
-          itemType: quickstart
-          text: Run the learning experience
-        - url: using-games-and-apps-in-windows-mixed-reality.md
-          itemType: quickstart
-          text: Use games and apps
+        - url: set-up-windows-mixed-reality.md
+          text: Set up Windows Mixed Reality
+        - url: controllers-in-wmr.md
+          text: Set up motion controllers
     # Card
-    - title: References
+    - title: References 
+      imageSrc: images/WMR_Docs_Landing_References.png
       links:
         - url: your-mixed-reality-home.md
-          itemType: concept
           text: Your Mixed Reality home
-        - url: controllers-in-wmr.md
-          itemType: concept
-          text: Motion controllers in Windows Mixed Reality
+        - url: using-games-and-apps-in-windows-mixed-reality.md
+          text: Using games, 360 videos, and apps 
         - url: using-steamvr-with-windows-mixed-reality.md
-          itemType: concept
-          text: SteamVR with Windows Mixed Reality
+          text: Setting up SteamVR for Windows Mixed Reality 
         - url: using-speech-in-wmr.md
-          itemType: concept
-          text: Speech in Windows Mixed Reality
+          text: Using Speech in Windows Mixed Reality  
     # Card
-    - title: Troubleshooting
+    - title: What's new
+      imageSrc: images/WMR_Docs_Landing_whats_new.png
       links:
-        - url: troubleshooting-windows-mixed-reality.md
-          itemType: concept
-          text: General FAQ
-        - url: filing-feedback.md
-          itemType: concept
-          text: Filing bugs and feedback
-        - url: error-codes.md
-          itemType: concept
-          text: Error codes
-        - url: installation_errors.md
-          itemType: concept
-          text: Installation errors
+        - url: https://www.microsoft.com/store/collections/mixedreality
+          text: Best in Windows Mixed Reality
+        - url: /windows/mixed-reality/altspace-vr/explore/beginners-guide
+          text: Explore AltspaceVR
+        - url: https://store.steampowered.com/search/?vrsupport=104
+          text: New SteamVR releases 
+        - url: webvr.md
+          text: Using WebXR with Windows Mixed Reality 
 
 # additionalContent section (optional)
 # Card with summary style

@@ -1,8 +1,8 @@
 ---
 title: The Making of Kippy's Escape
 description: Follow along with us as we explore the making of the Kippy's Escape mixed reality application for HoloLens 2 in Unreal Engine.
-author: sw5813
-ms.author: suwu
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 9/4/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
@@ -10,7 +10,8 @@ appliesto:
 - HoloLens 2
 ---
 
-# The Making of Kippy's Escape
+# The making of Kippy's Escape
+![Kippy's Escape hero image](images/KippysEscape_1920.jpg)
 
 Kippy the robot wakes up to find itself stranded on an island. It’s up to you to put on your problem-solving hat to help it find a path back to its rocket ship! Strap on your HoloLens 2 and [download the app](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) from the Microsoft Store or clone the [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) from GitHub and get Kippy home safe!  
 
@@ -19,9 +20,15 @@ Kippy the robot wakes up to find itself stranded on an island. It’s up to you 
 
 Kippy’s Escape is an open-source [HoloLens 2](/hololens/hololens2-hardware) sample app built with Unreal Engine 4 and [Mixed Reality UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In this post, we’ll walk you through our process from first principles and visual design to implementing and optimizing the experience. You can find more information on developing Mixed Reality applications with MRTK UX Tools in the [Unreal development overview](unreal-development-overview.md).
 
+## Download app from Microsoft Store in HoloLens 2
+If you have HoloLens 2 device, you can directly download and install the app in your device.
+
+<a href='//www.microsoft.com/store/apps/9nbd7gl86vkd?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px"/></a>
+
+
 ## First principles 
 
-In setting out to create Kippy’s Escape, our goal was to create an experience that would highlight [Unreal Engine’s HoloLens 2 support](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html), the HoloLens 2’s capabilities, and the Mixed Reality Toolkit. We wanted to inspire developers to imagine what they could create with Unreal and HoloLens 2.  
+In setting out to create Kippy’s Escape, our goal was to create an experience that would highlight [Unreal Engine’s HoloLens 2 support](https://docs.unrealengine.com/develping-for-hololens-in-unreal-engine/), the HoloLens 2’s capabilities, and the Mixed Reality Toolkit. We wanted to inspire developers to imagine what they could create with Unreal and HoloLens 2.  
 
 We came up with three guiding principles for the experience: that it needed to be fun, interactive, and have a low barrier to entry. We wanted the experience to be intuitive enough that even a first-time mixed reality user won’t need a tutorial to go through it.  
 
@@ -96,17 +103,17 @@ Boot up your HoloLens 2 and [download](https://www.microsoft.com/p/kippys-escape
 
 ## About the team
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/jack-caron.jpg"></td>
-<td style="border-style: none"><b>Jack Caron</b><br><i>Lead Game Designer</i><br>Jack currently works on Mixed Reality experiences for Microsoft, including HoloLens 2 projects and AltspaceVR, and was previously a designer on the HoloLens platform team.</td>
+<td><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/jack-caron.jpg"></td>
+<td><b>Jack Caron</b><br><i>Lead Game Designer</i><br>Jack currently works on Mixed Reality experiences for Microsoft, including HoloLens 2 projects and AltspaceVR, and was previously a designer on the HoloLens platform team.</td>
 </tr>
 </table>
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Summer Wu" width="60" height="60" src="images/kippys-escape/summer-wu.jpg"></td>
-<td style="border-style: none"><b>Summer Wu</b><br><i>Producer</i><br>Summer works on the mixed reality developer platform and heads the team’s Unreal Engine related efforts.</td>
+<td width="60"><img alt="Picture of Summer Wu" width="60" height="60" src="images/kippys-escape/summer-wu.jpg"></td>
+<td><b>Summer Wu</b><br><i>Producer</i><br>Summer works on the mixed reality developer platform and heads the team’s Unreal Engine related efforts.</td>
 </tr>
 </table>
 

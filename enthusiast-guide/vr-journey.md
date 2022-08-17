@@ -1,8 +1,8 @@
 ---
 title: Start your VR journey
 description: Explore our curated checkpoints to guide new device users through setting up and using their immersive VR devices.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,
@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,
 
 # Start your VR journey
 
-![Stock image of VR overlaid environment](images/mr-win32-slates-pinspanel.png)
+![Stock image of VR overlaid environment](images/vr-journey-hero.png)
 
 ## Setup & usability checkpoints
 
@@ -42,7 +42,7 @@ Once you have your device, you'll need to correctly set up and configure it for 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md) | Get comfortable with your controllers, room boundaries, speech input, and Microsoft Edge on your new VR device |
-| [Windows Mixed Reality setup FAQs](wmr-setup-faq.md) | Get answers and troubleshooting help with known issues when setting up Windows Mixed Reality |
+| [Windows Mixed Reality setup FAQs](wmr-setup-faq.yml) | Get answers and troubleshooting help with known issues when setting up Windows Mixed Reality |
 | [Health, safety, and comfort guidelines](wmr-health-safety-comfort.md) | Recommendations to stay safe while using Windows Mixed Reality before using your headset  |
 
 ### 3. Using Windows Mixed Reality
@@ -63,7 +63,7 @@ There are different features and services available through Windows Mixed Realit
 | [Using speech input](using-speech-in-wmr.md) | Familiarize yourself with different voice commands that can interact with 3D objects, the App bar, Start menu, and Cortana |
 
 > [!NOTE]
-> If you're having trouble with any of the above features, check out the **[Using Windows Mixed Reality FAQ](using-wmr-faq.md)**.
+> If you're having trouble with any of the above features, check out the **[Using Windows Mixed Reality FAQ](using-wmr-faq.yml)**.
 
 ## 4. Discover apps and content
 
@@ -77,6 +77,7 @@ Find immersive games, desktop applications, and VR content in the resources belo
 | [Using SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connect your device and play SteamVR games and learn about the Windows Insider Program |
 | [Using Microsoft Edge](using-microsoft-edge.md) | Install the latest version of Microsoft Edge on your immersive device |
 | [Using WebVR](webvr.md) | Get setup to experience VR in your browser environment |
+| [Explore AltspaceVR](/windows/mixed-reality/altspace-vr/explore/beginners-guide) | Explore the expanding world of VR events with AltspaceVR |
 
 ## Troubleshooting, tips & resources
 

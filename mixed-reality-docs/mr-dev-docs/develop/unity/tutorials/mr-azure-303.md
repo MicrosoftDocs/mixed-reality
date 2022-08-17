@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 303 - Natural language understanding (LUIS)
+title: HoloLens (1st gen) and Azure 303 - Natural language understanding (LUIS)
 description: Complete this course to learn how to implement Azure Language Understanding Intelligence Service (LUIS) within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding intelligence service, luis, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-# MR and Azure 303: Natural language understanding (LUIS)
+# HoloLens (1st gen) and Azure 303: Natural language understanding (LUIS)
 
 <br>
 
@@ -39,9 +39,9 @@ Be prepared to Train LUIS several times, which is covered in [Chapter 12](#chapt
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR and Azure 303: Natural language understanding (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR and Azure 303: Natural language understanding (LUIS)</td><td> ✔️</td><td> ✔️</td>
 </tr>
 </table>
 
@@ -60,7 +60,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md)
 - [Unity 2017.4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
+- A [Windows Mixed Reality immersive (VR) headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
 - Internet access for Azure setup and LUIS retrieval
 
@@ -438,17 +438,32 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 12.	Left click on the **Cube** to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
-    |        | Transform - *Position* |       |  \| |       | Transform - *Rotation* |       |
-    |:------:|:----------------------:|:-----:|:---:|:-----:|:----------------------:|:-----:|
-    | **X** | **Y**                   | **Z** |  \| | **X** | **Y**                  | **Z** |
-    | 0     | 1                       | 4     |  \| | 45    | 45                     | 0     | 
+**Transform - Position**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 1     | 4     |  
+
+**Transform - Rotation**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 45    | 45    | 0     |  
 
 13.	Left click on the **New Text** object to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
-    |       | Transform - *Position* |       |  \| |       | Transform - *Scale* |       |
-    |:-----:|:----------------------:|:-----:|:---:|:-----:|:-------------------:|:-----:|
-    | **X** | **Y**                  | **Z** |  \| | **X** | **Y**               | **Z** |
-    | -2    | 6                      | 9     |  \| | 0.1   | 0.1                 | 0.1   | 
+**Transform - Position**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| -2    | 6     | 9     |   
+
+**Transform - Scale**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0.1   | 0.1   | 0.1   |  
+
 
 14.	Change **Font Size** in the **Text Mesh** component to **50**.
 15.	Change the *name* of the **Text Mesh** object to **Dictation Text**.

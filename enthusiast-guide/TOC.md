@@ -1,15 +1,16 @@
 # [Windows Mixed Reality enthusiast documentation](index.yml)
-## [Start your VR journey](vr-journey.md)
 
 ## Getting started
 ### [Before you start](before-you-start.md)
+### [Start your VR journey](vr-journey.md)
 ### [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 ### [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [Get help with PC compatibility](get-help-with-pc-compatibility.md)
 ### [Plug in your headset](plug-in-your-headset.md)
+### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
-### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.md)
+### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.yml)
 
 ## Using Windows Mixed Reality
 ### [Learning experience in Mixed Reality](learn-mixed-reality.md)
@@ -20,13 +21,27 @@
 ### [Using SteamVR](using-steamvr-with-windows-mixed-reality.md)
 ### [Using Microsoft Edge](using-microsoft-edge.md)
 ### [What is WebVR](webvr.md)
-### [Using Windows Mixed Reality FAQ](using-wmr-faq.md)
+### [Using Windows Mixed Reality FAQ](using-wmr-faq.yml)
 
-## Troubleshooting and FAQs
-### [FAQ overview](troubleshooting-windows-mixed-reality.md)
+## [Enterprise scenarios](enterprise-scenarios.md)
+### [Training and simulation](training-simulation.md)
+### [Prototyping and manufacturing](prototyping-manufacturing.md)
+### [Marketing and advertisement](marketing-advertisement.md)
+### [Immersive shopping experiences](immersive-shopping.md)
+
+## [Location-Based Entertainment](location-based-experiences.md)
+### [Theme Parks and Family Entertainment Centers](theme-parks-family-entertainment.md)
+### [Free-roam VR multiuser experiences](free-roam-vr-multiuser-experiences.md)
+### [Virtual Reality Arcades](virtual-reality-arcades.md)
+### [Immersive education](immersive-education.md)
+### [Virtual museums, exhibits, and tourism](virtual-museums.md)
+
+## Troubleshooting & FAQ
+### [Troubleshoot in Windows Mixed Reality](troubleshooting-windows-mixed-reality.md)
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
 ### [Installation errors](installation_errors.md)
+### [Mixed Reality Portal error messages](mixed-reality-portal-error-messages.md)
 ### [Before you buy](before-you-buy-faqs.md)
 ### [Boundaries](boundary-questions.md)
 ### [Headset connectivity](headset-connectivity.md)
@@ -37,14 +52,16 @@
 ### [SteamVR](steamvr-questions.md)
 ### [Tracking system](tracking.md)
 ### [WebVR](webvr-questions.md)
-### [Other questions](other-questions.md)
-### [HP Reverb G2 FAQ](reverbG2-faq.md)
+### [Immersive hardware FAQ](other-questions.md)
+### [HP Reverb G2 FAQ](reverbG2-faq.yml)
+### [Enterprise & LBE FAQ](enterprise-lbe-faq.md)
 
 ## Resources
+### [Get help for Windows Mixed Reality](get-wmr-info.md)
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
 ### [How inside-out tracking works](tracking-system.md)
 ### [HP Reverb G2 Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [HP Reverb G2 Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
-## [Contributing guide](contributing.md)
+## [Contributing guide](/windows/mixed-reality/contributing)

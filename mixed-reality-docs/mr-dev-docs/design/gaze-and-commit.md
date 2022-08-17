@@ -36,8 +36,8 @@ Below are a few examples for how you as a mixed reality developer can benefit fr
     <tr>
         <td><strong>Input model</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Head-gaze and commit</td>
@@ -53,6 +53,13 @@ Below are a few examples for how you as a mixed reality developer can benefit fr
     </tr>
 </table>
 
+## Head and eye tracking design concepts demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
 ## Gaze
 
@@ -243,7 +250,7 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 
 [Instructions to pair the device](../discover/hardware-accessories.md#pairing-bluetooth-accessories)
 
-<a href=https://www.xbox.com/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
+<a href=https://www.xbox.com/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
 <br>
 

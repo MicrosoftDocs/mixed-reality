@@ -1,0 +1,20 @@
+- name: Overview
+  href: overview.md
+- name: Mixed Reality Design Language
+  href: mixed-reality-design-language.md
+- name: Buttons
+  href: button.md
+- name: Button group
+  href: button-group.md
+- name: Dialog
+  href: dialog.md
+- name: Hand menu
+  href: hand-menu.md
+- name: Near menu
+  href: near-menu.md
+- name: Slate
+  href: slate.md
+- name: Slider
+  href: slider.md
+- name: API reference
+  href: https://aka.ms/mrtk3uxcompapi

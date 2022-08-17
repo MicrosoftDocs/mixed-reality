@@ -1,13 +1,13 @@
 ---
 title: Before you start
 description: Learn how to make sure your PC is compatible and ready for a variety of Windows Mixed Reality application experiences.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, compatible, compatibility, get started, setup, PC, system requirements
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 # Before you start
@@ -15,7 +15,7 @@ appliesto:
 ## What you'll need to run Windows Mixed Reality
 
 * A Windows [Mixed Reality head mounted display (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
-* A new [Windows Mixed Reality ready PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) or a Windows Mixed Reality compatible PC running Windows 10 Version 1709 or later.
+* A new [Windows Mixed Reality ready PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) or a Windows Mixed Reality compatible PC running Windows 10 Version 1709 or later or Windows 11.
 * An internet connection
 * Display, USB, and Bluetooth adapters (if not built into headset or computer)
 * Either motion controllers, an Xbox controller, or a mouse and keyboard
@@ -40,6 +40,16 @@ You must be running the Windows 10 Version 1903 or newer to use Windows Mixed Re
 To see which version of Windows 10 your device is currently running, select the **Start** button, then select **Settings  > System > About**.
 
 To ensure that Windows 10 is up to date on your PC, select the **Start** button, then select **Settings > Update & security > Windows Update**.  Select **Check for updates**. If updates are available, install them.
+
+## Make sure you have the Windows 11 Version 21H2 or newer installed
+
+You must be running the Windows 11 Version 21H2 or newer to use Windows Mixed Reality. Compatible versions of Windows 11 include:
+
+* Windows 11 Version 21H2
+
+To see which version of Windows 11 your device is currently running, select the **Start** button, then select **Settings  > System > About**.
+
+To ensure that Windows 11 is up to date on your PC, select the **Start** button, then select **Settings > Update & security > Windows Update**.  Select **Check for updates**. If updates are available, install them.
 
 Check out [keeping your PC up to date](https://support.microsoft.com/help/12373/windows-update-faq) for more information.
 

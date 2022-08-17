@@ -62,7 +62,7 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 </tr><tr>
 <td> 6DoF grip pose or pointer pose </td><td colspan="2"> <i>Grip</i> pose only: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR.InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR.InputTracking.GetLocalRotation</a></td><td> Pass <i>Grip</i> or <i>Pointer</i> as an argument: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
 </tr><tr>
-<td> Tracking state </td><td colspan="2"> <i>Position accuracy and source loss risk only available through MR-specific API</i> </td><td> <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
+<td> Tracking state </td><td colspan="2"> <i>Position accuracy and source loss risk only available through MR-specific API</i> </td><td> <a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
 </tr>
 </table>
 
@@ -96,6 +96,23 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 </tr>
 </table> -->
 
+### OpenXR
+
+To learn the basics about mixed reality interactions in Unity, visit the [Unity Manual for Unity XR Input](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). This Unity documentation covers the mappings from controller-specific inputs to more generalizable **InputFeatureUsage**s, how available XR inputs can be identified and categorized, how to read data from these inputs, and more.
+
+The Mixed Reality OpenXR Plugin provides additional input interaction profiles, mapped to standard **InputFeatureUsage**s as detailed below:
+
+| InputFeatureUsage | HP Reverb G2 Controller (OpenXR) | HoloLens Hand (OpenXR) |
+| ---- | ---- | ---- |
+| primary2DAxis | Joystick | |
+| primary2DAxisClick | Joystick - Click | |
+| trigger | Trigger  | |
+| grip | Grip | Air tap or squeeze |
+| primaryButton | [X/A] - Press | Air tap |
+| secondaryButton | [Y/B] - Press | |
+| gripButton | Grip - Press | |
+| triggerButton | Trigger - Press | |
+| menuButton | Menu | |
 
 ## Grip pose vs. pointing pose
 
@@ -125,6 +142,27 @@ The system-provided pointer pose is best used to raycast when you're **rendering
 
 Currently, the pointer pose is available in Unity only through the Windows MR-specific API, *sourceState.sourcePose.TryGetPosition/Rotation*, passing in *InteractionSourceNode.Pointer* as the argument.
 
+### OpenXR 
+
+You have access to two sets of poses through OpenXR input interactions:
+
+* The grip poses for rendering objects in the hand
+* The aim poses for pointing into the world.
+
+More information on this design and the differences between the two poses can be found in the [OpenXR Specification - Input Subpaths](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input).
+
+Poses supplied by the InputFeatureUsages **DevicePosition**, **DeviceRotation**, **DeviceVelocity**, and **DeviceAngularVelocity** all represent the OpenXR **grip** pose. InputFeatureUsages related to grip poses are defined in Unity’s [CommonUsages](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html).
+
+Poses supplied by the InputFeatureUsages **PointerPosition**, **PointerRotation**, **PointerVelocity**, and **PointerAngularVelocity** all represent the OpenXR **aim** pose. These InputFeatureUsages aren't defined in any included C# files, so you'll need to define your own InputFeatureUsages as follows:
+
+``` cs
+public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
+```
+
+## Haptics
+
+For information on using haptics in Unity’s XR Input system, documentation can be found at the [Unity Manual for Unity XR Input - Haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
+
 ## Controller tracking state
 
 Like the headsets, the Windows Mixed Reality motion controller requires no setup of external tracking sensors. Instead, the controllers are tracked by sensors in the headset itself.
@@ -133,11 +171,11 @@ If the user moves the controllers out of the headset's field of view, Windows co
 
 At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
-The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
+<!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
 <br>
 
- >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
+ >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g] -->
 
 ### Reasoning about tracking state explicitly
 
@@ -147,13 +185,13 @@ Apps that wish to treat positions differently based on tracking state may go fur
 <tr>
 <th> Tracking state </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>High accuracy</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>High accuracy</b> </td><td> &lt; 1.0 </td><td> High </td><td> true</td>
 </tr><tr>
-<td> <b>High accuracy (at risk of losing)</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>High accuracy (at risk of losing)</b> </td><td> == 1.0 </td><td> High </td><td> true</td>
 </tr><tr>
-<td> <b>Approximate accuracy</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Approximate accuracy</b> </td><td> == 1.0 </td><td> Approximate </td><td> true</td>
 </tr><tr>
-<td> <b>No position</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: orange"> false</td>
+<td> <b>No position</b> </td><td> == 1.0 </td><td> Approximate </td><td> false</td>
 </tr>
 </table>
 
@@ -429,9 +467,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## Motion Controllers in MRTK v2
+## Motion Controllers in MRTK
 
-You can access [gesture and motion controller](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html) from the input Manager.
+You can access [gesture and motion controller](/windows/mixed-reality/mrtk-unity/features/input/controllers) from the input Manager.
 
 ## Follow along with tutorials
 

@@ -2,10 +2,10 @@
 title: Setting up Photon Unity Networking
 description: Complete this course to learn how to implement Photon Unity Network in a HoloLens 2 mixed reality application.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: vinnietieto
+ms.date: 03/22/2022
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
+keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, PUN
 ms.localizationpriority: high
 ---
 
@@ -23,16 +23,15 @@ In this tutorial, you will prepare for creating a shared experience using Photon
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-First, follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+First, follow the [Initializing your project and deploying your first application](/learn/paths/beginner-hololens-2-tutorials/), excluding the [Adding hand interaction to an object](/learn/paths/beginner-hololens-2-tutorials/#adding-hand-interaction-to-an-object) and [Build your application to your device](/learn/paths/beginner-hololens-2-tutorials/#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
-1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
-2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *MultiUserCapabilities*
+1. [Creating the Unity project](/learn/paths/beginner-hololens-2-tutorials/#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+2. [Switching the build platform](/learn/paths/beginner-hololens-2-tutorials/#switching-the-build-platform)
+3. [Importing the TextMeshPro Essential Resources](/learn/paths/beginner-hololens-2-tutorials/#importing-the-textmeshpro-essential-resources)
+4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](/learn/paths/beginner-hololens-2-tutorials/#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Creating the scene and configuring MRTK](/learn/paths/beginner-hololens-2-tutorials/#creating-the-scene-and-configuring-mrtk) and give the scene a suitable name, for example, *MultiUserCapabilities*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to:
+Then follow the [Changing the Spatial Awareness Display Option](/learn/paths/beginner-hololens-2-tutorials/#changing-the-spatial-awareness-display-option) instructions to:
 
 1. Change the **MRTK configuration profile** for to the **DefaultHoloLens2ConfigurationProfile**
 1. Change the **spatial awareness mesh display options** to **Occlusion**.
@@ -43,7 +42,7 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Player 
 
 ![Unity Player settings](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, **SpatialPerception**, and **GazeInput** capabilities, which you enabled during the [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project) step above, are enabled.
+In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, **SpatialPerception**, and **GazeInput** capabilities, which you enabled during the [Configuring the Unity project](/learn/paths/beginner-hololens-2-tutorials/#configuring-the-unity-project) step above, are enabled.
 
 Then enable the following additional capabilities:
 
@@ -52,32 +51,15 @@ Then enable the following additional capabilities:
 
 ![Unity Capabilities settings](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
-## Installing inbuilt Unity packages
-
-In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
-
-![Unity Package Manager with AR Foundation selected](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
-
-> [!NOTE]
-> You are installing the AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
-
 ## Importing the tutorial assets
-
-Add AzurespatialAnchors SDK V2.7.1 into your unity project, to add the packages please follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
  
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage)
-
-After you have imported the tutorial assets your Project window should look similar to this:
-
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
 
 > [!NOTE]
 > After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is expected and will be resolved in the next section when you import the PUN assets.

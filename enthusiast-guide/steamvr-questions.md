@@ -1,6 +1,9 @@
 ---
 title: SteamVR FAQs
 description: SteamVR Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+author: qianwen
+ms.author: qianwen
+ms.date: 09/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, SteamVR
 ---
@@ -17,7 +20,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Trouble
 
 ## A message says “To use SteamVR with Windows Mixed Reality, you need to install the latest Windows Update" or "Windows Developer Mode Required"
 
-1. Make sure your PC is running the latest version of Windows 10. Go to **Settings > System > About**, and under "Windows specifications", make sure "OS Build" is 16299.64 or greater.
+1. Make sure your PC is running the latest version of Windows 10 or Windows 11. Go to **Settings > System > About**, and under "Windows specifications", make sure "OS Build" is 16299.64 or greater.
 2. Make sure you don’t have any updates waiting to download or install. Go to **Settings > Update & Security > Windows Update** and select "Check for updates". You may have to check multiple times until no further updates are available and then restart your PC.
 
 ## SteamVR is crashing after updating Windows

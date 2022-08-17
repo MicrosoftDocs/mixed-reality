@@ -1,69 +1,45 @@
 ---
-layout: LandingPage
 title: Learn the tools and architecture
 description: Learn about the mixed reality development tools you'll need to get started making apps for HoloLens and immersive headsets.
-author: grbury
-ms.author: grbury
-ms.date: 12/9/2020
+author: vtieto
+ms.author: vinnietieto
+ms.date: 9/15/2021
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, virtual reality development, augmented reality development
 ---
 
-# Introduction to Mixed Reality development
+# Introduction to mixed reality development
 
 ![Abstract 3D sphere](images/development-hero-image.png)
 
-Mixed Reality is a big place, a nexus where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
+Mixed reality is a big place, where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the mixed reality ecosystem--it's time to create.
 
-## Development options
+You can choose a starting point below based  on where you are in your journey so far.
 
-**Unity** - Unity is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
+## New to mixed reality development?
 
-**Unreal** - Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
+### Learn the concepts, products and services
 
-**Native (OpenXR)** - OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop. If you don't have access to a headset, emulators for HoloLens 2 and Windows Mixed Reality headsets are available.
+Start at the very beginning with an overview of what mixed reality is and how it differs from Virtual and Augmented Reality. Learn about the HoloLens, immersive headsets, and holograms. Explore basic design and develop concepts and related technologies such as Azure Remote Rendering.
 
-## What technology path are you interested in? 
+> [!div class="nextstepaction"]
+> [Introduction to mixed reality on Microsoft Learn](/learn/modules/intro-to-mixed-reality/)
 
-There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to its respective tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
+### Start building a mixed reality experience
 
-> [!IMPORTANT]
-> Take a look at our **[porting guides overview](porting-apps/porting-overview.md)** if you have existing projects that you want to bring over to HoloLens 2 or immmersive VR headsets like the Reverb G2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Oculus Rift or HTC Vive.
+If you're already familiar with the basic concepts and want to get started building something, check out our "HoloLens 2 Fundamentals"  tutorial series. You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. This will give you a firm grasp of MRTK and show you how it can speed up your development process.
 
-[!INCLUDE[](includes/tech-path-overview.md)]
+> [!div class="nextstepaction"]
+> [HoloLens 2 Fundamentals tutorials](/learn/paths/beginner-hololens-2-tutorials/)
 
-## What's next?
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
-Now that you have a technology path in mind, let's equip you with the tools you need to start your journey.
+## Choose your own development path
+Are you an intermediate-to-advanced developer with some previous experience in Mixed, Augmented, or Virtual Reality? We'll help you choose the proper tools and get set up, if needed, and then we'll direct you to our curated development paths across Unity, Unreal, Native, or Web.
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)
 
-<!-- 
-## What would you like to do next?
-
-:::row:::
-    :::column:::
-       [![Understand the basics](images/icon-lightbulb.png)](get-started-with-mr.md#understand-the-basics)<br>
-        **[Understand the basics](get-started-with-mr.md#understand-the-basics)**<br>
-        Get a better understanding of what defines mixed reality and how it’s being used.
-    :::column-end:::
-    :::column:::
-        [![Become a creator](images/icon-design.jpg)](design.md)<br>
-         **[Become a creator](design.md)**<br>
-        Learn the basic concepts you need to begin designing and prototyping.
-    :::column-end:::
-    :::column:::
-        [![Install the tools](images/icon-developer.jpg)](install-the-tools.md)<br>
-         **[Install the tools](install-the-tools.md)**<br>
-        Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
-    :::column-end:::
-    :::column:::
-        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
-         **[Come to an event](sf-academy-events.md)**<br>
-        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
-    :::column-end:::
-:::row-end:::
--->
 

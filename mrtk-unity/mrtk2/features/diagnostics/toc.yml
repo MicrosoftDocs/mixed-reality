@@ -1,0 +1,6 @@
+- name: Configuring the diagnostics system
+  href: configuring-diagnostics.md
+- name: Diagnostics system overview
+  href: diagnostics-system-getting-started.md
+- name: Using the visual profiler
+  href: using-visual-profiler.md

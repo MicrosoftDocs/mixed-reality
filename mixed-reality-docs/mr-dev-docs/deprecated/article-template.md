@@ -1,6 +1,6 @@
 ---
 title: Article template
-description: Template article .md file that can be copied. Shows how to layout images using  rows and columns and other conventions.
+description: Template article .md file that can be copied. Shows how to layout images using rows and columns and other conventions.
 author: rwinj
 ms.author: randyw
 ms.date: 10/22/2019
@@ -28,8 +28,8 @@ keywords: none
 <tr>
      <td><strong>Feature</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Subject matter or article title</td>
@@ -71,12 +71,12 @@ Editorial conventions:
 
 :::row:::
     :::column:::
-        ![Description of what the pictures is here.](images/image-466x466px-2-columns.jpg)<br>
+        ![Template placeholder image, add description of what the pictures is here.](images/image-466x466px-2-columns.jpg)<br>
         **Image #1 label text**<br>
         Further clarification and description of image - optional, use as needed
     :::column-end:::
     :::column:::
-        ![Description of what the pictures is here.](images/image-466x466px-2-columns.jpg)<br>
+        ![Placeholder: Description of what the pictures is here.](images/image-466x466px-2-columns.jpg)<br>
         **Image #2 label text**<br>
         Further clarification and description of image - optional, use as needed
     :::column-end:::
@@ -93,15 +93,15 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 :::row:::
     :::column:::
-       ![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)<br>
+       ![Description of what the pictures is here. Placeholder](images/image-306x306px-3-columns.jpg)<br>
        **Image #1 label text**<br>
     :::column-end:::
     :::column:::
-       ![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)<br>
+       ![Placeholder image description of what the pictures is here.](images/image-306x306px-3-columns.jpg)<br>
         **Image #2 label text**<br>
     :::column-end:::
     :::column:::
-       ![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)<br>
+       ![Another placeholder image for the description of what the pictures is here.](images/image-306x306px-3-columns.jpg)<br>
        **Image #3 label text**<br>
     :::column-end:::
 :::row-end:::
@@ -121,19 +121,19 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 
 :::row:::
     :::column:::
-       ![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)<br>
+       ![Description of what the placeholder image is here.](images/image-226x226px-4-columns.jpg)<br>
        **Image #1 label text**<br>
     :::column-end:::
     :::column:::
-       ![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)<br>
+       ![Placeholder image.](images/image-226x226px-4-columns.jpg)<br>
         **Image #2 label text**<br>
     :::column-end:::
     :::column:::
-       ![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)<br>
+       ![Description of what the template pictures is here.](images/image-226x226px-4-columns.jpg)<br>
        **Image #3 label text**<br>
     :::column-end:::
     :::column:::
-       ![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)<br>
+       ![Description of what the pictures is here. Placeholder template.](images/image-226x226px-4-columns.jpg)<br>
        **Image #4 label text**<br>
     :::column-end:::
 :::row-end:::
@@ -195,7 +195,7 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 
 Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.
 
-![Description of what the pictures is here.](images/image-hero-template.jpg)<br>
+![Large placeholder edge-to-edge image min width of asset = 940 p x.](images/image-hero-template.jpg)<br>
 *Description of what the pictures is here.*
 
 <br>

@@ -1,8 +1,8 @@
 ---
 title: Designing holograms
 description: Learn about Mixed Reality through Microsoft's new Designing Holograms application.
-author: hferrone
-ms.author: daescu
+author: vtieto
+ms.author: vinnietieto
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, Mixed Reality Toolkit, holograms, Designing Holograms, learning, sample app, mixed reality headset, virtual reality headset, what is virtual reality
@@ -41,7 +41,7 @@ Designing Holograms is a visual experience that explains mixed reality design co
 
 <br>
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Designing-Holograms-app-trailer/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Designing-Holograms-app-trailer/player]
 
 *Designing Holograms trailer video​*
 
@@ -49,7 +49,7 @@ Designing Holograms is a visual experience that explains mixed reality design co
 
 The doll house is the virtual environment we use throughout the app. The environment is an 80 x 60 x 40-cm miniature room that contains the basic elements that most rooms have in common, like walls, lamps, furniture, a table, and a TV. The doll house is the main protagonist of the app experience, so we needed to make sure it would work great in any environment. Think of it as a small demo room for visualizing all sorts of mixed reality concepts.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Dollhouse-adjustment-behavior-in-the-Designing-Holograms-app/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Dollhouse-adjustment-behavior-in-the-Designing-Holograms-app/player]
 *Video of the Dollhouse adjustment behavior​*
 
 ### 1:1 vs 1:10 prototypes
@@ -76,14 +76,14 @@ Microsoft has a Mixed Reality Capture studio in San Francisco. Microsoft also li
 
 <br>
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Raw-capture-footage-for-the-Designing-Holograms-app/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Raw-capture-footage-for-the-Designing-Holograms-app/player]
 *Raw footage of Daniel Escudero from one of the 106 cameras in the Mixed Reality Capture Studio in San Francisco.​*
 
 The capture process generates a keyframed mesh, normals, and texture, which can be delivered as OBJ/PNG files for further post-production, or ready for playback as an H.264 compressed MP4 file. These files can be imported into Unity, Unreal, Native, and WebXR projects. Files can run on Windows, iOS, Mac, Android, Magic Leap, and Playstation VR.​
 
 <br>
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Mixed-Reality-Capture-footage-for-the-Designing-Holograms-app/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Mixed-Reality-Capture-footage-for-the-Designing-Holograms-app/player]
 *The Capture Player provided to analyze mp4s that contain video with audio and embedded meshes.​*
 
 ## Manipulating captures and virtual objects
@@ -119,6 +119,18 @@ Obviously icons work a lot better than simple text does, to provide an even more
 ![Animated GIF of an interactive holographic menu system](images/designing-holograms/creative-process.gif)
 
 ## Core concepts
+
+**Head Tracking and Eye Tracking**
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+**Hand Tracking**
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+**Spatial Awareness**
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 **Holographic frame**
 
@@ -162,17 +174,17 @@ Designing Holograms teaches mixed reality concepts, but it also allows you to tr
 
 ## About the team
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Daniel Escudero" width="60" height="60" src="images/designing-holograms/daniel-escudero.jpeg"></td>
-<td style="border-style: none"><b>Daniel Escudero</b><br><i>Lead Technical Designer</i><br>Dan is the Creative Director on Designing Holograms and currently works as Design Lead for the Microsoft’s Mixed Reality Academy in San Francisco, and was previously a Designer in one of Microsoft’s Mixed Reality Studios in London.</td>
+<td width="60"><img alt="Picture of Daniel Escudero" width="60" height="60" src="images/designing-holograms/daniel-escudero.jpeg"></td>
+<td><b>Daniel Escudero</b><br><i>Lead Technical Designer</i><br>Dan is the Creative Director on Designing Holograms and currently works as Design Lead for the Microsoft’s Mixed Reality Academy in San Francisco, and was previously a Designer in one of Microsoft’s Mixed Reality Studios in London.</td>
 </tr>
 </table>
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Martin Wettig​" width="60" height="60" src="images/designing-holograms/martin-wettig.jpeg"></td>
-<td style="border-style: none"><b>Martin Wettig​</b><br><i>Senior 3D Artist</i><br>Martin leads 3D Art and UI Design on Designing Holograms and was previously a Senior 3D Artist at one of Microsoft’s Mixed Reality Studios in Berlin.​</td>
+<td width="60"><img alt="Picture of Martin Wettig​" width="60" height="60" src="images/designing-holograms/martin-wettig.jpeg"></td>
+<td><b>Martin Wettig​</b><br><i>Senior 3D Artist</i><br>Martin leads 3D Art and UI Design on Designing Holograms and was previously a Senior 3D Artist at one of Microsoft’s Mixed Reality Studios in Berlin.​</td>
 </tr>
 </table>
 

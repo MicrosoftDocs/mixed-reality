@@ -1,8 +1,8 @@
 ---
 title: Using Speech in Windows Mixed Reality
 description: Learn how to use speech input to control commands, 3D objects, and dictation in your Windows Mixed Reality apps.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 09/16/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
@@ -14,7 +14,7 @@ appliesto:
 
 You can use your voice to get around Windows Mixed Reality faster. Taking a quick photo, opening an app, even teleporting without a controller are all a word away. For an easy way to type, try dictation mode on the mixed reality keyboard. 
 
-Having trouble with Speech? [Get help](using-wmr-faq.md#speech-commands-arent-working)
+Having trouble with Speech? [Get help](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
@@ -36,7 +36,7 @@ Use the following speech commands throughout Windows Mixed Reality to get around
 | Select | Say “select” to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say “select” again. |
 | Open the Start menu | Go to Start |
 | Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
-| Turn Flashlight on/off | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
+| Turn Flashlight on/off | Flashlight on / Flashlight off |
 | Teleport | Turn your head toward the place you want to go, and then say “teleport.” (For more precise targeting, first say “select” to bring up the gaze cursor, then say “teleport.”) |
 | Turn to the left or right | Turn left / turn right |
 | Turn 180 degrees | Turn around |

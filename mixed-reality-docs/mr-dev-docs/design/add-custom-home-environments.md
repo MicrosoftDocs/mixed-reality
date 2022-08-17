@@ -2,7 +2,7 @@
 title: Design your own immersive environments
 description: Learn how to create Windows Mixed Reality home environments of your own.
 author: thmignon
-ms.author: thmignon
+ms.author: v-chmccl
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Custom Environments, places, cliff house, skyloft, user, create, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
@@ -28,7 +28,7 @@ When using a custom environment you'll notice that teleporting, interacting with
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Custom home environments</td>
@@ -77,7 +77,7 @@ Windows Mixed Reality relies on binary glTF (.glb) as the asset delivery format 
 
 The first step in exporting assets to be used as custom home environments is generating a glTF 2.0 model. The glTF working group maintains a [list of supported exporters and converters](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) to create a glTF 2.0 model. To get started, use one of the programs listed on this page to create and export a glTF 2.0 model, or convert an existing model using one of the supported converters.
 
-Additionally, check out [this helpful article, which provides an overview of an art workflow for exporting glTF models from Blender and 3DS Max directly. 
+<!-- Additionally, check out [this helpful article, which provides an overview of an art workflow for exporting glTF models from Blender and 3DS Max directly.  -->
 
 ### Environment limits
 

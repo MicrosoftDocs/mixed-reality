@@ -15,7 +15,7 @@ keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submi
 
 ## Prerequisites
 
-Both [HoloLens](/hololens/hololens1-hardware) and the Windows 10 PC powering your [immersive headset](../discover/immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens, PC, or both, app submission goes through the [Partner Center](https://partner.microsoft.com/dashboard).
+Both [HoloLens](/hololens/hololens1-hardware) and the Windows 10 PC powering your [immersive headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens, PC, or both, app submission goes through the [Partner Center](https://partner.microsoft.com/dashboard).
 
 If you don't already have a Partner Center developer account, [sign up](https://developer.microsoft.com/store/register) for one before moving on. You can find more information about submission guidelines and checklists in this [app submissions article](/windows/uwp/publish/app-submissions).
 
@@ -61,7 +61,7 @@ The Start menu on HoloLens will use the largest included square tile image by de
 
 If your Mixed Reality app includes features that are specific to a Windows version, it's important to specify the supported target and minimum platform versions.
 
-**Pay special attention for apps targeting [Windows Mixed Reality immersive headsets](../discover/immersive-headset-hardware-details.md), which require at least the Windows 10 Fall Creators Update (10.0; Build 16299) to function properly.**
+**Pay special attention for apps targeting [Windows Mixed Reality immersive headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details), which require at least the Windows 10 Fall Creators Update (10.0; Build 16299) to function properly.**
 
 You'll be prompted to set the target and minimum version of Windows when you create a new Universal Windows Project in Visual Studio. For existing projects, you can change this setting in the **Project** menu by selecting the **<Your app name's> Properties** at the bottom of the drop-down menu.
 
@@ -70,7 +70,7 @@ You'll be prompted to set the target and minimum version of Windows when you cre
 
 ### Specifying target device families
 
-Windows Mixed Reality applications (for both [HoloLens](/hololens/hololens1-hardware) and [immersive headsets](../discover/immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a **Windows.Universal** [target device family](/uwp/schemas/appxpackage/uapmanifestschema/element-targetdevicefamily) can run on HoloLens or Windows 10 PCs with immersive headsets. If you don't specify a target device family in your app manifest, you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, then [double-check you've set the correct device families when you upload your app package in Partner Center for Microsoft Store submission.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality applications (for both [HoloLens](/hololens/hololens1-hardware) and [immersive headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details)) are part of the Universal Windows Platform, so any app package with a **Windows.Universal** [target device family](/uwp/schemas/appxpackage/uapmanifestschema/element-targetdevicefamily) can run on HoloLens or Windows 10 PCs with immersive headsets. If you don't specify a target device family in your app manifest, you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, then [double-check you've set the correct device families when you upload your app package in Partner Center for Microsoft Store submission.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * To set this field in Visual Studio, right-click on the **Package.appxmanifest** and select **View Code**, then find the **TargetDeviceFamily Name** field. By default, it should look like the following entry:
 
@@ -166,11 +166,9 @@ When you create app packages to submit to Partner Center through Visual Studio, 
 
 ### Run on all targeted device families
 
-The Windows Universal Platform allows you to create a single application that runs across all of the Windows 10 device families. However, it doesn't guarantee that Universal Windows apps will just work on all device families. It's important to [test your app](../develop/platform-capabilities-and-apis/testing-your-app-on-hololens.md) on each of your chosen device families to ensure a good experience.
+The Windows Universal Platform allows you to create a single application that runs across all of the Windows 10 device families. However, it doesn't guarantee that Universal Windows apps will just work on all device families. It's important to [test your app](../develop/advanced-concepts/testing-your-app-on-hololens.md) on each of your chosen device families to ensure a good experience.
 
 ## Submitting your Mixed Reality app to the Store
-
-If you're submitting a Mixed Reality app that is based on a Unity project, see this [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) first.
 
 In general, submitting a Windows Mixed Reality app that works on HoloLens or immersive headsets is just like submitting any UWP app to the Microsoft Store. Once you've [created your app by reserving its name](/windows/uwp/publish/create-your-app-by-reserving-a-name), follow the [UWP submission checklist](/windows/uwp/publish/app-submissions).
 
@@ -229,9 +227,9 @@ If your app runs on the desktop like a traditional PC app, but offers a VR exper
 
 **PC specifications:**
 
-If you want your app to reach as many Windows Mixed Reality immersive headset users as possible, [target](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) the PC specifications for [Windows Mixed Reality PCs with integrated graphics](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+If you want your app to reach as many Windows Mixed Reality immersive headset users as possible, [target](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md) the PC specifications for [Windows Mixed Reality PCs with integrated graphics](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Whether your Mixed Reality app targets the minimum Windows Mixed Reality PC requirements, or needs a specific PC configuration like the dedicated GPU of a [Windows Mixed Reality Ultra PC](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines, you should add the relevant PC specifications in the "minimum hardware" column.
+Whether your Mixed Reality app targets the minimum Windows Mixed Reality PC requirements, or needs a specific PC configuration like the dedicated GPU of a [Windows Mixed Reality Ultra PC](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), you should add the relevant PC specifications in the "minimum hardware" column.
 
 If your Mixed Reality app is designed for better performance or offers higher-resolution graphics on a particular PC configuration or graphics card, you should include the relevant PC specifications in the "recommended hardware" column.
 
@@ -239,7 +237,7 @@ This only applies if your Mixed Reality app uses an immersive headset connected 
 
 ### Device family availability
 
-If you've [packaged your app correctly](https://docs.microsoft.com/windows/uwp/publish/app-package-requirements) in Visual Studio, uploading it on the Packages page should produce a table with the available device families.
+If you've [packaged your app correctly](/windows/uwp/publish/app-package-requirements) in Visual Studio, uploading it on the Packages page should produce a table with the available device families.
 
 ![Device family availability table](images/device-family-table-900px.png)<br>
 Device family availability table
@@ -270,7 +268,7 @@ In many cases, your consumers will have limited to no experience with virtual re
 * [What is Mixed Reality?](../discover/mixed-reality.md)
 * [Development overview](../develop/development.md)
 * [App views](../design/app-views.md)
-* [Understanding Performance for Mixed Reality](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding Performance for Mixed Reality](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](../develop/unity/performance-recommendations-for-unity.md)
-* [Testing your app on HoloLens](../develop/platform-capabilities-and-apis/testing-your-app-on-hololens.md)
+* [Testing your app on HoloLens](../develop/advanced-concepts/testing-your-app-on-hololens.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

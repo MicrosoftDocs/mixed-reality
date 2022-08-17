@@ -1,5 +1,5 @@
 ---
-title: MR Input 212 - Voice
+title: HoloLens (1st gen) Input 212 - Voice
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of voice concepts.
 author: keveleigh
 ms.author: kurtie
@@ -9,10 +9,10 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 ---
 
 
-# MR Input 212: Voice
+# HoloLens (1st gen) Input 212: Voice
 
->[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](./mr-learning-base-01.md) has been posted for HoloLens 2.
+>[!IMPORTANT]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen), Unity 2017, and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices. These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2 and may not be compatible with newer versions of Unity.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 [Voice input](../../../design/voice-input.md) gives us another way to interact with our holograms. Voice commands work in a very natural and easy way. Design your voice commands so that they are:
 
@@ -41,9 +41,9 @@ In this course, we'll revisit Model Explorer, which we built in [MR Input 210](h
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Input 212: Voice</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR Input 212: Voice</td><td> ✔️</td><td> ✔️</td>
 </tr>
 </table>
 
@@ -56,7 +56,7 @@ In this course, we'll revisit Model Explorer, which we built in [MR Input 210](h
 * You should have completed [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md).
 * You should have completed [MR Input 210](holograms-210.md).
 * You should have completed [MR Input 211](holograms-211.md).
-* A HoloLens device [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* A HoloLens device [configured for development](../../../develop/advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -103,7 +103,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/advanced-concepts/using-visual-studio.md#pairing-your-device).
 5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
 
 If deploying to an immersive headset:

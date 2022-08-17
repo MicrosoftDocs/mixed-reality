@@ -2,7 +2,7 @@
 title: Interactable object
 description: Learn how to trigger events, provide visual cues, and interact with objects in your mixed reality applications.
 author: cre8ivepark
-ms.author: v-hferrone
+ms.author: dongpark
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, cues, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, audio 
@@ -36,19 +36,19 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/interactibleobject-states-default.jpg)<br>
+       ![Interactable object with default state](images/interactibleobject-states-default.jpg)<br>
        **Default (Observation) state**<br>
         Default idle state of the object.
        The cursor isn't on the object. Hand isn't detected.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/interactibleobject-states-targeted.jpg)<br>
+       ![Interactable object with target and hover state](images/interactibleobject-states-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
         When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
         The cursor is on the object. Hand is detected, ready.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/interactibleobject-states-pressed.jpg)<br>
+       ![Interactable object with pressed state](images/interactibleobject-states-pressed.jpg)<br>
        **Pressed state**<br>
         When the object is pressed with an air tap gesture, finger press or motion controller's select button.
         The cursor is on the object. Hand is detected, air tapped.
@@ -65,15 +65,15 @@ Here's what these states look like on a **holographic button**:
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
+       ![Holographic button in default state](images/MRTK_InteractableState-default.jpg)<br>
        **Default (Observation) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Holographic button in target and hover state](images/MRTK_InteractableState-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![Holographic button in pressed state](images/MRTK_InteractableState-pressed.jpg)<br>
        **Pressed state**<br>
     :::column-end:::
 :::row-end:::
@@ -130,7 +130,7 @@ Use visual feedback to communicate the following states:
 
 ---
 
-A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of how the different input interaction states are visualized:
+A [button on HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) is an example of how the different input interaction states are visualized:
 
 :::row:::
     :::column:::
@@ -209,13 +209,11 @@ For direct hand interactions, proper audio feedback can dramatically improve the
 
 ---
 
-
-## Sizing recommendations 
+## Sizing recommendations
 
 To ensure all interactable objects can easily be touched, we recommend making sure the interactable meets a minimum size based on the distance it's placed from the user. The visual angle is often measured in degrees of visual arc. Visual angle is based on the distance between the user's eyes and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from the user, try using a visual angle calculator such as [this one](https://elvers.us/perception/visualAngle/).
 
 Below are the recommendations for minimum sizes of interactable content.
-
 
 ### Target size for direct hand interaction
 
@@ -226,18 +224,6 @@ Below are the recommendations for minimum sizes of interactable content.
 ![Target size for direct hand interaction](images/TargetSizingNear.jpg)<br>
 *Target size for direct hand interaction*
 
-<br>
-
-### Target size for buttons
-
-When creating buttons for direct interaction, we recommend a larger minimum size of 3.2 x 3.2 cm to ensure that there's enough space to contain an icon and potentially some text.
-
-| Distance | Minimum size |
-|---------|---------|
-| 45 cm  | 3.2 x 3.2 cm |
-
-![Target size for the buttons](images/TargetSizingButtons.png)<br>
-*Target size for the buttons*
 
 <br>
 
@@ -249,28 +235,25 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 ![Target size for hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
 *Target size for hand ray or gaze interaction*
 
-
 <br>
 
 ---
-
 
 ## Interactable object in MRTK (Mixed Reality Toolkit) for Unity
 
-In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allow you define visual states by controlling object properties such as color, size, material, and shader.
+In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/UX/Interactables/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allow you define visual states by controlling object properties such as color, size, material, and shader.
 
-* [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
-* [Hand interaction examples scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
+* [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
+* [Hand interaction examples scene](/windows/mixed-reality/mrtk-unity/mrtk2/features/example-scenes/hand-interaction-examples)
 
 MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
-* [MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
 
+* [MRTK Standard Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
 ---
-
 
 ## See also
 

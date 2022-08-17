@@ -1,9 +1,9 @@
 ---
-title: Eye tracking
+title: Eye tracking overview
 description: Learn about eye tracking for HoloLens 2 and the new levels of human understanding if affords in holographic experiences.
 author: sostel
-ms.author: sostel
-ms.date: 10/29/2019
+ms.author: vinnietieto
+ms.date: 12/22/2021
 ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions
 ---
@@ -28,8 +28,8 @@ The Eye Tracking API has been designed with a user’s privacy in mind; it avoid
 <tr>
      <td><strong>Feature</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Eye-gaze</td>
@@ -40,6 +40,14 @@ The Eye Tracking API has been designed with a user’s privacy in mind; it avoid
 </table>
 
 <br>
+
+## Head and eye tracking design concepts demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
 ## Calibration 
 
@@ -80,11 +88,10 @@ Extended eye tracking APIs provide access to existing eye tracking values and ne
 
 Eye tracking enables applications to track where the user is looking in real time. The following use cases describe some interactions that are possible with eye tracking on HoloLens 2 in mixed reality. These use cases aren't yet part of the Holographic Shell experience (the interface that you see when you start up your HoloLens 2). You can try some of them in the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html). The Toolkit provides several interesting and powerful examples for using eye tracking, such as quick and effortless eye-supported target selections and automatically scrolling through text based on what the user looks at. 
 
-### User intent	   
 
-Information about where and what a user looks at provides a powerful context for other inputs, such as voice, hands, and controllers.
-This can be used for various tasks. For example, the user can quickly and effortlessly target across the scene by looking at a hologram and saying *"select"* (also see [gaze and commit](gaze-and-commit.md)) or *"put this..."*, and then look over to where they want to place the hologram and say *"...there"*. 
-Examples for this can be found in [Mixed Reality Toolkit - Eye-supported Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) and [Mixed Reality Toolkit - Eye-supported Target Positioning](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+### User intent
+
+Information about where and what a user looks at provides a powerful context for other inputs, such as voice, hands, and controllers. This can be used for various tasks. For example, the user can quickly and effortlessly target across the scene by looking at a hologram and saying *"select"* (also see [gaze and commit](gaze-and-commit.md)) or *"put this..."*, and then look over to where they want to place the hologram and say *"...there"*. Examples for this can be found in [Mixed Reality Toolkit - Eye-supported Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) and [Mixed Reality Toolkit - Eye-supported Target Positioning](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
 
 Additionally, an example for user intent might include using information about what users look at to enhance engagement with embodied virtual agents and interactive holograms. For example, virtual agents might adapt available options, and their behavior, based on currently viewed content. 
 
@@ -96,12 +103,13 @@ Another example is **eye-supported zoom and pan** where the user can feel like t
 
 Triggering and controlling zoom speed can be controlled by voice or hand input, which is important for providing the user with the feeling of control while avoiding being overwhelmed. We'll talk about these design considerations in more detail below. Once zoomed in, the user can smoothly follow, for example, the course of a street to explore his or her neighborhood by using their eye-gaze. Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) sample.
 
+
 Other use cases for _implicit actions_ may include:
 
 - **Smart notifications:** Do you ever get annoyed by notifications popping up right in middle of your view? You can make this experience better by offsetting notifications from where the user is currently gazing. This limits distractions and automatically dismisses them once the user is finished reading. 
 - **Attentive holograms:** These are holograms that react in a subtle way when they're gazed upon. This can range from slightly glowing UI elements to a slowly blooming flower to a virtual dog starting to look back at the user and wagging its tail. This interaction can provide an interesting sense of connectivity and satisfaction in your application.
 
-### Attention tracking	 
+### Attention tracking
 
 Information on where or what users look at can be an immensely powerful tool. It can help assess usability of designs and identify problems in workflows to make them more efficient. Eye tracking visualization and analytics are a common practice in various application areas. With HoloLens 2, we provide a new dimension to this understanding; 3D holograms can be placed in real-world contexts and assessed accordingly. 
 
@@ -148,7 +156,7 @@ In rare cases, eye tracking data might not be available. This can happen for a n
 * The user skipped the [calibration](/hololens/hololens-calibration).	
 * The user is calibrated, but decided to not give permission to your app to use their eye tracking data.	
 * The user has unique eyeglasses or some eye condition that the system doesn't yet support.	
-* External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight, and occlusions because of hair in front of the eyes.	
+* External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight, and occlusions because of hair in front of the eyes.
 
 Developers should ensure that there's appropriate fallback support for these users. On the [Eye Tracking in DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) page, we explain the APIs required to detect whether eye tracking data is available. 
 
@@ -176,6 +184,6 @@ This page has hopefully provided you with a good overview to get you started und
 * [Comfort](comfort.md)
 * [Eye-gaze-based interaction](eye-gaze-interaction.md)
 * [Eye-gaze in DirectX](../develop/native/gaze-in-directx.md)
-* [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
+* [Eye-gaze in Unity (Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Gaze and commit](gaze-and-commit.md)
 * [Voice input](../out-of-scope/voice-design.md)

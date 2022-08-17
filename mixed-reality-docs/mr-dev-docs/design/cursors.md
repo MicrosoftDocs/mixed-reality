@@ -28,8 +28,8 @@ There are 3 kinds of cursors: **finger, ray**, and **head-gaze**. These pointing
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Finger cursor</td>
@@ -115,7 +115,7 @@ If you would like to customize the cursor feedback behaviors and appearances, he
 
 * A donut or torus shaped cursor works for many applications.
 * Pick a color and shape that best represents the experience you're creating.
-* Cursors are especially prone to [color separation](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation).
+* Cursors are especially prone to [color separation](../develop/advanced-concepts/hologram-stability.md#color-separation).
 * A small cursor with balanced opacity keeps it informative without dominating the visual hierarchy.
 * Be cognizant of using shadows or highlights behind your cursor as they might obstruct content and distract from the task at hand.
 * Cursors should align to and hug the surfaces in your app. Users will have a feeling that the system can see where they're looking, but also that the system is aware of their surroundings. For example, the cursor in the Mixed Reality OS aligns to the surfaces of the user's world, creating a feeling of awareness of the world even when the user isn't looking directly at a hologram.
@@ -159,11 +159,11 @@ Designing without a cursor is recommended when the sense of immersion is a key c
 
 ## Cursor in MRTK (Mixed Reality Toolkit) for Unity
 
-By default, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides a cursor prefab([DefaultCursor.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) which has the same visual state as the shell's system cursor. It's assigned in MRTK's Input profile, under Pointers. You can replace/customize this cursor for your experience. For the experience with eye-tracking input, MRTK also provides EyeGazeCursor, which has subtle visual to minimize the distraction.
+By default, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides a cursor prefab([DefaultCursor.prefab](/windows/mixed-reality/design/cursors)) which has the same visual state as the shell's system cursor. It's assigned in MRTK's Input profile, under Pointers. You can replace/customize this cursor for your experience. For the experience with eye-tracking input, MRTK also provides EyeGazeCursor, which has subtle visual to minimize the distraction.
 
-* [MRTK - Pointer profile](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - Input system](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - Pointers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - Pointer profile](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - Input system](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - Pointers](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Instinctual interactions
 description: Learn the philosophy of simple instinctual interactions, interwoven throughout the mixed reality platform.
-author: shengkait
-ms.author: shentan
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
@@ -23,6 +23,14 @@ While we recognize that there are thousands of effective, engaging, and magical 
 * Specific guidance around the three primary interaction models and the components and patterns required for each.
 * Supplemental guidance about other benefits that our platform provides.
 * General guidance to help select the appropriate interaction model for your development scenario.
+
+## Basic hand tracking and instinctual interactions demo
+
+Check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below, then move on to more specific topics:
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
 ## Multimodal interaction models
 

@@ -16,7 +16,7 @@ Hand coach triggers 3D modeled hands when the system doesn't detect the user’s
 
 ## Hand coach provided
 
-The current interaction model represents a wide variety of gesture controls such as scrolling, far select, and near tap. Below is a full list of existing hand gestures provided in<a href="https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets"> MRTK</a>:
+The current interaction model represents a wide variety of gesture controls such as scrolling, far select, and near tap. Below is a full list of existing hand gestures provided in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/):
 
 :::row:::
     :::column:::
@@ -48,7 +48,7 @@ The current interaction model represents a wide variety of gesture controls such
     :::column-end:::
     :::column:::
        ![Example of HandFlip](images/HandCoach/HandFlip.gif)<br>
-       **Exmaple of Hand Flip – Another way to bring up Hand Menus**<br>
+       **Example of Hand Flip – Another way to bring up Hand Menus**<br>
     :::column-end:::
     :::column:::
        ![Example of Scroll](images/HandCoach/Scoll.gif)<br>
@@ -152,7 +152,7 @@ After you're satisfied with your animation
 *	If you've taught the hands at least once, only repeat the gesture if it's detected that the user is stuck.
 *  	If specific finger/hand positions are critical, ensure users can clearly see these nuances in the animation. Try angling the hands so the most important parts are clearly visible. 
 * If you notice distortion on the hands, you need to go to Unity's Quality settings increase the number of bones. 
- Go to Unity's Edit > Project Settings > Quality > Other > Blend Weights. Make sure "4 bones" are selected to see Smooth Joints. 
+ Go to Unity's Edit > Project Settings > Quality > Other > Blend Weights. Make sure "4 bones" are selected to see Smooth Joints.
 
    ![Example: Project Settings Window](images/HandCoach/ProjectSettings.png)<br>
 
@@ -160,13 +160,14 @@ After you're satisfied with your animation
 ### What to avoid
 
 * Scaling the Hands too large
-* placing the Hands too close to the user
+* Placing the Hands too close to the user
 * Hands should only be taught once. Over teaching can cause confusion and messiness
-*	Bringing it into Unity, download the latest MRTK  here: https://github.com/microsoft/MixedRealityToolkit-Unity
-    *	Material: Teaching_Hand2
-    *	Scripts: Refer to MRTK guidelines for <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> MRTK hand coach </a>
-    *	Per- project setting
-        *	Scene set to UWP: Instruction can be found on the [Configure Unity Project](../develop/unity/Configure-Unity-Project.md) for Windows Mixed Reality
+* Bringing it into Unity, download the latest MRTK  here: https://github.com/microsoft/MixedRealityToolkit-Unity
+  * Material: Teaching_Hand2
+  * Scripts: Refer to MRTK guidelines for <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> MRTK hand coach </a>
+  * Per- project setting
+    * Scene set to UWP: Instruction can be found in the [Set up a new OpenXR project with MRTK](../develop/unity/new-openxr-project-with-mrtk.md) article.
+
 
 ## See also
 
@@ -174,6 +175,6 @@ After you're satisfied with your animation
 * [Asset Creation Process](asset-creation-process.md)
 * [Gestures](./interaction-fundamentals.md)
 * [Install the Tools](../develop/install-the-tools.md)
-* [Configure Unity Project](../develop/unity/Configure-Unity-Project.md)
+* [Set up a new OpenXR project with MRTK](../develop/unity/new-openxr-project-with-mrtk.md)
 * [Unity development overview](../develop/unity/unity-development-overview.md)
-* [MRTK 101](../develop/unity/mrtk-101.md)
+* [MRTK 101](/windows/mixed-reality/mrtk-unity/)

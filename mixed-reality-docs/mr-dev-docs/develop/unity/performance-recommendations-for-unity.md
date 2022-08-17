@@ -2,8 +2,8 @@
 title: Performance recommendations for Unity
 description: Learn Unity-specific tips to improve performance with project settings, profiling, memory management in your mixed reality apps.
 author: hferrone
-ms.author: v-hferrone
-ms.date: 03/26/2019
+ms.author: vinnietieto
+ms.date: 12/30/2021
 ms.topic: article
 keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
@@ -11,7 +11,12 @@ ms.localizationpriority: high
 
 # Performance recommendations for Unity
 
-This article builds on the [performance recommendations for mixed reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md), but focuses on Unity-specific improvements.
+This article builds on the [performance recommendations for mixed reality](../advanced-concepts/understanding-performance-for-mixed-reality.md), but focuses on Unity-specific improvements.
+
+We recently released an application called Quality Fundamentals that covers common performance, design, and environment issues and solutions for HoloLens 2 apps. This app is a great visual demo for the content that follows.
+
+> [!div class="nextstepaction"]
+> [Download the Quality Fundamentals app](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw)
 
 ## Use recommended Unity project settings
 
@@ -19,16 +24,44 @@ The most important first step when optimizing performance of mixed reality apps 
 
 ## How to profile with Unity
 
-Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** built-in, which is a great resource to gather valuable performance insights for your particular app. Although you can run the profiler in-editor, these metrics don't represent the true runtime environment so results should be used cautiously. We recommended remotely profiling your application while running on device for most accurate and actionable insights. Further, Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is also a powerful and insight tool to use.
+Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** built-in, which is a great resource to gather valuable performance insights for your particular app. Although you can run the profiler in-editor, these metrics don't represent the true runtime environment so results should be used cautiously. We recommend that you remotely profile your application while running on-device for the most accurate and actionable insights.
 
 Unity provides great documentation for:
+
 1) How to connect the [Unity profiler to UWP applications remotely](https://docs.unity3d.com/Manual/windowsstore-profiler.html)
-2) How to effectively [diagnose performance problems with the Unity Profiler](https://unity3d.com/learn/tutorials/temas/performance-optimization/diagnosing-performance-problems-using-profiler-window)
+2) How to effectively [diagnose performance problems with the Unity Profiler](https://learn.unity.com/tutorial/diagnosing-performance-problems-2019-3)
+
+### GPU profiling
+
+#### Unity profiler
+
+With the Unity Profiler connected and after adding the GPU profiler (see *Add Profiler* in top right corner), one can see how much time is being spent on the CPU & GPU respectively in the middle of the profiler. This allows the developer to get a quick approximation if their application is CPU or GPU bounded.
+
+![Unity CPU vs GPU](images/unity-profiler-cpu-gpu.png)
 
 >[!NOTE]
-> With the Unity Profiler connected and after adding the GPU profiler (see *Add Profiler* in top right corner), one can see how much time is being spent on the CPU & GPU respectively in the middle of the profiler. This allows the developer to get a quick approximation if their application is CPU or GPU bounded.
+> To use GPU profiling, you need to disable **Graphics Jobs** in the Unity **Player Settings**. See Unity's **[GPU Usage Profiler module](https://docs.unity3d.com/Manual/Profiler.html)** for more details.
+
+#### Unity frame debugger
+
+Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is also a powerful and insightful tool to use. It will give you a good overview of what the GPU is doing each frame. Things to look out for are additional rendering targets and blit commands to copy between them as these are very expensive on HoloLens. Ideally, no off-screen render targets should be used on HoloLens. These are usually added when enabling expensive rendering features (for example MSAA, HDR or full-screen effects like bloom) which should be avoided.
+
+#### HoloLens frame rate overlay
+
+The Device Portal [System Performance](../advanced-concepts/using-the-windows-device-portal.md#system-performance) page has a good summary of CPU and GPU performance of the device.
+You can enable **Display frame rate counter in headset** and **Display frame rate graph in headset**. These options will enable an FPS counter and graph, respectively, that will give you immediate feedback in any running application on your device.
+
+#### PIX
+
+[PIX](https://devblogs.microsoft.com/pix/download/) can be used to profile Unity applications as well. There are also detailed instructions on how to use and install [PIX for HoloLens 2](../advanced-concepts/installing-pix-hololens.md).
+In a development build, the same scopes that you see in Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) will be shown in PIX as well and can be inspected and profiled in more detail.
+
+>[!NOTE]
+>Unity provides the ability to easily modify the render target resolution of your application at runtime through the *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property. The final image presented on-device has a fixed resolution. The platform will sample the lower resolution output to build a higher resolution image for rendering on displays.
 >
-> ![Unity CPU vs GPU](images/unity-profiler-cpu-gpu.png)
+>```CS
+>UnityEngine.XR.XRSettings.renderViewportScale = 0.7f;
+>```
 
 ## CPU performance recommendations
 
@@ -246,9 +279,18 @@ Furthermore, it's preferable to combine meshes into one GameObject where possibl
 
 Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games)
 
+### Bandwidth and fill rates
+
+When rendering a frame on the GPU, an application is either bound by memory bandwidth or fill rate.
+
+- **Memory bandwidth** is the rate of reads and writes the GPU can do from memory
+    - In Unity, change **Texture Quality** in **Edit** > **Project Settings** > **[Quality Settings](https://docs.unity3d.com/Manual/class-QualitySettings.html)**.
+- **Fill rate** refers to the pixels that can be drawn per second by the GPU.
+    - In Unity, use the  *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property.
+
 ### Optimize depth buffer sharing
 
-It's recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](../platform-capabilities-and-apis/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it's recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
+It's recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](../advanced-concepts/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it's recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
 
 **Z-Fighting**
 
@@ -296,15 +338,15 @@ An easy approximation to compare shaders in performance is to identify the avera
 
 #### Optimize pixel shaders
 
-Looking at the compiled statistic results using the method above, the [fragment shader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) will generally execute more operations than the [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders), on average. The fragment shader, also known as the pixel shader, is executed per pixel on the screen output while the vertex shader is only executed per-vertex of all meshes being drawn to the screen. 
+Looking at the compiled statistic results using the method above, the [fragment shader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) will generally execute more operations than the [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders), on average. The fragment shader, also known as the pixel shader, is executed per pixel on the screen output while the vertex shader is only executed per-vertex of all meshes being drawn to the screen.
 
-Thus, not only do fragment shaders have more instructions than vertex shaders because of all the lighting calculations, fragment shaders are almost always executed on a larger dataset. For example, if the screen output is a 2k by 2k image, then the fragment shader can get executed 2,000*2,000 = 4,000,000 times. If rendering two eyes, this number doubles since there are two screens. If a mixed reality application has multiple passes, full-screen post-processing effects, or rendering multiple meshes to the same pixel, this number will increase dramatically. 
+Thus, not only do fragment shaders have more instructions than vertex shaders because of all the lighting calculations, fragment shaders are almost always executed on a larger dataset. For example, if the screen output is a 2k by 2k image, then the fragment shader can get executed 2,000*2,000 = 4,000,000 times. If rendering two eyes, this number doubles since there are two screens. If a mixed reality application has multiple passes, full-screen post-processing effects, or rendering multiple meshes to the same pixel, this number will increase dramatically.
 
 Therefore, reducing the number of operations in the fragment shader can generally give far greater performance gains over optimizations in the vertex shader.
 
 #### Unity Standard shader alternatives
 
-Instead of using a physically based rendering (PBR) or another high-quality shader, look at utilizing a more performant and cheaper shader. The [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides the [MRTK standard shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) that has been optimized for mixed reality projects.
+Instead of using a physically based rendering (PBR) or another high-quality shader, look at utilizing a more performant and cheaper shader. The [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides the [MRTK standard shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) that has been optimized for mixed reality projects.
 
 Unity also provides an unlit, vertex lit, diffuse, and other simplified shader options that are faster compared to the Unity Standard shader. See [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) for more detailed information.
 
@@ -344,7 +386,7 @@ Object pooling is a popular technique for reducing the cost of continuous object
 
 ## Startup performance
 
-Consider starting your app with a smaller scene, then using *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. There may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the AsyncOperation.allowSceneActivation property to "false" on the scene being loaded, wait for the scene to load, clear the screen too black, and then set it back to "true" to complete the scene activation.
+Consider starting your app with a smaller scene, then using *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. There may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the AsyncOperation.allowSceneActivation property to "false" on the scene being loaded, wait for the scene to load, clear the screen to black, and then set it back to "true" to complete the scene activation.
 
 Remember that while the startup scene is loading, the holographic splash screen will be displayed to the user.
 
@@ -352,4 +394,4 @@ Remember that while the startup scene is loading, the holographic splash screen 
 - [Optimizing graphics rendering in Unity games](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games?playlist=44069)
 - [Optimizing garbage collection in Unity games](https://unity3d.com/learn/tutorials/topics/performance-optimization/optimizing-garbage-collection-unity-games?playlist=44069)
 - [Physics Best Practices [Unity]](https://unity3d.com/learn/tutorials/topics/physics/physics-best-practices)
-- [Optimizing Scripts [Unity]](https://docs.unity3d.com/Manual/MobileOptimizationPracticalScriptingOptimizations.html)
+- [Optimizing Scripts [Unity]](https://docs.unity3d.com/2020.1/Documentation/Manual/MobileOptimizationPracticalGuide.html)

@@ -1,5 +1,5 @@
 ---
-title: MR Basics 100 - Getting started with Unity
+title: HoloLens (1st gen) Basics 100 - Getting started with Unity
 description: Learn how to create your first basic mixed reality "hello world" application for HoloLens and Windows Mixed Reality devices.
 author: keveleigh
 ms.author: kurtie
@@ -8,10 +8,10 @@ ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get started, hologram, academy, tutorial, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-# MR Basics 100: Getting started with Unity
+# HoloLens (1st gen) Basics 100: Getting started with Unity
 
 >[!IMPORTANT]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen), Unity 2017, and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices. These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2 and may not be compatible with newer versions of Unity.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 This tutorial will walk you through creating a basic mixed reality app built with Unity.
 
@@ -19,9 +19,9 @@ This tutorial will walk you through creating a basic mixed reality app built wit
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Basics 100: Getting started with Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR Basics 100: Getting started with Unity</td><td> ✔️</td><td> ✔️</td>
 </tr>
 </table>
 
@@ -72,7 +72,7 @@ Second, the default Camera background needs some thought.
 
 Third, let us consider the near clip plane in Unity and prevent objects from being rendered too close to the users eyes as a user approaches an object or an object approaches a user.
 
-**For HoloLens applications**, the near clip plane can be set to the [HoloLens recommended](../camera-in-unity.md#clip-planes) 0.85 meters.
+**For HoloLens applications**, the near clip plane can be set to the [HoloLens recommended](../camera-in-unity.md#using-clipping-planes) 0.85 meters.
 
 1. With the **Main Camera** still selected in the **Hierarchy** panel, find the **Camera** component in the **Inspector** panel and change the **Near Clip Plane** field from the default **0.3** to the HoloLens recommended **0.85**.
 
@@ -145,7 +145,7 @@ Now that we have created our cube, it is time to do a quick check in device. You
 
 ### For HoloLens use Unity Remoting
 
-1. On your HoloLens, install and run the [Holographic Remoting Player](../../platform-capabilities-and-apis/holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
+1. On your HoloLens, install and run the [Holographic Remoting Player](../../native/holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
 2. Open **Window > XR > Holographic Emulation**.
 3. Change **Emulation Mode** from **None** to **Remote to Device**.
 4. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
@@ -199,7 +199,7 @@ The instructions differ for deploying to a device versus the emulator. Follow th
 2. Enter the IP address of your mixed reality device and change **Authentication Mode** to Universal (Unencrypted Protocol) for HoloLens and **Windows** for other devices.
 3. Click **Debug > Start without debugging**.
 
-**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md).
+**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](../../advanced-concepts/using-visual-studio.md).
 
 ### Deploy to mixed reality device over USB
 

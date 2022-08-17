@@ -15,20 +15,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "maquette",
-      "build_source_folder": "maquette",
-      "build_output_subfolder": "maquette",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "mixed-reality-docs",
       "build_source_folder": "mixed-reality-docs/mr-dev-docs",
       "build_output_subfolder": "mixed-reality-docs/mr-dev-docs",
@@ -45,26 +31,34 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "mrtk-docs",
-      "build_source_folder": "mrtk-docs",
-      "build_output_subfolder": "mrtk",
+      "docset_name": "mrtk-unity",
+      "build_source_folder": "mrtk-unity",
+      "build_output_subfolder": "mrtk-unity",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+        ">= mrtkunity-2021-01"
+      ],
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
+      }
     },
     {
-      "docset_name": "mrtk-unreal",
-      "build_source_folder": "mrtk-unreal",
-      "build_output_subfolder": "mrtk-unreal",
+      "docset_name": "world-locking-tools",
+      "build_source_folder": "world-locking-tools",
+      "build_output_subfolder": "world-locking-tools",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+        ">= ux-tools-0.11 || >= graphics-tools-0.1"
+      ],
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
@@ -80,18 +74,17 @@
   "git_repository_branch_open_to_public_contributors": "docs",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -107,7 +100,11 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "docs_build_engine": {},
+  "contribution_branch_mappings": {},
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.mrtk2.json",
+    ".openpublishing.redirection.mrtk3.json"
+  ]
 }

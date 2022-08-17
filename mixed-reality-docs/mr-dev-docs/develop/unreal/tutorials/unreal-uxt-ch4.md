@@ -1,8 +1,8 @@
 ---
 title: 4. Making your scene interactive
 description: Part 4 of 6 in a tutorial series to build a chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
@@ -15,26 +15,28 @@ In the previous tutorial, you added an ARSession, Pawn, and Game Mode to complet
 
 ## Objectives
 
-* Installing the Mixed Reality UX Tools plugin from GitHub
+* Installing the Mixed Reality UX Tools plugin
 * Adding Hand Interaction Actors to your fingertips
 * Creating and adding Manipulators to objects in the scene
 * Using input simulation to validate the project
 
 ## Downloading the Mixed Reality UX Tools plugin
-Before you start working with user input, you'll need to add the plugin to the project.
+Before you start working with user input, you'll need to add the Mixed Reality UX Tools plugin to the project. To learn more about UX Tools, you can check out the project on [GitHub](https://aka.ms/uxt-unreal).
 
-1. On the Mixed Reality UX Tools [releases page](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) on GitHub, navigate to the UX Tools for Unreal v0.10.0 release and download **UXTools.0.10.0.zip**. Unzip the file.
+1. Open the Epic Games Launcher. Navigate to Unreal Engine Marketplace and search for "[Mixed Reality UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)". Install the plugin to your engine.
 
-2.	Create a new folder called **Plugins** in the root folder of the project. Copy the unzipped UXTools plugin into this folder and restart the Unreal editor.
+![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
-![Create a project plugins folder](images/unreal-uxt/4-plugins.PNG)
+2. Back in the Unreal editor, go to **Project Settings** > **Plugins** and search for "Mixed Reality UX Tools". Ensure the plugin is enabled and restart the editor if prompted.
 
-3.	The UXTools plugin has a Content folder with subfolders for components, including **Buttons**, **Input Simulation**, and **Pointers**, and a C++ Classes folder with additional code.  
+![Enabling Mixed Reality UX Tools plugin](images/unreal-uxt/2-enable-uxt.PNG)
+
+3.	The UXTools plugin has a Content folder with subfolders for components, including **Buttons**, **XR Simulation**, and **Pointers**, and a C++ Classes folder with additional code.  
 
 > [!NOTE]
-> If you don’t see the **UXTools Content** section in the **Content Browser**, click **View Options > Show Plugin Content**.
+> If you don’t see the **UXTools Content** section in the **Content Browser**, check **View Options > Show Engine Content** and **View Options > Show Plugin Content*.
 
-![Show plugin content](images/unreal-uxt/4-showplugincontent.PNG)
+![Show engine content](images/unreal-uxt/4-showenginecontent.PNG)
 
 Additional plugin documentation can be found on the Mixed Reality UX Tools GitHub [repository](https://aka.ms/uxt-unreal).
 
@@ -64,7 +66,7 @@ Your **Event Graph** should match the following screenshot:
 
 ![Spawn UXT Hand Interaction Actors](images/unreal-uxt/4-spawnactor.PNG)
 
-Both Uxt Hand Interaction Actors need owners and initial transform locations. The initial transform  doesn’t matter in this case because UX Tools will have the Hand Interaction Actors will jump to the virtual hands as soon as they're visible. However, the `SpawnActor` function requires a Transform input to avoid a compiler error, so you'll use the default values.
+Both Uxt Hand Interaction Actors need owners and initial transform locations. The initial transform doesn’t matter in this case because UX Tools will have the Hand Interaction Actors jump to the virtual hands as soon as they're visible. However, the `SpawnActor` function requires a Transform input to avoid a compiler error, so you'll use the default values.
 
 1. Drag and release the pin off one of the **Spawn Transform** pins to place a new node.
     * Search for the **Make Transform** node, then drag the **Return Value** to the other hand’s **Spawn Transform** so that both **SpawnActor** nodes are connected.

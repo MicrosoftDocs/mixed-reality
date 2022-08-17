@@ -1,0 +1,94 @@
+﻿- name: Welcome to World Locking Tools
+  href: index.yml
+- name: About this documentation
+  href: Documentation/GettingStartedWithWorldLocking.md
+- name: World Locking Tools Concepts
+  href: Documentation/Concepts.md
+  items:
+  - name: Introductory FAQ
+    href: Documentation/IntroFAQ.md
+  - name: The Basic Idea
+    href: Documentation/Concepts/BasicConcepts.md
+  - name: Advanced Topics
+    href: Documentation/Concepts/AdvancedConcepts.md
+    items: 
+    - name: Coordinate Spaces
+      href: Documentation/Concepts/Advanced/CoordinateSpaces.md
+    - name: SessionOrigin
+      href: Documentation/Concepts/Advanced/SessionOrigin.md
+    - name: Persistence
+      href: Documentation/Concepts/Advanced/Persistence.md
+    - name: Space Pins
+      href: Documentation/Concepts/Advanced/SpacePins.md
+    - name: Attachment Points
+      href: Documentation/Concepts/Advanced/AttachmentPoints.md
+    - name: Fragments
+      href: Documentation/Concepts/Advanced/Fragments.md
+    - name: Refit Operations
+      href: Documentation/Concepts/Advanced/RefitOperations.md
+    - name: Architecture
+      href: Documentation/Concepts/Advanced/Architecture/Architecture.md
+      items: 
+      - name: World Locking Manager
+        href: Documentation/Concepts/Advanced/Architecture/Managers/WorldLockingManager.md
+      - name: Anchor management
+        href: Documentation/Concepts/Advanced/Architecture/Managers/IAnchorManager.md
+      - name: Fragment management
+        href: Documentation/Concepts/Advanced/Architecture/Managers/IFragmentManager.md
+      - name: Attachment point management
+        href: Documentation/Concepts/Advanced/Architecture/Managers/IAttachmentPointManager.md
+      - name: Alignment management
+        href: Documentation/Concepts/Advanced/Architecture/Managers/IAlignmentManager.md
+      - name: Frozen World Engine DLL
+        href: Documentation/Concepts/Advanced/Architecture/FrozenWorldDLL.md
+- name: How-tos
+  href: Documentation/HowTos.md
+  items:
+  - name: Quick Start
+    href: Documentation/HowTos/QuickStart.md
+    items:
+      - name: Before You Start
+        href: Documentation/HowTos/UsingWLT/BeforeGettingStarted.md
+      - name: Most Basic Setup
+        href: Documentation/HowTos/UsingWLT/JustWorldLock.md
+      - name: Loss of Tracking
+        href: Documentation/HowTos/UsingWLT/LossOfTracking.md
+      - name: Across Sessions
+        href: Documentation/HowTos/UsingWLT/PersistenceTricks.md
+      - name: Pinning It Down
+        href: Documentation/HowTos/UsingWLT/AlignMyCoordinates.md
+  - name: Initial Setup
+    href: Documentation/HowTos/InitialSetup.md
+  - name: Install from MR Feature Tool
+    href: Documentation/HowTos/WLTviaMRFeatureTool.md
+  - name: Cross Platform with XR SDK
+    href: Documentation/HowTos/XRSDK.md
+  - name: Combining World Locking Tools with Azure Spatial Anchors
+    href: Documentation/HowTos/WLT_ASA.md
+  - name: Tools and Visualizers
+    href: Documentation/HowTos/Tools.md
+  - name: Troubleshooting
+    href: Documentation/HowTos/Troubleshooting.md
+  - name: Troubleshooting Strategy
+    href: Documentation/HowTos/TroubleshootingAdvanced.md
+  - name: World Locking Tools Contexts
+    href: Documentation/HowTos/WorldLockingContext.md
+  - name: Sample Applications
+    href: Documentation/HowTos/SampleApplications.md
+    items:
+      - name: World Locked Physics Sample
+        href: Documentation/HowTos/Samples/WorldLockedPhysicsSample.md
+      - name: Space Pin Sample
+        href: Documentation/HowTos/Samples/SpacePin.md
+      - name: Ray Pin Example
+        href: Documentation/HowTos/Samples/RayPins.md
+      - name: World Locking Tools with Azure Spatial Anchors Sample
+        href: Documentation/HowTos/Samples/WLT_ASA_Sample.md
+      - name: In a Vehicle Moving Through Virtual Space Sample
+        href: Documentation/HowTos/Samples/Vehicle.md
+  - name: Contributing
+    href: Documentation/HowTos/Contributing.md
+  - name: Coding Conventions
+    href: Documentation/HowTos/CodingConventions.md
+  - name: Release Process
+    href: Documentation/HowTos/ReleaseProcess.md

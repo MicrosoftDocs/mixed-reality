@@ -9,9 +9,13 @@ keywords: Windows Mixed Reality, Sample apps, Design, MRTK, Mixed Reality Toolki
 ---
 
 # Lunar Module
+![Lunar module](../images/MRDL_LunarModule.jpg)
 
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
+
+>[!NOTE]
+>This sample app was designed for HoloLens 1st gen.
 
 [Lunar Module](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) is an open-source sample app from Microsoft's Mixed Reality Design Labs. Learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding, and implement simple menu systems. All of the project's components are available for use in your own mixed reality app experiences.
 
@@ -53,9 +57,6 @@ How might we apply tactile immersion to an updated, volumetric sequel to the Ata
 
 By leveraging a user’s surroundings, we effectively have infinite terrain options for landing our lunar module. To make the game most like the original title, a user could potentially manipulate and place landing pads of varying difficulties in their environment.
 
-![Flying the Lunar Module](images/640px-lm-hero.jpg)<br>
-*Flying the Lunar Module*
-
 Requiring the user to learn the input scheme, control the ship, and have a small target to land on is a lot to ask. A successful game experience features the right mix of challenge and reward. The user can choose a level of difficulty, with the easiest mode simply requiring the user to successfully land in a user-defined area on a surface scanned by the HoloLens. Once a user gets the hang of the game, they can then crank up the difficulty as they see fit.
 
 ### Adding input for hand gestures
@@ -96,15 +97,16 @@ You can find scripts and prefabs for the Lunar Module sample app on the [Mixed R
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Addison Linville" width="60" height="60" src="images/addisonlinville-tile-60px.jpg"></td>
-<td style="border-style: none"><b>Addison Linville</b><br>UX Designer @Microsoft</td>
+<td width="60"><img alt="Picture of Addison Linville" width="60" height="60" src="images/addisonlinville-tile-60px.jpg"></td>
+<td><b>Addison Linville</b><br>UX Designer @Microsoft</td>
 </tr>
 </table>
 
 ## See also
-* [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Download from Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+
+* [MRTK Examples Hub](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(Download from Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(Download from Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
-* [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Periodic Table of the Elements 2.0](periodic-table-of-the-elements-2.md)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

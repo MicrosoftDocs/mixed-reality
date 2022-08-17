@@ -3,7 +3,7 @@ title: Start designing and prototyping
 description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
 author: grbury 
 ms.author: grbury
-ms.date: 12/9/2020
+ms.date: 6/7/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects, core concepts, interaction, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
@@ -32,9 +32,10 @@ Like all journeys, your adventure into designing Mixed Reality applications star
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at design process for Mixed Reality, gathered from designers inside and outside of Microsoft |
-| [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
+| [Types of Mixed Reality apps](../discover/types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
 | [Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing with behaviors, tips, and recommendations for creating amazing HoloLens apps (available for download from Microsoft Store in HoloLens 2) |
 | [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Experience common spatial interactions and UX building blocks for Mixed Reality (available for download from Microsoft Store in HoloLens 2) |
+| **Optional** [Download the Figma Toolkit](figma-toolkit.md) | The Figma Toolkit provides assets for you to use for sketching and laying out UI based on the components available in MRTK |
 
 ### 2. Core concepts
 
@@ -83,20 +84,20 @@ A designer's job is never done, especially when learning to create immersive exp
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/logo-unity.png)](https://learn.unity.com/)<br>
+        [![MRTK Figma Toolkit](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        **[Figma Toolkit](figma-toolkit.md)**<br>	
+        Figma Toolkit provides the assets that can be used for sketching and laying out UI. All UI controls are based on the components available in MRTK.
+    :::column-end:::		
+    :::column:::	
+       [![Learn Unity](../images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
     :::column:::	
         [![Mixed Reality Toolkit (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
-        **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
+        **[Mixed Reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity/)**<br>	
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
     :::column-end:::
-    :::column:::	
-        [![Mixed Reality Design Labs](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
-        **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
-        Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
-    :::column-end:::		
     :::column:::	
         [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>	
@@ -105,6 +106,9 @@ A designer's job is never done, especially when learning to create immersive exp
 :::row-end:::
 
 <br>
+
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
 ---
 
@@ -117,9 +121,9 @@ A designer's job is never done, especially when learning to create immersive exp
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
-         **[Come to an event](../whats-new/sf-academy-events.md)**<br>
-        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+        [![Come to an event](images/74-16.png)](../whats-new/journey-to-mr-series.md)<br>
+         **[Come to an event](../whats-new/journey-to-mr-series.md)**<br>
+        Get started with your Mixed Reality development journey.
     :::column-end:::
     :::column:::
         [![Install the tools](images/74-17.png)](../develop/install-the-tools.md)<br>

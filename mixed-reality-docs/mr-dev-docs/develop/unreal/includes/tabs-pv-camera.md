@@ -3,7 +3,7 @@
 ## PV Camera Feed Setup
 
 > [!IMPORTANT]
-> PV camera is implemented in both Windows Mixed Reality and OpenXR plugins. However OpenXR needs [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal) to be installed. Also OpenXR has current limitation, camera can work with DirectX11 RHI. This limitation will be fixed in a further Unreal version. 
+> The PV camera is implemented in both Windows Mixed Reality and OpenXR plugins. However,  OpenXR needs the [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal) to be installed. Also, OpenXR for Unreal 4.26 has a limitation: camera can work with DirectX11 RHI. This limitation is fixed in Unreal 4.27.1 or later. 
 
 - In **Project Settings > HoloLens**, enable the **Webcam** capability:
 
@@ -177,14 +177,14 @@ void ACamCapture::Tick(float DeltaTime)
 
 The system and custom MRC recorders create mixed reality captures by combining the PV Camera with holograms rendered by the app.
 
-By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), then that will be used instead. Rendering from the PV Camera improves the mapping between the real world and the holograms in the MRC video.
+By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](../../advanced-concepts/mixed-reality-capture-overview.md#render-from-the-pv-camera-opt-in), then that will be used instead. Rendering from the PV Camera improves the mapping between the real world and the holograms in the MRC video.
 
 To opt in to rendering from the PV Camera:
 
 1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
     * Use the **Size X** and **Size Y** values to set the video dimensions.
 
-![Camera 3rd](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
+![Camera 3rd](../images/unreal-camera-3rd.PNG)
 
 Unreal will then handle requests from MRC to render from the PV Camera's perspective.
 

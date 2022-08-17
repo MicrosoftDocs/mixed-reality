@@ -49,12 +49,13 @@
       "feedback_github_repo": "MicrosoftDocs/mixed-reality",
       "feedback_product_url": "https://developer.microsoft.com/en-us/windows/mixed-reality/give_us_feedback",
       "titleSuffix": "Enthusiast Guide",
-      "author": "hferrone",
-      "ms.author": "v-hferrone",
+      "author": "sean-kerawala",
+      "ms.author": "sekerawa",
       "ms.date": "09/16/2020",
       "ms.prod": "mixed-reality",
       "ms.technology": "enthusiast-guide",
-      "keywords": "mixed reality, virtual reality, vr, hololens"
+      "keywords": "mixed reality, virtual reality, vr, hololens",
+      "searchScope":["Mixed Reality","Windows Mixed Reality"]
     },
     "fileMetadata": {},
     "template": [],

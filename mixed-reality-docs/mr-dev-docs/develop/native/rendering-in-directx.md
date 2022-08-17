@@ -306,7 +306,7 @@ context->VSSetConstantBuffers(
 
 It's a good idea to check that **TryGetViewTransform** succeeded before trying to use the view/projection data, because if the coordinate system isn't locatable (for example, tracking was interrupted) your app can't render with it for that frame. The template only calls **Render** on the spinning cube if the **CameraResources** class indicates a successful update.
 
-Windows Mixed Reality includes features for [image stabilization](../platform-capabilities-and-apis/hologram-stability.md) to keep holograms positioned where a developer or user puts them in the world. Image stabilization helps hide the latency inherent in a rendering pipeline to ensure the best holographic experiences for users. A focus point may be specified to enhance image stabilization even further, or a depth buffer may be provided to compute optimized image stabilization in real time.
+Windows Mixed Reality includes features for [image stabilization](../advanced-concepts/hologram-stability.md) to keep holograms positioned where a developer or user puts them in the world. Image stabilization helps hide the latency inherent in a rendering pipeline to ensure the best holographic experiences for users. A focus point may be specified to enhance image stabilization even further, or a depth buffer may be provided to compute optimized image stabilization in real time.
 
 For best results, your app should provide a depth buffer using the <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API. Windows Mixed Reality can then use geometry information from the depth buffer to optimize image stabilization in real time. The Windows Holographic app template commits the app's depth buffer by default, helping optimize hologram stability.
 
@@ -743,4 +743,4 @@ if (FAILED(hr))
 
 ## See also
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
-* [Using the HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
+* [Using the HoloLens emulator](../advanced-concepts/using-the-hololens-emulator.md)

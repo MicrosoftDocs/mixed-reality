@@ -39,8 +39,8 @@ When you're using voice commands, head or eye gaze is the typical targeting mech
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Voice input</td>
@@ -84,8 +84,8 @@ You can say "Hey Cortana" to bring up Cortana at any time. You don't have to wai
 **HoloLens-specific commands**
 * "What can I say?"
 * "Go to Start" - instead of [bloom](system-gesture.md#bloom) to get to [Start Menu](../discover/navigating-the-windows-mixed-reality-home.md#start-menu)
-* "Launch <app>"
-* "Move <app> here"
+* "Launch \<app\>"
+* "Move \<app\> here"
 * "Take a picture"
 * "Start recording"
 * "Stop recording"
@@ -303,7 +303,7 @@ For the Windows Mixed Reality Developer Edition release 2017, the audio endpoint
 ## Voice input in MRTK (Mixed Reality Toolkit) for Unity
 With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily assign voice command on any objects. Use MRTK's **Speech Input Profile** to define your keywords. By assigning **SpeechInputHandler** script, you can make any object respond to the keywords defined in the Speech Input Profile. SpeechInputHandler also provides speech confirmation label to improve the user's confidence.
 
-* [MRTK - Voice command](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [MRTK - Voice command](/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 

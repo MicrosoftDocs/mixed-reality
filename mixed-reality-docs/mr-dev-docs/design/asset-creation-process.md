@@ -1,8 +1,8 @@
 ---
 title: Asset creation process
 description: Learn how to create, purchase, and port assets for mixed reality experiences.
-author: shengkait
-ms.author: shentan
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 03/21/2018
 ms.topic: article
 keywords: asset, creation, process, budget, polygons, textures, shaders, performance, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, assets
@@ -24,9 +24,9 @@ When looking at the experience, you're trying to create,  think of it as a **bud
 Below is an example budget for your experience. Performance isn't a single point of failure, but death by a thousand cuts.
 <br>
 
-<table style="float:right; margin-left: 10px;">
+<table>
 <tr>
-<th style="text-align:left;"><b>Assets</b></th><th style="text-align:right;"> CPU</th><th> GPU</th><th> Memory</th>
+<th><b>Assets</b></th><th> CPU</th><th> GPU</th><th> Memory</th>
 </tr><tr>
 <td> Polygons</td><td> 0%</td><td> 5%</td><td> 10%</td>
 </tr><tr>
@@ -55,7 +55,7 @@ Below is an example budget for your experience. Performance isn't a single point
 
 **Complexity of assets**
 * How many triangles / polygons?
-* How complex is the shader? When using the Mixed Reality Toolkit, it's recommended to use the [Mixed Reality Toolkit Standard shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) to reduce shader complexity.
+* How complex is the shader? When using the Mixed Reality Toolkit, it's recommended to use the [Mixed Reality Toolkit Standard shader](/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader) to reduce shader complexity.
 
 Both the developers and artists have to consider the capabilities of the device and the graphics engine. Microsoft HoloLens has all of the computational and graphics built into the device. It shares the capabilities developers would find on a mobile platform.
 

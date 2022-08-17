@@ -1,8 +1,8 @@
 ---
 title: Recommended settings for Unity
 description: Learn about Unity's performance and publishing behaviors specific to mixed reality apps that can be toggled through project settings.
-author: hferrone
-ms.author: v-hferrone
+author: vtieto
+ms.author: vinnietieto
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity, settings, mixed reality, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, performance, quality settings, lighting settings, depth buffer, xr, tracking loss
@@ -63,7 +63,7 @@ Further, it's recommended to select **16-bit depth** under the **Depth Format** 
 
 In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms on screen. Thus, with depth buffer sharing on, it is important when rendering color, to also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects will not render depth although this is shader-dependent, etc.
 
-If using the [Mixed Reality Toolkit Standard shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md), to render depth for transparent objects:
+If using the [Mixed Reality Toolkit Standard shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader), to render depth for transparent objects:
 
 1) Select the transparent material that is using the MRTK Standard shader and open the Inspector editor window
 2) Select the **Fix Now** button within the depth buffer sharing warning. This can also be performed manually by setting the **Rendering Mode** to **Custom**; then set **Mode** to **Transparent** and finally set **Depth Write** to **On**
@@ -165,5 +165,5 @@ The applicable capabilities for enabling the commonly used APIs for Holographic 
 ## See also
 
 * [Unity development overview](unity-development-overview.md)
-* [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding performance for Mixed Reality](../advanced-concepts/understanding-performance-for-mixed-reality.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)

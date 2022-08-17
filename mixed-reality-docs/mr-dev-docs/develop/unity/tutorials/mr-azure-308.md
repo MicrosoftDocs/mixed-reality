@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 308 - Cross-device notifications
+title: HoloLens (1st gen) and Azure 308 - Cross-device notifications
 description: Complete this course to learn how to implement Azure Notification Hubs, Azure Functions, and Azure Storage and Tables within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,8 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-
-# MR and Azure 308: Cross-device notifications
+# HoloLens (1st gen) and Azure 308: Cross-device notifications
 
 <br>
 
@@ -44,9 +43,9 @@ In your application, it is up to you as to how you will integrate the results wi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 308: Cross-device notifications</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 308: Cross-device notifications</td><td> ✔️</td><td> ✔️</td>
 </tr>
 </table>
 
@@ -65,7 +64,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
+- A [Windows Mixed Reality immersive (VR) headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
 - Internet access for Azure setup and to access Notification Hubs
 
 ## Before you start
@@ -159,7 +158,7 @@ With your apps credentials retrieved, you will need to go to the Azure Portal, w
 
 7.  Click the **Go to resource** button in the notification to explore your new Service instance. You will be taken to your new **Notification Hub** service instance.
 
-    ![go to resource](images/AzureLabs-Lab8-10.png)
+    ![Screenshot that shows the 'Go to resource' button highlighted in the notification window.](images/AzureLabs-Lab8-10.png)
     
 8.  From the overview page, halfway down the page, click **Windows (WNS).** The panel on the right will change to show two text fields, which require your **Package SID** and **Security Key**, from the app you set up previously.
 
@@ -224,11 +223,11 @@ After creating your Notification Hubs Service instance, navigate back to your Az
 
 8.  Click the **Go to resource** button in the notification to explore your new Service instance. You will be taken to your new Storage Service instance overview page.
 
-    ![go to resource](images/AzureLabs-Lab8-17.PNG)
+    ![Screenshot that shows the 'Go to resource' button highlighted in the 'Deployment succeeded' window.](images/AzureLabs-Lab8-17.PNG)
 
 9. From the overview page, to the right-hand side, click **Tables**.
     
-    ![](images/AzureLabs-Lab8-18.PNG)
+    ![Screenshot that shows where to select Tables.](images/AzureLabs-Lab8-18.PNG)
 
 10. The panel on the right will change to show the **Table service** information, wherein you need to add a new table. Do this by clicking the **+** **Table** button to the top-left corner.
 
@@ -388,7 +387,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
 10. Click the **Go to resource** button in the notification to explore your new Service instance. 
 
-    ![go to resource](images/AzureLabs-Lab8-36.png)
+    ![Screenshot that shows 'Deployment succeeded' with the 'Go to resource' button highlighted.](images/AzureLabs-Lab8-36.png)
 
 11. Click the **+** (plus) icon next to *Functions*, to *Create new*.
 
@@ -417,7 +416,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
     5.  Within the **Storage account connection** section, use the dropdown menu, and select your storage account from there. If it is not there, click the **New** hyperlink alongside the section title, to show another panel, where your storage account should be listed.
 
-        ![new storage](images/AzureLabs-Lab8-40.png)
+        ![Screenshot that shows the Storage account connection section with the 'New' hyperlink selected.](images/AzureLabs-Lab8-40.png)
 
 15. Click **Create** and you will receive a notification that your settings have been updated successfully.
 
@@ -564,7 +563,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
     2.  **Storage account connection:** click **new**, which appears alongside the dropdown menu, and a panel will appear to the right of the window.
 
-        ![new storage](images/AzureLabs-Lab8-48.png)
+        ![Screenshot that shows the Storage Account window with 'Create new' highlighted in the panel to the right of the window.](images/AzureLabs-Lab8-48.png)
 
         1.  Select your **Storage Account**, which you created previously to host the **Function Apps.**
 
@@ -599,17 +598,17 @@ First, you need to create a file that will allow your Azure Function to load the
 > [!WARNING]
 > *Do not edit the Notification Hub name directly* (this should all be done using the **Advanced Editor**, provided you followed the previous steps correctly.
 
-![outputs complete](images/AzureLabs-Lab8-50.png)
+![Screenshot that shows the Outputs page with general information.](images/AzureLabs-Lab8-50.png)
 
 32. At this point, you should test the function, to ensure it is working. To do this: 
 
     1. Navigate to the function page once more:
 
-        ![outputs complete](images/AzureLabs-Lab8-50-1.png)
+        ![Screenshot that shows the functions page with the newly created function highlighted.](images/AzureLabs-Lab8-50-1.png)
 
     2. Back on the function page, click the **Test** tab on the far right side of the page, to open the *Test* blade:
 
-        ![outputs complete](images/AzureLabs-Lab8-50-2.png)
+        ![Screenshot of the functions page with 'Test' highlighted on the right side.](images/AzureLabs-Lab8-50-2.png)
 
     3. Within the **Request body** textbox of the blade, paste the below code:
 
@@ -628,7 +627,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
     4. With the test code in place, click the **Run** button at the bottom right, and the test will be run. The output logs of the test will appear in the console area, below your function code.
 
-        ![outputs complete](images/AzureLabs-Lab8-50-3.png)
+        ![Screenshot that shows the output logs of the test in the console area.](images/AzureLabs-Lab8-50-3.png)
 
     > [!WARNING]
     > If the above test fails, you will need to double check that you have followed the above steps exactly, particularly the settings within the **integrate panel**. 
@@ -647,7 +646,7 @@ Set up and test your mixed reality immersive headset.
 
 1.  Open **Unity** and click **New**.
 
-    ![new unity project](images/AzureLabs-Lab8-52.png)
+    ![Screenshot of the Unity Projects window with the 'New' project icon highlighted in the upper right.](images/AzureLabs-Lab8-52.png)
 
 2.  You need to provide a Unity Project name, insert **UnityDesktopNotifHub**. Make sure the project type is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
@@ -679,11 +678,11 @@ Set up and test your mixed reality immersive headset.
 
         1. Do this by selecting **Add Open Scenes**. A save window will appear.
 
-            ![add open scenes](images/AzureLabs-Lab8-56.png)
+            ![Screenshot that shows the 'Add Open Scene' highlighted in the upper right.](images/AzureLabs-Lab8-56.png)
 
         2. Create a new folder for this, and any future, scene, then select the **New folder** button, to create a new folder, name it **Scenes**.
 
-            ![new scenes folder](images/AzureLabs-Lab8-57.png)
+            ![Screenshot that shows a new Scenes folder created with 'New folder' highlighted in the upper left.](images/AzureLabs-Lab8-57.png)
 
         3. Open your newly created **Scenes** folder, and then in the **File name:** text field, type **NH\_Desktop\_Scene**, then press **Save**.
 
@@ -709,7 +708,7 @@ Set up and test your mixed reality immersive headset.
 
         - **InternetClient**
 
-            ![tick internet client](images/AzureLabs-Lab8-60.png)
+            ![Screenshot that shows InternetClient selected under Capabilities.](images/AzureLabs-Lab8-60.png)
 
 8.  Back in **Build Settings** *Unity C\# Projects* is no longer greyed out; tick the checkbox next to this.
 
@@ -792,7 +791,7 @@ To create this class:
 
 3.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **TableToScene**.
 
-    ![new c# script](images/AzureLabs-Lab8-68.png)
+    ![Screenshot that shows how to create the new 'TableToScene' script.](images/AzureLabs-Lab8-68.png)
     ![TableToScene rename](images/AzureLabs-Lab8-69.png)
 
 4.  Double-click on the script to open it in Visual Studio 2017.
@@ -972,7 +971,7 @@ To create the second script:
 
 1.  Right-click inside the **Scripts** folder, click **Create**, **C\# Script**. Name the script **CloudScene**
     
-    ![new c# script](images/AzureLabs-Lab8-72.png)
+    ![Screenshot that shows how to create the new 'CloudScene' script.](images/AzureLabs-Lab8-72.png)
     ![rename CloudScene](images/AzureLabs-Lab8-73.png)
 
 2.  Add the following namespaces:
@@ -1143,7 +1142,7 @@ Everything needed for the Unity section of this project has now been completed.
 
 2.  From the **Build Settings** window, click **Build**.
 
-    ![build project](images/AzureLabs-Lab8-76.png)
+    ![Screenshot that shows the Build Settings window with Universal Windows Platform selected and the 'Build' button highlighted in the lower right.](images/AzureLabs-Lab8-76.png)
 
 3.  A **File Explorer** window will popup, prompting you for a location to Build. Create a new folder (by clicking **New Folder** in the top-left corner), and name it **BUILDS**.
 
@@ -1164,7 +1163,7 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 1.  Open **Unity** and click **New**.
 
-    ![new unity project](images/AzureLabs-Lab8-79.png)
+    ![Screenshot that shows the Unity Projects window with 'New' highlighted in the upper right.](images/AzureLabs-Lab8-79.png)
 
 2.  You will now need to provide a Unity Project name, insert **UnityMRNotifHub**. Make sure the project type is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
@@ -1196,11 +1195,11 @@ The following is a typical set up for developing with the mixed reality, and as 
 
         1. Do this by selecting **Add Open Scenes**. A save window will appear.
 
-            ![add open scenes](images/AzureLabs-Lab8-83.png)
+            ![Screenshot that shows the Build Settings window with 'Add Open Scenes' button highlighted in the upper right.](images/AzureLabs-Lab8-83.png)
 
         2. Create a new folder for this, and any future, scene, then select the **New folder** button, to create a new folder, name it **Scenes**.
 
-            ![new scenes folder](images/AzureLabs-Lab8-84.png)
+            ![Screenshot that shows 'New folder' highlighted in the upper left in the Save Scene window.](images/AzureLabs-Lab8-84.png)
 
         3. Open your newly created **Scenes** folder, and then in the **File name:** text field, type **NH\_MR\_Scene**, then press **Save**.
 
@@ -1226,11 +1225,11 @@ The following is a typical set up for developing with the mixed reality, and as 
 
         ![update xr settings](images/AzureLabs-Lab8-88.png)        
 
-    3.  Within the **Publishing Settings** tab, under **Capabilities**, heck:
+    3.  Within the **Publishing Settings** tab, under **Capabilities**, check:
 
         - **InternetClient**           
 
-            ![tick internet client](images/AzureLabs-Lab8-89.png)
+            ![Screenshot that shows the Publishing Settings tab with InternetClient checked. ](images/AzureLabs-Lab8-89.png)
 
 8.  Back in **Build Settings**, **Unity C# Projects** is no longer greyed out: tick the checkbox next to this.
 
@@ -1493,7 +1492,7 @@ This Chapter is identical to build process for the previous project. Everything 
 
 3.  After this is done, click **Build**.
 
-    ![build project](images/AzureLabs-Lab8-99.png)
+    ![Screenshot that shows the Build Settings window with the 'Build' button highlighted in the lower right.](images/AzureLabs-Lab8-99.png)
 
 4.  A **File Explorer** window will popup, prompting you for a location to Build. Create a new folder (by clicking **New Folder** in the top-left corner), and name it **BUILDS**.
 
@@ -1649,7 +1648,7 @@ To deploy the **UnityMRNotifHub** app on your Local Machine:
 
 3.  In the **Solution Configuration** select **Debug**.
 
-    ![set project configuration](images/AzureLabs-Lab8-109.png)
+    ![Screenshot that shows the Solution Configuration set to 'Debug' in the toolbar.](images/AzureLabs-Lab8-109.png)
 
 4.  Go to **Build menu** and click on **Deploy Solution** to sideload the application to your machine.
 
@@ -1663,7 +1662,7 @@ To deploy the **UnityDesktopNotifHub** app on Local Machine:
 
 3.  In the **Solution Configuration** select **Debug**.
 
-    ![set project configuration](images/AzureLabs-Lab8-110.png)
+    ![Screenshot that shows the Solution Configuration set to 'Debug'.](images/AzureLabs-Lab8-110.png)
 
 4.  Go to **Build menu** and click on **Deploy Solution** to sideload the application to your machine.
 

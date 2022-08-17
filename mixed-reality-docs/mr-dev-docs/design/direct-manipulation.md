@@ -46,6 +46,14 @@ Direct manipulation is a primary input model on HoloLens 2, which uses the new a
 
 ---
 
+## Basic hand tracking and instinctual interactions demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
+
 ## Collidable fingertip
 
 On HoloLens 2, the user's hands are recognized and interpreted as left and right-hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, five colliders could be attached to the five fingertips of each hand skeletal model. However, because of the lack of tactile feedback, 10 collidable fingertips can cause unexpected and unpredictable collisions with holograms. 
@@ -322,8 +330,7 @@ If the user hasn't looked at a hologram for a while, yet a touch or grasp event 
 ## Manipulation in MRTK (Mixed Reality Toolkit) for Unity
 With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily achieve common manipulation behavior using the script **ObjectManipulator**. With ObjectManipulator, you can grab and move objects directly with hands or with hand ray. It also supports two-handed manipulation for scaling and rotating an object.
 
-* [MRTK - Manipulation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
-
+* [MRTK - Manipulation](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator)
 
 ---
 
