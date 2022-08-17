@@ -33,7 +33,7 @@ If you wish to contribute changes to the samples, you must make a temporary loca
 
 ### API reference documentation
 
-For documentation comments, use the [recommended](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/documentation-comments#d2-introduction) inline style below:
+For documentation comments, use the [recommended](/dotnet/csharp/language-reference/language-specification/documentation-comments#d2-introduction) inline style below:
 
 ```csharp
 /// <summary>
@@ -50,9 +50,9 @@ public class Point
 
 ### Conceptual documentation
 
-For updating the conceptual docs, the Mixed Reality docs repository lives [here](https://github.com/MicrosoftDocs/mixed-reality). 
-
-Start by following these [recomendations for contributing to Microsoft docs](https://docs.microsoft.com/en-us/contribute/) and the guide for [Contributing to Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/blob/docs/mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
+When you're updating the conceptual docs, you can find Mixed Reality docs repository lives [here](https://github.com/MicrosoftDocs/mixed-reality). 
 
 >[!Tip]
 >Articles related to GraphicsTools can be found in this folder [mixed-reality/mrtk-unity/mrtk3-graphicstools/](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/mrtk-unity/mrtk3-graphicstools)
+
+Start by following these [recommendations for contributing to Microsoft docs](/contribute/) and the guide for [Contributing to Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/blob/docs/mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
