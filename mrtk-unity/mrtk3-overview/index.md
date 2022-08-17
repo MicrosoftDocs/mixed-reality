@@ -81,9 +81,9 @@ To acquire and use MRTK3, the following software tools are required.
 | Software | Version | Notes
 | --- | --- | --- |
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
-| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, make sure to check out [known issues in certain Unity versions]((/windows/mixed-reality/develop/unity/known-issues) |
+| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
-| [.NET 5.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) | | Required by Mixed Reality Feature Tool |
+| [.NET 5.0 Runtime](https://dotnet.microsoft.com/download/dotnet/5.0) | | Required by Mixed Reality Feature Tool |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
 
 ## Versioning
@@ -176,6 +176,40 @@ We very much encourage you to provide any and all feedback to help shape the fin
         A flat panel for displaying large-format interfaces and content.
     :::column-end:::
 :::row-end:::
+
+
+## Session videos from Microsoft Mixed Reality Dev Days 2022
+
+:::row:::
+    :::column:::
+       [![Introducing MRTK3](images/MRDevDays/MRDD-June8-04-IntroducingMRTK3-1920x1080_w800.png)](/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)
+        **[Introducing MRTK3 – Shaping the future of the MR Developer Experience](/events/mixed-reality-dev-days/introducing-mrtk3-shaping-the-future-of-the-mr-developer-experience)**<br>
+    :::column-end:::
+    :::column:::
+        [![Getting started with your first MRTK3 project](images/MRDevDays/MRDD-04-Getting%20StartedMRTK3-1920x1080_w800.png)](/events/mixed-reality-dev-days/getting-started-with-your-first-mrtk3-project/)
+        **[Getting started with your first MRTK3 project](/events/mixed-reality-dev-days/getting-started-with-your-first-mrtk3-project/)**<br>
+    :::column-end:::
+    :::column:::
+        [![MRTK3 Interaction building blocks](images/MRDevDays/MRDD-07-MRTK3BuildingBlocks-1920x1080_w800.png)](/events/mixed-reality-dev-days/mrtk3-interaction-building-blocks/)
+        **[MRTK3 Interaction building blocks](/events/mixed-reality-dev-days/mrtk3-interaction-building-blocks/)**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Building Rich UI for MR in MRTK3](images/MRDevDays/MRDD-10-BuildingRichUI-1920x1080_w800.png)](/events/mixed-reality-dev-days/building-rich-ui-for-mr-in-mrtk3/)
+        **[Building Rich UI for MR in MRTK3](/events/mixed-reality-dev-days/building-rich-ui-for-mr-in-mrtk3/)**<br>
+    :::column-end:::
+    :::column:::
+        [![Working with Dynamic Data and Theming in MRTK3](images/MRDevDays/MRDD-12-WorkingWithDynamicData-1920x1080_w800.png)](/events/mixed-reality-dev-days/working-with-dynamic-data-and-theming-in-mrtk3)
+        **[Working with Dynamic Data and Theming in MRTK3](/events/mixed-reality-dev-days/working-with-dynamic-data-and-theming-in-mrtk3)**<br>
+    :::column-end:::
+    :::column:::
+        [![#Open - Deploy Everywhere with OpenXR and MRTK3](images/MRDevDays/MRDD-15-HashOpenDeploy-1920x1080_w800.png)](/events/mixed-reality-dev-days/open-deploy-everywhere-with-openxr-and-mrtk3)
+        **[#Open - Deploy Everywhere with OpenXR and MRTK3](/events/mixed-reality-dev-days/open-deploy-everywhere-with-openxr-and-mrtk3)**<br>
+    :::column-end:::
+:::row-end:::
+
 
 ## Roadmap
 

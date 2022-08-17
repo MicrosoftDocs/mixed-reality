@@ -25,7 +25,7 @@ This page covers the following:
 
 ### How to detect the eye calibration state
 
-Eye tracking configuration in MRTK is configured via the [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) interface.
+Eye tracking configuration in MRTK is configured via the [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface.
 
 Using [CoreServices.InputSystem.EyeGazeProvider](eye-tracking-eye-gaze-provider.md) provides the default gaze provider implementation registered in the toolkit at runtime. `IMixedRealityEyeGazeProvider.IsEyeGazeValid` returns a `bool?` which is null if no information from the eye tracker is available yet.
 Once data has been received, it will either return true or false to indicate that the user's eye tracking calibration is valid or invalid.
@@ -42,7 +42,7 @@ It simply parents a few text meshes and has some additional triggers for blendin
 This includes slowly increasing its size and opacity on activation.
 Once the notification is dismissed, it will slowly decrease its size and fade out.
 
-   - Attached to the *_EyeCalibrationChecker_ game object* is the [EyeCalibrationChecker](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.EyeCalibrationChecker) script which exposes two Unity Events:
+   - Attached to the *_EyeCalibrationChecker_ game object* is the [EyeCalibrationChecker](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.EyeCalibrationChecker?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script which exposes two Unity Events:
       - `OnEyeCalibrationDetected()`
       - `OnNoEyeCalibrationDetected()`
 

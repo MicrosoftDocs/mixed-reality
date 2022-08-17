@@ -19,9 +19,9 @@ This service is responsible for:
 
 - Reading the [input system profile](../configuration/mixed-reality-configuration-guide.md#input-system-settings)
 - Starting the configured [data providers](../features/input/input-providers.md) (for example, `Windows Mixed Reality Device Manager` and `OpenVR Device Manager`).
-- Instantiation of the [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider), which is a component that is responsible for providing HoloLens (1st generation) style head gaze information
+- Instantiation of the [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), which is a component that is responsible for providing HoloLens (1st generation) style head gaze information
   in addition to HoloLens 2 style eye gaze information.
-- Instantiation of the [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusProvider), which is a component that is responsible for determining objects that have focus. This
+- Instantiation of the [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), which is a component that is responsible for determining objects that have focus. This
   is described in more depth in the [pointers and focus](controllers-pointers-and-focus.md#pointers-and-focus) section of the
   documentation.
 - Providing registration points for all input events (as [global listeners](#global-listeners)).
@@ -34,7 +34,7 @@ Input events are generally fired on two different channels:
 ### Objects in focus
 
 Events can be sent directly to a GameObject that has focus. For example, an object might
-have a script that implements [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler).
+have a script that implements [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 This object would get touch events when focused by a hand that is near it. These types of
 events go "up" the GameObject hierarchy until it finds a GameObject that is capable of handling
 the event.
@@ -44,13 +44,13 @@ This is done by using [ExecuteHierarchy](https://docs.unity3d.com/ScriptReferenc
 ### Global listeners
 
 Events can be sent to global listeners. It's possible to register for all input events by using
-the input system's [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem)
-interface. It's recommended to use the [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A)
+the input system's [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+interface. It's recommended to use the [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 method for registering for global events - the deprecated `Register` function will cause listeners
 to get notified of ALL input events, rather than just input events of a particular type
 (where type is defined by the event interface).
 
-Note that [fallback listeners](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A)
+Note that [fallback listeners](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 are another type of global listeners which are also discouraged because they will receive
 every single input event that hasn't been handled elsewhere in the scene.
 

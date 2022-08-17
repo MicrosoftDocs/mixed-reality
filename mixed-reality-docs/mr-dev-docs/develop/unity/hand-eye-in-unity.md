@@ -65,5 +65,5 @@ You can always go back to the [Unity development checkpoints](unity-development-
 * [Hands - Point and commit](../../design/point-and-commit.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [Motion controllers](../../design/motion-controllers.md)
-* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
+* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)

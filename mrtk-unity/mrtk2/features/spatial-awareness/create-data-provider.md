@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 The Spatial Awareness system is an extensible system for providing applications with data about real world environments. To add support for a new hardware platform or a new form of Spatial Awareness data, a custom data provider may be required.
 
-This article describes how to create [custom data providers](../../architecture/systems-extensions-providers.md), also called Spatial Observers, for the Spatial Awareness system. The example code shown here is from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class implementation which is [useful for loading 3D mesh data in-editor](spatial-object-mesh-observer.md).
+This article describes how to create [custom data providers](../../architecture/systems-extensions-providers.md), also called Spatial Observers, for the Spatial Awareness system. The example code shown here is from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class implementation which is [useful for loading 3D mesh data in-editor](spatial-object-mesh-observer.md).
 
 > [!NOTE]
 > The complete source code used in this example can be found in the `Assets/MRTK/Providers/ObjectMeshObserver` folder.
@@ -60,21 +60,21 @@ All code should be located in a folder beneath MRTK/Providers (ex: MRTK/Provider
 
 The first step in creating a Spatial Awareness data provider is determining the type of data (ex: meshes or planes) it will provide to applications.
 
-All spatial data objects must implement the [`IMixedRealitySpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject)
+All spatial data objects must implement the [`IMixedRealitySpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 interface.
 
 The Mixed Reality Toolkit foundation provides the following spatial objects that can be used or extended in new data providers.
 
-- [`BaseSpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
-- [`SpatialAwarenessMeshObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
-- [`SpatialAwarenessPlanarObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessPlanarObject)
+- [`BaseSpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`SpatialAwarenessMeshObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`SpatialAwarenessPlanarObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessPlanarObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 ## Implement the data provider
 
 ### Specify interface and/or base class inheritance
 
-All Spatial Awareness data providers must implement the [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
-interface, which specifies the minimum functionality required by the Spatial Awareness system. The MRTK foundation includes the [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)
+All Spatial Awareness data providers must implement the [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+interface, which specifies the minimum functionality required by the Spatial Awareness system. The MRTK foundation includes the [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 class which provides a default implementation of this required functionality.
 
 ```c#
@@ -86,11 +86,11 @@ public class SpatialObjectMeshObserver :
 ```
 
 > [!NOTE]
-> The [`IMixedRealityCapabilityCheck`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck) interface is used by the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class to indicate that it provides support for the SpatialAwarenessMesh capability.
+> The [`IMixedRealityCapabilityCheck`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface is used by the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class to indicate that it provides support for the SpatialAwarenessMesh capability.
 
 #### Apply the MixedRealityDataProvider attribute
 
-A key step in creating a Spatial Awareness data provider is to apply the [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute)
+A key step in creating a Spatial Awareness data provider is to apply the [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 attribute to the class. This step enables setting the default profile and platform(s) for the data provider, when selected in the Spatial Awareness profile as well as Name, folder path, and more.
 
 ```c#
@@ -109,10 +109,10 @@ public class SpatialObjectMeshObserver :
 
 ### Implement the IMixedRealityDataProvider methods
 
-Once the class has been defined, the next step is to provide the implementation of the [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) interface.
+Once the class has been defined, the next step is to provide the implementation of the [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface.
 
 > [!NOTE]
-> The [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) class, via the [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService) class, provides only an empty implementations for [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) methods. The details of these methods are generally data provider specific.
+> The [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class, via the [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class, provides only an empty implementations for [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) methods. The details of these methods are generally data provider specific.
 
 The methods that should be implemented by the data provider are:
 
@@ -126,17 +126,17 @@ The methods that should be implemented by the data provider are:
 ### Implement the data provider logic
 
 The next step is to add the logic of the data provider by implementing the specific data provider interface, for
-example [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver). This portion of the data provider will typically be platform specific.
+example [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). This portion of the data provider will typically be platform specific.
 
 ### Observation change notifications
 
-To allow applications to respond to changes in the device's understanding of the environment, the data provider raises notification events as defined in the [`IMixedRealitySpatialAwarenessObservationtHandler<T>`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObservationHandler`1) interface.
+To allow applications to respond to changes in the device's understanding of the environment, the data provider raises notification events as defined in the [`IMixedRealitySpatialAwarenessObservationtHandler<T>`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObservationHandler`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface.
 
 - `OnObservationAdded()`
 - `OnObservationRemoved()`
 - `OnObservationUpdated()`
 
- The following code from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) examples demonstrates raising and event when mesh data is added.
+ The following code from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) examples demonstrates raising and event when mesh data is added.
 
 ```c#
 // The data to be sent when mesh observation events occur.
@@ -183,7 +183,7 @@ private void SendMeshObjects()
 ```
 
 > [!NOTE]
-> The [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class does not raise `OnObservationUpdated` events since the 3D model is only loaded once. The implementation in the [`WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class provides an example of raising an `OnObservationUpdated` event for an observed mesh.
+> The [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class does not raise `OnObservationUpdated` events since the 3D model is only loaded once. The implementation in the [`WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class provides an example of raising an `OnObservationUpdated` event for an observed mesh.
 
 ### Add Unity Profiler instrumentation
 
@@ -221,7 +221,7 @@ In Mixed Reality Toolkit, data providers are configured using [profiles](../prof
 
 Profile contents should mirror the accessible properties of the data provider (ex: update interval). All of the user configurable properties defined in each interface should be contained with the profile.
 
-Base classes are encouraged if a new data provider extends an existing provider. For example, the [`SpatialObjectMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserverProfile) extends the [`MixedRealitySpatialAwarenessMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfile) to enable customers to provide a 3D model to be used as the environment data.
+Base classes are encouraged if a new data provider extends an existing provider. For example, the [`SpatialObjectMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserverProfile?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) extends the [`MixedRealitySpatialAwarenessMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfile?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to enable customers to provide a 3D model to be used as the environment data.
 
 ```c#
 [CreateAssetMenu(
@@ -245,7 +245,7 @@ The `CreateAssetMenu` attribute can be applied to the profile class to enable cu
 
 ### Implement the inspector
 
-Profile inspectors are the user interface for configuring and viewing profile contents. Each profile inspector should extend the [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) class.
+Profile inspectors are the user interface for configuring and viewing profile contents. Each profile inspector should extend the [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
 The `CustomEditor` attribute informs Unity the type of asset to which the inspector applies.
 
@@ -287,12 +287,12 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 ## See also
 
 - [Spatial awareness system](spatial-awareness-getting-started.md)
-- [`IMixedRealitySpatialAwarenessObject` interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject)
-- [`BaseSpatialAwarenessObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
-- [`SpatialAwarenessMeshObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
-- [`SpatialAwarenessPlanarObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessPlanarObject)
-- [`IMixedRealitySpatialAwarenessObserver` interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
-- [`BaseSpatialObserver` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)
-- [`IMixedRealitySpatialAwarenessMeshObserver` interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
-- [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
-- [`IMixedRealityCapabilityCheck` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
+- [`IMixedRealitySpatialAwarenessObject` interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`BaseSpatialAwarenessObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`SpatialAwarenessMeshObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`SpatialAwarenessPlanarObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessPlanarObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealitySpatialAwarenessObserver` interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`BaseSpatialObserver` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealitySpatialAwarenessMeshObserver` interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityCapabilityCheck` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)

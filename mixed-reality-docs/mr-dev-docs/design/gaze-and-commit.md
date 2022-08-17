@@ -250,7 +250,7 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 
 [Instructions to pair the device](../discover/hardware-accessories.md#pairing-bluetooth-accessories)
 
-<a href=https://www.xbox.com/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
+<a href=https://www.xbox.com/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
 <br>
 
