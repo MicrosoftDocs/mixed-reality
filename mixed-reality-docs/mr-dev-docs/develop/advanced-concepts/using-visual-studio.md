@@ -117,7 +117,7 @@ To set your remote connection:
 1. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
   > [!NOTE]
-  > If the errors listed below occur when you start debugging an installed UWP application on the HoloLens 2, try renaming your package name or uninstalling your UWP application.
+  > If the errors listed below occur when you start debugging an installed UWP application on the HoloLens 2, try renaming your package or uninstalling your UWP application.
   > 
   > "Unable to start debugging"
   > "Operation not supported. Unknown error: 0x80070057"
