@@ -46,7 +46,7 @@ With this setting on HoloLens 2, you can enable hologram alignment in your mixed
 
 ### HoloLens 2 reprojection method
 
-Sets the initial method for HoloLens 2 reprojection. The default recommendation is to use depth reprojection, as all parts of the scene will be independently stabilized based on their distance from the user. If holograms still appear unstable, try ensuring all objects have properly submitted their depth to the depth buffer. This is sometimes a shader setting. If depth appears to be properly submitted and instability is still present, try autoplanar stabilization, which uses the depth buffer to calculate a stabilization plane. If an app is unable to submit enough depth data for either of those options to be usable, planar reprojection is provided as a fallback. This method will be based on an app's provided focus point data via [SetFocusPointForFrame](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.SetFocusPointForFrame.html).
+Sets the initial method for HoloLens 2 reprojection. The default recommendation is to use depth reprojection, as all parts of the scene will be independently stabilized based on their distance from the user. If holograms still appear unstable, try ensuring all objects have properly submitted their depth to the depth buffer. This is sometimes a shader setting. If depth appears to be properly submitted and instability is still present, try autoplanar stabilization, which uses the depth buffer to calculate a stabilization plane. If an app is unable to submit enough depth data for either of those options to be usable, planar reprojection is provided as a fallback. This method will be based on an app's provided focus point data via [SetFocusPointForFrame](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/XR.WSA.HolographicSettings.SetFocusPointForFrame.html).
 
 To update the reprojection method at runtime, access the `WindowsMixedRealityReprojectionUpdater` like so:
 
@@ -62,4 +62,3 @@ This only needs to be updated once and the value is reused for all subsequent fr
 - [Camera System Overview](camera-system-overview.md)
 - [Creating a Camera Settings Provider](create-settings-provider.md)
 - [Rendering Mixed Reality Capture from the PV camera](/windows/mixed-reality/mixed-reality-capture-for-developers#render-from-the-pv-camera-opt-in)
-- [Holographic reprojection](/windows/mixed-reality/hologram-stability#reprojection)

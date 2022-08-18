@@ -28,7 +28,7 @@ If you have HoloLens 2 device, you can directly download and install the app in 
 
 ## First principles 
 
-In setting out to create Kippy’s Escape, our goal was to create an experience that would highlight [Unreal Engine’s HoloLens 2 support](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html), the HoloLens 2’s capabilities, and the Mixed Reality Toolkit. We wanted to inspire developers to imagine what they could create with Unreal and HoloLens 2.  
+In setting out to create Kippy’s Escape, our goal was to create an experience that would highlight [Unreal Engine’s HoloLens 2 support](https://docs.unrealengine.com/develping-for-hololens-in-unreal-engine/), the HoloLens 2’s capabilities, and the Mixed Reality Toolkit. We wanted to inspire developers to imagine what they could create with Unreal and HoloLens 2.  
 
 We came up with three guiding principles for the experience: that it needed to be fun, interactive, and have a low barrier to entry. We wanted the experience to be intuitive enough that even a first-time mixed reality user won’t need a tutorial to go through it.  
 

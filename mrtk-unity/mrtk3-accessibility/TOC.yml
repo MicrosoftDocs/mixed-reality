@@ -14,7 +14,9 @@
   href: ../mrtk3-overview/debugging-and-testing.md
 - name: Known issues
   href: ../mrtk3-overview/known-issues.md
-- name: Release notes
-  href: ../mrtk3-overview/release-notes.md
+- name: Changelogs
+  href: ../mrtk3-overview/changelogs/toc.yml
+- name: API reference
+  href: ../mrtk3-overview/api-reference.md
 - name: MRTK2.x documentation
   href: ../mrtk2/index.md

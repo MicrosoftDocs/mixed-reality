@@ -1,6 +1,4 @@
 - name: Overview
   href: overview.md
-- name: Known issues
-  href: known-issues.md
-- name: Release notes
-  href: release-notes.md
+- name: API reference
+  href: https://aka.ms/mrtk3winspeechapi
