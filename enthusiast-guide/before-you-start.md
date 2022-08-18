@@ -3,7 +3,7 @@ title: Before you start
 description: Learn how to make sure your PC is compatible and ready for various Windows Mixed Reality application experiences.
 author: qianw211
 ms.author: qianwen
-ms.date: 8/3/2022
+ms.date: 8/18/2022
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, compatible, compatibility, get started, setup, PC, system requirements
 appliesto:
@@ -15,7 +15,7 @@ appliesto:
 ## What you'll need to run Windows Mixed Reality
 
 * A [Windows Mixed Reality head mounted display (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
-* A [Windows Mixed Reality compatible PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) running Windows 10 Version 20H2 or later or Windows 11.
+* A [Windows Mixed Reality compatible PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) running [Windows 10 Version 20H2](/windows/release-health/status-windows-10-20h2) or later or [Windows 11](/windows/release-health/windows11-release-information).
 * A reliable internet connection.
 * Display, USB, and Bluetooth adapters (if not pre-built into HMD or PC).
 * Windows Mixed Reality motion controllers, an Xbox gamepad, or a mouse and keyboard.
@@ -24,7 +24,7 @@ appliesto:
 
 ## Make sure your PC is compatible with Windows Mixed Reality
 
-Check the [Windows Mixed Reality minimum PC hardware compatibility guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) or run the [Windows Mixed Reality Portal](https://apps.microsoft.com/store/detail/mixed-reality-portal/9NG1H8B3ZC7M?hl=en-us&gl=US) app on your PC to check for Windows Mixed Reality compatibility.
+Check the [Windows Mixed Reality minimum PC hardware compatibility guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) or run the [Windows Mixed Reality Portal](https://apps.microsoft.com/store/detail/mixed-reality-portal/9NG1H8B3ZC7M?) app on your PC to check for Windows Mixed Reality compatibility.
 
 Read up on [PC compatibility issues](get-help-with-pc-compatibility.md) for more details.
 
@@ -32,10 +32,10 @@ Read up on [PC compatibility issues](get-help-with-pc-compatibility.md) for more
 
 You must be running Windows 10 Version 20H2 or newer to use Windows Mixed Reality. Compatible versions of Windows include:
 
-* Windows 10 Version 20H2
-* Windows 10 Version 21H1
-* Windows 10 Version 21H2
-* Windows 11
+* [Windows 10 Version 20H2](/windows/release-health/status-windows-10-20h2)
+* [Windows 10 Version 21H1](/windows/release-health/status-windows-10-21h1)
+* [Windows 10 Version 21H2](/windows/release-health/status-windows-10-21h2)
+* [Windows 11](/windows/release-health/windows11-release-information)
 
 To see which version of Windows your device is currently running, select the **Start** button, then select **Settings  > System > About**.
 
