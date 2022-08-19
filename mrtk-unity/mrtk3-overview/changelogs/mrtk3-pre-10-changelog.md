@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 # Changelog for MRTK3 pre.10
 
 ### [pre.10] - 2022-08-19 - `0aebad7`
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The content is mirrored at [the changelog page of our docs](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk3-overview/changelogs/mrtk3-pre-9-changelog).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - Added `RiggedHandMeshVisualizer` with associated hand meshes + shaders
