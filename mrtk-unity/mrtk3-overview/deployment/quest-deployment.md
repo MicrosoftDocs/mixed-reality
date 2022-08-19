@@ -43,6 +43,8 @@ This page describes how to deploy your Unity Project with MRTK onto a Quest devi
     > [!NOTE] 
     > If you don't see **Oculus Quest Support** under the **OpenXR Feature Groups** panel, make sure you've downloaded the Mixed Reality OpenXR Plugin via the [MR Feature Tool](/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
 
+1. If you plan on using the native keyboard, please refer to the [keyboard documentation](../../mrtk3-input/packages/input/System-keyboard.md#meta-quest-specific-setup) for a required `AndroidManifest.xml` modification.
+
 ## Deploying to Device
 
 1. After you have the project configured, proceed to [Generate Build](https://developer.oculus.com/documentation/unity/unity-build/#generate-build)
