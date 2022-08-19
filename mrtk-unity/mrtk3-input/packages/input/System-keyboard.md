@@ -48,4 +48,4 @@ private void Update()
 
 ## Meta Quest specific setup
 
-If you are targeting Meta Quest, you will need to make a modification to `AndroidManifest.xml` for the keyboard to show up for Quest. Please refer to [the documentation for Unity's XRI Examples repo](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples#androidoculus) for details.
+If you're targeting Meta Quest, you'll need to make a modification to `AndroidManifest.xml` for the keyboard to show up for Quest. Please refer to [the documentation for Unity's XRI Examples repo](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples#androidoculus) for details.
