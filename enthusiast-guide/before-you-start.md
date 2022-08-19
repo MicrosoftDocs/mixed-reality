@@ -84,7 +84,7 @@ If you select "Set me up for seated and standing," you'll be using your HMD with
 If you choose "Set me up for all experiences," you'll set up a room boundary and be able to move around in room-scale app experiences. Prepare your physical space by making sure there are no obstacles, hazards, or fragile items within the area you’ll be active - including above your head. 
 
 >[!Important]
->Do not set up at your room boundary on top of a staircase or under an extra-low ceiling fan. Remove all breakable objects and obstacles from the area, and make sure everyone using your headset reads and understands the [health, safety, and comfort guidelines](wmr-health-safety-comfort.md).
+>Do not set up your room boundary on top of a staircase or under an extra-low ceiling fan. Remove all breakable objects and obstacles from the area, and make sure everyone using your headset reads and understands the [health, safety, and comfort guidelines](wmr-health-safety-comfort.md).
 
 ## See also
 
