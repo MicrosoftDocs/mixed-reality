@@ -3,7 +3,7 @@ title: Extended eye tracking for Native Development
 description: Learn about extended eye tracking for native development for HoloLens 2.
 author: magdavuko   
 ms.author: magdav
-ms.date: 08/23/99
+ms.date: 08/23/2022
 ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions, API reference
 ---
@@ -356,7 +356,7 @@ public uint FramesPerSecond { get; }	            | Frames per second of the fram
 For each piece of data (Combined gaze, calibration state, individual gazes) incorporated into the tracker's published states, there's an associated GUID and a type. 
 The type associated to a GUID never changes, but each eye tracker might support different sets of GUID/type pairs. HoloLens 2 eye tracker supports different sets for its standard mode and its restricted mode.
 
-The EyeGazeTrackerRawValues class enables an application to access new types of data which are not yet part of the strongly typed part of the SDK, provided that the eye tracker team has provided a GUID, the associated data type, and its meaning.
+The EyeGazeTrackerRawValues class enables an application to access new types of data that aren't yet part of the strongly typed part of the SDK, provided that the eye tracker team has provided a GUID, the associated data type, and its meaning.
 
 Methods
 Name                                                | Description 
