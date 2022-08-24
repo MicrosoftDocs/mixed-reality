@@ -186,4 +186,6 @@ This page has hopefully provided you with a good overview to get you started und
 * [Eye-gaze in DirectX](../develop/native/gaze-in-directx.md)
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Gaze and commit](gaze-and-commit.md)
+* [Extended Eye Tracking SDK for Native Development](../develop/native/extended-eye-tracking-native.md)
+* [Extended Eye Tracking SDK for Unity Development](../develop/unity/extended-eye-tracking-unity.md)
 * [Voice input](../out-of-scope/voice-design.md)
