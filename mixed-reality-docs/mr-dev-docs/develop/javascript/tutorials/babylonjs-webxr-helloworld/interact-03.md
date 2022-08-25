@@ -334,6 +334,6 @@ Congratulations! You've completed our series of Babylon.js tutorials and learned
 > * The Babylon.js API to create and interact with basic 3D elements
 > * Run and test the application in a Windows Mixed Reality Simulator
 
-For more information on Mixed Reality JavaScript development see [JavaScript development overview](/windows/mixed-reality/develop/javascript/javascript-development-overview).
+For more information on Mixed Reality JavaScript development see [JavaScript development overview](../../javascript-development-overview.md).
 
 If you're looking for another Babylon.js tutorial, checkout the [Piano-building Tutorial Series](../babylonjs-webxr-piano/introduction-01.md) to learn how to build a piano in the VR space using Babylon.js.
