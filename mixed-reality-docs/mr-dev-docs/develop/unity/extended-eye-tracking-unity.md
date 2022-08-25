@@ -514,6 +514,7 @@ public Task StartAsync()                            | Starts tracker's enumerati
 public void Stop()                                  | Stop listening to tracker's additions and removal  |
 
 **Events**
+    
 Name                                                | Description   |
 ----------------------------------------------------|-------------------------------------------
 public event EventHandler<EyeGazeTracker> EyeGazeTrackerAdded   | Raised when an Eye Gaze tracker is connected  |
