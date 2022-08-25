@@ -311,13 +311,13 @@ if (trackerLocation)
 
 Namespace: Microsoft.MixedReality.EyeTracking 
 
-class                   | Description
+class                   | Description |
 ------------------------|-------------------------------------------
-EyeGazeTracker          | Represents an eye gaze tracker
-EyeGazeTrackerFrameRate | Represents a Frame Rate supported by an Eye Tracker
-EyeGazeTrackerRawValues | Enables access to values provided by a given driver but not yet "promoted" as strongly typed properties and methods of the SDK
-EyeGazeTrackerReading   | Snapshot of Gaze Tracker state
-EyeGazeTrackerWatcher   | Allow discovery of Eye Gaze Trackers connected to the system
+EyeGazeTracker          | Represents an eye gaze tracker |
+EyeGazeTrackerFrameRate | Represents a Frame Rate supported by an Eye Tracker |
+EyeGazeTrackerRawValues | Enables access to values provided by a given driver but not yet "promoted" as strongly typed properties and methods of the SDK |
+EyeGazeTrackerReading   | Snapshot of Gaze Tracker state |
+EyeGazeTrackerWatcher   | Allow discovery of Eye Gaze Trackers connected to the system |
 
 ### EyeGazeTracker
 
@@ -325,26 +325,26 @@ Represents an eye gaze tracker
 
 Properties
 
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public bool AreLeftAndRightGazesSupported { get; }	| True if individual gazes are supported
-public bool IsEyeOpennessSupported { get; }	        | True if Eye Openness is supported by the driver
-public bool IsRestrictedModeSupported { get; }	    | 
-public bool IsVergenceDistanceSupported { get; }	| True if Vergence Distance is supported by tracker.
-public IReadOnlyList<EyeGazeTrackerFrameRate> SupportedTargetFrameRates { get; }  |	List of the target frame rates supported by the tracker
-public Guid TrackerSpaceLocatorNodeId { get; }	    | NodeId of the Tracker allowing to retrieve a SpatialLocator using SpatialGraphInteropPreview.CreateLocatorForNode
+public bool AreLeftAndRightGazesSupported { get; }	| True if individual gazes are supported |
+public bool IsEyeOpennessSupported { get; }	        | True if Eye Openness is supported by the driver |
+public bool IsRestrictedModeSupported { get; }	    |  |
+public bool IsVergenceDistanceSupported { get; }	| True if Vergence Distance is supported by tracker. |
+public IReadOnlyList<EyeGazeTrackerFrameRate> SupportedTargetFrameRates { get; }  |	List of the target frame rates supported by the tracker |
+public Guid TrackerSpaceLocatorNodeId { get; }	    | NodeId of the Tracker allowing to retrieve a SpatialLocator using SpatialGraphInteropPreview.CreateLocatorForNode |
 
 Methods
     
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public void Close()	                                | Closes the tracker
-public Task OpenAsync(bool restrictedMode)          | Opens the tracker
-public void SetTargetFrameRate(EyeGazeTrackerFrameRate newFrameRate)  |	Changes the target framerate of the tracker
-public EyeGazeTrackerReading TryGetReadingAfterSystemRelativeTime(TimeSpan time)  |	Try to get the first tracker state after a system relative time
-public EyeGazeTrackerReading TryGetReadingAfterTimestamp(DateTime timestamp)  |	Try to get first first tracker state after a given timestamp
-public EyeGazeTrackerReading TryGetReadingAtSystemRelativeTime(TimeSpan time) | Try to get tracker state at a system relative time
-public EyeGazeTrackerReading TryGetReadingAtTimestamp(DateTime timestamp) |	Try to get tracker state at a given timestamp
+public void Close()	                                | Closes the tracker |
+public Task OpenAsync(bool restrictedMode)          | Opens the tracker |
+public void SetTargetFrameRate(EyeGazeTrackerFrameRate newFrameRate)  |	Changes the target framerate of the tracker |
+public EyeGazeTrackerReading TryGetReadingAfterSystemRelativeTime(TimeSpan time)  |	Try to get the first tracker state after a system relative time |
+public EyeGazeTrackerReading TryGetReadingAfterTimestamp(DateTime timestamp)  |	Try to get first first tracker state after a given timestamp |
+public EyeGazeTrackerReading TryGetReadingAtSystemRelativeTime(TimeSpan time) | Try to get tracker state at a system relative time |
+public EyeGazeTrackerReading TryGetReadingAtTimestamp(DateTime timestamp) |	Try to get tracker state at a given timestamp |
 
 ### EyeGazeTrackerFrameRate
 
@@ -352,9 +352,9 @@ Represents a Frame Rate supported by an Eye Tracker
 
 Properties
     
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public uint FramesPerSecond { get; }	            | Frames per second of the frame rate
+public uint FramesPerSecond { get; }	            | Frames per second of the frame rate |
 
 ### EyeGazeTrackerRawValues
 
@@ -365,14 +365,14 @@ The EyeGazeTrackerRawValues class enables an application to access new types of 
 
 Methods
     
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public static bool IsSupported(EyeGazeTracker tracker, Guid valueKey) |	Return True if a value identified by its guid is supported by a tracker
-public static void SendCommand(EyeGazeTracker tracker, Guid command, byte[] inBuffer, byte[] outBuffer)	| Sends a command to the tracker
-public static bool TryGetBool(EyeGazeTrackerReading reading, Guid valueKey, out bool value) | Try to read a boolean value from a reading
-public static bool TryGetFloat(EyeGazeTrackerReading reading, Guid valueKey, out float value) |	Try to read a float value from a reading
-public static bool TryGetInt(EyeGazeTrackerReading reading, Guid valueKey, out int value) |	Try to read a int value from a reading
-public static bool TryGetVector3(EyeGazeTrackerReading reading,	Guid valueKey, out Vector3 value) |	Try to read a vector3 value from a reading
+public static bool IsSupported(EyeGazeTracker tracker, Guid valueKey) |	Return True if a value identified by its guid is supported by a tracker |
+public static void SendCommand(EyeGazeTracker tracker, Guid command, byte[] inBuffer, byte[] outBuffer)	| Sends a command to the tracker |
+public static bool TryGetBool(EyeGazeTrackerReading reading, Guid valueKey, out bool value) | Try to read a boolean value from a reading |
+public static bool TryGetFloat(EyeGazeTrackerReading reading, Guid valueKey, out float value) |	Try to read a float value from a reading |
+public static bool TryGetInt(EyeGazeTrackerReading reading, Guid valueKey, out int value) |	Try to read a int value from a reading |
+public static bool TryGetVector3(EyeGazeTrackerReading reading,	Guid valueKey, out Vector3 value) |	Try to read a vector3 value from a reading |
 
 ### EyeGazeTrackerReading
 
@@ -380,22 +380,22 @@ Snapshot of Eye Gaze Tracker state at a given time
 
 Properties
     
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public bool IsCalibrationValid { get; }	            | Indicates if user calibration is valid
-public TimeSpan SystemRelativeTime { get; }	        | Timestamp of state as system relative time
-public DateTime Timestamp { get; }	                | Timestamp of state
+public bool IsCalibrationValid { get; }	            | Indicates if user calibration is valid |
+public TimeSpan SystemRelativeTime { get; }	        | Timestamp of state as system relative time |
+public DateTime Timestamp { get; }	                | Timestamp of state |
 
 Methods
     
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public bool TryGetCombinedEyeGazeInTrackerSpace(out Vector3 origin, out Vector3 direction) | Tries to get a vector representing the combined gaze related to the tracker's node position
-public bool TryGetLeftEyeGazeInTrackerSpace(Vector3 origin, out Vector3 direction) | Tries to get a vector representing the left eye gaze related to the tracker's node position
-public bool TryGetLeftEyeOpenness(out float value)  | Tries to get left Eye openness information
-public bool TryGetRightEyeGazeInTrackerSpace(out Vector3 origin, out Vector3 direction) | Tries to get a vector representing the right eye gaze related to the tracker's node position
-public bool TryGetRightEyeOpenness(out float value) | Tries to get right Eye openness information
-public bool TryGetVergenceDistance(out float value) | Tries to read vergence distance
+public bool TryGetCombinedEyeGazeInTrackerSpace(out Vector3 origin, out Vector3 direction) | Tries to get a vector representing the combined gaze related to the tracker's node position |
+public bool TryGetLeftEyeGazeInTrackerSpace(Vector3 origin, out Vector3 direction) | Tries to get a vector representing the left eye gaze related to the tracker's node position |
+public bool TryGetLeftEyeOpenness(out float value)  | Tries to get left Eye openness information |
+public bool TryGetRightEyeGazeInTrackerSpace(out Vector3 origin, out Vector3 direction) | Tries to get a vector representing the right eye gaze related to the tracker's node position |
+public bool TryGetRightEyeOpenness(out float value) | Tries to get right Eye openness information |
+public bool TryGetVergenceDistance(out float value) | Tries to read vergence distance |
 
 ### EyeGazeTrackerWatcher
 
@@ -405,15 +405,15 @@ Note: this is the only class from Extended Eye Tracking SDK that the application
 
 Methods
     
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public EyeGazeTrackerWatcher()                      | Constructs an instance of the watcher
-public Task StartAsync()                            | Starts trackers enumeration
-public void Stop()                                  | Stop listening to trackers additions and removal
+public EyeGazeTrackerWatcher()                      | Constructs an instance of the watcher |
+public Task StartAsync()                            | Starts trackers enumeration |
+public void Stop()                                  | Stop listening to trackers additions and removal |
 
 Events
     
-Name                                                | Description 
+Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
-public event EventHandler<EyeGazeTracker> EyeGazeTrackerAdded   | Raised when an Eye Gaze tracker is connected
-public event EventHandler<EyeGazeTracker> EyeGazeTrackerRemoved | Raised when an Eye Gaze tracker is disconnected
+public event EventHandler<EyeGazeTracker> EyeGazeTrackerAdded   | Raised when an Eye Gaze tracker is connected |
+public event EventHandler<EyeGazeTracker> EyeGazeTrackerRemoved | Raised when an Eye Gaze tracker is disconnected |
