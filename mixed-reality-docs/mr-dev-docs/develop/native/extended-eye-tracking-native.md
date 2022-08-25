@@ -323,7 +323,7 @@ EyeGazeTrackerWatcher   | Allow discovery of Eye Gaze Trackers connected to the 
 
 Represents an eye gaze tracker
 
-Properties
+**Properties** |
 
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
@@ -334,7 +334,7 @@ public bool IsVergenceDistanceSupported { get; }	| True if Vergence Distance is 
 public IReadOnlyList<EyeGazeTrackerFrameRate> SupportedTargetFrameRates { get; }  |	List of the target frame rates supported by the tracker |
 public Guid TrackerSpaceLocatorNodeId { get; }	    | NodeId of the Tracker allowing to retrieve a SpatialLocator using SpatialGraphInteropPreview.CreateLocatorForNode |
 
-Methods
+**Methods**
     
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
@@ -350,7 +350,7 @@ public EyeGazeTrackerReading TryGetReadingAtTimestamp(DateTime timestamp) |	Try 
 
 Represents a Frame Rate supported by an Eye Tracker
 
-Properties
+**Properties**
     
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
@@ -363,7 +363,7 @@ The type associated to a GUID never changes, but each eye tracker might support 
 
 The EyeGazeTrackerRawValues class enables an application to access new types of data that aren't yet part of the strongly typed part of the SDK, provided that the eye tracker team has provided a GUID, the associated data type, and its meaning.
 
-Methods
+**Methods**
     
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
@@ -378,7 +378,7 @@ public static bool TryGetVector3(EyeGazeTrackerReading reading,	Guid valueKey, o
 
 Snapshot of Eye Gaze Tracker state at a given time
 
-Properties
+**Properties**
     
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
@@ -386,7 +386,7 @@ public bool IsCalibrationValid { get; }	            | Indicates if user calibrat
 public TimeSpan SystemRelativeTime { get; }	        | Timestamp of state as system relative time |
 public DateTime Timestamp { get; }	                | Timestamp of state |
 
-Methods
+**Methods**
     
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
@@ -403,7 +403,7 @@ Allow discovery of Eye Gaze Trackers connected to the system.
 
 Note: this is the only class from Extended Eye Tracking SDK that the application will instanciate, other classes' instances will be returned by method calls or properties.
 
-Methods
+**Methods**
     
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
@@ -411,7 +411,7 @@ public EyeGazeTrackerWatcher()                      | Constructs an instance of 
 public Task StartAsync()                            | Starts trackers enumeration |
 public void Stop()                                  | Stop listening to trackers additions and removal |
 
-Events
+**Events**
     
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
