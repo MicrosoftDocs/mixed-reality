@@ -50,7 +50,7 @@ public class Point
 
 ### Conceptual documentation
 
-When you're updating the conceptual docs, you can find the Mixed Reality docs repository [here](https://github.com/MicrosoftDocs/mixed-reality). 
+To update conceptual documents, [go to the Mixed Reality document repository](https://github.com/MicrosoftDocs/mixed-reality). 
 
 >[!Tip]
 >Articles related to Graphics Tools can be found in this folder [mixed-reality/mrtk-unity/mrtk3-graphicstools/](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/mrtk-unity/mrtk3-graphicstools)
