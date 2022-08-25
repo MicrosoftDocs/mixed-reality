@@ -459,10 +459,11 @@ public uint FramesPerSecond { get; }	            | Frames per second of the fram
 
 ### EyeGazeTrackerRawValues
 
-For each piece of data (Combined gaze, calibration state, individual gazes) incorporated into the tracker's published states, there's an associated GUID and a type.   |
-The type associated to a GUID never changes, but each eye tracker might support different sets of GUID/type pairs. HoloLens 2 eye tracker supports different sets for its standard mode and its restricted mode.  |
+For each piece of data (Combined gaze, calibration state, individual gazes) incorporated into the tracker's published states, there's an associated GUID and a type.
+    
+The type associated to a GUID never changes, but each eye tracker might support different sets of GUID/type pairs. HoloLens 2 eye tracker supports different sets for its standard mode and its restricted mode.
 
-The EyeGazeTrackerRawValues class enables an application to access new types of data that aren't yet part of the strongly typed part of the SDK, provided that the eye tracker team has provided a GUID, the associated data type, and its meaning.  |
+The EyeGazeTrackerRawValues class enables an application to access new types of data that aren't yet part of the strongly typed part of the SDK, provided that the eye tracker team has provided a GUID, the associated data type, and its meaning.
 
 **Methods**
     
