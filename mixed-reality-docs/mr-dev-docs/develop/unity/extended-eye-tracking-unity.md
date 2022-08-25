@@ -49,9 +49,7 @@ var combinedGazeReadingInWorldSpace = extendedEyeTrackingDataProvider.GetWorldSp
 var combinedGazeReadingInCameraSpace = extendedEyeTrackingDataProvider.GetCameraSpaceGazeReading(ExtendedEyeTrackingDataProvider.GazeType.Combined, timestamp);
 ```
 
-As for the frame rate, the  ExtendedEyeTrackingDataProvider set it to the highest option (90fps for now).
-
-<INTERNAL NOTE: I wasn't sure what was being said here.>
+When Unity executes the ExtendedEyeTrackingDataProvider script, it sets the frame rate to the highest option, which is currently 90fps.
 
 ## Scripts
 
