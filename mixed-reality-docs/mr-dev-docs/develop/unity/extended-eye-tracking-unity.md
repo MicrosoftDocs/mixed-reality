@@ -22,9 +22,9 @@ This article covers the ways that you can use the Unity  development path to con
 2. Import the [Eye Tracking SDK NuGet package](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) into your Unity project.
     1. Download and install the [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity/releases) package.
     2. In the Unity editor, go to `NuGet`->`Manage NuGet Packages`, and then search for `Microsoft.MixedReality.EyeTracking`
-    3. Click the Install button to import the NuGet package.
+    3. Click the Install button to import the NuGet package.  
 
-    ![](img/NuGetForUnity.png)
+        ![Screenshot of the Eye Tracking SDK Nuget package.](images/038-install-nuget-package.png)  
 
 3. Add the Unity helper scripts.
     1. Add the `Vector3Extensions.cs` and `ExtendedEyeTrackingDataProvider.cs` scripts below into your Unity project.

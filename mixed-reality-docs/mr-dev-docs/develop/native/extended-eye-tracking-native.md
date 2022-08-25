@@ -18,13 +18,15 @@ This article covers the ways that you can use the native development path (C# or
 
 ## Project setup
 
-1. [Create](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/native/creating-a-holographic-directx-project)  a `Holographic DirectX 11 App (Universal Windows)` or `Holographic DirectX 11 App (Universal Windows) (C++/WinRT)` project with Visual Studio 2019 or newer, or open your existing holographic Visual Studio project.
+1. [Create](/windows/mixed-reality/develop/native/creating-a-holographic-directx-project)  a `Holographic DirectX 11 App (Universal Windows)` or `Holographic DirectX 11 App (Universal Windows) (C++/WinRT)` project with Visual Studio 2019 or newer, or open your existing holographic Visual Studio project.
 1. Import the [Eye Tracking SDK NuGet package](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) to the project.
     1. In the Visual Studio Solution Explorer, right-click your project -> Manage NuGet Packages...
     1. Make sure the Package source in the top right corner points to nuget.org: https://api.nuget.org/v3/index.json
-    1. Click the Browser tab, and then search `Microsoft.MixedReality.EyeTracking`
-    1. Click the Install button to install it
-    ![](img/VisualStudioManageNuGet.png)
+    1. Click the Browser tab, and then search `Microsoft.MixedReality.EyeTracking`.
+    1. Click the Install button to install it.  
+
+        ![Screenshot of the Eye Tracking SDK Nuget package.](images/001-install.png)  
+
 1. Set Gaze Input capability
     1. Double-click the Package.appxmanifest file in Solution Explorer.
     1. Click the **Capabilities** tab, and then check the Gaze Input.
