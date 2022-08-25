@@ -323,7 +323,7 @@ EyeGazeTrackerWatcher   | Allow discovery of Eye Gaze Trackers connected to the 
 
 Represents an eye gaze tracker
 
-**Properties** |
+**Properties**
 
 Name                                                | Description  |
 ----------------------------------------------------|-------------------------------------------
