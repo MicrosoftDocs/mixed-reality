@@ -119,7 +119,7 @@ To set your remote connection:
   > [!NOTE]
   > If the errors listed below occur when you start debugging an installed UWP application on the HoloLens 2, try renaming your package or uninstalling your UWP application.
   > 
-  > "Unable to start debugging"
+  > "Unable to start debugging"  
   > "Operation not supported. Unknown error: 0x80070057"
 
 
