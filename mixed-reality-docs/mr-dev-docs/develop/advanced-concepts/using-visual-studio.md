@@ -3,7 +3,7 @@ title: Using Visual Studio to deploy and debug
 description: Learn how to build, debug, and deploy apps for HoloLens and Windows Mixed Reality using Visual Studio.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 12/07/2021
+ms.date: 08/17/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, debug, deploy, Unity
@@ -115,6 +115,13 @@ To set your remote connection:
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
 1. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
+
+  > [!NOTE]
+  > If the errors listed below occur when you start debugging an installed UWP application on the HoloLens 2, try renaming your package or uninstalling your UWP application.
+  > 
+  > "Unable to start debugging"  
+  > "Operation not supported. Unknown error: 0x80070057"
+
 
 ## Deploying an app to the HoloLens (1st gen) Emulator
 
