@@ -21,7 +21,7 @@ MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's
 
 | Platform | Supported Devices |
 |---|---|
-| OpenXR XR devices | Microsoft HoloLens 2 <br> Meta Quest (experimental) <br> Windows Mixed Reality (experimental) <br> SteamVR (experimental) <br> Oculus Rift on OpenXR (experimental) <br> Lenovo ThinkReality A3 (with [Qualcomm Snapdragon Spaces](https://docs.spaces.qualcomm.com/unity/samples/preview/MRTK3SampleWinOnly.html)) |
+| OpenXR XR devices | Microsoft HoloLens 2 <br> Meta Quest (experimental) <br> Windows Mixed Reality (experimental) <br> SteamVR (experimental) <br> Oculus Rift on OpenXR (experimental) <br> Lenovo ThinkReality A3 (with [Qualcomm Snapdragon Spaces](https://docs.spaces.qualcomm.com/unity/samples/preview/MRTK3SampleWinOnly.html) - experimental) |
 | Windows | Traditional flat-screen desktop (experimental)
 | And more coming soon! |
 
