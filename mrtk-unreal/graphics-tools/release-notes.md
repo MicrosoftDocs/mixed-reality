@@ -30,6 +30,6 @@ None, since this is the first release.
 
 ### M_ShaderBallRimLit Reprojection
 
-The `M_ShaderBallRimLit` material located with the examples plugin may "wobble or smear" on HoloLens 2 because it is a translucent material that does not write depth. Depth is required for all materials to reproject correctly because HoloLens 2 uses [depth based late stage reprojection](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection).
+The `M_ShaderBallRimLit` material located with the examples plugin may "wobble or smear" on HoloLens 2 because it is a translucent material that does not write depth. Depth is required for all materials to reproject correctly because HoloLens 2 uses [depth based late stage reprojection](/windows/mixed-reality/develop/advanced-concepts/hologram-stability#reprojection).
 
 If you run into issues caused by Graphics Tools or have questions about how to do something, please [file an issue](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/issues/new) on the GitHub repo.
