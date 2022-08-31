@@ -11,7 +11,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 # Input Simulation
 
 > [!CAUTION]
-> If you're new to MRTK or Mixed Reality development in Unreal, we recommend starting at the beginning of our [Unreal development journey](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview), which was specifically created to walk you through installation, core concepts, and usage.
+> If you're new to MRTK or Mixed Reality development in Unreal, we recommend starting at the beginning of our [Unreal development journey](/windows/mixed-reality/unreal-development-overview), which was specifically created to walk you through installation, core concepts, and usage.
 
 Input simulation is using mouse and keyboard input in the editor to simulate a Head-Mounted Display (HMD) as well as
 hand tracking and other features. This allows testing Mixed-Reality features, such as buttons and interactions, without
@@ -28,12 +28,14 @@ Input simulation will become active when playing in the Unreal editor and no hea
 ## Controls
 
 Default controls for moving the camera are based on the DefaultPawn:
+
 * W/S keys for moving forward/backward
 * A/D keys for moving sideways
 * Q/E keys for moving down/up
 * Mouse movement controls head rotation
 
 In addition to default pawn movement there are virtual hands that can be controlled for simulating hand tracking:
+
 * Hold Left Shift/Alt for controlling the left/right hand respectively.
 
   This disables head rotation with the mouse and moves the hand instead. Both hands can be controlled together by holding both control keys.
