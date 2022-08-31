@@ -78,6 +78,8 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
             "redirect_url": "new-article#section-about-old-topic",
             "redirect_document_id": false
         },
+    ...
+    ]
 ```
 
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `mixed-reality-docs/enthusiast-guide` and ends with `.md`.
