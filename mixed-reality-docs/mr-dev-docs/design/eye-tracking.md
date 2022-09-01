@@ -82,7 +82,7 @@ The predicted eye-gaze is approximately within 1.5 degrees in visual angle aroun
 
 Extended eye tracking APIs allow developers to unlock next level of innovative scenarios such as health assessment, monitoring and therapy by providing more fine-grained information about the user's eye gaze.
 
-Extended eye tracking APIs provide access to existing eye tracking values and new features such as individual (left and right) eye gaze vectors, supported frame rates, and the ability to set the eye tracking frame rate to 30, 60 or 90fps. To use the Extended Eye Tracking API, refer to our developer guide for using [Extended Eye Tracking APIs](../develop/native/extended-eye-tracking.md). 
+Extended eye tracking APIs provide access to existing eye tracking values and new features such as individual (left and right) eye gaze vectors, supported frame rates, and the ability to set the eye tracking frame rate to 30, 60 or 90fps. To use the Extended Eye Tracking API, refer to our developer guides for using Extended Eye Tracking APIs for [native](../develop/native/extended-eye-tracking-native.md) or [Unity](../develop/unity/extended-eye-tracking-unity.md). 
 
 ## Use cases
 
