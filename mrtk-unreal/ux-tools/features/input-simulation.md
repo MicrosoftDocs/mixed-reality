@@ -99,6 +99,4 @@ Hand input is simulated with skeletal meshes that are animated according to user
 1. Open the hand animation asset that contains the desired hand poses. With `Create Asset > Create PoseAsset > Current
     Animation` create a pose asset that can blend between the various hand poses.
 1. Open the new pose asset and rename the relevant poses with meaningful names, e.g. "Flat", "Relaxed", "Pinch", "Poke".
-1. Open the `InputSimulationHands_AnimInstance` asset. This is the animation blueprint that drives the skeletal
-    animation. In the AnimGraph find the PoseAsset blend node and in the Details panel change the linked pose asset to the one
-    created above.
+1. Open the `InputSimulationHands_AnimInstance` asset. This is the animation blueprint that drives the skeletal animation. In the AnimGraph find the PoseAsset blend node and in the Details panel change the linked pose asset to the one created above.
