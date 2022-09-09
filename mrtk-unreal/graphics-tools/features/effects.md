@@ -49,8 +49,8 @@ An example of rim lighting can be found within the `GraphicsToolsProject\Plugins
 
 To create a rim lit material use Unreal's built in `Fresnel` material node (1) and assign it to the `Emissive Color` of an "Unlit" material. Most rim lit materials are also set to "Additive" (2) so that that brighten anything they render over top of.
 
-> [!NOTE] 
-> Translucent materials (such as "Additive" materials) do not write depth values to the scene's depth buffer by default in Unreal. Materials which do not write depth will "distort or swim" when viewed on HoloLens 2 due to the use of the depth based reprojection. More information can be found on within the [reprojection documentation](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection). 
+> [!NOTE]
+> Translucent materials (such as "Additive" materials) do not write depth values to the scene's depth buffer by default in Unreal. Materials which do not write depth will "distort or swim" when viewed on HoloLens 2 due to the use of the depth based reprojection. For more information, see the [reprojection documentation](/windows/mixed-reality/develop/advanced-concepts/hologram-stability#reprojection).
 
 ![Rim Lit Material properties](images/Effects/EffectsRimLitMaterial.png)
 

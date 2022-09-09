@@ -118,7 +118,7 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 ### Unity resources
 
-In addition to this documentation available on docs.microsoft.com, Unity installs documentation for Windows Mixed Reality functionality alongside the Unity Editor. The Unity provided documentation includes two separate sections.
+In addition to this documentation, Unity installs documentation for Windows Mixed Reality functionality alongside the Unity Editor. The Unity provided documentation includes two separate sections.
 
 |  Resource  |  Description  |
 | --- | --- |
@@ -129,7 +129,7 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 
 You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **Microsoft** and a combination of the following tags to help us understand what plugin you're providing feedback for:
 
-* HoloLens 2 
+* HoloLens 2
 * Windows Mixed Reality
 * OpenXR
 * XRSDK

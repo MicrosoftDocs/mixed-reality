@@ -85,11 +85,7 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
     ![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
 
     **If you're targeting the HoloLens 2**:
-    - Under **Platform**, select **Universal Windows Platform**. Make sure the following settings are active:
-
-    **Target device**: HoloLens
-
-    **Architecture**: ARM64
+    - Under **Platform**, select **Universal Windows Platform**. Make sure the following settings are correctly set:
 
     **Build Type**: D3D Project
 
@@ -98,10 +94,6 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
     **Minimum Platform Version**: 10.0.10240.0
 
     **Visual Studio Version**: Latest installed
-
-    **Build and Run on**: Local Machine
-
-    **Build configuration**: Release (there are known performance issues with Debug)
 
     ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](images/030-build-settings-uwp.png)
 
