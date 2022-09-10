@@ -35,7 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Updated `InterfaceSelector` to use Unity `TypeCache`
 - Updated Microsoft.Unity.Analyzers.dll to 1.14.0
 - Updated dependencies in package manifests
-- Removed  old No Pre Init loader
+- Removed old No Pre Init loader
 - Updated FollowJoint to use serialization callbacks for migration
 - Moved the magic window sample into its own scene
 - Updated hand menu & near menu prefabs and examples to be canvas-based
@@ -59,8 +59,11 @@ When the following conditions are met:
 - Initialize XR on Startup is checked for the standalone platform, and
 - The computer is not connected to a headset (via cable or wireless),
 
-Unity editor may frequently freeze. This is a Unity bug introduced in Unity OpenXR plugin 1.5.
-To workaround the issue, please use a non-Oculus Play Mode OpenXR Runtime for the standalone platform, or uncheck Initialize XR on Startup under **Edit** > **Project Settings** > **XR Plug-in Management** > **Standalone** while iterating in the editor, or connect to a headset before entering play mode in editor.
+Unity editor may frequently freeze in play mode. This is a Unity bug introduced in Unity OpenXR plugin 1.5.
+To workaround this issue, please
+- use a non-Oculus Play Mode OpenXR Runtime for the standalone platform
+- or uncheck Initialize XR on Startup under **Edit** > **Project Settings** > **XR Plug-in Management** > **Standalone** while iterating in the editor via play mode
+- or connect to a headset before entering play mode in the editor.
 
 ## Breaking changes
 
