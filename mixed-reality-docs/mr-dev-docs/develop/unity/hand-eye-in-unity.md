@@ -37,7 +37,7 @@ MRTK v2 provides a set of UI Controls and building blocks to help you accelerate
 
 Explore MRTK's various types of interactions and UI controls in [this example scene](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples).
 
-You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) under **Assets/MixedRealityToolkit.Examples/Demos**folder.
+You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) under the **Assets/MixedRealityToolkit.Examples/Demos** folder.
 
 [![Example Scene](images/MRTK_Examples.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)
 
