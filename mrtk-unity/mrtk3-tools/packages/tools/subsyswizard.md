@@ -3,7 +3,7 @@ title: MRTK3 subsystem wizard
 description: MRTK3 subsystem wizard
 author: davidkline-ms
 ms.author: davidkl
-ms.date: 8/12/2022
+ms.date: 9/12/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, tools, subsystem wizard, extension
 ---
@@ -19,11 +19,11 @@ To use the Subsystem Wizard, you must first import the MRTK3 Tools package using
 
 ## Getting Started
 
-To get started creating a new subsystem, please select the `Subsystem Wizard` item from the **MRTK3** > **Utilities** menu.
+To get started creating a new subsystem, select the `Subsystem Wizard` item from the **MRTK3** > **Utilities** menu.
 
 ![Launching the Subsystem Wizard](images/menuItem.png)
 
-Once started, the Subsystem Wizard will ask you for some information; namely the name of your organization, the base name for the subsystem as well as if the subsystem requires configuration data.
+Once started, the Subsystem Wizard will ask you for some information; namely the name of your organization, the base name for the subsystem and if the subsystem requires configuration data.
 
 ![Specifiying Subsystem Names](images/subsysWizardStart.png)
 
@@ -35,7 +35,7 @@ By default, the Subsystem Wizard will read the Unity Player settings and ensure 
 
 ### Base class name
 
-All subsystems will be generated with a base class. This is required by the current architecture and makes it easy to implement platform or provider specific versions of a subsystem. It is recommended that the base class name be the generic name of the subsystem (ex: "ScentSubsystem").
+All subsystems will be generated with a base class. This structure is required by the current architecture and makes it easy to implement platform or provider specific versions of a subsystem. It is recommended to use the name of the subsystem (ex: "ScentSubsystem") for the base class name.
 
 ![Organization name](images/baseClassName.png)
 
@@ -45,9 +45,9 @@ If your subsystem is to be configurable, select the `Add subsystem configuration
 
 ![Add configuration](images/addConfiguration.png)
 
-### Gebnerated names
+### Generated names
 
-When generating the source code for your subsystem, the wizard automatically creates the names of specific elements. These can be overridden after the wizard completes, using your favorite text editor.
+The wizard automatically creates the names of specific elements. These names can be overridden after the wizard completes, using your favorite text editor.
 
 ![Generated names](images/generatedNames.png)
 

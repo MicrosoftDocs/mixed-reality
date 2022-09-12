@@ -14,10 +14,10 @@ MRTK Tools is an optional package that adds MRTK3 related utilities to the Unity
 
 ## Available tools
 
-The set of tools available include
+The set of tools available includes
 
 | Tool | Description | Documentation link |
 | --- | --- | --- |
 | Subsystem Wizard | Generates template source code to create a new subsystem | [Subsystem Wizard Documentation](subsyswizard.md)
 
-Over time, additional tools may be added.
+Over time, more tools may be added.
