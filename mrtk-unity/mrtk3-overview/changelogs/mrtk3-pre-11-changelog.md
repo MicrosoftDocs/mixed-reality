@@ -57,25 +57,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 When the following conditions are met:
 - Oculus OpenXR is selected as the Play Mode OpenXR Runtime for the standalone platform, and
 - Initialize XR on Startup is checked for the standalone platform, and
-- The computer is not connected to a headset (via cable or wireless),
+- The computer is not connected to a headset (via cable or wireless)
 
-Unity editor may frequently freeze in play mode. This is a Unity bug introduced in Unity OpenXR plugin 1.5.
-To workaround this issue, please
-- use a non-Oculus Play Mode OpenXR Runtime for the standalone platform
-- or uncheck Initialize XR on Startup under **Edit** > **Project Settings** > **XR Plug-in Management** > **Standalone** while iterating in the editor via play mode
-- or connect to a headset before entering play mode in the editor.
+... Unity editor may frequently freeze in play mode. This is a Unity bug introduced in Unity OpenXR plugin 1.5.
+To work around this issue:
+- use a non-Oculus Play Mode OpenXR Runtime for the standalone platform, or
+- uncheck Initialize XR on Startup under **Edit** > **Project Settings** > **XR Plug-in Management** > **Standalone** while iterating in the editor via play mode, or
+- connect to a headset before entering play mode in the editor.
 
 ## Breaking changes
 
 - The UX prefabs are now split into two packages: `MRTK UX Components` and `MRTK UX Components (Non-Canvas)`
-    - Up until this point, our RectTransform-based (preferred) UX components were jumbled in with our non-RectTransform-based (static) controls, which caused confusion + frustration
+    - Up until this point, our RectTransform-based (preferred) UX components were jumbled in with our non-RectTransform-based (static) controls, which caused confusion and frustration
     - Now the UX prefabs are separated into two packages based on their use of Canvas/RectTransform. This will allow for better clarity for developers.
-    - **Action item: if you are currently using any UX prefabs/components that are not canvas-based, make sure you explicitly select `MRTK UX Components (Non-Canvas)` when updating in the Mixed Reality Feature Tool.**
+    - **Action item: if you're currently using any UX prefabs/components that aren't canvas-based, make sure you explicitly select `MRTK UX Components (Non-Canvas)` when updating in the Mixed Reality Feature Tool.**
 - Changed the color space of the sample project to linear and adjusted materials accordingly
     - Optimized major UI-related materials and MRTK standard materials for use in linear color space. Their look in the gamma color space will be slightly different.
-    - For more information on linear vs gamma color space, check out [Unity's documentation](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
-- `CameraCache` is now removed from MRTKin favor of Unity's performant `Camera.main` implementation
-    - As of Unity 2020.2 (older than our min. Unity version requirement for MRTK3), Camera.main has had some (massive perf improvements)[https://blog.unity.com/technology/new-performance-improvements-in-unity-2020-2]!
+    - For more information on linear vs. gamma color space, see [Unity's documentation](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
+- `CameraCache` is now removed from MRTK in favor of Unity's performant `Camera.main` implementation
+    - As of Unity 2020.2 (older than our minimum Unity version requirement for MRTK3), Camera.main has had some (massive performance improvements)[https://blog.unity.com/technology/new-performance-improvements-in-unity-2020-2]!
     - `Camera.main` never took more than 0.0ms in in-editor profiler tests
 - Removed empty `GazeController`
-    - All properties in this class had been deprecated. `ArticulatedHandController` provides equivalent functionality for each pinching hand.
+    - All properties in this class have been deprecated. `ArticulatedHandController` provides equivalent functionality for each pinching hand.
