@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 # Changelog for MRTK3 pre.11
 
 ### [pre.11] - 2022-09-12 - `fa26baf`
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/...............) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/11002) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
 ### Added
 - Added a unified `IPoseSource` interface for sharing pose logic across several components
@@ -70,8 +70,10 @@ To workaround this issue, please
 - The UX prefabs are now split into two packages: `MRTK UX Components` and `MRTK UX Components (Non-Canvas)`
     - Up until this point, our RectTransform-based (preferred) UX components were jumbled in with our non-RectTransform-based (static) controls, which caused confusion + frustration
     - Now the UX prefabs are separated into two packages based on their use of Canvas/RectTransform. This will allow for better clarity for developers.
+    - **Action item: if you are currently using any UX prefabs/components that are not canvas-based, make sure you explicitly select `MRTK UX Components (Non-Canvas)` when updating in the Mixed Reality Feature Tool.**
 - Changed the color space of the sample project to linear and adjusted materials accordingly
-    - Overall, colors in linear color space tend to look desaturated with less contrast. Optimized major UI-related materials and MRTK standard materials for use in linear color space. Their look in the gamma color space will be slightly different.
+    - Optimized major UI-related materials and MRTK standard materials for use in linear color space. Their look in the gamma color space will be slightly different.
+    - For more information on linear vs gamma color space, check out [Unity's documentation](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
 - `CameraCache` is now removed from MRTKin favor of Unity's performant `Camera.main` implementation
     - As of Unity 2020.2 (older than our min. Unity version requirement for MRTK3), Camera.main has had some (massive perf improvements)[https://blog.unity.com/technology/new-performance-improvements-in-unity-2020-2]!
     - `Camera.main` never took more than 0.0ms in in-editor profiler tests
