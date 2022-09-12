@@ -25,19 +25,19 @@ To get started creating a new subsystem, select the `Subsystem Wizard` item from
 
 Once started, the Subsystem Wizard will ask you for some information; namely the name of your organization, the base name for the subsystem and if the subsystem requires configuration data.
 
-![Specifiying Subsystem Names](images/subsysWizardStart.png)
+![Providing the subsystem names](images/subsysWizardStart.png)
 
 ### Organization name
 
 By default, the Subsystem Wizard will read the Unity Player settings and ensure the organization name matches the project's company name. This value can be overwritten to be any valid C# identifier.
 
-![Organization name](images/organizationName.png)
+![Setting the organization name](images/organizationName.png)
 
 ### Base class name
 
 All subsystems will be generated with a base class. This structure is required by the current architecture and makes it easy to implement platform or provider specific versions of a subsystem. It is recommended to use the name of the subsystem (ex: "ScentSubsystem") for the base class name.
 
-![Organization name](images/baseClassName.png)
+![Setting the base class name](images/baseClassName.png)
 
 ### Adding a subsystem configuration
 
@@ -53,7 +53,7 @@ The wizard automatically creates the names of specific elements. These names can
 
 ## Preparing to generate
 
-![Specifiying Subsystem Names](images/subsysWizardPreGenerate.png)
+![Ready to generate the subsystem](images/subsysWizardPreGenerate.png)
 
 ### Skipping file generation subsystem class
 
