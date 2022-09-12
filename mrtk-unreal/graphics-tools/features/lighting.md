@@ -10,7 +10,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 # Lighting
 
-By default Unreal uses the [mobile lighting](https://docs.unrealengine.com/SharingAndReleasing/Mobile/Lighting/index.html) rendering path for Mixed Reality (specifically HoloLens 2). This lighting path is well suited for mobile phones, handhelds, etc. but may be too costly for devices like HoloLens 2, which need to render to a stereo display at [60 frames per second](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality). To ensure developers have access to a lighting path that is performant on HoloLens 2, Graphics Tools incudes a simplified physically based lighting system accessible via the the `MF_GTDefaultLit` [material function](https://docs.unrealengine.com/RenderingAndGraphics/Materials/Functions/index.html). 
+By default, Unreal uses the [mobile lighting](https://docs.unrealengine.com/SharingAndReleasing/Mobile/Lighting/index.html) rendering path for Mixed Reality (specifically HoloLens 2). This lighting path is well suited for mobile phones, handhelds, etc. but may be too costly for devices like HoloLens 2, which need to render to a stereo display at [60 frames per second](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality). To ensure developers have access to a lighting path that is performant on HoloLens 2, Graphics Tools incudes a simplified physically based lighting system accessible via the the `MF_GTDefaultLit` [material function](https://docs.unrealengine.com/RenderingAndGraphics/Materials/Functions/index.html).
 
 ![Lighting in MRTK Unreal with Graphics Tools](images/FeatureCards/Lighting.png)
 
