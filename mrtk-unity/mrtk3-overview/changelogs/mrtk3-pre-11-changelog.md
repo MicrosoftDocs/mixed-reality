@@ -68,10 +68,12 @@ To workaround this issue, please
 ## Breaking changes
 
 - The UX prefabs are now split into two packages: `MRTK UX Components` and `MRTK UX Components (Non-Canvas)`
-    - TODO: more explanation
-- Changed the default color space to Linear and adjusted materials accordingly
-    - TODO: more explanation
-- `CameraCache` is now removed in favor of Unity's performant `Camera.main` implementation
-    - TODO: more explanation
+    - Up until this point, our RectTransform-based (preferred) UX components were jumbled in with our non-RectTransform-based (static) controls, which caused confusion + frustration
+    - Now the UX prefabs are separated into two packages based on their use of Canvas/RectTransform. This will allow for better clarity for developers.
+- Changed the color space of the sample project to linear and adjusted materials accordingly
+    - Overall, colors in linear color space tend to look desaturated with less contrast. Optimized major UI-related materials and MRTK standard materials for use in linear color space. Their look in the gamma color space will be slightly different.
+- `CameraCache` is now removed from MRTKin favor of Unity's performant `Camera.main` implementation
+    - As of Unity 2020.2 (older than our min. Unity version requirement for MRTK3), Camera.main has had some (massive perf improvements)[https://blog.unity.com/technology/new-performance-improvements-in-unity-2020-2]!
+    - `Camera.main` never took more than 0.0ms in in-editor profiler tests
 - Removed empty `GazeController`
-    - `ArticulatedHandController` provides equivalent functionality
+    - All properties in this class had been deprecated. `ArticulatedHandController` provides equivalent functionality for each pinching hand.
