@@ -23,7 +23,7 @@
 - name: Standard assets
   href: ../../mrtk3-standardassets/packages/standardassets/overview.md
 - name: Tools
-  href: tools/overview.md
+  href: tools/toc.yml
 - name: UX components
   href: ../../mrtk3-uxcomponents/packages/uxcomponents/overview.md
 - name: UX core
