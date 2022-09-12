@@ -4,12 +4,12 @@
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
 - name: Audio
   href: ../../mrtk3-audio/packages/audio/overview.md
-- name: Core definitions
+- name: Core
   href: ../../mrtk3-core/packages/core/overview.md
 - name: Data binding and theming
   href: ../../mrtk3-data/packages/data/overview.md
 - name: Diagnostics
-  href: diagnostics/toc.yml
+  href: ../../mrtk3-diagnostics/packages/diagnostics/overview.md
 - name: Environment
   href: ../../mrtk3-environment/packages/environment/overview.md
 - name: Extended assets
@@ -23,7 +23,7 @@
 - name: Standard assets
   href: ../../mrtk3-standardassets/packages/standardassets/overview.md
 - name: Tools
-  href: ../../mrtk3-tools/packages/tools/overview.md
+  href: tools/toc.yml
 - name: UX components
   href: ../../mrtk3-uxcomponents/packages/uxcomponents/overview.md
 - name: UX core
