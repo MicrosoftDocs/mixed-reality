@@ -17,18 +17,9 @@ The Hand menu provides 'Require Flat Hand' and 'Use Gaze Activation' options to 
 
 ## Example scene and Prefabs
 
-> [!NOTE]
-> The hand menu prefabs are currently built using the non-Canvas controls. They'll soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
-
 If you're using the template project, `HandMenuExamples.unity` demonstrates several common configurations for hand menus, all using the `HandConstraintPalmUp` script.
 
 ![Hand Menu Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/HandMenu/MRTK_Examples_HandMenu_Scene.png)
-
-### HandMenu1x4 and HandMenu2x4
-
-The menu becomes visible and invisible in these prefabs by activating and deactivating the MenuContent object on **OnFirstHandDetected()** and **OnLastHandLost()** events. This behavior is recommended for the menu with a small UI, which requires a short amount of interaction time.
-
-![Hand Menu Example 2x4](../../../mrtk3-overview/images/UXBuildingBlocks/HandMenu/MRTK_Examples_HandMenu_2x4.png)
 
 ### HandMenuLarge
 
