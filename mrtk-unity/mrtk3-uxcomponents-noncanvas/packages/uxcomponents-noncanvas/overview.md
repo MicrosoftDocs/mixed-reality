@@ -19,7 +19,7 @@ You should decide carefully when choosing to use non-Canvas prefabs for your pro
 
 The following table outlines a set of criteria you may wish to consider when choosing which components to use for your application. In addition, [please see the documentation](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) for a detailed breakdown of how the hybrid Canvas UI systems work, with additional explanations on the corresponding advantages and drawbacks.
 
-|                                 | Canvas | Non-Canvas |
+| Criteria                        | Canvas | Non-Canvas |
 |---------------------------------|--------|------------|
 | Resizing and layout             | Realtime resizing, dynamic layout, horizontal/vertical/grid layouts, margin/gutter, padding, flex % | No resizing or layout. Everything is manually positioned and sized by hand. |
 | Scrolling/clipping              | Scrolling and per-pixel-accurate clipping (with rounded corners) comes for free. | No scrolling capabilities; clipping requires per-renderer configuration. |
