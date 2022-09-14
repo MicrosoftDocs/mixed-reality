@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Button (Non-Canvas)
 description: Description of non-Canvas button controls in MRTK3
 author: Zee2
 ms.author: finnsinclair
