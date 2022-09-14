@@ -17,4 +17,4 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Slate
 
 The non-Canvas Slate prefab offers a thin window-style control for displaying 2D content, such as plain text and images. It offers a grabbable title bar and *Close* functionality. When building Canvas layouts, consider using a Canvas rounded rect directly as part of your layout.
 
-For smaller, simpler collections of UI, consider using a [near menu](near-menu.md) instead.
+For smaller, simpler collections of UI, consider using a [near menu](../../../mrtk3-uxcomponents/packages/uxcomponents/near-menu.md) instead.
