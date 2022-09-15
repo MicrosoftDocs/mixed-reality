@@ -17,10 +17,10 @@ The mixed reality ecosystem is an emerging landscape of physical and digital int
 
 ## Understand the basics
 
-If you're new to mixed reality, it's important that you start from the bottom and work your way up through its core concepts, experiences, and capabilities. You have several options here: we have a focused module on Microsoft Learn that will get you up to speed in no time, or you can choose to explore the individual journeys we've set up below. Any of these paths will help you set a firm foundation for designing and developing your own ideas in mixed reality.
+If you're new to mixed reality, it's important that you start from the bottom and work your way up through its core concepts, experiences, and capabilities. You have several options here: we have a focused module on Microsoft training that will get you up to speed in no time, or you can choose to explore the individual journeys we've set up below. Any of these paths will help you set a firm foundation for designing and developing your own ideas in mixed reality.
 
 > [!div class="nextstepaction"]
-> [Introduction to Mixed Reality module](/learn/modules/intro-to-mixed-reality)
+> [Introduction to Mixed Reality module](/training/modules/intro-to-mixed-reality)
 
 ### What is mixed reality?
 
@@ -32,7 +32,7 @@ Before you dive into application design or development, you need to understand w
 | --- | --- |
 | [Mixed reality is a spectrum](../discover/mixed-reality.md) | Mixed reality blends the physical with the digital to provide the next evolution in human, computer, and environment interactions |
 | [What is a hologram?](../discover/hologram.md) | Our [HoloLens headset](/hololens) lets you view holograms, which are objects made of light and sound that appear in the world around you like real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you |
-| [Mixed reality learning overview](mr-learning-overview.md#general-modules) | Try out our curated mixed reality module through Microsoft Learn |
+| [Mixed reality learning overview](mr-learning-overview.md#general-modules) | Try out our curated mixed reality module through Microsoft training |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Expand your design mindset with spatial thinking, bodystorming, and acting when creating your immersive experiences  |
 
 <br>
