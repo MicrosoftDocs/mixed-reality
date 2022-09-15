@@ -11,7 +11,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive
 # MR Sharing 250: HoloLens and immersive headsets
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](/learn/paths/beginner-hololens-2-tutorials/) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](/training/paths/beginner-hololens-2-tutorials/) has been posted for HoloLens 2.
 
 With the flexibility of Universal Windows Platform (UWP), it is easy to create an application that spans multiple devices. With this flexibility, we can create experiences that leverage the strengths of each device. This tutorial will cover a basic shared experience that runs on both HoloLens and Windows Mixed Reality immersive headsets. This content was originally delivered at the Microsoft Build 2017 conference in Seattle, WA.
 

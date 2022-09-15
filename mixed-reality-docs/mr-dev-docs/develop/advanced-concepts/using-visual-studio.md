@@ -46,7 +46,7 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
 
 ## Deploying a HoloLens app over Wi-Fi or USB
 
->[!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
+>[!VIDEO https://learn.microsoft.com/shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
 
 ### Compilation options
 

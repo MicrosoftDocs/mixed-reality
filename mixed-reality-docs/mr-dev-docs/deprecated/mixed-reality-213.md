@@ -11,7 +11,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive
 # MR Input 213: Motion controllers
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](/learn/paths/beginner-hololens-2-tutorials/) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](/training/paths/beginner-hololens-2-tutorials/) has been posted for HoloLens 2.
 
 Motion controllers in the mixed reality world add another level of interactivity. With [motion controllers](../design/motion-controllers.md), we can directly interact with objects in a more natural way, similar to our physical interactions in real life, increasing immersion and delight in your app experience.
 

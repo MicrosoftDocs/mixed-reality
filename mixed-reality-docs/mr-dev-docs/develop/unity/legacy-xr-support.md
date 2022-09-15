@@ -15,7 +15,7 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
 
 > [!div class="nextstepaction"]
-> [Try out our MRTK tutorials](/learn/paths/beginner-hololens-2-tutorials/?tabs=wsa)
+> [Try out our MRTK tutorials](/training/paths/beginner-hololens-2-tutorials/?tabs=wsa)
 
 Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
 
