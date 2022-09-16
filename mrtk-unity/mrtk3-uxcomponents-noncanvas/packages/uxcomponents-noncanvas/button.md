@@ -11,7 +11,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 
-When building user interfaces with a large number of controls, or in instances where using RectTransform-based controls is infeasible for layout or performance reasons, MRTK3 offers non-Canvas-based prefabs.
+If you're building user interfaces with an unusually large number of controls, or in instances where using RectTransform-based controls is infeasible for layout or performance reasons, MRTK3 offers non-Canvas-based prefabs.
 
 [!INCLUDE[](includes/canvas-reminder.md)]
 
