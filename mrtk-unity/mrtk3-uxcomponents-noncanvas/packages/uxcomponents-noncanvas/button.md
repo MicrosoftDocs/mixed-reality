@@ -13,8 +13,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 When building user interfaces with a *very* large number of controls, or in instances where using RectTransform-based controls is infeasible for layout or performance reasons, MRTK3 offers non-Canvas-based prefabs.
 
-> [!NOTE]
-> In the majority of cases, the hybrid Canvas UI prefabs offer a much more powerful designer workflow, with dynamic resizing, reflow, alignment, padding, realtime layouts, and more. [Learn more about how the hybrid Canvas UI system works.](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md). These prefabs are located in the com.microsoft.mrtk.uxcomponents package. [See the documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
+[!INCLUDE[](includes/canvas-reminder.md)]
 
 ## Example scenes
 
