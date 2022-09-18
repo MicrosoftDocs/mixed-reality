@@ -16,12 +16,12 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, tutorial, unity
 The MRTK3 Aquarium sample provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habitat. Using MRTK3 features, you'll add interactivity to the aquarium which will enable you to create an aquarium of your very own!
 
 In this sample, you'll learn how to do the following:
-- Manipulate and arrange objects in the aquarium
-- Add bounding boxes to objects in the aquarium
-- Create buttons to spawn objects in the aquarium
-- Create dynamic UI to organize scene controls
-- Add a confirmation dialog to confirm actions
-- Configure theming options to change the look of the scene UI controls
+- Preview scenes without the need to compile and deploy the project
+- Simulate input directly into the Unity editor with MRTK In-Editor Input Simulation
+- Move and manipulate the objects in the aquarium
+- Add a bounding box around aquarium objects and maniuplate the object using handles
+- Create a canvas button to toggle an object's visibility
+- Create a canvas button bar configured to spawn objects into the aquarium
 
 ## Prerequisites
 
@@ -40,4 +40,8 @@ The Unity in-editor tutorial format provides step-by-step instruction within the
 1. In the right-side <b>Tutorials</b> panel, select a tutorial.
 1. Each tutorial begins with a brief overview and learning objectives. Select the <b>Start</b> button to start the tutorial.
 1. Most steps in the tutorial require that you complete a series of tasks before continuing to the next step. You must complete the tasks as they're written. Once you complete all tasks, select <b>Next</b> to continue.
-Once you've completed all steps in the tutorial, you can either continue to the next tutorial <i>or</i> go back to the list of all tutorials.
+
+You can redo the tutorials as often as you'd like! 
+
+> [!NOTE]
+> This tutorial series will continue to undergo iterations while MRTK3 is in Public Preview. If you experience any issues with the tutorials, submit an issue in the respective [GitHub repository](https://github.com/microsoft/MRTK3-iet-tutorials).
