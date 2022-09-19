@@ -32,7 +32,7 @@ Before you dive into application design or development, you need to understand w
 | --- | --- |
 | [Mixed reality is a spectrum](../discover/mixed-reality.md) | Mixed reality blends the physical with the digital to provide the next evolution in human, computer, and environment interactions |
 | [What is a hologram?](../discover/hologram.md) | Our [HoloLens headset](/hololens) lets you view holograms, which are objects made of light and sound that appear in the world around you like real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you |
-| [Mixed reality learning overview](mr-learning-overview.md#general-modules) | Try out our curated mixed reality module through Microsoft training |
+| [Mixed reality learning overview](mr-learning-overview.md#general-modules) | Try out our curated mixed reality module through Microsoft Learn |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Expand your design mindset with spatial thinking, bodystorming, and acting when creating your immersive experiences  |
 
 <br>
