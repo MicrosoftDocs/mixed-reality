@@ -55,4 +55,4 @@ To update conceptual documents, [go to the Mixed Reality document repository](ht
 >[!Tip]
 >Articles related to Graphics Tools can be found in this folder [mixed-reality/mrtk-unity/mrtk3-graphicstools/](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/mrtk-unity/mrtk3-graphicstools)
 
-Start by following these [recommendations for contributing to Microsoft documentation](/contribute/) and the guide for [contributing to Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/blob/docs/mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md).
+Start by following these [recommendations for contributing to documentation on Microsoft Learn](/contribute/) and the guide for [contributing to Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/blob/docs/mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md).
