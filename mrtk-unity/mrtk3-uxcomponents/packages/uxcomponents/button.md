@@ -27,11 +27,7 @@ If you're using the development template project, several example scenes are ava
 
 ![Canvas Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_CanvasExample.png)
 
-**UITearSheet.unity** shows all available non-Canvas-based button prefab variants in MRTK.
-
-![Button Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_ExampleScene.png)
-
-## Prefabs (Canvas)
+## Prefabs
 
 [Canvas-based](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) buttons are flexible and configurable, and can be resized to any dimension or proportion. As such, only a few button prefabs are provided.
 
@@ -42,14 +38,7 @@ Other enhancements can be added to the button, such as the toggle switch indicat
 
 ![Adding a toggle switch](images/toggle-switch.png)
 
-## Prefabs (Non-Canvas)
-
-Non-canvas buttons aren't resizable; as a result, a large number of button prefabs are provided in many permutations of size and features. These prefabs are named in the format: **PressableButton_SIZE_STYLE**. For example,
-
-- **PressableButton_32x32mm_IconAndText**: 32x32mm size button with icon and text
-- **PressableButton_128x32mm_SinglelineTextWithSubtitle**: 128x32mm size wide button with single line text + subtitle text
-
-## Structure (Canvas)
+## Structure
 
 The different parts of an **ActionButton** can be turned on/off to customize how the button looks and behaves. We've dissected two different possible configurations to show the different parts of the button prefab. The "backglow" isn't visible in these screenshots since the button isn't actively being pressed.
 
@@ -57,12 +46,6 @@ First, a larger configuration where the main Text object is active and uses inli
 ![Large Canvas button structure](images/big-anatomy.png)
 Second, a smaller configuration where the is active to show a description of the action below the icon. The main Text object is disabled.
 ![Small Canvas button structure](images/small-anatomy.png)
-
-## Structure (Non-Canvas)
-
-The following screenshot shows the structure of a non-canvas-based button.
-
-![Non-canvas button structure](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_Structure.png)
 
 ## `PressableButton` class
 

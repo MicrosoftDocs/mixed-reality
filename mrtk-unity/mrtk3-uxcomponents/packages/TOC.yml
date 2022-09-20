@@ -26,6 +26,8 @@
   href: ../../mrtk3-tools/packages/tools/overview.md
 - name: UX components
   href: uxcomponents/toc.yml
+- name: UX components (non-Canvas)
+  href: ../../mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/overview.md
 - name: UX core
   href: ../../mrtk3-uxcore/packages/uxcore/overview.md
 - name: Windows speech

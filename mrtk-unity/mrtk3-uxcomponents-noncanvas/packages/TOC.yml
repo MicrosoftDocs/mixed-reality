@@ -21,13 +21,13 @@
 - name: Spatial manipulation
   href: ../../mrtk3-spatialmanipulation/packages/spatialmanipulation/overview.md
 - name: Standard assets
-  href: standardassets/toc.yml
+  href: ../../mrtk3-standardassets/packages/standardassets/overview.md
 - name: Tools
   href: ../../mrtk3-tools/packages/tools/overview.md
 - name: UX components
   href: ../../mrtk3-uxcomponents/packages/uxcomponents/overview.md
 - name: UX components (non-Canvas)
-  href: ../../mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/overview.md
+  href: uxcomponents-noncanvas/toc.yml
 - name: UX core
   href: ../../mrtk3-uxcore/packages/uxcore/overview.md
 - name: Windows speech
