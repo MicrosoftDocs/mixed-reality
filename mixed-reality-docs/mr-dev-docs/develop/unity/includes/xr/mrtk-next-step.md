@@ -1,12 +1,12 @@
 # [OpenXR](#tab/openxr)
 
 To get started with a **new Unity project** using MRTK:
-1. [Go to the HoloLens Fundamentals learning path.](/learn/paths/beginner-hololens-2-tutorials/?tabs=openxr) 
+1. [Go to the HoloLens Fundamentals learning path.](/training/paths/beginner-hololens-2-tutorials/?tabs=openxr) 
 1. Scroll down to the first module in the learning path, "Introduction to the Mixed Reality Toolkit--Set Up Your Project and Use Hand Interaction."
-1. Click the link to the second unit in the learn module, which is named **Exercise--Configure Unity for Windows Mixed Reality.**.
+1. Click the link to the second unit in the Learn module, which is named **Exercise--Configure Unity for Windows Mixed Reality.**.
 1. Complete that unit and the two units that follow,**Import and configure resources** and **Exercise--Import and configure resources**.
 
-    ![Screen shot of the three learn module units containing the setup instructions.](../../images/035-openxr-learn-modules.png)
+    ![Screen shot of the three Learn module units containing the setup instructions.](../../images/035-openxr-learn-modules.png)
 
     In the third unit, stop after this step: "5. Close the project settings window." The instructions that follow to create the scene and configure MRTK are not necessary for OpenXR setup.
 
@@ -28,11 +28,11 @@ If you're upgrading an **existing MRTK project to OpenXR**, you'll first want to
 To get started with a **new Unity project** using MRTK, start from step 2 in the MRTK tutorial:
 
 > [!div class="nextstepaction"]
-> [Set up a new Windows XR project with MRTK](/learn/paths/beginner-hololens-2-tutorials/?tabs=winxr)
+> [Set up a new Windows XR project with MRTK](/training/paths/beginner-hololens-2-tutorials/?tabs=winxr)
 
 # [Legacy XR](#tab/legacy)
 
 To get started with a **new Unity project** using MRTK, start from step 2 in the MRTK tutorial:
 
 > [!div class="nextstepaction"]
-> [Set up a new Legacy XR project with MRTK](/learn/paths/beginner-hololens-2-tutorials/?tabs=wsa)
+> [Set up a new Legacy XR project with MRTK](/training/paths/beginner-hololens-2-tutorials/?tabs=wsa)

@@ -1,7 +1,7 @@
 # [MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Follow this [step-by-step tutorial](/learn/paths/beginner-hololens-2-tutorials/) to add and automatically configure Mixed Reality Toolkit in your Unity project. It's also possible to work directly with the [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) class from MRTK for Unity and set the **Target Scale** to **World**:
+Follow this [step-by-step tutorial](/training/paths/beginner-hololens-2-tutorials/) to add and automatically configure Mixed Reality Toolkit in your Unity project. It's also possible to work directly with the [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) class from MRTK for Unity and set the **Target Scale** to **World**:
 
 ![MRTK settings window](../../images/mrtk-target-scale.png)
 

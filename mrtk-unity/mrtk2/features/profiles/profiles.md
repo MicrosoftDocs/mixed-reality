@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Profiles
 
 # Profiles &#8212; MRTK2
 
-> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Introduction-to-MRTK-Profiles/player]
+> [!VIDEO https://learn.microsoft.com/shows/Docs-Mixed-Reality/Introduction-to-MRTK-Profiles/player]
 
 One of the main ways that MRTK is configured is through the profiles available in the foundation package. The main [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) object in a scene will have the active profile, which is a ScriptableObject. The top level MRTK Configuration Profile contains sub-profile data for each core of the primary core systems, each of which are designed to configure the behavior of their corresponding subsystems. Furthermore, these sub-profiles are also ScriptableObjects and thus can contain references to other profile objects one level below them. There is essentially an entire tree of connected profiles that make up the configuration information for how to initialize the MRTK subsystems and features.
 

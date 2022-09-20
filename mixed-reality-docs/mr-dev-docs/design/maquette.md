@@ -18,7 +18,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get sta
 
 &nbsp;
 
-> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Maquette-Teaser/player]
+> [!VIDEO https://learn.microsoft.com/shows/Docs-Mixed-Reality/Maquette-Teaser/player]
 
 Microsoft Maquette makes spatial prototyping easy, quick, and immersive. As a VR developer, you can use the various tools and assets that Maquette provides to construct and iterate ideas in space. 
 

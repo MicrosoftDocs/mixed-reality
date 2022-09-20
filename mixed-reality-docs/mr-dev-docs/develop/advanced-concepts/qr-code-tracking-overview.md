@@ -141,7 +141,7 @@ This API should be called before you construct the `QRCodeWatcher` object.
 
 If you're running the project from Unity, you also need to ensure that you're calling from the UI thread.  Otherwise, the API will always return denied. For more information, see [AppCallbacks class](https://docs.unity3d.com/Manual/windowsstore-appcallbacks.html) in the Unity Manual.
 
-For more information on setting up your project for Unity, see [configure Unity for Windows Mixed Reality](/learn/modules/learn-mrtk-tutorials/1-3-exercise-configure-unity-for-windows-mixed-reality?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials&tabs=openxr).
+For more information on setting up your project for Unity, see [configure Unity for Windows Mixed Reality](/training/modules/learn-mrtk-tutorials/1-3-exercise-configure-unity-for-windows-mixed-reality?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials&tabs=openxr).
 
 ### How do I make the QR Code Tracking Feature work on HoloLens 2 devices? 
 
