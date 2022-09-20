@@ -41,7 +41,7 @@ Alternately, [install using the MR Feature Tool](WLTviaMRFeatureTool.md) and hav
 
 Check the Unity logs for errors and exceptions.
 
-Confirm that your scene camera is attached to at least one other object. See the setup in [WorldLocking.Examples.WorldLockingPhysicsSample](~/docs/howtos/samples/worldlockedphysicssample.md) for an example. If you're doing dynamic camera manipulation, you may need to keep `WorldLockingManager` informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
+Confirm that your scene camera is attached to at least one other object. See the setup in [WorldLocking.Examples.WorldLockingPhysicsSample](~/documentation/howtos/samples/worldlockedphysicssample.md) for an example. If you're doing dynamic camera manipulation, you may need to keep `WorldLockingManager` informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
 
 ## More general Unity/AR problems
 
