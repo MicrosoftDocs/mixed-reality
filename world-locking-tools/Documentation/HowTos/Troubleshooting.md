@@ -23,7 +23,7 @@ If you see a framerate drop after adding World Locking Tools to your application
 
 ### "Missing DLL" errors
 
-These errors are usually from the Frozen World Engine DLL. To resolve them, follow the instructions in the setup documentation to [upgrade the FrozenWorld engine to a later version](~/docs/howtos/initialsetup.md#manual-frozen-world-engine-dll-installation). Following those instructions without changing the version number will repair the installation.
+These errors are usually from the Frozen World Engine DLL. To resolve them, follow the instructions in the setup documentation to [upgrade the FrozenWorld engine to a later version](~/documentation/howtos/initialsetup.md#manual-frozen-world-engine-dll-installation). Following those instructions without changing the version number will repair the installation.
 
 Alternately, you can [install using the MR Feature Tool](WLTviaMRFeatureTool.md). The Tool handles the installation of dependencies for you.
 
