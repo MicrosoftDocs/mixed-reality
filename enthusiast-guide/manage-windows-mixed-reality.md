@@ -117,9 +117,7 @@ In the following example, the **Id** can be any generated GUID and the **Name** 
 ## Related topics
 
 * [Features On Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities)
-
 * [Get started with Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
-
 * [AppLocker CSP - Windows Client Management](/windows/client-management/mdm/applocker-csp)
 
  

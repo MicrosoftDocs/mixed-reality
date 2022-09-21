@@ -18,7 +18,7 @@ Use the following checkpoints to set up, configure, and use your Windows Mixed R
 
 ### 1. Before you buy
 
-Your PC must be capable of running Windows Mixed Reality devices to achieve the best setup and usage experience. Please use the following resources to ensure your system meets the requirements for Windows Mixed Reality compatibility:
+Your PC must be capable of running Windows Mixed Reality devices to achieve the best setup and usage experience. Use the following resources to ensure your system meets the requirements for Windows Mixed Reality compatibility:
 
 <br>
 
@@ -50,7 +50,7 @@ There are many different features, capabilities, and services available to Windo
 
 <br>
 
-|  Checkpoint  |  Feature  |
+|  Checkpoint  |  Description  |
 | --- | --- |
 | [Learn Windows Mixed Reality](learn-mixed-reality.md) | Basic introduction to concepts such as how to use motion controllers and how navigation works in the virtual world.  |
 | [Your Mixed Reality home](your-mixed-reality-home.md) | Explore the virtual environment of the Windows Mixed Reality home space.  |
@@ -64,7 +64,7 @@ Explore the vast world of immersive games, applications, and experiences support
 
 <br>
 
-|  Checkpoint  |  Feature  |
+|  Checkpoint  |  Description  |
 | --- | --- |
 | [Windows games & apps](using-games-and-apps-in-windows-mixed-reality.md) | An introduction to using immersive apps, Windows slates, and desktop applications in virtual reality. |
 | [Microsoft Edge & WebXR](using-microsoft-edge.md) | Get setup to experience VR using the Microsoft Edge browser and learn how to access immersive content on the web.  |
@@ -77,5 +77,5 @@ If you encounter any issues with your Windows Mixed Reality experience, start he
 
 * [Troubleshooting & FAQ](troubleshooting-windows-mixed-reality.md) 
 
-> [!NOTE]
-> A full Windows Mixed Reality release history is available [here](mixed-reality-software.md).
+>[!NOTE]
+>A full Windows Mixed Reality release history is available [here](mixed-reality-software.md).
