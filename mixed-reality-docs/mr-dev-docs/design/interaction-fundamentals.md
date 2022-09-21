@@ -28,7 +28,7 @@ While we recognize that there are thousands of effective, engaging, and magical 
 
 Check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below, then move on to more specific topics:
 
-> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+> [!VIDEO https://learn.microsoft.com/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
 
 *This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
@@ -190,5 +190,3 @@ There are also use cases that might require using more than one interaction mode
 * [Spatial mapping](spatial-mapping.md)
 * [Spatial sound design](spatial-sound-design.md)
 * [Voice input](voice-input.md)
-
-

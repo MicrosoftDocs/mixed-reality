@@ -36,7 +36,7 @@ In the Hierarchy window, ensure the **MixedRealityPlayspace** object is expanded
 
 ## Configuring PUN to instantiate the objects
 
-In this section, you will configure the project to use the Rover Explorer experience created during the [Getting started tutorials](/learn/paths/beginner-hololens-2-tutorials/) and define where it will be instantiated.
+In this section, you will configure the project to use the Rover Explorer experience created during the [Getting started tutorials](/training/paths/beginner-hololens-2-tutorials/) and define where it will be instantiated.
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.
 

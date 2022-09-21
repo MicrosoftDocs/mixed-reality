@@ -265,7 +265,7 @@ If unfamiliar with the basics of creating, building, and deploying AR apps to th
 >
 > [MR Basics 100](/windows/mixed-reality/holograms-100) - Walk through getting started developing for HoloLens
 >
-> [HoloLens 2 Tutorials](/windows/mixed-reality/mrlearning-base) - Walk through getting started developing for HoloLens 2.  
+> [HoloLens 2 Tutorials](/training/paths/beginner-hololens-2-tutorials) - Walk through getting started developing for HoloLens 2.  
 >
 > [Coordinate Systems](/windows/mixed-reality/coordinate-systems) Coordinate space implications in AR development.
 >

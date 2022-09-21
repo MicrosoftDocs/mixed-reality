@@ -15,9 +15,9 @@ appliesto:
 Thank you for your interest in the Enthusiast Guide. We appreciate your feedback, edits, additions and help with improving our docs. This page covers the basic steps and guidelines for contributing.
 
 > [!IMPORTANT]
-> All repositories that publish to `docs.microsoft.com` have adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any questions or comments.<br>
+> All repositories that publish to `learn.microsoft.com` have adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any questions or comments.<br>
 >
-> Minor corrections or clarifications to documentation and code examples in public repositories are covered by the [`docs.microsoft.com` Terms of Use](/legal/termsofuse). New or significant changes will generate a comment in the pull request asking you to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. We need you to complete the online form before we can accept your pull request.
+> Minor corrections or clarifications to documentation and code examples in public repositories are covered by the [`learn.microsoft.com` Terms of Use](/legal/termsofuse). New or significant changes will generate a comment in the pull request asking you to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. We need you to complete the online form before we can accept your pull request.
 
 ## Before you start
 
@@ -51,7 +51,7 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 
 After you submit changes (via a pull request), they will be reviewed by a member of the documentation team. If your request is accepted, updates are published to [Windows Mixed Reality VR](/windows/mixed-reality/enthusiast-guide).
 
-*For internal review only, you can see your changes in the [staging site for Windows Mixed Reality VR](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide).
+*For internal review only, you can see your changes in the [staging site for Windows Mixed Reality VR](https://review.learn.microsoft.com/windows/mixed-reality/enthusiast-guide).
 
 ### Updating Metadata
 
@@ -168,7 +168,7 @@ While editing in GitHub via a web browser, you can select the **Preview** tab ne
 >[!NOTE]
 >Previewing your staged changes is only available to Microsoft employees.
 
-Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at `https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=main`. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at `https://review.learn.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=main`. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
