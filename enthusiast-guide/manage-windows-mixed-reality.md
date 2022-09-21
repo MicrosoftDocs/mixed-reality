@@ -18,7 +18,7 @@ appliesto:
 
 [Windows Mixed Reality](https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1) was introduced in Windows 10 as a [Windows Feature on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. When a Windows client needs a new feature, it can request the feature package from Windows Update.
 
-Organizations and businesses that operate in offline environments or use [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) must take action to [enable Windows Mixed Reality](#enable-windows-mixed-reality-in-wsus). Alternatively, any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block-the-mixed-reality-portal).
+Organizations and businesses that operate in offline environments or use [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) must take action to [enable Windows Mixed Reality](#enable-windows-mixed-reality-in-offline-environments-and-wsus). Alternatively, any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block-the-mixed-reality-portal).
 
 ## Enable Windows Mixed Reality in offline environments and WSUS
 
@@ -116,7 +116,7 @@ In the following example, the **Id** can be any generated GUID and the **Name** 
 
 ## Related topics
 
-* [Features On Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities?view=windows-11)
+* [Features On Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities)
 
 * [Get started with Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 
