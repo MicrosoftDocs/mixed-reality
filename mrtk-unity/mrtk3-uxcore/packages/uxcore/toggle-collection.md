@@ -13,7 +13,7 @@ ToggleCollection provides a simple mechanism for grouping multiple [StatefulInte
 
 ![Image of an example ToggleCollection](images/toggle_collection.png)
 
-Similar to the Unity UI ToggleGroup, `ToggleCollection` automatically groups and manages all `StatefulInteractable` children. On the other hand, if you'd like to manually specify which Interactables are managed by the group, the `Toggles` list can manually populated in the inspector. When left blank, `ToggleCollection` will automatically populate the list.
+Similar to the Unity UI ToggleGroup, `ToggleCollection` automatically groups and manages all `StatefulInteractable` children. On the other hand, if you'd like to manually specify which Interactables are managed by the group, the `Toggles` list can be manually populated in the Inspector. When left blank, `ToggleCollection` will automatically populate the list.
 
 When a managed `StatefulInteractable` is toggled, all other Interactables in the `Toggles` list are detoggled with `ForceSetToggled`. Toggle events will fire on each Interactable.
 
