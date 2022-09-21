@@ -9,7 +9,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 # Toggle Collection &#8212; MRTK3
 
-ToggleCollection provides a simple mechanism for grouping multiple [StatefulInteractable](../../../mrtk3-overview/architecture/interactables.md)s together and enforcing an exclusive toggle state. This follows the [radio button pattern](https://en.wikipedia.org/wiki/Radio_button), and is implemented similarly to Unity UI's [ToggleGroup](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-ToggleGroup.html).
+ToggleCollection provides a simple mechanism for grouping multiple [StatefulInteractable](../../../mrtk3-overview/architecture/interactables.md)s together and enforcing an exclusive toggle state. This behavior follows the [radio button pattern](https://en.wikipedia.org/wiki/Radio_button), and is implemented similarly to Unity UI's [ToggleGroup](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-ToggleGroup.html).
 
 ![Image of an example ToggleCollection](images/toggle_collection.png)
 
