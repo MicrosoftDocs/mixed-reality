@@ -31,7 +31,7 @@ Organizations and businesses that operate in offline environments or use [Window
 
     If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
 
-    1. Download the FOD .CAB file that matches the version of Windows you are currently running:
+    1. Download the FOD .CAB file that matches the version of Windows you're currently running:
 
         - [Windows 11, version 22H2](https://software-static.download.prss.microsoft.com/dbazure/988969d5-f34g-4e03-ac9d-1f9786c66749/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab)
         - [Windows 11, version 21H2](https://software-download.microsoft.com/download/sg/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd_64~~.cab)
@@ -65,15 +65,15 @@ If access to Windows Update is blocked, you must manually install and update to 
 
 4. Select **Browse my computer for driver software**, then select **Let me pick from a list of available drivers on my computer**. 
 
-5. Select **Have Disk** > **Browse...** and then navigate to the path you have the device driver package saved, then click **OK**. 
+5. Select **Have Disk** > **Browse...** and then navigate to the path you have the device driver package saved, then select **OK**. 
  
-6. The list of device drivers will now be filtered to a single driver. Click **Next** to finish installing the updated device driver. 
+6. The list of device drivers will now be filtered to a single driver. Select **Next** to finish installing the updated device driver. 
 
 ## Block the Mixed Reality Portal
 
 You can use the [AppLocker configuration service provider (CSP)](/windows/client-management/mdm/applocker-csp) to block the Mixed Reality Portal software.
 
-In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
+In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -114,7 +114,7 @@ In the following example, the **Id** can be any generated GUID and the **Name** 
 ```
 
 
-## Related topics
+## Related articles
 
 * [Features On Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities)
 * [Get started with Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
