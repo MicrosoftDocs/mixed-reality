@@ -1,98 +1,81 @@
 ---
-title: Start your VR journey
+title: Your VR journey
 description: Explore our curated checkpoints to guide new device users through setting up and using their immersive VR devices.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 10/15/2020
+ms.date: 9/21/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,
 ---
 
-# Start your VR journey
+# Your VR journey
 
 ![Stock image of VR overlaid environment](images/vr-journey-hero.png)
 
 ## Setup & usability checkpoints
 
-Use the following checkpoints to set up, configure, and use your immersive VR devices to bring your applications and games to life.
+Use the following checkpoints to set up, configure, and use your Windows Mixed Reality devices to bring your applications and games to life in VR.
 
 ### 1. Before you buy
 
-Your PC needs to handle the VR hardware you’re buying to have the best setup and usage experience. In some cases, you may need to order extra [adapters or hardware](recommended-adapters-for-windows-mixed-reality-capable-pcs.md). This section will walk you through:
-
-* The minimum PC requirements
-* Compatibility checks
-* Frequently asked questions associated with virtual reality hardware
+Your PC must be capable of running Windows Mixed Reality devices to achieve the best setup and usage experience. Use the following resources to ensure your system meets the requirements for Windows Mixed Reality compatibility:
 
 <br>
 
-|  Checkpoint  |  Outcome  |
+|  Checkpoint  |  Description  |
 | --- | --- |
-| [Before you start](before-you-start.md) | Make sure you have everything you need to start your VR journey |
-| [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Everything you need to know about running Windows Mixed Reality, Windows Mixed Reality Ultra, and the Windows Mixed Reality Portal app |
-| [Get help with PC compatibility](get-help-with-pc-compatibility.md) | Understand the generated report from the Windows Mixed Reality PC check |
-| [Buying FAQs](before-you-buy-faqs.md) | Get answers to all your buying questions about technical specifications, devices, and controllers |
+| [Before you buy](before-you-start.md) | Ensure you have everything you need to start using Windows Mixed Reality. |
+| [Before you buy FAQ](before-you-buy-faqs.md) | Find answers to common questions you might have about Windows Mixed Reality before purchasing. |
+| [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Learn everything you need to know about running Windows Mixed Reality on your PC. |
+| [Get help with PC compatibility](get-help-with-pc-compatibility.md) | Troubleshooting tips and solutions for getting your PC ready for use with Windows Mixed Reality devices.  |
+| [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) | Recommended guidance for understanding port compatibility, purchasing adapters, and using USB hubs. |
 
 ### 2. Getting started
 
-Once you have your device, you'll need to correctly set up and configure it for use. By the end of this section you'll have all the software requirements installed and be ready to start using Windows Mixed Reality.
+Once you have your device, you'll need to correctly set up and configure it for use with your PC and real-world surroundings. This section will guide you through installation and setup of Windows Mixed Reality:
 
 <br>
 
-|  Checkpoint  |  Outcome  |
+|  Checkpoint  |  Description  |
 | --- | --- |
-| [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md) | Get comfortable with your controllers, room boundaries, speech input, and Microsoft Edge on your new VR device |
-| [Windows Mixed Reality setup FAQs](wmr-setup-faq.yml) | Get answers and troubleshooting help with known issues when setting up Windows Mixed Reality |
-| [Health, safety, and comfort guidelines](wmr-health-safety-comfort.md) | Recommendations to stay safe while using Windows Mixed Reality before using your headset  |
+| [Plug in your headset](plug-in-your-headset.md) | Review guidance on correctly connecting your Windows Mixed Reality device to your PC. |
+| [Install Windows Mixed Reality](install-windows-mixed-reality.md) | Guidance and troubleshooting tips for installing Windows Mixed Reality on your PC. |
+| [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md) | Set up your motion controllers, room boundary, and speech settings for your Windows Mixed Reality device. |
+| [Windows Mixed Reality setup FAQs](wmr-setup-faq.yml) | Review solutions and troubleshooting tips for common issues when setting up Windows Mixed Reality on your PC. |
+| [Health, safety, and comfort guidelines](wmr-health-safety-comfort.md) | Read up on health and safety guidance before using Windows Mixed Reality.  |
 
 ### 3. Using Windows Mixed Reality
 
-There are different features and services available through Windows Mixed Reality and immersive VR headsets. By the end of this section, you'll be comfortable:
-
-* Navigating the virtual home environment
-* Using controllers and speech as inputs
-* Integrating services and applications like SteamVR and WebVR.
+There are many different features, capabilities, and services available to Windows Mixed Reality users. This section will explain all the different ways you can use Windows Mixed Reality, including how to navigate the virtual world and what input types are supported: 
 
 <br>
 
-|  Checkpoint  |  Feature  |
+|  Checkpoint  |  Description  |
 | --- | --- |
-| [Learn Mixed Reality](learn-mixed-reality.md) | Learn how to use your gaze, voice, controllers, and keyboard/mouse inputs |
-| [Navigate the Windows Mixed Reality home](your-mixed-reality-home.md) | Explore the virtual environment of the Windows Mixed Reality home  |
-| [Using controllers](controllers-in-wmr.md) | Setup, understand, and use your motion controllers |
-| [Using speech input](using-speech-in-wmr.md) | Familiarize yourself with different voice commands that can interact with 3D objects, the App bar, Start menu, and Cortana |
+| [Learn Windows Mixed Reality](learn-mixed-reality.md) | Basic introduction to concepts such as how to use motion controllers and how navigation works in the virtual world.  |
+| [Your Mixed Reality home](your-mixed-reality-home.md) | Explore the virtual environment of the Windows Mixed Reality home space.  |
+| [Motion controllers & other input types](controllers-in-wmr.md) | Setup, understand, and use your motion controllers and learn about other supported input types. |
+| [Using speech commands](using-speech-in-wmr.md) | Familiarize yourself with different voice commands that can help you interact with the virtual world.  |
+| [Using Windows Mixed Reality FAQ](using-wmr-faq.yml) | Troubleshooting steps and solutions for common issues when using Windows Mixed Reality. |
 
-> [!NOTE]
-> If you're having trouble with any of the above features, check out the **[Using Windows Mixed Reality FAQ](using-wmr-faq.yml)**.
+## 4. Discover games, apps, and other content
 
-## 4. Discover apps and content
-
-Find immersive games, desktop applications, and VR content in the resources below. 
+Explore the vast world of immersive games, applications, and experiences supported on Windows Mixed Reality using the resources below:
 
 <br>
 
-|  Checkpoint  |  Feature  |
+|  Checkpoint  |  Description  |
 | --- | --- |
-| [Games, 360 video, and apps](using-games-and-apps-in-windows-mixed-reality.md) | Get started with your first immersive game, 2D store slates, desktop applications, and WebVR experiences |
-| [Using SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connect your device and play SteamVR games and learn about the Windows Insider Program |
-| [Using Microsoft Edge](using-microsoft-edge.md) | Install the latest version of Microsoft Edge on your immersive device |
-| [Using WebVR](webvr.md) | Get setup to experience VR in your browser environment |
-| [Explore AltspaceVR](/windows/mixed-reality/altspace-vr/explore/beginners-guide) | Explore the expanding world of VR events with AltspaceVR |
+| [Windows games & apps](using-games-and-apps-in-windows-mixed-reality.md) | An introduction to using immersive apps, Windows slates, and desktop applications in virtual reality. |
+| [Microsoft Edge & WebXR](using-microsoft-edge.md) | Get setup to experience VR using the Microsoft Edge browser and learn how to access immersive content on the web.  |
+| [Explore AltspaceVR](/windows/mixed-reality/altspace-vr/explore/beginners-guide) | Explore the expanding world of VR events happening in AltspaceVR. |
+| [Using SteamVR](using-steamvr-with-windows-mixed-reality.md) | Learn how to connect Windows Mixed Reality to Steam and access thousands of exciting immersive games, apps, and experiences. |
 
 ## Troubleshooting, tips & resources
 
-When you run into trouble with anything relating to your immersive hardware, start with:
- 
-* [General FAQ](troubleshooting-windows-mixed-reality.md) 
+If you encounter any issues with your Windows Mixed Reality experience, start here: 
 
-If you don't find what you're looking for there, we have an exhaustive list of topic-specific FAQ documents in the **Troubleshooting FAQ's** section that cover everything from installation and error codes all the way to performance and headset displays. You can find out more about how specific features work in the articles on [how motion controllers](controllers-in-wmr.md) and [inside-out tracking](tracking-system.md) works.
+* [Troubleshooting & FAQ](troubleshooting-windows-mixed-reality.md) 
 
-We're always on the lookout for new issues and bugs, so if you run into any that are undocumented send us [feedback](filing-feedback.md).
-
-> [!NOTE]
-> A full Windows Mixed Reality release history is available [here](mixed-reality-software.md).
-
-> [!div class="nextstepaction"]
-> [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
-
-<br>
+>[!NOTE]
+>A full Windows Mixed Reality release history is available [here](mixed-reality-software.md).
