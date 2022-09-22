@@ -47,4 +47,4 @@ ms.localizationpriority: high
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
-[Next lesson: 2. Initializing your project and first application](/learn/paths/beginner-hololens-2-tutorials/)
+[Next lesson: 2. Initializing your project and first application](/training/paths/beginner-hololens-2-tutorials/)

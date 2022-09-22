@@ -13,11 +13,6 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 Near Menu is a common pattern for a group of UI elements that can be manipulated and moved and can follow the user. Since it's loosely coupled with the user, it doesn't disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position in the world.
 
-For the most commonly used actions, consider using a [hand menu](hand-menu.md). Near menus are better for less commonly used actions, as it can host larger content and bigger buttons and can passively follow the user out-of-view.
-
-> [!NOTE]
-> The hand menu prefabs are currently built using the non-Canvas controls. They will soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
-
 ## Interaction behavior
 
 - **Tag-along**: The menu follows you and stays within 30-60 cm range from the user for the near interactions.
@@ -29,12 +24,6 @@ For the most commonly used actions, consider using a [hand menu](hand-menu.md). 
 **NearMenuExamples.unity** scene demonstrates various sizes of near menu configuration examples. You can find the menu examples as prefabs.
 
 ![Near Menu Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_Examples_NearMenu_Scene.png)
-
-- **NearMenu3x1.prefab**
-- **NearMenu3x2.prefab**
-- **NearMenu3x3.prefab**
-- **NearMenu4x1.prefab**
-- **NearMenu4x2.prefab**
 
 ## Structure
 

@@ -171,8 +171,8 @@ We very much encourage you to provide any and all feedback to help shape the fin
         Prompt for user action.
     :::column-end:::
     :::column:::
-        [![Slate](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](../mrtk3-uxcomponents/packages/uxcomponents/slate.md)
-        **[Slate](../mrtk3-uxcomponents/packages/uxcomponents/slate.md)**<br>
+        [![Slate](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](../mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/slate.md)
+        **[Slate](../mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/slate.md)**<br>
         A flat panel for displaying large-format interfaces and content.
     :::column-end:::
 :::row-end:::

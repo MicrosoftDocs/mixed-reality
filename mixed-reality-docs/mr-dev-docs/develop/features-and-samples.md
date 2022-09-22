@@ -122,7 +122,7 @@ In this sample, you'll learn how to create a mixed reality HoloLens 2 applicatio
 
 | Sample | Reference article | 
 | --- | --- |
-| [Building mixed reality digital twins with Azure Digital Twins and Unity](https://github.com/MicrosoftDocs/mslearn-mr-adt-in-unity) | [Full learning path](/learn/paths/build-mixed-reality-azure-digital-twins-unity/) | 
+| [Building mixed reality digital twins with Azure Digital Twins and Unity](https://github.com/MicrosoftDocs/mslearn-mr-adt-in-unity) | [Full learning path](/training/paths/build-mixed-reality-azure-digital-twins-unity/) | 
 
 
 ### Camera captures

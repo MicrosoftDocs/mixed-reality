@@ -21,7 +21,7 @@ In the Unity menu, select Mixed Reality > Toolkit > Utilities > **Configure Unit
 ![Unity MRTK Project Configurator window](../images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](/learn/paths/beginner-hololens-2-tutorials/#configuring-the-unity-project) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+> The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](/training/paths/beginner-hololens-2-tutorials/#configuring-the-unity-project) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
 
 In the Hierarchy window, select the MixedRealityToolkit object, then in the Inspector window, navigate to the Input tab:
 
@@ -42,4 +42,4 @@ In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity 
 ![Unity MRTK Project Configurator window](../images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](/learn/paths/beginner-hololens-2-tutorials/#creating-the-scene-and-configuring-mrtk) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+> The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](/training/paths/beginner-hololens-2-tutorials/#creating-the-scene-and-configuring-mrtk) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
