@@ -44,7 +44,7 @@ Organizations and businesses that operate in offline environments or use [Window
     1. Open PowerShell and run the following **Dism** command to add the Windows Mixed Reality FOD package to your Windows image.
 
         ```powershell
-        Dism /Online /Add-Package /PackagePath: (FOD package path)**
+        Dism /Online /Add-Package /PackagePath: (FOD package path)
         ```
 
     1. Open **Settings** > **Windows Update**, then select **Check for updates**.
