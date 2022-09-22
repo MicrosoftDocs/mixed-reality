@@ -11,7 +11,7 @@ ms.topic: article
 
 Welcome to the [public repo for Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.**
 
-The Mixed Reality docs are now hosted on the Microsoft Docs platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at </windows/mixed-reality>.
+The Mixed Reality docs are now hosted on Microsoft Learn, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at `/windows/mixed-reality`.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
@@ -134,7 +134,7 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for Microsoft Docs](/contribute/markdown-reference)
+- [Additional resources for writing Markdown for Microsoft Learn](/contribute/markdown-reference)
 
 ### Adding tables
 

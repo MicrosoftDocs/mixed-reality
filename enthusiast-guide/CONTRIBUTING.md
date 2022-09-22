@@ -139,11 +139,11 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for Microsoft Docs](/contribute/markdown-reference)
+- [Additional resources for writing Markdown for Microsoft Learn](/contribute/markdown-reference)
 
 ### Adding tables
 
-Because of the way Microsoft Docs styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
+Because of how tables are styled on Microsoft Learn, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
 
 The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
