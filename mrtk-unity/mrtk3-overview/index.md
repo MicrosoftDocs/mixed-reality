@@ -83,7 +83,6 @@ To acquire and use MRTK3, the following software tools are required.
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
 | Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
-| [.NET 5.0 Runtime](https://dotnet.microsoft.com/download/dotnet/5.0) | | Required by Mixed Reality Feature Tool |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
 
 ## Versioning
