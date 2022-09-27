@@ -17,7 +17,7 @@ This article covers the ways that you can use the Unity  development path to con
 
 ## Project setup
 
-1. [Set up the Unity project for HoloLens development.](/windows/mixed-reality/develop/unity/unity-development-overview).
+1. [Set up the Unity project for HoloLens development.](./unity-development-overview.md).
     - Select the Gaze Input capability
 2. Import the [Eye Tracking SDK NuGet package](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) into your Unity project.
     1. Download and install the [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity/releases) package.
