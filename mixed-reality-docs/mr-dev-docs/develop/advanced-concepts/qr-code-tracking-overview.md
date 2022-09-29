@@ -15,7 +15,7 @@ To access the GitHub repo for the QR code sample:
 > [!div class="nextstepaction"]
 > [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample)
 
-With HoloLens 2 and immersive headsets, you can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. You can also render holograms in the same location on multiple devices to create a shared experience. Once you enable your devictae's webcam, you'll recognize QR codes in the latest versions of your projects. For best results going into production, we recommend that you review the [best practices](#best-practices-for-qr-code-detection) section.
+With HoloLens 2 and immersive headsets, you can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. You can also render holograms in the same location on multiple devices to create a shared experience. Once you enable your device's webcam, you'll recognize QR codes in the latest versions of your projects. For best results going into production, we recommend that you review the [best practices](#best-practices-for-qr-code-detection) section.
 
 In this article, you'll learn about:
 
