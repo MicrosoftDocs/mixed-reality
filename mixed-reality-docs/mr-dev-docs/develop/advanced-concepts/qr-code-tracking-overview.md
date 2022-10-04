@@ -233,7 +233,7 @@ For more information, see [Configuring Visual Studio’s settings](https://devbl
 There is a limit of 100 QR codes saved at the system level in the driver, within 10 minutes.  
  
 ### Has QR code smoothing process changed? 
-QR code smothing process changed after 20H2, from pose smooting to size smoothing. To change to previous smoothing process, one would have to apply smoothness if pose is outside 5 seconds/10cm threshold and consider previous frame/current frame in a ration 0.4/0.6. 
+QR code smoothing process changed after 20H2, from pose smoothing to size smoothing. To revert behavior to the previous smoothing process, one would apply a smoothing algorithm if the new QR code pose data is detected within 5 seconds or 10 cm of the previously detected frame.   The transform data is blended via a weighted ratio of 90% of the current frame with 10% of the previous frame. 
  
 ## See also
 * [QR code tracking with native C++ and C# samples](../native/qr-code-tracking-cs-cpp.md)
