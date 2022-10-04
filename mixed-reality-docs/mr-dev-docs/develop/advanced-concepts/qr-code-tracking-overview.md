@@ -228,7 +228,13 @@ We're working on adding symbols to the next release. In the meantime, you should
 <img src="images\exclude-dll.png" alt="excluding the DLL in Visual Studio options">
 
 For more information, see [Configuring Visual Studio’s settings](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/#configuring-visual-studios-settings).
-
+ 
+### Is there a limit of how many QR codes can be scanned in a session?  
+There is a limit of 100 QR codes saved at the system level in the driver, within 10 minutes.  
+ 
+### Has QR code smoothing process changed? 
+QR code smoothing process changed after 20H2, from pose smoothing to size smoothing. To revert behavior to the previous smoothing process, one would apply a smoothing algorithm if the new QR code pose data is detected within 5 seconds or 10 cm of the previously detected frame.   The transform data is blended via a weighted ratio of 90% of the current frame with 10% of the previous frame. 
+ 
 ## See also
 * [QR code tracking with native C++ and C# samples](../native/qr-code-tracking-cs-cpp.md)
 * [QR code tracking in Unity](../unity/qr-code-tracking-unity.md)
