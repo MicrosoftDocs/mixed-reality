@@ -21,5 +21,8 @@ Compiling and deploying your app can take a significant amount of time, so we re
 - **Experimental**: [Oculus Link for Quest](https://support.oculus.com/airlink)
     - Some aspects of hand interactions are still being developed for Quest, and your results may vary.
     - Controller interactions should be full parity over Link.
+    - In **Player Settings** > **OpenXR**, the following must be assigned for the **Windows, Mac, Linux Settings** tab:
+        - Set **Play Mode OpenXR Runtime** to **Oculus OpenXR**.
+        - Add the **Oculus Touch Controller Profile** to the list of **Interaction Profiles**.
 
 If you've deployed a build to your target device of choice, you can debug the build as it runs on device with [Managed debugging](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).
