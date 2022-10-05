@@ -36,7 +36,7 @@ MRTK supports a wide range of platforms, including:
 > [!NOTE]
 > You can also [set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md).
 
-## Other non-OpenXR configuration options
+### Other non-OpenXR configuration options to consider
 
 **Windows XR**: Microsoft doesn't recommend using the Windows XR plugin for any new projects in Unity 2020. Instead, you should use the Mixed Reality OpenXR plugin. However, if you're using Unity 2019 and you need AR Foundation 2.0 for compatibility with ARCore/ARKit devices, this plugin enables that support.
 
@@ -47,7 +47,7 @@ MRTK supports a wide range of platforms, including:
 
 If you're starting a new project, we recommend that you install Unity 2020 instead and use the Mixed Reality OpenXR plugin.
 
-## Create a new Unity project
+## Getting started with OpenXR: create a new Unity project
 
 1. Launch the **Unity Hub**.
 1. In the **Projects** tab,  click **New Project**.
