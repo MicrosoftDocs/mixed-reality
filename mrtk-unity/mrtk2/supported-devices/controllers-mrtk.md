@@ -17,7 +17,7 @@ This document will describe the common scenarios where extra packages need to be
 
 To detect and show the HP Reverb G2 controllers when using MRTK, follow these steps to install the [**Microsoft.MixedReality.Input**](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers#installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool) package. Once this package is installed, no other changes to the default profiles need to be made to have the controllers show up on the HP Reverb. 
 
-In order to display the controllers in editor, you need to ensure that you are using the using the [**OpenXR Plugin**](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
+In order to display the controllers in editor, you need to ensure that you're using the [**OpenXR Plugin**](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk).
 
 ## Oculus Controllers 
 
