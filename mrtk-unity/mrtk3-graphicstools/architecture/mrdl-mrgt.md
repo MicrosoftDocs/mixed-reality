@@ -47,12 +47,7 @@ Graphics Tools supports two user interface creation methods, UnityUI and traditi
 
 The interactive playground below shows how MRDL components are used for the MRTK3 button
 
-<style>
-  .playground {
-    height: 600px;
-  }
-</style>
-<div class="playground">
+<div class="playground" style="position: relative; width: 100%; height: 600px;">
   <iframe loading="lazy" height="100%" width="100%" src="https://playground.babylonjs.com/#KA845G#1"></iframe>
 </div>
 
