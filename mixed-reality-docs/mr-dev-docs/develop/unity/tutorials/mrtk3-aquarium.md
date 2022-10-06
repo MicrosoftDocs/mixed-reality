@@ -32,7 +32,7 @@ In this sample, you'll learn how to do the following:
 
 ## Download the Project
 
-You can download the MRTK3 Aquarium project from our Code Samples browser [INSERT LINK TO PAGE]. Once the project is downloaded, add the project to the Unity Hub to open.
+You can clone or download the MRTK3 Aquarium project from it's [GitHub repository](https://github.com/microsoft/MRTK3-iet-tutorials). Once the project is downloaded, add the project to the Unity Hub to open.
 
 ## How to Use the Tutorials
 The Unity in-editor tutorial format provides step-by-step instruction within the editor for how to accomplish each step of the tutorial. Each tutorial is independent of the others so you're welcome to complete them in any order you prefer.
