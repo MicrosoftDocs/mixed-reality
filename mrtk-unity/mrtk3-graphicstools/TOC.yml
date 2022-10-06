@@ -1,0 +1,12 @@
+- name: Welcome to Mixed Reality Graphics Tools
+  href: index.md
+- name: Architecture
+  href: architecture/toc.yml
+- name: Features
+  href: features/toc.yml
+- name: Contributing to MR Graphics Tools
+  href: contributing.md
+- name: API Reference
+  href: /dotnet/api/Microsoft.MixedReality.GraphicsTools
+- name: MRTK3 overview
+  href: /windows/mixed-reality/mrtk-unity/mrtk3-overview

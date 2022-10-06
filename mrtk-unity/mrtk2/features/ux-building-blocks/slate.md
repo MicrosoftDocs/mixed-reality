@@ -1,5 +1,5 @@
 ---
-title: Slate
+title: Slate -- MRTK2
 description: Documentation on Slate in MRTK
 author: CDiaz-MS
 ms.author: cadia 
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Slate,
 ---
 
-# Slate
+# Slate -- MRTK2
 
 ![Slate](../images/slate/MRTK_Slate_Main.png)
 

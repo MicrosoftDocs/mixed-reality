@@ -7,7 +7,7 @@ ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scene Understanding
 ---
 
-# Scene understanding observer
+# Scene understanding observer &#8212; MRTK2
 
 [Scene Understanding](/windows/mixed-reality/scene-understanding) returns a semantic representation of scene entities as well as their geometric forms on __HoloLens 2__ (HoloLens 1st Gen is not supported).
 
@@ -17,14 +17,14 @@ Some expected use cases of this technology are:
 * Provide physics engine friendly geometry as quads
 * Accelerate development by avoiding the need to write similar algorithms
 
-Scene Understanding is introduced as an __experimental__ feature in MRTK 2.6. It is integrated into MRTK as a [spatial observer](spatial-awareness-getting-started.md#register-observers) called [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver). Scene Understanding works both with the Legacy XR pipeline and the XR SDK pipeline (both OpenXR (starting from MRTK 2.7) and Windows XR Plugin). In both cases the `WindowsSceneUnderstandingObserver` is used.
+Scene Understanding is introduced as an __experimental__ feature in MRTK 2.6. It is integrated into MRTK as a [spatial observer](spatial-awareness-getting-started.md#register-observers) called [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). Scene Understanding works both with the Legacy XR pipeline and the XR SDK pipeline (both OpenXR (starting from MRTK 2.7) and Windows XR Plugin). In both cases the `WindowsSceneUnderstandingObserver` is used.
 
 > [!NOTE] 
 > Using Scene Understanding in Remoting is only supported in MRTK 2.7.3 and above. Only projects using OpenXR are supported. Projects using the Legacy XR pipeline or Windows XR Plugin are __not__ supported.
 
 ## Observer overview
 
-When asked, the [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) will return [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) with attributes useful for the application to understand its surroundings. The observation frequency, returned object type (e.g. wall, floor) and other observer behaviors are dependent on the configuration of the observer via profile. For instance, if the occlusion mask is desired the observer must be configured to generate quads. The observed scene can be saved as serialized file that can be later loaded to recreate the scene in editor play mode.
+When asked, the [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will return [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) with attributes useful for the application to understand its surroundings. The observation frequency, returned object type (e.g. wall, floor) and other observer behaviors are dependent on the configuration of the observer via profile. For instance, if the occlusion mask is desired the observer must be configured to generate quads. The observed scene can be saved as serialized file that can be later loaded to recreate the scene in editor play mode.
 
 ## Setup
 
@@ -87,7 +87,7 @@ The example script _DemoSceneUnderstandingController.cs_ demonstrates the major 
 
 The toggles on the panel in the scene change the behavior of scene understanding observer by calling public functions of this sample script.
 
-Turning on *Instantiate Prefabs*, will demonstrate creating objects that size to fit themselves to all [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject), gathered neatly under a parent object.
+Turning on *Instantiate Prefabs*, will demonstrate creating objects that size to fit themselves to all [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), gathered neatly under a parent object.
 
 ![demo controller options](../images/spatial-awareness/Controller.png)
 

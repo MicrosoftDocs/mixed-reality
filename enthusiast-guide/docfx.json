@@ -54,7 +54,8 @@
       "ms.date": "09/16/2020",
       "ms.prod": "mixed-reality",
       "ms.technology": "enthusiast-guide",
-      "keywords": "mixed reality, virtual reality, vr, hololens"
+      "keywords": "mixed reality, virtual reality, vr, hololens",
+      "searchScope":["Mixed Reality","Windows Mixed Reality"]
     },
     "fileMetadata": {},
     "template": [],

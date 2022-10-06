@@ -7,16 +7,16 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Clipping primitive,
 ---
 
-# Clipping primitive
+# Clipping primitive &#8212; MRTK2
 
-The [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behaviors allow for performant [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere), and [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) shape clipping with the ability to specify which side of the primitive to clip against (inside or outside) when used with MRTK shaders.
+The [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) behaviors allow for performant [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), and [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) shape clipping with the ability to specify which side of the primitive to clip against (inside or outside) when used with MRTK shaders.
 
 ![primitive clipping gizmos](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
 
 > [!NOTE]
-> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) utilize [clip/discard](https://developer.download.nvidia.com/cg/clip.html) instructions within shaders and disable Unity's ability to batch clipped renderers. Take these performance implications in mind when utilizing clipping primitives.
+> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) utilize [clip/discard](https://developer.download.nvidia.com/cg/clip.html) instructions within shaders and disable Unity's ability to batch clipped renderers. Take these performance implications in mind when utilizing clipping primitives.
 
-[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere), and [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) can be used to easily control clipping primitive properties. Use these components with the following shaders to leverage clipping scenarios.
+[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), and [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can be used to easily control clipping primitive properties. Use these components with the following shaders to leverage clipping scenarios.
 
 - *Mixed Reality Toolkit/Standard*
 - *Mixed Reality Toolkit/TextMeshPro*
@@ -24,16 +24,16 @@ The [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.Clipping
 
 ## Examples
 
-The **ClippingExamples** and **MaterialGallery** scenes demonstrate usage of the [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behaviors, and can be found at: MRTK/Examples/Demos/StandardShader/Scenes/
+The **ClippingExamples** and **MaterialGallery** scenes demonstrate usage of the [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) behaviors, and can be found at: MRTK/Examples/Demos/StandardShader/Scenes/
 
 ## Advanced Usage
 
-By default only one [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) can clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) at a time. If your project requires more than one [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) to influence a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html)  the sample code below demonstrates how to achieve this.
+By default only one [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) at a time. If your project requires more than one [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to influence a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html)  the sample code below demonstrates how to achieve this.
 
 > [!NOTE]
-> Having multiple [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) will increase pixel shader instructions and will impact performance. Please profile these changes within your project.
+> Having multiple [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) will increase pixel shader instructions and will impact performance. Please profile these changes within your project.
 
-*How to have two different [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clip a render. For example a [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) and [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) at the same time:*
+*How to have two different [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) clip a render. For example a [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) at the same time:*
 
 ```C#
 // Within MRTK/Core/StandardAssets/Shaders/MixedRealityStandard.shader (or another MRTK shader) change:
@@ -50,7 +50,7 @@ By default only one [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Ut
 > [!NOTE]
 > The above change will incur additional shader compilation time.
 
-*How to have two of the same [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clip a render. For example two [`ClippingBoxes`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) at the same time:*
+*How to have two of the same [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) clip a render. For example two [`ClippingBoxes`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) at the same time:*
 
 ```C#
 // 1) Add the below MonoBehaviour to your project:
@@ -116,7 +116,7 @@ public class SecondClippingBox : ClippingBox
 #endif
 ```
 
-Finally, add a [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) and SecondClippingBox component to your scene and specify the same renderer for both boxes. The renderer should now be clipped by both boxes simultaneously.
+Finally, add a [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and SecondClippingBox component to your scene and specify the same renderer for both boxes. The renderer should now be clipped by both boxes simultaneously.
 
 ## See also
 

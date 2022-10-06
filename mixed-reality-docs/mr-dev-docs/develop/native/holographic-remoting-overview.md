@@ -40,5 +40,5 @@ In either case, inputs from the HoloLens--gaze, gesture, voice, and spatial mapp
 
 * [Holographic Remoting Terminology](holographic-remoting-terminology.md)
 * [Holographic Remoting Player](holographic-remoting-player.md)
-* [Tutorial: Getting started with PC Holographic Remoting](/learn/modules/pc-holographic-remoting-tutorials/)
-* [Tutorial: Creating a Holographic Remoting PC application](/learn/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application)
+* [Tutorial: Getting started with PC Holographic Remoting](/training/modules/pc-holographic-remoting-tutorials/)
+* [Tutorial: Creating a Holographic Remoting PC application](/training/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application)

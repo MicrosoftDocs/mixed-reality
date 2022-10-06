@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest
 ---
 
-# Deploying to Oculus Quest
+# Deploying to Oculus Quest &#8212; MRTK2
 
 An [Oculus Quest](https://www.oculus.com/quest/) is required.
 
@@ -43,7 +43,7 @@ The [Oculus Integration Unity package](https://assetstore.unity.com/packages/too
 ## Setting up the Oculus Integration Unity package to enable handtracking
 
 1. Download and import [Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) from the Unity Asset Store. The latest version tested to
-work is 35.0.0. Older versions can be found from this [archive](https://developer.oculus.com/downloads/package/unity-integration-archive/).
+work is 39.0.0. Prior versions will not work due to change made to the Oculus API. All versions of the Oculus Integration Package can be found from this [archive](https://developer.oculus.com/downloads/package/unity-integration-archive/).
 
 1. Navigate to Mixed Reality Toolkit > Utilities > Oculus > Integrate Oculus Integration Unity Modules. Doing this will update the asmdefs with definitions and references needed for the
 relevant Oculus Quest code to function. It will also update the csc file to filter out the obsolete warnings produced by the Oculus Integration assets. The MRTK repo contains a csc file that converts warnings to errors, this conversion halts the MRTK-Quest configuration process.
@@ -130,7 +130,7 @@ to "Controllers and Hands".
 
 ## Removing Oculus Integration from the Project
 
-1. Navigate to the Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules
+1. Navigate to Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules
     ![Oculus Separation Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
 1. Let Unity refresh as references in the Microsoft.MixedReality.Toolkit.Providers.Oculus.asmdef and other files are modified in this step
 1. Close Unity

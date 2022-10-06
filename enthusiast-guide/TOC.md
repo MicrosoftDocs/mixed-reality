@@ -1,8 +1,8 @@
 # [Windows Mixed Reality enthusiast documentation](index.yml)
-## [Start your VR journey](vr-journey.md)
 
 ## Getting started
 ### [Before you start](before-you-start.md)
+### [Start your VR journey](vr-journey.md)
 ### [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 ### [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [Get help with PC compatibility](get-help-with-pc-compatibility.md)
@@ -41,6 +41,7 @@
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
 ### [Installation errors](installation_errors.md)
+### [Mixed Reality Portal error messages](mixed-reality-portal-error-messages.md)
 ### [Before you buy](before-you-buy-faqs.md)
 ### [Boundaries](boundary-questions.md)
 ### [Headset connectivity](headset-connectivity.md)
@@ -56,9 +57,10 @@
 ### [Enterprise & LBE FAQ](enterprise-lbe-faq.md)
 
 ## Resources
-### [Get info about Windows Mixed Reality](get-wmr-info.md)
+### [Get help for Windows Mixed Reality](get-wmr-info.md)
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
+### [Manage Windows Mixed Reality apps](manage-windows-mixed-reality.md)
 ### [How inside-out tracking works](tracking-system.md)
 ### [HP Reverb G2 Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [HP Reverb G2 Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

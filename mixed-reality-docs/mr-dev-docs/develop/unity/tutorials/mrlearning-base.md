@@ -42,9 +42,9 @@ ms.localizationpriority: high
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability
 * A HoloLens 2 device [configured for development](../../advanced-concepts/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added
+* <a href="https://unity.com/download" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added
 
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
-[Next lesson: 2. Initializing your project and first application](/learn/paths/beginner-hololens-2-tutorials/)
+[Next lesson: 2. Initializing your project and first application](/training/paths/beginner-hololens-2-tutorials/)

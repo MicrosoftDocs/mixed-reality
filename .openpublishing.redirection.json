@@ -1068,12 +1068,12 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-getting-started.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
+			"redirect_url": "/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/develop/unity/mrtk-getting-started.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
+			"redirect_url": "/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": true
 		},
 		{
@@ -2419,7 +2419,11 @@
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-sharing-05.md",
 			"redirect_url": "/learn/modules/azure-spatial-anchors-tutorials/",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mrtk-unity/mrtk3-uxcomponents/packages/uxcomponents/slate.md",
+			"redirect_url": "mrtk-unity/mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/slate.md",
+			"redirect_document_id": false
 		}
-
 	]
 }

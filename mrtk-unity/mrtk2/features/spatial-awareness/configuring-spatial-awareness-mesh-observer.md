@@ -7,9 +7,9 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Configuring mesh observers for device
+# Configuring mesh observers for device &#8212; MRTK2
 
-This guide will walk through configuring the out-of-box Spatial Mesh Observer in MRTK which supports the Windows Mixed Reality platform (i.e HoloLens). The default implementation provided by the Mixed Reality Toolkit is the [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class. Many of the properties in this article though apply for other [custom Observer implementations](create-data-provider.md).
+This guide will walk through configuring the out-of-box Spatial Mesh Observer in MRTK which supports the Windows Mixed Reality platform (for example, HoloLens). The default implementation provided by Mixed Reality Toolkit is the [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class. Many of the properties in this article though apply for other [custom Observer implementations](create-data-provider.md).
 
 ## Profile settings
 
@@ -19,7 +19,7 @@ The following two items must be defined first when configuring a Spatial Mesh Ob
 1. list of supported platform(s) to run this observer
 
 > [!NOTE]
-> All observers must extend the [IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interface.
+> All observers must extend the [IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface.
 
 ![Mesh Observer General Settings Platform types](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
 
@@ -67,7 +67,7 @@ The observation extents define the distance from the observation point that mesh
 The physics layer on which spatial mesh objects will be placed in order to interact with the Unity Physics and RayCast systems.
 
 > [!NOTE]
-> The Mixed Reality Toolkit reserves *layer 31* by default for use by Spatial Awareness observers.
+> Mixed Reality Toolkit reserves *layer 31* by default for use by Spatial Awareness observers.
 
 **Recalculate Normals**
 
@@ -113,7 +113,7 @@ Specifies how spatial meshes are to be displayed by the observer. Supported valu
 Spatial Observers can be [resumed/suspended at runtime via code.](usage-guide.md#starting-and-stopping-mesh-observation)
 
 > [!WARNING]
-> Setting *Display Option* to *None* does **NOT** stop the observer from running. If you wish to stop all observers, applications will need to suspend all observers via [`CoreServices.SpatialAwareness.SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers)
+> Setting *Display Option* to *None* does **NOT** stop the observer from running. If you wish to stop all observers, applications will need to suspend all observers via [`CoreServices.SpatialAwareness.SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 **Visible Material**
 
@@ -127,6 +127,6 @@ Indicates the material to be used to cause the spatial mesh to occlude holograms
 
 * [Spatial Awareness System](spatial-awareness-getting-started.md)
 * [Configuring Spatial Awareness system via Code](usage-guide.md)
-* [IMixedRealitySpatialAwarenessObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
-* [IMixedRealitySpatialAwarenessMeshObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
-* [BaseSpatialObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)
+* [IMixedRealitySpatialAwarenessObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [IMixedRealitySpatialAwarenessMeshObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+* [BaseSpatialObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)

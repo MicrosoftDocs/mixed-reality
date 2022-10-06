@@ -7,13 +7,13 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounds Control,
 ---
 
-# Bounds control
+# Bounds control &#8212; MRTK2
 
 ![Bounds control](../images/bounds-control/MRTK_BoundsControl_Main.png)
 
 *BoundsControl* is the new component for manipulation behaviour, previously found in *BoundingBox*. Bounds control makes a number of improvements and simplifications in setup and adds new features. This component is a replacement for the bounding box, which will be deprecated.
 
-The [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script provides basic functionality for transforming objects in mixed reality. A bounds control will show a box around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the box allow scaling, rotating or translating the object. The bounds control also reacts to user input. On HoloLens 2, for example, the bounds control responds to finger proximity, providing visual feedback to help perceive the distance from the object. All interactions and visuals can be easily customized.
+The [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script provides basic functionality for transforming objects in mixed reality. A bounds control will show a box around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the box allow scaling, rotating or translating the object. The bounds control also reacts to user input. On HoloLens 2, for example, the bounds control responds to finger proximity, providing visual feedback to help perceive the distance from the object. All interactions and visuals can be easily customized.
 
 ## Example scene
 
@@ -184,7 +184,7 @@ Elastics can be used when manipulating objects via bounds control. Note that the
 
 ## Handle styles
 
-By default, when you just assign the [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
+By default, when you just assign the [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
 
 ![Bounds Control Handle Styles 2](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
 
@@ -276,9 +276,9 @@ rotationHandleConfiguration.ColliderPadding = 0.016f;
 
 ### Example: Set minimum, maximum bounds control scale using MinMaxScaleConstraint
 
-To set the minimum and maximum scale, attach a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) to your control. As bounds control automatically attaches and activates constraint manager the MinMaxScaleConstraint will be automatically applied to the transformation changes once it's attached and configured.
+To set the minimum and maximum scale, attach a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to your control. As bounds control automatically attaches and activates constraint manager the MinMaxScaleConstraint will be automatically applied to the transformation changes once it's attached and configured.
 
-You can also use MinMaxScaleConstraint to set minimum and maximum scale for [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator).
+You can also use MinMaxScaleConstraint to set minimum and maximum scale for [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ```c#
 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);

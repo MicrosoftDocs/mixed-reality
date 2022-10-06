@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Scene system content loading
+# Scene system content loading &#8212; MRTK2
 
 All content load operations are asynchronous, and by default all content loading is additive. Manager and lighting scenes are never affected by content loading operations. For information about monitoring load progress and scene activation, see [Monitoring Content Loading](scene-system-load-progress.md).
 

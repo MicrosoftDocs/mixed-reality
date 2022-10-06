@@ -7,14 +7,14 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounding Box
 ---
 
-# Bounding box
+# Bounding box &#8212; MRTK2
 
 ![Bounding box](../images/bounding-box/MRTK_BoundingBox_Main.png)
 
 > [!NOTE]
 > Bounding box is deprecated and replaced by its successor [bounds control](bounds-control.md). Use [one of the migration options](#migrating-to-bounds-control) to upgrade existing game objects.
 
-The [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script provides basic functionality for transforming objects in mixed reality. A bounding box will show a cube around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the cube allow scaling or rotating the object. The bounding box also reacts to user input. On HoloLens 2, for example, the bounding box responds to finger proximity, providing visual feedback to help perceive the distance from the object. All interactions and visuals can be easily customized.
+The [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script provides basic functionality for transforming objects in mixed reality. A bounding box will show a cube around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the cube allow scaling or rotating the object. The bounding box also reacts to user input. On HoloLens 2, for example, the bounding box responds to finger proximity, providing visual feedback to help perceive the distance from the object. All interactions and visuals can be easily customized.
 
 For more information, see [Bounding box and App bar](/windows/mixed-reality/app-bar-and-bounding-box) in the Windows Dev Center.
 
@@ -83,7 +83,7 @@ bbox.RotateHandleColliderPadding = 0.016f;
 
 ### Example: Set minimum, maximum bounding box scale using MinMaxScaleConstraint
 
-To set the minimum and maximum scale, use the [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint). You can also use MinMaxScaleConstraint to set minimum and maximum scale for [`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler).
+To set the minimum and maximum scale, use the [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). You can also use MinMaxScaleConstraint to set minimum and maximum scale for [`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ```c#
 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -127,11 +127,11 @@ There are several options to activate the bounding box interface.
 
 ### Scale minimum
 
-The minimum allowed scale. This property is deprecated and it is preferable to add a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) script. If this script is added, the minimum scale will be taken from it instead of from the bounding box.
+The minimum allowed scale. This property is deprecated and it is preferable to add a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script. If this script is added, the minimum scale will be taken from it instead of from the bounding box.
 
 ### Scale maximum
 
-The maximum allowed scale. This property is deprecated and it is preferable to add a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) script. If this script is added, the maximum scale will be taken from it instead of from the bounding box.
+The maximum allowed scale. This property is deprecated and it is preferable to add a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script. If this script is added, the maximum scale will be taken from it instead of from the bounding box.
 
 ### Box display
 
@@ -156,7 +156,7 @@ Bounding box provides the following events. This example uses these events to pl
 
 ## Handle styles
 
-By default, when you just assign the [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
+By default, when you just assign the [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
 
 ![Bounding Box Handle Styles](../images/bounding-box/MRTK_BoundingBox_HandleStyles1.png)
 

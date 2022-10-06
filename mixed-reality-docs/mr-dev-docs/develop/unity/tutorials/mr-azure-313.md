@@ -70,9 +70,7 @@ The following hardware and software is required:
 - Internet Access for Azure, and for IoT Hub Service. For more information, please follow this [link to IoT Hub Service page](https://azure.microsoft.com/services/iot-hub/)
 - A machine learning model. If you do not have your own ready to use model, [you can use the model provided with this course](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20313%20-%20IoT%20Hub%20Service/Custom%20Vision%20Model.zip).
 - **Hyper-V** software enabled on your Windows 10 development machine.
-- A Virtual Machine running Ubuntu (16.4 or 18.4), running on your development machine or alternatively you can use a separate computer running Linux (Ubuntu 16.4 or 18.4). You can find more information on how to create a VM on Windows using Hyper-V in the ["Before you Start" chapter](#before-you-start).(https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).  
-
-
+- A Virtual Machine running Ubuntu (16.4 or 18.4), running on your development machine or alternatively you can use a separate computer running Linux (Ubuntu 16.4 or 18.4). You can find more information on how to [create a VM on Windows using Hyper-V](/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine) in the ["Before you Start" chapter](#before-you-start).
 
 ### Before you start
 
@@ -171,11 +169,11 @@ Now you will begin the creation and setup of your **IoT Hub Service**.
 
 2.  Once logged in, click on **Create a resource** in the top left corner, and search for **IoT Hub**, and click **Enter**.
 
- ![search for storage account](images/AzureLabs-Lab313-10.png)
+ ![Screenshot that shows the Everything window open. I O T Hub in the search results and Create a Resource in the top left corner are circled in red.](images/AzureLabs-Lab313-10.png)
 
 3.  The new page will provide a description of the **Storage account** Service. At the bottom left of this prompt, click the **Create** button, to create an instance of this Service.
 
-    ![create storage instance](images/AzureLabs-Lab313-11.png)
+    ![Screenshot that shows the I O T Hub Overview page.](images/AzureLabs-Lab313-11.png)
 
 4.  Once you have clicked on **Create**, a panel will appear:
 
@@ -190,39 +188,39 @@ Now you will begin the creation and setup of your **IoT Hub Service**.
 
 5.  On the bottom of the page click on **Next: Size and scale**.
 
-    ![create storage instance](images/AzureLabs-Lab313-12.png)
+    ![Screenshot that shows the I O T hub Basics page. Next Size and scale is circled in red at the bottom of the page.](images/AzureLabs-Lab313-12.png)
 
 6.  In this page, select your **Pricing and scale tier** (if this is your first IoT Hub Service instance, a free tier should be available to you).  
 
 7.  Click on **Review + Create**.
 
-    ![create storage instance](images/AzureLabs-Lab313-13.png)
+    ![Screenshot that shows the I O T hub Size and scale page. F 1 Free tier is selected in the Pricing and scale tier field. Review and create is circled in red at the bottom of the page.](images/AzureLabs-Lab313-13.png)
 
 8.  Review your settings and click on **Create**.
 
-    ![create storage instance](images/AzureLabs-Lab313-14.png)
+    ![Screenshot that shows the I O T hub Review and create page. Create is circled in red at the bottom of the page.](images/AzureLabs-Lab313-14.png)
 
 9. Once the notification pops up informing you of the successful creation of the *IoT Hub* Service, click on **Go to resource** to be redirected to your Service page.
 
-    ![create storage instance](images/AzureLabs-Lab313-15.png)
+    ![Screenshot that shows a Deployment succeeded notification. The Go to resource button is circled in red.](images/AzureLabs-Lab313-15.png)
 
 10. Scroll the side panel on the left until you see *Automatic Device Management*, the click on **IoT Edge**.
 
-    ![create storage instance](images/AzureLabs-Lab313-16.png)
+    ![Screenshot that shows I O T Edge selected in the menu under Automatic Device Management.](images/AzureLabs-Lab313-16.png)
 
 11. In the window that appears to the right, click on **Add IoT Edge Device**. A blade will appear to the right.
 
 12. In the blade, provide your new device a **Device ID** (a name of your choice). Then, click **Save**. The *Primary* and *Secondary Keys* will auto generate, if you have **Auto Generate** ticked.
 
-    ![create storage instance](images/AzureLabs-Lab313-17.png)
+    ![Screenshot that shows the Add Device page. Edge Device 0 1 is entered in the Device I D field. The Auto Generate Keys box is checked.](images/AzureLabs-Lab313-17.png)
 
 13. You will navigate back to the *IoT Edge Devices* section, where your new device will be listed. Click on your new device (outlined in red in the below image). 
 
-    ![create storage instance](images/AzureLabs-Lab313-18.png)
+    ![Screenshot that shows the I O T Edge Devices page. The box is checked next to Edge Device at the bottom of the page.](images/AzureLabs-Lab313-18.png)
 
 14. On the *Device Details* page that appears, take a copy of the **Connection String** (primary key).
 
-    ![create storage instance](images/AzureLabs-Lab313-19.png)
+    ![Screenshot that shows the Device Details page. Connection string primary key is circled in red.](images/AzureLabs-Lab313-19.png)
 
 15. Go back to the panel on the left, and click *Shared access policies*, to open it. 
 
@@ -230,7 +228,7 @@ Now you will begin the creation and setup of your **IoT Hub Service**.
 
 17. Take note (on your Notepad) of the **Connection string** (primary key), for later use when setting the *Connection String* to your device.
 
-    ![create storage instance](images/AzureLabs-Lab313-20.png)
+    ![Screenshot that shows the Shared access policies page, located under Settings. I O T hub owner is selected under Policy. In the pop up window, the connection string primary key field is circled in red.](images/AzureLabs-Lab313-20.png)
 
 ## Chapter 4 - Setting up the development environment
 
@@ -362,7 +360,7 @@ Now you can move on to setting up your device **running Ubuntu OS**. Follow the 
     2. Azure IoT Toolkit
     3. Docker   
 
-    ![Create your container](images/AzureLabs-Lab313-24.png)
+    ![Screenshot that shows the extensions window. Azure I O T Edge, Azure I O T Toolkit, and Docker are circled in red.](images/AzureLabs-Lab313-24.png)
 
 4. Once the extensions are installed, close and re-open VS Code.
 
@@ -378,7 +376,7 @@ Now you can move on to setting up your device **running Ubuntu OS**. Follow the 
     > If you have trouble with this command: 
     >1. Restart VS Code, and/ or your computer.
     >2. It might be necessary to switch the **VS Code Terminal** to the one you have been using to install Python, i.e. **Powershell** (especially in case the Python environment was already installed on your machine). With the Terminal open, you will find the drop down menu on the right side of the Terminal.
-     ![Create your container](images/AzureLabs-Lab313-24b.png) 
+     ![Screenshot that shows 1 powershell selected on the drop down menu.](images/AzureLabs-Lab313-24b.png) 
     >3. Make sure the **Python** installation path is added as **Environment Variable** on your machine. Cookiecutter should be part of the same location path. Please follow this [link for more information on Environment Variables](/windows/win32/procthread/environment-variables), 
 
 7. Once **Cookiecutter** has finished installing, you should restart your machine, so that **Cookiecutter** is recognized as a command, within your System's environment.
@@ -407,11 +405,11 @@ At this point, you need to create the container, with the module, to be pushed i
 
 9. At this point, the solution containing the template for your Python module will be created and its structure will be displayed in the **Explore Tab**, of VS Code, on the left side of the screen. If the **Explore Tab** is not open, you can open it by clicking the top-most button, in the bar on the left.
 
-    ![Create your container](images/AzureLabs-Lab313-25.png)
+    ![Screenshot that shows the Explore tab button, which resembles 2 stacked pieces of paper.](images/AzureLabs-Lab313-25.png)
 
 10. The last step for this Chapter, is to click and open the **.env file**, from within the **Explore Tab**, and add your *Container Registry* **username** and **password**. This file is ignored by git, but on building the container, will set the credentials to access the **Container Registry Service**.
 
-    ![Create your container](images/AzureLabs-Lab313-26.png)
+    ![Screenshot that shows a command window with the text Container Registry Username entered on line 1 and Container Registry Password entered on line 2.](images/AzureLabs-Lab313-26.png)
 
 ## Chapter 8 - Editing your container solution
 
@@ -675,11 +673,11 @@ You will then create the *images* folder, used by the python script to check for
     3. **Sections which you need to delete, are a highlighted red.**
     4. Be careful to delete the correct brackets, and also remove the commas.
 
-        ![Create your container](images/AzureLabs-Lab313-27.png)
+        ![Screenshot that shows code lines 12 to 15, 49 to 57, and line 67 circled in yellow. Code lines 39 to 48 and line 66 are circled in red.](images/AzureLabs-Lab313-27.png)
 
     5. The completed JSON should look like the following image (though, with your unique differences: *username/password/module name/module references*):
 
-        ![Create your container](images/AzureLabs-Lab313-28.png)
+        ![Screenshot that shows the command window with the circled red lines deleted.](images/AzureLabs-Lab313-28.png)
 
 5.  Open the file called **Dockerfile.amd64**, and substitute its content with the following:
 
@@ -735,9 +733,9 @@ You will then create the *images* folder, used by the python script to check for
     > [!WARNING]
     > If you are using your own model, you will need to change this to reflect your own models data.
 
-8.  You will now need to retrieve the **labels.txt** and **model.pb** files from the model folder, which you previous downloaded (or created from your own **Custom Vision Service**), in [Chapter 1](#chapter-1---retrieve-the-custom-vision-model). Once you have the files, place them within your solution, alongside the other files. The final result should look like the image below:
+8.  You will now need to retrieve the **labels.txt** and **model.pb** files from the model folder, which you previously downloaded (or created from your own **Custom Vision Service**), in [Chapter 1](#chapter-1---retrieve-the-custom-vision-model). Once you have the files, place them within your solution, alongside the other files. The final result should look like the image below:
 
-    ![Create your container](images/AzureLabs-Lab313-29.png)
+    ![Screenshot that shows the Explorer window. The python module folder is open.](images/AzureLabs-Lab313-29.png)
 
 ## Chapter 9 - Package the solution as a container
 
@@ -749,7 +747,7 @@ You will then create the *images* folder, used by the python script to check for
 
 2. Right-click on the file **deployment.template.json**, and click **Build IoT Edge Solution**. This build process takes quite some time (depending on your device), so be prepared to wait. After the build process finishes, a **deployment.json** file will have been created inside a new folder called **config**.
 
-    ![create deployment](images/AzureLabs-Lab313-30.png)
+    ![Screenshot that shows the config folder and deployment dot jason file circled in red.](images/AzureLabs-Lab313-30.png)
 
 3. Open the **Command Palette** again, and search for **Azure: Sign In**. Follow the prompts using your Azure Account credentials; VS Code will provide you with an option to *Copy and Open*, which will copy the device code you will soon need, and open your default web browser. When asked, paste the device code, to authenticate your machine.
 
@@ -763,11 +761,11 @@ You will then create the *images* folder, used by the python script to check for
 
 6. Your device should load, and appear. Right-click on the device name, and then click, **Create Deployment for Single Device**.
 
-    ![create deployment](images/AzureLabs-Lab313-33b.png)
+    ![Screenshot that shows the right click menu. Create Deployment for Single Device is highlighted.](images/AzureLabs-Lab313-33b.png)
 
 7. You will get a *File Explorer* prompt, where you can navigate to the **config** folder, and then select the **deployment.json** file. With that file selected, click the **Select Edge Deployment Manifest** button.
 
-    ![create deployment](images/AzureLabs-Lab313-34.png)
+    ![Screenshot that shows the File Explorer window. The deployment dot jason file is selected and Select Edge Deployment Manifest is circled in red.](images/AzureLabs-Lab313-34.png)
 
 8. At this point you have provided your **IoT Hub Service** with the manifest for it to deploy your container, as a module, from your **Azure Container Registry**, effectively deploying it to your device.
 
@@ -841,11 +839,11 @@ Navigate back to your Azure Portal, where you will create an Azure Tables Servic
 
 3. Once it has appeared, click **Storage account - blob, file, table, queue** from the list.
 
-    ![search for storage account](images/AzureLabs-Lab313-35.png)
+    ![Screenshot that shows the New window. Storage is entered in the search bar. Under Featured, Storage account blob, file, table, queue is circled in red.](images/AzureLabs-Lab313-35.png)
 
 4. The new page will provide a description of the **Storage account** Service. At the bottom left of this prompt, click the **Create** button, to create an instance of this Service.
 
-    ![create storage instance](images/AzureLabs-Lab313-36.png)
+    ![Screenshot that shows the Storage account page. The Create button at the bottom of the page is circled in red.](images/AzureLabs-Lab313-36.png)
 
 5. Once you have clicked on **Create**, a panel will appear:
 
@@ -883,7 +881,7 @@ Navigate back to your Azure Portal, where you will create an Azure Tables Servic
 
 8. Click the **Go to resource** button in the notification, and you will be taken to your new Storage Service instance overview page.
 
-    ![go to resource](images/AzureLabs-Lab313-39.png)
+    ![Screenshot that shows the Deployment succeeded notification. The Go to resource button is circled in red.](images/AzureLabs-Lab313-39.png)
 
 9. From the overview page, to the right-hand side, click **Tables**.
     
@@ -897,15 +895,15 @@ Navigate back to your Azure Portal, where you will create an Azure Tables Servic
 
 12. Once the new table has been created, you will be able to see it within the **Table Service** page (at the bottom).
 
-    ![new table created](images/AzureLabs-Lab313-42.png)  
+    ![Screenshot that shows the Table Service page with a table listed.](images/AzureLabs-Lab313-42.png)  
 
 13. Now click on **Access keys** and take a copy of the **Storage account name** and **Key** (using your Notepad), you will use these values later in this course, when creating the **Azure Function App**.
 
-    ![new table created](images/AzureLabs-Lab313-43.png) 
+    ![Screenshot that shows the Access keys page, located under Settings. The Storage account name field and Key field are circled in red.](images/AzureLabs-Lab313-43.png) 
 
 14. Using the panel on the left again, scroll to the *Table Service* section, and click **Tables** (or **Browse Tables**, in newer Portals) and take a copy of the **Table URL** (using your Notepad). You will use this value later in this course, when linking your table to your **Power BI** application.
 
-    ![new table created](images/AzureLabs-Lab313-44.png)
+    ![Screenshot that shows the Tables page, located under Table Service. The U R L for the I O T Messages Table is circled in red.](images/AzureLabs-Lab313-44.png)
 
 ## Chapter 12 - Completing the Azure Table
 
@@ -1033,37 +1031,37 @@ First, you need to create a file that will allow your Azure Function to load the
 
 9.  Click on the notification, once deployment is successful (has finished).
 
-10. Click the **Go to resource** button in the notification to explore your new Service instance. 
+10. Click the **Go to resource** button in the notification to explore your new Service instance.
 
-    ![go to resource](images/AzureLabs-Lab313-57.png)
+    ![Screenshot that shows the Deployment succeeded notification window. The Go to resource button is circled in red.](images/AzureLabs-Lab313-57.png)
 
 11. In the left side of the new panel, click the **+** (plus) icon next to *Functions*, to create a new function.
 
-    ![add new function](images/AzureLabs-Lab313-58.png)
+    ![Screenshot that shows the Function Apps page. In the menu on the left next to Functions, the plus sign is circled in red.](images/AzureLabs-Lab313-58.png)
 
 12. Within the central panel, the **Function** creation window will appear. Scroll down further, and click on **Custom function**.
 
-    ![custom function](images/AzureLabs-Lab313-59.png)
+    ![Screenshot that shows the bottom of the Function creation window. Custom function is circled in red.](images/AzureLabs-Lab313-59.png)
 
 13. Scroll down the next page, until you find **IoT Hub (Event Hub)**, then click on it.
 
-    ![custom function](images/AzureLabs-Lab313-60.png)
+    ![Screenshot that shows the I O T Hub Event Hub box circled in red.](images/AzureLabs-Lab313-60.png)
 
 14. In the **IoT Hub (Event Hub)** blade, set the **Language** to **C#** and then click on **new**.
 
-    ![custom function](images/AzureLabs-Lab313-61.png)
+    ![Screenshot that shows the New Function page. C sharp is selected in the Language field. New is circled in red next to the Event Hub connection option.](images/AzureLabs-Lab313-61.png)
 
 15. In the window that will appear, make sure that **IoT Hub** is selected and the name of the *IoT Hub* field corresponds with the name of your *IoT Hub Service* that you have created previously ([in step 8, of Chapter 3](#chapter-3---the-iot-hub-service)). Then click the **Select** button.
 
-    ![custom function](images/AzureLabs-Lab313-62.png)
+    ![Screenshot that shows the I O T hub tab open. The I O T hub and End point fields are circled in red.](images/AzureLabs-Lab313-62.png)
 
 16. Back on the **IoT Hub (Event Hub)** blade, click on **Create**.
 
-    ![custom function](images/AzureLabs-Lab313-63.png)
+    ![Screenshot that shows the New Function page. The Create button is circled in red at the bottom of the page.](images/AzureLabs-Lab313-63.png)
 
 17. You will be redirected to the function editor.
 
-    ![custom function](images/AzureLabs-Lab313-64.png)
+    ![Screenshot that shows the function editor page. The function is selected in the menu on the left.](images/AzureLabs-Lab313-64.png)
 
 18. Delete all the code in it and replace it with the following:
 
@@ -1137,27 +1135,27 @@ First, you need to create a file that will allow your Azure Function to load the
     - **storageAccountName**, with the name of the value corresponding with the name of your **Storage Account** name.
     - **storageAccountKey**, with the Key you have obtained in the Storage Service you have created previously.
 
-    ![custom function](images/AzureLabs-Lab313-65.png)
+    ![Screenshot that shows the command prompt. Lines 15, 16, 19, and 21 are circled in red.](images/AzureLabs-Lab313-65.png)
 
 20. With the code in place, click **Save**.
 
 21. Next, click the **\<** (arrow) icon, on the right-hand side of the page.
 
-    ![custom function](images/AzureLabs-Lab313-66.png)
+    ![Screenshot that shows the Function Apps page. ](images/AzureLabs-Lab313-66.png)
 
 22. A panel will slide in from the right. In that panel, click **Upload**, and a *File Browser* will appear.
 
 23. Navigate to, and click, the **project.json** file, which you created in **Notepad** previously, and then click the **Open** button. This file defines the libraries that your function will use.
 
-    ![custom function](images/AzureLabs-Lab313-67.png)
+    ![Screenshot that shows the upload button circled in red under View files. In the File Browser, project dot jason is selected.](images/AzureLabs-Lab313-67.png)
 
 24. When the file has uploaded, it will appear in the panel on the right. Clicking it will open it within the **Function** editor. It must look **exactly** the same as the next image.
 
-    ![custom function](images/AzureLabs-Lab313-68.png)
+    ![Screenshot that shows The Function Apps page. Integrate in the left menu is circled in red.](images/AzureLabs-Lab313-68.png)
 
 25. At this point it would be good to test the capability of your Function to store the message on your *Table*. On the top right side of the window, click on **Test**.
 
-    ![custom function](images/AzureLabs-Lab313-69.png)
+    ![Screenshot that shows the Function Apps page. Test at the top right and the Run button in the bottom left corner are circled in red.](images/AzureLabs-Lab313-69.png)
 
 26. Insert a message on the **Request body**, as shown in the image above, and click on **Run**. 
 
@@ -1169,7 +1167,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
 If you now open Visual Studio (**not** Visual Studio Code), you can visualize your test message result, as it will be stored in the *MessageContent* string area.
 
-![custom function](images/AzureLabs-Lab313-71.png)
+![Screenshot that shows the I O T Messages Table tab open in Microsoft Visual Studio.](images/AzureLabs-Lab313-71.png)
 
 With the Table Service and Function App in place, your Ubuntu device messages will appear in your *IoTMessages* Table. If not already running, start your device again, and you will be able to see the result messages from your device, and module, within your Table, through using Visual Studio *Cloud Explorer*.
 
@@ -1182,7 +1180,7 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 1.  Open the Microsoft Store on Windows 10 and search for **Power BI Desktop**.
 
-    ![Power BI](images/AzureLabs-Lab313-73.png)
+    ![Screenshot that shows the Microsoft Store window. Power B I is entered in the search bar and Power B I Desktop is circled in red.](images/AzureLabs-Lab313-73.png)
 
 2.  Download the application. Once it has finished downloading, open it.
 
@@ -1190,53 +1188,53 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 4.  Click on **Get Data** and then click on **More...**.
 
-    ![Power BI](images/AzureLabs-Lab313-74.png)
+    ![Screenshot that shows Power B I Desktop. More is circled in red in the Get Data drop down menu.](images/AzureLabs-Lab313-74.png)
 
 5.  Click **Azure**, **Azure Table Storage**, then click on **Connect**.
 
-    ![Power BI](images/AzureLabs-Lab313-75.png)
+    ![Screenshot that shows the Get Data window. Azure Table Storage is selected in the Azure menu option. The Connect button in the bottom right corner is circled in red.](images/AzureLabs-Lab313-75.png)
 
 6.  You will be prompted to insert the **Table URL** that you collected earlier ([in step 13 of Chapter 11](#chapter-11---create-table-service)), while creating your Table Service. After inserting the URL, delete the portion of the path referring to the Table "sub-folder" (which was IoTMessages, in this course). The final result should be as displayed in the image below. Then click on **OK**.
 
-    ![Power BI](images/AzureLabs-Lab313-76.png)
+    ![Screenshot that shows the Azure Table Storage dialog. A U R L is entered in the Account name or U R L field.](images/AzureLabs-Lab313-76.png)
 
 7.  You will be prompted to insert the **Storage Key** that you noted ([in step 11 of Chapter 11](#chapter-11---create-table-service)) earlier while creating your Table Storage. Then click on **Connect**.
 
-    ![Power BI](images/AzureLabs-Lab313-77.png)  
+    ![Screenshot that shows the Azure Table Storage Account key page.](images/AzureLabs-Lab313-77.png)  
 
 8. A **Navigator Panel** will be displayed, tick the box next to your Table and click on **Load**.
 
-    ![Power BI](images/AzureLabs-Lab313-78.png)  
+    ![Screenshot that shows the Navigator panel. The box next to the I O T Message file is checked.](images/AzureLabs-Lab313-78.png)  
 
 9. Your table has now been loaded on Power BI, but it requires a query to display the values in it. To do so, right-click on the table name located in the **FIELDS panel** at the right side of the screen. Then click on **Edit Query**.
 
-    ![Power BI](images/AzureLabs-Lab313-79.png) 
+    ![Screenshot that shows the Fields panel. Edit query is circled in red in the I O T Messages right click menu.](images/AzureLabs-Lab313-79.png) 
 
 10. A **Power Query Editor**  will open up as a new window, displaying your table. Click on the word **Record** within the *Content* column of the table, to visualize your stored content.
 
-    ![Power BI](images/AzureLabs-Lab313-80.png)    
+    ![Screenshot that shows the Power Query Editor window. Under Content, Record is circled in red.](images/AzureLabs-Lab313-80.png)    
 
 11. Click on **Into Table**, at the top-left of the window. 
 
-    ![Power BI](images/AzureLabs-Lab313-81.png)
+    ![Screenshot that shows the Convert tab in the Power Query Editor. In the top left corner, Into Table is circled in red.](images/AzureLabs-Lab313-81.png)
 
 12. Click on **Close & Apply**.
 
-    ![Power BI](images/AzureLabs-Lab313-82.png)
+    ![Screenshot that shows the home tab in the Power Query Editor. Close and Apply is circled in red.](images/AzureLabs-Lab313-82.png)
 
 13. Once it has finished loading the query, within the **FIELDS panel**, on the right side of the screen, tick the boxes corresponding to the parameters **Name** and **Value**, to visualize the **MessageContent** column content.
 
-    ![Power BI](images/AzureLabs-Lab313-83.png)
+    ![Screenshot that shows the Fields panel. Under I O T Messages, Name and Value are checked. A pop up window with Name and Value columns is circled in red.](images/AzureLabs-Lab313-83.png)
 
 14. Click on the **blue disk icon** at the top left of the window to save your work in a folder of your choice.
 
-    ![Power BI](images/AzureLabs-Lab313-84.png)
+    ![Screenshot that shows the Power B I Desktop. The blue disk in the top left corner is circled in red. The Save As dialog is open and the Save button is circled in red.](images/AzureLabs-Lab313-84.png)
 
 15. You can now click on the Publish button to upload your table to your Workspace. When prompted, click **My workspace** and click *Select*. Wait for it to display the successful result of the submission.
 
-    ![Power BI](images/AzureLabs-Lab313-85.png)
+    ![Screenshot that shows Publish circled in red. In the Publish to Power B I dialog, My workspace is selected under Select a destination.](images/AzureLabs-Lab313-85.png)
 
-    ![Power BI](images/AzureLabs-Lab313-86.png)
+    ![Screenshot that shows a notification indicating that Publishing to Power B I was a success.](images/AzureLabs-Lab313-86.png)
 
 > [!WARNING]
 > The following Chapter is HoloLens specific. Power BI is not currently available as an immersive application, however you can run the desktop version in the Windows Mixed Reality Portal (aka Cliff House), through the Desktop app.
@@ -1245,11 +1243,11 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 1. On your HoloLens, log in to the **Microsoft Store**, by tapping on its icon in the applications list.
 
-    ![Power BI HL](images/AzureLabs-Lab313-87.png)
+    ![Holo Lens display that shows a red circled around the Microsoft Store icon in a navigation window.](images/AzureLabs-Lab313-87.png)
 
 2. Search and then download the **Power BI** application.
 
-    ![Power BI HL](images/AzureLabs-Lab313-88.png)
+    ![Holo Lens display that shows the Microsoft Store page. Scroll Tool is selected and power B I is entered in the search bar.](images/AzureLabs-Lab313-88.png)
 
 3. Start **Power BI** from your applications list. 
 
@@ -1257,13 +1255,13 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 5. Once inside the app, the workspace should display by default as shown in the image below. If that does not happen, simply click on the workspace icon on the left side of the window.
 
-    ![Power BI HL](images/AzureLabs-Lab313-89.png)
+    ![Holo Lens display that shows the Microsoft Power B I page. Drag Tool is selected at the top. The workspace icon, which resembles a figure, is circled in red. I O T Edge Table under Reports is circled in red.](images/AzureLabs-Lab313-89.png)
 
 ## Your finished your IoT Hub application
 
 Congratulations, you have successfully created an IoT Hub Service, with a simulated Virtual Machine Edge device. Your device can  communicate the results of a machine learning model to an Azure Table Service, facilitated by an Azure Function App, which is read into Power BI, and visualized within a Microsoft HoloLens.
  
-![Power BI](images/AzureLabs-Lab313-00.png)
+![Holo Lens display that shows the Microsoft Power B I page.](images/AzureLabs-Lab313-00.png)
 
 ## Bonus exercises
 

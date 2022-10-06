@@ -1,0 +1,12 @@
+- name: Overview
+  href: overview.md
+- name: BoundsControl
+  href: bounds-control.md
+- name: Constraints
+  href: constraint-manager.md
+- name: ObjectManipulator
+  href: object-manipulator.md
+- name: Solvers
+  href: solvers/TOC.yml
+- name: API reference
+  href: https://aka.ms/mrtk3spmanipapi

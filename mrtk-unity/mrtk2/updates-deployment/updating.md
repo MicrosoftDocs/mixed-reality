@@ -7,7 +7,7 @@ ms.date: 04/19/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Updating from earlier versions
+# Updating from earlier versions &#8212; MRTK2
 
 - [Upgrading to a new version of MRTK](#upgrading-to-a-new-version-of-mrtk)
 - [2.3.0 to 2.4.0](#updating-230-to-240)
@@ -18,13 +18,13 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 ## Finding the current version 
 
-Follow these instructions to figure out which version of the MRTK you're currently using:
+Follow these instructions to figure out which version of MRTK you're currently using:
 
 1. Open your MRTK project in Unity
 2. Navigate to the "MixedRealityToolkit" folder in your Project window
 3. Open the file called "Version"
 
-If the file and folder above doesn't exist, you're on a newer version of the MRTK. In that case, try the following:
+If the file and folder above doesn't exist, you're on a newer version of MRTK. In that case, try the following:
 
 1. Navigate to the "Mixed Reality Toolkit Foundation" folder
 2. Click on the "package.json" to see a preview in Unity or open it with a text editor
@@ -123,7 +123,7 @@ Changing to using the Mixed Reality Feature Tool requires a one-time set of manu
     > Some Unity tools, like Unity Collab, save configuration info to the Library folder. If using a tool that does this, first copy the tool's data folder from Library before deleting, then restore it after Library is regenerated.
 1. Re-open the project in Unity
 
-Once the previous steps have been performed, run the [Mixed Reality Feature Tool](#mixed-reality-feature-tool) and import the desired version of the Mixed Reality Toolkit.
+Once the previous steps have been performed, run the [Mixed Reality Feature Tool](#mixed-reality-feature-tool) and import the desired version of Mixed Reality Toolkit.
 
 ## Updating 2.3.0 to 2.4.0
 
@@ -287,7 +287,7 @@ Please update #using statements to resolve compile errors.
 
 **IMixedRealityBoundarySystem.Contains**
 
-This method previously took in a specific, Unity-defined experimental enum. It now takes in an MRTK-defined enum that's identical to the Unity enum. This change helps prepare the MRTK for Unity's future boundary APIs.
+This method previously took in a specific, Unity-defined experimental enum. It now takes in an MRTK-defined enum that's identical to the Unity enum. This change helps prepare MRTK for Unity's future boundary APIs.
 
 **MixedRealityServiceProfileAttribute**
 
@@ -323,11 +323,11 @@ This is a breaking change and requires existing mouse device manager implementat
 
 **_Deprecated_**
 
-The `MouseInputProfile` property has been marked as obsolete and will be removed from a future version of the Microsoft Mixed Reality Toolkit. It is recommended that application code no longer use this property.
+The `MouseInputProfile` property has been marked as obsolete and will be removed from a future version of Microsoft Mixed Reality Toolkit. It is recommended that application code no longer use this property.
 
 **Interactable**
 
-The following methods and properties have been deprecated and will be removed from a future version of the Microsoft Mixed Reality Toolkit. The recommendation is to update application code per the guidance contained in the Obsolete attribute and displayed in the console.
+The following methods and properties have been deprecated and will be removed from a future version of Microsoft Mixed Reality Toolkit. The recommendation is to update application code per the guidance contained in the Obsolete attribute and displayed in the console.
 
 - `public bool Enabled`
 - `public bool FocusEnabled`
@@ -402,7 +402,7 @@ Some axes and input types have been updated in 2.1.0, especially around the Open
 
 ## Updating RC2 to 2.0.0
 
-Between the RC2 and 2.0.0 releases of the Microsoft Mixed Reality Toolkit, changes were made that may impact existing projects. This document describes those changes and how to update projects to the 2.0.0 release.
+Between the RC2 and 2.0.0 releases of Microsoft Mixed Reality Toolkit, changes were made that may impact existing projects. This document describes those changes and how to update projects to the 2.0.0 release.
 
 - [API changes](#api-changes-in-200)
 - [Assembly name changes](#assembly-name-changes-in-200)
@@ -417,9 +417,9 @@ The following public properties on the MixedRealityToolkit object have been depr
 
 - `RegisteredMixedRealityServices` no longer contains the collection of registered extensions services and data providers.
 
-To access extension services, use `MixedRealityServiceRegistry.TryGetService<T>`. To access data providers, cast the service instance to [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) and use `GetDataProvider<T>`.
+To access extension services, use `MixedRealityServiceRegistry.TryGetService<T>`. To access data providers, cast the service instance to [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and use `GetDataProvider<T>`.
 
-Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) or [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) instead for the following deprecated properties
+Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) or [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) instead for the following deprecated properties
 
 - `ActiveSystems`
 - `InputSystem`
@@ -432,10 +432,10 @@ Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRea
 
 **CoreServices**
 
-The [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) class is the replacement for the static system accessors (ex: BoundarySystem) found in the `MixedRealityToolkit` object.
+The [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class is the replacement for the static system accessors (ex: BoundarySystem) found in the `MixedRealityToolkit` object.
 
 >[!IMPORTANT]
->The `MixedRealityToolkit` system accessors have been deprecated in version 2.0.0 and will be removed in a future release of the MRTK.
+>The `MixedRealityToolkit` system accessors have been deprecated in version 2.0.0 and will be removed in a future release of MRTK.
 
 The following code example illustrates the old and the new pattern.
 
@@ -604,7 +604,7 @@ Some solver components and the SolverHandler manager class has changed to fix va
 
 **Buttons**
 
-- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) now has `DistanceSpaceMode` property set to `Local` as default. This allows buttons to be scaled while still be pressable
+- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) now has `DistanceSpaceMode` property set to `Local` as default. This allows buttons to be scaled while still be pressable
 
 **Clipping Sphere**
 
@@ -631,7 +631,7 @@ The `PointerClickHandler` class has been deprecated. The `PointerHandler` should
 
 **HoloLens clicker support**
 
-The HoloLens clicker's controller mappings have changed from being an unhanded [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) to being an unhanded [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand). To account for this, an automatic updater will run the first time you open your ControllerMapping profile. Please open any custom profiles at least once after upgrading to 2.0.0 in order to trigger this one-time migration step.
+The HoloLens clicker's controller mappings have changed from being an unhanded [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to being an unhanded [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). To account for this, an automatic updater will run the first time you open your ControllerMapping profile. Please open any custom profiles at least once after upgrading to 2.0.0 in order to trigger this one-time migration step.
 
 **InteractableHighlight**
 

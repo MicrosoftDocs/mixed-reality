@@ -7,7 +7,7 @@ ms.date: 06/18/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Sliders,
 ---
 
-# Sliders
+# Sliders &#8212; MRTK2
 
 ![Slider example](../images/slider/MRTK_UX_Slider_Main.jpg)
 

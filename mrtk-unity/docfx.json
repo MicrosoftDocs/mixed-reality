@@ -51,7 +51,8 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -85,19 +86,76 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "uhfHeaderId": "MSDocsHeader-Hololens",
+      "uhfHeaderId": "MSDocsHeader-MRTK",
       "ms.prod": "mixed-reality",
       "ms.topic": "conceptual",
       "titleSuffix": "Mixed Reality Toolkit",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/mixed-reality",
-      "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
+      "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback",
+      "searchScope": [
+        "Mixed Reality",
+        "MRTK"
+      ]
     },
     "fileMetadata": {
       "monikerRange": {
         "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
+      },
+      "breadcrumb_path": {
+        "./mrtk2/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk2/breadcrumb/toc.json",
+        "./mrtk2/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk2/breadcrumb/toc.json",
+        "./mrtk3-overview/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-overview/breadcrumb/toc.json",
+        "./mrtk3-overview/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-overview/breadcrumb/toc.json",
+        "./mrtk3-accessibility/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-accessibility/breadcrumb/toc.json",
+        "./mrtk3-accessibility/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-accessibility/breadcrumb/toc.json",
+        "./mrtk3-audio/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-audio/breadcrumb/toc.json",
+        "./mrtk3-audio/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-audio/breadcrumb/toc.json",
+        "./mrtk3-core/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-core/breadcrumb/toc.json",
+        "./mrtk3-core/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-core/breadcrumb/toc.json",
+        "./mrtk3-data/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-data/breadcrumb/toc.json",
+        "./mrtk3-data/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-data/breadcrumb/toc.json",
+        "./mrtk3-diagnostics/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-diagnostics/breadcrumb/toc.json",
+        "./mrtk3-diagnostics/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-diagnostics/breadcrumb/toc.json",
+        "./mrtk3-environment/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-environment/breadcrumb/toc.json",
+        "./mrtk3-environment/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-environment/breadcrumb/toc.json",
+        "./mrtk3-extendedassets/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-extendedassets/breadcrumb/toc.json",
+        "./mrtk3-extendedassets/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-extendedassets/breadcrumb/toc.json",
+        "./mrtk3-graphicstools/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-graphicstools/breadcrumb/toc.json",
+        "./mrtk3-graphicstools/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-graphicstools/breadcrumb/toc.json",
+        "./mrtk3-input/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-input/breadcrumb/toc.json",
+        "./mrtk3-input/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-input/breadcrumb/toc.json",
+        "./mrtk3-spatialmanipulation/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-spatialmanipulation/breadcrumb/toc.json",
+        "./mrtk3-spatialmanipulation/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-spatialmanipulation/breadcrumb/toc.json",
+        "./mrtk3-standardassets/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-standardassets/breadcrumb/toc.json",
+        "./mrtk3-standardassets/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-standardassets/breadcrumb/toc.json",
+        "./mrtk3-tools/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-tools/breadcrumb/toc.json",
+        "./mrtk3-tools/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-tools/breadcrumb/toc.json",
+        "./mrtk3-uxcomponents/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents/breadcrumb/toc.json",
+        "./mrtk3-uxcomponents/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents/breadcrumb/toc.json",
+        "./mrtk3-uxcomponents-noncanvas/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents-noncanvas/breadcrumb/toc.json",
+        "./mrtk3-uxcomponents-noncanvas/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents-noncanvas/breadcrumb/toc.json",
+        "./mrtk3-uxcore/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcore/breadcrumb/toc.json",
+        "./mrtk3-uxcore/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcore/breadcrumb/toc.json",
+        "./mrtk3-windowsspeech/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/breadcrumb/toc.json",
+        "./mrtk3-windowsspeech/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/breadcrumb/toc.json"
+      },
+      "archive_url": {
+        "./mrtk2/**/*.md": "https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html",
+        "./mrtk2/**/*.yml": "https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html"
+      },
+      "searchScope": {
+        "./mrtk2/**/*.md": ["Mixed Reality","MRTK 2"],
+        "./mrtk2/**/*.yml": ["Mixed Reality","MRTK 2"],
+        "./mrtk3*/**/*.md": ["Mixed Reality","MRTK3"],
+        "./mrtk3*/**/*.yml": ["Mixed Reality","MRTK3"]
+      },
+      "titleSuffix": {
+        "./mrtk2/**/*.md": "MRTK 2",
+        "./mrtk2/**/*.yml": "MRTK 2",
+        "./mrtk3*/**/*.md": "MRTK3",
+        "./mrtk3*/**/*yml": "MRTK3"
       }
     },
     "template": [],

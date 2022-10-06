@@ -7,15 +7,15 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, capabilities,
 ---
 
-# Detecting platform capabilities
+# Detecting platform capabilities &#8212; MRTK2
 
-A common question asked of the MRTK involves knowing which specific device (ex: Microsoft HoloLens 2) is being
+A common question asked of MRTK involves knowing which specific device (ex: Microsoft HoloLens 2) is being
 used to run an application. Identifying the exact hardware can be challenging on different platforms. Instead, the MRTK
 provides a way to identify specific capabilities at runtime, (e.g. if the current device endpoint supports articulated hands).
 
 ## Capabilities
 
-The Mixed Reality Toolkit provides the [`MixedRealityCapability`](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability)
+The Mixed Reality Toolkit provides the [`MixedRealityCapability`](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 enumeration, which defines a set of capabilities for which an application can query at runtime.
 
 ### Input system capabilities
@@ -67,5 +67,5 @@ if (capabilityCheck != null)
 
 ## See also
 
-- [IMixedRealityCapabilityCheck API documentation](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
-- [MixedRealityCapability enum documentation](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability)
+- [IMixedRealityCapabilityCheck API documentation](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [MixedRealityCapability enum documentation](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)

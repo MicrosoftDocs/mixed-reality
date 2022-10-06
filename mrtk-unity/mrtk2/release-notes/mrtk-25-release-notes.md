@@ -117,7 +117,7 @@ interface, which queries for nearby objects using a cone. The DefaultHoloLens2In
 ### TestUtilities package
 
 There is now a package (Microsoft.MixedReality.Toolkit.Unity.TestUtilities.2.5.0.unitypackage) that contains the
-PlayMode and TestMode test infrastructure that the MRTK uses to create end-to-end tests. This infrastructure has
+PlayMode and TestMode test infrastructure that MRTK uses to create end-to-end tests. This infrastructure has
 been extremely handy for the MRTK team itself, and we're excited to have consumers use this to add test coverage
 to their own projects.
 
@@ -228,7 +228,7 @@ Updated pulse shader example for the spatial mesh to match HoloLens 2's shell be
 
 MRTK now comes with an [elastic simulation system](../features/experimental/elastic-system.md) that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
 
-Currently the following MRTK components supporting the [elastics manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) can leverage elastics functionality:
+Currently the following MRTK components supporting the [elastics manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can leverage elastics functionality:
 
 - [Bounds control](../features/ux-building-blocks/bounds-control.md#elastics-experimental)
 - [Object manipulator](../features/ux-building-blocks/object-manipulator.md#elastics-experimental)

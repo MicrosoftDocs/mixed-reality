@@ -3,10 +3,10 @@ title: Welcome to the Mixed Reality Feature Tool
 description: Learn the basics of the MR Feature Tool for HoloLens and VR development.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 03/04/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.localizationpriority: high
-keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+keywords: up-to-date, tools, get started, basics, unity, toolkit, mixed reality headset, windows mixed reality headset, installation, Windows, HoloLens, openxr, Mixed Reality Feature Tool, Feature Tool
 ---
 
 # Welcome to the Mixed Reality Feature Tool
@@ -22,11 +22,10 @@ The Mixed Reality Feature Tool is a new way for developers to discover, update, 
 
 Before you can run the Mixed Reality Feature Tool, you'll need:
 
-* [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
-* [Windows 10](https://www.microsoft.com/software-download/windows10ISO)
+* Windows 10 or 11
 
 > [!NOTE]
-> The Mixed Reality Feature Tool currently only runs on Windows, but MacOS support is coming soon!
+> The Mixed Reality Feature Tool currently only runs on Windows.
 
 ## Download
 
@@ -41,18 +40,12 @@ Once you have your environment set up:
 
 ## Changes in this release
 
-Version 1.0.2103 Beta includes the following fixes:
+Version 1.0.2209.0-Preview includes the following improvements:
 
-* Improvements to download error detection.
-* Updates on how manifests are written to avoid failure to update correctly.
-* Escpaing has been removed from file paths in the project manifest.
-
-The following features have been added in this release:
-
-* The feature catalog is now cached. To check for new features and updates, please use the refresh button in Discovery.
-* Move project selection from the Import step to before Discovery.
-* Available packages are filtered by the project's specified Unity version.
-* The discovery view now displays currently installed packages.
+* Added 'show preview features' option to the discover features view
+* Updated to .NET 6
+* Consolidated the app and .NET 6 runtime into a single executable for easier distribution
+* Fixed an issue where a prompt for downgrading existing package versions shows up when unnecessary
 
 ## 1. Getting started
 
@@ -80,21 +73,30 @@ When you have located your project's folder, click the Open button to return to 
 > [!IMPORTANT]
 > The Mixed Reality Feature Tool performs validation to ensure that it has been directed to a Unity project folder. The folder must contain `Assets`, `Packages` and `Project Settings` folders.
 
-## 3. Discovering and acquiring feature packages
+Once the project has been selected, you can
 
-> [!NOTE]
-> Version 1.0.2103 Beta now caches the feature catalog contents whenever the server is accessed. This change enables fast access to available features, at the expense of displaying the absolute latest data. To update the catalog, please use the **Refresh** button.
+- **Restore Features**: download the Feature Tool shipped packages listed in the project manifest to **Packages/MixedReality** if they are not present there already. The feature is similar to `nuget restore` in concept. Typically you only need to perform this operation if you have a project (with Feature Tool packages) cloned from a repo configured to ignore tarball files. You can close the Feature Tool after restoring if you do not need to get new packages.
+
+**and/or**
+
+- **Discover Features**: proceed to the next page to select the packages you want to add to your project.
+
+## 3. Discovering and acquiring feature packages
 
 Features are grouped by category to make things easier to find. For example, the **Mixed Reality Toolkit** category has several features for you to choose from:
 
 ![Discovery and acquisition](images/FeatureToolDiscovery.png)
 
+> [!NOTE]
+> If you will be using the MRTK3 public preview release in your project, you must enable `Show preview releases` as shown below in the red box.
+>
+> ![Recommended Feature Settings for MRTK3](images/FeatureTool-Show-Preview.png)
+
 When the Mixed Reality Feature Tool recognizes previously imported feature(s), it displays a notification message by each.
 
 ![Notification of imported feature](images/feature-tool-imported-note.png)
 
-
-Once you've made your choices, select **Get features** to fetch all the required packages from the catalog. For more information, please see [discovering and acquiring features](discovering-features.md).
+Once you've made your choices, select **Get features** to download all the required packages from the catalog. For more information, please see [discovering and acquiring features](discovering-features.md).
 
 ## 4. Importing feature packages
 

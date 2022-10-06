@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Gestures,
 ---
 
-# Gestures
+# Gestures &#8212; MRTK2
 
 Gestures are input events based on human hands. There are two types of devices that raise gesture input events in MRTK:
 
@@ -15,11 +15,11 @@ Gestures are input events based on human hands. There are two types of devices t
 
   For more information on HoloLens gestures see the [Windows Mixed Reality Gestures documentation](/windows/mixed-reality/gestures).
 
-  [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) wraps the [Unity XR.WSA.Input.GestureRecognizer](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.GestureRecognizer.html) to consume Unity's gesture events from HoloLens devices.
+  [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) wraps the [Unity XR.WSA.Input.GestureRecognizer](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.GestureRecognizer.html) to consume Unity's gesture events from HoloLens devices.
 
 - Touch screen devices.
 
-  [`UnityTouchController`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput) wraps the [Unity Touch class](https://docs.unity3d.com/ScriptReference/Touch.html) that supports physical touch screens.
+  [`UnityTouchController`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) wraps the [Unity Touch class](https://docs.unity3d.com/ScriptReference/Touch.html) that supports physical touch screens.
 
 Both of these input sources use the _Gesture Settings_ profile to translate Unity's Touch and Gesture events respectively into MRTK's [Input Actions](input-actions.md). This profile can be found under the _Input System Settings_ profile.
 
@@ -27,7 +27,7 @@ Both of these input sources use the _Gesture Settings_ profile to translate Unit
 
 ## Gesture events
 
-Gesture events are received by implementing one of the gesture handler interfaces: [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) or [`IMixedRealityGestureHandler<TYPE>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) (see table of [event handlers](input-events.md)).
+Gesture events are received by implementing one of the gesture handler interfaces: [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) or [`IMixedRealityGestureHandler<TYPE>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) (see table of [event handlers](input-events.md)).
 
 See [Example Scene](#example-scene) for an example implementation of a gesture event handler.
 
@@ -47,7 +47,7 @@ There are two principal chains of events, depending on user input:
 - "Hold":
     1. Hold tap:
         - start _Manipulation_
-    1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration):
+    1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true):
         - start _Hold_
     1. Release tap:
         - complete _Hold_
@@ -56,9 +56,9 @@ There are two principal chains of events, depending on user input:
 - "Move":
     1. Hold tap:
         - start _Manipulation_
-    1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration):
+    1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true):
         - start _Hold_
-    1. Move hand beyond [NavigationStartThreshold](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.NavigationStartThreshold):
+    1. Move hand beyond [NavigationStartThreshold](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.NavigationStartThreshold?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true):
         - cancel _Hold_
         - start _Navigation_
     1. Release tap:
