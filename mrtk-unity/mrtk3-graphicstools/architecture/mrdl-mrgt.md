@@ -53,7 +53,7 @@ The interactive playground below shows how MRDL components are used for the MRTK
   }
 </style>
 <div class="playground">
-  <iframe loading="lazy" height="100%" width="100%" src="https://playground.babylonjs.com/full.html/#KA845G#1"></iframe>
+  <iframe loading="lazy" height="100%" width="100%" src="https://playground.babylonjs.com/#KA845G#1"></iframe>
 </div>
 
 ### Back plate
