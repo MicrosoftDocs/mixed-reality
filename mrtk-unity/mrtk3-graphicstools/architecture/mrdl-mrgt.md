@@ -45,6 +45,17 @@ Some models live in the *Runtime/Models* folder. These models are used for non-c
 
 Graphics Tools supports two user interface creation methods, UnityUI and traditional game objects. It's recommended to look at the [sample assets](../features/samples/unity-ui.md), however, the list below can used as a reference.
 
+The interactive playground below shows how MRDL components are used for the MRTK3 button
+
+<style>
+  .playground {
+    height: 600px;
+  }
+</style>
+<div class="playground">
+  <iframe loading="lazy" height="100%" width="100%" src="https://playground.babylonjs.com/full.html/#KA845G#1"></iframe>
+</div>
+
 ### Back plate
 
 Provides an opaque backing for user interface elements to be placed on.
