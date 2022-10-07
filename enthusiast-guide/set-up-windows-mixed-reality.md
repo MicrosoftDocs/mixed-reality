@@ -98,7 +98,7 @@ You can enable Cortana commands in mixed reality, which lets you use speech comm
 
 ## Set up your audio headset
 
-Modern Windows Mixed Reality headsets often include speakers and microphones, but if you are using an older headset, you may need to use an audio headset with both microphone and headphones. You can [connect a Bluetooth headset](https://support.microsoft.com/en-us/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242) or connect a cabled headset by plugging it into your headset's 3.5-mm audio jack. The 3.5-mm audio jack for your headset is located on the underside of the headset visor or at the end of a short audio cable attached to the headset visor, depending on the headset model.
+Modern Windows Mixed Reality headsets often include speakers and microphones, but if you are using an older headset, you may need to use an audio headset with microphone(s) and speakers. You can [connect a Bluetooth headset](https://support.microsoft.com/en-us/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242) or connect a cabled headset by plugging it into your headset's 3.5-mm audio jack. The 3.5-mm audio jack for your headset is located on the underside of the headset visor or at the end of a short audio cable attached to the headset visor, depending on the headset model.
 
 ## Adjusting your headset's display settings
 
