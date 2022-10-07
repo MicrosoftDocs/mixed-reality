@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Manipulation,
 ---
 
-# Manipulation handler
+# Manipulation handler &#8212; MRTK2
 
 ![Manipulation handler](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 

@@ -50,7 +50,7 @@ It’s a little more complicated if you need to add a NuGet package with WinRT s
 
 Windows SDK dlls from the previous section are handled by the OS. NuGet’s dlls must be managed by the code in your module. We recommend adding code to download them, copying into binaries folder, and load into the process memory at the module startup.
 
-At the first step, you should add a packages.config (https://docs.microsoft.com/nuget/reference/packages-config) into the root folder of your module. There you should add all packages you want to download, including all their dependencies. Here I added Microsoft.MixedReality.QR as a primary payload and two others as dependencies to it. The format of that file is same as in Visual Studio:
+At the first step, you should add a packages.config (/nuget/reference/packages-config) into the root folder of your module. There you should add all packages you want to download, including all their dependencies. Here I added Microsoft.MixedReality.QR as a primary payload and two others as dependencies to it. The format of that file is same as in Visual Studio:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

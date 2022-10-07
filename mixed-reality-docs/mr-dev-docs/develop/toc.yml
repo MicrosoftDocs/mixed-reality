@@ -44,7 +44,7 @@
       - name: HoloLens 2 tutorials
         items:
           - name: HoloLens 2 Fundamentals Tutorials
-            href: /learn/paths/beginner-hololens-2-tutorials/
+            href: /training/paths/beginner-hololens-2-tutorials/
           - name: Multi-user capabilities tutorials
             items:
               - name: 1. Introduction
@@ -143,6 +143,8 @@
         items:
           - name: Hand and eye tracking
             href: unity/hand-eye-in-unity.md
+          - name: Extended Eye Tracking SDK for Unity Development
+            href: unity/extended-eye-tracking-unity.md
           - name: Motion controllers
             href: unity/motion-controllers-in-unity.md
           - name: HP Reverb G2 controllers
@@ -254,7 +256,7 @@
   - name: Tutorials
     items:
       - name: HoloLens 2 Mixed Reality Production
-        href: https://www.unrealengine.com/onlinelearning-courses/hololens-2-mixed-reality-production-for-unreal-engine
+        href: https://dev.epicgames.com/community/learning/courses/M97/hololens-2-mixed-reality-production-for-unreal-engine/orLB/introduction-to-hololens-2-mixed-reality-production-for-unreal-engine
       - name: Build a chess app with MRTK UX Tools
         items:
           - name: Getting started
@@ -373,6 +375,8 @@
                 href: native/keyboard-mouse-and-controller-input-cpp.md
               - name: Head and eye gaze
                 href: native/gaze-in-directx.md
+              - name: Extended Eye Tracking SDK for Native Development
+                href: native/extended-eye-tracking-native.md
               - name: Hands and motion controllers
                 href: native/hands-and-motion-controllers-in-directx.md
               - name: Voice input

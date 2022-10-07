@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Object Manipulation,
 ---
 
-# Object manipulator
+# Object manipulator &#8212; MRTK2
 
 ![Object manipulator](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 
@@ -15,7 +15,7 @@ The *ObjectManipulator* is the new component for manipulation behaviour, previou
 
 The *ObjectManipulator* script makes an object movable, scalable, and rotatable using one or two hands. The object manipulator can be configured to control how the object will respond to various inputs. The script should work with most forms of interaction, such as HoloLens 2 articulated hand, HoloLens 2 hand rays, HoloLens 1 gaze and gestures and immersive headset motion controller input.
 
-> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Using-Object-Manipulator-in-Mixed-Reality-Toolkit/player]
+> [!VIDEO https://learn.microsoft.com/shows/Docs-Mixed-Reality/Using-Object-Manipulator-in-Mixed-Reality-Toolkit/player]
 
 ## How to use the object manipulator
 

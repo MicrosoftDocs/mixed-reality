@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Diagnostics system overview
+# Diagnostics system overview &#8212; MRTK2
 
 The Mixed Reality Toolkit Diagnostic System provides diagnostic tools that run within the application to enable analysis of application issues.
 
@@ -25,7 +25,7 @@ There are two key steps to start using the Diagnostic System.
 
 ### Enable diagnostics
 
-The diagnostics system is managed by the MixedRealityToolkit object (or another [service registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) component).
+The diagnostics system is managed by the MixedRealityToolkit object (or another [service registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component).
 
 The following steps presume use of the MixedRealityToolkit object. Steps required for other service registrars may be different.
 
@@ -39,7 +39,7 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
     ![Select the Diagnostics System Implementation](../images/diagnostics/DiagnosticsSelectSystemType.png)
 
 > [!NOTE]
-> Users of the default profile, `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles), will have the diagnostics system pre-configured to use the [`MixedRealityDiagnosticsSystem`](xref:Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem) object.
+> Users of the default profile, `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles), will have the diagnostics system pre-configured to use the [`MixedRealityDiagnosticsSystem`](xref:Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) object.
 
 ### Configure diagnostic options
 
@@ -52,6 +52,6 @@ The diagnostics system uses a configuration profile to specify which components 
 
 ## See also
 
-- [Diagnostics API documentation](xref:Microsoft.MixedReality.Toolkit.Diagnostics)
+- [Diagnostics API documentation](xref:Microsoft.MixedReality.Toolkit.Diagnostics?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 - [Configuring the Diagnostics System](configuring-diagnostics.md)
 - [Using the Visual Profiler](using-visual-profiler.md)

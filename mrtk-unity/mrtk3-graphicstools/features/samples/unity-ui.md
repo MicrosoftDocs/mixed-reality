@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, UnityUI
 ---
 
-# UnityUI Elements
+# UnityUI Elements &#8212; MRTK3
 
 UnityUI elements provide interaction models that are intuitive and easily readable for the user.
 
@@ -28,8 +28,8 @@ In the above example, from top to bottom there are:
 
 Button and slider templates are also heavily featured in the Mixed Reality Toolkit. For more details have a look at these pages:
 
-* [Sliders in the MRTK](/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/sliders)
-* [Buttons in the MRTK](/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button)
+* [Sliders in the MRTK](../../../mrtk2/features/ux-building-blocks/sliders.md)
+* [Buttons in the MRTK](../../../mrtk2/features/ux-building-blocks/button.md)
 
 ## Masking Options
 

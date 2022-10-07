@@ -98,8 +98,10 @@ If you see "HoloLens Sensors" with a yellow exclamation mark in Device Manager, 
 
 ## The images shown on the headset's displays appear warped or incorrectly scaled.
 
-This issue is likely caused by your headset's or graphics cards drivers or Windows software experiencing problems with adjusting the displayed content to appear correctly on your headset. To fix this:
+This issue is likely caused by your headset's or graphics cards drivers or Windows software experiencing problems with adjusting the displayed content to appear correctly on your headset. You can try the following to fix the issue:
 
+* Disable automatic upscaling in Mixed Reality.
+  * Go to **Settings > Mixed Reality > Headset display > Resolution** and make sure the "best quality" option is selected.
 * Turn off any features that may allow your PC to use a pixel resolution higher than your display. These features are present in your graphics card manufacturer's software. You can access this software by doing the following:
     * Right click on your desktop background > Select "Show more options" (only required for Windows 11) > Select the name of the application matching the name of your graphics card's manufacturer.  
 * Reinstall your headset drivers.
@@ -116,13 +118,15 @@ This issue is likely caused by your headset's or graphics cards drivers or Windo
     1 Go to Device Manager.
     2 Expand the Display adapters section. 
     3 Right click and uninstall your graphics card's drivers from your PC, along with the driver software.
-* Completely uninstall Windows Mixed Reality and its related components.
+    4 Reinstall your graphics driver by following your hardware vendor's instructions.
+* Completely reinstall Windows Mixed Reality and its related components.
     1 Go to **Settings > Mixed reality > Uninstall**.
     2 Uninstall Windows Mixed Reality. Follow any instructions if shown.
     3 Go to **Settings > Apps** and locate Mixed Reality Portal. 
     4 Select Mixed Reality Portal and uninstall.
     5 Open File Explorer and navigate to the Windows folder. Go to **This PC > Devices and Drives > Windows (C:) > Windows**.
     6 If the folder exists, right click on the **Holoshell** folder and delete it.
+    7 Install Mixed Reality Portal from the Microsoft Store.
 
 ## My Mixed Reality home environment displays double vision and is jittery or stutters when I move my head.
 
@@ -151,8 +155,9 @@ Your PC may not be able to render content to the headset fast enough, resulting 
 
 The tracking system is having issues with tracking your playspace. To fix:
 
-1 Make sure the room has enough light.
-2 Set up your room boundary in the Mixed Reality Portal again.
-3 If it still doesn't work, go to **Settings > Mixed Reality > Environment** to clear your environment data.
-4 Set up your room boundary in the Mixed Reality Portal.
-5 If the problem persists, contact [customer support](https://support.microsoft.com/).
+1. Open Task Manager to make sure that your PC has enough compute resources. You should have 80% of CPU free, 400 MB of RAM, and disk IO should be below 80%.
+2. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-gpu-driver).
+3. Make sure the room has enough light.
+4. Unplug your headset, close Mixed Reality Portal, and plug the headset back in.
+5. Restart your PC.
+6. If the problem persists, contact [customer support](https://support.microsoft.com/).

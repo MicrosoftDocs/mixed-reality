@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Input animation file format
+# Input animation file format &#8212; MRTK2
 
 ## Overall structure
 

@@ -1,6 +1,6 @@
 ---
 title: Contributing instructions
-description: Learn how to contribute to the Mixed Reality developer docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
+description: Learn how to contribute to the Mixed Reality developer documentation using GitHub-flavored Markdown. 
 author: qianw211
 ms.author: qianwen
 ms.date: 11/30/2021
@@ -9,9 +9,9 @@ ms.topic: article
 
 # Contributing to Mixed Reality developer documentation
 
-Welcome to the [public repo for Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** 
+Welcome to the [public repo for Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.**
 
-The Mixed Reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at </windows/mixed-reality>. 
+The Mixed Reality docs are now hosted on Microsoft Learn, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at `/windows/mixed-reality`.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
@@ -35,6 +35,7 @@ If you don't already have one, you'll need to [create a GitHub account](https://
 >If you're a Microsoft employee, link your GitHub account to your Microsoft alias on the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/). Join the **"Microsoft"** and **"MicrosoftDocs"** organizations.
 
 When setting up your GitHub account, we also recommend these security precautions:
+
 - Create a [strong password for your Github account](https://github.com/settings/admin).
 - Enable [two-factor authentication](https://github.com/settings/two_factor_authentication/configure).
 - Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
@@ -60,7 +61,7 @@ Use the following workflow to make updates to *an existing article* via GitHub i
    * **author**: If you're the primary owner of the page, add your GitHub alias here.
    * **ms.author**: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
    * **ms.date**: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
-   * **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere. 
+   * **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere.
 5. When you've completed your article edits, scroll down and select **Propose file change**.
 6. On the next page, select **Create pull request** to merge your automatically created branch into 'master.'
 7. Repeat the steps above for the next article you want to edit.
@@ -79,6 +80,9 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
             "redirect_url": "new-article#section-about-old-topic",
             "redirect_document_id": false
         },
+    ...
+    ]
+}
 ```
 
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `mixed-reality-docs` and ends with `.md`.
@@ -130,11 +134,11 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for Microsoft Learn](/contribute/markdown-reference)
 
 ### Adding tables
 
-Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
+Because of the way Microsoft technical documentation styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
 
 The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
@@ -154,12 +158,12 @@ You’ll need to upload your images to the "mixed-reality-docs/images" folder in
 
 ## Previewing your work
 
-While editing in GitHub via a web browser, you can select the **Preview** tab near the top of the page to preview your work before committing. 
+While editing in GitHub via a web browser, you can select the **Preview** tab near the top of the page to preview your work before committing.
 
 >[!NOTE]
->Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
+>Previewing your staged changes is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://review.docs.microsoft.com/windows/mixed-reality?branch=main. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at /windows/mixed-reality?branch=main. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 

@@ -1,6 +1,6 @@
 ---
-title: MRTK-Unity Developer Documentation
-description: Learn about the Mixed Reality Toolkit for Unity.
+title: MRTK2-Unity Developer Documentation
+description: Learn about Mixed Reality Toolkit for Unity.
 author: polar-kev
 ms.author: alexturn
 ms.date: 11/10/2021
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 ---
 
-# What is the Mixed Reality Toolkit
+# What is Mixed Reality Toolkit 2?
 
 ![Mixed Reality Toolkit](features/images/Logo_MRTK_Unity_Banner.png)
 
@@ -26,10 +26,10 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 ::: moniker range=">= mrtkunity-2021-05"
 | Platform | Supported Devices |
 |---|---|
-| OpenXR (Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
-| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
-| Oculus (Unity 2019.3 or newer) | Oculus Quest |
-| OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
+| OpenXR (Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets <br> Meta Quest <br> Device running on SteamVR via OpenXR <br>  |
+| Windows Mixed Reality (Legacy) | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
+| Oculus (Unity 2019.3 or newer) | Meta Quest |
+| OpenVR (Legacy) |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
 | Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
 | Mobile | iOS and Android |
 ::: moniker-end
@@ -45,7 +45,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 ::: moniker-end
 
 > [!NOTE]
-> We have introduced the public preview of MRTK3, the next chapter of MRTK. For more information, please go to the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
+> We have introduced the public preview of MRTK3, the next chapter of MRTK. For more information, please go to the [MRTK3 documentation](../mrtk3-overview/index.md).
 
 ## Getting started with MRTK
 
@@ -340,9 +340,9 @@ See [Examples Hub README page](features/example-scenes/example-hub.md) to learn 
 
 ## Sample apps made with MRTK
 
-| [![Periodic Table of the Elements](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![Galaxy Explorer](features/images/MRTK_GalaxyExplorer.jpg)](/windows/mixed-reality/galaxy-explorer-update)| [![Surfaces sample app](features/images/MRDL_Surfaces.jpg)](/windows/mixed-reality/sampleapp-surfaces)|
+| [![Periodic Table of the Elements](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![Galaxy Explorer](features/images/MRTK_GalaxyExplorer.jpg)](/windows/mixed-reality/develop/unity/galaxy-explorer-update)| [![Surfaces sample app](features/images/MRDL_Surfaces.jpg)](/windows/mixed-reality/sampleapp-surfaces)|
 |:--- | :--- | :--- |
-| [Periodic Table of the Elements](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) is an open-source sample app which demonstrates how to use MRTK's input system and building blocks to create an app experience for HoloLens and Immersive headsets. Read the porting story: [Bringing the Periodic Table of the Elements app to HoloLens 2 with MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) is an open-source sample app that was originally developed in March 2016 as part of the HoloLens 'Share Your Idea' campaign. Galaxy Explorer has been updated with new features for HoloLens 2, using MRTK v2. Read the story: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) is an open-source sample app for HoloLens 2 which explores how we can create a tactile sensation with visual, audio, and fully articulated hand-tracking. Check out Microsoft MR Dev Days session [Learnings from the Surfaces app](/shows/Mixed-Reality/Learnings-from-the-MR-Surfaces-App) for the detailed design and development story. |
+| [Periodic Table of the Elements](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) is an open-source sample app which demonstrates how to use MRTK's input system and building blocks to create an app experience for HoloLens and Immersive headsets. Read the porting story: [Bringing the Periodic Table of the Elements app to HoloLens 2 with MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) is an open-source sample app that was originally developed in March 2016 as part of the HoloLens 'Share Your Idea' campaign. Galaxy Explorer has been updated with new features for HoloLens 2, using MRTK v2. Read the story: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/develop/unity/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) is an open-source sample app for HoloLens 2 which explores how we can create a tactile sensation with visual, audio, and fully articulated hand-tracking. Check out Microsoft MR Dev Days session [Learnings from the Surfaces app](/shows/Mixed-Reality/Learnings-from-the-MR-Surfaces-App) for the detailed design and development story. |
 
 ## Session videos from Mixed Reality Dev Days 2020
 
@@ -365,7 +365,7 @@ See [Mixed Reality Dev Days](/windows/mixed-reality/mr-dev-days-sessions) to exp
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Useful resources on the Mixed Reality Dev Center
+## Useful resources on Mixed Reality Dev Center
 
 | ![Discover](features/images/mrdevcenter/icon-discover.png) [Discover](/windows/mixed-reality/)| ![Design](features/images/mrdevcenter/icon-design.png) [Design](/windows/mixed-reality/design)| ![Develop](features/images/mrdevcenter/icon-develop.png) [Develop](/windows/mixed-reality/development)| ![Distribute)](features/images/mrdevcenter/icon-distribute.png) [Distribute](/windows/mixed-reality/implementing-3d-app-launchers)|
 | :--------------------- | :----------------- | :------------------ | :------------------------ |

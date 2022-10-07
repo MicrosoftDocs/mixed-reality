@@ -18,7 +18,7 @@ After you have imported the tutorial assets your Project window should look simi
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../images/mr-learning-asa/asa-02-section3-step1-2-OpenXR.png)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/training/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
 
 # [Unity 2020 + Windows XR Plugin](#tab/winxr)
 
@@ -40,7 +40,7 @@ After you have imported the tutorial assets your Project window should look simi
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../images/mr-learning-asa/asa-02-section3-step1-2-XRSDK.PNG)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/training/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
 
 # [Legacy WSA](#tab/wsa)
 
@@ -65,4 +65,4 @@ After you have imported the tutorial assets your Project window should look simi
 > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/training/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.

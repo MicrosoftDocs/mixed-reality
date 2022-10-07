@@ -50,7 +50,7 @@ Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holog
     <tr>
         <td><strong>Source</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens first Gen</strong></a></td>
-        <td><a href="/hololens/hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>Immersive Headsets</strong></td>
     </tr>
      <tr>

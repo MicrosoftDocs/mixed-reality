@@ -55,7 +55,7 @@ Below is an example budget for your experience. Performance isn't a single point
 
 **Complexity of assets**
 * How many triangles / polygons?
-* How complex is the shader? When using the Mixed Reality Toolkit, it's recommended to use the [Mixed Reality Toolkit Standard shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) to reduce shader complexity.
+* How complex is the shader? When using the Mixed Reality Toolkit, it's recommended to use the [Mixed Reality Toolkit Standard shader](/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader) to reduce shader complexity.
 
 Both the developers and artists have to consider the capabilities of the device and the graphics engine. Microsoft HoloLens has all of the computational and graphics built into the device. It shares the capabilities developers would find on a mobile platform.
 

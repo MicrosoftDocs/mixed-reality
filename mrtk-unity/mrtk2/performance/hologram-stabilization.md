@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Environment tracking, TMP,
 ---
 
-# Hologram stabilization
+# Hologram stabilization &#8212; MRTK2
 
 ## Performance
 
@@ -19,7 +19,7 @@ Stable holographic rendering heavily relies on head-pose tracking by the platfor
 
 ## Windows Mixed Reality
 
-The Windows Mixed Reality platform provides some [reference material](/windows/mixed-reality/hologram-stability) for stabilizing holograms on the platform. There are a handful of key tools though that developers can utilize to improve the hologram visual experience for users.
+The Windows Mixed Reality platform provides some [reference material](/windows/mixed-reality/develop/advanced-concepts/hologram-stability) for stabilizing holograms on the platform. There are a handful of key tools though that developers can utilize to improve the hologram visual experience for users.
 
 ### Depth buffer sharing
 
@@ -31,7 +31,7 @@ At the end of rendering a frame, the Windows Mixed Reality platform takes the co
 
 #### Per-pixel vs stabilization plane LSR
 
-Depending on the device endpoint and OS version running on a Windows Mixed Reality device, the Late-Stage Reprojection algorithm will either be performed per-pixel or via a [stabilization plane](/windows/mixed-reality/hologram-stability#stabilization-plane).
+Depending on the device endpoint and OS version running on a Windows Mixed Reality device, the Late-Stage Reprojection algorithm will either be performed per-pixel or via a [stabilization plane](/windows/mixed-reality/develop/advanced-concepts/hologram-stability).
 
 ##### Per-pixel depth-based
 
@@ -104,9 +104,11 @@ If the above methods do not work for a given scenario (i.e using Unity UI), it i
 
 ### WorldAnchors (HoloLens)
 
-Along with ensuring the correct configurations are met to ensure visual stability, it is important to ensure holograms remain stable at their correct physical locations. To inform the platform on important locations in a physical space, developers can leverage [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) on GameObjects that need to stay in one place. A [WorldAnchor](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) is a component added to a GameObject that takes absolute control over that object's transform.
+Along with ensuring the correct configurations are met to ensure visual stability, it is important to ensure holograms remain stable at their correct physical locations. To inform the platform on important locations in a physical space, developers can leverage [WorldAnchors](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.WorldAnchor.html) on GameObjects that need to stay in one place. A [WorldAnchor](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.WorldAnchor.html) is a component added to a GameObject that takes absolute control over that object's transform.
 
-Devices such as HoloLens are constantly scanning and learning about the environment. Thus, as the HoloLens tracks movement & position in space, its estimates will be updated and the [Unity coordinate system adjusted](/windows/mixed-reality/coordinate-systems-in-unity). For example, if a GameObject is placed 1m from the camera at start, as the HoloLens tracks the environment, it may realize the physical point where the GameObject is located is actually 1.1m away. This would result in the hologram drifting. Applying a WorldAnchor to a GameObject will enable the anchor to control the object's transform so that the object will remain at the correct physical location (i.e update to 1.1m away instead of 1m at runtime). To persist [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) across app sessions, developers can employ the [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) to [save and load WorldAnchors](/windows/mixed-reality/persistence-in-unity).
+Devices such as HoloLens are constantly scanning and learning about the environment. Thus, as the HoloLens tracks movement & position in space, its estimates will be updated and the [Unity coordinate system adjusted](/windows/mixed-reality/coordinate-systems-in-unity).
+For example, if a GameObject is placed 1m from the camera at start, as the HoloLens tracks the environment, it may realize the physical point where the GameObject is located is actually 1.1m away. This would result in the hologram drifting. Applying a WorldAnchor to a GameObject will enable the anchor to control the object's transform so that the object will remain at the correct physical location (i.e. update to 1.1m away instead of 1m at runtime).
+To persist [WorldAnchors](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.WorldAnchor.html) across app sessions, developers can employ the [WorldAnchorStore](https://docs.unity3d.com/2019.2/Documentation/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) to [save and load WorldAnchors](/windows/mixed-reality/persistence-in-unity).
 
 > [!NOTE]
 > Once a WorldAnchor component has been added to a GameObject, it is not possible to modify that GameObject's transform (i.e transform.position = x). A developer must remove the WorldAnchor to edit the transform.
@@ -134,7 +136,7 @@ If you want an alternative to manually working with Anchors, check out the Micro
 
 - [Performance](../performance/perf-getting-started.md)
 - [Environment Considerations for HoloLens](/windows/mixed-reality/environment-considerations-for-hololens)
-- [Hologram Stability Windows Mixed Reality](/windows/mixed-reality/hologram-stability)
+- [Hologram Stability Windows Mixed Reality](/windows/mixed-reality/develop/advanced-concepts/hologram-stability)
 - [Focus point in Unity](/windows/mixed-reality/focus-point-in-unity)
 - [Coordinate systems in Unity](/windows/mixed-reality/coordinate-systems-in-unity)
 - [Persistence in Unity](/windows/mixed-reality/persistence-in-unity)

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Events,
 ---
 
-# Input events
+# Input events &#8212; MRTK2
 
 The list below outlines all available input event interfaces to be implemented by a custom MonoBehaviour component. These interfaces will be called by the MRTK input system to handle custom app logic based on user input interactions. [Pointer input events](pointers.md#pointer-event-interfaces) are handled slightly differently than the standard input event types below.
 
@@ -16,17 +16,17 @@ The list below outlines all available input event interfaces to be implemented b
 
 | Handler | Events | Description |
 | --- | :---: | --- |
-| [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler) | Source Detected / Lost | Raised when an input source is detected/lost, like when an articulated hand is detected or lost track of. |
-| [`IMixedRealitySourcePoseHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourcePoseHandler) | Source Pose Changed | Raised on source pose changes. The source pose represents the general pose of the input source. Specific poses, like the grip or pointer pose in a six DOF controller, can be obtained via `IMixedRealityInputHandler<MixedRealityPose>`. |
-| [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) | Input Down / Up | Raised on changes to binary inputs like buttons. |
-| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Input Changed | Raised on changes to inputs of the given type. **T** can take the following values: <br/> - *float* (e.g returns analog trigger)<br/> - *Vector2* (e.g returns gamepad thumbstick direction) <br/> - *Vector3* (e.g return position of tracked device) <br/> - *Quaternion* (e.g returns orientation of tracked device)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (e.g. returns fully tracked device) |
-| [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | Speech Keyword Recognized | Raised on recognition of one of the keywords configured in the *Speech Commands Profile*. |
-| [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Dictation<br/> Hypothesis <br/> Result <br/> Complete <br/> Error | Raised by dictation systems to report the results of a dictation session. |
-| [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | Gesture events on: <br/> Started <br/> Updated <br/> Completed <br/> Canceled | Raised on gesture detection. |
-| [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Gesture Updated / Completed | Raised on detection of gestures containing additional data of the given type. See [**gesture events**](gestures.md#gesture-events) for details on possible values for **T**. |
-| [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) | Hand Joints Updated | Raised by articulated hand controllers when hand joints are updated. |
-| [`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) | Hand Mesh Updated | Raised by articulated hand controllers when a hand mesh is updated. |
-| [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) | Action Started / Ended | Raise to indicate action start and end for inputs mapped to actions. |
+| [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Source Detected / Lost | Raised when an input source is detected/lost, like when an articulated hand is detected or lost track of. |
+| [`IMixedRealitySourcePoseHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourcePoseHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Source Pose Changed | Raised on source pose changes. The source pose represents the general pose of the input source. Specific poses, like the grip or pointer pose in a six DOF controller, can be obtained via `IMixedRealityInputHandler<MixedRealityPose>`. |
+| [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Input Down / Up | Raised on changes to binary inputs like buttons. |
+| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Input Changed | Raised on changes to inputs of the given type. **T** can take the following values: <br/> - *float* (e.g returns analog trigger)<br/> - *Vector2* (e.g returns gamepad thumbstick direction) <br/> - *Vector3* (e.g return position of tracked device) <br/> - *Quaternion* (e.g returns orientation of tracked device)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) (e.g. returns fully tracked device) |
+| [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Speech Keyword Recognized | Raised on recognition of one of the keywords configured in the *Speech Commands Profile*. |
+| [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Dictation<br/> Hypothesis <br/> Result <br/> Complete <br/> Error | Raised by dictation systems to report the results of a dictation session. |
+| [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Gesture events on: <br/> Started <br/> Updated <br/> Completed <br/> Canceled | Raised on gesture detection. |
+| [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Gesture Updated / Completed | Raised on detection of gestures containing additional data of the given type. See [**gesture events**](gestures.md#gesture-events) for details on possible values for **T**. |
+| [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Hand Joints Updated | Raised by articulated hand controllers when hand joints are updated. |
+| [`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Hand Mesh Updated | Raised by articulated hand controllers when a hand mesh is updated. |
+| [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | Action Started / Ended | Raise to indicate action start and end for inputs mapped to actions. |
 
 ## Input events in action
 
@@ -38,7 +38,7 @@ At the script level, input events can be consumed by implementing one of the eve
     1. The input system determines which GameObject is in focus for the current pointer.
     1. The input system utilizes [Unity's event system](https://docs.unity3d.com/Manual/EventSystem.html) to fire the relevant interface function for all matching components on the focused GameObject.
     1. If at any point an input event has been [marked as used](#how-to-stop-input-events), the process will end and no further GameObjects will receive callbacks.
-        - Example: Components implementing the interface [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) will be searched for when a speech command is recognized.
+        - Example: Components implementing the interface [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) will be searched for when a speech command is recognized.
         - Note: The Unity event system will bubble up to search the parent GameObject if no components matching the desired interface are found on the current GameObject.
 1. If no global input handlers are registered and no GameObject is found with a matching component/interface, then the input system will call each fallback registered input handler
 
@@ -47,7 +47,7 @@ At the script level, input events can be consumed by implementing one of the eve
 
 ### Input event interface example
 
-The code below demonstrates use of the [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) interface. When the user says the words "smaller" or "bigger" while focusing on a GameObject with this `ShowHideSpeechHandler` class, the GameObject will scale itself by half or twice as much.
+The code below demonstrates use of the [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface. When the user says the words "smaller" or "bigger" while focusing on a GameObject with this `ShowHideSpeechHandler` class, the GameObject will scale itself by half or twice as much.
 
 ```c#
 public class ShowHideSpeechHandler : MonoBehaviour, IMixedRealitySpeechHandler
@@ -69,7 +69,7 @@ public class ShowHideSpeechHandler : MonoBehaviour, IMixedRealitySpeechHandler
 ```
 
 > [!NOTE]
-> [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) input events require that the desired keywords are pre-registered in the [MRTK Speech Commands Profile](speech.md).
+> [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) input events require that the desired keywords are pre-registered in the [MRTK Speech Commands Profile](speech.md).
 
 ## Register for global input events
 
@@ -170,7 +170,7 @@ public class GlobalHandListenerExample : MonoBehaviour,
 
 ## How to stop input events
 
-Every input event interface provides a [`BaseInputEventData`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputEventData) data object as a parameter to each function on the interface. This event data object extends from Unity's own [`AbstractEventData`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.html).
+Every input event interface provides a [`BaseInputEventData`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputEventData?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) data object as a parameter to each function on the interface. This event data object extends from Unity's own [`AbstractEventData`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.html).
 
 In order to stop an input event from propagating through its execution [as outlined](#input-events-in-action), a component can call [`AbstractEventData.Use()`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.Use.html) to mark the event as used. This will stop any other GameObjects from receiving the current input event, with the exception of global input handlers.
 

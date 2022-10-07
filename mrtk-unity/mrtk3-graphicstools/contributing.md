@@ -7,7 +7,7 @@ ms.date: 05/05/2022
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Bug report,
 ---
 
-# Contributing to Graphics Tools
+# Contributing to Graphics Tools &#8212; MRTK3
 
 ## Updating the package
 
@@ -28,3 +28,31 @@ If you wish to contribute changes to the samples, you must make a temporary loca
 
 >[!TIP]
 > Failing to invoke the **Window > Graphics Tools > Hide Samples** menu item after editing samples will result in git thinking all sample files have changed. Once samples are hidden the actual files changed should be apparent in git.
+
+## Updating the documentation
+
+### API reference documentation
+
+For documentation comments, use the [recommended](/dotnet/csharp/language-reference/language-specification/documentation-comments#d2-introduction) inline style below:
+
+```csharp
+/// <summary>
+/// Class <c>Point</c> models a point in a two-dimensional plane.
+/// </summary>
+public class Point
+{
+    /// <summary>
+    /// Method <c>Draw</c> renders the point.
+    /// </summary>
+    void Draw() {...}
+}
+```
+
+### Conceptual documentation
+
+To update conceptual documents, [go to the Mixed Reality document repository](https://github.com/MicrosoftDocs/mixed-reality). 
+
+>[!Tip]
+>Articles related to Graphics Tools can be found in this folder [mixed-reality/mrtk-unity/mrtk3-graphicstools/](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/mrtk-unity/mrtk3-graphicstools)
+
+Start by following these [recommendations for contributing to documentation on Microsoft Learn](/contribute/) and the guide for [contributing to Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/blob/docs/mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md).

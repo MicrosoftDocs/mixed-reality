@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Object collection,
 ---
 
-# Object collection
+# Object collection &#8212; MRTK2
 
 ![Object collection](../images/object-collection/MRTK_ObjectCollection_Main.jpg)
 
@@ -15,9 +15,9 @@ Object collection is a script to help lay out an array of objects in predefined 
 
 ## Object collection scripts
 
-- [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) supports Cylinder, Plane, Sphere, Radial surface types
-- [`ScatterObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.ScatterObjectCollection) supports scattered style collection  
-- [`TileGridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.TileGridObjectCollection) provides some additional options to GridObjectCollection. **Note:** TileGridObjectCollection does not extend [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection), and has several bugs (see [issue 6237](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6237)). Therefore, it is recommended to use [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection).
+- [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) supports Cylinder, Plane, Sphere, Radial surface types
+- [`ScatterObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.ScatterObjectCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) supports scattered style collection  
+- [`TileGridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.TileGridObjectCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) provides some additional options to GridObjectCollection. **Note:** TileGridObjectCollection does not extend [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), and has several bugs (see [issue 6237](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6237)). Therefore, it is recommended to use [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 :::row:::
     :::column:::  

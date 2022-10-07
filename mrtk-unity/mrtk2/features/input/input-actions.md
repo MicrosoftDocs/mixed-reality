@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, InputActions,
 ---
 
-# Input actions
+# Input actions &#8212; MRTK2
 
 [**Input Actions**](input-actions.md) are abstractions over raw inputs meant to help isolating application logic from the specific input sources producing an input. It can be useful, for example, to define a *Select* action and map it to the left mouse button, a button in a gamepad and a trigger in a 6 DOF controller. You can then have your application logic listen for *Select* input action events instead of having to be aware of all the different inputs that can produce it.
 
@@ -26,7 +26,7 @@ Single Axis | Single axis analogue input like an analog trigger in a gamepad.
 Dual Axis | Dual axis analogue input like a thumbstick.
 Six Dof | 3D pose with translation and rotation like the one produced by 6 DOF controllers.
 
-You can find the full list in [`AxisType`](xref:Microsoft.MixedReality.Toolkit.Utilities.AxisType).
+You can find the full list in [`AxisType`](xref:Microsoft.MixedReality.Toolkit.Utilities.AxisType?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 ## Mapping input to actions
 
@@ -57,13 +57,13 @@ The **Gestures Profile**, under the *Input System Profile*, contains all defined
 ## Handling input actions
 
 > [!WARNING]
-> Currently only input actions of *Digital* type can be handled using the methods described in this section. For other action types, you'll have to handle directly the events for the corresponding inputs instead. For example, to handle a 6 DOF action mapped to controller inputs, you'll have to use [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) with T = [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose).
+> Currently only input actions of *Digital* type can be handled using the methods described in this section. For other action types, you'll have to handle directly the events for the corresponding inputs instead. For example, to handle a 6 DOF action mapped to controller inputs, you'll have to use [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) with T = [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
-The easiest way to handle input actions is to make use of the [`InputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.InputActionHandler) script. This allows you to define the action you want to listen to and react to action started and ended events using Unity Events.
+The easiest way to handle input actions is to make use of the [`InputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.InputActionHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) script. This allows you to define the action you want to listen to and react to action started and ended events using Unity Events.
 
 <img src="../images/input/InputActionHandler.PNG" alt="Acton Handler">
 
-If you want more control, you can implement the [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) interface directly in your script. See the [**Input Events**](input-events.md) section for more details on event handling via handler interfaces.
+If you want more control, you can implement the [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interface directly in your script. See the [**Input Events**](input-events.md) section for more details on event handling via handler interfaces.
 
 ## Examples
 

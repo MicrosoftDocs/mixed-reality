@@ -37,7 +37,7 @@ MRTK v2 provides a set of UI Controls and building blocks to help you accelerate
 
 Explore MRTK's various types of interactions and UI controls in [this example scene](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples).
 
-You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) under **Assets/MixedRealityToolkit.Examples/Demos**folder.
+You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) under the **Assets/MixedRealityToolkit.Examples/Demos** folder.
 
 [![Example Scene](images/MRTK_Examples.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)
 
@@ -65,5 +65,5 @@ You can always go back to the [Unity development checkpoints](unity-development-
 * [Hands - Point and commit](../../design/point-and-commit.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [Motion controllers](../../design/motion-controllers.md)
-* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
+* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)

@@ -15,7 +15,8 @@ Zappy's Playground is a cross-platform developer sample that showcases how to de
 
 ![Screenshot of a scene from the MRTK3 Zappy's Playground tutorial.](images/037-zappy-playground.png)
 
-[Download the MRTK3 Zappy's Playground tutorial](https://github.com/microsoft/ZappysPlayground).
+> [!div class="nextstepaction"]
+> [Download the tutorial](https://github.com/microsoft/ZappysPlayground)
 
 In this tutorial, you'll gain experience with the following features:
 

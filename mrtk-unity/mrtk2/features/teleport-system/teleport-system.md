@@ -7,9 +7,9 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport system,
 ---
 
-# Teleport system
+# Teleport system &#8212; MRTK2
 
-The teleport system is a sub-system of the MRTK that handles teleporting the user when the
+The teleport system is a sub-system of MRTK that handles teleporting the user when the
 application is using an opaque display. For AR experiences (like HoloLens), the teleportation
 system is not active. For immersive HMD experiences (OpenVR, WMR) the teleport system can
 be enabled.
@@ -36,7 +36,7 @@ void EnableTeleportSystem()
 
 ## Events
 
-The teleport system exposes events through the [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler)
+The teleport system exposes events through the [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 interface to provide signals on when teleport actions begin, end, or get cancelled.
 See the linked API documentation for more details on the mechanics of the events
 and their associated payload.

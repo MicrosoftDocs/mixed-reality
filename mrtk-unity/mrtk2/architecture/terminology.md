@@ -1,5 +1,5 @@
 ---
-title: Terminology
+title: Input System Terminology
 description: Different input system terms in MRTK.
 author: cDiaz-MS
 ms.author: cadia
@@ -7,9 +7,9 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Input,
 ---
 
-# Input system
+# Input system terminology &#8212; MRTK2
 
-The input system is one of the largest systems out of all features offered by the MRTK.
+The input system is one of the largest systems out of all features offered by MRTK.
 So many things within the toolkit build on top of it (pointers, focus, prefabs). The code within the input
 system is what allows for natural interactions like grab and rotate across platforms.
 
@@ -54,7 +54,7 @@ The input system has some of its own terminology that are worth defining:
     IMixedRealityFocusHandler to receive focus. It's possible to globally register an object to receive
     unfiltered pointer events, but this approach is not recommended.
 
-    The component that updates which objects are in focus is the [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider)
+    The component that updates which objects are in focus is the [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 - **Cursor**
 
@@ -64,8 +64,8 @@ The input system has some of its own terminology that are worth defining:
 
 - **Interaction and Manipulation**
 
-    Objects can be tagged with an interaction or manipulation script. This may be via a [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable), or something like
-    [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable)/[`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler).
+    Objects can be tagged with an interaction or manipulation script. This may be via a [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true), or something like
+    [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)/[`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
     For example, NearInteractionGrabbable and NearInteractionTouchable allow for certain pointers (especially
     near interaction pointers) to know which objects can be focused on.

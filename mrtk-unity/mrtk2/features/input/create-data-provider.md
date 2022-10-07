@@ -7,20 +7,19 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Creating an input system data provider
+# Creating an input system data provider &#8212; MRTK2
 
 The Mixed Reality Toolkit input system is an extensible system for enabling input device support. To add support for a new hardware platform,
 a custom input data provider may be required.
 
 This article describes how to create custom data providers, also called device managers, for the input system. The example code shown here is
-from the [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager).
+from the [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true).
 
 > The complete code used in this example can be found in the MRTK/Providers/WindowsMixedReality folder.
 
 ## Namespace and folder structure
 
-Data providers can be distributed as a third party add-on or as a part of the Microsoft Mixed Reality Toolkit. The approval process for submissions of
-new data providers to the MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
+Data providers can be distributed as a third party add-on or as a part of Microsoft Mixed Reality Toolkit. The approval process for submissions of new data providers to MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
 
 > [!Important]
 > If an input system data provider is being submitted to the [Mixed Reality Toolkit repository](https://github.com/Microsoft/MixedRealityToolkit-Unity), the
@@ -52,9 +51,9 @@ contains images of the supported controllers, and Profiles contains one or more 
 
 ### Specify interface and/or base class inheritance
 
-All input system data providers must implement the [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager)
-interface, which specifies the minimum functionality required by the input system. The MRTK foundation includes the [`BaseInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager)
-class which provides a default implementation of this required functionality. For devices that build upon Unity's UInput class, the [`UnityJoystickManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.UnityJoystickManager)
+All input system data providers must implement the [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+interface, which specifies the minimum functionality required by the input system. The MRTK foundation includes the [`BaseInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+class which provides a default implementation of this required functionality. For devices that build upon Unity's UInput class, the [`UnityJoystickManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.UnityJoystickManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 class can be used as a base class.
 
 > [!Note]
@@ -72,7 +71,7 @@ gaze-gesture-voice hands and motion controllers.
 
 #### Apply the MixedRealityDataProvider attribute
 
-A key step of creating an input system data provider is to apply the [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute)
+A key step of creating an input system data provider is to apply the [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 attribute to the class. This step enables setting the default profile and platform(s) for the provider, when selected in the input system profile.
 
 ```c#
@@ -88,7 +87,7 @@ public class WindowsMixedRealityDeviceManager :
 
 ### Implement the IMixedRealityDataProvider methods
 
-Once the class has been defined, the next step is to provide the implementation of the [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
+Once the class has been defined, the next step is to provide the implementation of the [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 interface.
 
 > [!Note]
@@ -122,7 +121,7 @@ The next step is to add the logic for managing the input devices, including any 
 
 #### Apply the MixedRealityController attribute
 
-Next, apply the [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerAttribute) attribute to the class. This attribute specifies the type of controller
+Next, apply the [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerAttribute?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) attribute to the class. This attribute specifies the type of controller
 (ex: articulated hand), the handedness (ex: left or right) and an optional controller image.
 
 ```c#
@@ -152,12 +151,12 @@ public override MixedRealityInteractionMapping[] DefaultLeftHandedInteractions =
 ```
 
 >[!Note]
->The [`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary) class provides symbolic constants for the Unity input axis and button definitions.
+>The [`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class provides symbolic constants for the Unity input axis and button definitions.
 
 ### Raise notification events
 
 To enable applications to respond to input from the user, the data provider raises notification events corresponding to controller state changes as defined in
-the [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) and [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) interfaces.
+the [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) interfaces.
 
 For digital (button) type controls, raise the OnInputDown and OnInputUp events.
 
@@ -183,7 +182,7 @@ InputSystem?.RaisePositionInputChanged(InputSource, ControllerHandedness, intera
 
 Performance is critical in mixed reality applications. Every component adds some amount of overhead for which applications must account. To this end, it is important that all input data providers contain Unity Profiler instrumentation in inner loop and frequently utilized code paths.
 
-It is recommended to implement the pattern utilized by the MRTK when instrumenting custom providers.
+It is recommended to implement the pattern utilized by MRTK when instrumenting custom providers.
 
 ```c#
         private static readonly ProfilerMarker GetOrAddControllerPerfMarker = new ProfilerMarker("[MRTK] WindowsMixedRealityDeviceManager.GetOrAddController");
@@ -198,7 +197,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 ```
 
 > [!Note]
-> The name used to identify the profiler marker is arbitrary. The MRTK uses the following pattern.
+> The name used to identify the profiler marker is arbitrary. MRTK uses the following pattern.
 >
 > "[product] className.methodName - optional note"
 >
@@ -206,7 +205,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
+In Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
 Data providers with additional configuration options (ex: [InputSimulationService](../input-simulation/input-simulation-service.md)) should create a profile and inspector to allow
 customers to modify the behavior to best suit the needs of the application.
@@ -233,7 +232,7 @@ The `CreateAssetMenu` attribute can be applied to the profile class to enable cu
 ### Implement the inspector
 
 Profile inspectors are the user interface for configuring and viewing profile contents. Each profile inspector should extend the
-[`BaseMixedRealityToolkitConfigurationProfileInspector](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) class.
+[`BaseMixedRealityToolkitConfigurationProfileInspector](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
 ```c#
 [CustomEditor(typeof(MixedRealityInputSimulationProfile))]
@@ -245,7 +244,7 @@ The `CustomEditor` attribute informs Unity the type of asset to which the inspec
 
 ## Create assembly definition(s)
 
-The Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
+Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
 between components as well as to assist Unity in reducing compilation time.
 
 It is recommended that assembly definition files are created for all data providers and their editor components.
@@ -278,10 +277,10 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 ## See also
 
 - [Input system](overview.md)
-- [`BaseInputDeviceManager` class](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager)
-- [`IMixedRealityInputDeviceManager` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager)
-- [`IMixedRealityInputHandler` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler)
-- [`IMixedRealityInputHandler<T>` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1)
-- [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
-- [`IMixedRealityCapabilityCheck` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
+- [`BaseInputDeviceManager` class](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityInputDeviceManager` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityInputHandler` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityInputHandler<T>` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
+- [`IMixedRealityCapabilityCheck` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 - [Controller Mapping Tool](../tools/controller-mapping-tool.md)

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Scene system getting started
+# Scene system getting started &#8212; MRTK2
 
 ## When to use the scene system
 
@@ -29,7 +29,7 @@ a message will appear in the Scene System profile inspector.
 >![Note]
 > If the project is using custom manager and lighting scenes, this message can be safely ignored.
 
-The following sections describe now to resolve this message, based on which method was used to import the Mixed Reality Toolkit.
+The following sections describe now to resolve this message, based on which method was used to import Mixed Reality Toolkit.
 
 ### Unity Package Manager (UPM)
 

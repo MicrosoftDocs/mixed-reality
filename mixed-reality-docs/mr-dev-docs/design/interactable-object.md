@@ -241,11 +241,11 @@ Below are the recommendations for minimum sizes of interactable content.
 
 ## Interactable object in MRTK (Mixed Reality Toolkit) for Unity
 
-In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allow you define visual states by controlling object properties such as color, size, material, and shader.
+In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/UX/Interactables/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allow you define visual states by controlling object properties such as color, size, material, and shader.
 
 * [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
 * [Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
-* [Hand interaction examples scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
+* [Hand interaction examples scene](/windows/mixed-reality/mrtk-unity/mrtk2/features/example-scenes/hand-interaction-examples)
 
 MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
 

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Lost tracking service
+# Lost tracking service &#8212; MRTK2
 
 ![Lost Tracking](../images/lost-tracking/LostTrackingVisualization.jpg)
 

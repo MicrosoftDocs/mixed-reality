@@ -31,13 +31,13 @@ We highly recommend that you use source control to save a snapshot your applicat
 
 ## Migrate your project to the latest version of Unity
 
-If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), we recommend that you update to MRTK 2.7 before you upgrade your project to [Unity 2020.3 LTS](../unity/choosing-unity-version.md). MRTK 2.7 supports Unity 2018, 2019 and 2020, allowing you to ensure your project is ready for Unity 2020 even before you upgrade Unity. Assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in your project and determine whether these DLLs can be built for ARM64. For projects with a hard ARM64 dependent plugin, you may need to continue building your app for ARM.
+If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), we recommend that you update to MRTK 2.7 before you upgrade your project to [Unity 2020.3 LTS](../unity/choosing-unity-version.md). MRTK 2.7 supports Unity 2018, 2019 and 2020, allowing you to ensure your project is ready for Unity 2020 even before you upgrade Unity. Assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in your project and determine whether these DLLs can be built for ARM64. For projects with a hard ARM dependent plugin, you may need to continue building your app for ARM.
 
 ## Update scene/project settings in Unity
 
 After updating to [Unity 2020.3 LTS](https://unity3d.com/unity/qa/lts-releases), we recommend that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under [recommended settings for Unity](../unity/Recommended-settings-for-Unity.md).
 
-To reiterate, the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and removed as of Unity 2019. You should strongly consider switching your project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
+To reiterate, the .NET scripting back-end is being deprecated in Unity 2018 and removed as of Unity 2019. You should strongly consider switching your project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
 
 > [!NOTE]
 > The IL2CPP scripting backend can cause longer build times from Unity to Visual Studio. Developers should set up their developer machine for [optimizing IL2CPP build times](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).

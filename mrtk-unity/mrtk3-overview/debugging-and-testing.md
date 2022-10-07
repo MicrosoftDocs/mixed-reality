@@ -8,19 +8,21 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, debugging
 ---
 
-# Iteration and debugging
+# Iteration and debugging &#8212; MRTK3
 
-As compiling and deploying your app can take a significant amount of time, we recommend a variety of instant iteration/preview solutions while developing your application.
+Compiling and deploying your app can take a significant amount of time, so we recommend a variety of instant iteration/preview solutions while developing your application.
 
 - [In-editor input simulation](../mrtk3-input/packages/input/input-simulation.md)
-  - Easily preview your app without any XR device attached. Control the user's head, hands, and hand gestures with traditional WASD controls.
+    - Easily preview your app without any XR device attached. Control the user's head, hands, and hand gestures with traditional WASD controls.
 - **Recommended:** [Holographic remoting (on HoloLens 2)](/windows/mixed-reality/develop/unity/preview-and-debug-your-app)
-  - For development on HoloLens 2 and related platforms (including other OpenXR targets that include hand tracking), we strongly recommend the use of holographic remoting to accelerate your iteration time.
-  - Advanced features like hand tracking, eye tracking, and scene reconstruction are available through remoting, and behave equivalently as if the app were deployed to device.
+    - For development on Hololens 2 and related platforms (including other OpenXR targets that include hand tracking), we strongly recommend the use of holographic remoting to accelerate your iteration time. Advanced features like hand tracking, eye tracking, and scene reconstruction are available through remoting, and behave the same as if the app were deployed to a device.
 - Play-mode testing with the desktop's active OpenXR runtime
-  - Many popular PC VR platforms now support OpenXR, including [Windows Mixed Reality](https://www.microsoft.com/p/openxr-tools-for-windows-mixed-reality/), [SteamVR](https://www.steamvr.com/), and [Oculus Rift on PC](https://developer.oculus.com/documentation/native/pc/dg-openxr/).
+  - Many popular PC VR platforms now support OpenXR, including [Windows Mixed Reality](/windows/mixed-reality/develop/native/openxr-getting-started), [SteamVR](https://www.steamvr.com/), and [Oculus Rift on PC](https://developer.oculus.com/documentation/native/pc/dg-openxr/).
 - **Experimental**: [Oculus Link for Quest](https://support.oculus.com/airlink)
-  - Some aspects of hand interactions are still being developed for Quest, and your mileage may vary.
-  - Controller interactions should be full parity over Link.
+    - Some aspects of hand interactions are still being developed for Quest, and your results may vary.
+    - Controller interactions should be full parity over Link.
+    - In **Player Settings** > **OpenXR**, the following must be assigned for the **Windows, Mac, Linux Settings** tab:
+        - Set **Play Mode OpenXR Runtime** to **Oculus OpenXR**.
+        - Add the **Oculus Touch Controller Profile** to the list of **Interaction Profiles**.
 
-If you have deployed a build to your target device of choice, you can debug the build as it runs on device with [Managed debugging](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).
+If you've deployed a build to your target device of choice, you can debug the build as it runs on device with [Managed debugging](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).

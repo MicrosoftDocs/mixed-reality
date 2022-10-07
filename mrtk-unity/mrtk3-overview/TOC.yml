@@ -14,7 +14,9 @@
   href: debugging-and-testing.md
 - name: Known issues
   href: known-issues.md
-- name: Release notes
-  href: release-notes.md
+- name: Changelogs
+  href: changelogs/toc.yml
+- name: API reference
+  href: api-reference.md
 - name: MRTK2.x documentation
   href: ../mrtk2/index.md

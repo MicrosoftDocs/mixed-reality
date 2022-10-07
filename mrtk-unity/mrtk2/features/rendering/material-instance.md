@@ -7,9 +7,9 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MaterialInstance,
 ---
 
-# Material instance
+# Material instance &#8212; MRTK2
 
-The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior aides in tracking instance material lifetime and automatically destroys instanced materials for the user. This utility component can be used as a replacement to [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) or
+The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) behavior aides in tracking instance material lifetime and automatically destroys instanced materials for the user. This utility component can be used as a replacement to [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) or
 [Renderer.materials](https://docs.unity3d.com/ScriptReference/Renderer-materials.html).
 
 > [!NOTE]
@@ -34,7 +34,7 @@ public class Leak : MonoBehaviour
 > [!NOTE]
 > The above Leak behavior **will crash Unity** if ran for too long!
 
-As an alternative try using the [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior:
+As an alternative try using the [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) behavior:
 
 ```c#
 public class NoLeak : MonoBehaviour
@@ -52,9 +52,9 @@ public class NoLeak : MonoBehaviour
 
 ## Usage
 
-When invoking Unity's [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s), Unity automatically instantiates new materials. It is the caller's responsibility to destroy the materials when a material is no longer needed or the game object is destroyed. The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior helps avoid material leaks and keeps material allocation paths consistent during edit and run time.
+When invoking Unity's [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s), Unity automatically instantiates new materials. It is the caller's responsibility to destroy the materials when a material is no longer needed or the game object is destroyed. The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) behavior helps avoid material leaks and keeps material allocation paths consistent during edit and run time.
 
-When a [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) can not be used and a material must be instanced, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) can be used as follows:
+When a [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) can not be used and a material must be instanced, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can be used as follows:
 
 ```c#
 public class MyBehaviour : MonoBehaviour
@@ -71,7 +71,7 @@ public class MyBehaviour : MonoBehaviour
 }
 ```
 
-If multiple objects need ownership of the material instance it's best to take explicit ownership for reference tracking. (An optional interface called [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) exists to aide with ownership.) Below is example usage:
+If multiple objects need ownership of the material instance it's best to take explicit ownership for reference tracking. (An optional interface called [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) exists to aide with ownership.) Below is example usage:
 
 ```c#
 public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
@@ -99,7 +99,7 @@ public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
 }
 ```
 
-For more information please see the example usage demonstrated within the [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behavior.
+For more information please see the example usage demonstrated within the [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) behavior.
 
 ## See also
 

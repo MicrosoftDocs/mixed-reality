@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Hover Light, Proximity Light, Clipping Primitive
 ---
 
-# Graphics tools standard shader
+# Graphics tools standard shader &#8212; MRTK3
 
 The Graphics Tools Standard shading system utilizes a flexible shader that can achieve visuals similar to Unity's Standard (or Lit) shader. It implements [Fluent Design System](https://www.microsoft.com/design/fluent/) principles and remains performant on mixed reality devices.
 
@@ -114,6 +114,7 @@ When you use channel packing, you only have to sample and load one texture into 
 | Alpha   | Smoothness           |
 
 The main map section also has an option for triplanar mapping and super-sample anti-aliasing.
+It also contains the option to add colored emission texture maps once the Emission checkbox is selected.
 
 Triplanar mapping is a technique to programmatically texture a mesh. It's often used in terrain, meshes without UVs, or difficult to unwrap shapes. This implementation supports world or local space projection, the specification of blending smoothness, and normal map support. Note, each texture used requires three texture samples, so use sparingly in performance critical situations.
 

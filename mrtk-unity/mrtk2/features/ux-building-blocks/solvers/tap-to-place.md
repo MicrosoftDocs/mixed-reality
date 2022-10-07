@@ -1,5 +1,5 @@
 ---
-title: Tap to place
+title: Tap to place 
 description: Documentation of TapToPlace MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Tap to Place,
 ---
 
-# Tap to place
+# Tap to place &#8212; MRTK2
 
 ![TapToPlace](../../images/solver/tap-to-place/TapToPlaceIntroGif.gif)
 
@@ -22,7 +22,7 @@ Tap to Place is a far interaction component that is used to place a game object 
     > [!NOTE]
     > Tap to Place uses clicks driven by the MRTK Input System but it can also be controlled without clicks, see the Tap To Place Code Configurability section below.
     - Add a cube to the scene and change the scale to 0.2 and change the position to (0, 0, 0.7).
-1. Attach [Tap to Place](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.TapToPlace) to a game object with a collider
+1. Attach [Tap to Place](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.TapToPlace?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to a game object with a collider
 
     ![TapToPlaceInspector](../../images/solver/tap-to-place/TapToPlaceInspector2.png)
 

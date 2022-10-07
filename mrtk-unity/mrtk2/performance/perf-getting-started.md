@@ -7,20 +7,20 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Performance
+# Performance &#8212; MRTK2
 
 ## Getting started
 
-The easiest way to rationalize performance is via framerate or how many times your application can render an image per second. It is important to meet the target framerate, as outlined by the platform being targeted (i.e [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/), etc). For example, on HoloLens, the target framerate is 60 FPS. Low framerate applications can result in deteriorated user experiences such as worsened [hologram stabilization](../performance/hologram-stabilization.md), world tracking, hand tracking, and more. To help developers track and achieve quality framerate, the Mixed Reality Toolkit provides a variety of tools and scripts.
+The easiest way to rationalize performance is via framerate or how many times your application can render an image per second. It is important to meet the target framerate, as outlined by the platform being targeted (i.e [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/), etc). For example, on HoloLens, the target framerate is 60 FPS. Low framerate applications can result in deteriorated user experiences such as worsened [hologram stabilization](../performance/hologram-stabilization.md), world tracking, hand tracking, and more. To help developers track and achieve quality framerate, Mixed Reality Toolkit provides a variety of tools and scripts.
 
 ### Visual profiler
 
-To continuously track performance over the lifetime of development, it is highly recommended to always show a framerate visual while running & debugging an application. The Mixed Reality Toolkit provides the [Visual Profiler](../features/diagnostics/using-visual-profiler.md) diagnostic tool which gives real-time information about the current FPS and memory usage in application view. The Visual Profiler can be configured via the [Diagnostics System Settings](../features/diagnostics/diagnostics-system-getting-started.md) under the [MRTK Profiles Inspector](../configuration/mixed-reality-configuration-guide.md).
+To continuously track performance over the lifetime of development, it is highly recommended to always show a framerate visual while running & debugging an application. Mixed Reality Toolkit provides the [Visual Profiler](../features/diagnostics/using-visual-profiler.md) diagnostic tool which gives real-time information about the current FPS and memory usage in application view. The Visual Profiler can be configured via the [Diagnostics System Settings](../features/diagnostics/diagnostics-system-getting-started.md) under the [MRTK Profiles Inspector](../configuration/mixed-reality-configuration-guide.md).
 
 Furthermore, it is particularly important to utilize the Visual Profiler to track framerate when running on the device as opposed to running in Unity editor or an emulator. The most accurate performance results will be depicted when running on the device with [Release configuration builds](/visualstudio/debugger/how-to-set-debug-and-release-configurations?preserve-view=true&view=vs-2019).
 
 > [!NOTE]
-> If building for Windows Mixed Reality, deploy with [MASTER configuration builds](/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
+> If building for Windows Mixed Reality, deploy with [MASTER configuration builds](/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens#building-and-deploying-a-unity-visual-studio-solution).
 
 ![Visual Profiler Interface](../features/images/Diagnostics/VisualProfiler.png)
 
@@ -42,7 +42,7 @@ The [Unity Profiler](https://docs.unity3d.com/Manual/ProfilerWindow.html) is a u
 
 ![Example Unity Profiler Graph](../features/images/performance/UnityProfilerGraph.png)
 
-To maintain comfortable frame rates (typically 60 frames per second), applications need to achieve a maximum frame time of 16.6 milliseconds of CPU time. To help identify the cost of MRTK functionality, the Microsoft Mixed Reality Toolkit contains a markers for inner loop (per frame) code paths. These markers use the following format, to assist in understanding the specific functionality being utilized:
+To maintain comfortable frame rates (typically 60 frames per second), applications need to achieve a maximum frame time of 16.6 milliseconds of CPU time. To help identify the cost of MRTK functionality, Microsoft Mixed Reality Toolkit contains a markers for inner loop (per frame) code paths. These markers use the following format, to assist in understanding the specific functionality being utilized:
 
 ```
 [MRTK] className.methodName
@@ -218,14 +218,14 @@ MRTK Standard shader statistics example
 - [Unity Performance Optimization Tutorials](https://unity3d.com/learn/tutorials/topics/performance-optimization)
 - [Unity Optimization Best Practices](https://docs.unity3d.com/Documentation/Manual/BestPracticeUnderstandingPerformanceInUnity.html)
 - [Optimizing graphics performance](https://docs.unity3d.com/Manual/OptimizingGraphicsPerformance.html)
-- [Mobile Optimization Practical Guide](https://docs.unity3d.com/Manual/MobileOptimizationPracticalGuide.html)
+- [Mobile Optimization Practical Guide](https://docs.unity3d.com/2020.2/Documentation/Manual/MobileOptimizationPracticalGuide.html)
 
 ### Windows Mixed Reality
 
 - [Recommended Settings for Unity](/windows/mixed-reality/recommended-settings-for-unity)
 - [Understanding Performance for Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality)
 - [Performance recommendations for Unity](/windows/mixed-reality/performance-recommendations-for-unity)
-- [Event Tracing for Windows Unity Guide](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
+- [Event Tracing for Windows Unity Guide](https://docs.unity3d.com/2018.3/Documentation/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 
 ### Oculus
 

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Input simulation service
+# Input simulation service &#8212; MRTK2
 
 ![MRTK Input Simulation](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
 

@@ -7,18 +7,18 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Spatial awareness getting started
+# Spatial awareness getting started &#8212; MRTK2
 
 ![Spatial Awareness](../images/spatial-awareness/MRTK_SpatialAwareness_Main.png)
 
 The Spatial Awareness system provides real-world environmental awareness in mixed reality applications. When introduced on Microsoft HoloLens, Spatial Awareness provided a collection of meshes, representing the geometry of the environment, which allowed for compelling interactions between holograms and the real-world.
 
 > [!NOTE]
-> At this time, the Mixed Reality Toolkit does not ship with Spatial Understanding algorithms as originally packaged in the HoloToolkit. Spatial Understanding generally involves transforming Spatial Mesh data to create simplified and/or grouped Mesh data such as planes, walls, floors, ceilings, etc.
+> At this time, Mixed Reality Toolkit does not ship with Spatial Understanding algorithms as originally packaged in the HoloToolkit. Spatial Understanding generally involves transforming Spatial Mesh data to create simplified and/or grouped Mesh data such as planes, walls, floors, ceilings, etc.
 
 ## Getting started
 
-Adding support for Spatial Awareness requires two key components of the Mixed Reality Toolkit: the Spatial Awareness system and a supported platform provider.
+Adding support for Spatial Awareness requires two key components of Mixed Reality Toolkit: the Spatial Awareness system and a supported platform provider.
 
 1. [Enable](#enable-the-spatial-awareness-system) the Spatial Awareness system
 2. [Register](#register-observers) and [configure](configuring-spatial-awareness-mesh-observer.md) one or more spatial observers to provide mesh data
@@ -26,9 +26,9 @@ Adding support for Spatial Awareness requires two key components of the Mixed Re
 
 ### Enable the spatial awareness system
 
-The Spatial Awareness system is managed by the MixedRealityToolkit object (or another [service registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) component). Follow the steps below to enable or disable the *Spatial Awareness system* in the *MixedRealityToolkit* profile.
+The Spatial Awareness system is managed by the MixedRealityToolkit object (or another [service registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component). Follow the steps below to enable or disable the *Spatial Awareness system* in the *MixedRealityToolkit* profile.
 
-The Mixed Reality Toolkit ships with a few default pre-configured profiles. Some of these have the Spatial Awareness system enabled OR disabled by default. The intent of this pre-configuration, particularly for when disabled, is to avoid the visual overhead of calculating and rendering the meshes.
+Mixed Reality Toolkit ships with a few default pre-configured profiles. Some of these have the Spatial Awareness system enabled OR disabled by default. The intent of this pre-configuration, particularly for when disabled, is to avoid the visual overhead of calculating and rendering the meshes.
 
 | Profile | System Enabled by Default |
 | --- | --- |
@@ -44,13 +44,13 @@ The Mixed Reality Toolkit ships with a few default pre-configured profiles. Some
 
     ![Enable Spatial Awareness](../images/spatial-awareness/MRTKConfig_SpatialAwareness.png)
 
-1. Select the desired Spatial Awareness system implementation type. The [`MixedRealitySpatialAwarenessSystem`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessSystem) is the default provided.
+1. Select the desired Spatial Awareness system implementation type. The [`MixedRealitySpatialAwarenessSystem`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessSystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) is the default provided.
 
     ![Select the Spatial Awareness System Implementation](../images/spatial-awareness/SpatialAwarenessSelectSystemType.png)
 
 ### Register observers
 
-Services in the Mixed Reality Toolkit can have [Data Provider services](../../architecture/systems-extensions-providers.md) that supplement the main service with platform specific data and implementation controls. An example of this is the Mixed Reality Input System which has [multiple data providers](../input/input-providers.md) to get controller and other related input information from various platform-specific APIs.
+Services in Mixed Reality Toolkit can have [Data Provider services](../../architecture/systems-extensions-providers.md) that supplement the main service with platform specific data and implementation controls. An example of this is the Mixed Reality Input System which has [multiple data providers](../input/input-providers.md) to get controller and other related input information from various platform-specific APIs.
 
 The Spatial Awareness system is similar in that data providers supply the system with mesh data about the real-world. The Spatial Awareness profile must have at least one Spatial Observer registered. Spatial Observers are generally platform specific components that act as the provider for surfacing various types of mesh data from a platform specific endpoint (i.e HoloLens).
 
@@ -67,7 +67,7 @@ The Spatial Awareness system is similar in that data providers supply the system
 
 > [!NOTE]
 > Users of the `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles) will have the Spatial Awareness system pre-configured for the Windows Mixed Reality platform which uses
-the [`WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class.
+the [`WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) class.
 
 ### Build and deploy
 
@@ -95,6 +95,6 @@ Information for controlling and extending observers via code:
 
 ## See also
 
-- [Spatial Awareness API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
+- [Spatial Awareness API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 - [Spatial Mapping Overview WMR](/windows/mixed-reality/spatial-mapping)
 - [Spatial Mapping in Unity WMR](/windows/mixed-reality/spatial-mapping-in-unity)

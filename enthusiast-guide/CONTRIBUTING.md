@@ -15,9 +15,9 @@ appliesto:
 Thank you for your interest in the Enthusiast Guide. We appreciate your feedback, edits, additions and help with improving our docs. This page covers the basic steps and guidelines for contributing.
 
 > [!IMPORTANT]
-> All repositories that publish to docs.microsoft.com have adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any questions or comments.<br>
+> All repositories that publish to `learn.microsoft.com` have adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any questions or comments.<br>
 >
-> Minor corrections or clarifications to documentation and code examples in public repositories are covered by the [docs.microsoft.com Terms of Use](/legal/termsofuse). New or significant changes will generate a comment in the pull request asking you to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. We need you to complete the online form before we can accept your pull request.
+> Minor corrections or clarifications to documentation and code examples in public repositories are covered by the [`learn.microsoft.com` Terms of Use](/legal/termsofuse). New or significant changes will generate a comment in the pull request asking you to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. We need you to complete the online form before we can accept your pull request.
 
 ## Before you start
 
@@ -27,6 +27,7 @@ If you don't already have one, you'll need to [create a GitHub account](https://
 >If you're a Microsoft employee, link your GitHub account to your Microsoft alias on the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/). Join the **"Microsoft"** and **"MicrosoftDocs"** organizations.
 
 When setting up your GitHub account, we also recommend these security precautions:
+
 - Create a [strong password for your Github account](https://github.com/settings/admin).
 - Enable [two-factor authentication](https://github.com/settings/two_factor_authentication/configure).
 - Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
@@ -41,26 +42,27 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 
 | To suggest a change to the docs, follow these steps: | Screenshots |
 | :------------------- | :--------: |
-| 1. If you're viewing a Docs.microsoft.com page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide). | ![Edit Button](images/edit_button.jpg) |
+| 1. While viewing a published article, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the GitHub repository. | ![Edit Button](images/edit_button.jpg) |
 | 2. If you don't already have a GitHub account, click **Sign Up** in the upper right and create a new account. | ![Signup button](images/signup-for-github-button.png)|
 | 3. On the corresponding GitHub page that opens, click Edit (the pencil icon). | ![Pencil button](images/pencil_button.jpg)|
 | 4. In the Edit file pane, [update the files metadata](#updating-metadata) and use Markdown language to change the content. ([How to write markdown.](https://help.github.com/articles/basic-writing-and-formatting-syntax/))| ![Edit File](images/edit-in-github.png)|
 | 5. Click Preview changes to verify the formatting looks as expected. | ![Preview changes](images/edit-in-github.png)|
 | 6. When you're done, scroll to the bottom of the page and click "Propose file change", you will be presented with a "Comparing changes" page, allowing you to verify your changes. Then click the "Create pull request" button to submit your changes. At this point you are finished! | ![Propose a change](images/propose.jpg)|
 
-After you submit changes (via a pull request), they will be reviewed by a member of the documentation team. If your request is accepted, updates are published to [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide).
+After you submit changes (via a pull request), they will be reviewed by a member of the documentation team. If your request is accepted, updates are published to [Windows Mixed Reality VR](/windows/mixed-reality/enthusiast-guide).
 
-*For internal review only, you can see your changes at [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](./index.yml?branch=main).
+*For internal review only, you can see your changes in the [staging site for Windows Mixed Reality VR](https://review.learn.microsoft.com/windows/mixed-reality/enthusiast-guide).
 
 ### Updating Metadata
 
 Update metadata at the top of each article:
+
    * **title**: Page title that appears in the browser tab when the article is being viewed. Page titles are used for SEO and indexing, so don't change the title unless necessary (though this is less critical before documentation goes public).
    * **description**: Write a brief description of the article's content, which boosts SEO and discovery.
    * **author**: If you're the primary owner of the page, add your GitHub alias here.
    * **ms.author**: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
    * **ms.date**: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
-   * **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere. 
+   * **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere.
 
 ### Renaming or deleting an existing article
 
@@ -76,6 +78,9 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
             "redirect_url": "new-article#section-about-old-topic",
             "redirect_document_id": false
         },
+    ...
+    ]
+}
 ```
 
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `mixed-reality-docs/enthusiast-guide` and ends with `.md`.
@@ -124,7 +129,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 ## Working with Branches
 
-The [Mixed Reality Enthusiast Guide GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilizes two main parent branches: [Main](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/main), this content can be reviewed on the [staging site](/windows/mixed-reality/enthusiast-guide), and [Live](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), for content appearing on the [live site](/windows/mixed-reality/enthusiast-guide).
+The Mixed Reality Enthusiast Guide GitHub repository utilizes two main parent branches: Main, this content can be reviewed on the [staging site](/windows/mixed-reality/enthusiast-guide), and Live, for content appearing on the [live site](/windows/mixed-reality/enthusiast-guide).
 
 When making contributions, please submit your Pull Request (PR) to the **Main** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live. You may also create and submit a branch with your own unique branch name which can be selected and viewed in the staging site. (The **Live** branch is only allowed for use by the content administrators.)
 
@@ -134,11 +139,11 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for Microsoft Learn](/contribute/markdown-reference)
 
 ### Adding tables
 
-Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
+Because of how tables are styled on Microsoft Learn, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
 
 The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
@@ -158,12 +163,12 @@ You’ll need to upload your images to the "mixed-reality-docs/images" folder in
 
 ## Previewing your work
 
-While editing in GitHub via a web browser, you can select the **Preview** tab near the top of the page to preview your work before committing. 
+While editing in GitHub via a web browser, you can select the **Preview** tab near the top of the page to preview your work before committing.
 
 >[!NOTE]
->Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
+>Previewing your staged changes is only available to Microsoft employees.
 
-Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at `https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=main`. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at `https://review.learn.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=main`. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
@@ -237,7 +242,7 @@ The following Visual Studio Code extensions are useful when editing documentatio
 
 ## Using issues to provide feedback on Windows Mixed Reality Enthusiast Guide
 
-To provide feedback, or point out a problem, rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/issues) and the content owners will do their best to address the issue in a timely fashion.
+To provide feedback, or point out a problem, rather than directly modifying actual documentation pages, create an issue and the content owners will do their best to address the issue in a timely fashion.
 
 Be sure to include the topic title and the URL if you are creating an issue regarding a specific page.
 
