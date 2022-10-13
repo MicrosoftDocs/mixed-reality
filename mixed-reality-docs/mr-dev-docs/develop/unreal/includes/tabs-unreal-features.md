@@ -7,6 +7,8 @@ The latest Unreal Engine 5.0 release includes:
 * OpenXR available for application creation in-engine — full feature set available with Microsoft OpenXR plugin
 * Microsoft OpenXR plugin updates release when ready instead of in-engine updates
 * HoloLensAR plugin is removed in Unreal 5.0
+* Support for World Locking Tools (5.0+)
+* Support for Azure Object Anchors (4.27+)
 
 See the Unreal Engine 4.26 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="Unreal Engine 4.26 release notes">release notes</a> for more. 
 # [4.26](#tab/ue426)
@@ -21,6 +23,7 @@ The latest Unreal Engine 4.26 release includes:
 * Windows App Certification Kit compliance for packaged apps
 * Unreal Insights support for HoloLens 2
 * HP Reverb G2 controller support
+
 
 See the Unreal Engine 4.26 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="Unreal Engine 4.26 release notes">release notes</a> for more. 
 
