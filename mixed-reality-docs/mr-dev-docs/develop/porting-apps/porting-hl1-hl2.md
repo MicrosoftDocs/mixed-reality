@@ -37,7 +37,7 @@ If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity
 
 After updating to [Unity 2020.3 LTS](https://unity3d.com/unity/qa/lts-releases), we recommend that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under [recommended settings for Unity](../unity/Recommended-settings-for-Unity.md).
 
-To reiterate, the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and removed as of Unity 2019. You should strongly consider switching your project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
+To reiterate, the .NET scripting back-end is being deprecated in Unity 2018 and removed as of Unity 2019. You should strongly consider switching your project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
 
 > [!NOTE]
 > The IL2CPP scripting backend can cause longer build times from Unity to Visual Studio. Developers should set up their developer machine for [optimizing IL2CPP build times](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).

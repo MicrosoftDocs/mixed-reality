@@ -31,7 +31,7 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 | [Introducing the Mixed Reality Toolkit](/windows/mixed-reality/mrtk-unity/) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
 | [Download the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) | A new developer tool for discovering, updating, and adding Mixed Reality feature packages to your Unity projects |
 | [Setup your developer environment](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [Complete the HoloLens 2 tutorial series](/learn/paths/beginner-hololens-2-tutorials/) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
+| [Complete the HoloLens 2 tutorial series](/training/paths/beginner-hololens-2-tutorials/) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
 > [!IMPORTANT]
 > If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. Take a look at our [configuration guide](choosing-unity-version.md) for more information.
@@ -118,7 +118,7 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 ### Unity resources
 
-In addition to this documentation available on docs.microsoft.com, Unity installs documentation for Windows Mixed Reality functionality alongside the Unity Editor. The Unity provided documentation includes two separate sections.
+In addition to this documentation, Unity installs documentation for Windows Mixed Reality functionality alongside the Unity Editor. The Unity provided documentation includes two separate sections.
 
 |  Resource  |  Description  |
 | --- | --- |
@@ -129,7 +129,7 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 
 You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **Microsoft** and a combination of the following tags to help us understand what plugin you're providing feedback for:
 
-* HoloLens 2 
+* HoloLens 2
 * Windows Mixed Reality
 * OpenXR
 * XRSDK

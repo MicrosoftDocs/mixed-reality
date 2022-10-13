@@ -141,7 +141,7 @@ SceneQuads define a bounded rectangular surface in 2d. However, SceneQuads are r
 ## Scene understanding SDK details and reference
 
 > [!NOTE] 
-> <!--Unity Note-->When using MRTK, please note you will be interacting with MRTK's [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) and thus may skip this section under most circumstances. Please refer to the [MRTK Scene Understanding docs](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding) for more information.
+> <!--Unity Note-->When using MRTK, please note you will be interacting with MRTK's [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) and thus may skip this section under most circumstances. Please refer to the [MRTK Scene Understanding docs](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding) for more information.
 
 The following section will help get you familiar with the basics of SceneUnderstanding. This section should provide you with the basics, at which point you should have enough context to browse through the sample applications to see how SceneUnderstanding is used holistically.
 

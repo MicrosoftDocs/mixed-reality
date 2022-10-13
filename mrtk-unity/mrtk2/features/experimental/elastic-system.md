@@ -13,7 +13,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Elastics
 
 MRTK comes with an elastic simulation system that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
 
-Currently the following MRTK components supporting the [elastics manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) can leverage elastics functionality:
+Currently the following MRTK components supporting the [elastics manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can leverage elastics functionality:
 
 - [Bounds control](../ux-building-blocks/bounds-control.md)
 - [Object manipulator](../ux-building-blocks/object-manipulator.md)
@@ -29,7 +29,7 @@ Enabling elastics for custom components can be achieved by two steps:
 1. Calling the Initialize method on manipulation start, updating the system with the current host transform.
 1. Querying ApplyHostTransform whenever a elastics calculation should be performed on the updated target transform.
 
-Note that elastics will continue simulating once manipulation ends (through the elastics manager update loop). To block the behavior, elastics auto update [EnableElasticsUpdate](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager.EnableElasticsUpdate) can be set to false.
+Note that elastics will continue simulating once manipulation ends (through the elastics manager update loop). To block the behavior, elastics auto update [EnableElasticsUpdate](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager.EnableElasticsUpdate?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can be set to false.
 
 By default, the elastics manager component, when added to a game object, won't have elastics enabled for any transforms type.
 The field `Manipulation types using elastic feedback` needs to be enabled for specific transform types to create elastics configuration and extents for the selected type.

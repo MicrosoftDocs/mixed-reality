@@ -3,10 +3,10 @@ title: Welcome to the Mixed Reality Feature Tool
 description: Learn the basics of the MR Feature Tool for HoloLens and VR development.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 03/04/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.localizationpriority: high
-keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+keywords: up-to-date, tools, get started, basics, unity, toolkit, mixed reality headset, windows mixed reality headset, installation, Windows, HoloLens, openxr, Mixed Reality Feature Tool, Feature Tool
 ---
 
 # Welcome to the Mixed Reality Feature Tool
@@ -22,8 +22,7 @@ The Mixed Reality Feature Tool is a new way for developers to discover, update, 
 
 Before you can run the Mixed Reality Feature Tool, you'll need:
 
-* [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
-* [Windows 10](https://www.microsoft.com/software-download/windows10ISO)
+* Windows 10 or 11
 
 > [!NOTE]
 > The Mixed Reality Feature Tool currently only runs on Windows.
@@ -41,14 +40,12 @@ Once you have your environment set up:
 
 ## Changes in this release
 
-Version 1.0.2206.1-Preview includes the following fixes:
+Version 1.0.2209.0-Preview includes the following improvements:
 
-* Improvements to feed processing
-* Updated logging
-
-The following features have been added in this release:
-
-* Packages referenced in the project manifest can now be restored with one click.
+* Added 'show preview features' option to the discover features view
+* Updated to .NET 6
+* Consolidated the app and .NET 6 runtime into a single executable for easier distribution
+* Fixed an issue where a prompt for downgrading existing package versions shows up when unnecessary
 
 ## 1. Getting started
 
@@ -61,11 +58,6 @@ From the start page, you can:
 * [Configure](configuring-feature-tool.md) tool settings using the **gear icon** button
 * Use the **question mark** button to launch the default web browser and display our documentation
 * Select **Start** to begin discovering feature packages
-
-> [!NOTE]
-> If you will be using the MRTK3 public preview release in your project, you must enable `Show preview releases` in the `Feature` tab of settings.
->
-> ![Recommended Feature Settings for MRTK3](images/FeatureToolSettings-Feature-MRTK3.png)
 
 ## 2. Selecting your Unity project
 
@@ -94,6 +86,11 @@ Once the project has been selected, you can
 Features are grouped by category to make things easier to find. For example, the **Mixed Reality Toolkit** category has several features for you to choose from:
 
 ![Discovery and acquisition](images/FeatureToolDiscovery.png)
+
+> [!NOTE]
+> If you will be using the MRTK3 public preview release in your project, you must enable `Show preview releases` as shown below in the red box.
+>
+> ![Recommended Feature Settings for MRTK3](images/FeatureTool-Show-Preview.png)
 
 When the Mixed Reality Feature Tool recognizes previously imported feature(s), it displays a notification message by each.
 

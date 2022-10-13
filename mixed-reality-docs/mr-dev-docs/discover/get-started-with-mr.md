@@ -17,10 +17,10 @@ The mixed reality ecosystem is an emerging landscape of physical and digital int
 
 ## Understand the basics
 
-If you're new to mixed reality, it's important that you start from the bottom and work your way up through its core concepts, experiences, and capabilities. You have several options here: we have a focused module on Microsoft Learn that will get you up to speed in no time, or you can choose to explore the individual journeys we've set up below. Any of these paths will help you set a firm foundation for designing and developing your own ideas in mixed reality.
+If you're new to mixed reality, it's important that you start from the bottom and work your way up through its core concepts, experiences, and capabilities. You have several options here: we have a focused Learn module that will get you up to speed quickly, or you can choose to explore the individual journeys we've set up below. Any of these paths will help you set a firm foundation for designing and developing your own ideas in mixed reality.
 
 > [!div class="nextstepaction"]
-> [Introduction to Mixed Reality module](/learn/modules/intro-to-mixed-reality)
+> [Introduction to Mixed Reality module](/training/modules/intro-to-mixed-reality)
 
 ### What is mixed reality?
 

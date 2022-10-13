@@ -36,7 +36,7 @@ MRTK supports a wide range of platforms, including:
 > [!NOTE]
 > You can also [set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md).
 
-## Other non-OpenXR configuration options
+### Other non-OpenXR configuration options to consider
 
 **Windows XR**: Microsoft doesn't recommend using the Windows XR plugin for any new projects in Unity 2020. Instead, you should use the Mixed Reality OpenXR plugin. However, if you're using Unity 2019 and you need AR Foundation 2.0 for compatibility with ARCore/ARKit devices, this plugin enables that support.
 
@@ -47,7 +47,7 @@ MRTK supports a wide range of platforms, including:
 
 If you're starting a new project, we recommend that you install Unity 2020 instead and use the Mixed Reality OpenXR plugin.
 
-## Create a new Unity project
+## Getting started with OpenXR: create a new Unity project
 
 1. Launch the **Unity Hub**.
 1. In the **Projects** tab,  click **New Project**.
@@ -85,11 +85,7 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
     ![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
 
     **If you're targeting the HoloLens 2**:
-    - Under **Platform**, select **Universal Windows Platform**. Make sure the following settings are active:
-
-    **Target device**: HoloLens
-
-    **Architecture**: ARM64
+    - Under **Platform**, select **Universal Windows Platform**. Make sure the following settings are correctly set:
 
     **Build Type**: D3D Project
 
@@ -98,10 +94,6 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
     **Minimum Platform Version**: 10.0.10240.0
 
     **Visual Studio Version**: Latest installed
-
-    **Build and Run on**: Local Machine
-
-    **Build configuration**: Release (there are known performance issues with Debug)
 
     ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](images/030-build-settings-uwp.png)
 

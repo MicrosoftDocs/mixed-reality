@@ -47,7 +47,7 @@ If you now build and deploy the Unity project to your HoloLens, then, back in Un
 ![Animation showing Unity with networked users](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](/learn/paths/beginner-hololens-2-tutorials/#building-your-application-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](/training/paths/beginner-hololens-2-tutorials/#building-your-application-to-your-hololens-2) instructions.
 
 > [!CAUTION]
 > The app needs to connect to Photon, so make sure your computer/device is connected to the internet.

@@ -23,7 +23,7 @@ Adding support for boundaries requires two key components of Mixed Reality Toolk
 
 ## Enable boundary system
 
-The Boundary System is managed by the MixedRealityToolkit object (or another [service registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) component).
+The Boundary System is managed by the MixedRealityToolkit object (or another [service registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component).
 
 The following steps presume use of the MixedRealityToolkit object. Steps required for other service registrars may be different.
 
@@ -35,12 +35,12 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
     ![Enable the Boundary System](../images/boundary/MRTKConfig_Boundary.png)
 
-1. Select the Boundary System implementation. The default class implementation provided by MRTK is the [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
+1. Select the Boundary System implementation. The default class implementation provided by MRTK is the [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
     ![Select the Boundary System Implementation](../images/boundary/BoundarySelectSystemType.png)
 
 > [!NOTE]
-> All Boundary System implementation must extend the [`IMixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.IMixedRealityBoundarySystem)
+> All Boundary System implementation must extend the [`IMixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.IMixedRealityBoundarySystem?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 
 ## Configure boundary visualization
 
@@ -72,5 +72,5 @@ GameObject floorVisual = CoreServices.BoundarySystem.GetFloorVisualization();
 
 ## See also
 
-- [Boundary API documentation](xref:Microsoft.MixedReality.Toolkit.Boundary)
+- [Boundary API documentation](xref:Microsoft.MixedReality.Toolkit.Boundary?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
 - [Configuring the Boundary Visualization](configuring-boundary-visualization.md)

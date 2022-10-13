@@ -3,7 +3,7 @@ title: Using Visual Studio to deploy and debug
 description: Learn how to build, debug, and deploy apps for HoloLens and Windows Mixed Reality using Visual Studio.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 12/07/2021
+ms.date: 08/17/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, debug, deploy, Unity
@@ -46,7 +46,7 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
 
 ## Deploying a HoloLens app over Wi-Fi or USB
 
->[!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
+>[!VIDEO https://learn.microsoft.com/shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
 
 ### Compilation options
 
@@ -75,7 +75,7 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
     To learn more about the build configurations, see the "Types of build configurations" table in the [Unity documentation](https://docs.unity3d.com/Manual/VisualStudioprojectgenerationWindows.html).
 
     > [!NOTE]
-    > For HoloLens, you'll typically build for the ARM architecture. However, there's a known issue in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, for a Unity project, follow this step before you generate your Unity build: go to **Edit** > **Project Settings** > **Player** > **Other Settings** and then disable **Graphics Jobs**.
+    > For deployment to the HoloLens 2 device, choose the ARM64 or the ARM architecture.
     >
     > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the **Solution Explorer**, right-click your project, and then select **Set as StartUp Project**.
 
@@ -115,6 +115,13 @@ To set your remote connection:
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
 1. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
+
+  > [!NOTE]
+  > If the errors listed below occur when you start debugging an installed UWP application on the HoloLens 2, try renaming your package or uninstalling your UWP application.
+  > 
+  > "Unable to start debugging"  
+  > "Operation not supported. Unknown error: 0x80070057"
+
 
 ## Deploying an app to the HoloLens (1st gen) Emulator
 

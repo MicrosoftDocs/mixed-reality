@@ -195,7 +195,7 @@ tools:
 #             - text: User guides
 #               url: /dynamics365/mixed-reality/guides/
 #             - text: Remote Assist learning modules
-#               url: /learn/browse/?products=dynamics-remote-assist
+#               url: /training/browse/?products=dynamics-remote-assist
 #         # Card
 #         - title: Azure Cloud Services
 #           links:
@@ -222,8 +222,8 @@ tools:
 #         - title: Learn modules
 #           links:
 #             - text: Introduction to Mixed Reality
-#               url: /learn/modules/intro-to-mixed-reality/
+#               url: /training/modules/intro-to-mixed-reality/
 #             - text: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
-#               url: /learn/modules/mixed-reality-toolkit-project-unity/
+#               url: /training/modules/mixed-reality-toolkit-project-unity/
 #             - text: Create a language translator application with Unity and Azure Cognitive Services
-#               url: /learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
+#               url: /training/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/

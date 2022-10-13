@@ -63,7 +63,7 @@ To get access to the **MRMesh** at runtime:
 
 ![Spatial Anchors Events](images/unreal-spatialmapping-events.PNG)
 
-In this case, the **On Add Tracked Geometry** event is being monitored, which looks for valid world meshes matching to spatial mapping data. You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/index.html) component API. 
+In this case, the **On Add Tracked Geometry** event is being monitored, which looks for valid world meshes matching to spatial mapping data. You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/) component API. 
 
 You can change the mesh’s material in the Blueprint Event Graph or in C++. The screenshot below shows the Blueprint route: 
 
@@ -115,7 +115,7 @@ void AARTrackableMonitor::OnTrackableAdded(UARTrackedGeometry* Added)
 > [!NOTE]
 > There are similar delegates for updated and removed events, **AddOnTrackableUpdatedDelegate_Handle** and **AddOnTrackableRemovedDelegate_Handle** respectively.
 >
-> You can find the full list of events in the [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API.
+> You can find the full list of events in the [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/) API.
 
 ## See also
 * [Spatial mapping](../../design/spatial-mapping.md)

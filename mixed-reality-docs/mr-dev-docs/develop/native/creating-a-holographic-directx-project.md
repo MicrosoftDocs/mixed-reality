@@ -178,7 +178,7 @@ The Windows Mixed Reality app template now supports compilation with the Spectre
 
 ## See also
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
-* <a href="/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
+* [HolographicSpace](/uwp/api/Windows.Graphics.Holographic.HolographicSpace)
 * [Rendering in DirectX](rendering-in-directx.md)
 * [Using Visual Studio to deploy and debug](../advanced-concepts/using-visual-studio.md)
 * [Using the HoloLens emulator](../advanced-concepts/using-the-hololens-emulator.md)

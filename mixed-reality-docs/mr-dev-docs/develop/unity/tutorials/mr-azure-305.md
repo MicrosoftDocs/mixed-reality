@@ -469,7 +469,7 @@ You will be using Azure Storage for Unity (which itself leverages the .Net SDK f
 
 There is currently a known issue in Unity which requires plugins to be reconfigured after import. These steps (4 - 7 in this section) will no longer be required after the bug has been resolved.
 
-To import the SDK into your own project, make sure you have downloaded the latest ['.unitypackage' from GitHub](https://aka.ms/azstorage-unitysdk). Then, do the following:
+To import the SDK into your own project, make sure you have downloaded the latest '.unitypackage' from GitHub. Then, do the following:
 
 1.  Add the **.unitypackage** file to Unity by using the **Assets** > **Import Package** > **Custom Package** menu option.
 
