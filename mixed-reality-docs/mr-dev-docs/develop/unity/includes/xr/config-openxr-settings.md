@@ -1,6 +1,7 @@
 ## Configure Input Backend settings
 
 1. After Unity has imported the package, a warning appears asking if you want to enable the backends by restarting the editor. Select **Yes**.
+
     :::image type="content" source="../../images/unity-restart-option.png" alt-text="Screenshot of Unity Restart Option.":::
 
 ## Configure the project for the HoloLens 2 via Project Validation (MR OpenXR 1.6+)

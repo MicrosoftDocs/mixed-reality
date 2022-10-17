@@ -46,7 +46,7 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
     **If you're targeting Desktop VR**:
     - Keep the **PC, Mac & Linux Standalone** platform which is selected by default on a new Unity project:
 
-    ![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
+    ![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](../../images/wmr-config-img-3.png)
 
     **If you're targeting the HoloLens 2**:
     - Under **Platform**, select **Universal Windows Platform**. Make sure the following settings are active:
@@ -59,7 +59,7 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
 
     **Visual Studio Version**: Latest installed
 
-    ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](images/030-build-settings-uwp.png)
+    ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](../../images/030-build-settings-uwp.png)
 
 1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
