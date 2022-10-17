@@ -9,14 +9,14 @@
 If you're developing for desktop VR, skip this section and go to [Configure the project for desktop VR](#configure-the-project-for-desktop-vr).
 
 1. On the menu bar, click on **Mixed Reality > Project > Apply recommended project settings for HoloLens 2** to enable the validation rules for HoloLens 2.
-1. In the project validation window that pops up, make sure you are on the UWP platform tab (indicated by the Windows logo), and click fix all to resolve the validation issues. Note there may be issues that remain after clicking on fix all. In that case, try clicking on fix all again, ignore any issues that are marked scene specific (if any), and go through the rest issues (if any) to see if there any suggested change you want to make.
+1. In the project validation window that pops up, make sure you're on the UWP platform tab (indicated by the Windows logo), and click **Fix all** to resolve the validation issues. Note that there may be issues that remain after clicking on **Fix all**. In that case, try clicking on **Fix all** again, ignore any issues that are marked "scene specific" (if any), and go through the rest of the issues (if any) to see if there are any suggested change that you want to make.
 1. The project is almost ready for HoloLens 2 deployment at this point. Proceed to [Configure Player settings](#configure-player-settings) for the next step.
 
 ## Configure the project for the HoloLens 2 manually
 
 If you're developing for desktop VR, skip this section and go to [Configure the project for desktop VR](#configure-the-project-for-desktop-vr).
 
-1. Make sure the **Project Settings** window is open. If not, go to the menu bar, select **Edit** > **Project Settings**.
+1. Make sure the **Project Settings** window is open. If not, on the menu bar, select **Edit** > **Project Settings**.
 1. In the **Project Settings** window, ensure that you're on the **XR Plug-in Management** page and in the **Universal Windows Platform** tab.
 
     :::image type="content" source="../../images/012-xr-plugin-mgmt-page.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and Universal Windows Platform tab.":::
@@ -47,7 +47,6 @@ Note that there's a yellow warning triangle next to **OpenXR**. This indicates t
     :::image type="content" source="../../images/032-wmr-feature-group.png" alt-text="Screenshot of Project Settings Window the OpenXR Plugin and Windows Mixed Reality feature group highlighted.":::
 
 Note that there's now a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved. To find out how to address this, continue to the next section, [Resolving incompatible settings](#resolving-incompatible-settings).
-
 
 ## Resolving incompatible settings
 
