@@ -16,21 +16,21 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
 1. Launch the **Unity Hub**.
 1. In the **Projects** tab,  click **New Project**.
 
-   :::image type="content" source="images/001-new-project.png" alt-text="Screenshot of Unity Hub in Projects tab with the New Project button highlighted.":::
+   :::image type="content" source="../../images/001-new-project.png" alt-text="Screenshot of Unity Hub in Projects tab with the New Project button highlighted.":::
 
 1. Click the drop-down underneath **New project** and then select the Editor version you want.
 
-    :::image type="content" source="images/002-editor-version.png" alt-text="Screenshot of Unity Hub with the Editor version drop-down displayed.":::
+    :::image type="content" source="../../images/002-editor-version.png" alt-text="Screenshot of Unity Hub with the Editor version drop-down displayed.":::
 
 1. Ensure the chosen template is **3D Core**.
 1. In the **Project name** box, enter a name for your project--for example, "MRTK Tutorial."
 1. In the **Location** box, click the folder icon, and then navigate to the folder where you want to save your project and select it. You can also create a new folder.
 
-    :::image type="content" source="images/003-name-and-location.png" alt-text="Screenshot of Unity Hub with 3D, Project Name, Location, and Create highlighted.":::
+    :::image type="content" source="../../images/003-name-and-location.png" alt-text="Screenshot of Unity Hub with 3D, Project Name, Location, and Create highlighted.":::
 
 1. Click **Create Project**. This opens your project in Unity.
 
-    :::image type="content" source="images/004-project-open-in-unity.png" alt-text="Screenshot of your project open in Unity.":::
+    :::image type="content" source="../../images/004-project-open-in-unity.png" alt-text="Screenshot of your project open in Unity.":::
 
 > [!CAUTION]
 > When working on Windows, there is a MAX_PATH limit of 255 characters. Unity is affected by these limits and may fail to compile if any file path is longer than 255 characters. Therefore, we recommend that you store your Unity project as close to the root of the drive as possible.
