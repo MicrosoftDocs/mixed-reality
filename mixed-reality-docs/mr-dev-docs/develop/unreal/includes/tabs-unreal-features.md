@@ -1,6 +1,6 @@
-# [5.0](#tab/ue427)
+# [4.27+](#tab/ue427)
 
-The latest Unreal Engine 5.0 release includes:
+The latest Unreal Engine 4.27+ releases include:
 * Windows Mixed Reality (WMR) plugin replaced by OpenXR and Microsoft OpenXR plugin ([Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal))
 * OpenXR offers feature parity with WMR
 * Unified API for cross platform development
@@ -9,9 +9,11 @@ The latest Unreal Engine 5.0 release includes:
 * HoloLensAR plugin is removed in Unreal 5.0
 * Support for World Locking Tools (5.0+)
 * Support for Azure Object Anchors (4.27+)
+* Connect the [Mixed Reality Design Language (MRDL) to Graphics tools (MRTK)](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-graphicstools/architecture/mrdl-mrgt) 
 
 See the Unreal Engine 5.0 <a href="https://docs.unrealengine.com/5.0/en-US/unreal-engine-5.0-release-notes/" target="_blank" title="Unreal Engine 5.0 release notes">release notes</a> for more. 
 # [4.26](#tab/ue426)
+
 
 The latest Unreal Engine 4.26 release includes:
 * Support for new [cross-device XR APIs](../unreal-porting.md)
