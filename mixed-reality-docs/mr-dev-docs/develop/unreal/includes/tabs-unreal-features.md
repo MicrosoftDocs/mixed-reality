@@ -6,10 +6,11 @@ The latest Unreal Engine 4.27+ releases include:
 * Unified API for cross platform development
 * OpenXR available for application creation in-engine — full feature set available with Microsoft OpenXR plugin
 * Microsoft OpenXR plugin updates release when ready instead of in-engine updates
+* Use the [Graphics Tools Plugin for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal) to improve visual fidelity of Mixed Reality applications while maintaining performance
 * HoloLensAR plugin is removed in Unreal 5.0
-* Support for World Locking Tools (5.0+)
+* Support for [World Locking Tools (5.0+)](https://github.com/microsoft/WorldLockingTools-Unreal)
 * Support for Azure Object Anchors (4.27+)
-* Connect the [Mixed Reality Design Language (MRDL) to Graphics tools (MRTK)](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-graphicstools/architecture/mrdl-mrgt) 
+
 
 See the Unreal Engine 5.0 <a href="https://docs.unrealengine.com/5.0/en-US/unreal-engine-5.0-release-notes/" target="_blank" title="Unreal Engine 5.0 release notes">release notes</a> for more. 
 # [4.26](#tab/ue426)
