@@ -21,7 +21,7 @@ Spatial anchors save holograms in real-world space between application sessions 
 
 ## Prerequisites
 > [!IMPORTANT] 
-> Spatial anchors requires OpenXR.
+> Spatial anchors requires Microsoft OpenXR plugin.
 
 The Microsoft OpenXR plugin must be used, available from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal/releases).
 
