@@ -20,7 +20,7 @@ You can find more information in the [Scene Understanding](../../design/scene-un
 
 ## Prerequisites
 > [!IMPORTANT] 
-> Scene Understanding requires Microsoft OpenXR Plugin and Unreal 4.27.1 or newer.
+> Scene Understanding requires Microsoft OpenXR plugin and Unreal 4.27.1 or newer.
 
 The Microsoft OpenXR plugin must be used, available from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal/releases).
 
