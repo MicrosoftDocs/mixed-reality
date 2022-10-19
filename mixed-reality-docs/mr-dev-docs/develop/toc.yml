@@ -555,8 +555,8 @@
     href: advanced-concepts/hololens-emulator-archive.md
   - name: Perception simulation
     items:
-    - name: Perception simulation overview
+    - name: Overview
       href: advanced-concepts/perception-simulation-overview.md
-    - name: Perception simulation standalone package
+    - name: Standalone package (Preview)
       href: advanced-concepts/perception-simulation-standalone.md
 
