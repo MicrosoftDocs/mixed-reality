@@ -24,7 +24,7 @@ This standalone package release of Perception Simulation allows for more frequen
 
 ## System requirements 
 
-* Approximately 60MB of disk space 
+* 60MB of disk space 
 
 * Windows 10 version 2004 or newer 
 
@@ -78,9 +78,9 @@ You can create a recording of manual Perception Simulation actions using the **P
 
 5. Perform your actions in the UX manually using **Perception Simulation Control** - look around, interact, etc. 
 
-    During recording, you can optionally insert a validation step into your recording: click the **Add Validation** button and then fill in the popup UI that appears.
+    During recording, you can optionally insert a validation step into your recording: Select the **Add Validation** button and then fill in the popup UI that appears.
 
-6. Click the **Stop** button.  The new recording will be saved to disk and loaded automatically.  Hit **Play** to playback the actions. 
+6. Select the **Stop** button.  The new recording will be saved to disk and loaded automatically.  Hit **Play** to play back the actions. 
 
 ## Creating test automation 
 
@@ -94,7 +94,7 @@ To create test automation using managed code:
 
 1. Add `using Microsoft.PerceptionSimulation`. 
 
-Here is the basic sample C# code that connects to a remote HoloLens, executes a **Home** (System) gesture, then plays a recording: 
+Here's the basic sample C# code that connects to a remote HoloLens, executes a **Home** (System) gesture, then plays a recording: 
 
 ```csharp
 using Microsoft.PerceptionSimulation; 
@@ -166,11 +166,11 @@ namespace SimulationManagedTestApp
 } 
 ```
 
-Platform IDs are stored in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Perception Simulation\Platforms`.  The key names are not used, but the ID value inside is.  For example, the platform ID for Windows Mixed Reality is at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Perception Simulation\Platforms\WMR  (ID = "B1DE8CAA-898F-474F-811A-F041FE3FD40D")`.  You can enumerate platforms in code by using `PerceptionSimulationManager.GetAvailablePlatforms()` which returns an array of `SimulationPlatform` structs.  Each `SimulationPlatform` provides various details about the platform, including the `PlatformId`.  For native code, `PerceptionSimulationSettings::GetAvailablePlatforms()` can be used.  The native version of the API returns a count and optionally fills in the caller-provided array.  You can call the API once to get the count, then call it again to have your array populated. 
+Platform IDs are stored in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Perception Simulation\Platforms`.  The key names aren't used, but the ID value inside is.  For example, the platform ID for Windows Mixed Reality is at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Perception Simulation\Platforms\WMR  (ID = "B1DE8CAA-898F-474F-811A-F041FE3FD40D")`.  You can enumerate platforms in code by using `PerceptionSimulationManager.GetAvailablePlatforms()` which returns an array of `SimulationPlatform` structs.  Each `SimulationPlatform` provides various details about the platform, including the `PlatformId`.  For native code, `PerceptionSimulationSettings::GetAvailablePlatforms()` can be used.  The native version of the API returns a count and optionally fills in the caller-provided array.  You can call the API once to get the count, then call it again to have your array populated. 
 
 You can browse the `PerceptionSimulationManager.Interop` library to see available classes and methods.  This includes: 
 
-* `IPerceptionSimulationManager2`, which allows you to add additional sinks to receive simulation data, load Scene Understanding data, send audio data, and programmatically inject validation requests.  
+* `IPerceptionSimulationManager2`, which allows you to add sinks to receive simulation data, load Scene Understanding data, send audio data, and programmatically inject validation requests.  
 
     >[!Note]
     >Some features are not currently supported on HoloLens and Windows Mixed Reality. 
