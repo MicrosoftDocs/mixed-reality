@@ -91,9 +91,9 @@ You can create a recording of manual Perception Simulation actions using the **P
 
 To create test automation using managed code: 
 
-1. Create a new .NET Frame 4.7 managed code project in Visual Studio. 
+1. Create a new .NET Framework 4.7 managed code project in Visual Studio. 
 
-1. Add references to `PerceptionSimulation.Interop`, `PerceptionSimulationManager.Interop` and `SimulationStream.Interop`.  You'll find these in the managed SDK folder (`%ProgramFiles%\Microsoft Perception Simulation\Sdk\References`) or in the `Sdk\References` folder in the **Universal Package**. 
+1. Add references to `PerceptionSimulation.Interop`, `PerceptionSimulationManager.Interop` and `SimulationStream.Interop`.  You'll find these in the managed SDK folder (`%ProgramFiles%\Microsoft Perception Simulation\Sdk\References`). 
 
 1. Add an existing item link in your managed code project to `PerceptionSimulationManager.dll` and set it to **Copy if newer**. 
 
