@@ -3,12 +3,17 @@ title: Perception simulation - standalone package (Preview)
 description: A guide to using the Perception Simulation standalone package release
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 10/19/2022
+ms.date: 10/21/2022
 ms.topic: article
 keywords: HoloLens, simulation, testing
 ---
 
 # Perception simulation (Preview)
+
+Click the link below to download the Perception Simulation standalone package:
+
+> [!div class="nextstepaction"]
+> [Perception Simulation (Preview)](https://go.microsoft.com/fwlink/?linkid=2212643)
 
 This standalone package release of Perception Simulation allows for more frequent updates independent of operating system releases and brings new features, including: 
 
