@@ -35,6 +35,8 @@
       href: unity/unity-development-wmr-overview.md
     - name: Mixed Reality Toolkit (MRTK)
       href: /windows/mixed-reality/mrtk-unity/
+    - name: Mixed Reality OpenXR Plugin API reference
+      href: https://aka.ms/openxr-unity-api-reference
     - name: Tutorials
       items:
         - name: Overview
