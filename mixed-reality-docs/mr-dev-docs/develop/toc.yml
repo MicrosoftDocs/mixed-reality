@@ -283,9 +283,9 @@
         href: unreal/unreal-scene-understanding.md
       - name: Spatial audio
         href: unreal/unreal-spatial-audio.md
-      - name: Local spatial anchors
+      - name: Local Spatial Anchors
         href: unreal/unreal-spatial-anchors.md
-      - name: Azure spatial anchors
+      - name: Azure Spatial Anchors
         href: unreal/unreal-azure-spatial-anchors.md
       - name: Voice input
         href: unreal/unreal-voice-input.md
