@@ -1,12 +1,12 @@
 ---
 title: Unreal Development Overview
-description: Get started wit mixed reality development for HoloLens and VR using Unreal Engine 4 with our curated checkpoint journey.
+description: Get started with mixed reality development for HoloLens and VR with our guide to developing mixed reality applications using Unreal Engine 4.0 or Unreal Engine 5.0.
 author: sean-kerawala
 ms.author: sekerawa
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, OpenXR
+keywords: Unreal, Unreal Engine 4, Unreal Engine 4.27, Unreal Engine 5.0, UE5, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, OpenXR
 ---
 # Unreal Development Overview
 
