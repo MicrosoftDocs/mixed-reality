@@ -13,7 +13,7 @@ keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reali
 To access the GitHub repo for the extended eye tracking sample:
 
 > [!div class="nextstepaction"]
-> [Extended eye tracking in Unity](https://github.com/microsoft/MixedReality-EyeTracking-Sample)
+> [Extended eye tracking Unity sample](https://github.com/microsoft/MixedReality-EyeTracking-Sample)
 
 Extended eye tracking is a new capability in HoloLens 2. It is a superset of the standard eye tracking, which only provides combined eye gaze data. Extended eye tracking also provides individual eye gaze data and allows applications to set different framerate for the gaze data, such as 30, 60, and 90fps. Other features like eye openness and eye vergence are not supported by HoloLens 2 at this time.
 

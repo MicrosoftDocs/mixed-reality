@@ -19,7 +19,7 @@ This article covers the ways that to use the extended eye tracking SDK in native
 ## Project setup
 
 1. [Create](./creating-a-holographic-directx-project.md)  a `Holographic DirectX 11 App (Universal Windows)` or `Holographic DirectX 11 App (Universal Windows) (C++/WinRT)` project with Visual Studio 2019 or newer, or open your existing holographic Visual Studio project.
-1. Import the [Eye Tracking SDK NuGet package](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) to the project.
+1. Import the extended eye tracking SDK to the project.
     1. In the Visual Studio Solution Explorer, right-click your project -> Manage NuGet Packages...
     1. Make sure the Package source in the top right corner points to nuget.org: https://api.nuget.org/v3/index.json
     1. Click the Browser tab, and then search `Microsoft.MixedReality.EyeTracking`.
@@ -246,7 +246,7 @@ if (reading)
 
 ## Transform gaze data to other SpatialCoordinateSystem
 
-WinRT APIs that return spatial data such as a position always require both a `PerceptionTimestamp` and a `SpatialCoordinateSystem`. For example, to retrieve the combined gaze of HoloLens 2 using the WinRT API, the API [SpatialPointerPose.TryGetAtTimestamp()](https://learn.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp?view=winrt-22621) requires 2 parameters, a `SpatialCoordinateSystem` and a `PerceptionTimestamp`. When the combined gaze is then accessed through `SpatialPointerPose.Eyes.Gaze`, its origin and direction are expressed in the `SpatialCoordinateSystem` passed in.
+WinRT APIs that return spatial data such as a position always require both a `PerceptionTimestamp` and a `SpatialCoordinateSystem`. For example, to retrieve the combined gaze of HoloLens 2 using the WinRT API, the API [SpatialPointerPose.TryGetAtTimestamp()](https://learn.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) requires 2 parameters, a `SpatialCoordinateSystem` and a `PerceptionTimestamp`. When the combined gaze is then accessed through `SpatialPointerPose.Eyes.Gaze`, its origin and direction are expressed in the `SpatialCoordinateSystem` passed in.
 
 Extended tye tracking SDK APIs don't need to take an `SpatialCoordinateSystem` and the gaze data are always expressed in the tracker's coordinate system. But you can transform those gaze data to other coordinate system with the tracker's pose related to other coordinate system.
 
