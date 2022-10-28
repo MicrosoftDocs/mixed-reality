@@ -1,5 +1,5 @@
 ---
-title: Extended eye tracking for Unity Development
+title: Extended eye tracking in Unity
 description: Learn about extended eye tracking for Unity development for HoloLens 2.
 author: magdavuko   
 ms.author: magdav
@@ -7,119 +7,80 @@ ms.date: 08/23/2022
 ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions, API reference, Unity
 ---
-# Extended eye tracking for Unity development
 
-The Extended Eye Tracking SDK, shown as a NuGet package, enables applications to access data and features provided by Eye Trackers that are not necessarily available through the Windows API. This addresses the reality that trackers and drivers can evolve at a faster pace than the Windows API.
+# Extended eye tracking in Unity
 
-All eye-related information provided by a device such as the HoloLens 2 is available through the Extended Eye Tracking SDK, which is meant to be used in conjunction with Windows spatial APIs such as the Windows.Perception.Spatial.SpatialCoordinateSystem class. This allows a smooth update of existing Windows Mixed Reality applications using eye tracking features.
+To access the GitHub repo for the extended eye tracking sample:
 
-This article covers the ways that you can use the Unity  development path to consume the Extended Eye Tracking SDK and get access to the extended eye tracking data and features. An API reference is also provided.
+> [!div class="nextstepaction"]
+> [Extended eye tracking in Unity](https://github.com/microsoft/MixedReality-EyeTracking-Sample)
+
+Extended eye tracking is a new capability in HoloLens 2. It is a superset of the standard eye tracking, which only provides combined eye gaze data. Extended eye tracking also provides individual eye gaze data and allows applications to set different framerate for the gaze data, such as 30, 60, and 90fps. Other features like eye openness and eye vergence are not supported by HoloLens 2 at this time.
+
+The [Extended Eye Tracking SDK](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) enables applications to access data and features of extended eye tracking. It could be used together with OpenXR APIs or legacy WinRT APIs.
+
+This article covers the ways that to use the extended eye tracking SDK in Unity, together with the Mixed Reality OpenXR Plugin.
 
 ## Project setup
 
-1. [Set up the Unity project for HoloLens development.](./unity-development-overview.md).
+1. [Set up the Unity project for HoloLens development.](./unity-development-overview.md)
     - Select the Gaze Input capability
-2. Import the [Eye Tracking SDK NuGet package](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) into your Unity project.
+2. [Import the Mixed Reality OpenXR Plugin from MRTK feature tool.](./mixed-reality-openxr-plugin.md) 
+3. Import the [Eye Tracking SDK NuGet package](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) into your Unity project.
     1. Download and install the [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity/releases) package.
     2. In the Unity editor, go to `NuGet`->`Manage NuGet Packages`, and then search for `Microsoft.MixedReality.EyeTracking`
-    3. Click the Install button to import the NuGet package.  
+    3. Click the Install button to import the latest version of NuGet package.  
 
         ![Screenshot of the Eye Tracking SDK Nuget package.](images/038-install-nuget-package.png)  
 
-3. Add the Unity helper scripts.
-    1. Add the `Vector3Extensions.cs` and `ExtendedEyeTrackingDataProvider.cs` scripts below into your Unity project.
-    2. Create a scene, then add an empty object, and then attach the `ExtendedEyeTrackingDataProvider.cs` script to it.
-4. Implement your logics.
-5. Build and deploy.
+4. Add the Unity helper scripts.
+    1. Add the `ExtendedEyeGazeDataProvider.cs` script below into your Unity project.
+    2. Create a scene, add an empty object, and then attach the `ExtendedEyeGazeDataProvider.cs` script to it.
+5. Consume the functions of `ExtendedEyeGazeDataProvider.cs` and implement your logics.
 
-## Steps to get the gaze data
+## Consume functions of ExtendedEyeGazeDataProvider
 
-The ExtendedEyeTrackingDataProvider class wraps the Extended Eye Tracking SDK APIs. It could get gaze reading in either Unity world space or relative to the main camera.
+> [!NOTE]
+> The `ExtendedEyeGazeDataProvider` script depends on some APIs from Mixed Reality OpenXR Plugin to convert the coordinates of the gaze data. It cannot work if your Unity project uses deprecated Windows XR plugin or legacy Built-in XR in older Unity version. To make the extended eye tracking also work in those scenarios
+> - If you just need to access the framerate settings, the Mixed Reality OpenXR Plugin is not necessary, and you could modify the `ExtendedEyeGazeDataProvider` to only keep the framerate related logics.
+> - If you still need to access individual eye gaze data, you need to [use WinRT APIs in Unity](./using-the-windows-namespace-with-unity-apps-for-hololens.md). You can refer the see also section to see how to use extended eye tracking SDK with WinRT APIs.
 
-Code samples to get the gaze data
+The `ExtendedEyeGazeDataProvider` class wraps the extended eye tracking SDK APIs. It provides functions to get gaze reading in either Unity world space or relative to the main camera.
 
-```C#
-ExtendedEyeTrackingDataProvider extendedEyeTrackingDataProvider;
-timestamp = DateTime.Now;
-
-var leftGazeReadingInWorldSpace = extendedEyeTrackingDataProvider.GetWorldSpaceGazeReading(ExtendedEyeTrackingDataProvider.GazeType.Left, timestamp);
-var rightGazeReadingInWorldSpace = extendedEyeTrackingDataProvider.GetWorldSpaceGazeReading(ExtendedEyeTrackingDataProvider.GazeType.Right, timestamp);
-var combinedGazeReadingInWorldSpace = extendedEyeTrackingDataProvider.GetWorldSpaceGazeReading(ExtendedEyeTrackingDataProvider.GazeType.Combined, timestamp);
-
-var combinedGazeReadingInCameraSpace = extendedEyeTrackingDataProvider.GetCameraSpaceGazeReading(ExtendedEyeTrackingDataProvider.GazeType.Combined, timestamp);
-```
-
-When Unity executes the ExtendedEyeTrackingDataProvider script, it sets the frame rate to the highest option, which is currently 90fps.
-
-## Scripts
-
-### Vector3Extensions.cs
+Code samples to consume `ExtendedEyeGazeDataProvider` to get the gaze data.
 
 ```C#
-using System.Text;
+ExtendedEyeGazeDataProvider extendedEyeGazeDataProvider;
+void Update() {
+    timestamp = DateTime.Now;
 
-public static class Vector3Extensions
-{
-    private static StringBuilder sb = new StringBuilder();
-    public static string ToString2(float x, float y, float z)
-    {
-        sb.Clear();
-        sb.Append("(");
-        sb.Append(x.ToString("F3"));
-        sb.Append(" ,");
-        sb.Append(y.ToString("F3"));
-        sb.Append(" ,");
-        sb.Append(z.ToString("F3"));
-        sb.Append(")");
-        return sb.ToString();
-    }
+    var leftGazeReadingInWorldSpace = extendedEyeGazeDataProvider.GetWorldSpaceGazeReading(extendedEyeGazeDataProvider.GazeType.Left, timestamp);
+    var rightGazeReadingInWorldSpace = extendedEyeGazeDataProvider.GetWorldSpaceGazeReading(extendedEyeGazeDataProvider.GazeType.Right, timestamp);
+    var combinedGazeReadingInWorldSpace = extendedEyeGazeDataProvider.GetWorldSpaceGazeReading(extendedEyeGazeDataProvider.GazeType.Combined, timestamp);
 
-    public static string ToString2(this UnityEngine.Vector3 v)
-    {
-        return ToString2(v.x, v.y, v.z);
-    }
-
-    public static string ToString2(this System.Numerics.Vector3 v)
-    {
-        return ToString2(v.X, v.Y, v.Z);
-    }
-
-    public static UnityEngine.Vector3 ToUnity(this System.Numerics.Vector3 v) => new UnityEngine.Vector3(v.X, v.Y, -v.Z);
-    public static UnityEngine.Quaternion ToUnity(this System.Numerics.Quaternion q) => new UnityEngine.Quaternion(-q.X, -q.Y, q.Z, q.W);
-    public static UnityEngine.Matrix4x4 ToUnity(this System.Numerics.Matrix4x4 m) => new UnityEngine.Matrix4x4(
-        new UnityEngine.Vector4(m.M11, m.M12, -m.M13, m.M14),
-        new UnityEngine.Vector4(m.M21, m.M22, -m.M23, m.M24),
-        new UnityEngine.Vector4(-m.M31, -m.M32, m.M33, -m.M34),
-        new UnityEngine.Vector4(m.M41, m.M42, -m.M43, m.M44));
-
-    public static System.Numerics.Vector3 ToSystem(this UnityEngine.Vector3 v) => new System.Numerics.Vector3(v.x, v.y, -v.z);
-    public static System.Numerics.Quaternion ToSystem(this UnityEngine.Quaternion q) => new System.Numerics.Quaternion(-q.x, -q.y, q.z, q.w);
-    public static System.Numerics.Matrix4x4 ToSystem(this UnityEngine.Matrix4x4 m) => new System.Numerics.Matrix4x4(
-        m.m00, m.m10, -m.m20, m.m30,
-        m.m01, m.m11, -m.m21, m.m31,
-       -m.m02, -m.m12, m.m22, -m.m32,
-        m.m03, m.m13, -m.m23, m.m33);
+    var combinedGazeReadingInCameraSpace = extendedEyeGazeDataProvider.GetCameraSpaceGazeReading(extendedEyeGazeDataProvider.GazeType.Combined, timestamp);
 }
 ```
 
-### ExtendedEyeTrackingDataProvider.cs
+When the `ExtendedEyeGazeDataProvider` script got executed, it sets the gaze data framerate to the highest option, which is currently 90fps.
+
+## ExtendedEyeGazeDataProvider.cs script
 
 ```C#
-using Microsoft.MixedReality.EyeTracking;
-using System;
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 using UnityEngine;
-#if ENABLE_WINMD_SUPPORT
-using System.Threading.Tasks;
-using Windows.Perception;
-using Windows.Perception.Spatial;
-#endif
+using System;
+using Microsoft.MixedReality.OpenXR;
+using Microsoft.MixedReality.EyeTracking;
 
 /// <summary>
 /// This class provides access to the Extended Eye Gaze Tracking API 
 /// Values are given in Unity world space or relative to the main camera
 /// </summary>
 [DisallowMultipleComponent]
-public class ExtendedEyeTrackingDataProvider : MonoBehaviour
+public class ExtendedEyeGazeDataProvider : MonoBehaviour
 {
     public enum GazeType
     {
@@ -141,24 +102,17 @@ public class ExtendedEyeTrackingDataProvider : MonoBehaviour
     }
 
     private Camera _mainCamera;
-    private GazeReading _gazeReading = new GazeReading();
-    private GazeReading _transformedGazeReading = new GazeReading();
     private EyeGazeTrackerWatcher _watcher;
     private EyeGazeTracker _eyeGazeTracker;
     private EyeGazeTrackerReading _eyeGazeTrackerReading;
-    private System.Numerics.Vector3 _trackerPosition;
-    private System.Numerics.Quaternion _trackerOrientation;
-    private System.Numerics.Matrix4x4 _trackerToUnityWorldSpaceMatrix;
     private System.Numerics.Vector3 _trackerSpaceGazeOrigin;
     private System.Numerics.Vector3 _trackerSpaceGazeDirection;
+    private GazeReading _gazeReading = new GazeReading();
+    private GazeReading _transformedGazeReading = new GazeReading();
     private bool _gazePermissionEnabled;
     private bool _readingSucceeded;
-#if ENABLE_WINMD_SUPPORT
-    private SpatialLocator _trackerLocator;
-    private SpatialLocation _trackerLocation;
-    private SpatialCoordinateSystem _unityWorldSpaceSpatialCoordinateSystem;
-    PerceptionTimestamp _perceptionTimestamp;
-#endif
+    private SpatialGraphNode _eyeGazeTrackerNode;
+    private Pose _eyeGazeTrackerPose;
 
 
     /// <summary>
@@ -177,12 +131,11 @@ public class ExtendedEyeTrackingDataProvider : MonoBehaviour
     /// Will return null if unable to return a valid reading
     /// </summary>
     /// <param name="gazeType"></param>
-    /// <param name="timeStamp"></param>
+    /// <param name="timestamp"></param>
     /// <returns></returns>
-    public GazeReading GetCameraSpaceGazeReading(GazeType gazeType, DateTime timeStamp)
+    public GazeReading GetCameraSpaceGazeReading(GazeType gazeType, DateTime timestamp)
     {
-        _gazeReading = GetWorldSpaceGazeReading(gazeType, timeStamp);
-        if (_gazeReading == null)
+        if (GetWorldSpaceGazeReading(gazeType, timestamp) == null)
         {
             return null;
         }
@@ -225,84 +178,39 @@ public class ExtendedEyeTrackingDataProvider : MonoBehaviour
             return null;
         }
 
-        _gazeReading = null;
-
-#if ENABLE_WINMD_SUPPORT
-        // compute tracker to stationary coordinate system transform
-        _perceptionTimestamp = PerceptionTimestampHelper.FromHistoricalTargetTime(timestamp);
-        _trackerLocation = _trackerLocator.TryLocateAtTimestamp(_perceptionTimestamp, _unityWorldSpaceSpatialCoordinateSystem);
-
-        if (_trackerLocation == null)
+        _readingSucceeded = false;
+        switch (gazeType)
+        {
+            case GazeType.Left:
+                {
+                    _readingSucceeded = _eyeGazeTrackerReading.TryGetLeftEyeGazeInTrackerSpace(out _trackerSpaceGazeOrigin, out _trackerSpaceGazeDirection);
+                    break;
+                }
+            case GazeType.Right:
+                {
+                    _readingSucceeded = _eyeGazeTrackerReading.TryGetRightEyeGazeInTrackerSpace(out _trackerSpaceGazeOrigin, out _trackerSpaceGazeDirection);
+                    break;
+                }
+            case GazeType.Combined:
+                {
+                    _readingSucceeded = _eyeGazeTrackerReading.TryGetCombinedEyeGazeInTrackerSpace(out _trackerSpaceGazeOrigin, out _trackerSpaceGazeDirection);
+                    break;
+                }
+        }
+        if (!_readingSucceeded)
         {
             return null;
         }
 
-        _trackerOrientation = _trackerLocation.Orientation;
-        _trackerPosition = _trackerLocation.Position;
-        _trackerToUnityWorldSpaceMatrix = System.Numerics.Matrix4x4.CreateFromQuaternion(_trackerOrientation) * System.Numerics.Matrix4x4.CreateTranslation(_trackerPosition);
-
-        switch (gazeType)
+        // get tracker pose in Unity scene origin space
+        if (!_eyeGazeTrackerNode.TryLocate(_eyeGazeTrackerReading.SystemRelativeTime.Ticks, out _eyeGazeTrackerPose))
         {
-            case GazeType.Left:
-            {
-                // Get left eye gaze
-                _readingSucceeded = _eyeGazeTrackerReading.TryGetLeftEyeGazeInTrackerSpace(out _trackerSpaceGazeOrigin, out _trackerSpaceGazeDirection);
-                if (_readingSucceeded)
-                {
-                    // return the gaze reading in Unity world space
-                    return new GazeReading(
-                    // the gaze origin in world space
-                    System.Numerics.Vector3.Transform(_trackerSpaceGazeOrigin, _trackerToUnityWorldSpaceMatrix).ToUnity(),
-
-                    // the gaze direction in world space
-                    System.Numerics.Vector3.TransformNormal(_trackerSpaceGazeDirection, _trackerToUnityWorldSpaceMatrix).ToUnity().normalized
-                    );
-                }
-
-                // unable to get reading
-                return null;
-            }
-            case GazeType.Right:
-            {
-                // Get right eye gaze
-                _readingSucceeded = _eyeGazeTrackerReading.TryGetRightEyeGazeInTrackerSpace(out _trackerSpaceGazeOrigin, out _trackerSpaceGazeDirection);
-                if (_readingSucceeded)
-                {
-                    // return the gaze reading in Unity world space
-                    return new GazeReading(
-                    // the gaze origin in world space
-                    System.Numerics.Vector3.Transform(_trackerSpaceGazeOrigin, _trackerToUnityWorldSpaceMatrix).ToUnity(),
-
-                    // the gaze direction in world space
-                    System.Numerics.Vector3.TransformNormal(_trackerSpaceGazeDirection, _trackerToUnityWorldSpaceMatrix).ToUnity().normalized
-                    );
-                }
-
-                // unable to get reading
-                return null;
-            }
-            case GazeType.Combined:
-            {
-                // Get combined eye gaze
-                _readingSucceeded = _eyeGazeTrackerReading.TryGetCombinedEyeGazeInTrackerSpace(out _trackerSpaceGazeOrigin, out _trackerSpaceGazeDirection);
-                if (_readingSucceeded)
-                {
-                    // return the gaze reading in Unity world space
-                    return new GazeReading(
-                    // the gaze origin in world space
-                    System.Numerics.Vector3.Transform(_trackerSpaceGazeOrigin, _trackerToUnityWorldSpaceMatrix).ToUnity(),
-
-                    // the gaze direction in world space
-                    System.Numerics.Vector3.TransformNormal(_trackerSpaceGazeDirection, _trackerToUnityWorldSpaceMatrix).ToUnity().normalized
-                    );
-                }
-
-                // unable to get reading
-                return null;
-            }
+            return null;
         }
-#endif
+        transform.SetPositionAndRotation(_eyeGazeTrackerPose.position, _eyeGazeTrackerPose.rotation);
 
+        _gazeReading.EyePosition = transform.TransformPoint(ToUnity(_trackerSpaceGazeOrigin));
+        _gazeReading.GazeDirection = transform.TransformDirection(ToUnity(_trackerSpaceGazeDirection));
         return _gazeReading;
     }
 
@@ -310,22 +218,14 @@ public class ExtendedEyeTrackingDataProvider : MonoBehaviour
     {
         _mainCamera = Camera.main;
 
-        Debug.Log("Initializing MedicalEyeTracking");
+        Debug.Log("Initializing ExtendedEyeTracker");
 #if ENABLE_WINMD_SUPPORT
-#if UNITY_2020_1_OR_NEWER
-        if ((bool)IsLoaderActive<UnityEngine.XR.OpenXR.OpenXRLoaderBase>())
-        {
-            _unityWorldSpaceSpatialCoordinateSystem = Microsoft.MixedReality.OpenXR.PerceptionInterop.GetSceneCoordinateSystem(Pose.identity) as SpatialCoordinateSystem;
-        }
-        else
-        {
-            _unityWorldSpaceSpatialCoordinateSystem = (SpatialCoordinateSystem)System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(UnityEngine.XR.WindowsMR.WindowsMREnvironment.OriginSpatialCoordinateSystem);
-        }
-#else
-        _unityWorldSpaceSpatialCoordinateSystem = (SpatialCoordinateSystem)System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(UnityEngine.XR.WSA.WorldManager.GetNativeISpatialCoordinateSystemPtr());
-#endif
         Debug.Log("Triggering eye gaze permission request");
+        // This function call may not required if you already use MRTK in your project 
         _gazePermissionEnabled = await AskForEyePosePermission();
+#else
+        // Always enable when running in editor
+        _gazePermissionEnabled = true;
 #endif
 
         if (!_gazePermissionEnabled)
@@ -334,7 +234,7 @@ public class ExtendedEyeTrackingDataProvider : MonoBehaviour
             return;
         }
 
-        _watcher = new Microsoft.MixedReality.EyeTracking.EyeGazeTrackerWatcher();
+        _watcher = new EyeGazeTrackerWatcher();
         _watcher.EyeGazeTrackerAdded += _watcher_EyeGazeTrackerAdded;
         _watcher.EyeGazeTrackerRemoved += _watcher_EyeGazeTrackerRemoved;
         await _watcher.StartAsync();
@@ -359,14 +259,9 @@ public class ExtendedEyeTrackingDataProvider : MonoBehaviour
                 Debug.Log($"  supportedFrameRate: {frameRate.FramesPerSecond}");
             }
 
+            // Set to highest framerate, it is 90FPS at this time
             _eyeGazeTracker.SetTargetFrameRate(supportedFrameRates[supportedFrameRates.Count - 1]);
-
-#if ENABLE_WINMD_SUPPORT
-            // Get a spatial locator for the tracker
-            var trackerNodeId = e.TrackerSpaceLocatorNodeId;
-            _trackerLocator = Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateLocatorForNode(trackerNodeId);
-#endif
-
+            _eyeGazeTrackerNode = SpatialGraphNode.FromDynamicNodeId(e.TrackerSpaceLocatorNodeId);
         }
         catch (Exception ex)
         {
@@ -378,142 +273,223 @@ public class ExtendedEyeTrackingDataProvider : MonoBehaviour
     /// <summary>
     /// Triggers a prompt to let the user decide whether to permit using eye tracking 
     /// </summary>
-    private async Task<bool> AskForEyePosePermission()
+    private async System.Threading.Tasks.Task<bool> AskForEyePosePermission()
     {
         var accessStatus = await Windows.Perception.People.EyesPose.RequestAccessAsync();
         Debug.Log("Eye gaze access status: " + accessStatus.ToString());
         return accessStatus == Windows.UI.Input.GazeInputAccessStatus.Allowed;
-        //return true;
     }
+#endif
 
-    /// <summary>
-    /// Checks if the active loader is of a specific type. Used in cases where the loader class is accessible, like OculusLoader.
-    /// </summary>
-    /// <typeparam name="T">The loader class type to check against the active loader.</typeparam>
-    /// <returns>True if the active loader is of the specified type. Null if there isn't an active loader.</returns>
-    public static bool? IsLoaderActive<T>() where T : UnityEngine.XR.Management.XRLoader
-    {
-        if (UnityEngine.XR.Management.XRGeneralSettings.Instance != null
-            && UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager != null
-            && UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager.activeLoader != null)
-        {
-            return UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager.activeLoader is T;
-        }
-
-        return null;
-    }
-#endif // WINDOWS_UWP
+    private static UnityEngine.Vector3 ToUnity(System.Numerics.Vector3 v) => new UnityEngine.Vector3(v.X, v.Y, -v.Z);
+}
 ```
 
 
-## API Reference of Extended Eye Tracking SDK
+## API reference of extended eye tracking SDK
 
-Namespace: Microsoft.MixedReality.EyeTracking 
+```C#
+namespace Microsoft.MixedReality.EyeTracking
+{
+    /// <summary>
+    /// Allow discovery of Eye Gaze Trackers connected to the system
+    /// This is the only class from Extended Eye Tracking SDK that the application will instantiate, 
+    /// other classes' instances will be returned by method calls or properties.
+    /// </summary>
+    public class EyeGazeTrackerWatcher
+    {
+        /// <summary>
+        /// Constructs an instance of the watcher
+        /// </summary>
+        public EyeGazeTrackerWatcher();
 
-class                   | Description  |
-------------------------|-------------------------------------------  |
-EyeGazeTracker          | Represents an eye gaze tracker  |
-EyeGazeTrackerFrameRate | Represents a Frame Rate supported by an Eye Tracker  |
-EyeGazeTrackerRawValues | Enables access to values provided by a given driver but not yet "promoted" as strongly typed properties and methods of the SDK  |
-EyeGazeTrackerReading   | Snapshot of Gaze Tracker state  |
-EyeGazeTrackerWatcher   | Allow discovery of Eye Gaze Trackers connected to the system  |
+        /// <summary>
+        /// Starts trackers enumeration.
+        /// </summary>
+        /// <returns>Task representing async action; completes when the initial enumeration is completed</returns>
+        public System.Threading.Tasks.Task StartAsync();
 
-### EyeGazeTracker
+        /// <summary>
+        /// Stop listening to trackers additions and removal
+        /// </summary>
+        public void Stop();
 
-Represents an eye gaze tracker
+        /// <summary>
+        /// Raised when an Eye Gaze tracker is connected
+        /// </summary>
+        public event System.EventHandler<EyeGazeTracker> EyeGazeTrackerAdded;
 
-**Properties**
+        /// <summary>
+        /// Raised when an Eye Gaze tracker is disconnected
+        /// </summary>
+        public event System.EventHandler<EyeGazeTracker> EyeGazeTrackerRemoved;        
+    }
 
-Name                                                | Description   |
-----------------------------------------------------|-------------------------------------------
-public bool AreLeftAndRightGazesSupported { get; }	| True if individual gazes are supported  |
-public bool IsEyeOpennessSupported { get; }	        | True if Eye Openness is supported by the driver  |
-public bool IsRestrictedModeSupported { get; }	    |   |
-public bool IsVergenceDistanceSupported { get; }	| True if Vergence Distance is supported by tracker.  |
-public IReadOnlyList<EyeGazeTrackerFrameRate> SupportedTargetFrameRates { get; }  |	List of the target frame rates supported by the tracker  |
-public Guid TrackerSpaceLocatorNodeId { get; }	    | NodeId of the Tracker allowing to retrieve a SpatialLocator using SpatialGraphInteropPreview.CreateLocatorForNode  |
+    /// <summary>
+    /// Represents an Eye Tracker device
+    /// </summary>
+    public class EyeGazeTracker
+    {
+        /// <summary>
+        /// True if Restricted mode is supported, which means the driver supports to provide individual 
+        /// eye gaze vector and framerate 
+        /// </summary>
+        public bool IsRestrictedModeSupported;
 
-**Methods**
-    
-Name                                                | Description   |
-----------------------------------------------------|-------------------------------------------
-public void Close()	                                | Closes the tracker  |
-public Task OpenAsync(bool restrictedMode)          | Opens the tracker  |
-public void SetTargetFrameRate(EyeGazeTrackerFrameRate newFrameRate)  |	Changes the target frame rate of the tracker  |
-public EyeGazeTrackerReading TryGetReadingAfterSystemRelativeTime(TimeSpan time)  |	Try to get the first tracker state after a system relative time  |
-public EyeGazeTrackerReading TryGetReadingAfterTimestamp(DateTime timestamp)  |	Try to get first first tracker state after a given timestamp  |
-public EyeGazeTrackerReading TryGetReadingAtSystemRelativeTime(TimeSpan time) | Try to get tracker state at a system relative time  |
-public EyeGazeTrackerReading TryGetReadingAtTimestamp(DateTime timestamp) |	Try to get tracker state at a given timestamp  |
+        /// <summary>
+        /// True if Vergence Distance is supported by tracker
+        /// </summary>
+        public bool IsVergenceDistanceSupported;
 
-### EyeGazeTrackerFrameRate
+        /// <summary>
+        /// True if Eye Openness is supported by the driver
+        /// </summary>
+        public bool IsEyeOpennessSupported;
 
-Represents a Frame Rate supported by an Eye Tracker
+        /// <summary>
+        /// True if individual gazes are supported
+        /// </summary>
+        public bool AreLeftAndRightGazesSupported;
 
-**Properties**
-    
-Name                                                | Description   |
-----------------------------------------------------|-------------------------------------------
-public uint FramesPerSecond { get; }	            | Frames per second of the frame rate  |
+        /// <summary>
+        /// Get the supported target framerates of the tracker
+        /// </summary>
+        public System.Collections.Generic.IReadOnlyList<EyeGazeTrackerFrameRate> SupportedTargetFrameRates;
 
-### EyeGazeTrackerRawValues
+        /// <summary>
+        /// NodeId of the tracker, used to retrieve a SpatialLocator or SpatialGraphNode to locate the tracker in the scene
+        /// for Perception API, use SpatialGraphInteropPreview.CreateLocatorForNode
+        /// for Mixed Reality OpenXR API, use SpatialGraphNode.FromDynamicNodeId
+        /// </summary>
+        public Guid TrackerSpaceLocatorNodeId;
 
-For each piece of data (Combined gaze, calibration state, individual gazes) incorporated into the tracker's published states, there's an associated GUID and a type.
-    
-The type associated to a GUID never changes, but each eye tracker might support different sets of GUID/type pairs. HoloLens 2 eye tracker supports different sets for its standard mode and its restricted mode.
+        /// <summary>
+        /// Opens the tracker
+        /// </summary>
+        /// <param name="restrictedMode">True if restricted mode active</param>
+        /// <returns>Task representing async action; completes when the initial enumeration is completed</returns>
+        public System.Threading.Tasks.Task OpenAsync(bool restrictedMode);
 
-The EyeGazeTrackerRawValues class enables an application to access new types of data that aren't yet part of the strongly typed part of the SDK, provided that the eye tracker team has provided a GUID, the associated data type, and its meaning.
+        /// <summary>
+        /// Closes the tracker
+        /// </summary>
+        public void Close();
 
-**Methods**
-    
-Name                                                | Description   |
-----------------------------------------------------|-------------------------------------------
-public static bool IsSupported(EyeGazeTracker tracker, Guid valueKey) |	Return True if a value identified by its guid is supported by a tracker  |
-public static void SendCommand(EyeGazeTracker tracker, Guid command, byte[] inBuffer, byte[] outBuffer)	| Sends a command to the tracker  |
-public static bool TryGetBool(EyeGazeTrackerReading reading, Guid valueKey, out bool value) | Try to read a boolean value from a reading  |
-public static bool TryGetFloat(EyeGazeTrackerReading reading, Guid valueKey, out float value) |	Try to read a float value from a reading  |
-public static bool TryGetInt(EyeGazeTrackerReading reading, Guid valueKey, out int value) |	Try to read a int value from a reading  |
-public static bool TryGetVector3(EyeGazeTrackerReading reading,	Guid valueKey, out Vector3 value) |	Try to read a vector3 value from a reading  |
+        /// <summary>
+        /// Changes the target framerate of the tracker
+        /// </summary>
+        /// <param name="newFrameRate">Target frame rate</param>
+        public void SetTargetFrameRate(EyeGazeTrackerFrameRate newFrameRate);
 
-### EyeGazeTrackerReading
+        /// <summary>
+        /// Try to get tracker state at a given timestamp
+        /// </summary>
+        /// <param name="timestamp">timestamp</param>
+        /// <returns>State if available, null otherwhise</returns>
+        public EyeGazeTrackerReading TryGetReadingAtTimestamp(DateTime timestamp);
 
-Snapshot of Eye Gaze Tracker state at a given time
+        /// <summary>
+        /// Try to get tracker state at a system relative time
+        /// </summary>
+        /// <param name="time">time</param>
+        /// <returns>State if available, null otherwhise</returns>
+        public EyeGazeTrackerReading TryGetReadingAtSystemRelativeTime(TimeSpan time);
 
-**Properties**
-    
-Name                                                | Description   |
-----------------------------------------------------|-------------------------------------------
-public bool IsCalibrationValid { get; }	            | Indicates if user calibration is valid  |
-public TimeSpan SystemRelativeTime { get; }	        | Timestamp of state as system relative time  |
-public DateTime Timestamp { get; }	                | Timestamp of state  |
+        /// <summary>
+        /// Try to get first first tracker state after a given timestamp
+        /// </summary>
+        /// <param name="timestamp">timestamp</param>
+        /// <returns>State if available, null otherwhise</returns>
+        public EyeGazeTrackerReading TryGetReadingAfterTimestamp(DateTime timestamp);
 
-**Methods**
-    
-Name                                                | Description 
-----------------------------------------------------|-------------------------------------------
-public bool TryGetCombinedEyeGazeInTrackerSpace(out Vector3 origin, out Vector3 direction) | Tries to get a vector representing the combined gaze related to the tracker's node position  |
-public bool TryGetLeftEyeGazeInTrackerSpace(Vector3 origin, out Vector3 direction) | Tries to get a vector representing the left eye gaze related to the tracker's node position  |
-public bool TryGetLeftEyeOpenness(out float value)  | Tries to get left eye openness information  |
-public bool TryGetRightEyeGazeInTrackerSpace(out Vector3 origin, out Vector3 direction) | Tries to get a vector representing the right eye gaze related to the tracker's node position  |
-public bool TryGetRightEyeOpenness(out float value) | Tries to get right Eye openness information  |
-public bool TryGetVergenceDistance(out float value) | Tries to read vergence distance  |
+        /// <summary>
+        /// Try to get the first tracker state after a system relative time
+        /// </summary>
+        /// <param name="time">time</param>
+        /// <returns>State if available, null otherwhise</returns>
+        public EyeGazeTrackerReading TryGetReadingAfterSystemRelativeTime(TimeSpan time);
+    }
 
-### EyeGazeTrackerWatcher
+    /// <summary>
+    /// Represents a Frame Rate supported by an Eye Tracker
+    /// </summary>
+    public class EyeGazeTrackerFrameRate
+    {
+        /// <summary>
+        /// Frames per second of the frame rate
+        /// </summary>
+        public UInt32 FramesPerSecond;
+    }
 
-Allow discovery of Eye Gaze Trackers connected to the system.
+    /// <summary>
+    /// Snapshot of Gaze Tracker state
+    /// </summary>
+    public class EyeGazeTrackerReading
+    {
+        /// <summary>
+        /// Timestamp of state
+        /// </summary>
+        public DateTime Timestamp;
 
-**Note**: this is the only class from the Extended Eye Tracking SDK that the application will instantiate. Other classes' instances will be returned by method calls or properties.
+        /// <summary>
+        /// Timestamp of state as system relative time
+        /// Its SystemRelativeTime.Ticks could provide the QPC time to locate tracker pose 
+        /// </summary>
+        public TimeSpan SystemRelativeTime;
 
-**Methods**
-    
-Name                                                | Description   |
-----------------------------------------------------|-------------------------------------------
-public EyeGazeTrackerWatcher()                      | Constructs an instance of the watcher  |
-public Task StartAsync()                            | Starts tracker's enumeration  |
-public void Stop()                                  | Stop listening to tracker's additions and removal  |
+        /// <summary>
+        /// Indicates of user calibration is valid
+        /// </summary>
+        public bool IsCalibrationValid;
 
-**Events**
-    
-Name                                                | Description   |
-----------------------------------------------------|-------------------------------------------
-public event EventHandler<EyeGazeTracker> EyeGazeTrackerAdded   | Raised when an Eye Gaze tracker is connected  |
-public event EventHandler<EyeGazeTracker> EyeGazeTrackerRemoved | Raised when an Eye Gaze tracker is disconnected  |
+        /// <summary>
+        /// Tries to get a vector representing the combined gaze related to the tracker's node
+        /// </summary>
+        /// <param name="origin">Origin of the gaze vector</param>
+        /// <param name="direction">Direction of the gaze vector</param>
+        /// <returns></returns>
+        public bool TryGetCombinedEyeGazeInTrackerSpace(out System.Numerics.Vector3 origin, out System.Numerics.Vector3 direction);
+
+        /// <summary>
+        /// Tries to get a vector representing the left eye gaze related to the tracker's node
+        /// </summary>
+        /// <param name="origin">Origin of the gaze vector</param>
+        /// <param name="direction">Direction of the gaze vector</param>
+        /// <returns></returns>
+        public bool TryGetLeftEyeGazeInTrackerSpace(out System.Numerics.Vector3 origin, out System.Numerics.Vector3 direction);
+
+        /// <summary>
+        /// Tries to get a vector representing the right eye gaze related to the tracker's node position
+        /// </summary>
+        /// <param name="origin">Origin of the gaze vector</param>
+        /// <param name="direction">Direction of the gaze vector</param>
+        /// <returns></returns>
+        public bool TryGetRightEyeGazeInTrackerSpace(out System.Numerics.Vector3 origin, out System.Numerics.Vector3 direction);
+
+        /// <summary>
+        /// Tries to read vergence distance
+        /// </summary>
+        /// <param name="value">Vergence distance if available</param>
+        /// <returns>bool if value is valid</returns>
+        public bool TryGetVergenceDistance(out float value);
+
+        /// <summary>
+        /// Tries to get left Eye openness information
+        /// </summary>
+        /// <param name="value">Eye Openness if valid</param>
+        /// <returns>bool if value is valid</returns>
+        public bool TryGetLeftEyeOpenness(out float value);
+
+        /// <summary>
+        /// Tries to get right Eye openness information
+        /// </summary>
+        /// <param name="value">Eye Openness if valid</param>
+        /// <returns>bool if value is valid</returns>
+        public bool TryGetRightEyeOpenness(out float value);
+    }
+}
+```
+
+## See also
+
+* [Use extended eye tracking in native engine](../native/extended-eye-tracking-native.md)

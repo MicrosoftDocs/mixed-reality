@@ -145,7 +145,7 @@
           items:
             - name: Hand and eye tracking
               href: unity/hand-eye-in-unity.md
-            - name: Extended Eye Tracking SDK for Unity Development
+            - name: Extended eye tracking
               href: unity/extended-eye-tracking-unity.md
             - name: Motion controllers
               href: unity/motion-controllers-in-unity.md
@@ -377,7 +377,7 @@
                   href: native/keyboard-mouse-and-controller-input-cpp.md
                 - name: Head and eye gaze
                   href: native/gaze-in-directx.md
-                - name: Extended Eye Tracking SDK for Native Development
+                - name: Extended eye tracking
                   href: native/extended-eye-tracking-native.md
                 - name: Hands and motion controllers
                   href: native/hands-and-motion-controllers-in-directx.md
