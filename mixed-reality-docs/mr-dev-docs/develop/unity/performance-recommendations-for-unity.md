@@ -242,8 +242,7 @@ Unity has a great article that gives an overview and dives into batching draw ca
 Single Pass Instanced Rendering in Unity allows for draw calls for each eye to be reduced down to one instanced draw call. Because of cache coherency between two draw calls, there's also some performance improvement on the GPU as well.
 
 To enable this feature in your Unity Project
-1)  Open **Player XR Settings** (go to **Edit** > **Project Settings** > **Player** > **XR Settings**)
-2) Select **Single Pass Instanced** from the **Stereo Rendering Method** drop-down menu (**Virtual Reality Supported** checkbox must be checked)
+[!INCLUDE[](./includes/unity-rendering-path.md)]
 
 Read the following articles from Unity for details with this rendering approach.
 - [How to maximize AR and VR performance with advanced stereo rendering](https://blogs.unity3d.com/2017/11/21/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering/)
@@ -290,7 +289,7 @@ When rendering a frame on the GPU, an application is either bound by memory band
 
 ### Optimize depth buffer sharing
 
-It's recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](../advanced-concepts/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it's recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
+It's recommended to [enable **Depth buffer sharing**](./recommended-settings-for-unity.md#enable-depth-buffer-sharing) to optimize for [hologram stability](../advanced-concepts/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting, it's recommended to select **16-bit** depth format instead of **24-bit** depth format. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
 
 **Z-Fighting**
 
