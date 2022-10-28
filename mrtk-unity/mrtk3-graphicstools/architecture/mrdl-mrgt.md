@@ -48,7 +48,7 @@ Graphics Tools supports two user interface creation methods, UnityUI and traditi
 The interactive playground below shows how MRDL components are used to create a button.
 
 <div class="playground">
-  <iframe loading="lazy" height="600px" width="100%" src="https://playground.babylonjs.com/#KA845G#1"></iframe>
+  <iframe loading="lazy" height="600px" width="100%" src="https://playground.babylonjs.com/#D70IFE"></iframe>
 </div>
 
 ### Back plate
