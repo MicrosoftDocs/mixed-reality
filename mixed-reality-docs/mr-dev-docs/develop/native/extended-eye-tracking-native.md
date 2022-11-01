@@ -19,7 +19,7 @@ This article covers the ways to use the extended eye tracking SDK in native engi
 ## Project setup
 
 1. [Create](./creating-a-holographic-directx-project.md)  a `Holographic DirectX 11 App (Universal Windows)` or `Holographic DirectX 11 App (Universal Windows) (C++/WinRT)` project with Visual Studio 2019 or newer, or open your existing holographic Visual Studio project.
-1. Import the extended eye tracking SDK to the project.
+1. Import the extended eye tracking SDK into the project.
     1. In the Visual Studio Solution Explorer, right-click your project -> Manage NuGet Packages...
     1. Make sure the Package source in the top right corner points to nuget.org: https://api.nuget.org/v3/index.json
     1. Click the Browser tab, and then search `Microsoft.MixedReality.EyeTracking`.
