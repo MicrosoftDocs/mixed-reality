@@ -411,7 +411,7 @@ namespace Microsoft.MixedReality.EyeTracking
     }
 
     /// <summary>
-    /// Represents a Frame Rate supported by an Eye Tracker
+    /// Represents a frame rate supported by an Eye Tracker
     /// </summary>
     public class EyeGazeTrackerFrameRate
     {
