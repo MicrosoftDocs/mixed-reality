@@ -392,7 +392,7 @@ namespace Microsoft.MixedReality.EyeTracking
         /// Try to get tracker state at a system relative time
         /// </summary>
         /// <param name="time">time</param>
-        /// <returns>State if available, null otherwhise</returns>
+        /// <returns>State if available, null otherwise</returns>
         public EyeGazeTrackerReading TryGetReadingAtSystemRelativeTime(TimeSpan time);
 
         /// <summary>
