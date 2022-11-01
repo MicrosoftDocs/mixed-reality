@@ -24,14 +24,18 @@ To begin using simulation in your code, start by creating an IPerceptionSimulati
     >[!Note]
     >Although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.)
 
-    a. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.
-    b. PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.
+    a. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation. <br>
+    b. PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.<br>
     c. SimulationStream.Interop.dll - Shared types for simulation.
     
 1. Add the implementation binary PerceptionSimulationManager.dll to your project 
 
-    a. First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder. ![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png)
-    b. Then make sure that it gets copied to your output folder on build. This is in the property sheet for the binary. ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
+    a. First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder. <br>
+    ![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png)
+
+    b. Then make sure that it gets copied to your output folder on build. This is in the property sheet for the binary. <br>
+    ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
+    
 1. Set your active solution platform to x64.  (Use the Configuration Manager to create a Platform entry for x64 if one doesn't already exist.)
 
 ## Creating an IPerceptionSimulation Manager Object
