@@ -14,7 +14,7 @@ Extended eye tracking is a new capability in HoloLens 2. It's a superset of the 
 
 The [Extended Eye Tracking SDK](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) enables applications to access data and features of extended eye tracking. It could be used together with WinRT APIs or OpenXR APIs.
 
-This article covers the ways that to use the extended eye tracking SDK in native engine (C# or C++/WinRT), together with WinRT APIs.
+This article covers the ways to use the extended eye tracking SDK in native engine (C# or C++/WinRT), together with WinRT APIs.
 
 ## Project setup
 
