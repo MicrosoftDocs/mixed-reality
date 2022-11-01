@@ -113,9 +113,9 @@ void SampleAppMain::OnEyeGazeTrackerRemoved(const EyeGazeTrackerWatcher& sender,
 
 When receiving an `EyeGazeTracker` instance, the application must first open it by calling the `OpenAsync()` method. It can then query for the tracker capabilities if needed. The `OpenAsync()` method takes a boolean parameter; this indicates if the application needs to access features not belonging to standard eye tracking, such as individual eye gaze vectors or changing the tracker's framerate. 
 
-Combined gaze is a mandatory feature supported by all eye gaze trackers. Other features, such as access to individual gaze, are optional and might be supported or not depending on the tracker and its driver. For these optional features, the `EyeGazeTracker` class exposes a property indicating if the feature is supported. e.g. `AreLeftAndRightGazesSupported` property to indicate whether individual eye gaze info is supported by the device.
+Combined gaze is a mandatory feature supported by all eye gaze trackers. Other features, such as access to individual gaze, are optional and might be supported or not depending on the tracker and its driver. For these optional features, the `EyeGazeTracker` class exposes a property indicating if the feature is supported--for example, the  `AreLeftAndRightGazesSupported` property, which indicates whether individual eye gaze info is supported by the device.
 
-All spatial information exposed by eye gaze tracker is published related to a the tracker itself, which is identified by a **Dynamic Node ID**. Using the nodeId to obtain a `SpatialCoordinateSystem` with WinRT APIs could transform the coordinates of gaze data into other coordinate system. 
+All spatial information exposed by eye gaze tracker is published related to a the tracker itself, which is identified by a **Dynamic Node ID**. Using the nodeId to obtain a `SpatialCoordinateSystem` with WinRT APIs could transform the coordinates of gaze data into another coordinate system. 
 
 ```C#
 private async void _watcher_EyeGazeTrackerAdded(object sender, EyeGazeTracker e)
@@ -169,11 +169,11 @@ winrt::Windows::Foundation::IAsyncAction SampleEyeTrackingNugetClientAppMain::On
 }
 ```
 
-## Set eye gaze tracker framerate
+## Set eye gaze tracker frame rate
 
 The `EyeGazeTracker.SupportedTargetFrameRates` property returns the list of the target frame rate supported by the tracker. HoloLens 2 supports 30, 60, and 90fps. 
 
-Use `EyeGazeTracker.SetTargetFrameRate()` method to set the target framerate.
+Use the `EyeGazeTracker.SetTargetFrameRate()` method to set the target frame rate.
 
 ```C#
 // This returns a list of supported frame rate: 30, 60, 90 fps in order
@@ -202,15 +202,15 @@ An eye gaze tracker publishes its states periodically in a circular buffer. This
 
 Methods that retrieve the tracker state as an `EyeGazeTrackerReading` instance:
 
-* The `TryGetReadingAtTimestamp()` and `TryGetReadingAtSystemRelativeTime()` methods return the `EyeGazeTrackerReading` closest to the time passed by the application. As the tracker controls the publishing schedule, the returned reading might be slightly older or newer than the request time. `EyeGazeTrackerReading.Timestamp` and `EyeGazeTrackerReading.SystemRelativeTime` properties enable the application to know the exact time of the published state.
+* The `TryGetReadingAtTimestamp()` and `TryGetReadingAtSystemRelativeTime()` methods return the `EyeGazeTrackerReading` closest to the time passed by the application. The tracker controls the publishing schedule, so the returned reading might be slightly older or newer than the request time. The `EyeGazeTrackerReading.Timestamp` and `EyeGazeTrackerReading.SystemRelativeTime` properties enable the application to know the exact time of the published state.
 
-* The `TryGetReadingAfterTimestamp()` and `TryGetReadingAfterSystemRelativeTime()` methods return the first `EyeGazeTrackerReading` with a timestamp strictly superior to the time passed as a parameter. This enables an application to sequentially read all the states published by the tracker. Note that all these methods are querying the existing buffer and that they return immediately. If no state is available, they'll  return null (in other words, they won't make the application wait for a state to be published).
+* The `TryGetReadingAfterTimestamp()` and `TryGetReadingAfterSystemRelativeTime()` methods return the first `EyeGazeTrackerReading` with a timestamp strictly superior to the time passed as a parameter. This enables an application to sequentially read all the states published by the tracker. Note that all these methods are querying the existing buffer and that they return immediately. If no state is available, they'll return null (in other words, they won't make the application wait for a state to be published).
 
 In addition to its timestamp, an `EyeGazeTrackerReading` instance has an `IsCalibrationValid` property, which indicates if the eye tracker calibration is valid or not.
 
-Finally, gaze data can be retrieved through a set of methods such as `TryGetCombinedEyeGazeInTrackerSpace()` or `TryGetLeftEyeGazeInTrackerSpace()`. All these methods return a boolean indicating a success. Failure to get some data might either mean that the data is not supported (`EyeGazeTracker` has properties to detect this case) or that the tracker could not get the data (invalid calibration, eye hidden, etc.).
+Finally, gaze data can be retrieved through a set of methods such as `TryGetCombinedEyeGazeInTrackerSpace()` or `TryGetLeftEyeGazeInTrackerSpace()`. All these methods return a boolean indicating a success. Failure to get some data might either mean that the data is not supported (`EyeGazeTracker` has properties to detect this case) or that the tracker could not get the data (for example, invalid calibration or eye hidden).
 
-If, for example, the application wants to display a cursor corresponding to the combined gaze, it can query the tracker using a timestamp of the prediction of the frame being prepared as following.
+If, for example, the application wants to display a cursor corresponding to the combined gaze, it can query the tracker using a timestamp of the prediction of the frame being prepared as follows.
 
 ```C#
 var holographicFrame = holographicSpace.CreateNextFrame();
@@ -246,13 +246,13 @@ if (reading)
 
 ## Transform gaze data to other SpatialCoordinateSystem
 
-WinRT APIs that return spatial data such as a position always require both a `PerceptionTimestamp` and a `SpatialCoordinateSystem`. For example, to retrieve the combined gaze of HoloLens 2 using the WinRT API, the API [SpatialPointerPose.TryGetAtTimestamp()](https://learn.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) requires 2 parameters, a `SpatialCoordinateSystem` and a `PerceptionTimestamp`. When the combined gaze is then accessed through `SpatialPointerPose.Eyes.Gaze`, its origin and direction are expressed in the `SpatialCoordinateSystem` passed in.
+WinRT APIs that return spatial data such as a position always require both a `PerceptionTimestamp` and a `SpatialCoordinateSystem`. For example, to retrieve the combined gaze of HoloLens 2 using the WinRT API, the API [SpatialPointerPose.TryGetAtTimestamp()](https://learn.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) requires two parameters: a `SpatialCoordinateSystem` and a `PerceptionTimestamp`. When the combined gaze is then accessed through `SpatialPointerPose.Eyes.Gaze`, its origin and direction are expressed in the `SpatialCoordinateSystem` passed in.
 
-Extended tye tracking SDK APIs don't need to take an `SpatialCoordinateSystem` and the gaze data are always expressed in the tracker's coordinate system. But you can transform those gaze data to other coordinate system with the tracker's pose related to other coordinate system.
+Extended tye tracking SDK APIs don't need to take a `SpatialCoordinateSystem` and the gaze data are always expressed in the tracker's coordinate system. But you can transform those gaze data to another coordinate system with the tracker's pose related to the other coordinate system.
 
 * As the section above named "Open eye gaze tracker"  mentioned, to get a `SpatialLocator` for the eye gaze tracker, call `Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateLocatorForNode()` with the `EyeGazeTracker.TrackerSpaceLocatorNodeId` property.
 
-* Gaze origins and directions retrieved through the `EyeGazeTrackerReading` are related to the eye gaze tracker.
+* Gaze origins and directions retrieved through `EyeGazeTrackerReading` are related to the eye gaze tracker.
 
 * `SpatialLocator.TryLocateAtTimestamp()` returns the full 6DoF location of the eye gaze tracker at a given `PerceptionTimeStamp` and related to a given `SpatialCoordinateSystem`, which could be used to construct a Matrix4x4 transformation matrix.
 
@@ -370,7 +370,7 @@ namespace Microsoft.MixedReality.EyeTracking
         public bool AreLeftAndRightGazesSupported;
 
         /// <summary>
-        /// Get the supported target framerates of the tracker
+        /// Get the supported target frame rates of the tracker
         /// </summary>
         public System.Collections.Generic.IReadOnlyList<EyeGazeTrackerFrameRate> SupportedTargetFrameRates;
 
@@ -394,7 +394,7 @@ namespace Microsoft.MixedReality.EyeTracking
         public void Close();
 
         /// <summary>
-        /// Changes the target framerate of the tracker
+        /// Changes the target frame rate of the tracker
         /// </summary>
         /// <param name="newFrameRate">Target frame rate</param>
         public void SetTargetFrameRate(EyeGazeTrackerFrameRate newFrameRate);
@@ -456,7 +456,7 @@ namespace Microsoft.MixedReality.EyeTracking
         public TimeSpan SystemRelativeTime;
 
         /// <summary>
-        /// Indicates of user calibration is valid
+        /// Indicates user calibration is valid
         /// </summary>
         public bool IsCalibrationValid;
 

@@ -15,11 +15,11 @@ To access the GitHub repo for the extended eye tracking sample:
 > [!div class="nextstepaction"]
 > [Extended eye tracking Unity sample](https://github.com/microsoft/MixedReality-EyeTracking-Sample)
 
-Extended eye tracking is a new capability in HoloLens 2. It is a superset of the standard eye tracking, which only provides combined eye gaze data. Extended eye tracking also provides individual eye gaze data and allows applications to set different framerate for the gaze data, such as 30, 60, and 90fps. Other features like eye openness and eye vergence are not supported by HoloLens 2 at this time.
+Extended eye tracking is a new capability in HoloLens 2. It's a superset of the standard eye tracking, which only provides combined eye gaze data. Extended eye tracking also provides individual eye gaze data and allows applications to set different frame rates for the gaze data, such as 30, 60, and 90fps. Other features, such as eye openness and eye vergence, aren't supported by HoloLens 2 at this time.
 
 The [Extended Eye Tracking SDK](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) enables applications to access data and features of extended eye tracking. It could be used together with OpenXR APIs or legacy WinRT APIs.
 
-This article covers the ways that to use the extended eye tracking SDK in Unity, together with the Mixed Reality OpenXR Plugin.
+This article covers the ways to use the extended eye tracking SDK in Unity together with the Mixed Reality OpenXR Plugin.
 
 ## Project setup
 
@@ -29,25 +29,25 @@ This article covers the ways that to use the extended eye tracking SDK in Unity,
 3. Import the [Eye Tracking SDK NuGet package](https://www.nuget.org/packages/Microsoft.MixedReality.EyeTracking) into your Unity project.
     1. Download and install the [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity/releases) package.
     2. In the Unity editor, go to `NuGet`->`Manage NuGet Packages`, and then search for `Microsoft.MixedReality.EyeTracking`
-    3. Click the Install button to import the latest version of NuGet package.  
+    3. Click the Install button to import the latest version of the NuGet package.  
 
         ![Screenshot of the Eye Tracking SDK Nuget package.](images/038-install-nuget-package.png)  
 
 4. Add the Unity helper scripts.
-    1. Add the `ExtendedEyeGazeDataProvider.cs` script below into your Unity project.
-    2. Create a scene, add an empty object, and then attach the `ExtendedEyeGazeDataProvider.cs` script to it.
+    1. Add the `ExtendedEyeGazeDataProvider.cs` script below to your Unity project.
+    2. Create a scene, then add an empty object, and then attach the `ExtendedEyeGazeDataProvider.cs` script to it.
 5. Consume the functions of `ExtendedEyeGazeDataProvider.cs` and implement your logics.
 
 ## Consume functions of ExtendedEyeGazeDataProvider
 
 > [!NOTE]
-> The `ExtendedEyeGazeDataProvider` script depends on some APIs from Mixed Reality OpenXR Plugin to convert the coordinates of the gaze data. It cannot work if your Unity project uses deprecated Windows XR plugin or legacy Built-in XR in older Unity version. To make the extended eye tracking also work in those scenarios
-> - If you just need to access the framerate settings, the Mixed Reality OpenXR Plugin is not necessary, and you could modify the `ExtendedEyeGazeDataProvider` to only keep the framerate related logics.
-> - If you still need to access individual eye gaze data, you need to [use WinRT APIs in Unity](./using-the-windows-namespace-with-unity-apps-for-hololens.md). You can refer the see also section to see how to use extended eye tracking SDK with WinRT APIs.
+> The `ExtendedEyeGazeDataProvider` script depends on some APIs from the Mixed Reality OpenXR Plugin to convert the coordinates of the gaze data. It can't work if your Unity project uses the deprecated Windows XR plugin or the legacy Built-in XR in older Unity version. To make the extended eye tracking also work in those scenarios:
+> - If you just need to access the frame rate settings, the Mixed Reality OpenXR Plugin isn't necessary, and you could modify the `ExtendedEyeGazeDataProvider` to only keep the frame rate-related logic.
+> - If you still need to access individual eye gaze data, you need to [use WinRT APIs in Unity](./using-the-windows-namespace-with-unity-apps-for-hololens.md). To see how to use extended eye tracking SDK with WinRT APIs, refer to the "See Also" section.
 
 The `ExtendedEyeGazeDataProvider` class wraps the extended eye tracking SDK APIs. It provides functions to get gaze reading in either Unity world space or relative to the main camera.
 
-Code samples to consume `ExtendedEyeGazeDataProvider` to get the gaze data.
+Here are code samples to consume `ExtendedEyeGazeDataProvider` to get the gaze data.
 
 ```C#
 ExtendedEyeGazeDataProvider extendedEyeGazeDataProvider;
@@ -62,7 +62,7 @@ void Update() {
 }
 ```
 
-When the `ExtendedEyeGazeDataProvider` script got executed, it sets the gaze data framerate to the highest option, which is currently 90fps.
+When the `ExtendedEyeGazeDataProvider` script executes, it sets the gaze data frame rate to the highest option, which is currently 90fps.
 
 ## ExtendedEyeGazeDataProvider.cs script
 
@@ -221,7 +221,7 @@ public class ExtendedEyeGazeDataProvider : MonoBehaviour
         Debug.Log("Initializing ExtendedEyeTracker");
 #if ENABLE_WINMD_SUPPORT
         Debug.Log("Triggering eye gaze permission request");
-        // This function call may not required if you already use MRTK in your project 
+        // This function call may not be required if you already use MRTK in your project 
         _gazePermissionEnabled = await AskForEyePosePermission();
 #else
         // Always enable when running in editor
@@ -259,7 +259,7 @@ public class ExtendedEyeGazeDataProvider : MonoBehaviour
                 Debug.Log($"  supportedFrameRate: {frameRate.FramesPerSecond}");
             }
 
-            // Set to highest framerate, it is 90FPS at this time
+            // Set to highest frame rate (it's 90FPS at this time)
             _eyeGazeTracker.SetTargetFrameRate(supportedFrameRates[supportedFrameRates.Count - 1]);
             _eyeGazeTrackerNode = SpatialGraphNode.FromDynamicNodeId(e.TrackerSpaceLocatorNodeId);
         }
@@ -293,7 +293,7 @@ namespace Microsoft.MixedReality.EyeTracking
 {
     /// <summary>
     /// Allow discovery of Eye Gaze Trackers connected to the system
-    /// This is the only class from Extended Eye Tracking SDK that the application will instantiate, 
+    /// This is the only class from the Extended Eye Tracking SDK that the application will instantiate, 
     /// other classes' instances will be returned by method calls or properties.
     /// </summary>
     public class EyeGazeTrackerWatcher
@@ -331,8 +331,8 @@ namespace Microsoft.MixedReality.EyeTracking
     public class EyeGazeTracker
     {
         /// <summary>
-        /// True if Restricted mode is supported, which means the driver supports to provide individual 
-        /// eye gaze vector and framerate 
+        /// True if Restricted mode is supported, which means the driver supports providing individual 
+        /// eye gaze vector and frame rate 
         /// </summary>
         public bool IsRestrictedModeSupported;
 
@@ -352,14 +352,14 @@ namespace Microsoft.MixedReality.EyeTracking
         public bool AreLeftAndRightGazesSupported;
 
         /// <summary>
-        /// Get the supported target framerates of the tracker
+        /// Get the supported target frame rates of the tracker
         /// </summary>
         public System.Collections.Generic.IReadOnlyList<EyeGazeTrackerFrameRate> SupportedTargetFrameRates;
 
         /// <summary>
         /// NodeId of the tracker, used to retrieve a SpatialLocator or SpatialGraphNode to locate the tracker in the scene
-        /// for Perception API, use SpatialGraphInteropPreview.CreateLocatorForNode
-        /// for Mixed Reality OpenXR API, use SpatialGraphNode.FromDynamicNodeId
+        /// for the Perception API, use SpatialGraphInteropPreview.CreateLocatorForNode
+        /// for the Mixed Reality OpenXR API, use SpatialGraphNode.FromDynamicNodeId
         /// </summary>
         public Guid TrackerSpaceLocatorNodeId;
 
@@ -376,7 +376,7 @@ namespace Microsoft.MixedReality.EyeTracking
         public void Close();
 
         /// <summary>
-        /// Changes the target framerate of the tracker
+        /// Changes the target frame rate of the tracker
         /// </summary>
         /// <param name="newFrameRate">Target frame rate</param>
         public void SetTargetFrameRate(EyeGazeTrackerFrameRate newFrameRate);
