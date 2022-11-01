@@ -483,7 +483,7 @@ namespace Microsoft.MixedReality.EyeTracking
         /// <summary>
         /// Tries to get right Eye openness information
         /// </summary>
-        /// <param name="value">Eye Openness if valid</param>
+        /// <param name="value">Eye openness if valid</param>
         /// <returns>bool if value is valid</returns>
         public bool TryGetRightEyeOpenness(out float value);
     }
