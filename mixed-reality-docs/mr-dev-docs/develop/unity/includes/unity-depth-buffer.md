@@ -1,5 +1,5 @@
 # [OpenXR](#tab/openxr)
-1)  Open **OpenXR Settings** (go to **Edit** > **Project Settings** > **XR Plugin Management** > **OpenXR**)
+1)  Open **OpenXR Settings** (go to **Edit** > **Project Settings** > **XR Plugin Management** > **OpenXR**).
 2) Select **Depth 16 Bit** from the **Depth Submission Mode** drop-down menu
 
 # [Windows XR Plugin](#tab/winxr)
