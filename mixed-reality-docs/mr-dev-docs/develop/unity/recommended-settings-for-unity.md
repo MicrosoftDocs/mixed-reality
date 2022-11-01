@@ -33,7 +33,7 @@ Read [Global Illumination from Unity](https://docs.unity3d.com/Manual/GIIntro.ht
 
 ### Single pass instancing rendering path
 
-In Mixed Reality applications, the scene is rendered twice, once for each eye to the user. Compared to traditional 3D development, this effectively doubles the amount of work that needs to be computed. It's important to select the most efficient rendering path in Unity to save both on CPU and GPU time. Single pass instanced rendering optimizes the Unity rendering pipeline for Mixed Reality apps and it's recommended to enable this setting by default for every project.
+In Mixed Reality applications, the scene is rendered twice: once for each eye. Compared to traditional 3D development, this effectively doubles the amount of work that needs to be computed. It's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering optimizes the Unity rendering pipeline for mixed reality apps; we recommend that you enable this setting by default for every project.
 
 To enable this feature in your Unity Project
 [!INCLUDE[](./includes/unity-rendering-path.md)]
