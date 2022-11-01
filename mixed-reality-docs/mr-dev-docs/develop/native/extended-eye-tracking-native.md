@@ -23,7 +23,7 @@ This article covers the ways to use the extended eye tracking SDK in native engi
     1. In the Visual Studio Solution Explorer, right-click your project -> Manage NuGet Packages...
     1. Make sure the Package source in the top right corner points to nuget.org: https://api.nuget.org/v3/index.json
     1. Click the Browser tab, and then search `Microsoft.MixedReality.EyeTracking`.
-    1. Click the Install button to install the latest version of SDK.  
+    1. Click the Install button to install the latest version of the SDK.  
 
         ![Screenshot of the Eye Tracking SDK Nuget package.](images/001-install.png)  
 
