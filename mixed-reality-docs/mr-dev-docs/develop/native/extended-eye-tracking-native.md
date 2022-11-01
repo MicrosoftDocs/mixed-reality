@@ -53,7 +53,7 @@ Getting the eye gaze data through the Extended Eye Tracking SDK APIs requires th
 
 ## Get access to the eye tracking features
 
-The application must request user consent firstly to be able to use any eye-related info.
+In order to use any eye-related information, the application must first request user consent.
 
 ```C#
 var status = await Windows.Perception.People.EyesPose.RequestAccessAsync();
