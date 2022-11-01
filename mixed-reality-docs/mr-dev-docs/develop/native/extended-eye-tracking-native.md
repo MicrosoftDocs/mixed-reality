@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions, API reference
 ---
 
-# Extended eye tracking for native development
+# Extended eye tracking in native engine
 
 Extended eye tracking is a new capability in HoloLens 2. It's a superset of the standard eye tracking, which only provides combined eye gaze data. Extended eye tracking also provides individual eye gaze data and allows applications to set different framerates for the gaze data, such as 30, 60, and 90fps. Other features like eye openness and eye vergence aren't supported by HoloLens 2 at this time.
 
