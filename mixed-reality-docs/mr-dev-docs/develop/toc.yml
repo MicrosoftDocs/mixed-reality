@@ -533,27 +533,32 @@
           href: advanced-concepts/research-mode.md
 - name: App quality and testing
   items:
-    - name: App quality criteria
-      href: advanced-concepts/app-quality-criteria-overview.md
-    - name: Holographic rendering
-      href: advanced-concepts/rendering-overview.md
-    - name: Volume rendering
-      href: advanced-concepts/volume-rendering-overview.md
-    - name: Hologram stability
-      href: advanced-concepts/hologram-stability.md
-    - name: Understanding performance for Mixed Reality
-      href: advanced-concepts/understanding-performance-for-mixed-reality.md
-    - name: Using Visual Studio to deploy and debug
-      href: advanced-concepts/using-visual-studio.md
-    - name: Testing your app on HoloLens
-      href: advanced-concepts/testing-your-app-on-hololens.md
-    - name: Using the HoloLens Emulator
-      href: advanced-concepts/using-the-hololens-emulator.md
-    - name: Using the Windows Mixed Reality simulator
-      href: advanced-concepts/using-the-windows-mixed-reality-simulator.md
-    - name: Advanced HoloLens Emulator and Mixed Reality Simulator input
-      href: advanced-concepts/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
-    - name: HoloLens Emulator archive
-      href: advanced-concepts/hololens-emulator-archive.md
-    - name: Perception simulation
+  - name: App quality criteria
+    href: advanced-concepts/app-quality-criteria-overview.md
+  - name: Holographic rendering
+    href: advanced-concepts/rendering-overview.md
+  - name: Volume rendering
+    href: advanced-concepts/volume-rendering-overview.md
+  - name: Hologram stability
+    href: advanced-concepts/hologram-stability.md
+  - name: Understanding performance for Mixed Reality
+    href: advanced-concepts/understanding-performance-for-mixed-reality.md
+  - name: Using Visual Studio to deploy and debug
+    href: advanced-concepts/using-visual-studio.md
+  - name: Testing your app on HoloLens
+    href: advanced-concepts/testing-your-app-on-hololens.md
+  - name: Using the HoloLens Emulator
+    href: advanced-concepts/using-the-hololens-emulator.md
+  - name: Using the Windows Mixed Reality simulator
+    href: advanced-concepts/using-the-windows-mixed-reality-simulator.md
+  - name: Advanced HoloLens Emulator and Mixed Reality Simulator input
+    href: advanced-concepts/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
+  - name: HoloLens Emulator archive
+    href: advanced-concepts/hololens-emulator-archive.md
+  - name: Perception simulation
+    items:
+    - name: Overview
       href: advanced-concepts/perception-simulation-overview.md
+    - name: Standalone package (Preview)
+      href: advanced-concepts/perception-simulation-standalone.md
+
