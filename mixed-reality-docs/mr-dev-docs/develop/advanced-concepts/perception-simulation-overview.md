@@ -3,7 +3,7 @@ title: Perception simulation
 description: A guide to using the Perception Simulation library to automate simulated input for immersive applications
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 05/12/2020
+ms.date: 11/1/2022
 ms.topic: article
 keywords: HoloLens, simulation, testing
 ---
@@ -19,14 +19,20 @@ To begin using simulation in your code, start by creating an IPerceptionSimulati
 ## Setting Up a Visual Studio Project for Perception Simulation
 1. [Install the HoloLens emulator](../install-the-tools.md) on your development PC. The emulator includes the libraries you' use for Perception Simulation.
 2. Create a new Visual Studio C# desktop project (a Console Project works great to get started).
-3. Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.  (Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.)
+3. Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.  
+
+    >[!Note]
+    >Although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.)
+
     a. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.
     b. PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.
     c. SimulationStream.Interop.dll - Shared types for simulation.
-4. Add the implementation binary PerceptionSimulationManager.dll to your project
+    
+1. Add the implementation binary PerceptionSimulationManager.dll to your project 
+
     a. First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder. ![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png)
     b. Then make sure that it gets copied to your output folder on build. This is in the property sheet for the binary. ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
-5. Set your active solution platform to x64.  (Use the Configuration Manager to create a Platform entry for x64 if one doesn't already exist.)
+1. Set your active solution platform to x64.  (Use the Configuration Manager to create a Platform entry for x64 if one doesn't already exist.)
 
 ## Creating an IPerceptionSimulation Manager Object
 
