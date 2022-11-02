@@ -399,7 +399,7 @@ namespace Microsoft.MixedReality.EyeTracking
         /// Try to get first first tracker state after a given timestamp
         /// </summary>
         /// <param name="timestamp">timestamp</param>
-        /// <returns>State if available, null otherwhise</returns>
+        /// <returns>State if available, null otherwise</returns>
         public EyeGazeTrackerReading TryGetReadingAfterTimestamp(DateTime timestamp);
 
         /// <summary>
