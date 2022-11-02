@@ -34,7 +34,7 @@ If you're already familiar with the basic concepts and want to get started build
 > [HoloLens 2 Fundamentals tutorials](/training/paths/beginner-hololens-2-tutorials/)
 
 >[!NOTE]
->Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
+>We recently introduced MRTK3, the third generation of Microsoft Mixed Reality Toolkit for Unity built on top of Unity's XR Management system and XR Interaction Toolkit, with better support for a variety of OpenXR-compliant devices and a new design language. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
 ## Choose your own development path
 
