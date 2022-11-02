@@ -19,9 +19,9 @@ In this sample, you'll learn how to do the following:
 - Preview scenes without the need to compile and deploy the project
 - Simulate input directly into the Unity editor with MRTK In-Editor Input Simulation
 - Move and manipulate the objects in the aquarium
-- Add a bounding box around aquarium objects and maniuplate the object using handles
-- Create a canvas button to toggle an object's visibility
-- Create a canvas button bar configured to spawn objects into the aquarium
+- Add a bounding box around aquarium objects and manipulate the object using handles
+- Create a Canvas button to toggle an object's visibility
+- Create a Canvas button bar configured to spawn objects into the aquarium
 
 ## Prerequisites
 
@@ -32,10 +32,13 @@ In this sample, you'll learn how to do the following:
 
 ## Download the Project
 
-You can clone or download the MRTK3 Aquarium project from it's [GitHub repository](https://github.com/microsoft/MRTK3-iet-tutorials). Once the project is downloaded, add the project to the Unity Hub to open.
+You can clone or download the MRTK3 Aquarium project from its GitHub repository. Once the project is downloaded, add it to the Unity Hub and then open it from there.
+
+> [!div class="nextstepaction"]
+> [Clone or download the project](https://github.com/microsoft/MRTK3-iet-tutorials)
 
 ## How to Use the Tutorials
-The Unity in-editor tutorial format provides step-by-step instruction within the editor for how to accomplish each step of the tutorial. Each tutorial is independent of the others so you're welcome to complete them in any order you prefer.
+The Unity in-editor tutorial format provides step-by-step instruction within the Editor for how to accomplish each step of the tutorial. Each tutorial is independent of the others so you're welcome to complete them in any order you prefer.
 1. In Unity on the menu bar, select <b>Tutorials > Show Tutorials</b>.
 1. In the right-side <b>Tutorials</b> panel, select a tutorial.
 1. Each tutorial begins with a brief overview and learning objectives. Select the <b>Start</b> button to start the tutorial.
