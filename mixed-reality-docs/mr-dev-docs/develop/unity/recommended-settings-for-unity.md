@@ -57,7 +57,7 @@ To enable this feature in your Unity Project
 
 The 16-bit depth buffer setting is especially recommended for HoloLens development. Selecting 16-bit compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed. That said, the optimization comes with certain cost. Make sure you understand the implications mentioned in the **Important** boxes below.
 
-In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms on screen. Thus, with depth buffer sharing on, it is important when rendering color, to also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects will not render depth although this is shader-dependent, etc.
+In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms onscreen. Thus, with depth buffer sharing on, it's important when rendering color to also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects won't render depth, although this is dependent on shaders and other factors.
 
 If using the [Mixed Reality Toolkit Standard shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader), to render depth for transparent objects:
 
