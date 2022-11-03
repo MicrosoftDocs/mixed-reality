@@ -15,10 +15,10 @@ Hand menus allow users to quickly bring up hand-attached UI for frequently used 
 
 ## Hand menu examples
 
-**HandMenuExamples.unity** scene is under ``MRTK/Examples/Demos/HandTracking/Scenes`` folder. When it is running, the scene will only activate currently selected menu type.
+**HandMenuExamples.unity** scene is under `MRTK/Examples/Demos/HandTracking/Scenes` folder. When it is running, the scene will only activate currently selected menu type.
 <br/><img src="../images/hand-menu/MRTK_HandMenu_ExampleScene.png" width="600px" alt="HandMenu_ExampleScene">
 
-You can find these hand menu prefabs under ``MRTK/Examples/Demos/HandTracking/Prefabs`` folder.
+You can find these hand menu prefabs under `MRTK/Examples/Common/Prefabs` folder.
 
 ### HandMenu_Small_HideOnHandDrop and HandMenu_Medium_HideOnHandDrop
 
