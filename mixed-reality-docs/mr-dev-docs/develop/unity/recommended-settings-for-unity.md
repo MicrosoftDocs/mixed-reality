@@ -33,12 +33,10 @@ Read [Global Illumination from Unity](https://docs.unity3d.com/Manual/GIIntro.ht
 
 ### Single pass instancing rendering path
 
-In Mixed Reality applications, the scene is rendered twice, once for each eye to the user. Compared to traditional 3D development, this effectively doubles the amount of work that needs to be computed. It's important to select the most efficient rendering path in Unity to save both on CPU and GPU time. Single pass instanced rendering optimizes the Unity rendering pipeline for Mixed Reality apps and it's recommended to enable this setting by default for every project.
+In Mixed Reality applications, the scene is rendered twice: once for each eye. Compared to traditional 3D development, this effectively doubles the amount of work that needs to be computed. It's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering optimizes the Unity rendering pipeline for mixed reality apps; we recommend that you enable this setting by default for every project.
 
 To enable this feature in your Unity Project
-
-1)  Open **Player XR Settings** (go to **Edit** > **Project Settings** > **Player** > **XR Settings**)
-2) Select **Single Pass Instanced** from the **Stereo Rendering Method** drop-down menu (**Virtual Reality Supported** checkbox must be checked)
+[!INCLUDE[](./includes/unity-rendering-path.md)]
 
 Read the following articles from Unity for more details with this rendering approach.
 
@@ -55,13 +53,11 @@ Read the following articles from Unity for more details with this rendering appr
 To achieve better hologram stability from the perception of the user, it's recommended to enable the **Depth Buffer Sharing** property in Unity. By turning this on, Unity will share the depth map produced by your application with the Windows Mixed Reality platform. The platform can then better optimize hologram stability specifically for your scene for any given frame being rendered by your application.
 
 To enable this feature in your Unity Project
+[!INCLUDE[](./includes/unity-depth-buffer.md)]
 
-1) Open **Player XR Settings** (go to **Edit** > **Project Settings** > **Player** > **XR Settings**)
-2) Select the checkbox for **Enable Depth Buffer Sharing** under **Virtual Reality SDKs** > **Windows Mixed Reality** expansion (**Virtual Reality Supported** checkbox must be checked)
+The 16-bit depth buffer setting is especially recommended for HoloLens development. Selecting 16-bit compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed. That said, the optimization comes with certain cost. Make sure you understand the implications mentioned in the **Important** boxes below.
 
-Further, it's recommended to select **16-bit depth** under the **Depth Format** setting in this panel, especially for HoloLens Development. Selecting 16-bit compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
-
-In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms on screen. Thus, with depth buffer sharing on, it is important when rendering color, to also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects will not render depth although this is shader-dependent, etc.
+In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms onscreen. Thus, with depth buffer sharing on, it's important when rendering color to also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects won't render depth, although this is dependent on shaders and other factors.
 
 If using the [Mixed Reality Toolkit Standard shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader), to render depth for transparent objects:
 

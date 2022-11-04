@@ -60,6 +60,7 @@
 ### [Get help for Windows Mixed Reality](get-wmr-info.md)
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
+### [Manage Windows Mixed Reality apps](manage-windows-mixed-reality.md)
 ### [How inside-out tracking works](tracking-system.md)
 ### [HP Reverb G2 Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [HP Reverb G2 Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

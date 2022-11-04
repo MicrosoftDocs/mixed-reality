@@ -9,27 +9,27 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Hover Li
 
 # Hover light &#8212; MRTK2
 
-A [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object. Often used for far away interactions, the application can control the properties of a Hover Light via the [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) component.
+A [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object. Often used for far away interactions, the application can control the properties of a Hover Light via the [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) component.
 
-For a material to be influenced by a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) the *Mixed Reality Toolkit/Standard* shader must be used and the *Hover Light* property must be enabled.
+For a material to be influenced by a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) the *Mixed Reality Toolkit/Standard* shader must be used and the *Hover Light* property must be enabled.
 
 > [!Note]
-> The MRTK/Standard shader supports up to two [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) by default, but will scale to support four and then ten as more lights are added to the scene.
+> The MRTK/Standard shader supports up to two [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) by default, but will scale to support four and then ten as more lights are added to the scene.
 
 ## Examples
 
-Most scenes within MRTK utilize a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight). The most common use case can be found on the MRTK/SDK/Features/UX/Prefabs/Cursors/DefaultCursor.prefab
+Most scenes within MRTK utilize a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true). The most common use case can be found on the MRTK/SDK/Features/UX/Prefabs/Cursors/DefaultCursor.prefab
 
-The **HoverLightExamples** scene also demonstrates usage of [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) behaviors, and can be found at: MRTK/Examples/Demos/StandardShader/Scenes/
+The **HoverLightExamples** scene also demonstrates usage of [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) behaviors, and can be found at: MRTK/Examples/Demos/StandardShader/Scenes/
 
 ## Advanced Usage
 
-Only ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time. If your project requires more than ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.
+Only ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time. If your project requires more than ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.
 
 > [!Note]
-> Having many [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) will increase pixel shader instructions and will impact performance. **Please profile these changes within your project.**
+> Having many [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) will increase pixel shader instructions and will impact performance. **Please profile these changes within your project.**
 
-*How to increase the number of available [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)
+*How to increase the number of available [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true)
  from ten to twelve.*
 
 ```C#

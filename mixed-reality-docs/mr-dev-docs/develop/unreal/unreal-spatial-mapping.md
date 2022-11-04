@@ -6,7 +6,7 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial mapping, mixed reality headset, windows mixed reality headset, virtual reality headset
+keywords: Unreal, Unreal Engine 5, UE5, OpenXR, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial mapping, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Spatial Mapping in Unreal
@@ -14,6 +14,8 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 Spatial mapping lets you place objects on physical surfaces in the real-world. When the world around the HoloLens is mapped, holograms seem more real to the user. Spatial mapping also anchors objects in the user's world by taking advantage of depth cues, helping convince them that these holograms are actually in their space. Holograms floating in space or moving with the user won't feel as real, so you always want to place items for comfort whenever possible.
 
 You can find more information on spatial mapping quality, placement, occlusion, rendering, and more, in the [Spatial mapping](../../design/spatial-mapping.md) document.
+
+The Microsoft OpenXR plugin should be downloaded to use spatial mapping, available on [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal).
 
 ## Enabling Spatial Mapping
 
@@ -61,7 +63,7 @@ To get access to the **MRMesh** at runtime:
 
 ![Spatial Anchors Events](images/unreal-spatialmapping-events.PNG)
 
-In this case, the **On Add Tracked Geometry** event is being monitored, which looks for valid world meshes matching to spatial mapping data. You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/index.html) component API. 
+In this case, the **On Add Tracked Geometry** event is being monitored, which looks for valid world meshes matching to spatial mapping data. You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/) component API. 
 
 You can change the mesh’s material in the Blueprint Event Graph or in C++. The screenshot below shows the Blueprint route: 
 
@@ -113,7 +115,7 @@ void AARTrackableMonitor::OnTrackableAdded(UARTrackedGeometry* Added)
 > [!NOTE]
 > There are similar delegates for updated and removed events, **AddOnTrackableUpdatedDelegate_Handle** and **AddOnTrackableRemovedDelegate_Handle** respectively.
 >
-> You can find the full list of events in the [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API.
+> You can find the full list of events in the [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/) API.
 
 ## See also
 * [Spatial mapping](../../design/spatial-mapping.md)

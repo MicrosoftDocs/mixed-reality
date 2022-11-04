@@ -13,7 +13,7 @@ keywords: unity, visual studio, debugging, il2cpp, HoloLens, mixed reality heads
 Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build for HoloLens and HoloLens 2.
 
 1. You'll need to be on a network that supports [multicast](https://en.wikipedia.org/wiki/Multicast).
-2. Go to **UWP Publishing Settings Capabilities** and check **InternetClientServer** and **PrivateNetworkClientServer**:
+2. Go to **UWP Publishing Settings Capabilities** (File -> Build Settings -> Player Settings, find 'Publishing Settings' section), and check **InternetClientServer** and **PrivateNetworkClientServer**:
 
     ![UWP Publishing Settings Capabilities](images/il2cpp-debugging-capabilities.png)
 

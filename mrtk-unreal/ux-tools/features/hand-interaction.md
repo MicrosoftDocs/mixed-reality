@@ -59,7 +59,7 @@ In order to allow for custom visuals, their creation can be individually disable
 
 ## See also
 
-- [Mixed Reality Instinctual Interactions](https://docs.microsoft.com/windows/mixed-reality/interaction-fundamentals): design principles behind the interaction model.
+- [Mixed Reality Instinctual Interactions](/windows/mixed-reality/interaction-fundamentals): design principles behind the interaction model.
 - <xref:_i_uxt_grab_target>
 - <xref:_i_uxt_poke_target>
 - <xref:_i_uxt_far_target>

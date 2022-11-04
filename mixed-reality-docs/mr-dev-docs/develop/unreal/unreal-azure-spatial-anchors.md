@@ -23,6 +23,7 @@ Azure Spatial Anchors is a Microsoft Mixed Reality service, allowing augmented r
 
 To complete this guide, make sure you have:
 
+- Installed Microsoft OpenXR plugin, available from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal/releases).
 - Installed [Unreal version 4.25](https://www.unrealengine.com/get-now) or later
 - A [HoloLens 2 project](tutorials/unreal-uxt-ch1.md) setup in Unreal 
 - Read through the [Azure Spatial Anchors overview](/azure/spatial-anchors/overview)
@@ -158,13 +159,13 @@ To create a new Azure Spatial Anchor:
 
 ![Blueprint of create azure spatial anchor custom event](images/asa-unreal/unreal-spatial-anchors-img-09.png)
 
-2. Create or obtain an Unreal **[Scene Component](https://docs.unrealengine.com/API/Runtime/Engine/Components/USceneComponent/index.html)** that should have its location persisted. 
-    * In the below image, the **Scene Component Needing Anchor** component is used as a variable. An Unreal Scene Component is needed to establish an application world transform for an [AR Pin](https://docs.unrealengine.com/BlueprintAPI/HoloLensAR/ARPin/index.html) and Azure Spatial Anchor.
+2. Create or obtain an Unreal **[Scene Component](https://docs.unrealengine.com/API/Runtime/Engine/Components/USceneComponent/)** that should have its location persisted. 
+    * In the below image, the **Scene Component Needing Anchor** component is used as a variable. An Unreal Scene Component is needed to establish an application world transform for an [AR Pin](https://docs.unrealengine.com/BlueprintAPI/ARAugmentedReality/ARPin/) and Azure Spatial Anchor.
 
 ![Blueprint of create azure spatial anchor custom event with scene component](images/asa-unreal/unreal-spatial-anchors-img-10.png)
 
 To construct and save an Azure Spatial Anchor for an Unreal Scene Component:
-1. Call the [Pin Component](https://docs.unrealengine.com/BlueprintAPI/ARAugmentedReality/Pin/PinComponent/index.html) for the Unreal Scene Component and specify the Scene Component's **World Transform** as the World Transform used for the AR Pin.
+1. Call the [Pin Component](https://docs.unrealengine.com/BlueprintAPI/ARAugmentedReality/ARPin/PinComponent/) for the Unreal Scene Component and specify the Scene Component's **World Transform** as the World Transform used for the AR Pin.
     * Unreal tracks AR points in the application space using AR Pins, which are used to create an Azure Spatial Anchor. In Unreal, an AR Pin is analogous to a SpatialAnchor on HoloLens.
 
 ![Blueprint of scene component connected to pin component function](images/asa-unreal/unreal-spatial-anchors-img-11.png)

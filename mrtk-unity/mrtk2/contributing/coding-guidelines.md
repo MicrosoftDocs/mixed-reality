@@ -179,7 +179,7 @@ Furthermore, try to decorate the custom inspector class with a [`CanEditMultiple
 
 ### Adding new ScriptableObjects
 
-When adding new ScriptableObject scripts, ensure the [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) attribute is applied to all applicable files. This ensures the component is easily discoverable in the editor via the asset creation menus. The attribute flag is not necessary if the component cannot show up in editor such as an abstract class.
+When adding new ScriptableObject scripts, ensure the [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) attribute is applied to all applicable files. This ensures the component is easily discoverable in the editor via the asset creation menus. The attribute flag is not necessary if the component cannot show up in editor such as an abstract class.
 
 In the example below, the *Subfolder* should be filled with the MRTK subfolder, if applicable. If placing an item in *MRTK/Providers* folder, then the package will be *Providers*. If placing an item in the *MRTK/Core* folder, set this to "Profiles".
 

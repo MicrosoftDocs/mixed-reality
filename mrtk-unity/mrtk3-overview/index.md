@@ -21,7 +21,7 @@ MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's
 
 | Platform | Supported Devices |
 |---|---|
-| OpenXR XR devices | Microsoft HoloLens 2 <br> Meta Quest (experimental) <br> Windows Mixed Reality (experimental) <br> SteamVR (experimental) <br> Oculus Rift on OpenXR (experimental) |
+| OpenXR XR devices | Microsoft HoloLens 2 <br> Meta Quest (experimental) <br> Windows Mixed Reality (experimental) <br> SteamVR (experimental) <br> Oculus Rift on OpenXR (experimental) <br> Lenovo ThinkReality A3 (with [Qualcomm Snapdragon Spaces](https://docs.spaces.qualcomm.com/unity/samples/preview/MRTK3SampleWinOnly.html) - experimental) |
 | Windows | Traditional flat-screen desktop (experimental)
 | And more coming soon! |
 
@@ -81,9 +81,8 @@ To acquire and use MRTK3, the following software tools are required.
 | Software | Version | Notes
 | --- | --- | --- |
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
-| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, make sure to check out [known issues in certain Unity versions]((/windows/mixed-reality/develop/unity/known-issues) |
+| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
-| [.NET 5.0 Runtime](https://dotnet.microsoft.com/download/dotnet/5.0) | | Required by Mixed Reality Feature Tool |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
 
 ## Versioning
@@ -171,8 +170,8 @@ We very much encourage you to provide any and all feedback to help shape the fin
         Prompt for user action.
     :::column-end:::
     :::column:::
-        [![Slate](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](../mrtk3-uxcomponents/packages/uxcomponents/slate.md)
-        **[Slate](../mrtk3-uxcomponents/packages/uxcomponents/slate.md)**<br>
+        [![Slate](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](../mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/slate.md)
+        **[Slate](../mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/slate.md)**<br>
         A flat panel for displaying large-format interfaces and content.
     :::column-end:::
 :::row-end:::
