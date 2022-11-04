@@ -1,24 +1,22 @@
 ---
 title: Working with 3D models
 description: Get a comprehensive overview of 3D modeling options, testing applications, and usage scenarios for HoloLens (1st gen), HoloLens 2, and immersive headsets.
-author: vtieto
-ms.author: vinnietieto
-ms.date: 11/02/2021
+author: qianw211    
+ms.author: qianwen
+ms.date: 11/4/2022
 ms.topic: article
 keywords: HoloLens, HoloLens 2, 3D, 3D models, modeling, exporting, importing, assets mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Working with 3D models
 
-If you’re developing for the [HoloLens](https://www.microsoft.com/en-us/hololens) or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), there’s a good chance that you’ll need to have 3D models in your app. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are a number of ways to obtain pre-made models free, or at a reasonable cost. We’ll take a look at some of these below. We’ll also discuss how you can get started if you're interested in creating your own 3D models.
+If you’re developing applications in mixed reality, to run on the [HoloLens](https://www.microsoft.com/en-us/hololens) or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), you’ll need to include 3D holographic models in your app for it to be rich in content. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are a number of ways to obtain pre-made models free, or at a reasonable cost, which we'll introduce here. We’ll also discuss how you can get started on creating your own 3D models.
 
 ## Optimize and convert 3D models
 
-We recommend that you use the [Dynamics 365 optimizing guide](/dynamics365/mixed-reality/import-tool/optimize-models).
+For general best practices on preparing your own 3D models to be used as holograms, see our [real-time 3D model conversion and optimization guide](/dynamics365/mixed-reality/import-tool/best-practices).
 
 If you're looking for other tools to post-process 3D models, you can optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter](https://github.com/microsoft/glTF-Toolkit) available on GitHub. This toolkit includes a command line tool that uses these steps in sequence in order to convert a glTF 2.0 core asset for use in the Windows Mixed Reality home.
-
-For general best practices, see our [real-time 3D model conversion and optimization guide](/dynamics365/mixed-reality/import-tool/best-practices).
 
 ## Check your 3D models
 
@@ -54,16 +52,16 @@ There are numerous Web sites that offer pre-made 3D and CAD (Computer-Aided Desi
 
 ## Make your own 3D Models
 
-If you can't find pre-made 3D models that fulfill your needs, it may be worth your while to develop some 3D modeling skills or have someone on your team do so. At its highest level, 3D modeling is a vast, complex skill that encompasses numerous subdisciplines:
+If you can't find pre-made 3D models that fulfill your needs, it may be worth your while to develop some 3D modeling skills or have someone on your team do so. At its highest level, 3D modeling is a vast, complex skill that encompasses numerous subdisciplines: <mark>(maybe helpful to provide links to the subtopics below) </mark>
 
 - Rigging and animating
-- Shaders
+- [Shaders](/windows/mixed-reality/design/shader)
 - Particles
-- Materials
-- Game optimization
-- UV mapping
+- [Materials](/windows/mixed-reality/design/color-light-and-materials#materials)
+- [Game optimization](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality)
+- [UV mapping](/dynamics365/mixed-reality/guides/3d-content-guidelines/pixyz-studio#uv-generation)
 - Scripting
-- Lighting
+- [Lighting](/windows/mixed-reality/design/color-light-and-materials)
 
 As you can imagine, it requires considerable time and effort to become a highly proficient 3D modeler. The good news is that you don’t have to become an expert to reap some benefits; just having a few basic skills in your toolbox, such as the ability to change materials on a model or convert a high-poly model to a low-poly one, can result in significant improvements to your apps.
 
@@ -73,7 +71,7 @@ Here are some of the more popular 3D modeling programs.
 
 [Blender](https://www.blender.org/)
 
-Blender is a popular choice partly because these kinds of tools tend to be expensive and Blender is free. In past years, Blender was viewed as less capable than the high-end tools in this category. However, it has undergone substantial improvements in the last few versions and is now considered by many to be a fully professional-level tool.
+Blender is a popular choice partly because 3D modeling tools tend to be expensive and Blender is free. In past years, Blender was viewed as less capable than the high-end tools in this category. However, it has undergone substantial improvements in the last few versions and is now considered by many to be a fully professional-level tool.
 
 [3ds Max](https://www.autodesk.com/products/3ds-max/overview?term=1-YEAR&tab=subscription)
 
@@ -115,7 +113,7 @@ If you’re willing to pay, here are some of the more popular video tutorial sit
 
 ## Using 3D Viewer on HoloLens 2 and HoloLens (1st gen)
 
-HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer application. The 3D Viewer on HoloLens 2 is designed to serve a very different purpose than 3D Viewer for the desktop or Model Viewer from HoloLens (1st gen). 3D Viewer for HoloLens 2 is more of a "Decorate your space" app. You'll notice that holograms persist in place and remain visible even while other 2D apps are running. This means that models loaded into 3D Viewer for HoloLens 2 must closely align to the requirements for [3D App Launchers](../distribute/implementing-3d-app-launchers.md).
+HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer application. The 3D Viewer on HoloLens 2 is designed to serve a very different purpose than 3D Viewer for the desktop or Model Viewer from HoloLens (1st gen). 3D Viewer for HoloLens 2 is more of a *Decorate your space* app. You'll notice that holograms persist in place and remain visible even while other 2D apps are running. This means that models loaded into 3D Viewer for HoloLens 2 must satisfy the requirements for [3D App Launchers](../distribute/implementing-3d-app-launchers.md).
 
 ### HoloLens (1st gen) Beta version 
 
