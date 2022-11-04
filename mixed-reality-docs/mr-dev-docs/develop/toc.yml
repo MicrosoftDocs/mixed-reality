@@ -34,7 +34,7 @@
     - name: Unity development for VR
       href: unity/unity-development-wmr-overview.md
     - name: Mixed Reality Toolkit (MRTK)
-      href: /windows/mixed-reality/mrtk-unity/
+      href: /windows/mixed-reality/mrtk-unity/mrtk3-overview/
     - name: Mixed Reality OpenXR Plugin API reference
       href: https://aka.ms/openxr-unity-api-reference
     - name: Tutorials
@@ -43,6 +43,8 @@
           href: unity/tutorials.md
         - name: MRTK3 Zappy's Playground
           href: unity/playground-tutorial.md
+        - name: MRTK3 Aquarium
+          href: unity/mrtk3-aquarium.md          
         - name: HoloLens 2 tutorials
           items:
             - name: HoloLens 2 Fundamentals Tutorials
