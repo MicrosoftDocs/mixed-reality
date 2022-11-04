@@ -10,7 +10,7 @@ keywords: HoloLens, HoloLens 2, 3D, 3D models, modeling, exporting, importing, a
 
 # Working with 3D models
 
-If you’re developing applications in mixed reality, to run on the [HoloLens](https://www.microsoft.com/en-us/hololens) or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), you’ll need to include 3D holographic models in your app for it to be rich in content. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are a number of ways to obtain pre-made models free, or at a reasonable cost, which we'll introduce here. We’ll also discuss how you can get started on creating your own 3D models.
+If you’re developing applications in mixed reality, to run on the [HoloLens](https://www.microsoft.com/en-us/hololens) or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), you’ll need to include 3D holographic models in your app for it to be rich in content. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are many ways to obtain pre-made models free, or at a reasonable cost, which we'll introduce here. We’ll also discuss how you can get started on creating your own 3D models.
 
 ## Optimize and convert 3D models
 
@@ -24,7 +24,7 @@ To check your 3D models, we recommend that you use the [Babylon.js](https://www.
 
 ## For Unity Developers: Mixed Reality Toolkit and Asset Store
 
-If you’re a Unity developer and need objects that you can use for spatial interaction and UI, you don’t have to go far. If you're using our Mixed Reality Toolkit (MRTK) in your project, you already have a wide range of built-in objects including bounding boxes, pressable buttons, hand menus, slates, sliders and more.
+If you’re a Unity developer and need objects that you can use for spatial interaction and UI, you don’t have to go far. If you're using our Mixed Reality Toolkit (MRTK) in your project, you already have a wide range of built-in objects including bounding boxes, reusable buttons, hand menus, slates, sliders and more.
 
 ![Mixed reality toolkit 3D objects](images/mrtk-ui-objects.png)
 
@@ -97,9 +97,9 @@ Here are some of the more popular CAD programs.
 
 ## Learning Resources
 
-The best place to start looking for tutorials, videos, and other  learning resources is on the Web site of your chosen tool. Large streaming video sites like Youtube have many tutorials about 3D modeling, but since anyone can post a video, the quality can vary widely. Some tools have dedicated Youtube channels--two examples are [Blender](https://www.youtube.com/user/BlenderFoundation) and [Maya](https://www.youtube.com/c/MayaHowTos).
+The best place to start looking for tutorials, videos, and other  learning resources is on the Web site of your chosen tool. Large streaming video sites like YouTube have many tutorials about 3D modeling, but since anyone can post a video, the quality can vary widely. Some tools have dedicated YouTube channels--two examples are [Blender](https://www.youtube.com/user/BlenderFoundation) and [Maya](https://www.youtube.com/c/MayaHowTos).
 
-Another free, worthwhile resource may be your local public library. Many libraries offer streaming eLearning videos on their Web sites, and there tend to be many computer topics from high-quality sources. For example, the San Francisco public library offers [videos from LinkedIn Learning](https://www.linkedin.com/learning-login/go/sfpl).
+Another free, worthwhile resource may be your local public library. Many libraries offer streaming eLearning videos on their Web sites, and there tend to be many computer articles from high-quality sources. For example, the San Francisco public library offers [videos from LinkedIn Learning](https://www.linkedin.com/learning-login/go/sfpl).
 
 If you’re willing to pay, here are some of the more popular video tutorial sites:
 
@@ -113,7 +113,7 @@ If you’re willing to pay, here are some of the more popular video tutorial sit
 
 ## Using 3D Viewer on HoloLens 2 and HoloLens (1st gen)
 
-HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer application. The 3D Viewer on HoloLens 2 is designed to serve a very different purpose than 3D Viewer for the desktop or Model Viewer from HoloLens (1st gen). 3D Viewer for HoloLens 2 is more of a *Decorate your space* app. You'll notice that holograms persist in place and remain visible even while other 2D apps are running. This means that models loaded into 3D Viewer for HoloLens 2 must satisfy the requirements for [3D App Launchers](../distribute/implementing-3d-app-launchers.md).
+HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer application. The 3D Viewer on HoloLens 2 is designed to serve a different purpose than 3D Viewer for the desktop or Model Viewer from HoloLens (1st gen). 3D Viewer for HoloLens 2 is more of a *Decorate your space* app. You'll notice that holograms persist in place and remain visible even while other 2D apps are running. This means that models loaded into 3D Viewer for HoloLens 2 must satisfy the requirements for [3D App Launchers](../distribute/implementing-3d-app-launchers.md).
 
 ### HoloLens (1st gen) Beta version 
 
