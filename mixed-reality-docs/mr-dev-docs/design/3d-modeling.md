@@ -10,7 +10,7 @@ keywords: HoloLens, HoloLens 2, 3D, 3D models, modeling, exporting, importing, a
 
 # Working with 3D models
 
-If you’re developing applications in mixed reality, to run on the [HoloLens](https://www.microsoft.com/en-us/hololens) or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), you’ll need to include 3D holographic models in your app for it to be rich in content. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are many ways to obtain pre-made models free, or at a reasonable cost, which we'll introduce here. We’ll also discuss how you can get started on creating your own 3D models.
+If you’re developing applications in mixed reality to run on the [HoloLens](https://www.microsoft.com/en-us/hololens) or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), you’ll need to include 3D holographic models in your app for it to be rich in content. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are many ways to obtain pre-made models free, or at a reasonable cost, which we'll introduce here. We’ll also discuss how you can get started on creating your own 3D models.
 
 ## Optimize and convert 3D models
 
