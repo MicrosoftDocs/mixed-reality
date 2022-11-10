@@ -37,6 +37,7 @@ This article covers the ways to use the extended eye tracking SDK in Unity toget
     1. Add the `ExtendedEyeGazeDataProvider.cs` script below to your Unity project.
     2. Create a scene, then add an empty object, and then attach the `ExtendedEyeGazeDataProvider.cs` script to it.
 5. Consume the functions of `ExtendedEyeGazeDataProvider.cs` and implement your logics.
+6. [Build and deploy to HoloLens](./build-and-deploy-to-hololens.md).
 
 ## Consume functions of ExtendedEyeGazeDataProvider
 

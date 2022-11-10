@@ -41,6 +41,7 @@ This article covers the ways to use the extended eye tracking SDK in native engi
     using namespace winrt::Microsoft::MixedReality::EyeTracking;
     ```
 1. Consume the extended eye tracking SDK APIs and implement your logic.
+1. [Build and deploy to HoloLens](../advanced-concepts/using-visual-studio.md).
 
 ## Steps overview to get the gaze data
 
