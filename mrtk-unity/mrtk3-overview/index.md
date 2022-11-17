@@ -181,7 +181,7 @@ We very much encourage you to provide any and all feedback to help shape the fin
 :::row-end:::
 
 ### Figma Toolkit for MRTK3 Preview
-The [prerelease of Figma Toolkit for MRTK3](https://www.figma.com/community/file/1145959192595816999) includes UI components based on Microsoft's new Mixed Reality Design Language introduced in MRTK3. You can use the 2D presentations of the components in the design process for creating UI layouts and storyboards.
+The [prerelease of Figma Toolkit for MRTK3](https://www.figma.com/community/file/1145959192595816999) includes UI components based on Microsoft's new Mixed Reality Design Language introduced in MRTK3. You can use the 2D representations of the components in the design process for creating UI layouts and storyboards.
 
 
 ## Session videos from Microsoft Mixed Reality Dev Days 2022
