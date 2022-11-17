@@ -74,6 +74,10 @@ We hear your excitement, and we want to give you early access to our newest feat
 * Writing production-ready code that expects a stable API.
 * Evaluate performance for your applications (full release may have significant performance differences compared to the codebase today).
 
+### Check out [MRTK3 Aquarium](/windows/mixed-reality/develop/unity/mrtk3-aquarium), the in-editor tutorial
+
+The [MRTK3 Aquarium project](/windows/mixed-reality/develop/unity/mrtk3-aquarium) provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habitat. Using MRTK3 features, you'll add interactivity to the aquarium which will enable you to create an aquarium of your very own!
+
 ## Software Requirements
 
 To acquire and use MRTK3, the following software tools are required.
@@ -81,7 +85,7 @@ To acquire and use MRTK3, the following software tools are required.
 | Software | Version | Notes
 | --- | --- | --- |
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
-| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) |
+| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, **make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues)** |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
 
@@ -176,6 +180,9 @@ We very much encourage you to provide any and all feedback to help shape the fin
     :::column-end:::
 :::row-end:::
 
+### Figma Toolkit for MRTK3 Preview
+The [prerelease of Figma Toolkit for MRTK3](https://www.figma.com/community/file/1145959192595816999) includes UI components based on Microsoft's new Mixed Reality Design Language introduced in MRTK3. You can use the 2D presentations of the components in the design process for creating UI layouts and storyboards.
+
 
 ## Session videos from Microsoft Mixed Reality Dev Days 2022
 
@@ -218,4 +225,4 @@ The roadmap from public preview to general availability is detailed in the follo
 | --- | --- |
 | Public Preview | June 8, 2022 |
 | Preview updates | Approximately every 2-4 weeks until GA |
-| General Availability | Fall / Winter 2022 |
+| General Availability | February 2023 |
