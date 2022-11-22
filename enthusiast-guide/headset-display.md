@@ -3,7 +3,7 @@ title: Headset Display FAQs
 description: Display Windows Mixed Reality troubleshooting for headset display issues that goes beyond our standard consumer support documentation.
 author: qianw211
 ms.author: qianwen
-ms.date: 09/30/2020
+ms.date: 11/22/2022
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support
 appliesto:
@@ -79,7 +79,7 @@ On some PCs, leaving your headset plugged in before turning on or while rebootin
 
 * Make sure you're using an HDMI adapter that supports HDMI 2.0. Many older HDMI adapters only support 1080p resolution, which is insufficient for Mixed Reality headsets.
 * Make sure your graphics driver is up to date. Check Windows Update and the PC manufacturer's website for an updated graphics driver.
-* Some Surface devices are incompatible with Windows Mixed Reality. Learn more about [Surface compatibility and requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
+* Some Surface devices are incompatible with Windows Mixed Reality. Learn more about [Surface compatibility and requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#get-help-with-pc-compatibility).
 
 ## My headset display doesn't work after I shut down and do a fast startup
 
