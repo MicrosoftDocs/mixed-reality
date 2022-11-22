@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting
 description: Notes on things that have gone wrong and what was done to fix them.
-author: fast-slow-still
-ms.author: mafinc
+author: MaxWang-MS
+ms.author: wangmax
 ms.date: 10/06/2021
 ms.prod: mixed-reality
 ms.localizationpriority: high
@@ -83,6 +83,8 @@ The fix is either disable Graphics Jobs under
 > `Project Settings > Player > Other Settings > Graphics Jobs`
 
 or just build for ARM64.
+
+This issue has been fixed in Unity 2019.4 and Unity 2020.3.
 
 ## See also
 
