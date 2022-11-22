@@ -10,22 +10,22 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 # Add the Mixed Reality OpenXR Plugin to your existing Unity project
 
-If you have a Unity project that's already set up for OpenXR (you have the Unity OpenXR plugin installed and configured) and you want to add the capability to target your app for the HoloLens 2, follow the instructions below.
+If you have a Unity project that's already set up for OpenXR (you have the Unity OpenXR plugin installed and configured) and you want to add the capability to target your app for HoloLens 2 or Windows Mixed Reality headsets, follow the instructions below.
 
 **To determine if your project has the Mixed Reality OpenXR plugin installed**:
 
 1. In Unity, on the menu bar, select **Edit** > **Project Settings**.
 1. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
-1. If **Microsoft Hololens feature group** is grayed out or doesn't exist, the Mixed Reality OpenXR plugin isn't installed.
+1. If **Microsoft HoloLens feature group** is grayed out or doesn't exist, the Mixed Reality OpenXR plugin isn't installed.
 
     :::image type="content" source="images/028-ms-hololens-feature-group.png" alt-text="Screenshot of XR Plug-in Management window.":::
+1. If the plugin is installed, proceed to the [configure the project to use the Mixed Reality OpenXR Plugin section](#configure-the-project-to-use-the-mixed-reality-openxr-plugin). Else, continue to follow the instructions below.
 
 [!INCLUDE[](includes/xr/use-mrft-install-mr-openxr.md)]
 
 ## Configure the project to use the Mixed Reality OpenXR Plugin
-1. In Unity, ensure that you're in the **Project Settings** window, on the **XR Plug-in Management** page, and in the **Universal Windows Platform** tab (if targeting HoloLens 2) or the **Standalone** tab (if targeting Desktop VR).
-1. There are now several feature groups underneath **OpenXR**. Select **Microsoft HoloLens feature group**(if targeting HoloLens 2) or **Windows Mixed Reality feature group** (if targeting Desktop VR).
-1.  Close the **Project Settings** window.
+- If you are targeting HoloLens 2, refer to the [configure for HoloLens 2 via Project Validation section](new-openxr-project-without-mrtk.md#configure-the-project-for-the-hololens-2-via-project-validation-mr-openxr-16) for further instructions. Alternatively, refer to the [configure for HoloLens 2 manually section](new-openxr-project-without-mrtk.md#configure-the-project-for-the-hololens-2-manually) to apply recommended settings by hand.
+- If you are targeting Windows Mixed Reality headsets, refer to the [configure for desktop VR section](new-openxr-project-without-mrtk.md#configure-the-project-for-desktop-vr).
 
 ## See also
 
