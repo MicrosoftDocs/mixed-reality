@@ -84,6 +84,8 @@ The fix is either disable Graphics Jobs under
 
 or just build for ARM64.
 
+This issue has been fixed in Unity 2019.4 and Unity 2020.3.
+
 ## See also
 
 * [WLT troubleshooting strategy](TroubleshootingAdvanced.md)

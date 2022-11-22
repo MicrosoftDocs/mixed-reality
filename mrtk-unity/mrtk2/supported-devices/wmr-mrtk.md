@@ -52,13 +52,6 @@ If using the OpenXR or Windows XR plugins:
 1. Navigate to **Edit > Project Settings, XR-Plugin Management** and make sure **Windows Mixed Reality** is enabled.
 1. Build and deploy in Visual Studio
 
->[!IMPORTANT]
-> If using Unity 2019.3.x, select **ARM64** and not **ARM** as the build architecture in Visual Studio. With the default Unity settings in Unity 2019.3.x, a Unity app will not deploy to a HoloLens if ARM is selected due to a Unity bug.
->
-> If the ARM architecture is required, navigate to **Edit > Project Settings, Player**, and under the **Other Settings** menu disable **Graphics Jobs**. Disabling **Graphics Jobs** will allow the app to deploy using the ARM build architecture for Unity 2019.3.x, but ARM64 is recommended.
->
-> This issue was fixed in Unity 2019.4 and Unity 2020.3.
-
 ## Building and deploying MRTK to WMR Headsets (Standalone)
 
 Standalone builds of MRTK can be used on WMR headsets. A Standalone build for a WMR headset requires the following extra steps:
