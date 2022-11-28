@@ -80,6 +80,10 @@ To display a permission dialogue and allow the iOS device to access location inf
 
 ## Adding Azure Spatial Anchors plugins
 
+> [!TIP]
+> When using Azure Spatial Anchors for Unreal, there is a Azure Spatial Anchors plugin and a platform specific plugin (WMR, ARKit, ARCore, OpenXR). You should have only one platform specific plugin enabled at a time. 
+
+
 ### HoloLens
 Enable the Azure Spatial Anchors plugins in the Unreal editor by:
 1. Clicking **Edit > Plugins** and searching for **Azure Spatial Anchors** and **Azure Spatial Anchors For WMR**.
