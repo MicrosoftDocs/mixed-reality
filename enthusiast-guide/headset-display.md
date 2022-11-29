@@ -28,14 +28,14 @@ appliesto:
     * Plug order can be important. Connect the HDMI or DisplayPort adapter to your PC before connecting the headset to the adapter, especially if you're using a USB-C to HDMI or USB-C to Displayport adapter.
     * Try removing extension cables if you're using them.
 * Check port compatibility:
-    * Test a display by connecting it with the port you're using for your headset. Some PC's may have more than one port for connecting displays, but not all of them may be active.
-    * Some PC's may contain ports for both an integrated graphics processing unit (iGPU) and a discrete graphics processing unit (dGPU). Make sure that your headset's HDMI or DisplayPort cable is connected to your dGPU.<ul>
+    * Test a display by connecting it with the port you're using for your headset. Some PCs may have more than one port for connecting displays, but not all of them may be active.
+    * Some PCs may contain ports for both an integrated graphics processing unit (iGPU) and a discrete graphics processing unit (dGPU). Make sure that your headset's HDMI or DisplayPort cable is connected to your dGPU.<ul>
         * On desktop PC's, dGPU ports can be identified by locating the dGPU bracket containing one or more rows of ports that mainly include HDMI or DisplayPort ports. The dGPU bracket is likely located at the rear of the desktop and secured to the case with screws. This bracket lies below your motherboard's ports (USB, LAN, audio, etc) that are surrounded by a metal shield.
         * On laptops that include both an iGPU and dGPU, dGPU ports can be more difficult to identify and are not always included. You can identify if a port connects to your dGPU by connecting a display to it:</ul><ol>
             1. Go to **Settings > System > Display**.
             2. Connect the display. Identify and select the display's number in the Settings window.
             3. Go to **Advanced display settings**.</ol></ol>
-Here, the GPU that the port to your display is connected to will be indicated. If the displayed GPU model matches the name of a dGPU, your headset can be connected to that port as long as your headset's display cable is compatible with the HDMI or DisplayPort revision the port uses. Other ports may or may not connect to the dGPU as well. On occasion, laptop manufacturers may include features to switch port connectivity between the iGPU and dGPU, check the manual for your laptop on your laptop manufacturer's website.</li></li></li>
+Here, the GPU that the port to your display is connected to will be indicated. If the displayed GPU model matches the name of a dGPU, your headset can be connected to that port as long as your headset's display cable is compatible with the HDMI or DisplayPort revision the port uses. Other ports may or may not connect to the dGPU as well. On occasion, laptop manufacturers may include features to switch port connectivity between the iGPU and dGPU; check the manual for your laptop on your laptop manufacturer's website.</li></li></li>
 * Check graphics card and driver compatibility:
     * Double check your GPU driver version. Make sure it's recent, but also pay attention to any new performance and compatibility issues and regressions on brand new drivers.
     * If you're using Mixed Reality on a laptop and you've installed a newer graphics driver from the graphics card manufacturer's website, try downgrading to the latest graphics card driver provided on your PC manufacturer's website, or on Windows Update.
@@ -85,7 +85,7 @@ On some PCs, leaving your headset plugged in before turning on or while rebootin
 ## My PC or headset displays flicker, flash, or remain black when using a Surface PC
 
 * Make sure you're using an HDMI adapter that supports HDMI 2.0. Many older HDMI adapters only support 1080p resolution, which is insufficient for Mixed Reality headsets.
-* Make sure your graphics driver is up to date. Check Windows Update and the PC or graphics card manufacturer's website for an updated graphics driver.
+* Make sure your graphics driver is up-to-date. Check Windows Update and the PC or graphics card manufacturer's website for an updated graphics driver.
 * Some Surface devices are incompatible with Windows Mixed Reality. Learn more about [Surface compatibility and requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
 
 ## My headset display doesn't work after I shut down and do a fast startup
@@ -98,12 +98,12 @@ If you see "HoloLens Sensors" with a yellow exclamation mark in Device Manager, 
 
 ## The images shown on the headset's displays appear warped or incorrectly scaled.
 
-This issue is likely caused by your headset's or graphics cards drivers or Windows software experiencing problems with adjusting the displayed content to appear correctly on your headset. You can try the following to fix the issue:
+This issue is likely caused by your headset's or graphics card's drivers or Windows software experiencing problems with adjusting the displayed content to appear correctly on your headset. You can try the following to fix the issue:
 
-* Disable automatic upscaling in Mixed Reality.
+* Disable automatic upscaling in mixed reality.
   * Go to **Settings > Mixed Reality > Headset display > Resolution** and make sure the "best quality" option is selected.
 * Turn off any features that may allow your PC to use a pixel resolution higher than your display. These features are present in your graphics card manufacturer's software. You can access this software by doing the following:
-    * Right click on your desktop background > Select "Show more options" (only required for Windows 11) > Select the name of the application matching the name of your graphics card's manufacturer.  
+    * Right click on your desktop background and then select "Show more options" (only required for Windows 11). Select the name of the application matching the name of your graphics card's manufacturer.  
 * Reinstall your headset drivers.
     1 Go to Device Manager.
     2 Expand the Mixed Reality devices section. 
