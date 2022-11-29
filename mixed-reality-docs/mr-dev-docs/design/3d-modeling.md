@@ -55,13 +55,13 @@ There are numerous Web sites that offer pre-made 3D and CAD (Computer-Aided Desi
 If you can't find pre-made 3D models that fulfill your needs, it may be worth your while to develop some 3D modeling skills or have someone on your team do so. At its highest level, 3D modeling is a vast, complex skill that encompasses numerous subdisciplines: 
 
 - [Rigging and animating](https://docs.unity3d.com/Manual/AnimationOverview.html)
-- [Shaders](/windows/mixed-reality/design/shader)
+- [Shaders](./shader.md)
 - [Particles](https://docs.unity3d.com/Manual/class-ParticleSystem.html)
-- [Materials](/windows/mixed-reality/design/color-light-and-materials#materials)
-- [Game optimization](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality)
+- [Materials](./color-light-and-materials.md#materials)
+- [Game optimization](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md)
 - [UV mapping](/dynamics365/mixed-reality/guides/3d-content-guidelines/pixyz-studio#uv-generation)
 - [Scripting](https://docs.unity3d.com/Manual/ScriptingSection.html)
-- [Lighting](/windows/mixed-reality/design/color-light-and-materials)
+- [Lighting](./color-light-and-materials.md)
 
 As you can imagine, it requires considerable time and effort to become a highly proficient 3D modeler. The good news is that you don’t have to become an expert to reap some benefits; just having a few basic skills in your toolbox, such as the ability to change materials on a model or convert a high-poly model to a low-poly one, can result in significant improvements to your apps.
 

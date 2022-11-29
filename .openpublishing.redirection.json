@@ -1098,8 +1098,8 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/persistence-in-unity.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/persistence-in-unity",
-			"redirect_document_id": true
+			"redirect_url": "/windows/mixed-reality/develop/unity/spatial-anchors-in-unity",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/recommended-settings-for-unity.md",
@@ -1920,8 +1920,8 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/voice-design.md",
-			"redirect_url": "/windows/mixed-reality/out-of-scope/voice-design",
-			"redirect_document_id": true
+			"redirect_url": "/windows/mixed-reality/design/voice-input",
+			"redirect_document_id": false
 		},
 
 		{	"source_path": "ignore",
@@ -2413,6 +2413,16 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-pc-holographic-remoting-02.md",
 			"redirect_url": "/learn/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/out-of-scope/voice-design.md",
+			"redirect_url": "/windows/mixed-reality/design/voice-input",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/persistence-in-unity.md",
+			"redirect_url": "/windows/mixed-reality/develop/unity/spatial-anchors-in-unity",
 			"redirect_document_id": false
 		},
 		{
