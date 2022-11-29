@@ -19,6 +19,12 @@ Spatial anchors save holograms in real-world space between application sessions 
 > [!IMPORTANT]
 > Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud. If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md). Note that you can have local and Azure anchors in the same project without conflict.
 
+## Prerequisites
+> [!IMPORTANT] 
+> Spatial anchors requires Microsoft OpenXR plugin.
+
+The Microsoft OpenXR plugin must be used, available from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal/releases).
+
 ## Checking the anchor store
 
 Before saving or loading anchors, you need to check if the anchor store is ready.  Calling any of the HoloLens anchor functions before the anchor store is ready won't succeed.  

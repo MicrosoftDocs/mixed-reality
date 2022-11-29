@@ -3,7 +3,7 @@ title: Use PC resources to power your app with Holographic Remoting remote app
 description: Use PC resources, instead of relying on the on-board processing power of the HoloLens, to power your app with Holographic Remoting
 author: vtieto
 ms.author: vinnietieto
-ms.date: 10/05/2021
+ms.date: 08/04/2022
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
 ---
@@ -20,81 +20,110 @@ To learn more about Holographic Remoting, see [Holographic Remoting Overview](..
 
 Note that you can also use Holographic Remoting if [you want to preview and debug your app during the development process](preview-and-debug-your-app.md).
 
-## Two modes in Holographic Remoting are available
+## Two available modes in Holographic Remoting
 
-|Mode   |Remote App running on PC        | Holographic Remoting player app running on HoloLens 2|
-|-------|--------------------------------|------------------------------------------------------|
-|Mode 1 |Connect mode                    |   Listen mode                                        |
-|Mode 2 |Listen mode                     |   Connect mode                                       |
+**Mode 1: Remote app running on PC in Connect mode, Player running on the HoloLens 2 in Listen mode.**
 
+The Player listens to the incoming connections while the remote app tries to connect.
 
+**Mode 2: Remote app running on PC in Listen mode, Player running on the HoloLens 2 in connect mode.**
+
+The remote app listens for incoming connections while the Player tries to connect.
 
 ## Set up the Holographic Remoting Player app
 
-To use Holographic Remoting in Mode 1 alone, install the [Holographic Remoting Player](../native/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **We recommend using the latest version of Holographic Remoting Player available**.
+To use Holographic Remoting in Mode 1 alone, install the [Holographic Remoting Player](../native/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2 (in this article, we'll refer to it simply as "the Player"). As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **We recommend using the latest version of the Player available**.
 
-Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the Holographic Remoting Player article linked above.
+Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the Player article linked above.
 
 ![Screenshot of the Holographic Remoting Player running in the HoloLens](images/openxr-features-img-01.png)
 
-To use Holographic Remoting in both modes specified above, you need to clone [Holographic Remoting Sample player](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/player/sample/SamplePlayer.sln) and deploy it to HoloLens 2 using Visual Studio.
+To use Holographic Remoting in both modes specified above, you need to clone [Holographic Remoting Sample player](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/player/sample/SamplePlayer.sln) and deploy it to the HoloLens 2 using Visual Studio.
 
 ## Build a remote app running on PC for Holographic Remoting using Unity
 
 1. On the menu bar, select **Edit > Project Settings**.
 1. In the left-side column, select **XR plug-in Management**.
-1. In the **XR Plug-in Management** section, select **Microsoft HoloLens feature group** and **Holographic Remoting remote app feature group**.
-1. Unselect **Initialize XR on Startup**:
+1. Ensure that you're in the **Universal Windows Platform settings** tab.
 
-    ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/001-openxr-features.png)
+    ![Screenshot that shows the XR-Plug in Management window with the Universal Windows Platform tab selected.](images/038-uwp-tab.png)
 
-1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. Refer to the sample app distributed with the [Mixed Reality OpenXR Plugin](new-openxr-project-with-mrtk.md#unity-sample-projects) containing AppRemoting.cs for more details.
+1. In the **OpenXR** plug-in section, select **Microsoft HoloLens feature group** and **Holographic Remoting remote app feature group**.
 
-1. For Mode 1, the **Connect** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
+    ![Screenshot that shows the OpenXr plug-in with "Microsoft HoloLens feature group" and "Holographic Remoting remote app feature group" selected.](images/039-select-holo-remoting.png)
+
+1. Unselect the **Initialize XR on Startup** check box.
+
+    ![Screenshot of the XR Plug-in Management window with "Initialize XR on Startup" unselected.](images/040-unselect-init-xr.png)
+
+1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. To see an example, download our [Open XR Unity Mixed Reality samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) and then, in the **RemotingSample** project, view the **AppRemoting.cs** script.
+
+1. For Mode 1, the **Connect** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the Inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
     ```
-1. For Mode 2, the **Listen** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the **Inspector**. Calling `Listen` will set the configuration and wait for a connection from the Holographic Remoting sample player, which is why it must be called as a coroutine:
+1. For Mode 2, the **Listen** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the Inspector. Calling `Listen` will set the configuration and wait for a connection from the Holographic Remoting sample player, which is why it must be called as a coroutine:
 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Listen(remotingListenConfiguration));
     ```
-1. While running, you can obtain the current connection state with the `AppRemoting.TryGetConnectionState` API, and optionally disconnect and de-initialize XR using `AppRemoting.Disconnect()`. This could be used to disconnect and reconnect to a different device within the same app session. The sample app provides a tappable cube which will disconnect the remoting session if tapped.
+1. While running, you can obtain the current connection state with the `AppRemoting.TryGetConnectionState` API, and optionally disconnect and de-initialize XR using `AppRemoting.Disconnect()`. This could be used to disconnect and reconnect to a different device within the same app session. The RemotingSample app provides a tappable cube which will disconnect the remoting session if tapped.
 
+## Run the Holographic Remoting remote app and the Player app in the modes described above
 
-## Run the remote app and Holographic Remoting Player app in the modes described above
+### Mode 1: Run the Holographic Remoting remote app on PC in Connect Mode and the Player in Listen Mode:
 
-### Mode 1: Run the remote app on PC in Connect Mode and the Holographic Remoting player app in Listen Mode:
+1. If the Player is already installed from the store on the HoloLens 2, skip step numbers 2 and 3 below where you build and run the Sample Player app. Instead, run the installed Player and continue on with step #4.
 
-- If the Holographic Remoting Player app is already installed from the store on the HoloLens 2, skip the three steps below and run the app.
+1. Open the Holographic Remoting Sample Player app using VS 2019 and then do one of the following:
 
-- Open the Holographic Remoting Sample Player app using VS 2019. In order to run on a HoloLens 2 that's attached to your PC using a USB cable, configure as follows:
-![running-har-sample-player-sol](images/har-sample-player-run-sol.png)
+    **To run on a HoloLens 2 using a USB cable**:
+    
+    - Configure the build options as shown here:
 
-- Open the **Properties** page for your project, navigate to **Configuration Properties** > **Debugging** > **Remote Machine**, and then, in the **Command Line Arguments** field, add "-listen".
-![har-sample-player-app-listenmode-configuration](images/har-sample-player-listening.png)
+    ![Screen shot of the Visual Studio build settings for if the user is connected via USB cable.](images/har-sample-player-run-sol.png)
 
-- To deploy the SamplePlayer solution on HoloLens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on HoloLens 2, displaying that it is "Waiting for a connection on IP address of HoloLens 2."
+    - Open the **Properties** page for the project, and then navigate to **Configuration Properties** > **Debugging**.
+    - Click the **Debugger to launch** drop-down, and then select **Device**.
+    - In the **Command Line Arguments** field, add "-listen".
 
-- In the remote app running on the host PC, add the IP address of HoloLens 2 displayed above and then select **Connect**.
+    ![Screenshot of the command line arguments for building using a USB cable.](images/har-sample-player-listening.png)
 
-- After the connection is established, the Holographic Remoting Player app running on HoloLens 2 will start "Receiving".
+    **To run on a HoloLens 2 using Wifi**:
+
+    - Configure the build options as shown here:
+
+    ![Screen shot of the Visual Studio build settings for if the user building to the HoloLens using Wifi.](images/041-build-settings-for-wifi.png)
+
+    - Open the **Properties** page for the project, and then navigate to **Configuration Properties** > **Debugging**.
+    - Click the **Debugger to launch** drop-down, and then select **Remote Machine**.
+    - In the **Command Line Arguments** field, add the Wifi IP address of the HoloLens.
+
+1. To deploy the SamplePlayer solution to the HoloLens 2, press the play button in Visual Studio. You'll be able to see the HAR Sample player running on HoloLens 2, displaying that it's "Waiting for a connection on IP address of HoloLens 2."
+
+1. In the remote app running on the host PC, add the IP address of the HoloLens 2 displayed above and then select **Connect**.
+
+1. After the connection is established, the Player running on HoloLens 2 will start "Receiving".
 
 ### Mode 2: Run the remote app on your PC in Listen Mode and the HAR player app in Connect Mode:
 
 - On the 2D UI screen in the remote app running on PC, click **Listen**.
 
-- Open the Holographic Remoting Sample Player app using VS 2019. In order to run on a HoloLens 2 that's attached to your PC using a USB cable, configure as follows:
-![running-har-sample-player-sol](images/har-sample-player-run-sol.png)
+    ![Screen shot of the Visual Studio build settings for if the user is connected via USB cable.](images/har-sample-player-run-sol.png)
 
-- Give in the IP address of the host PC as command line argument to the SamplePlayer app. Right click on SamplePlayer project → Properties→ Configuration Properties → Debugging → Command Line Arguments
-![har-sample-player-app-connectmode-configuration](images/har-sample-player-connecting.png)
+- Open the **Properties** page for the project, and then navigate to **Configuration Properties** > **Debugging**.
+- Click the **Debugger to launch** drop-down, and then select **Device**.
+- In the **Command Line Arguments** field, add the IP address of the host PC.
 
-- To deploy the SamplePlayer solution on HoloLens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on HoloLens 2, displaying that it is "Connecting to IP address given in command line arguments"
+![Screenshot of the command line arguments for building using a USB cable.](images/har-sample-player-listening.png)
 
-- Once the connection is established, the Holographic Remoting Sample Player app running on HoloLens 2 will start "Receiving".
+- To deploy the SamplePlayer solution to the HoloLens 2, in the Visual Studio solution, click the play button. You'll be able to see the HAR Sample player running on the HoloLens 2, displaying that it's "Connecting to IP address given in command line arguments."
 
+- After the connection is established, the Holographic Remoting Sample Player app running on the HoloLens 2 will start "Receiving".
+
+> [!TIP]
+> For best results, make sure your app properly sets the [../focus point](focus-point-in-unity.md). This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.
 
 ## Migrate from previous Holographic Remoting APIs
 

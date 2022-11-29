@@ -1,18 +1,18 @@
 ---
 title: Unreal Development Overview
-description: Get started wit mixed reality development for HoloLens and VR using Unreal Engine 4 with our curated checkpoint journey.
+description: Get started with mixed reality development for HoloLens and VR with our guide to developing mixed reality applications using Unreal Engine 4.0 or Unreal Engine 5.0.
 author: sean-kerawala
 ms.author: sekerawa
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, OpenXR
+keywords: Unreal, Unreal Engine 4, Unreal Engine 4.27, Unreal Engine 5.0, UE5, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, OpenXR
 ---
 # Unreal Development Overview
 
 ![Unreal banner logo](../images/unreal_logo_banner.png)
 
-Getting started with <a href="/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Unreal Engine 4 has full support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) devices.
+Getting started with <a href="/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Unreal Engine 5 has full support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) devices.
 
 [!INCLUDE[](includes/tabs-unreal-features.md)]
 
@@ -123,5 +123,6 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 > [Install the tools](../install-the-tools.md)
 
 ## See also
+
 * <a href="https://docs.unrealengine.com/develping-for-hololens-in-unreal-engine/" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
 * <a href="https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html" target="_blank">Unreal performance guidelines for mobile devices</a>

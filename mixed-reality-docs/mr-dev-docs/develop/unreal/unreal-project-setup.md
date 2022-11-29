@@ -6,15 +6,15 @@ ms.author: sekerawa
 ms.date: 4/28/2021
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, mixed reality, development, features, new project, emulator, documentation, guides, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, up-to-date, tools, get started, basics, unreal, toolkit, hub, installation, Windows, HoloLens, openxr, mrtk
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, UE5, mixed reality, development, features, new project, emulator, documentation, guides, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, up-to-date, tools, get started, basics, unreal, toolkit, hub, installation, Windows, HoloLens, openxr, mrtk
 ---
 
 # Setting up your Unreal project
 
-We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
+We recommend installing [Unreal Engine version 4.27 or 5.0](https://docs.unrealengine.com//GettingStarted/Installation/index.html) to take full advantage of built-in HoloLens support.
 
 Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** and click **Options**. Under **Target Platforms**, select **HoloLens 2** and click **Apply**.
-![Unreal Install Option HoloLens 2](../images/Unreal_Install_Option_HoloLens2.png)
+![Unreal Install Option HoloLens 2](../../images/Unreal_Install_Option_HoloLens_v4.27.png)
 
 ## Import Mixed Reality Toolkit for Unreal
 
@@ -33,7 +33,7 @@ We recommend that you use the MRTK Hub to acquire MRTK plugins. It's a new way f
 - Remove Microsoft Mixed Reality plugins from your project if you no longer need them.
 
 > [!NOTE]
-> The MRTK Hub for Unreal is only available for Unreal Engine version 4.26 or later. For Unreal Engine version 4.25, you can get MRTK plugins from the Unreal Engine Marketplace or GitHub as described in the [Getting Started section](unreal-development-overview.md#1-getting-started).
+> The MRTK Hub for Unreal is only available for Unreal Engine version 4.26 or later. For Unreal Engine version 4.25+, you can get MRTK plugins from the Unreal Engine Marketplace or GitHub as described in the [Getting Started section](unreal-development-overview.md#1-getting-started).
 
 #### Installing the MRTK Hub
 

@@ -23,6 +23,7 @@ Azure Spatial Anchors is a Microsoft Mixed Reality service, allowing augmented r
 
 To complete this guide, make sure you have:
 
+- Installed Microsoft OpenXR plugin, available from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal/releases).
 - Installed [Unreal version 4.25](https://www.unrealengine.com/get-now) or later
 - A [HoloLens 2 project](tutorials/unreal-uxt-ch1.md) setup in Unreal 
 - Read through the [Azure Spatial Anchors overview](/azure/spatial-anchors/overview)
