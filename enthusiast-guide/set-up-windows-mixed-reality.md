@@ -98,7 +98,7 @@ You can enable Cortana commands in mixed reality, which lets you use speech comm
 
 ## Set up your audio headset
 
-Modern Windows Mixed Reality headsets often include speakers and microphones, but if you are using an older headset, you may need to use an audio headset with microphone(s) and speakers. You can [connect a Bluetooth headset](https://support.microsoft.com/en-us/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242) or connect a cabled headset by plugging it into your headset's 3.5-mm audio jack. The 3.5-mm audio jack for your headset is located on the underside of the headset visor or at the end of a short audio cable attached to the headset visor, depending on the headset model.
+Modern Windows Mixed Reality headsets often include speakers and microphones, but if you're using an older headset, you may need to use an audio headset with microphone(s) and speakers. You can [connect a Bluetooth headset](https://support.microsoft.com/en-us/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242) or connect a cabled headset by plugging it into your headset's 3.5-mm audio jack. This jack is located on the underside of the headset visor or at the end of a short audio cable attached to the headset visor, depending on the headset model.
 
 ## Adjusting your headset's display settings
 
@@ -106,7 +106,7 @@ Windows Mixed Reality automatically chooses display settings that balance qualit
 
 ### Visuals
 
-This setting controls the visual quality of your Mixed reality home. The default is **Automatic**.
+This setting controls the visual quality of your mixed reality home. The default is **Automatic**.
 
 ### Resolution
 
@@ -124,8 +124,7 @@ This setting is available on Windows 10, version 1903, or newer, and on Windows 
 
 ### Calibration
 
-This setting is to adjust the IPD calibration for headsets with software IPD support.
-If this option is greyed out, you're likely using a headset with hardware IPD support, adjust the IPD using the slider on your headset.
+This setting adjusts the IPD calibration for headsets with software IPD support. If this option is grayed out, you're likely using a headset with hardware IPD support; in this case, adjust the IPD using the slider on your headset.
 
 ### Frame rate
 
@@ -136,7 +135,7 @@ This advanced setting overrides the default headset display refresh rate experie
 * **90 Hz**
 
 >[!Note]
->When first setting up the HP Reverb G2 headset, the frame rate will be changed to **90 Hz** to ensure the best experience. If needed you can change this to **60 Hz** or **Let Windows decide**.
+> When first setting up the HP Reverb G2 headset, the frame rate will be changed to **90 Hz** to ensure the best experience. If needed, you can change this to **60 Hz** or **Let Windows decide**.
 
 ### Input switching
 
