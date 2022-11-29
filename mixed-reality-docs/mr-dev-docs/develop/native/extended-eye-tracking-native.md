@@ -24,9 +24,7 @@ This article covers the ways to use the extended eye tracking SDK in native engi
     1. Make sure the Package source in the top right corner points to nuget.org: https://api.nuget.org/v3/index.json
     1. Click the Browser tab, and then search `Microsoft.MixedReality.EyeTracking`.
     1. Click the Install button to install the latest version of the SDK.  
-
         ![Screenshot of the Eye Tracking SDK Nuget package.](images/001-install.png)  
-
 1. Set Gaze Input capability
     1. Double-click the Package.appxmanifest file in Solution Explorer.
     1. Click the **Capabilities** tab, and then check the Gaze Input.
