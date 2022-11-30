@@ -245,7 +245,7 @@ if (reading)
 
 ## Transform gaze data to other SpatialCoordinateSystem
 
-WinRT APIs that return spatial data such as a position always require both a `PerceptionTimestamp` and a `SpatialCoordinateSystem`. For example, to retrieve the combined gaze of HoloLens 2 using the WinRT API, the API [SpatialPointerPose.TryGetAtTimestamp()](/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) requires two parameters: a `SpatialCoordinateSystem` and a `PerceptionTimestamp`. When the combined gaze is then accessed through `SpatialPointerPose.Eyes.Gaze`, its origin and direction are expressed in the `SpatialCoordinateSystem` passed in.
+WinRT APIs that return spatial data such as a position always require both a `PerceptionTimestamp` and a `SpatialCoordinateSystem`. For example, to retrieve the combined gaze of HoloLens 2 using the WinRT API, the API [SpatialPointerPose.TryGetAtTimestamp()](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) requires two parameters: a `SpatialCoordinateSystem` and a `PerceptionTimestamp`. When the combined gaze is then accessed through `SpatialPointerPose.Eyes.Gaze`, its origin and direction are expressed in the `SpatialCoordinateSystem` passed in.
 
 Extended tye tracking SDK APIs don't need to take a `SpatialCoordinateSystem` and the gaze data are always expressed in the tracker's coordinate system. But you can transform those gaze data to another coordinate system with the tracker's pose related to the other coordinate system.
 
