@@ -3,7 +3,7 @@ title: Headset Display FAQs
 description: Display Windows Mixed Reality troubleshooting for headset display issues that goes beyond our standard consumer support documentation.
 author: qianw211
 ms.author: qianwen
-ms.date: 09/30/2020
+ms.date: 11/22/2022
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support
 appliesto:
@@ -85,8 +85,8 @@ On some PCs, leaving your headset plugged in before turning on or while rebootin
 ## My PC or headset displays flicker, flash, or remain black when using a Surface PC
 
 * Make sure you're using an HDMI adapter that supports HDMI 2.0. Many older HDMI adapters only support 1080p resolution, which is insufficient for Mixed Reality headsets.
-* Make sure your graphics driver is up-to-date. Check Windows Update and the PC or graphics card manufacturer's website for an updated graphics driver.
-* Some Surface devices are incompatible with Windows Mixed Reality. Learn more about [Surface compatibility and requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
+* Make sure your graphics driver is up to date. Check Windows Update and the PC manufacturer's website for an updated graphics driver.
+* Some Surface devices are incompatible with Windows Mixed Reality. Learn more about [Surface compatibility and requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#get-help-with-pc-compatibility).
 
 ## My headset display doesn't work after I shut down and do a fast startup
 
@@ -149,7 +149,7 @@ Your PC may not be able to render content to the headset fast enough, resulting 
 1. Open Task Manager to make sure that your PC has enough system resources. Your memory should have at least 400 MB of free space available, and disk IO should be below 80%. Close all unneeded programs to free up your memory and lower background CPU and disk usage.
 2. Reduce detail settings in your application.
 3. Go to **Settings > Mixed Reality > Headset Display** to reduce the amount of detail shown in the Windows Mixed Reality home.
-4. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-graphics-driver).
+4. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-gpu-driver).
 
 ## The environment moves smoothly, but my point of view in the environment keeps shifting or jittering.
 
