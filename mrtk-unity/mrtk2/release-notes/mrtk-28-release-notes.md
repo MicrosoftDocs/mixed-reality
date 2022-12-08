@@ -11,6 +11,39 @@ monikerRange: '>= mrtkunity-2022-05'
 
 # Microsoft Mixed Reality Toolkit 2.8 Release Notes
 
+## What's new in 2.8.3
+
+MRTK 2.8.3 provides various fixes and performance improvements.
+
+### MRTK 2.8.3 bug fixes and changes
+
+- Fixed occasional KeyNotFoundExceptions coming from DefaultPointerMediator [#10612](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10612)
+- Code cleanup & warning fixes [#10526](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10526)
+- Added BaseMeshOutline inspector [#10662](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10662)
+- Fixed NullReferenceException when opening PointerProfile without main camera in scene [#10715](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10715)
+- Updated CameraCache failure case + perf [#10714](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10714)
+- Fixed ArgumentNullException: Value cannot be null. Parameter name: _unity_self [#10713](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10713)
+- Fixed flashing RiggedHandMesh [#10754](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10754)
+- Updated rigged hand mesh flicker bug fix to not be a breaking interface change [#10831](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10831)
+- Fixed MRTK2 in Unity 2022 [#10903](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10903) and [#10915](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10915)
+- Updated OnInspectorGUI for Toolkit Inspector [#10936](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10936)
+- Moved some codepaths away from MixedRealityToolkitFiles [#10956](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10956)
+- Fixed TouchPointer NullReferenceException [#11036](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11036)
+- Fixed GetAsync method in Rest class [#10797](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10797)
+- Added missing mappings for Quest Touch controller "touch" bindings [#11105](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11105)
+- Changed GGVPointer to use registered raycast provider [#11147](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11147)
+- Fix for GazeTarget getting overwritten by non-gaze pointers [#11148](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11148)
+- Removed unnecessary controller visuals from the default HoloLens profile to reduce memory footprint [#11166](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11166)
+- Updated build logic for finding sdk [#11129](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11129)
+- Added OpenXR "render from PV cam" note [#11127](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11127)
+- Don't introduce GetAwaiter extension methods conflicting with Unity's Awaitable in 2023.1+ [#11178](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11178)
+- Resolved Unity 2023 build warnings [#11190](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11190)
+- Fixed an OIP compatibility issue [#11212](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11212)
+- Don't share controller and source collections between instances [#11266](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11266)
+- Fixed rigged hands in remoting [#11267](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11267)
+- Exposed eye calibration state when using XR SDK [#11269](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11269)
+- Fixed simulated motion controller grab [#11272](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11272)
+
 ## What's new in 2.8.2
 
 MRTK 2.8.2 provides performance improvements and key fixes for applications targeting Microsoft or Oculus devices.

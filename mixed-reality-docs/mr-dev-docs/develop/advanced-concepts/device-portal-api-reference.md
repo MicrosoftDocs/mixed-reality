@@ -49,28 +49,28 @@ Gets the status of in-progress app installation.
 Disables crash dump collection for a sideloaded app.
 
 Parameters
-* packageFullname: package name
+* packageFullName: package name
 
 **/api/debug/dump/usermode/crashcontrol (GET)**
 
 Gets settings for sideloaded apps crash dump collection.
 
 Parameters
-* packageFullname: package name
+* packageFullName: package name
 
 **/api/debug/dump/usermode/crashcontrol (POST)**
 
 Enables and sets dump control settings for a sideloaded app.
 
 Parameters
-* packageFullname: package name
+* packageFullName: package name
 
 **/api/debug/dump/usermode/crashdump (DELETE)**
 
 Deletes a crash dump for a sideloaded app.
 
 Parameters
-* packageFullname: package name
+* packageFullName: package name
 * fileName: dump file name
 
 **/api/debug/dump/usermode/crashdump (GET)**
@@ -78,7 +78,7 @@ Parameters
 Retrieves a crash dump for a sideloaded app.
 
 Parameters
-* packageFullname: package name
+* packageFullName: package name
 * fileName: dump file name
 
 Return data
