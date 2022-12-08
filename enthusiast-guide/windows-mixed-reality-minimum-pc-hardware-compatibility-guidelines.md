@@ -1,5 +1,5 @@
 ---
-title: Minimum PC hardware
+title: Minimum PC hardware guidlines
 description: Overview chart outlining the minimum PC system requirements for compatibility with Windows Mixed Reality.
 author: qianw211
 ms.author: qianwen
@@ -10,7 +10,7 @@ appliesto:
     - Windows 10 and Windows 11
 ---
 
-# Minimum PC hardware
+# Minimum PC hardware guidelines
 
 ![PC compatibility hero image](images/pc-comp-hero.png)
 
