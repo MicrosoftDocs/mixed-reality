@@ -3,7 +3,7 @@ title: Locatable camera
 description: Code samples that address the HoloLens front-facing camera, how it works, and the profiles and resolutions available to developers.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 09/28/2021
+ms.date: 11/30/2022
 ms.topic: article
 keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video, locatable
 ---
@@ -46,7 +46,7 @@ public:
     struct CameraFrameLocation
     {
         SpatialCoordinateSystem CoordinateSystem;
-        float4x4 CameraViewToCoordinateSytemTransform;
+        float4x4 CameraViewToCoordinateSystemTransform;
         MFPinholeCameraIntrinsics Intrinsics;
     };
  
