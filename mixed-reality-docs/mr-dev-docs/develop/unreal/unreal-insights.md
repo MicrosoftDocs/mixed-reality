@@ -29,7 +29,7 @@ Unreal lets you to create and configure a "Custom Profile" in the HoloLens launc
 
 3. Scroll down the left panel until you find the **Platforms** header and select **HoloLens**.
 
-![Screenshot of the Platforms section in the Project Settings left panel with HoloLens highlighted](images/unreal-insights-img-15.png)
+![Screenshot of the Platforms section in the Project Settings left panel with HoloLens highlighted](images/unreal-insights-img-16.png)
 
 4. Confirm that the **Capabilities** section has "Internet Client", "Internet Client Server", and "Private Network Client Server" selected.
 

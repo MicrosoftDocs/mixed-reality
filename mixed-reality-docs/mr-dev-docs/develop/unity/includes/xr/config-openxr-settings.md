@@ -50,7 +50,8 @@ Note that there's now a yellow warning triangle next to **OpenXR**. This indicat
 
 ## Resolving incompatible settings
 
-The images in this section show the options in the Universal Windows Platform tab. However, the instructions are the same for the Desktop VR tab, except where noted.
+>[!IMPORTANT]
+>The images in this section show the options in the Universal Windows Platform tab. However, the instructions are the same for the Desktop VR tab, except where noted.
 
 1. Hover your cursor over the yellow warning triangle next to **OpenXR**, then read the message in the popup, and then select the triangle.
 
