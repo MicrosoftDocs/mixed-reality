@@ -22,7 +22,7 @@ The Mixed Reality Feature Tool is a new way for developers to discover, update, 
 
 Before you can run the Mixed Reality Feature Tool, you'll need:
 
-* A PC running Windows 10 or 11 with active Internet connection
+* A PC running Windows 10 or 11 with an active Internet connection
 
 > [!NOTE]
 > If the PC is on a network managed by an organization, make sure access to the following URLs are allowed:
