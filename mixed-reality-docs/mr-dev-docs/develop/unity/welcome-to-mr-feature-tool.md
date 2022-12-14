@@ -25,7 +25,7 @@ Before you can run the Mixed Reality Feature Tool, you'll need:
 * A PC running Windows 10 or 11 with an active Internet connection
 
 > [!NOTE]
-> If the PC is on a network managed by an organization, make sure access to the following URLs are allowed:
+> If the PC is on a network managed by an organization, make sure access to the following URLs is allowed:
 > * https://aka.ms/*
 > * https://learn.microsoft.com/*
 > * https://pkgs.dev.azure.com/*
