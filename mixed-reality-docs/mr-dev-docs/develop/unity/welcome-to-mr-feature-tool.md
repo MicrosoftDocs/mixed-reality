@@ -22,10 +22,15 @@ The Mixed Reality Feature Tool is a new way for developers to discover, update, 
 
 Before you can run the Mixed Reality Feature Tool, you'll need:
 
-* Windows 10 or 11
+* A PC running Windows 10 or 11 with active Internet connection
 
 > [!NOTE]
-> The Mixed Reality Feature Tool currently only runs on Windows.
+> If the PC is on a network managed by an organization, make sure access to the following URLs are allowed:
+> * https://aka.ms/*
+> * https://learn.microsoft.com/*
+> * https://pkgs.dev.azure.com/*
+> * https://feeds.dev.azure.com/*
+> * https://mixedrealitycloud.pkgs.visualstudio.com/* (for special early access users only)
 
 ## Download
 
