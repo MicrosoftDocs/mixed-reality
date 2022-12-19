@@ -1,10 +1,10 @@
 ---
 title: Eye Tracking Basic Setup
-description: How to setup Eye Tracking in MRTK
-author: CDiaz-MS
-ms.author: cadia
-ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Eye Tracking,
+description: How to set up Eye Tracking in MRTK
+author: keveleigh
+ms.author: kurtie
+ms.date: 12/19/2022
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Eye Tracking
 ---
 
 # Getting started with eye tracking in MRTK2
@@ -21,7 +21,7 @@ We will go into detail on how to address each of them further below.
 
 1. An _'Eye Gaze Data Provider'_ must be added to the input system. This provides eye tracking data from the platform.
 2. The _'GazeInput'_ capability must be enabled in the application manifest.
-   **This capability can be set in Unity 2019, but in Unity 2018 and earlier this capability is only available in Visual Studio and through the MRTK build tool**
+   **This capability can be set in Unity 2019, but in Unity 2018 and earlier this capability is only available in Visual Studio and through the MRTK build tool**.
 3. The HoloLens **must** be eye calibrated for the current user. Check out our [sample for detecting whether a user is eye calibrated or not](eye-tracking-is-user-calibrated.md).
 
 ### A note on the GazeInput capability
@@ -64,11 +64,24 @@ You can simply select _DefaultMixedRealityToolkitConfigurationProfile_ and then 
 - Click on the _'Input'_ tab in your MRTK profile.
 - To edit the default one ( _'DefaultMixedRealityInputSystemProfile'_ ), click the _'Clone'_ button next to it. A _'Clone Profile'_ menu appears. Simply click on _'Clone'_ at the bottom of that menu.
 - Double click on your new input profile, expand _'Input Data Providers'_, and select _'+ Add Data Provider'_.
-- Create a new data provider:
-  - Under **Type** select _'Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input'_ -> _'WindowsMixedRealityEyeGazeDataProvider'_
-  - For **Platform(s)** select _'Windows Universal'_.
+- Add the correct data provider:
+  - For legacy Windows Mixed Reality
+    - Under **Type** select _'Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input'_ -> _'WindowsMixedRealityEyeGazeDataProvider'_
+  - For Windows XR Plugin
+    - Under **Type** select _'Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality'_ -> _'WindowsMixedRealityEyeGazeDataProvider'_
+  - For OpenXR
+    - Under **Type** select _'Microsoft.MixedReality.Toolkit.XRSDK.OpenXR'_ -> _'OpenXREyeGazeDataProvider'_
 
 ![MRTK data provider](../../images/eye-tracking/mrtk_setup_eyes_dataprovider.jpg)
+
+### Enable "Use Eye Tracking Data"
+
+- Navigate to your MRTK configuration profile -> _'Input'_ -> _'Pointers'_
+  - Clone the _'DefaultMixedRealityInputPointerProfile'_ to make changes to it.
+- Find _'Use Eye Tracking Data'_ in the settings and enable it.
+- You may see a _'Set GazeInput capability'_ button now and should press it to enable the UWP capability.
+
+![MRTK use eye tracking data](../../images/eye-tracking/mrtk-et-use-data-setting.png)
 
 ### Simulating eye tracking in the Unity Editor
 
@@ -80,8 +93,8 @@ For this, it is better to ensure frequent tests of your eye-based interactions o
 1. **Enable simulated eye tracking**:
     - Click on the _'Input'_ tab in your MRTK configuration profile.
     - From there, navigate to _'Input Data Providers'_ -> _'Input Simulation Service'_.
-    - Clone the _'DefaultMixedRealityInputSimpulationProfile'_ to make changes to it.
-    - Check the _'Simulate Eye Position'_ checkbox.
+    - Clone the _'DefaultMixedRealityInputSimulationProfile'_ to make changes to it.
+    - Select the appropriate _'Default Eye Gaze Simulation Mode'_ setting.
 
     ![MRTK eyes simulate](../../images/eye-tracking/mrtk_setup_eyes_simulate.jpg)
 
@@ -90,7 +103,7 @@ In general, it is recommended to avoid showing an eye gaze cursor or if absolute
 We do recommend to hide the default head gaze cursor that is attached to the MRTK gaze pointer profile by default.
     - Navigate to your MRTK configuration profile -> _'Input'_ -> _'Pointers'_
     - Clone the _'DefaultMixedRealityInputPointerProfile'_ to make changes to it.
-    - At the top of the _'Pointer Settings'_, you should assign an invisible cursor prefab to the _'GazeCursor'_. You can do this by selecting the _'EyeGazeCursor'_ prefab from the MRTK Foundation.
+    - At the top of the _'Pointer Settings'_, you should assign an invisible cursor prefab to the _'Gaze Cursor Prefab'_. You can do this by selecting the _'EyeGazeCursor'_ prefab from the MRTK Foundation.
 
 ### Enabling eye-based gaze in the gaze provider
 
@@ -110,7 +123,7 @@ Now that your scene is set up to use eye tracking, let's take a look at how to a
 
 ### Testing your Unity app on a HoloLens 2
 
-Building your app with eye tracking should be similar to how you would compile other HoloLens 2 MRTK apps. Be sure that you have enabled the *'Gaze Input'* capability as described above in the section [*A note on the GazeInput capability*](#a-note-on-the-gazeinput-capability).
+Building your app with eye tracking should be similar to how you would compile other HoloLens 2 MRTK apps. Be sure that you have enabled the _'Gaze Input'_ capability as described above in the section [_A note on the GazeInput capability_](#a-note-on-the-gazeinput-capability).
 
 #### Ensure project is configured for HoloLens 2
 
