@@ -11,15 +11,15 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 ![Dialog](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)
 
-Dialogs are short-lived UI views that provide contextual app information. They often request some action from the user  returning the result back to the app's business logic in an asynchronous task or result. Use dialogs to notify users of important information or request confirmation or additional info before an action can be completed.
+Dialogs are short-lived UI views that provide contextual app information. They often request some action from the user  returning the result back to the app's business logic in an asynchronous task or result. Use dialogs to notify users of important information or request confirmation before an action can be completed.
 
-MRTK3 UXCore provides the `IDialog` API, along with the basic `Dialog` implementation and a `DialogPool` for spawning and managing instances. This documentation describes the code-driven fluent API for showing Dialogs from your business logic. For documentation on the prefabs included in the UXComponents package, [see the Dialog prefab documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/dialog.md).
+MRTK3 UXCore provides the `IDialog` API, along with the basic `Dialog` implementation and a `DialogPool` for spawning and managing instances. This documentation describes the code-driven fluent API for showing Dialogs from your business logic. For documentation on the prefabs included in the UX Components package, [see the Dialog prefab documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/dialog.md).
 
 ## Usage
 
 Place a `DialogPool` somewhere in your scene or UI hierarchy. If desired, you can manage your own global `DialogPool` reference with a singleton, manager or other pattern. MRTK itself doesn't exert an opinion on how you maintain a global `DialogPool` reference, but the component must be in your scene somewhere so that the referenced dialog view prefab is included in your build.
 
-`DialogPool` will automatically set its prefab reference to the standard UXComponents `CanvasDialog.prefab`, if the package is installed. For more information on the UXComponents standard `CanvasDialog.prefab`, [see the documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/dialog.md).
+`DialogPool` will automatically set its prefab reference to the standard UX Components `CanvasDialog.prefab`, if the package is installed. For more information on the UX Components standard `CanvasDialog.prefab`, [see the documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/dialog.md).
 
 Once you've obtained your `DialogPool` reference, you can use a fluent-style builder API to configure and show your dialog.
 
@@ -74,4 +74,4 @@ async void SomeAsyncBusinessLogic()
 
 ## Example scene and prefabs
 
-For information on the included prefabs and sample scenes, [see the UXComponents documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/dialog.md)
+For information on the included prefabs and sample scenes, [see the UX Components documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/dialog.md)
