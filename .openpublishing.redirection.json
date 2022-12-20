@@ -2434,6 +2434,11 @@
 			"source_path": "mrtk-unity/mrtk3-uxcomponents/packages/uxcomponents/slate.md",
 			"redirect_url": "mrtk-unity/mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/slate.md",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mrtk-unity/mrtk3-uxcomponents-noncanvas/packages/uxcomponents-noncanvas/dialog.md",
+			"redirect_url": "mrtk-unity/mrtk3-uxcomponents/packages/uxcomponents/dialog.md",
+			"redirect_document_id": false
 		}
 	]
 }
