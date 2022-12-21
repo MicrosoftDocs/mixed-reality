@@ -32,9 +32,11 @@ git checkout -b foobar_fix
 
 4. Open the `MRTKDevTemplate` template project located in `UnityProjects/MRTKDevTemplate`. You can add the project to your Unity Hub for easy access.
 
-5. Make your desired changes. Make sure to test across in-editor and deployed to device. Commit your changes to your branch. Publish your branch to your fork upstream.
+5. Make your desired changes, as well as unit tests that ensure your changes work as expected. Make sure to test across in-editor and deployed to device. Commit your changes to your branch. Publish your branch to your fork upstream.
 
-6. Open a pull request on the MRTK repo, targeting the `mrtk3` branch. Make sure to accurately describe the changes you've made, and apply relevant labels to your pull request for better categorization and triage.
+6. Open a pull request on the MRTK repo, targeting the `mrtk3` branch. Make sure to accurately describe the changes you've made, and apply relevant labels to your pull request for better categorization and triage. If you're a new contributor to MRTK, you may ned to sign our contribution agreement.
+
+7. Address any fixes requested by the community or the maintenance team, and merge your PR after approval.
 
 ## Writing tests
 
