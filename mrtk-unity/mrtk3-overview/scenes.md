@@ -32,7 +32,7 @@ Various configurations of BoundsControl, showing both flattened and 3D bounds.
 
 **CanvasExample**
 
-Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UXComponents overview.](../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
+Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UX Components overview.](../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
 
 **DialogExample**
 
@@ -76,7 +76,7 @@ Shows a collection of toggles that control the visibility of associated game obj
 
 **ToggleCollectionExample**
 
-Demonstrates the `ToggleCollection` script, which allows multiple toggle interactables to be grouped. Only one toggle is permitted to be toggled at any given time.
+Demonstrates the `ToggleCollection` script, which allows multiple toggle interactables to be grouped. Only one toggle can be toggled at any given time.
 
 **UIBackplateExample**
 
