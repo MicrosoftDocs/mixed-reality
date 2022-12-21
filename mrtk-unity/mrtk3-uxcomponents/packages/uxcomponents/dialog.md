@@ -23,7 +23,7 @@ The Canvas-based Dialog prefab uses auto-layout to only show the controls reques
 
 To use the pre-made UX Components dialog, make sure your `DialogPool` has the prefab set to the correct asset. You can also assign the `DialogPool`'s prefab at runtime through the `DialogPool` API, either through the `Get` parameter or by directly setting the `DialogPrefab` property. [See the Dialog API documentation here for examples of using the DialogPool component.](../../../mrtk3-uxcore/packages/uxcore/dialog-api.md)
 
-Developers can also build their own custom Dialog prefabs. If the custom prefab offers the same features as the base Dialog functionality, no code changes are required, and the base `Dialog` script can be used. If there are added features on the Dialog view that require binding to the `IDialog` API (like new buttons, labels, or other subcontrols) a subclassed implementation of `IDialog` will be required. When building a custom prefab, ensure the various subcontrols have been properly referenced on the `IDialog` MonoBehaviour, or else they will not be bound or hydrated correctly.
+Developers can also build their own custom Dialog prefabs. If the custom prefab offers the same features as the base Dialog functionality, no code changes are required, and the base `Dialog` script can be used. If there are added features on the Dialog view that require binding to the `IDialog` API (like new buttons, labels, or other subcontrols) a subclassed implementation of `IDialog` will be required. When building a custom prefab, ensure the various subcontrols have been properly referenced on the `IDialog` MonoBehaviour, or else they won't be bound or hydrated correctly.
 
 ## Example scenes
 
