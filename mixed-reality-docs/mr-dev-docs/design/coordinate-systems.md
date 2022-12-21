@@ -2,15 +2,15 @@
 title: Coordinate systems
 description: The spatial coordinate systems used to build seated, standing, room-scale, and world-scale mixed reality experiences.
 author: thetuvix
-ms.author: alexturn
-ms.date: 02/24/2019
+ms.author: vinnietieto
+ms.date: 12/20/2022
 ms.topic: article
 keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, stationary, attached, stage, anchor, spatial anchor, world-locked, world-locking, body-locked, body-locking, bounds, persistence, sharing, tracking loss, cloud spatial anchor, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 
 # Coordinate systems
 
-At their core, mixed reality apps place [holograms](../discover/hologram.md) in your world that look like and sound real objects. This involves precisely positioning and orienting those holograms at meaningful places in the world, whether the world is their physical room or a virtual realm you've created. Windows provides various real-world coordinate systems for expressing geometry, which is known as **spatial coordinate systems**. You can use spatial coordinate systems to reason about hologram position, orientation, [gaze](gaze-and-commit.md) ray, or [hand positions](hands-and-tools.md).
+At their core, mixed reality apps place [holograms](../discover/hologram.md) in your world that look like and sound real objects. This involves precisely positioning and orienting those holograms at meaningful places in the world, whether the world is their physical room or a virtual realm you've created. Windows provides various real-world coordinate systems for expressing geometry--these are known as **spatial coordinate systems**. You can use these systems to reason about hologram position, orientation, [gaze](gaze-and-commit.md) ray, or [hand positions](hands-and-tools.md).
 
 <br>
 
@@ -83,7 +83,7 @@ You can design Mixed reality apps for a broad range of user experiences, from 36
 |  **Room-scale** |  Above plus **stage bounds polygon** |  Puzzle game where you walk around the puzzle | 
 |  **World-scale** |  **Spatial anchors** (and typically [spatial mapping](spatial-mapping.md)) |  Game with enemies coming from your real walls, such as [RoboRaid](https://www.microsoft.com/p/roboraid/9nblggh5fv3j) | 
 
-The experience scales above follow a "nesting dolls" model. The key design principle for Windows Mixed Reality is a given headset supports apps built for a target experience scale and all lesser scales:
+The experience scales above follow a "nesting dolls" model. The key design principle for Windows Mixed Reality is this: *a given headset supports apps built for a target experience scale and all lesser scales.*
 
 <br>
 
@@ -100,15 +100,19 @@ The Stage frame of reference isn't yet supported on HoloLens. A room-scale app o
 
 ## Spatial coordinate systems
 
-All 3D graphics applications use [Cartesian coordinate systems](/windows/uwp/graphics-concepts/coordinate-systems) to reason about the positions and orientations of virtual objects. These coordinate systems establish 3 perpendicular axes along which to position objects: an X, Y, and Z axis.
+All 3D graphics applications use [Cartesian coordinate systems](/windows/uwp/graphics-concepts/coordinate-systems) to reason about the positions and orientations of virtual objects. These coordinate systems establish three perpendicular axes: X, Y, and Z. Each object you add to a scene will have an XYZ position in its coordinate system. Windows calls a coordinate system that has real meaning in the physical world a *spatial* coordinate system, which express their coordinate values in meters. This means that objects placed two units apart on either the X, Y, or Z axis will appear two meters apart from one another when rendered in mixed reality. Knowing this, you can easily render objects and environments at real-world scale.
 
-In [mixed reality](../discover/mixed-reality.md), your apps reason about virtual and physical coordinate systems. Windows calls a coordinate system that has real meaning in the physical world a **spatial coordinate system**.
+In general, Cartesian coordinate systems are referred to as "right-handed" or "left-handed" because you can use hand positions to indicate the directions of the XYZ axes. In both coordinate systems, the positive X axis points to the right and the positive Y axis points up. The difference between the two is that in the right-handed coordinate system, the Z axis points *towards* you, while in the left-handed coordinate system, the Z axis points *away* from you.
 
-Spatial coordinate systems express their coordinate values in meters. This means that objects placed two units apart in either the X, Y, or Z axis will appear 2 meters apart from one another when rendered in mixed reality. Knowing this, you can easily render objects and environments at real-world scale.
+![Picture of a person's right hand demonstrating the right-handed coordinate system](images/004-coord-system-right-hand.png)
 
-In general, Cartesian coordinate systems can be either right-handed or left-handed. Spatial coordinate systems on Windows are always right-handed, which means that the positive X-axis points right, the positive Y-axis points up (aligned to gravity) and the positive Z-axis points towards you.
+![Picture of a person's left hand demonstrating the left-handed coordinate system](images/003-coord-system-left-hand.png)
 
-In both kinds of coordinate systems, the positive X-axis points to the right and the positive Y-axis points up. The difference is whether the positive Z-axis points towards or away from you. Remember which direction the positive Z-axis points by pointing the fingers of either your left or right hand in the positive X direction and curling them to the positive Y direction. The direction your thumb points, either toward or away from you, is the direction that the positive Z-axis points for that coordinate system.
+Spatial coordinate systems on Windows (and therefore, Windows Mixed Reality) are always right-handed.
+
+> [!NOTES]
+> - Unity uses the left-handed coordinate system.
+> - Although left-handed and right-handed coordinates are the most common systems, there are other coordinate systems used in 3D software. For example, it's not unusual for 3D modeling applications to use a coordinate system in which the Y axis points toward or away from the viewer and the Z axis points up.
 
 ## Building an orientation-only or seated-scale experience
 
