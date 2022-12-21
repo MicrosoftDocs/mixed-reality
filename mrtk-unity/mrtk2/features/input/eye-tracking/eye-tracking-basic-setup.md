@@ -99,16 +99,16 @@ For this, it's better to ensure frequent tests of your eye-based interactions on
     ![MRTK eyes simulate](../../images/eye-tracking/mrtk_setup_eyes_simulate.jpg)
 
 2. **Disable default head gaze cursor**:
-In general, it's recommended to avoid showing an eye gaze cursor or if absolutely required to make it _very_ subtle.
-We do recommend hiding the default head gaze cursor that is attached to the MRTK gaze pointer profile by default.
+In general, we recommend that you avoid showing an eye gaze cursor or, if it's absolutely required, make it _very_ subtle.
+We recommend that you hide the default head gaze cursor that's attached to the MRTK gaze pointer profile by default.
     - Navigate to your MRTK configuration profile -> _'Input'_ -> _'Pointers'_
     - Clone the _'DefaultMixedRealityInputPointerProfile'_ to make changes to it.
     - At the top of the _'Pointer Settings'_, you should assign an invisible cursor prefab to the _'Gaze Cursor Prefab'_. You can do this by selecting the _'EyeGazeCursor'_ prefab from the MRTK Foundation.
 
 ### Enabling eye-based gaze in the gaze provider
 
-In HoloLens v1, head gaze was used as primary pointing technique.
-While head gaze is still available via the _GazeProvider_ in MRTK, which is attached to your [Camera](https://docs.unity3d.com/ScriptReference/Camera.html), you can check to use eye gaze instead by ticking the _'IsEyeTrackingEnabled'_ checkbox in the gaze settings of the input pointer profile.
+In HoloLens v1, head gaze was used as the primary pointing technique.
+While head gaze is still available via the _GazeProvider_ in MRTK, which is attached to your [Camera](https://docs.unity3d.com/ScriptReference/Camera.html), you can use eye gaze instead by selecting the _'IsEyeTrackingEnabled'_ checkbox in the gaze settings of the input pointer profile.
 
 >[!NOTE]
 >Developers can toggle between eye-based gaze and head-based gaze in code by changing the _'IsEyeTrackingEnabled'_ property of _'GazeProvider'_.  
@@ -139,18 +139,18 @@ Key points to think about:
 
 #### Eye calibration
 
-Finally, please don't forget to run through the eye calibration on your HoloLens 2.
+Don't forget to run through the eye calibration on your HoloLens 2.
 The eye tracking system won't return any input if the user isn't calibrated.
-Easiest way to get to the calibration is by flipping up the visor and back down.
-A system notification should appear welcoming you as a new user and asking you to go through the eye calibration.
+The easiest way to get to the calibration is by flipping the visor up and then back down.
+A system notification should appear that welcomes you as a new user and asks you to go through the eye calibration.
 Alternatively you can find the eye calibration in the system settings: Settings > System > Calibration > Run eye calibration.
 
 #### Eye tracking permission
 
 When you start the app on your HoloLens 2 for the first time, a prompt should pop up asking the user for permission to use eye tracking.
-If it isn't showing up, then that is usually an indication that the _'GazeInput'_ capability wasn't set.
+If the prompt isn't showing up, that's usually an indication that the _'GazeInput'_ capability wasn't set.
 
-After the permission prompt showed up once, it will not show up automatically again.
+After the permission prompt showed up once, it won't show up automatically again.
 If you _"denied eye tracking permission"_, you can reset this in Settings -> Privacy -> Apps.
 
 ---
