@@ -11,7 +11,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 ![Dialog](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)
 
-Dialogs are short-lived UI views that provide contextual app information. They often request some action from the user  returning the result back to the app's business logic in an asynchronous task or result. Use dialogs to notify users of important information or request confirmation before an action can be completed.
+Dialogs are short-lived UI views that provide contextual app information. They often request some action from the user and then return the result back to the app's business logic in an asynchronous task or result. Use dialogs to notify users of important information or request confirmation before an action can be completed.
 
 MRTK3 UXCore provides the `IDialog` API, along with the basic `Dialog` implementation and a `DialogPool` for spawning and managing instances. This documentation describes the code-driven fluent API for showing Dialogs from your business logic. For documentation on the prefabs included in the UX Components package, [see the Dialog prefab documentation here.](../../../mrtk3-uxcomponents/packages/uxcomponents/dialog.md)
 
