@@ -10,11 +10,11 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes
 
 # Using and creating scenes in MRTK3
 
-Unlike MRTK v2, MRTK3 is not distributed as a Unity project. Instead, MRTK3 consists of a loosely-coupled collection of individual UPM packages distributed through the MR Feature Tool.
+Unlike MRTK v2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consists of a loosely coupled collection of individual UPM packages distributed through the MR Feature Tool.
 
 As a result, we no longer ship our sample scenes inside the MRTK library/package itself. Instead, we maintain the `UnityProjects` folder at the top level of the git repository, which contains any Unity projects we want to ship. Currently, this includes the `MRTKDevTemplate` project, which contains all of our example scenes and is configured to align with our recommended best settings. 
 
-We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, which makes editing and submitting changes easy. Simply clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project. 
+We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, making editing and submitting changes easy. Simply clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project. 
 
 Within `MRTKDevTemplate`, you can find all of our sample scenes. Most of the sample scenes are in `UnityProjects/MRTKDevTemplate/Assets/Scenes`, while some experimental or early-preview sample scenes are located in `UnityProjects/MRTKDevTemplate/Assets/Data Binding Example`.
 
@@ -32,7 +32,7 @@ Various configurations of BoundsControl, showing both flattened and 3D bounds.
 
 **CanvasExample**
 
-Shows a collection of UX components built on the Unity Canvas. These UX components are built on XRI and support full XR interactions, but are also authored in Canvas and support traditional interactions with mouse, keyboard, and gamepad.
+Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [See the docs for more information.](../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
 
 **DialogExample**
 
@@ -56,7 +56,7 @@ Near interaction menu examples.
 
 **ObjectBarExample**
 
-Shows Object Bar, a dynamic collection of objects positioned in a horizontal or vertical stack with an auto-sized back plate.
+Demonstrates the Object Bar component, which enables horizontal or vertical arrangement of arbitrary 3D objects.
 
 **SampleEmptyMRTKScene**
 
@@ -76,7 +76,7 @@ Shows a collection of toggles that control the visibility of associated game obj
 
 **ToggleCollectionExample**
 
-Demonstrates the `ToggleCollection` script which enforces a single toggle in a collection to be active at once.
+Demonstrates the `ToggleCollection` script, which allows multiple toggle interactables to be grouped. Only one toggle is permitted to be toggled at any given time.
 
 **UIBackplateExample**
 
