@@ -14,7 +14,7 @@ Unlike MRTK v2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consi
 
 As a result, we no longer ship our sample scenes inside the MRTK library/package itself. Instead, we maintain the `UnityProjects` folder at the top level of the git repository, which contains any Unity projects we want to ship. Currently, this includes the `MRTKDevTemplate` project, which contains all of our example scenes and is configured to align with our recommended best settings. 
 
-We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, making editing and submitting changes easy. Simply clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project. 
+We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, making editing and submitting changes easy. Clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project. 
 
 Within `MRTKDevTemplate`, you can find all of our sample scenes. Most of the sample scenes are in `UnityProjects/MRTKDevTemplate/Assets/Scenes`, while some experimental or early-preview sample scenes are located in `UnityProjects/MRTKDevTemplate/Assets/Data Binding Example`.
 
@@ -64,7 +64,7 @@ The sample empty MRTK scene only contains the core MRTK prefab (**MRTK XR Rig**)
 
 **SlateDrawingExample**
 
-A demonstration of using MRTK3 to create a simple drawing application.
+A demonstration of using MRTK3 to create a basic drawing application.
 
 **SpatialMappingExample**
 
