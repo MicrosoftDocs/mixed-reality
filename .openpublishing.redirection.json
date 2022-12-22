@@ -1159,7 +1159,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/unity-development-overview.md",
 			"redirect_url": "/windows/mixed-reality/develop/unity/unity-development-overview",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/unity-play-mode.md",
