@@ -46,7 +46,7 @@ dialogPool.Get()
 
 The `args` that are passed through the button callbacks will be `DialogButtonEventArgs`, which include both a reference to the `IDialog` that generated the event and the `DialogButtonType` of the button that the user chose.
 
-It's possible that a dialog might be dismissed externally before the user is able to make a decision, either by another dialog being opened or by the dialog being manually dismissed in code. In this case, the callback provided to `SetPositive()` would never be invoked. If you'd like to listen to any event on the dialog, including an external dismissal, you can listen to the `OnDismissed` callback.
+It's possible that a dialog might be dismissed externally before the user is able to make a decision. This can be caused either by another dialog being opened or by the dialog being manually dismissed in code. In this case, the callback provided to `SetPositive()` would never be invoked. If you'd like to listen to any event on the dialog, including an external dismissal, you can listen to the `OnDismissed` callback.
 
 ```csharp
 var dialog = dialogPool.Get()?SetBody("Foobar!");
