@@ -10,9 +10,9 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes
 
 # Using and creating scenes in MRTK3
 
-Unlike MRTK v2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consists of a loosely coupled collection of individual UPM packages distributed through the MR Feature Tool.
+Unlike MRTK v2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consists of a loosely coupled collection of individual UPM packages distributed through the [Mixed Reality Feature Tool](https://learn.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), as well as through our official Git repository.
 
-As a result, we no longer ship our sample scenes inside the MRTK library/package itself. Instead, we maintain the `UnityProjects` folder at the top level of the git repository, which contains any Unity projects we want to ship. Currently, this folder includes the `MRTKDevTemplate` project, which contains all of our example scenes and is configured to align with our recommended best settings. 
+As a result, we no longer ship our sample scenes inside the MRTK library/package itself. Instead, we maintain the `UnityProjects` folder at the top level of the Git repository, which contains any Unity projects we want to ship. Currently, this folder includes the `MRTKDevTemplate` project, which contains all of our example scenes and is configured to align with our recommended best settings. 
 
 We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, making editing and submitting changes easy. Clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project. 
 

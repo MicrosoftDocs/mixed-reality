@@ -42,7 +42,7 @@ git checkout -b foobar_fix
 
 Tests are a critical part of ensuring MRTK is a reliable foundation for high-quality mixed reality applications. Any new features that are added should have unit tests to ensure their functionality remains correct as other changes are made to the codebase in the future. 
 
-To write unit tests, we recommend first taking a look at the existing unit tests and learn how the MRTK test utilities and simulator are used to mock XR input. You can mock hand input, gaze, HMD position, and other basic input-related features. Here's some general advice for writing good unit tests:
+To write unit tests, we recommend that you first take a look at the existing unit tests and learn how the MRTK test utilities and simulator are used to mock XR input. You can mock hand input, gaze, HMD position, and other basic input-related features. Here's some general advice for writing good unit tests:
 
 - Try to write more granular tests that evaluate smaller pieces of functionality, rather than larger monolithic tests. More granular unit tests allow maintainers to see which specific feature has been broken. More general end-to-end functionality tests are also appreciated, but ensure that each smaller part of your feature is well-tested to begin with.
 - Make sure your test (and your feature) doesn't make any assumptions about the orientation or location of the user. Your tests and features should work at any arbitrary offset or rotation from the world origin.
@@ -54,7 +54,7 @@ To write unit tests, we recommend first taking a look at the existing unit tests
 
 ## Continuous integration
 
-Every PR is subject to automated tests before being able to be merged. Additional CI is also run on the resulting commit on the main development branch to ensure broken packages are not deployed to the feed.
+Every pull request is subject to automated tests before being able to be merged. Additional continuous integration (CI) jobs are also run on the resulting commit on the main development branch to ensure broken packages are not deployed to the feed.
 
 If your tests are passing in-editor but fail in the CI run, you should run your tests locally in batch mode. Some types of tests may unexpectedly fail when running in no-graphics batch mode, due to timing differences or other Unity quirks. Running your tests locally in batch mode helps identify these inconsistent tests before the CI does.
 
