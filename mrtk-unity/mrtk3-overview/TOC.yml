@@ -12,6 +12,8 @@
   href: scenes.md
 - name: Debugging and testing
   href: debugging-and-testing.md
+- name: Contributing
+  href: contributing.md
 - name: Known issues
   href: known-issues.md
 - name: Changelogs

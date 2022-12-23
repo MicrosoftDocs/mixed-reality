@@ -1,6 +1,6 @@
 ---
 title: Dialog
-description: Description of dialogs in MRTK3
+description: Description of included dialog prefabs in MRTK3 UX Components
 author: Zee2
 ms.author: finnsinclair
 ms.date: 4/15/2022
@@ -11,28 +11,20 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 ![Dialog](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)
 
-Dialog controls are UI overlays that provide contextual app information. They often request some action from the user. Use dialogs to notify users of important information or request confirmation or additional info before an action can be completed.
+Dialogs are short-lived UI views that provide contextual app information. They often request some action from the user and then return the result back to the app's business logic in an asynchronous task or result. Use dialogs to notify users of important information or request confirmation before an action can be completed.
 
-## Example scene and prefabs
+If you're looking for the Dialog API documentation and usage examples, [see the UXCore documentation here.](../../../mrtk3-uxcore/packages/uxcore/dialog-api.md).
 
-Canvas-based Dialog prefabs are available, but are a work-in-progress and may not behave as expected.
+## Prefabs
 
-DialogExample.unity demonstrates the non-Canvas-based Dialog controls, with several sizes and configurations:
+MRTK3 UX Components provides `CanvasDialog.prefab` as a starting point for building responsive, code-driven modal dialogs.
 
-- Dialog_168x88mm.prefab
-- Dialog_168x108mm.prefab
-- Dialog_168x140mm.prefab
+The Canvas-based Dialog prefab uses auto-layout to only show the controls requested through the `IDialog` fluent builder API. Until the subcontrols are requested by the API caller, they'll be disabled, and won't be visible in the layout. As a result, only one Dialog prefab is needed, instead of a wide variety of prefabs for each permutation of button options or text layout.
 
-Use `Dialog.InstantiateFromPrefab()` to instantiate (and optionally open) a new dialog. Specify the `Dialog` component on a dialog prefab, the `DialogProperty` object containing information such as title and description text, placement distance (near or far), and whether to open (show) the dialog now. In `DialogProperty` you can specify the dialog options (buttons) to show with `DialogButtonContext[]`. MRTK ships some defaults (`OK`, `OKCancel`, `YesNo`), but you can also create customized `DialogButtonContext`s.
+To use the pre-made UX Components dialog, make sure your `DialogPool` has the prefab set to the correct asset. You can also assign the `DialogPool`'s prefab at runtime through the `DialogPool` API, either through the `Get` parameter or by directly setting the `DialogPrefab` property. [See the Dialog API documentation here for examples of using the DialogPool component.](../../../mrtk3-uxcore/packages/uxcore/dialog-api.md)
 
-```c#
-public static Dialog InstantiateFromPrefab(Dialog dialogComponentOnPrefab, DialogProperty property = null, bool placeForNearInteraction = true, bool openOnInstantiate = false)
-```
+Developers can also build their own custom Dialog prefabs. If the custom prefab offers the same features as the base Dialog functionality, no code changes are required, and the base `Dialog` script can be used. If there are added features on the Dialog view that require binding to the `IDialog` API (like new buttons, labels, or other subcontrols) a subclassed implementation of `IDialog` will be required. When building a custom prefab, ensure the various subcontrols have been properly referenced on the `IDialog` MonoBehaviour, or else they won't be bound or hydrated correctly.
 
-Example of opening a Small dialog containing a choice message for the user, placed at near interaction range (direct hand interaction)
+## Example scenes
 
-```c#
-Dialog.InstantiateFromPrefab(DialogPrefabSmall, new DialogProperty("Choice Dialog, Small, Near", "This is an example of a small dialog with a choice message for the user, placed at near interaction range", DialogButtonHelpers.YesNo), true, true);
-```
-
-For more information, see `DialogExampleController.cs` in DialogExample.unity scene.
+See `DialogExample.unity` for examples of how to spawn Dialogs. For more information, code samples, and details, [see the UXCore documentation here.](../../../mrtk3-uxcore/packages/uxcore/dialog-api.md).
