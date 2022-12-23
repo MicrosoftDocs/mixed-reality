@@ -56,7 +56,7 @@ To write unit tests, we recommend first taking a look at the existing unit tests
 
 Every pull request is subject to automated tests before being able to be merged. Additional CI is also run on the resulting commit on the main development branch to ensure broken packages are not deployed to the feed.
 
-If your tests are passing in-editor but fail in the CI run, you should run your tests locally in batch mode. Some types of tests may unexpectedly fail when running in no-graphics batch mode, due to timing differences or other Unity quirks. Running your tests locally in batch mode helps identify these inconsistent tests before the CI does.
+If your tests are passing in-editor but fail in the CI run, you should run your tests locally in batch mode. Some types of tests may unexpectedly fail when running in no-graphics batch mode due to timing differences or other Unity quirks. Running your tests locally in batch mode helps identify these inconsistent tests before the CI does.
 
 Use the `Tooling/Tests/run_playmode_tests.ps1` script to run tests locally in batch mode. You'll need to close your Unity editor to do so.
 
