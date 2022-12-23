@@ -34,7 +34,7 @@ git checkout -b foobar_fix
 
 5. Make your desired changes, as well as unit tests that ensure your changes work as expected. Make sure to test across in-editor and deployed to device. Commit your changes to your branch. Publish your branch to your fork upstream.
 
-6. Open a pull request on the MRTK repo, targeting the `mrtk3` branch. Make sure to accurately describe the changes you've made, and apply relevant labels to your pull request for better categorization and triage. If you're a new contributor to MRTK, you may ned to sign our contribution agreement.
+6. Open a pull request on the MRTK repo, targeting the `mrtk3` branch. Make sure to accurately describe the changes you've made, and apply relevant labels to your pull request for better categorization and triage. If you're a new contributor to MRTK, you may need to sign our contribution agreement.
 
 7. Address any fixes requested by the community or the maintenance team, and merge your PR after approval.
 
@@ -56,7 +56,7 @@ To write unit tests, we recommend that you first take a look at the existing uni
 
 Every pull request is subject to automated tests before being able to be merged. Additional continuous integration (CI) jobs are also run on the resulting commit on the main development branch to ensure broken packages are not deployed to the feed.
 
-If your tests are passing in-editor but fail in the CI run, you should run your tests locally in batch mode. Some types of tests may unexpectedly fail when running in no-graphics batch mode, due to timing differences or other Unity quirks. Running your tests locally in batch mode helps identify these inconsistent tests before the CI does.
+If your tests are passing in-editor but fail in the CI run, you should run your tests locally in batch mode. Some types of tests may unexpectedly fail when running in no-graphics batch mode due to timing differences or other Unity quirks. Running your tests locally in batch mode helps identify these inconsistent tests before the CI does.
 
 Use the `Tooling/Tests/run_playmode_tests.ps1` script to run tests locally in batch mode. You'll need to close your Unity editor to do so.
 
