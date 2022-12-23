@@ -54,7 +54,7 @@ To write unit tests, we recommend first taking a look at the existing unit tests
 
 ## Continuous integration
 
-Every PR is subject to automated tests before being able to be merged. Additional CI is also run on the resulting commit on the main development branch to ensure broken packages are not deployed to the feed.
+Every pull request is subject to automated tests before being able to be merged. Additional CI is also run on the resulting commit on the main development branch to ensure broken packages are not deployed to the feed.
 
 If your tests are passing in-editor but fail in the CI run, you should run your tests locally in batch mode. Some types of tests may unexpectedly fail when running in no-graphics batch mode, due to timing differences or other Unity quirks. Running your tests locally in batch mode helps identify these inconsistent tests before the CI does.
 
