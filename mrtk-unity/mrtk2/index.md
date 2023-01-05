@@ -21,28 +21,29 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
 * Enables **rapid prototyping** via in-editor simulation that allows you to see changes immediately.
 * Operates as an **extensible framework** that provides developers the ability to swap out core components.
-* **Supports a wide range of platforms**:
+* **Supports a wide range of devices**:
 
 ::: moniker range=">= mrtkunity-2021-05"
-| Platform | Supported Devices |
+| XR SDK Plugin (Unity XR Plugin Management Plugin Providers) | Supported Devices |
 |---|---|
-| OpenXR (Unity 2020.3.8+) | Any device running on a version of SteamVR after 2020  |
-| Windows Mixed Reality (Legacy) | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
-| Oculus (Unity 2019.3 or newer) | Meta Quest |
-| OpenVR (Legacy) |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
-| Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
-| Mobile | iOS and Android |
+| Unity OpenXR Plugin (Unity 2020 or 2021 LTS) <br> (Mixed Reality OpenXR Plugin required for certain features on certain devices) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets <br> Meta Quest <br> Device running on SteamVR via OpenXR |
+| Windows XR Plugin | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
+| Oculus XR Plugin (Unity 2019 or newer LTS) | Meta Quest (via Oculus Integration Package) |
+| ARCore XR Plug-in | Android (via AR Foundation) |
+| ARKit XR Plug-in | iOS (via AR Foundation) |
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-| Platform | Supported Devices |
+| XR SDK Plugin (Unity XR Plugin Management Plugin Providers) | Supported Devices |
 |---|---|
-| OpenXR (Preview in MRTK 2.6, Unity 2020.3.8+) | Any device running on a version of SteamVR after 2020 |
-| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
-| Oculus (Unity 2019.3 or newer) | Oculus Quest |
-| OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
-| Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
-| Mobile | iOS and Android |
+| Unity OpenXR Plugin (Preview in MRTK 2.6, Unity 2020 or 2021 LTS) <br> (Mixed Reality OpenXR Plugin required for certain features on certain devices) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets <br> Meta Quest <br> Device running on SteamVR via OpenXR |
+| Windows XR Plugin | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
+| Oculus XR Plugin (Unity 2019 or newer LTS) | Meta Quest (via Oculus Integration Package) |
+| ARCore XR Plug-in | Android (via AR Foundation) |
+| ARKit XR Plug-in | iOS (via AR Foundation) |
 ::: moniker-end
+
+**Additional devices supported:**
+* Ultraleap Leap Motion controller for hand tracking
 
 > [!NOTE]
 > We have introduced the public preview of MRTK3, the next chapter of MRTK. For more information, please go to the [MRTK3 documentation](../mrtk3-overview/index.md).

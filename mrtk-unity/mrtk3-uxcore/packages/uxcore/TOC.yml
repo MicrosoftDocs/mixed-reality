@@ -6,5 +6,7 @@
   href: state-visualizer.md
 - name: Toggle collection
   href: toggle-collection.md
+- name: Dialog
+  href: dialog-api.md
 - name: API reference
   href: https://aka.ms/mrtk3uxcoreapi

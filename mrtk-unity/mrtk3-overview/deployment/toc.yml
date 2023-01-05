@@ -1,4 +1,4 @@
-- name: Deploying to HoloLens2
+- name: Deploying to HoloLens 2
   href: hololens2-deployment.md
 - name: Deploying to Quest
   href: quest-deployment.md

@@ -10,13 +10,19 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes
 
 # Using and creating scenes in MRTK3
 
-## Sample scenes shipped with MRTK3 sample Unity Project
+Unlike MRTK v2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consists of a loosely coupled collection of individual UPM packages distributed through the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), as well as through our official Git repository.
 
-### General sample scenes (under `MRTKDevTemplate/Assets/Scenes`)
+As a result, we no longer ship our sample scenes inside the MRTK library/package itself. Instead, we maintain the `UnityProjects` folder at the top level of the Git repository, which contains any Unity projects we want to ship. Currently, this folder includes the `MRTKDevTemplate` project, which contains all of our example scenes and is configured to align with our recommended best settings. 
+
+We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, making editing and submitting changes easy. Clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project. 
+
+Within `MRTKDevTemplate`, you can find all of our sample scenes. Most of the sample scenes are in `UnityProjects/MRTKDevTemplate/Assets/Scenes`, while some experimental or early-preview sample scenes are located in `UnityProjects/MRTKDevTemplate/Assets/Data Binding Example`.
+
+## Included sample scenes
 
 **HandInteractionExamples**
 
-You can experience various hand interaction and UI examples such as poke, touch, grab, and two-handed manipulations.
+This sample scene offers a wide variety of interaction examples. Despite the name, this scene is a good example of cross-platform input, including hand tracking, controller input, and mouse input. Examples of several different UI controls and interactables are present, including the volumetric UI systems.
 
 ![Hand Menu](images/hand-interaction-examples.png)
 
@@ -26,7 +32,7 @@ Various configurations of BoundsControl, showing both flattened and 3D bounds.
 
 **CanvasExample**
 
-Shows a collection of UX components built on the Unity Canvas. These UX components are built on XRI and support full XR interactions, but are also authored in Canvas and support traditional interactions with mouse, keyboard, and gamepad.
+Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UX Components overview.](../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
 
 **DialogExample**
 
@@ -50,7 +56,7 @@ Near interaction menu examples.
 
 **ObjectBarExample**
 
-Shows Object Bar, a dynamic collection of objects positioned in a horizontal or vertical stack with an auto-sized back plate.
+Demonstrates the Object Bar component, which enables horizontal or vertical arrangement of arbitrary 3D objects.
 
 **SampleEmptyMRTKScene**
 
@@ -58,7 +64,7 @@ The sample empty MRTK scene only contains the core MRTK prefab (**MRTK XR Rig**)
 
 **SlateDrawingExample**
 
-A demonstration of using MRTK3 to create a simple drawing application.
+A demonstration of using MRTK3 to create a basic drawing application.
 
 **SpatialMappingExample**
 
@@ -70,7 +76,7 @@ Shows a collection of toggles that control the visibility of associated game obj
 
 **ToggleCollectionExample**
 
-Demonstrates the `ToggleCollection` script which enforces a single toggle in a collection to be active at once.
+Demonstrates the `ToggleCollection` script, which allows multiple toggle interactables to be grouped. Only one toggle can be toggled at any given time.
 
 **UIBackplateExample**
 
@@ -82,7 +88,7 @@ This scene showcases all available UI building blocks and their permutations in 
 
 ### DataBinding and Theming sample scenes
 
-**The following are DataBinding and Theming sample scenes also shipped with the sample Unity project:**
+The following scenes demonstrate very early-preview functionality and are subject to large changes. 
 
 **Assets\UX Theming Example\Scenes\AudioTheming**
 
