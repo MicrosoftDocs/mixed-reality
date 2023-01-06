@@ -10,8 +10,6 @@
   href: ../../mrtk3-data/packages/data/overview.md
 - name: Diagnostics
   href: ../../mrtk3-diagnostics/packages/diagnostics/overview.md
-- name: Environment
-  href: ../../mrtk3-environment/packages/environment/overview.md
 - name: Extended assets
   href: extendedassets/toc.yml
 - name: Graphics tools

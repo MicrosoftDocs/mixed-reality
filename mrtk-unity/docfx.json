@@ -118,8 +118,6 @@
         "./mrtk3-data/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-data/breadcrumb/toc.json",
         "./mrtk3-diagnostics/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-diagnostics/breadcrumb/toc.json",
         "./mrtk3-diagnostics/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-diagnostics/breadcrumb/toc.json",
-        "./mrtk3-environment/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-environment/breadcrumb/toc.json",
-        "./mrtk3-environment/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-environment/breadcrumb/toc.json",
         "./mrtk3-extendedassets/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-extendedassets/breadcrumb/toc.json",
         "./mrtk3-extendedassets/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-extendedassets/breadcrumb/toc.json",
         "./mrtk3-graphicstools/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-graphicstools/breadcrumb/toc.json",

@@ -64,6 +64,11 @@
 		"source_path_from_root": "/mrtk-unity/mrtk3-windowsspeech/index.md",
 		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview",
 		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/windows/mixed-reality/mrtk-unity/mrtk3-environment/packages/environment/overview.md",
+		"redirect_url": "https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html",
+		"redirect_document_id": false
 	  }
 	]
   }
