@@ -101,7 +101,7 @@ If you see "HoloLens Sensors" with a yellow exclamation mark in Device Manager, 
 This issue is likely caused by your headset's or graphics card's drivers or Windows software experiencing problems with adjusting the displayed content to appear correctly on your headset. You can try the following to fix the issue:
 
 * Disable automatic upscaling in mixed reality.
-  * Go to **Settings > Mixed Reality > Headset display > Resolution** and make sure the "best quality" option is selected.
+  * Go to **Settings > Mixed reality > Headset display > Resolution** and make sure the "best quality" option is selected.
 * Turn off any features that may allow your PC to use a pixel resolution higher than your display. These features are present in your graphics card manufacturer's software. You can access this software by doing the following:
     * Right click on your desktop background and then select "Show more options" (only required for Windows 11). Select the name of the application matching the name of your graphics card's manufacturer.  
 * Reinstall your headset drivers.
@@ -146,18 +146,17 @@ If your headset has a knob to adjust calibration, adjust its calibration setting
 
 Your PC may not be able to render content to the headset fast enough, resulting in a low framerate. This may be due to your PC's system resources being consumed by other apps or processes, or your application being too demanding for your PC. To fix:
 
-1. Open Task Manager to make sure that your PC has enough system resources. Your memory should have at least 400 MB of free space available, and disk IO should be below 80%. Close all unneeded programs to free up your memory and lower background CPU and disk usage.
+1. Open Task Manager to make sure that your PC has enough compute resources. You should have 80% of CPU free, 400 MB of RAM, and disk IO should be below 80%. Close all unneeded programs to free up your memory and lower background CPU and disk usage.
 2. Reduce detail settings in your application.
 3. Go to **Settings > Mixed Reality > Headset Display** to reduce the amount of detail shown in the Windows Mixed Reality home.
-4. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-gpu-driver).
+4. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-gpu-driver)
 
 ## The environment moves smoothly, but my point of view in the environment keeps shifting or jittering.
 
 The tracking system is having issues with tracking your playspace. To fix:
 
-1. Open Task Manager to make sure that your PC has enough compute resources. You should have 80% of CPU free, 400 MB of RAM, and disk IO should be below 80%.
-2. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-gpu-driver).
-3. Make sure the room has enough light.
-4. Unplug your headset, close Mixed Reality Portal, and plug the headset back in.
-5. Restart your PC.
+1. Make sure the room has enough light.
+2. Set up a new boundary. See [Boundary FAQs](boundary-questions.md).
+3. Unplug the USB cable from your headset, and plug it back in.
+4. Restart your PC.
 6. If the problem persists, contact [customer support](https://support.microsoft.com/).
