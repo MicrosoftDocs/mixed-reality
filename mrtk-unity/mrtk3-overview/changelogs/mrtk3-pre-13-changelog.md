@@ -21,10 +21,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Added support for custom min/max ranges for sliders ([#11192](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11192))
 - Added `SpeechRecognitionSubsystem` definition ([#11157](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11157))
 - Added `WindowsSpeechRecognition` implementation of the `SpeechRecognitionSubsystem` ([#11157](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11157))
-- Added new physically-accurate options for customizing rigidbody grab and fling behavior ([#11032](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11032))
+- Added new physically accurate options for customizing rigidbody grab and fling behavior ([#11032](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11032))
 - Added a button to automatically populate an empty MRTK Profile field with the default MRTK profile asset ([#11259](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11259))
 - Added a default Audio Mixer + mixer group for use with the new spatializer package ([#11271](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11271))
-- Added a `SpatializationMixer` property to `MRTKProfile` so scripts can lookup a reference to the correct spatializer mixer to use at runtime ([#11271](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11271))
+- Added a `SpatializationMixer` property to `MRTKProfile` so scripts can look up a reference to the correct spatializer mixer to use at runtime ([#11271](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11271))
 - Added `ConfigureSpatializationSettings` which can be used to ensure audio sources are properly connected to the spatializer mixer at runtime ([#11271](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11271))
 - Added additional UI controls (`UI/MRTK/Canvas`, `UI/MRTK/Canvas + Graphic Raycasting`, `UI/MRTK/Plate`, and `UI/MRTK/List Menu`) to the `UI/MRTK/` menu. ([#11281](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11281))
 - Added the brand-new, overhauled Dialog 2.0 API for efficient and extensible runtime dialog popups ([#11113](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11113))
@@ -32,7 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Added math utilities for dealing with byte buffers ([#11209](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11209))
 - Added `WindowsTextToSpeechSubsystem` implementation ([#11209](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11209))
 - Added a parameter to control the max length of the hand ray gradient ([#11313](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11313))
-- Added `USE_INPUTSYSTEM_POSE_CONTROL` define symbol to opt-in to the input system pose refactor
+- Added `USE_INPUTSYSTEM_POSE_CONTROL` define symbol to opt in to the input system pose refactor
 
 ### Changed
 - Excluded Oculus Integration Package from git tracking, for better development workflow while using OIP + OpenXR ([#11167](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11167))
@@ -86,12 +86,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Fixed build error caused by breakage in Unity OpenXR Plugin ([#11303](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11303))
 - Fixed Android build issues and icon import errors ([#11307](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11307))
 - Fixed hand interaction polyfill not updating the UI Press controller state ([#11307](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11325))
-- Fixed the grab interactor + NearInteractionModeDetector colliders blocking mouseclicks in-editor ([#11328](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11328))
+- Fixed the grab interactor + NearInteractionModeDetector colliders blocking mouse clicks in-editor ([#11328](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11328))
 - Fixed incorrect/out of date materials on the rigged hands (optimize/correct for Linear colorspace) ([#11329](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11329))
 - Cleaned up some dead code related to legacy Profiles ([#11330](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11330))
 - Fixed leftover legacy Dialog window in DialogExample scene ([#11336](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11336))
 - Fixed missing hand menu in VanillaUGUIExample scene ([#11336](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11336))
-- Fixed incorrect assembly version number for the accessibilty package ([#11342](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11342))
+- Fixed incorrect assembly version number for the accessibility package ([#11342](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11342))
 
 ## Known issues
 
@@ -99,7 +99,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Breaking changes
 
-- There have been some breaking API changes in editor code. Unless you've written custom editor code that depends on `MixedRealityStylesUtility` or `MixedRealityInspectorUtility`, you will be unaffected.
+- There have been some breaking API changes in editor code. Unless you've written custom editor code that depends on `MixedRealityStylesUtility` or `MixedRealityInspectorUtility`, you'll be unaffected.
 - See above changelog for several breaking changes to the `TextToSpeechSubsystem` API.
 - See above changelog for several breaking changes to the `com.microsoft.mrtk.accessibility` package.
 - API that has been already marked obsolete for more than 5 months has been removed; see above for details.
