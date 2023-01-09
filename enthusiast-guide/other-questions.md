@@ -1,9 +1,9 @@
 ---
 title: Immersive hardware realted FAQ
 description: Additional Windows Mixed Reality troubleshooting tips that go beyond our standard consumer support documentation.
-author: sean-kerawala
-ms.author: sekerawa
-ms.date: 09/15/2020
+author: qianw211
+ms.author: qianwen
+ms.date: 1/9/2023
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Uninstalling Windows Mixed Reality, Supported Languages
 appliesto:
@@ -69,12 +69,13 @@ If you're using a 2.4-GHz Wi-Fi connection, your motion controllers might slow d
 
 If you're using a laptop, Windows Mixed Reality works best when the PC is both fully charged and plugged in.
 
-## What is the Experience options setting?
+## What is the Experience options setting? 
 
 **Settings > Mixed reality > Headset display > Experience options** allows you to change the Windows Mixed Reality performance settings. This enables you to choose the best experience for your hardware configuration across a range of content. You have three experience options to choose from:
-* Automatic: Windows Mixed Reality will determine the best experience for your hardware configuration. For most people, this is the best choice to start with.
-* 60 Hz: Sets the refresh rate to 60 Hz and turns off certain features, such as video capture and preview in Mixed Reality Portal.
-* 90 Hz: Sets the refresh rate to 90 Hz.
+
+* Let Windows decide: this option enables Windows to assess the best experience option based on your current PC hardware configuration.
+* Optimize for performance: this experience option ensures a more comfortable user experience, especially on PCs with integrated graphics.
+* Best visual quality: this experience option ensures the highest quality visual experience, but may impact performance on lower-end PC hardware configurations.  
 
 ## What languages are supported in Windows Mixed Reality
 
