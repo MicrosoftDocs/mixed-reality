@@ -112,7 +112,7 @@ There are two main types of devices that deliver Windows Mixed Reality experienc
 > [!NOTE]
 > Whether a device is tethered to a separate PC (via USB cable or Wi-Fi) or untethered doesn't reflect whether a device is holographic or immersive. Features that improve mobility often provide better experiences. Holographic and immersive devices can be either tethered or untethered.
 
-Mixed reality experiences are the result of technological advancements. There aren't any devices today that can run experiences across the entire spectrum. Windows 10 provides a common mixed reality platform for both device manufacturers and developers. Any given device today can support a specific range within the mixed reality spectrum. In the future, new devices with more expansive range are expected: holographic devices will be more immersive, and immersive devices will be more holographic.
+Mixed reality experiences are the result of technological advancements. Windows 10 provides a common mixed reality platform for both device manufacturers and developers. Any given device today can support a specific range within the mixed reality spectrum. In the future, new devices with more expansive range are expected: holographic devices will be more immersive, and immersive devices will be more holographic.
 
 <br>
 
