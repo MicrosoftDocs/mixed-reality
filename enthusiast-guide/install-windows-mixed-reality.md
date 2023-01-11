@@ -70,7 +70,7 @@ Here are some things to try for [error messages](error-codes.md) you might see.
 
 ## Review and Accept Terms and Conditions
 
-To continue with setup, you must have 2 GB of free space on your PC. Review and press **I Agree** to the terms and conditions to continue
+To continue with setup, you must have 2 GB of free space on your PC. Review and select **I Agree** to the terms and conditions to continue
 
 ![Accept Terms and Conditions](images/1050px-mixedrealityportalpage2.png)
 
