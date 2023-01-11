@@ -74,7 +74,7 @@ to "Controllers and Hands".
 1. Configure your profile to use the **Oculus XR SDK Data Provider**
     - If not intending to modify the configuration profiles
         - Change your profile to DefaultXRSDKConfigurationProfile.
-        - Go to [Build and deploy your project to Quest](../oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest).
+        - Go to [Build and deploy your project to Quest](../oculus-quest-mrtk.md#build-and-deploy-your-project-to-quest).
     - Otherwise follow the following:
         - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
 
