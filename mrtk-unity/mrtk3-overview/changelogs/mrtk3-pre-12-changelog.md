@@ -9,10 +9,12 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 # Changelog for MRTK3 pre.12
 
-### [pre.12] - 2022-10-21 - `2186746`
+## [pre.12] - 2022-10-21 - [`2186746`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/2186746)
+
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The full release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/11130) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
 ### Added
+
 - Added single-arg overload to `ForceSetToggled` for easier use with UnityEvents ([#11028](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11028))
 - Added `PoseSourceDriver` ([#11047](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11047))
 - Added planar projection support to `UGUIInputAdapterDraggable` that works across both graphic and physics raycasters ([#11051](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11051))
@@ -26,10 +28,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Added new sample scene demonstrating recently-added legacy MRTKv2 constraints ([#11104](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11104))
 
 ### Changed
+
 - Reticle improvements ([#11022](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11022))
-    - Separated reticle logic from line visual logic
-    - Added support for swappable reticle icons on the default reticle prefab
-    - Added support for showing reticle on non-interactable surfaces
+  - Separated reticle logic from line visual logic
+  - Added support for swappable reticle icons on the default reticle prefab
+  - Added support for showing reticle on non-interactable surfaces
 - Removed `IMRTKInteractorVisual` ([#11043](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11043))
 - Made `SimulatedEyeGazeDevice` public so developers can check for its existence if necessary ([#11040](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11040))
 - Updated VisualProfiler dependency to 2.2.0 ([#11048](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11048))
@@ -40,7 +43,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Updated XR Core Utils dependency to `2.1.0` ([#11054](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11054))
 - Removed unused `DisabledInteractorTypes` collection from `MRTKBaseInteractable` ([#11061](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11061))
 - **Prefab breaking:** Simplified NearMenu and HandMenu prefabs to use only a single modular prefab ([#11030](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11030))
-    - See Action Item above for migration, .zip attached
+  - See Action Item above for migration, .zip attached
 - **Breaking-ish:** Removed environment package ([#11069](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11069))
 - Reorganized interactor visual components to allow future use of `IXRCustomReticleProvider` ([#11066](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11066))
 - **Breaking:** Refactored the XR Rig and `PlayspaceUtilities` to properly take user's height relative to the floor into account; user's head will now be placed at their proper absolute height, based on either Guardian/Chaperone floor calibration or a fallback height value specified in the `XROrigin` ([#11035](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11035))
@@ -52,6 +55,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Moved some leftover scripts from `uxcomponents` to `uxcore` ([#11090](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11090))
 
 ### Fixed
+
 - Fixed incorrect backplate material on the new HandMenu/NearMenu prefabs ([#11009](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11009))
 - Fixed incorrect corner radii on the new HandMenu/NearMenu prefabs ([#11012](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11012))
 - Fixed ToggleCollection behavior when a toggle slot is null ([#11034](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11034))
@@ -78,7 +82,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## Breaking changes
 
 - The MRTK XR rig has been significantly changed; the user's head will now be at their true, floor-calibrated height, or 1.6m on platforms that don't offer floor-height-calibration.
-    - The content in your application will either need to be raised to head height, or if true head height is not desired for your application, select Device-relative mode in the `XROrigin`'s Tracking Origin Mode and set the vertical offset to zero meters.
-- We've simplified the hand menu and near menu prefabs; we don't officially offer individual prefabs for each dimension of menu. This removal might break some prefab references, so check out the `OldPrefabs.zip` attached below if you need copies of the old prefabs to fix your references. 
-    - [OldPrefabs.zip](https://github.com/microsoft/MixedRealityToolkit-Unity/files/9834344/OldPrefabs.zip)
- - We've removed the environment package. We recommend using Unity's built-in support for playspace boundary queries instead, as well as ARFoundation's `ARMeshManager` for scene reconstruction.
+  - The content in your application will either need to be raised to head height, or if true head height is not desired for your application, select Device-relative mode in the `XROrigin`'s Tracking Origin Mode and set the vertical offset to zero meters.
+- We've simplified the hand menu and near menu prefabs; we don't officially offer individual prefabs for each dimension of menu. This removal might break some prefab references, so check out the `OldPrefabs.zip` attached below if you need copies of the old prefabs to fix your references.
+  - [OldPrefabs.zip](https://github.com/microsoft/MixedRealityToolkit-Unity/files/9834344/OldPrefabs.zip)
+- We've removed the environment package. We recommend using Unity's built-in support for playspace boundary queries instead, as well as ARFoundation's `ARMeshManager` for scene reconstruction.

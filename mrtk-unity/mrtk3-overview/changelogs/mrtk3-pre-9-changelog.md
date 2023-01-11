@@ -9,11 +9,12 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 # Changelog for MRTK3 pre.9
 
-## [pre.9] - 2022-08-03 - `2ed522e`
+## [pre.9] - 2022-08-03 - [`2ed522e`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/2ed522e)
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The full release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/10824) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
 ### Added
+
 - Added tracking state actions to MRTK Default Input Actions
 - Added a fallback to an internal hand ray implementation in `ArticulatedHandController` when no pointing pose is available
 - Added a fallback to the palm pose rotation in `GazePinchInteractor` if the parent controller's bound device has no rotation action bound
@@ -21,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Added `maintainGlobalSize` option to `BoundsHandleInteractable`, to allow developers to customize handle size behavior as `BoundsControl` grows and shrinks
 
 ### Changed
+
 - Improved performance on pre-2021 Unity projects by removing `HasFlag` calls
 - Improved performance in certain hot paths by trimming LINQ and GetComponent calls
 - Changed XR Rig prefab to bind `XRController`s to the new tracking state actions
@@ -29,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Made `BoundsHandleInteractable` `public`, instead of `internal`
 
 ### Fixed
+
 - Fixed a bug in the index finger length calculation in `MRTKHandsAggregator`
 - Fixed `TapToPlace` hiding `OnDisable` in the base class
 - Fixed `FontIconExample`'s description plate to not be "wonky" anymore
