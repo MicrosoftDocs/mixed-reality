@@ -1,6 +1,6 @@
 - name: Deploying to HoloLens and WMR headsets
   href: wmr-mrtk.md
-- name: Deploying to Oculus Quest
+- name: Deploying to Quest
   href: oculus-quest-mrtk.md
 - name: Deploying to Android and iOS (AR Foundation) [Experimental]
   href: using-ar-foundation.md
