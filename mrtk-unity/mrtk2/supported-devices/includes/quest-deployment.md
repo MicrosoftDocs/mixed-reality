@@ -4,7 +4,11 @@ MRTK's support for the Oculus Quest comes via two different sources, Unity's Ope
 
 You can use the [Mixed Reality OpenXR Plugin](../../configuration/getting-started-with-mrtk-and-xrsdk.md#openxr) to deploy MRTK applications to the Oculus Quest. After enabling OpenXR, ensure any required features are enabled (likely "Hand Tracking" and "Meta Quest Support").
 
-    ![Plugin management OpenXR Android](../../features/images/xrsdk/PluginManagementOpenXRAndroid.png)
+![Plugin management OpenXR Android](../../features/images/xrsdk/PluginManagementOpenXRAndroid.png)
+
+Ensure your profile (if not using the MRTK default) is set up with the OpenXR Device Manager. See [Configuring MRTK for the XR SDK pipeline](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline) for more information on ensuring your profile is ready for OpenXR.
+
+![OpenXR input settings](../../features/images/xrsdk/InputSystemOpenXR.png)
 
 # [Oculus (XR SDK)](#tab/xr)
 
@@ -40,11 +44,6 @@ to "Controllers and Hands".
 
     ![Oculus Integration Controller And Hands](../../images/cross-platform/oculus-quest/OculusIntegrationControllerAndHands.png)
 
-## Setting up the scene
-
-1. Create a new Unity scene or open a pre-existing scene like HandInteractionExamples.
-1. Add MRTK to the scene by navigating to **Mixed Reality Toolkit** > **Add to Scene and Configure**.
-
 ## Using the Oculus XR SDK Data Provider
 
 ::: moniker range=">= mrtkunity-2021-05"
@@ -56,19 +55,19 @@ to "Controllers and Hands".
     - Otherwise follow the following:
         - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
 
-        ![Clone Profile](../../images/cross-platform/CloneProfile.png)
+            ![Clone Profile](../../images/cross-platform/CloneProfile.png)
 
         - Select the **Input** Configuration Profile.
 
-        ![Input Configuration Profile](../../images/cross-platform/InputConfigurationProfile.png)
+            ![Input Configuration Profile](../../images/cross-platform/InputConfigurationProfile.png)
 
         - Select **Clone** in the input system profile to enable modification.
 
-        ![Clone Input System Profile](../../images/cross-platform/CloneInputSystemProfile.png)
+            ![Clone Input System Profile](../../images/cross-platform/CloneInputSystemProfile.png)
 
         - Open the **Input Data Providers** section, select **Add Data Provider** at the top, and new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**.
 
-        ![Oculus Add XRSDK Data Provider](../../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+            ![Oculus Add XRSDK Data Provider](../../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
 
@@ -79,19 +78,19 @@ to "Controllers and Hands".
     - Otherwise follow the following:
         - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
 
-        ![Clone Profile](../../images/cross-platform/CloneProfile.png)
+            ![Clone Profile](../../images/cross-platform/CloneProfile.png)
 
         - Select the **Input** Configuration Profile.
 
-        ![Input Configuration Profile](../../images/cross-platform/InputConfigurationProfile.png)
+            ![Input Configuration Profile](../../images/cross-platform/InputConfigurationProfile.png)
 
         - Select **Clone** in the input system profile to enable modification.
 
-        ![Clone Input System Profile](../../images/cross-platform/CloneInputSystemProfile.png)
+            ![Clone Input System Profile](../../images/cross-platform/CloneInputSystemProfile.png)
 
         - Open the **Input Data Providers** section, select **Add Data Provider** at the top, and new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**.
 
-        ![Oculus Add XRSDK Data Provider](../../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+            ![Oculus Add XRSDK Data Provider](../../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 ::: moniker-end
 
 1. The Oculus XR SDK Data Provider includes an OVR Camera Rig Prefab which automatically configures the project with an OVR Camera Rig and OVR Hands to properly route input. Manually adding an OVR Camera Rig to the scene will require manual configuration of settings and input.

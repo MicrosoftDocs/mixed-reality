@@ -16,6 +16,11 @@ An [Oculus Quest](https://www.oculus.com/quest/) is required.
 1. Follow [these steps](https://developer.oculus.com/documentation/unity/book-unity-gsg/) to ensure that your project is ready to deploy on Oculus Quest.
 1. Ensure that [developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) is enabled on your device. Installing the Oculus ADB Drivers is optional.
 
+## Setting up the scene
+
+1. Create a new Unity scene or open a pre-existing scene like HandInteractionExamples.
+    1. If creating a new scene, add MRTK to the scene by navigating to **Mixed Reality Toolkit** > **Add to Scene and Configure**.
+
 ## MRTK integration
 
 [!INCLUDE[](includes/quest-deployment.md)]
