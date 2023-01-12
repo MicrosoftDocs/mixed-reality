@@ -30,11 +30,9 @@ To add MRTK to your project, please refer to the [setup page](../setup.md) and e
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and change it so only **Oculus Touch Controller Profile** is present.
 
+![Quest XR Plug-in Management window](../images/oculus-xr-plug-in-management.png) ![Meta Quest OpenXR](../images/oculus-openxr.png)
+
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > OpenXR Feature Groups** and ensure the following are checked under **All Features**.
-
-    ![Quest XR Plug-in Management window](../images/oculus-xr-plug-in-management.png)
-
-    ![Meta Quest OpenXR](../images/oculus-openxr.png)
 
     > [!NOTE]
     > Red or yellow error/warning icons might appear during this process. Click the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. You may need to do this several times.
