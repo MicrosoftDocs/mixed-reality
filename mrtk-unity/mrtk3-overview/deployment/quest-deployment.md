@@ -40,7 +40,7 @@ To add MRTK to your project, please refer to the [setup page](../setup.md) and e
     > Red or yellow error/warning icons might appear during this process. Click the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. You may need to do this several times.
 
     > [!NOTE]
-    > If you don't see **Hand Tracking** or **Motion Controller Model** under the **OpenXR Feature Groups** panel, please refer to Configure OpenXR-related settings OpenXR [project settings](../setup.md#5-configure-openxr-related-settings)
+    > If you don't see **Hand Tracking** or **Motion Controller Model** under the **OpenXR Feature Groups** panel, please refer to Configure OpenXR-related settings portion of [project settings](../setup.md#5-configure-openxr-related-settings)
 
 1. If you plan on using the native keyboard, please refer to the [keyboard documentation](../../mrtk3-input/packages/input/System-keyboard.md#meta-quest-specific-setup) for a required `AndroidManifest.xml` modification.
 
