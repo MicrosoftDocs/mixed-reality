@@ -34,12 +34,12 @@ To add MRTK to your project, please refer to the [setup page](../setup.md) and e
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > OpenXR Feature Groups** and ensure the following are checked under **All Features**.
 
+    > [!NOTE]
+    > If you don't see **Hand Tracking** or **Motion Controller Model** under the **OpenXR Feature Groups** panel, please refer to Configure OpenXR-related settings section of [project settings](../setup.md#5-configure-openxr-related-settings)
+
     ![Meta Quest OpenXR](../images/oculus-openxr.png)
 
 1. Navigate to Project Validation, and fix any Red or yellow error/warning icons might appear during this process. Click the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. There may be several items to address
-
-    > [!NOTE]
-    > If you don't see **Hand Tracking** or **Motion Controller Model** under the **OpenXR Feature Groups** panel, please refer to Configure OpenXR-related settings section of [project settings](../setup.md#5-configure-openxr-related-settings)
 
 1. If you plan on using the native keyboard, please refer to the [keyboard documentation](../../mrtk3-input/packages/input/System-keyboard.md#meta-quest-specific-setup) for a required `AndroidManifest.xml` modification.
 
