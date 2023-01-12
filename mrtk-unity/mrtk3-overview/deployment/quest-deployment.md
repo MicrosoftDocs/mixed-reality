@@ -46,8 +46,8 @@ To add MRTK to your project, please refer to the [setup page](../setup.md) and e
 
 ## Deploying to Device
 
-1. After you have the project configured, proceed to [Generate Build](https://developer.oculus.com/documentation/unity/unity-build/#generate-build)
-
 1. **Do not** follow the Configure Settings instructions on Oculus's documentation page. Their instructions require the use of the Oculus Integration SDK, and uses the Oculus XR Plug-in rather than the OpenXR Plug-in.
 
 1. We recommend that you select **Build and Run** to build and run your project. This will cause it to deploy directly to your Meta Quest.
+
+1. After you have the project configured, proceed to [Generate Build](https://developer.oculus.com/documentation/unity/unity-build/#generate-build)
