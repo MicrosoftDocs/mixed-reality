@@ -10,11 +10,11 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 
 # Deploy an MRTK3 project to a Quest device
 
->There are two methods for testing your project
-    >1. Quest Link for fast iteration and testing
-        >1. Runs in editor, requiring no build and deploy
-    >1. Deployment of the Unity project with MRTK after the device setup is complete
-        >1. Requires compilation, but runs smoother and lives on your device
+There are two methods for testing your project
+    1. Quest Link for fast iteration and testing
+        1. Runs in editor, requiring no build and deploy
+    1. Deployment of the Unity project with MRTK after the device setup is complete
+        1. Requires compilation, but runs smoother and lives on your device
 
 To add MRTK to your project, please refer to the [setup page](../setup.md) and ensure your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto your Quest device**.
 
