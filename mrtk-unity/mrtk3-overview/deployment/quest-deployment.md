@@ -12,6 +12,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 
 ## Testing Methods
 
+There are two methods for testing MRTK3 Projects on Quest
+
 1. Quest Link for fast iteration and testing
 
     2. Runs in editor, requiring no build and deploy
