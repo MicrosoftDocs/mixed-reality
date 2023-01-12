@@ -28,11 +28,11 @@ To add MRTK to your project, please refer to the [setup page](../setup.md) and e
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management** and enable **OpenXR** under the **Android** tab. Ensure that **Initialize XR on Startup** is selected and that no feature groups are enabled. (This can take some time)
 
-    ![Quest XR Plug-in Management window](../images/oculus-xr-plug-in-management.png)
-
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and change it so only **Oculus Touch Controller Profile** is present.
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > OpenXR Feature Groups** and ensure the following are checked under **All Features**.
+
+    ![Quest XR Plug-in Management window](../images/oculus-xr-plug-in-management.png)
 
     ![Meta Quest OpenXR](../images/oculus-openxr.png)
 
