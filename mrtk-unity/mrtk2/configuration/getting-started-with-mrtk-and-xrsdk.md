@@ -52,17 +52,15 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 1. Go to Edit > Project Settings.
 1. Click on the XR Plug-in Management tab in the Project Settings window.
 1. Ensure that Initialize XR on Startup is checked.
-1. (**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select Microsoft HoloLens Feature Set
+1. (**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select "Microsoft HoloLens feature group".
+1. (**_Optional_**) If targeting Quest 2, make sure you're on the Android platform and select "Hand Tracking" and "Meta Quest Support".
 
-![Plugin management OpenXR](../features/images/xrsdk/PluginManagementOpenXR.png)
+    ![Plugin management OpenXR](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE]
 > If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.
 
 `<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>`
-
-> [!NOTE]
-> For the initial release of MRTK and OpenXR, only the HoloLens 2 articulated hands and Windows Mixed Reality motion controllers are natively supported. Support for additional hardware will be added in upcoming releases.
 
 ## Configuring MRTK for the XR SDK pipeline
 
@@ -129,11 +127,11 @@ to
 |---------------|-------------------|
 | [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) |
 
-__OpenXR__:
+**OpenXR**:
 
 ![OpenXR input settings](../features/images/xrsdk/InputSystemOpenXR.png)
 
-__Windows Mixed Reality__:
+**Windows Mixed Reality**:
 
 ![XR SDK input settings](../features/images/xrsdk/InputSystemWMRXRSDK.png)
 
