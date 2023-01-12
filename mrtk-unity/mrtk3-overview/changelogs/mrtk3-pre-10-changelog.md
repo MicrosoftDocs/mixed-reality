@@ -9,10 +9,12 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 # Changelog for MRTK3 pre.10
 
-### [pre.10] - 2022-08-19 - `0aebad7`
+## [pre.10] - 2022-08-19 - [`0aebad7`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/0aebad7)
+
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The full release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/10902) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
 ### Added
+
 - Added `RiggedHandMeshVisualizer` with associated hand meshes + shaders
 - Added URP support for new hand shader
 - Added scene name label to sample scene hand menu
@@ -29,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Added visual feedback to non-Canvas toggle switch affordances
 
 ### Changed
+
 - Updated the MR OpenXR plugin to 1.4.4
 - Moved several example assets out of StandardAssets (more slimming of StandardAssets is on the way!)
 - Updated README with more comprehensive information about supported devices, preview status, and other useful info
@@ -44,6 +47,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Rewrote font icon selector UI for improved usability, zoomability/scrolling
 
 ### Fixed
+
 - Fixed some minor warnings
 - Fixed reticles not rendering/hit-testing on Canvas elements
 - Fixed BoundsControl not finding ConstraintManagers when not explicitly assigned
@@ -63,10 +67,10 @@ Erroneous thumb joint rotations on Quest will cause deformed thumbs. Hand meshes
 ## Breaking changes
 
 - Some parts of the InteractionModeManager interface have changed.
-    - `RegisterInteractor` and `UnregisterInteractor` take an `XRBaseController` instead of an `XRBaseControllerInteractor`.
-    - `SetInteractionMode` now takes a GameObject instead of an `XRBaseController`.
-    - If you've made overrides to your InteractionModeManager in a rig prefab variant, please take care to examine your mode configurations and ensure they are correct after this update! We've changed some of the serialized mode configurations to take advantage of the new mode management features.
+  - `RegisterInteractor` and `UnregisterInteractor` take an `XRBaseController` instead of an `XRBaseControllerInteractor`.
+  - `SetInteractionMode` now takes a GameObject instead of an `XRBaseController`.
+  - If you've made overrides to your InteractionModeManager in a rig prefab variant, please take care to examine your mode configurations and ensure they are correct after this update! We've changed some of the serialized mode configurations to take advantage of the new mode management features.
 - `Gesture`s renamed to `Handshape`s
-    - Reducing confusion between poses, gestures, and handshapes
-    - `GestureId` renamed to `HandshapeId`
-    - In the test harness, `TestHand` and `InputTestUtilities` have several methods renamed and changed to accept `HandshapeId`s
+  - Reducing confusion between poses, gestures, and handshapes
+  - `GestureId` renamed to `HandshapeId`
+  - In the test harness, `TestHand` and `InputTestUtilities` have several methods renamed and changed to accept `HandshapeId`s

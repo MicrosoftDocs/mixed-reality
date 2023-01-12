@@ -13,7 +13,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 The full release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/10760) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
--  [Our first community contribution!] Fixed `WindowsPhraseRecognitionSubsystem` going into an endless Destroy/Start loop (#10632, thanks @LocalJoost!)
+- [Our first community contribution!] Fixed `WindowsPhraseRecognitionSubsystem` going into an endless Destroy/Start loop (#10632, thanks @LocalJoost!)
 - Fixed the Oculus Touch interaction profile not being set by default in sample project (#10692)
 - Fixed which OpenXR loader was assigned for UWP (#10692)
 - Fixed incorrect formatting/linting (#10691)

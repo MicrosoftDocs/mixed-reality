@@ -9,10 +9,12 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 # Changelog for MRTK3 pre.13
 
-### [pre.13] - 2023-1-5 - `a918e44`
+## [pre.13] - 2023-1-5 - [`a918e44`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/a918e44)
+
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The full release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/11351) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
 ### Added
+
 - Added reasonable-default ARCore loader/settings assets to MRTKDevTemplate ([#11167](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11167))
 - Added Unity's Android logcat package for improved debugging on Android ([#11167](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11167))
 - Added missing `.npmrc`s in individual packages ([#11136](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11136))
@@ -35,6 +37,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Added `USE_INPUTSYSTEM_POSE_CONTROL` define symbol to opt in to the input system pose refactor
 
 ### Changed
+
 - Excluded Oculus Integration Package from git tracking, for better development workflow while using OIP + OpenXR ([#11167](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11167))
 - Changed background of default Android app icon to black ([#11167](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11167))
 - Added `HandheldRAInputDevice` pose paths to our camera pose driver ([#11167](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11167))
@@ -68,6 +71,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **Breaking (Editor only):** Renamed various `*Inspector` classes to `*Editor` for clarity and consistency ([#11330](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11330))
 
 ### Fixed
+
 - Fixed uses of `InputActionProperty`s not properly using `Enable/DisableDirectAction` ([#11133](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11133))
 - Fixed `InterfaceSelectorDrawer` not accounting for the type being an array/list ([#11183](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11183))
 - Fixed `GrabBar` material's incorrect package location ([#11180](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/11180))
