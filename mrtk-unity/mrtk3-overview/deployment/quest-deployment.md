@@ -36,8 +36,7 @@ To add MRTK to your project, please refer to the [setup page](../setup.md) and e
 
     ![Meta Quest OpenXR](../images/oculus-openxr.png)
 
-    > [!NOTE]
-    > Red or yellow error/warning icons might appear during this process. Click the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. You may need to do this several times.
+1. Navigate to Project Validation, and fix any Red or yellow error/warning icons might appear during this process. Click the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. There may be several items to address
 
     > [!NOTE]
     > If you don't see **Hand Tracking** or **Motion Controller Model** under the **OpenXR Feature Groups** panel, please refer to Configure OpenXR-related settings section of [project settings](../setup.md#5-configure-openxr-related-settings)
