@@ -16,7 +16,7 @@ There are two methods for testing MRTK3 Projects on Quest
 
 1. [Quest Link](https://www.meta.com/help/quest/articles/headsets-and-accessories/oculus-link/) for fast iteration and testing
 
-    2. Runs in editor, requiring no build and deploy
+    - Runs in editor, requiring no build and deploy
 
 1. Deployment of the Unity project with MRTK after the device setup is complete
 
