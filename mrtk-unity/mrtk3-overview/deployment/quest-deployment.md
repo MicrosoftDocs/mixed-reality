@@ -25,7 +25,7 @@ There are two methods for testing MRTK3 Projects on Quest
 To add MRTK to your project, please refer to the [setup page](../setup.md) and ensure your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto your Quest device**.
 
 ## Deployment Prerequisites
-These steps are based around OpenXR as your runtime, we don't recommend using OculusXR due to underlying incompatabilities.
+These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as we don't recommend using OculusXR due to underlying incompatabilities.
 
 1. Ensure that your project is ready to deploy on the Quest Device by following [these steps](https://developer.oculus.com/documentation/unity/book-unity-gsg/) 
 
