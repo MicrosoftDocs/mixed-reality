@@ -18,14 +18,6 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, HoloLe
 
 - This page describes how to deploy your Unity Project with MRTK onto a HoloLens 2 after initial setup is complete.
 
-## Holographic Remoting
-
-1. For rapid iteration and testing, We **strongly recommend** using [Holographic remoting](/windows/mixed-reality/develop/unity/preview-and-debug-your-app) on HoloLens 2.
-
-2. Without the need to Compile + Deploy, Holographic Remoting cuts down the time used for testing on the device.
-
-3. You can also play in Unity directly with the PC's current OpenXR runtime, including [Windows Mixed Reality](https://www.microsoft.com/p/openxr-tools-for-windows-mixed-reality/9n5cvvl23qbt), and [SteamVR on OpenXR](https://www.steamvr.com/). See our complete list [here](../debugging-and-testing.md).
-
 ## Deploying to Device
 
 1. After you have the project configured, proceed to [Build the Unity Project](/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens#build-the-unity-project).
