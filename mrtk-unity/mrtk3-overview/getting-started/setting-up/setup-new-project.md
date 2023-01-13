@@ -1,16 +1,16 @@
 ---
-title: Initial setup for MRTK3
-description: Setting up your first MRTK3 project
-author: MaxWang-MS
-ms.author: wangmax
-ms.date: 6/6/2022
+title: Setting up a new project with MRTK3
+description: Setting up a new project with MRTK3
+author: RogPodge
+ms.author: roliu
+ms.date: 1/13/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK
 ---
 
-# Initial Setup for MRTK3
+# Starting from a new project
 
-Welcome to the MRTK3 public preview! Since MRTK3 is a collection of loosely coupled packages, consuming MRTK3 is done differently than the way you consume MRTK 2.x. We don't ship MRTK as a Unity project, so you're expected to either use our example template project, which is preconfigured to consume all MRTK packages (easier to get started), or start fresh with a new project (gives you more control, recommended).
+Since MRTK3 is a collection of loosely coupled packages, consuming MRTK3 is done differently than the way you consume MRTK 2.x. We don't ship MRTK as a Unity project, so you have to manually add MRTK3 packages to your project in order to consume them.
 
 You're not expected to consume every MRTK package. See [which features are useful to you](packages/packages-overview.md) and add only the dependencies that matter.
 
@@ -18,7 +18,7 @@ You're not expected to consume every MRTK package. See [which features are usefu
 
 ### 1. Create a new Unity project
 
-Create a new Unity project with Unity 2020.3.35f1 or newer / Unity 2021.3.4f1 or newer. Close the Unity project before proceeding to the next step.
+Create a new Unity project with Unity 2021.3.4f1 or newer. Close the Unity project before proceeding to the next step.
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
@@ -112,4 +112,4 @@ Proceed to [creating a new MRTK3 scene](scenes.md#creating-a-new-scene-with-mrtk
 
 ## Next steps
 
-* [Try out our sample scenes or create your own](scenes.md)
+Once you've finished setting up your Unity project, learn how to (experience your application on a device)[../../experience/overview.md]

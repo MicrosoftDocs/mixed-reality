@@ -8,12 +8,10 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, debugging
 ---
 
-# Iteration and debugging &#8212; MRTK3
+# Streaming your application to a device.
 
-Compiling and deploying your app can take a significant amount of time, so we recommend a variety of instant iteration/preview solutions while developing your application.
+These options detail how to stream your application to the device of your choice. Streaming your application allows for rapid iteration and development, as the application runs locally on your machine, without the need to compile and install onto your device. It also allows you to use Unity's plethora of in-editor debugging tools and features.
 
-- [In-editor input simulation](../mrtk3-input/packages/input/input-simulation.md)
-    - Easily preview your app without any XR device attached. Control the user's head, hands, and hand gestures with traditional WASD controls.
 - **Recommended:** [Holographic remoting (on HoloLens 2)](/windows/mixed-reality/develop/unity/preview-and-debug-your-app)
     - For development on Hololens 2 and related platforms (including other OpenXR targets that include hand tracking), we strongly recommend the use of holographic remoting to accelerate your iteration time. Advanced features like hand tracking, eye tracking, and scene reconstruction are available through remoting, and behave the same as if the app were deployed to a device.
 - Play-mode testing with the desktop's active OpenXR runtime
@@ -24,5 +22,3 @@ Compiling and deploying your app can take a significant amount of time, so we re
     - In **Player Settings** > **OpenXR**, the following must be assigned for the **Windows, Mac, Linux Settings** tab:
         - Set **Play Mode OpenXR Runtime** to **Oculus OpenXR**.
         - Add the **Oculus Touch Controller Profile** to the list of **Interaction Profiles**.
-
-If you've deployed a build to your target device of choice, you can debug the build as it runs on device with [Managed debugging](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).

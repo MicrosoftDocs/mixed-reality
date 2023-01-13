@@ -1,8 +1,8 @@
 - name: Overview
   href: overview.md
-- name: Exploring MRTK features
+- name: Explore MRTK features
   href: exploring-features/toc.yml
-- name: Set up a Project
+- name: Set up an MRTK Project
   href: setting-up/toc.yml
-- name: Experiencing your Project on Device
-  href: experience-on-device.md
+- name: Experience your project on device
+  href: experience/toc.yml

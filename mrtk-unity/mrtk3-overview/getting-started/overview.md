@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, overview, setup, deployment, remoting, new project, getting started, tutorial, introduction, intro
 ---
 
-This guide serves as a starting point for using MRTK to build and experience your app in AR/VR. It includes resources for becoming acquainted with the building blocks of MRTK, and guides users through setting up their project to deploying on device.
+Welcome to the MRTK3 public preview! This guide serves as a starting point for using MRTK to build and experience your app in AR/VR. It includes resources for becoming acquainted with the building blocks of MRTK, and guides users through setting up their project to deploying on device.
 
 ### Where should I go next?
 
@@ -17,7 +17,6 @@ Exploring MRTK features: Learn about MRTK's features through our tutorial projec
 Set up an MRTK Project: Learn how to create an AR/VR ready Unity project using MRTK
 
 Experiencing your Project on Device: Learn how to launch and experience your application on your device.
-
 
 ## Software Requirements
 

@@ -8,12 +8,13 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes, example scenes
 ---
 
-Several tutorials have been created to help developers learn about its various features and capabilities.
+# Exploring MRTK3 tutorials
+
+Several tutorials have been created to help developers learn about MRTK3's various features and capabilities. 
 
 ### [MRTK3 Aquarium](/windows/mixed-reality/develop/unity/mrtk3-aquarium): the in-editor tutorial
 
 The [MRTK3 Aquarium project](/windows/mixed-reality/develop/unity/mrtk3-aquarium) provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habitat. Using MRTK3 features, you'll add interactivity to the aquarium which will enable you to create an aquarium of your very own!
-
 
 ### [Zappy's Playground](/windows/mixed-reality/develop/unity/playground-tutorial)
 
