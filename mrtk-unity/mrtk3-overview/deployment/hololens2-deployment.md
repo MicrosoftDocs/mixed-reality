@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, HoloLe
 
 ## Testing Methods
 
-There are two methods for testing MRTK3 Projects on Hololens 2
+There are two methods for testing MRTK3 Projects on HoloLens 2
 
 1. [Holographic Remoting](https://learn.microsoft.com/windows/mixed-reality/develop/unity/preview-and-debug-your-app?tabs=openxr) for fast iteration and testing
 
@@ -24,7 +24,7 @@ There are two methods for testing MRTK3 Projects on Hololens 2
 
 ## Deployment Pre-requisites
 
-- To add MRTK to your project, please refer to the [setup page](../setup.md) and ensure your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto your Hololens**.
+- To add MRTK to your project, please refer to the [setup page](../setup.md) and ensure your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto your HoloLens**.
 
 - This page describes how to deploy your Unity Project with MRTK onto a HoloLens 2 after initial setup is complete.
 
