@@ -49,9 +49,7 @@ These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as
 
 > [!NOTE]
 > - Make sure you have the following in your packages
-
 > - [glTF importer](https://github.com/atteneder/glTFast) which enables the use of glTF asset files in Unity and allows the use of MRTK Controller Visualization on Quest
-
 > - [KTX Package](https://github.com/atteneder/KtxUnity) which allows users to load KTX or Basis Universal texture files
 
 ## Deploying to Device
