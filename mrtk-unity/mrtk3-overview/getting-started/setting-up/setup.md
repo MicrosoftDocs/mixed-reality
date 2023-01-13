@@ -14,25 +14,7 @@ Welcome to the MRTK3 public preview! Since MRTK3 is a collection of loosely coup
 
 You're not expected to consume every MRTK package. See [which features are useful to you](packages/packages-overview.md) and add only the dependencies that matter.
 
-## Install the tools
-
-Make sure you have all the tools in this link before starting:
-
-> [!div class="nextstepaction"]
-> [Install the tools](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-
-> [!NOTE]
-> Make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) before choosing a Unity version.
-
-## Path 1: Clone the repository and try out the sample Unity Project
-
-The easiest way to acquire and try out MRTK3 is to explore our preconfigured project which contains references to all of the current MRTK3 packages. Clone our project at [our GitHub repo](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3) and check out the `mrtk3` branch. After that, you can simply launch Unity (2020.3.33f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the [sample scenes](scenes.md) in the Editor by using remoting or deploying them to devices.
-
-If you work with Git using the command line, you can clone the repo while specifying the `mrtk3` branch: `git clone --branch mrtk3 https://github.com/microsoft/MixedRealityToolkit-Unity.git`
-
-For information on the sample scenes included in the preview, see [Using and creating scenes](scenes.md).
-
-## Path 2: Add MRTK3 to a new Unity project
+## Setting up a new Unity project with MRTK3
 
 ### 1. Create a new Unity project
 

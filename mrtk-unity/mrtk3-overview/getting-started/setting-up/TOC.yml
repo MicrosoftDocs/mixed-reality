@@ -1,0 +1,6 @@
+- name: Setting up Development Environment
+  href: setting-up-dev-env.md
+- name: Starting from a Template Project
+  href: existing-setup.md
+- name: Starting from a New Project
+  href: setup.md

@@ -1,5 +1,7 @@
 - name: Welcome to MRTK3
   href: index.md
+- name: Getting Started
+  href: getting-started/toc.yml
 - name: Setup
   href: setup.md
 - name: Deployment
