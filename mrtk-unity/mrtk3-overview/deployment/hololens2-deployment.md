@@ -14,7 +14,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, HoloLe
 
 There are two methods for testing MRTK3 Projects on Hololens 2
 
-1. [Holographic Remoting](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/preview-and-debug-your-app?tabs=openxr) for fast iteration and testing
+1. [Holographic Remoting](https://learn.microsoft.com/windows/mixed-reality/develop/unity/preview-and-debug-your-app?tabs=openxr) for fast iteration and testing
 
     2. Runs in editor, requiring no build and deploy
 
