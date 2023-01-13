@@ -10,17 +10,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 
 # Deploy an MRTK3 project to a Quest device
 
-## Testing Methods
-
-There are two methods for testing MRTK3 Projects on Quest
-
-1. [Meta Quest Link](https://www.meta.com/help/quest/articles/headsets-and-accessories/oculus-link/) for fast iteration and testing
-
-    - Runs in editor, requiring no build and deploy
-
-1. Deployment of the Unity project with MRTK after the device setup is complete
-
-    - Requires compilation, but runs smoother and lives on your device
+> [!NOTE]
+    > - We strongly recommend using Meta Quest Link for rapid iteration and testing on Quest Devices, which allows for instant testing on the device without the need for compile + deploy. You can also play in Unity directly with the PC's current OpenXR runtime, including Windows Mixed Reality, SteamVR on OpenXR, or even Quest Link. See our complete list here.
 
 To add MRTK to your project, please refer to the [setup page](../setup.md) and ensure your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto your Quest device**.
 
@@ -56,11 +47,12 @@ These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as
 
 ## Using platform controller models
 
-- Controller models are stored in a format that is not natively supported by Unity.
+> [!NOTE]
+> - Make sure you have the following in your packages
 
-- To use MRTK Controller Visualization on Quest add the [glTF importer](https://github.com/atteneder/glTFast) which enables the use of glTF asset files in Unity
+> - [glTF importer](https://github.com/atteneder/glTFast) which enables the use of glTF asset files in Unity and allows the use of MRTK Controller Visualization on Quest
 
-- Also add the [KTX Package](https://github.com/atteneder/KtxUnity) which allows users to load KTX or Basis Universal texture files
+> - [KTX Package](https://github.com/atteneder/KtxUnity) which allows users to load KTX or Basis Universal texture files
 
 ## Deploying to Device
 
