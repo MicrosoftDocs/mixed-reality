@@ -54,6 +54,9 @@ These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as
 
 1. If you plan on using the native keyboard, please refer to the [keyboard documentation](../../mrtk3-input/packages/input/System-keyboard.md#meta-quest-specific-setup) for a required `AndroidManifest.xml` modification.
 
+    > [!NOTE]
+    > Controller models are stored in a format that is not natively supported by Unity. To use MRTK Controller Visualization on Quest you will need to use a [glTF importer](https://github.com/atteneder/glTFast) which enables the use of glTF asset files in Unity, and the [KTX Package](https://github.com/atteneder/KtxUnity) which allows users to load KTX or Basis Universal texture files
+
 ## Deploying to Device
 
 1. **Do not** follow the Configure Settings instructions on Oculus's documentation page. Their instructions require the use of the Oculus Integration SDK, and uses the Oculus XR Plug-in rather than the OpenXR Plug-in.
