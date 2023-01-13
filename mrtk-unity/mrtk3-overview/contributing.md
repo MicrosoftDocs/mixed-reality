@@ -12,13 +12,13 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, open s
 
 MRTK3 is an open-source project under the MIT license. Community contributions are very welcome and appreciated, both for new features as well as bug fixes.
 
-Contributing to MRTK3 is easy. We recommend using the `MRTKDevTemplate` Unity project as a convenient development testbed, as it already includes all of the MRTK3 packages as local on-disk dependencies. [See the documentation on the MRTKDevTemplate project for more details on sample scenes and local on-disk dependencies.](scenes.md)
+Contributing to MRTK3 is easy. We recommend using the `MRTKDevTemplate` Unity project as a convenient development testbed, as it already includes all of the MRTK3 packages as local on-disk dependencies. [See the documentation on the MRTKDevTemplate project for more details on sample scenes and local on-disk dependencies.](getting-started/exploring-features/mrtk3-sample-scenes.md)
 
 ## Contribution guide
 
 1. Fork the MRTK repository to your GitHub account.
 
-2. Clone your forked MRTK repository by [following the Path 1 example in the setup documentation.](setup.md) Ensure you have the required tooling, especially the correct Unity version. The command below ensures you're on the right branch (`mrtk3`).
+2. Clone your forked MRTK repository by following our guide on [starting from a template project](getting-started/setting-up/setup-new-project.md) Ensure you have the required tooling, especially the correct Unity version. The command below ensures you're on the right branch (`mrtk3`).
 
 ```
 git clone --branch mrtk3 YOUR_GIT_URL

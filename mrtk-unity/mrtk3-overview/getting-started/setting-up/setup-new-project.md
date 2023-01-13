@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initia
 
 Since MRTK3 is a collection of loosely coupled packages, consuming MRTK3 is done differently than the way you consume MRTK 2.x. We don't ship MRTK as a Unity project, so you have to manually add MRTK3 packages to your project in order to consume them.
 
-You're not expected to consume every MRTK package. See [which features are useful to you](packages/packages-overview.md) and add only the dependencies that matter.
+You're not expected to consume every MRTK package. See [which features are useful to you](../../packages/packages-overview.md) and add only the dependencies that matter.
 
 ## Setting up a new Unity project with MRTK3
 
@@ -26,7 +26,7 @@ There are a handful of packages that MRTK3 uses that aren't part of this preview
 
 **Since MRTK3 is in early preview release, you need to check 'Show preview releases' under Settings > Feature tab.** 
 
-![MR Feature Tool - Settings](images/mrtk3-featuretool-settings.png)
+![MR Feature Tool - Settings](../../images/mrtk3-featuretool-settings.png)
 
 - **Platform Support → Mixed Reality OpenXR Plugin**
 - **Spatial Audio → Microsoft Spatializer** (Optional)
@@ -39,7 +39,7 @@ For MRTK3 packages, we highly recommend the following two packages to help you g
 These two packages, along with their dependencies (automatically added by the Feature Tool), will enable you to explore most of our UX offerings and create projects ready to be deployed to various XR devices. You can always come back to the Feature Tool and add more packages to your project later.
 
 > [!NOTE]
-> For more information on MRTK3 packages, see the [package overview page](packages/packages-overview.md).
+> For more information on MRTK3 packages, see the [package overview page](../../packages/packages-overview.md).
 
 When you're finished selecting packages, click **Get features** and then follow the instructions in the Mixed Reality Feature Tool to import the selected packages into your Unity project.
 
@@ -62,7 +62,7 @@ Once imported, MRTK3 requires a profile to be set for the standalone target plat
    >[!NOTE]
    > Not all of the MRTK subsystems are shown in the screenshot below. The MRTK subsystems that you see may be different depending on the MRTK3 packages you've added to your project.
 
-   ![assign the default MRTK profile](images/mrtk-profile.png)
+   ![assign the default MRTK profile](../../images/mrtk-profile.png)
 1. Switch to the tabs of other build target(s) you want to use (for example, UWP, Android) and check to see if the profile is assigned. If not, repeat the previous step on the current tab.
 
 ### 5. Configure OpenXR-related settings
@@ -70,7 +70,7 @@ Once imported, MRTK3 requires a profile to be set for the standalone target plat
 Once imported, MRTK3 requires some configuration on OpenXR if you're targeting an XR device such as HoloLens 2 or Quest.
 
 > [!NOTE]
-> The following instructions apply to HoloLens 2 or WMR headsets. If you're targeting Quest, refer to the instructions on the [Quest deployment page](deployment/quest-deployment.md#deployment-prerequisites).
+> The following instructions apply to HoloLens 2 or WMR headsets. If you're targeting Quest, refer to the instructions on the [Quest deployment page](../../test-and-experience/quest-deployment.md#deployment-prerequisites).
 
 1. Navigate to **Edit > Project Settings**.
 
@@ -81,11 +81,11 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
 
    For standalone:
 
-   [![Standalone XR Plug-in Management window](images/standalone-xr-plug-in-management.png)](images/standalone-xr-plug-in-management.png)
+   [![Standalone XR Plug-in Management window](../../images/standalone-xr-plug-in-management.png)](../../images/standalone-xr-plug-in-management.png)
 
    For UWP:
 
-   [![UWP XR Plug-in Management window](images/uwp-xr-plug-in-management.png)](images/uwp-xr-plug-in-management.png)
+   [![UWP XR Plug-in Management window](../../images/uwp-xr-plug-in-management.png)](../../images/uwp-xr-plug-in-management.png)
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and add the following three profiles for UWP and Standalone:
 
@@ -98,11 +98,11 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
 
    For standalone:
 
-   [![Standalone OpenXR](images/standalone-openxr.png)](images/standalone-openxr.png)
+   [![Standalone OpenXR](../../images/standalone-openxr.png)](../../images/standalone-openxr.png)
 
    For UWP:
 
-   [![UWP OpenXR](images/uwp-openxr.png)](images/uwp-openxr.png)
+   [![UWP OpenXR](../../images/uwp-openxr.png)](../../images/uwp-openxr.png)
 
 1. For HoloLens 2, we recommend that you set **Depth Submission Mode** to 16-bit in the settings above. For immersive headsets, you can use 24-bit depth submission. See the [Microsoft development docs for Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) for more info.
 

@@ -24,7 +24,7 @@ Within `MRTKDevTemplate`, you can find all of our sample scenes. Most of the sam
 
 This sample scene offers a wide variety of interaction examples. Despite the name, this scene is a good example of cross-platform input, including hand tracking, controller input, and mouse input. Examples of several different UI controls and interactables are present, including the volumetric UI systems.
 
-![Hand Menu](images/hand-interaction-examples.png)
+![Hand Menu](../../images/hand-interaction-examples.png)
 
 **BoundsControlExamples**
 
@@ -32,7 +32,7 @@ Various configurations of BoundsControl, showing both flattened and 3D bounds.
 
 **CanvasExample**
 
-Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UX Components overview.](../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
+Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UX Components overview.](../../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
 
 **DialogExample**
 
@@ -112,11 +112,11 @@ Demonstration of using Data Binding and Theming to bind to data sources.
 1. Add the **MRTK XR Rig** prefab.
 1. Remove the **Main Camera** Game Object because  **MRTK XR Rig** already contains a camera.
 
-   ![MRTK XR rig screenshot](images/mrtk-xr-rig.png)
+   ![MRTK XR rig screenshot](../../images/mrtk-xr-rig.png)
 
 1. Add the MRTK Input Simulator prefab to your scene.
 
     > [!Note]
     > This step is optional, but required by in-editor simulations.
     
-    ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
+    ![MRTK input simulator hierarchy pane](../../images/mrtk-input-simulator.png)
