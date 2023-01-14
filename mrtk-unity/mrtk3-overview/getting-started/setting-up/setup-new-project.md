@@ -70,7 +70,7 @@ Once imported, MRTK3 requires a profile to be set for the standalone target plat
 Once imported, MRTK3 requires some configuration on OpenXR if you're targeting an XR device such as HoloLens 2 or Quest.
 
 > [!NOTE]
-> The following instructions apply to HoloLens 2 or WMR headsets. If you're targeting Quest, refer to the instructions on the [Quest deployment page](../../test-and-experience/quest-deployment.md#deployment-prerequisites).
+> The following instructions apply to HoloLens 2 or WMR headsets. If you're targeting Quest, refer to the instructions on the [Quest deployment page](../../test-and-deploy/quest-deployment.md#deployment-prerequisites).
 
 1. Navigate to **Edit > Project Settings**.
 
@@ -108,7 +108,7 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
 
 ### 6. Congratulations, the project setup is now finished!
 
-Proceed to [creating a new MRTK3 scene](../exploring-features/mrtk3-sample-scenes.md#creating-a-new-scene-with-mrtk3).
+Proceed to [creating a new MRTK3 scene](../setting-up/setup-new-scene).
 
 ## Next steps
 

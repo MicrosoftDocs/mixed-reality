@@ -14,11 +14,11 @@ Welcome to the MRTK3 public preview! This guide serves as a starting point for u
 
 ### Where should I go next?
 
-Exploring MRTK features: Learn about MRTK's features through our tutorial project and explore our example scenes.
+[Exploring MRTK features](exploring-features/mrtk3-tutorials.md): Learn about MRTK's features through our tutorial project and explore our example scenes.
 
-Set up an MRTK Project: Learn how to create an AR/VR ready Unity project using MRTK
+[Set up an MRTK Project](setting-up/setup-dev-env.md): Learn how to create an AR/VR ready Unity project using MRTK
 
-Experiencing your Project on Device: Learn how to launch and experience your application on your device.
+[Test and Deploy your app](../test-and-deploy/overview.md): Learn how to test and deploy your application on a device.
 
 ## Software Requirements
 

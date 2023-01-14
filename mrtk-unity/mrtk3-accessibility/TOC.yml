@@ -3,7 +3,7 @@
 - name: Getting Started
   href: ../mrtk3-overview/getting-started/toc.yml
 - name: Test and Experience
-  href: ../mrtk3-overview/test-and-experience/toc.yml
+  href: ../mrtk3-overview/test-and-deploy/toc.yml
 - name: Packages
   href: packages/toc.yml
 - name: Architecture

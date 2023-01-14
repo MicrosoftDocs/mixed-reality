@@ -19,3 +19,5 @@ The [MRTK3 Aquarium project](/windows/mixed-reality/develop/unity/mrtk3-aquarium
 ### [Zappy's Playground](/windows/mixed-reality/develop/unity/playground-tutorial)
 
 [Zappy's Playground](/windows/mixed-reality/develop/unity/playground-tutorial) is a cross-platform developer sample project that showcases how to develop intuitive and comprehensive end-to-end experiences for mixed reality. It makes use of many advanced features present in MRTK3, such as Gaze Interaction, [Hand Menus](/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents/packages/uxcomponents/hand-menu), and [Spatial Audio](/windows/mixed-reality/mrtk-unity/mrtk3-audio/packages/audio/overview).
+
+This sample is currently out of date and will be brought up to the current MRTK3 developments in the near future.

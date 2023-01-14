@@ -2,8 +2,8 @@
   href: index.md
 - name: Getting Started
   href: getting-started/toc.yml
-- name: Test and Experience
-  href: test-and-experience/toc.yml
+- name: Test and Deploy
+  href: test-and-deploy/toc.yml
 - name: Packages
   href: packages/toc.yml
 - name: Architecture
