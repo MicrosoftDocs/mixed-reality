@@ -1,6 +1,6 @@
 ---
-title: Setting up the Development Environment
-description: Setting up the Development Environment
+title: Creating a new scene with MRTK3
+description: Creating a new scene with MRTK3
 author: RogPodge
 ms.author: roliu
 ms.date: 1/13/2023
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK, Quest, Oculus, Meta
 ---
 
-## Creating a new scene with MRTK3
+# Creating a new scene with MRTK3
 
 The following will walk through through creating a AR/VR ready scene using MRTK3.
 
