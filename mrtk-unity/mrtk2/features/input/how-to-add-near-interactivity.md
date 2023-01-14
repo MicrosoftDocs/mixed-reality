@@ -25,7 +25,7 @@ Three key steps are required to listen for touch and/or grab input events on a p
 
     ![Grab Pointer Profile Example](../images/input/Pointers/GrabPointer_MRTKProfile.png)
 
-    The default grab pointer queries for nearby objects in a cone around the grab point to match the default Hololens 2 interface.
+    The default grab pointer queries for nearby objects in a cone around the grab point to match the default HoloLens 2 interface.
 
     ![Conical Grab Pointer](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
 
