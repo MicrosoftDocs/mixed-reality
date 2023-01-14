@@ -1,14 +1,14 @@
 ---
-title: Using and creating scenes in MRTK3
+title: Exploring MRTK3 sample scenes
 description: Using and creating scenes in MRTK3
 author: MaxWang-MS
 ms.author: wangmax
-ms.date: 6/6/2022
+ms.date: 1/3/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes, example scenes
 ---
 
-# Using and creating scenes in MRTK3
+# Exploring MRTK3 sample scenes
 
 Unlike MRTK v2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consists of a loosely coupled collection of individual UPM packages distributed through the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), as well as through our official Git repository.
 
@@ -24,7 +24,7 @@ Within `MRTKDevTemplate`, you can find all of our sample scenes. Most of the sam
 
 This sample scene offers a wide variety of interaction examples. Despite the name, this scene is a good example of cross-platform input, including hand tracking, controller input, and mouse input. Examples of several different UI controls and interactables are present, including the volumetric UI systems.
 
-![Hand Menu](images/hand-interaction-examples.png)
+![Hand Menu](../../images/hand-interaction-examples.png)
 
 **BoundsControlExamples**
 
@@ -32,7 +32,7 @@ Various configurations of BoundsControl, showing both flattened and 3D bounds.
 
 **CanvasExample**
 
-Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UX Components overview.](../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
+Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UX Components overview.](../../../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
 
 **DialogExample**
 
@@ -105,18 +105,3 @@ Example of using Data Binding and Theming to control the look of UX Core compone
 **Assets\Data Binding Example\Scenes\DataBindingExamples**
 
 Demonstration of using Data Binding and Theming to bind to data sources.
-
-## Creating a new Scene with MRTK3
-
-1. Create a new Unity scene.
-1. Add the **MRTK XR Rig** prefab.
-1. Remove the **Main Camera** Game Object because  **MRTK XR Rig** already contains a camera.
-
-   ![MRTK XR rig screenshot](images/mrtk-xr-rig.png)
-
-1. Add the MRTK Input Simulator prefab to your scene.
-
-    > [!Note]
-    > This step is optional, but required by in-editor simulations.
-    
-    ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
