@@ -19,11 +19,11 @@ Before setting up a Unity Project with MRTK3, make sure you have the following p
 
 If your target platform is a Hololens device, your unity installation will need to include the Universal Windows Platform Support Module
 
-![UWP Module Installation](../images/setting-up/MRTK-Development-Setup-UWPModule.png)
+![UWP Module Installation](../../images/setting-up/MRTK-Development-Setup-UWPModule.png)
 
 If your target platform is a Quest device, your unity installation will need to include the Android Build Support Module and its sub-modules. More more information specifics, see the [Oculus Developer documentation](https://developer.oculus.com/documentation/unity/book-unity-gsg/#install-unity-editor)
 
-![Android Module Installation](../images/setting-up/MRTK-Development-Setup-AndroidModule.png)
+![Android Module Installation](../../images/setting-up/MRTK-Development-Setup-AndroidModule.png)
 
 ## Next steps
 

@@ -2454,6 +2454,16 @@
 			"source_path": "mrtk-unity/mrtk3-overview/deployment/quest-deployment.md",
 			"redirect_url": "mrtk-unity/mrtk3-overview/test-and-experience/quest-deployment.md",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mrtk-unity/mrtk3-overview/scenes.md",
+			"redirect_url": "mrtk-unity/mrtk3-overview/getting-started/exploring-features/mrtk3-sample-scenes.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mrtk-unity/mrtk3-overview/setup.md",
+			"redirect_url": "mrtk-unity/mrtk3-overview/getting-started/setting-up/setup-new-project.md",
+			"redirect_document_id": false
 		}
 	]
 }

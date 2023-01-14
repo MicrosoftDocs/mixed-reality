@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, overview, setup, deployment, remoting, new project, getting started, tutorial, introduction, intro
 ---
 
-## Testing and experiencing your application
+# Testing and experiencing overview
 
 Now that you have a Unity project with MRTK3, there are several means to test and experience your application.
 
@@ -16,7 +16,7 @@ Now that you have a Unity project with MRTK3, there are several means to test an
 
 Compiling and deploying your app can take a significant amount of time, so we recommend a variety of instant iteration/preview solutions while developing your application.
 
-- [In-editor input simulation](../mrtk3-input/packages/input/input-simulation.md)
+- [In-editor input simulation](../../mrtk3-input/packages/input/input-simulation.md)
     - Easily preview your app without any XR device attached. Control the user's head, hands, and hand gestures with traditional WASD controls.
 
 - [Stream to a device](streaming.md)
@@ -26,7 +26,7 @@ Compiling and deploying your app can take a significant amount of time, so we re
 
 The following guides will walk you through building and running your application on a device.
 
--[HoloLens2](hololens2-deployment.md)
--[Quest Devices](quest-deployement.md)
+- [HoloLens2](hololens2-deployment.md)
+- [Quest Devices](quest-deployment.md)
 
 If you've deployed a build to your target device of choice, you can debug the build as it runs on device with [Managed debugging](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).

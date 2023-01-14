@@ -108,7 +108,7 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
 
 ### 6. Congratulations, the project setup is now finished!
 
-Proceed to [creating a new MRTK3 scene](scenes.md#creating-a-new-scene-with-mrtk3).
+Proceed to [creating a new MRTK3 scene](../exploring-features/mrtk3-sample-scenes.md#creating-a-new-scene-with-mrtk3).
 
 ## Next steps
 
