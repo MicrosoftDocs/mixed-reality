@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, HoloLe
 
 # Deploy an MRTK3 project to HoloLens 2
 > [!NOTE]
-> - We strongly recommend using Holographic remoting for rapid iteration and testing on HoloLens 2, which allows for instant testing on the device without the need for compile + deploy. You can also play in Unity directly with the PC's current OpenXR runtime, including Windows Mixed Reality, SteamVR on OpenXR, or even Quest Link. See our complete list here.
+> - We strongly recommend using [Holographic remoting](LINK) for rapid iteration and testing on HoloLens 2, which allows for instant testing on the device without the need for compile + deploy.
 
 ## Deployment Pre-requisites
 
