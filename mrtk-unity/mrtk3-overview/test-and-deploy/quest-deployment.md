@@ -13,7 +13,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 This page describes how to deploy your Unity Project with MRTK3 onto a Quest device.
 
 > [!NOTE]
-> - We strongly recommend using [Meta Quest Link](LINK) for rapid iteration and testing on Quest Devices, which allows for instant testing on the device without the need for compile + deploy.
+> - We strongly recommend using [Meta Quest Link](https://www.meta.com/help/quest/articles/headsets-and-accessories/oculus-link/) for rapid iteration and testing on Quest Devices, which allows for instant testing on the device without the need for compile + deploy.
 
 ## Deployment Prerequisites
 These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as we don't recommend using OculusXR due to underlying compatibility issues.
