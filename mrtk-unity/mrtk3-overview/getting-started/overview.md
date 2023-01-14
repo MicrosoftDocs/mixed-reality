@@ -1,6 +1,6 @@
 ---
 title: Getting Started with MRTK3
-description: Overview of the 
+description: Overview of how to get started with MRTK3
 author: RogPodge
 ms.author: roliu
 ms.date: 1/12/2023
