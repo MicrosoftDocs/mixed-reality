@@ -9,6 +9,9 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, HoloLe
 ---
 
 # Deploy an MRTK3 project to HoloLens 2
+
+This page describes how to deploy your Unity Project with MRTK3 onto a HoloLens 2.
+
 > [!NOTE]
 > - We strongly recommend using [Holographic remoting](LINK) for rapid iteration and testing on HoloLens 2, which allows for instant testing on the device without the need for compile + deploy.
 
