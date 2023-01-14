@@ -14,7 +14,7 @@ Several tutorials have been created to help developers learn about MRTK3's vario
 
 ### [MRTK3 Aquarium](/windows/mixed-reality/develop/unity/mrtk3-aquarium): the in-editor tutorial
 
-The [MRTK3 Aquarium project](/windows/mixed-reality/develop/unity/mrtk3-aquarium) provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habitat. Using MRTK3 features, you'll add interactivity to the aquarium which will enable you to create an aquarium of your very own!
+The [MRTK3 Aquarium project](/windows/mixed-reality/develop/unity/mrtk3-aquarium) provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habitat. Using MRTK3 features, you'll add interactivity to the aquarium, enabling you to create an aquarium of your very own!
 
 ### [Zappy's Playground](/windows/mixed-reality/develop/unity/playground-tutorial)
 
