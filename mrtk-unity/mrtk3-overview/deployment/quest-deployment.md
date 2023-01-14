@@ -10,6 +10,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 
 # Deploy an MRTK3 project to a Quest device
 
+This page describes how to deploy your Unity Project with MRTK3 onto a Quest device.
+
 > [!NOTE]
 > - We strongly recommend using [Meta Quest Link](LINK) for rapid iteration and testing on Quest Devices, which allows for instant testing on the device without the need for compile + deploy.
 
