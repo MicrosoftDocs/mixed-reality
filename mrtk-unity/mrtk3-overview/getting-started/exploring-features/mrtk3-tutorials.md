@@ -5,7 +5,7 @@ author: RogPodge
 ms.author: roliu
 ms.date: 1/13/2023
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes, example scenes
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, tutorial, in editor tutorial
 ---
 
 # Exploring MRTK3 tutorials
