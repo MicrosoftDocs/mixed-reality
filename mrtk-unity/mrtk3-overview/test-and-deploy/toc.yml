@@ -1,3 +1,7 @@
+- name: Overview
+  href: overview.md
+- name: Testing by streaming to a device
+  href: streaming.md
 - name: Deploying to HoloLens 2
   href: hololens2-deployment.md
 - name: Deploying to Quest

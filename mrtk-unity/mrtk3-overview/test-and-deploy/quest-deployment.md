@@ -13,9 +13,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 This page describes how to deploy your Unity Project with MRTK3 onto a Quest device.
 
 > [!NOTE]
-> - We strongly recommend using [Meta Quest Link](LINK) for rapid iteration and testing on Quest Devices, which allows for instant testing on the device without the need for compile + deploy.
-
-To add MRTK to your project, please refer to the [setup page](../setup.md) and ensure your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto your Quest device**. You may ignore project settings instructions regarding the UWP platform.
+> - We strongly recommend using [Meta Quest Link](https://www.meta.com/help/quest/articles/headsets-and-accessories/oculus-link/) for rapid iteration and testing on Quest Devices, which allows for instant testing on the device without the need for compile + deploy.
 
 ## Deployment Prerequisites
 These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as we don't recommend using OculusXR due to underlying compatibility issues.
@@ -23,6 +21,11 @@ These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as
 1. Ensure that your project is ready to deploy on the Quest Device by following [these steps](https://developer.oculus.com/documentation/unity/book-unity-gsg/).
 
 1. Ensure that [developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/#enable-developer-mode) is enabled on your device (you may need to [join a developer organization](https://developer.oculus.com/documentation/native/android/mobile-device-setup/#joining-or-creating-an-organization) first). Installing the Oculus ADB Drivers is optional.
+
+1. Add MRTK to your project and ensure that your [project settings](../getting-started/setting-up/setup-new-project.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto your Quest device**. You may ignore project settings instructions regarding the UWP platform.
+
+> [!NOTE]
+> - If starting from our [template project](../getting-started/setting-up/setup-template.md), these project settings should already be configured for you.
 
 1. Navigate to **File > Build Settings**.
 
@@ -39,7 +42,7 @@ These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > OpenXR Feature Groups** and ensure the following are checked under **All Features**.
 
     > [!NOTE]
-    > If you don't see **Hand Tracking** or **Motion Controller Model** under the **OpenXR Feature Groups** panel, please refer to Configure OpenXR-related settings section of [project settings](../setup.md#5-configure-openxr-related-settings).
+    > If you don't see **Hand Tracking** or **Motion Controller Model** under the **OpenXR Feature Groups** panel, please refer to Configure OpenXR-related settings section of [project settings](../getting-started/setting-up/setup-new-project.md#5-configure-openxr-related-settings).
 
     ![Meta Quest OpenXR](../images/oculus-openxr.png)
 

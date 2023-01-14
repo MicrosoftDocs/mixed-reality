@@ -58,7 +58,7 @@ We hear your excitement, and we want to give you early access to our newest feat
 
 **Long Term Support**
 
-* Minimum requirements: OpenXR, Unity 2020.3 LTS, Unity’s XR Interaction Toolkit.
+* Minimum requirements: OpenXR, Unity 2021.3 LTS, Unity’s XR Interaction Toolkit.
 
 ### What should this public preview be used for?
 
@@ -73,21 +73,6 @@ We hear your excitement, and we want to give you early access to our newest feat
 * Migrating any existing projects from 2.x to MRTK3. The current API instability could make a migration effort frustrating.
 * Writing production-ready code that expects a stable API.
 * Evaluate performance for your applications (full release may have significant performance differences compared to the codebase today).
-
-### Check out [MRTK3 Aquarium](/windows/mixed-reality/develop/unity/mrtk3-aquarium), the in-editor tutorial
-
-The [MRTK3 Aquarium project](/windows/mixed-reality/develop/unity/mrtk3-aquarium) provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habitat. Using MRTK3 features, you'll add interactivity to the aquarium which will enable you to create an aquarium of your very own!
-
-## Software Requirements
-
-To acquire and use MRTK3, the following software tools are required.
-
-| Software | Version | Notes
-| --- | --- | --- |
-| [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
-| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, **make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues)** |
-| [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
-| Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
 
 ## Versioning
 
