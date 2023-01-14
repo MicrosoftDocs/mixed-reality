@@ -1,5 +1,5 @@
 ---
-title: MRTK3 Feature Tutorials
+title: MRTK3 Tutorials
 description: Resource for our MRTK3 tutorials
 author: RogPodge
 ms.author: roliu
