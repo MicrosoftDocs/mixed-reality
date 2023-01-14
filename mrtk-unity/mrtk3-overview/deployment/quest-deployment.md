@@ -62,4 +62,4 @@ These steps are based around OpenXR as your runtime (i.e. XR plugin provider) as
 > [!NOTE]
 > **Do not** follow the Configure Settings instructions on Oculus's documentation page. Their instructions require the  use of the Oculus Integration SDK, and uses the Oculus XR plugin rather than the OpenXR plugin.
 
-1. After you have the project configured, proceed to [Generate Build](https://developer.oculus.com/documentation/unity/unity-build/#generate-build). We recommend that you select **Build and Run**. This option lets Unity deploy your project directly to Meta Quest.
+1. After you have the project configured, proceed to [Generate Build](https://developer.oculus.com/documentation/unity/unity-build/#generate-build). We recommend that you select **Build and Run**. This option lets Unity deploy your project directly to your Quest Device.
