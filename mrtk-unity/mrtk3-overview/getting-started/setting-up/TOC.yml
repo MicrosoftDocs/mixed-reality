@@ -4,3 +4,5 @@
   href: setup-template.md
 - name: Starting from a new project
   href: setup-new-project.md
+- name: Setting up a new scene
+  href: setup-new-scene.md
