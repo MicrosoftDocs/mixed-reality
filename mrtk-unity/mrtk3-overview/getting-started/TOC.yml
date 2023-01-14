@@ -4,5 +4,3 @@
   href: exploring-features/toc.yml
 - name: Set up an MRTK Project
   href: setting-up/toc.yml
-- name: Experience your project on device
-  href: experience/toc.yml
