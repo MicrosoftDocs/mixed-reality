@@ -2,7 +2,7 @@
   href: ../mrtk3-overview/index.md
 - name: Getting Started
   href: ../mrtk3-overview/getting-started/toc.yml
-- name: Test and Experience
+- name: Test and Deploy
   href: ../mrtk3-overview/test-and-deploy/toc.yml
 - name: Packages
   href: packages/toc.yml
