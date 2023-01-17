@@ -178,7 +178,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/academy.md",
-			"redirect_url": "/windows/mixed-reality/tutorials#mixed-reality-academy",
+			"redirect_url": "/windows/mixed-reality/develop/unity/tutorials",
 			"redirect_document_id": false
 		},
 		{
