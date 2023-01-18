@@ -3,7 +3,7 @@ title: Coordinate systems
 description: The spatial coordinate systems used to build seated, standing, room-scale, and world-scale mixed reality experiences.
 author: thetuvix
 ms.author: vinnietieto
-ms.date: 12/20/2022
+ms.date: 01/18/2023
 ms.topic: article
 keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, stationary, attached, stage, anchor, spatial anchor, world-locked, world-locking, body-locked, body-locking, bounds, persistence, sharing, tracking loss, cloud spatial anchor, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
@@ -111,7 +111,7 @@ In general, Cartesian coordinate systems are referred to as "right-handed" or "l
 Spatial coordinate systems on Windows (and therefore, Windows Mixed Reality) are always right-handed.
 
 > [!NOTES]
-> - Unity uses the left-handed coordinate system.
+> - Unity and Unreal use the left-handed coordinate system.
 > - Although left-handed and right-handed coordinates are the most common systems, there are other coordinate systems used in 3D software. For example, it's not unusual for 3D modeling applications to use a coordinate system in which the Y axis points toward or away from the viewer and the Z axis points up.
 
 ## Building an orientation-only or seated-scale experience
