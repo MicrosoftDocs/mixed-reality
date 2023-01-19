@@ -3,7 +3,7 @@ title: Known issues in Unity versions and packages
 description: Stay up to date on the known issues in Unity versions and packages.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 03/30/2022
+ms.date: 01/13/2023
 ms.topic: article
 
 keywords: mixed reality, unity, versions, issues, bugs, packages
@@ -22,12 +22,13 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Mitigation&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
-| HL2 app using URP has worse render performance in Unity 2021 compared to Unity 2020. | **Investigating:**<br />2022/08/29 | Unity 2021.\*.\* <br/> with URP 12.\*.\* | Either avoid URP in Unity&nbsp;2021 or use URP in Unity&nbsp;2020.LTS |
+| HL2 app using URP has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. | **Investigating:**<br />2023/01/04 | Unity 2022.\*.\* <br/> with URP 13.\*.\* | Either avoid URP in Unity 2022, avoid using the default URP materials or use URP in Unity 2021.3.14+ |
 
 ## Resolved blocking issues
 
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Versions&nbsp;with&nbsp;fixes&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
+| HL2 app using URP has worse render performance in Unity 2021 compared to Unity 2020. | **Fixed:**<br />2023/01/13 | Unity 2021.\*.\* <br/> with URP 12.\*.\* | Use Unity 2021.3.14f1 and later |
 | Building application via IL2CPP in Unity fails due to [compilation errors](https://issuetracker.unity3d.com/issues/il2cpp-windows-builds-fails-when-using-vs-2022-17-dot-4-0-preview). For more information on the root cause, refer to the discussion [here](https://developercommunity.visualstudio.com/t/stdext::hash_compare-has-been-removed-in/10182319). | **Fixed:**<br />2022/11/10 | Visual Studio&nbsp;2022<br />version 17.4+ with<br />Unity versions <<br />2020.3.42f1, 2021.3.14f1, 2022.1.23f1, 2022.2.0b16 and 2023.1.0a19 | Use Visual Studio&nbsp;2019 or Unity version >= 2020.3.42f1, 2021.3.14f1, 2022.1.23f1, 2022.2.0b16 or 2023.1.0a19 |
 | Holographic App Remoting remoting app using Unity's OpenXR plugin 1.5.1 fails to connect to remoting player if the hosting PC doesn't have other VR headsets attached. | **Fixed:**<br />2022/10/04 | Unity 2020 or Unity 2021 <br/> with Unity&nbsp;OpenXR&nbsp;plugin&nbsp;=<br/>1.5.0, 1.5.1 and 1.5.2 | If using Holographic App Remoting, use Unity&nbsp;OpenXR&nbsp;plugin&nbsp;<= 1.4.3&nbsp;or&nbsp;>=&nbsp;1.5.3|
 | ARM32 UWP Unity apps built in release mode using Visual Studio&nbsp;2022 will [hit an internal compiler error in Visual Studio](https://developercommunity.visualstudio.com/t/uwp-arm-32-build-fails-with-fatal-error-c1001-inte/1697106#T-N10059007). | **Fixed:**<br />2022/08/09 | Visual Studio&nbsp;2022<br />version 17.1.1+ | Use Visual Studio&nbsp;2019 or Visual&nbsp;Studio&nbsp;2022&nbsp;version >= 17.3.* |
