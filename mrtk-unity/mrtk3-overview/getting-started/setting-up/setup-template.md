@@ -18,4 +18,4 @@ For information on the sample scenes included in the preview, see [Exploring MRT
 
 ## Next steps
 
-Once you've finished setting up your Unity project, learn how to (experience your application on a device)[../../experience/overview.md]
+Once you've finished setting up your Unity project, learn how to [experience your application on a device](../overview.md)
