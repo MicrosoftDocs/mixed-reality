@@ -16,7 +16,7 @@ Getting started with <a href="/windows/mixed-reality" target="_blank" title="Mix
 
 [!INCLUDE[](includes/tabs-unreal-features.md)]
 
-If you're new to Unreal development, don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">tutorial series</a> and look for assets in the Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a>. You can also find support in the mixed reality <a href="https://forums.unrealengine.com/" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in today's mixed reality market.
+If you're new to Unreal development, don't jump in blind. Explore the <a href="https://docs.unrealengine.com/5.1/en-US/understanding-the-basics-of-unreal-engine" target="_blank">Unreal resources </a> and look for assets in the Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a>. You can also find support in the mixed reality <a href="https://forums.unrealengine.com/" target="_blank">forums</a> and <a href="https://docs.unrealengine.com/5.1/en-US/understanding-the-basics-of-unreal-engine" target="_blank">Unreal documentation</a>. These resources are your links to the community of builders and problem solvers in today's mixed reality market.
 
 > [!IMPORTANT]
 > Take a look at our **[porting guide](unreal-reverb-g2-controllers.md)** if you have an existing Unreal project that you want to bring over to immersive headsets such as the Reverb G2.
