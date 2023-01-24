@@ -195,7 +195,7 @@ For direct hand interactions, proper audio feedback can dramatically improve the
 :::row:::
     :::column:::
         ### Voice commanding<br>
-        For any interactable objects, it's important to support alternative interaction options. By default, we recommend that [voice commanding](../out-of-scope/voice-design.md) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.<br>
+        For any interactable objects, it's important to support alternative interaction options. By default, we recommend that [voice commanding](/windows/mixed-reality/design/voice-input) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.<br>
         <br>
         *Image: Tooltip for the voice command*
     :::column-end:::
