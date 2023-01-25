@@ -174,4 +174,4 @@ To get started developing, check out our information on
 * [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Gaze and dwell](gaze-and-dwell.md)
-* [Voice input](../out-of-scope/voice-design.md)
+* [Voice input](/windows/mixed-reality/design/voice-input)

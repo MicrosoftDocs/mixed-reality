@@ -71,6 +71,6 @@ For cloud spatial anchors, your storage can scale as your scenario requires. You
 * [Coordinate systems](coordinate-systems.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Persistence in Unity](../develop/unity/persistence-in-unity.md)
+* [Persistence in Unity](/windows/mixed-reality/develop/unity/spatial-anchors-in-unity)
 * [Spatial anchors in DirectX](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [Case study - Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

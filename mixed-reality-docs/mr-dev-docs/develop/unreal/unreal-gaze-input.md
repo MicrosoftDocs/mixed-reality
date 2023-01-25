@@ -115,4 +115,4 @@ You can always go back to the [Unreal development checkpoints](unreal-developmen
 * [Calibration](/hololens/hololens-calibration)
 * [Comfort](../../design/comfort.md)
 * [Gaze and commit](../../design/gaze-and-commit.md)
-* [Voice input](../../out-of-scope/voice-design.md)
+* [Voice input](/windows/mixed-reality/design/voice-input)
