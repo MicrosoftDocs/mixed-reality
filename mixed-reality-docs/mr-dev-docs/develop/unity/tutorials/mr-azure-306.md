@@ -254,7 +254,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
 25. Your video is now published and can be streamed by using its endpoint. Further down the page is a **Files** section. This is where the different encoded versions of your video will be. Select the highest possible resolution one (in the image below it is the 1920x960 file), and then a panel to the right will appear. There you will find a **Download URL**. Copy this **Endpoint** as you will use it later in your code.
 
-    ![Screenshot of the Microsoft Azure files section.](images/AzureLabs-Lab6-26.png)    
+    ![Screenshot of the Microsoft Azure Files section.](images/AzureLabs-Lab6-26.png)    
 
     ![Screenshot of the asset information page.](images/AzureLabs-Lab6-27.png)
 
