@@ -26,16 +26,15 @@ For new applications, we recommend the *Microsoft Spatializer*.
 
 ## Enable spatialization
 
-Use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest) to install _Microsoft.SpatialAudio.Spatializer.Unity_ and choose **Microsoft Spatializer** in your project's audio settings. Then:
+Use the [Mixed Reality Feature Tool](https://www.microsoft.com/en-us/download/details.aspx?id=102778) to download the latest version of the _Microsoft Spatializer_ feature.  Then follow the [step-by-step instructions](https://github.com/microsoft/spatialaudio-unity/blob/develop/Documentation/QuickStart.md#how-to-add-the-plugin-to-unity-projects) for enabling the plugin in your Unity project.
+
+Once the spatialization and mixer plugins are in place, to enable spatial audio for a sound source:
 * Attach an **Audio Source** to an object in the hierarchy
 * Check the **Enable spatialization** checkbox
 * Move the **Spatial Blend** slider to '1'
-* Ensure spatial audio is enabled on your developer workstation. 
-    * Right-click on the volume icon in the task bar and making sure that Spatial Sound is set to something other than "off". 
-    * Choose **Windows Sonic for Headphones** to get the best representation of what you'll hear on HoloLens 2.
 
 >[!NOTE]
->If you get an error in Unity about not being able to load plugin Microsoft.SpatialAudio.Spatializer.Unity because one of its dependencies is missing, check that you have the latest version of the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installed on your PC.
+>If you get an error in Unity about not being able to load Microsoft Spatializer plugin because one of its dependencies is missing, check that you have the latest version of the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installed on your PC.
 
 For more information, see:
 * [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity)
