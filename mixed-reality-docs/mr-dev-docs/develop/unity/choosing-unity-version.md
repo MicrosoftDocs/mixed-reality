@@ -12,9 +12,11 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 
 While we currently **recommend installing Unity 2020.3 LTS with the Mixed Reality OpenXR plugin** for Mixed Reality development, you can build apps with other Unity configurations as well.
 
-## Unity 2020.3 LTS (Recommended)
+## Unity 2020.3 LTS or 2021.3 LTS (Recommended)
 
-Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows Mixed Reality development is **Unity 2020.3 LTS with the Mixed Reality OpenXR plugin**.
+Microsoft recommended to use [Unity LTS (Long term support) streams](https://blog.unity.com/technology/new-plans-for-unity-releases-introducing-the-tech-and-long-term-support-lts-streams) for HoloLens 2 and Windows Mixed Reality development **with the Mixed Reality OpenXR plugin**.  
+
+Be sure to consult the [known blocking issues table](../../known-issues.md#blocking-issues-table) to ensure you avoid Unity builds or plugin builds with blocking issues.
 
 [!INCLUDE[](includes/xr/recommended-version.md)]
 
@@ -47,13 +49,9 @@ Once you have Unity 2020.3 installed, get started creating a project or upgradin
 > [!NOTE]
 > While we recommend using OpenXR for all new projects, Unity 2020.3 LTS also supports the [Windows XR plugin](new-openxr-project-with-mrtk.md). This plugin is fully supported, although it won't receive new features such as AR Foundation 4.0 support.
 
-## Unity 2021.3 LTS
-
-Microsoft supports 2021.3 LTS development on HoloLens 2 and Mixed Reality devices.  The OpenXR plugin is the only path for mixed reality development in Unity 2021.2 and later, as the final Unity version to support the Windows XR plugin was Unity 2021.1.
-
-Be sure to consult the [known blocking issues table](known-issues.md#active-blocking-issues) to ensure you avoid Unity 2021 builds with known blocking issues.
-
 ## Unity 2019.4 LTS
+
+Unity 2019.4 LTS has reached the end of Unity's two-year Long-Term Support window and is no longer receiving updates from Unity, although your projects will continue to run.
 
 If you need to use Unity 2019, you can use **Unity 2019 LTS with Legacy Built-in XR**.
 
