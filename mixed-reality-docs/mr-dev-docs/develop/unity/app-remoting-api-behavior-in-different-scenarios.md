@@ -2,7 +2,7 @@
 title: Mixed Reality OpenXR Plugin's AppRemoting API behavior in different remoting configurations
 description: Use AppRemoting API appropriately in different remoting scenarios
 author: sasama
-ms.author: poojasama
+ms.author: satyapoojasama
 ms.date: 01/30/2023
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, appremoting, play mode, desktop, preview, debug
