@@ -50,7 +50,7 @@ By using a using a "Holographic Remoting Player App", you can quickly debug your
 
 |  Mixed Reality OpenXR Plugin's AppRemoting API  | Holographic App Remoting App/ Holographic App Remoting App in regular play mode | App using Holographic Remoting for Play Mode |
 
-| --- | --- | --- | --- |
+| --- | --- | --- |
 
 | [StartConnectingToPlayer](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.startconnectingtoplayer) | This functionality works as expected | This functionality is not supported and throws a warning |
 
