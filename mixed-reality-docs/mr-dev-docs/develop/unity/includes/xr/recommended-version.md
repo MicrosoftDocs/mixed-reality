@@ -9,7 +9,7 @@
 -->
 
 <!-- UNCOMMENT THE FOLLOWING WHEN THE CURRENT UNITY VERSION HAS NO BLOCKING ISSUE: -->
-> [!INFO]
-> For new projects, we recommend **the latest patch version of Unity 2020.3 or 2021.3 LTS release**, using their recommend version of Unity plugins, together with **the latest Mixed Reality OpenXR plugin**.
-> 
-> If using an earlier Unity patch release, be sure to consult the [known blocking issues table](../../known-issues.md#blocking-issues-table) to ensure you avoid builds with other blocking issues.
+
+Microsoft recommends to use **the latest patch version of Unity 2020.3 LTS or 2021.3 LTS ** and their recommended version of Unity plugins, together with **the latest Mixed Reality OpenXR plugin**.
+ 
+If using an earlier Unity patch release, be sure to consult the [known blocking issues table](../../known-issues.md#active-blocking-issues) to ensure you avoid builds with other blocking issues.

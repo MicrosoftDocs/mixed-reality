@@ -14,9 +14,7 @@ While we currently **recommend installing Unity 2020.3 LTS with the Mixed Realit
 
 ## Unity 2020.3 LTS or 2021.3 LTS (Recommended)
 
-Microsoft recommended to use [Unity LTS (Long term support) streams](https://blog.unity.com/technology/new-plans-for-unity-releases-introducing-the-tech-and-long-term-support-lts-streams) for HoloLens 2 and Windows Mixed Reality development **with the Mixed Reality OpenXR plugin**.  
-
-Be sure to consult the [known blocking issues table](../../known-issues.md#blocking-issues-table) to ensure you avoid Unity builds or plugin builds with blocking issues.
+Microsoft recommends to use [Unity LTS (Long term support) streams](https://blog.unity.com/technology/new-plans-for-unity-releases-introducing-the-tech-and-long-term-support-lts-streams) for HoloLens 2 and Windows Mixed Reality development **with the Mixed Reality OpenXR plugin**.  
 
 [!INCLUDE[](includes/xr/recommended-version.md)]
 
