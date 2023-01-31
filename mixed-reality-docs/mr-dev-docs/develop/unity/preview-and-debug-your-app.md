@@ -86,3 +86,4 @@ The following steps assume that you have already set up your project to use Open
 * [Holographic Remoting Player](../native/holographic-remoting-player.md)
 * [Tutorial: Getting started with PC Holographic Remoting](/training/modules/pc-holographic-remoting-tutorials/)
 * [Tutorial: Creating a Holographic Remoting PC application](/training/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application)
+* [App Remoting API behavior in different remoting scenarios](/app-remoting-api-behavior-in-different-scenarios.md)
