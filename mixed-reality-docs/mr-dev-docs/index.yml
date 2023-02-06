@@ -50,10 +50,6 @@ highlightedContent:
     - title: Microsoft Mesh (Preview)
       itemType: whats-new
       url: /mesh/overview
-    # Card
-    - title: AltspaceVR 
-      itemType: whats-new 
-      url: /windows/mixed-reality/altspace-vr/overview
 
 # productDirectory section (optional)
 productDirectory:

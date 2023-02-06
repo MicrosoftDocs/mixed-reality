@@ -106,7 +106,7 @@ Boot up your HoloLens 2 and [download](https://www.microsoft.com/p/kippys-escape
 <table>
 <tr>
 <td><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/jack-caron.jpg"></td>
-<td><b>Jack Caron</b><br><i>Lead Game Designer</i><br>Jack currently works on Mixed Reality experiences for Microsoft, including HoloLens 2 projects and AltspaceVR, and was previously a designer on the HoloLens platform team.</td>
+<td><b>Jack Caron</b><br><i>Lead Game Designer</i><br>Jack currently works on Mixed Reality experiences for Microsoft, including HoloLens 2 projects, and was previously a designer on the HoloLens platform team.</td>
 </tr>
 </table>
 

@@ -19,7 +19,6 @@ This page covers the basic steps and guidelines for contributing and links to Ma
 
 | Repository name | URL |
 | --- | --- |
-| AltspaceVR | [MicrosoftDocs/altspace-vr](https://github.com/MicrosoftDocs/altspace-vr) |
 | Azure Object Anchors | [MicrosoftDocs/azure-docs/articles/object-anchors](https://github.com/MicrosoftDocs/azure-docs/tree/master/articles/object-anchors)
 | Azure Remote Rendering | [MicrosoftDocs/azure-docs/articles/remote-rendering](https://github.com/MicrosoftDocs/azure-docs/tree/master/articles/remote-rendering) |
 | Azure Spatial Anchors | [MicrosoftDocs/azure-docs/articles/spatial-anchors](https://github.com/MicrosoftDocs/azure-docs/tree/master/articles/spatial-anchors) |
