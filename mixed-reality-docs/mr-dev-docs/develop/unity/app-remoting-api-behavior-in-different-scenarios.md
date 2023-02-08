@@ -33,7 +33,7 @@ This is a remote app which is connected to a "Holographic Remoting Player App" t
 
 This can be used to test the above remote app's functionality without building it in regular play mode and connect to a "Holographic Remoting Player App" that runs on the HoloLens.
 
-3.**Holographic Remoting for Play Mode**:
+3. **Holographic Remoting for Play Mode**:
 - In Unity, on the menu bar, select **Mixed Reality** > **Remoting** > **Holographic Remoting for Play Mode.**
 - Click the Play button. 
 
