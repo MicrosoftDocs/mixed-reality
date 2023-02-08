@@ -43,7 +43,7 @@ By using a using a "Holographic Remoting Player App", you can quickly debug your
 
 ![Screenshot of the Holographic Remoting for Play Mode.](images/openxr-features-img-03.png)
 
-**DISCLAIMER: Enabling Holographic Remoting for Play Mode in Cofiguration 3 above only manages the remoting connection. All the [Holographic AppRemoting API](/dotnet/api/microsoft.mixedreality.openxr.remoting) methods either display a warning message or return false and events are never triggered for the duration of the Play Mode connection using remoting. To test Holographic AppRemoting APIs in Play Mode, use Configuration 2 using normal play mode and establish the AppRemoting connection.**
+**DISCLAIMER: Enabling Holographic Remoting for Play Mode in Configuration 3 above only manages the remoting connection. All the [Holographic AppRemoting API](/dotnet/api/microsoft.mixedreality.openxr.remoting) methods either display a warning message or return false, and events are never triggered for the duration of the Play Mode connection using remoting. To test Holographic AppRemoting APIs in Play Mode, use Configuration 2 using normal Play mode and establish the AppRemoting connection.**
 
 
 ## The following table describes the App Remoting API behavior in different configurations:
