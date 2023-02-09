@@ -13,10 +13,19 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
-## Version 2.8.1 (July 06, 2022) <a name="v2.8.1"></a>
+## Version 2.9.0 (February 13, 2023) <a name="v2.9.0"></a>
+* Holographic Remoting using the OpenXR API now supports:
+  * Timestamp conversion between player and remote.
+  * The XR_MSFT_spatial_graph_bridge extension (revision 2).
+* Added support for per app audio capturing.
+* Added easy reverse connection using QR codes to the Holographic Remoting player see [Holographic Remoting Player](holographic-remoting-player.md).
+* Updated the official samples on GitHub to C++ 20.
+* Various bug fixes and stability improvements.
+
+## Version 2.8.1 (July 6, 2022) <a name="v2.8.1"></a>
 * Improved support for Azure Spatial Anchors
 
-## Version 2.8.0 (May 03, 2022) <a name="v2.8.0"></a>
+## Version 2.8.0 (May 3, 2022) <a name="v2.8.0"></a>
 * Full feature support for the XR_MSFT_scene_understanding extension. With that, all scene compute features and scene compute consistencies are now supported.
 * Optimizations and latency reduction.
 * Fixed issues with multi-GPU systems.
