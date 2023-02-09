@@ -33,7 +33,7 @@ This is a remote app which is connected to a "Holographic Remoting Player App" t
 
 This can be used to test the above remote app's functionality without building it in regular play mode and connect to a "Holographic Remoting Player App" that runs on the HoloLens.
 
-3.**Holographic Remoting for Play Mode**:
+3. **Holographic Remoting for Play Mode**:
 - In Unity, on the menu bar, select **Mixed Reality** > **Remoting** > **Holographic Remoting for Play Mode.**
 - Click the Play button. 
 
@@ -43,20 +43,20 @@ By using a using a "Holographic Remoting Player App", you can quickly debug your
 
 ![Screenshot of the Holographic Remoting for Play Mode.](images/openxr-features-img-03.png)
 
-**DISCLAIMER: Enabling Holographic Remoting for Play Mode in Cofiguration 3 above only manages the remoting connection. All the [Holographic AppRemoting API](/dotnet/api/microsoft.mixedreality.openxr.remoting) methods either display a warning message or return false and events are never triggered for the duration of the Play Mode connection using remoting. To test Holographic AppRemoting APIs in Play Mode, use Configuration 2 using normal play mode and establish the AppRemoting connection.**
+>**Note: Enabling Holographic Remoting for Play Mode in Cofiguration 3 above only manages the remoting connection. All the [Holographic AppRemoting API](/dotnet/api/microsoft.mixedreality.openxr.remoting) methods either display a warning message or return false and events are never triggered for the duration of the Play Mode connection using remoting. To test Holographic AppRemoting APIs in Play Mode, use Configuration 2 using normal play mode and establish the AppRemoting connection.**
 
 
 ## The following table describes the App Remoting API behavior in different configurations:
 
 |  Mixed Reality OpenXR Plugin's AppRemoting API  | Holographic App Remoting App (or) Holographic App Remoting App in regular play mode | App using Holographic Remoting for Play Mode |
 | --- | --- | --- |
-| [StartConnectingToPlayer](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.startconnectingtoplayer) | This functionality is supported | This functionality is not supported and displays a warning message |
-| [StartListeningForPlayer](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.startlisteningforplayer) | This functionality is supported | This functionality is not supported and displays a warning message |
-| [Disconnect](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.disconnect) | This functionality is supported | This functionality is not supported and displays a warning message |
-| [StopListening](/api/microsoft.mixedreality.openxr.remoting.appremoting.stoplistening) | This functionality is supported | This functionality is not supported and displays a warning message |
-| [IsReadyToStart](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.isreadytostart)| This functionality is supported | This functionality is not supported and displays a warning message |
-| [TryGetConnectionState](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.trygetconnectionstate) | This functionality is supported | This functionality returns false |
-| [TryLocateUserReferenceSpace](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.trylocateuserreferencespace) | This functionality is supported | This functionality returns false |
+| [StartConnectingToPlayer](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.startconnectingtoplayer) | This functionality is supported | This functionality is not supported and emits a warning message |
+| [StartListeningForPlayer](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.startlisteningforplayer) | This functionality is supported | This functionality is not supported and emits a warning message |
+| [Disconnect](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.disconnect) | This functionality is supported | This functionality is not supported and emits a warning message |
+| [StopListening](/api/microsoft.mixedreality.openxr.remoting.appremoting.stoplistening) | This functionality is supported | This functionality is not supported and emits a warning message |
+| [IsReadyToStart](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.isreadytostart)| This functionality is supported | This functionality is not supported and emits a warning message |
+| [TryGetConnectionState](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.trygetconnectionstate) | This functionality is supported | This function returns false |
+| [TryLocateUserReferenceSpace](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.trylocateuserreferencespace) | This functionality is supported | This function returns false |
 | [ReadyToStart](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.readytostart) | This functionality is supported | This event is never triggered |
 | [Connected](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.connected) | This functionality is supported | This event is never triggered |
 | [Disconnecting](/dotnet/api/microsoft.mixedreality.openxr.remoting.appremoting.disconnecting) | This functionality is supported | This event is never triggered |
