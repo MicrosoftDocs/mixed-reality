@@ -229,6 +229,8 @@
         - name: Preview and debug your app with Holographic Remoting
           href: unity/preview-and-debug-your-app.md
           displayname: Holographic Remoting
+        - name: AppRemoting API behavior in different remoting scenarios
+          href: unity/app-remoting-api-behavior-in-different-scenarios.md
     - name: Visual Studio solutions
       items:
         - name: Build and deploy to the HoloLens
