@@ -64,6 +64,12 @@ Turnaround in this context means the time from sending pose/sensor data from the
 
 While on the main screen, you can say **"disable diagnostics"** to turn off diagnostics.
 
+## Easy reverse connection using QR Codes
+As of version [2.9.0], the holographic remoting player recognises QR codes that contain a remoting URI: ms-holographic-remoting://hostname. To connect, look at such a QR code and say "Connect". To disconnect, look at the same QR code again and say "Disconnect".
+
+> [!NOTE]
+> In this mode the player is the client and the remote needs to be started as the server.
+
 ## See Also
 
 * [Holographic Remoting overview](holographic-remoting-overview.md)

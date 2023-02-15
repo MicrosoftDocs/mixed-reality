@@ -89,7 +89,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 ```
 
 >[!WARNING]
->Holographic Remoting works by replacing the Windows Mixed Reality runtime which is part of Windows with a remoting specific runtime. This is done during the creation of the player context. For that reason any call on any Windows Mixed Reality API before creating the player context can result in unexpected behavior. The recommended approach is to create the player context as early as possible before interaction with any Mixed Reality API. Never mix objects created or retrieved through any Windows Mixed Reality API before the call to ```PlayerContext::Create``` with objects created or retrieved afterwards.
+>A custom player injects an intermediate layer between the player app and the Windows Mixed Reality runtime shipped with Windows. This is done during the creation of the player context. For that reason any call on any Windows Mixed Reality API before creating the player context can result in unexpected behavior. The recommended approach is to create the player context as early as possible before interaction with any Mixed Reality API. Never mix objects created or retrieved through any Windows Mixed Reality API before the call to ```PlayerContext::Create``` with objects created or retrieved afterwards.
 
 Next the HolographicSpace can be created, by calling [HolographicSpace.CreateForCoreWindow](/uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow).
 
