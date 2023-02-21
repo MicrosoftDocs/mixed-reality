@@ -188,4 +188,4 @@ This page has hopefully provided you with a good overview to get you started und
 * [Gaze and commit](gaze-and-commit.md)
 * [Extended eye tracking in native engine](../develop/native/extended-eye-tracking-native.md)
 * [Extended eye tracking in Unity](../develop/unity/extended-eye-tracking-unity.md)
-* [Voice input](/windows/mixed-reality/design/voice-input)
+* [Voice input](./voice-input.md)

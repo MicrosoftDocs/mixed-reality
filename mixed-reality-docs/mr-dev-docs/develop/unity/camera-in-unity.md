@@ -124,7 +124,7 @@ You can always go back to the [Unity development checkpoints](unity-development-
 * [Spatial stage](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Tracking loss in Unity](tracking-loss-in-unity.md)
 * [Spatial anchors](../../design/spatial-anchors.md)
-* [Persistence in Unity](/windows/mixed-reality/develop/unity/spatial-anchors-in-unity)
+* [Persistence in Unity](./spatial-anchors-in-unity.md)
 * [Shared experiences in Unity](shared-experiences-in-unity.md)
 * [Azure Spatial Anchors](/azure/spatial-anchors)
 * [Azure Spatial Anchors SDK for Unity](/dotnet/api/Microsoft.Azure.SpatialAnchors)

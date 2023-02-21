@@ -97,7 +97,7 @@ To add a world anchor, call AddComponent\<WorldAnchor\>() on the game object wit
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-That's it! This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment. Use [persistence](/windows/mixed-reality/develop/unity/spatial-anchors-in-unity) to find this anchored location again in a future app session.
+That's it! This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment. Use [persistence](./spatial-anchors-in-unity.md) to find this anchored location again in a future app session.
 
 ### Removing a World Anchor
 
@@ -183,7 +183,7 @@ You can always go back to the [Unity development checkpoints](unity-development-
 * [Spatial stage](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Tracking loss in Unity](tracking-loss-in-unity.md)
 * [Spatial anchors](../../design/spatial-anchors.md)
-* [Persistence in Unity](/windows/mixed-reality/develop/unity/spatial-anchors-in-unity)
+* [Persistence in Unity](./spatial-anchors-in-unity.md)
 * [Shared experiences in Unity](shared-experiences-in-unity.md)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>
