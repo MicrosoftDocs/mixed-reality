@@ -23,7 +23,7 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Mitigation&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
 | HL2 app using URP has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. | **Investigating:**<br />2023/01/04 | Unity 2022.\*.\* <br/> with URP 13.\*.\* | Either avoid URP in Unity 2022, avoid using the default URP materials or use URP in Unity 2021.3.14+ |
-| HL2 app crashes when hands are detected. | **Investigating:**<br />2023/02/22 | Unity 2022, Unity 2021, Unity 2020 <br/> with com.unity.inputsystem 1.5.0 | Downgrade com.unity.inputsystem to 1.4.4 |
+| HL2 app crashes when hands are detected. | **Investigating:**<br />2023/02/22 | Unity 2022, Unity 2021, Unity 2020 with<br/>com.unity.inputsystem 1.5.0 | Downgrade com.unity.inputsystem to 1.4.4 |
 
 ## Resolved blocking issues
 
