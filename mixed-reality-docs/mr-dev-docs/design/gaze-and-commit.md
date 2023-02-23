@@ -186,7 +186,7 @@ There are different types of voice interaction models:
 - Conversation user interfaces or entities like Cortana have an AI natural language capability.
 - Custom voice commands
 
-To find out more about details and a comprehensive list of available voice commands and how to use them, check out our [voice commanding](/windows/mixed-reality/design/voice-input) guidance.
+To find out more about details and a comprehensive list of available voice commands and how to use them, check out our [voice commanding](./voice-input.md) guidance.
 
 <br>
 
