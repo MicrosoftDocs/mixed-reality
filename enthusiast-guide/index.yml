@@ -84,8 +84,6 @@ productDirectory:
       links:
         - url: https://www.microsoft.com/store/collections/mixedreality
           text: Best in Windows Mixed Reality
-        - url: /windows/mixed-reality/altspace-vr/explore/beginners-guide
-          text: Explore AltspaceVR
         - url: https://store.steampowered.com/search/?vrsupport=104
           text: New SteamVR releases 
         - url: webvr.md
