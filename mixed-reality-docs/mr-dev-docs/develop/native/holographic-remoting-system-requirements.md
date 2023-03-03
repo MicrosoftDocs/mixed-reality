@@ -53,19 +53,22 @@ A stable, low-latency network connection between the player and remote is critic
 
 The following software must be installed on a developer PC:
 
-- The latest version of Visual Studio 2019 [download](https://visualstudio.microsoft.com/vs/older-downloads/)
+- The latest version of Visual Studio 2022 [download](https://visualstudio.microsoft.com)
   - Workloads:
     - Desktop development with C++
     - Universal Windows Platform development
   - Individual components:
-    - Windows 10 SDK (10.0.19041.0)
-    - MSVC v142 - VS 2019 C++ (x64/x86|ARM|ARM64) build tools (newest)
-    - MSVC v142 - VS 2019 C++ (x64/x86|ARM|ARM64) Spectre-mitigated libs (newest)
-    - Net Native
-    - .Net Framework 4.5 targeting pack
+    - Windows 10 SDK (10.0.22621.0)
+    - MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
+    - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
+    - MSVC v143 - VS 2022 C++ ARM64 build tools (Latest)
+    - MSVC v143 - VS 2022 C++ ARM64 Spectre-mitigated libs (Latest)
+    - C++ Universal Windows Platform support for v143 build tools (ARM64)
+    - .NET Native
+    - .NET Framework 4.8 targeting pack
+    - .NET 6.0 Runtime
     - Nuget Package manager
-    - C++ 2019 Redistributable Update
-    - C++ Universal Windows Platform support for v142 build tools (ARM64)
+    - C++ 2022 Redistributable Update
     - C++/WinRT
     - Windows Universal C Runtime
 
