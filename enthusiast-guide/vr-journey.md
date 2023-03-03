@@ -68,7 +68,6 @@ Explore the vast world of immersive games, applications, and experiences support
 | --- | --- |
 | [Windows games & apps](using-games-and-apps-in-windows-mixed-reality.md) | An introduction to using immersive apps, Windows slates, and desktop applications in virtual reality. |
 | [Microsoft Edge & WebXR](using-microsoft-edge.md) | Get setup to experience VR using the Microsoft Edge browser and learn how to access immersive content on the web.  |
-| [Explore AltspaceVR](/windows/mixed-reality/altspace-vr/explore/beginners-guide) | Explore the expanding world of VR events happening in AltspaceVR. |
 | [Using SteamVR](using-steamvr-with-windows-mixed-reality.md) | Learn how to connect Windows Mixed Reality to Steam and access thousands of exciting immersive games, apps, and experiences. |
 
 ## Troubleshooting, tips & resources
