@@ -13,6 +13,9 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
+## Version 2.9.1 (February 17, 2023) <a name="v2.9.1"></a>
+* Stability improvements for older remote versions.
+
 ## Version 2.9.0 (February 13, 2023) <a name="v2.9.0"></a>
 * Holographic Remoting using the OpenXR API now supports:
   * Timestamp conversion between player and remote.
