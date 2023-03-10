@@ -39,6 +39,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-Hololens",
       "breadcrumb_path": "/mixed-reality/world-locking-tools/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
