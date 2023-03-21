@@ -53,7 +53,8 @@
       "searchScope":[
         "Mixed Reality",
         "MRTK Unreal"
-      ]
+      ],
+      "adobe-target": true
     },
     "fileMetadata": {
       "monikerRange": {
