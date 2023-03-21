@@ -45,7 +45,8 @@
       "feedback_system": "None",
       "searchScope":[
         "Mixed Reality"
-      ]
+      ],
+      "adobe-target": true
     },
     "fileMetadata": {},
     "template": [],

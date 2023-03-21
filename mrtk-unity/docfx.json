@@ -97,7 +97,8 @@
       "searchScope": [
         "Mixed Reality",
         "MRTK"
-      ]
+      ],
+      "adobe-target": true
     },
     "fileMetadata": {
       "monikerRange": {
