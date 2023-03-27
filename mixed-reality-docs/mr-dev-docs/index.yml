@@ -46,10 +46,6 @@ highlightedContent:
     - title: VR enthusiasts
       itemType: how-to-guide
       url: /windows/mixed-reality/enthusiast-guide/vr-journey
-    # Card
-    - title: Microsoft Mesh (Preview)
-      itemType: whats-new
-      url: /mesh/overview
 
 # productDirectory section (optional)
 productDirectory:
