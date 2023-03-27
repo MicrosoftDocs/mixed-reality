@@ -126,7 +126,6 @@ If you're curious to see how the different mixed reality hardware and services w
 | [HoloLens hardware](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](/dynamics365/mixed-reality/layout/), and [Guides](/dynamics365/mixed-reality/guides/). You gain meaningful insights from getting hands-on with real work, real devices, and real users |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Build compelling immersive experiences on different platforms with spatial awareness, spatial anchors, and complex 3D model rendering |
-| [Microsoft Mesh](/mesh/overview) | Mesh lets people connect with presence, share across space, and collaborate with one another, from anywhere in the world, through Mesh-enabled mixed reality experiences. With Mesh, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host virtual meet-ups |
 
 ## What would you like to do next?
 
