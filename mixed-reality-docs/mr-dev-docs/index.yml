@@ -48,8 +48,8 @@ highlightedContent:
       url: /windows/mixed-reality/enthusiast-guide/vr-journey
     # Card
     - title: Avatars for Microsoft Teams
-      itemType: how-to-guide
-      url: http://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad
+      itemType: whats-new
+      url: /mesh/overview
 
 # productDirectory section (optional)
 productDirectory:
