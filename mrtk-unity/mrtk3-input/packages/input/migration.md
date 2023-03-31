@@ -1,4 +1,4 @@
-# Input Migration Docs
+# Migration Input Configuration from MRTK 2 to MRTK 3
 
 ## Input Actions
 
