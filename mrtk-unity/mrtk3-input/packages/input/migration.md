@@ -1,153 +1,42 @@
-**Input Actions**
+# Input Migration Docs
 
-| **MRTK 2**                                                                           | **MRTK 3**                                                                                                                                                                                     |
-|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Creating input actions (Connect input to an abstract action that code can listen to) | Unity Input System - Create actions: [<u>Actions \| Input System \| 1.5.0 (unity3d.com)</u>](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/Actions.html#creating-actions) |
-| Input Action Rules (Run an action based on value of another action)                  | ?                                                                                                                                                                                              |
+## Input Actions
 
-**Pointers**
+MRTK 3 uses the new **Unity Input System Package** for input actions. Most settings can be configured through an Input Action asset.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>MRTK 2</strong></th>
-<th><strong>MRTK 3</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Prefab - Visual for pointer hello test1</td>
-<td><p>Near:</p>
-<p>MRTKPokeReticleVisual (MRTK3 MonoBehaviour)</p>
-<p>Far:</p>
-<p>MRTKLineVisual + MRTKRayReticleVisual (MRTK3 MonoBehaviours)</p></td>
-</tr>
-<tr class="even">
-<td>Layer Masks - Layers to filter for raycast</td>
-<td>Interactor `raycastMask`</td>
-</tr>
-<tr class="odd">
-<td>Extent - Max distance of raycast</td>
-<td>Interactor `maxRaycastDistance`</td>
-</tr>
-<tr class="even">
-<td>Mediator - Controls which pointer is used</td>
-<td>InteractionModeManager (MRTK3 MonoBehaviour) - Controls priority of
-interaction modes and interactors</td>
-</tr>
-<tr class="odd">
-<td>Pointer Selector - Used by the focus provider to choose the primary
-pointer</td>
-<td>InteractionModeManager (MRTK3 MonoBehaviour) - Controls priority of
-interaction modes and interactors</td>
-</tr>
-</tbody>
-</table>
+| Task | MRTK 2 Location | MRTK 3 Location |
+| --- | --- | --- |
+| Creating an input action | MRTK 2 Input Actions Profile ([docs](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/input/input-actions?view=mrtkunity-2022-05#creating-an-input-action))| Action map within the Input Action Asset ([docs](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/Actions.html#creating-actions)) |
+| Binding an input action to a controller | MRTK 2 Controller Input Mapping profile ([docs](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/input/controllers?view=mrtkunity-2022-05)) | Set binding for an action with the Input Action Asset ([docs](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/ActionBindings.html))|
 
-**Gestures**
+## Pointers
 
-Assign input actions to various gesture input methods (currently only
-Windows Recognition on HL2)
+Pointers are attached to interactors in MRTK 3.
+In the default MRTK XR Rig the interactors are positioned underneath Left and Right-Hand Controller GameObjects.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>MRTK 2</strong></th>
-<th><strong>MRTK 3</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Assign action to a gesture</td>
-<td><p>Use default interactions from input system?</p>
-<p><a
-href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/Interactions.html"><u>Interactions
-| Input System | 1.5.0 (unity3d.com)</u></a></p></td>
-</tr>
-</tbody>
-</table>
+| Task | MRTK 2 Location | MRTK 3 Location |
+| --- | --- | --- |
+| Setting visual prefab for pointer         | `Pointer Prefab` property in MRTK 2 Pointer Configuration Profile ([docs](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/input/pointers?view=mrtkunity-2022-05#pointer-options-configuration))| MonoBehaviours on Left and Right-Hand Controllers under MRTK XR Rig. Ex: MRTKPokeReticleVisual, MRTKLineVisual, MRTKRayReticleVisual                                                                  |
+| Limit which layers can be interacted with | `Pointing Raycast Layer Masks`  property in MRTK Pointer Profile. This applies to all pointers.                                                                                                                                                                                                                                                                      | `raycastMask` property on Interactor script                           |
+| Set extent of pointer raycast             | `Pointing Extent`  property in MRTK Pointer Profile. This applies to all pointers.                                                                                                                                                                                                                                                                                   | `maxRaycastDistance` property on Interactor script                    |
+| Set priority of pointers                  | Controlled by the `DefaultPointerMediator` or an override                                                                                                                                                                                                                                                                                                          | Configured through the InteractionModeManager (MRTK3 MonoBehaviour) |
 
-**Speech Commands**
+## Gestures
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>MRTK 2</strong></th>
-<th><strong>MRTK 3</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mapping speech commands to Input Actions</td>
-<td><ol type="1">
-<li><p>Add WindowsPhraseRecognitionSubsystem to project</p></li>
-<li><p>Call subsystem.CreateOrGetEventForPhrase with actions</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+Assign input actions to various gesture input methods (currently only Windows Recognition on HL2)
+| Task | MRTK 2 Location | MRTK 3 Location |
+| --- | --- | --- |
+| Assign action to a gesture | Assign gestures to input action in MixedRealityGesturesProfile | Gestures on HoloLens are now recongized through the OpenXR plugin ([docs](https://learn.microsoft.com/en-us/dotnet/api/microsoft.mixedreality.openxr.gesturerecognizer?view=mixedreality-openxr-plugin-1.7))
 
-**Controller Mapping**
+## Speech Commands
+Enable the KeywordRecognitionSubsystem to enable speech commands on MRTK 3 ([docs]([Speech input - MRTK3 | Microsoft Learn](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/speech)))
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>MRTK 2</strong></th>
-<th><strong>MRTK 3</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Configure controller button behavior</td>
-<td><p>Add XRController script and set button assignments:</p>
-<p><img src="media/image1.png" style="width:6.5in;height:4.7in"
-alt="Graphical user interface, text Description automatically generated" /></p></td>
-</tr>
-<tr class="even">
-<td>Add controllers</td>
-<td><p>Add supported devices in Input System Package settings or
-OpenXR</p>
-<p><img src="media/image2.png" style="width:6.5in;height:4.15in"
-alt="Graphical user interface, text, application Description automatically generated" /></p></td>
-</tr>
-</tbody>
-</table>
+|  Task |  MRTK 2 Location |  MRTK 3 Location |
+| --- | --- | --- |
+|  Mapping speech commands to Input Actions | Speech Commands Profile in MRTK 2 Input System Profile | Call `CreateOrGetEventForKeyword` on the KeywordRecongitionSubsystem with your keyword and action |  
 
-**Controller Visualization**
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>MRTK 2</strong></th>
-<th><strong>MRTK 3</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Set prefab in controller configuration profile</td>
-<td><p>Set model prefab on XR Controller</p>
-<p><img src="media/image3.png" style="width:6.5in;height:3.975in"
-alt="Graphical user interface, text Description automatically generated" /></p></td>
-</tr>
-</tbody>
-</table>
+## Controller Configuration
+|  Task |  MRTK 2 Location | MRTK 3 Location |
+| --- | --- | --- |
+| Configure controller button behavior   | MRTK 2 ControllerMappingProfile ([docs](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/configuration/mixed-reality-configuration-guide?view=mrtkunity-2022-05#controller-mapping-configuration))    | Action Map within the Input Action Asset ([docs](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/input/input-actions?view=mrtkunity-2022-05#creating-an-input-action))
+| Set prefab for controller visualization | MRTK 2 Controller Mapping Profile ([docs](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/configuration/mixed-reality-configuration-guide?view=mrtkunity-2022-05#controller-visualization-settings)) | Configured in XRController settings. Ex: `Model Prefab` property in ArticulatedHandController.                                                                                                          |                  |  
