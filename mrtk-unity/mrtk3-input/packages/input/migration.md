@@ -12,7 +12,7 @@ MRTK 3 uses the new **Unity Input System Package** for input actions. Most setti
 ## Pointers
 
 Pointers are attached to interactors in MRTK 3.
-In the default MRTK XR Rig the interactors are positioned underneath Left and Right-Hand Controller GameObjects.
+In the default MRTK XR Rig, the interactors are positioned underneath Left and Right-Hand Controller GameObjects.
 
 | Task | MRTK 2 Location | MRTK 3 Location |
 | --- | --- | --- |
