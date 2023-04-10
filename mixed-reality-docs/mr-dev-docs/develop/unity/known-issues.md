@@ -23,12 +23,12 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Mitigation&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
 | HL2 app using URP has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. | **Investigating:**<br />2023/01/04 | Unity 2022.\*.\* <br/> with URP 13.\*.\* | Either avoid URP in Unity 2022, avoid using the default URP materials or use URP in Unity 2021.3.14+ |
-| HL2 app crashes when hands are detected. | **Investigating:**<br />2023/02/22 | Unity 2022, Unity 2021, Unity 2020 with<br/>com.unity.inputsystem 1.5.0 | Downgrade com.unity.inputsystem to 1.4.4 |
 
 ## Resolved blocking issues
 
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Versions&nbsp;with&nbsp;fixes&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
+| HL2 app crashes when hands are detected. | **Fixed:**<br />2023/03/24 | Unity 2022, Unity 2021, Unity 2020 with<br/>com.unity.inputsystem 1.5.0 | Upgrade com.unity.inputsystem to 1.5.1 |
 | HL2 app using URP has worse render performance in Unity 2021 compared to Unity 2020. | **Fixed:**<br />2023/01/13 | Unity version < 2021.3.14f1 <br/> with URP 12.\*.\* | Use Unity 2021.3.14f1 and later |
 | Building application via IL2CPP in Unity fails due to [compilation errors](https://issuetracker.unity3d.com/issues/il2cpp-windows-builds-fails-when-using-vs-2022-17-dot-4-0-preview). For more information on the root cause, refer to the discussion [here](https://developercommunity.visualstudio.com/t/stdext::hash_compare-has-been-removed-in/10182319). | **Fixed:**<br />2022/11/10 | Visual Studio&nbsp;2022<br />version 17.4+ with<br />Unity versions <<br />2020.3.42f1, 2021.3.14f1, 2022.1.23f1, 2022.2.0b16 and 2023.1.0a19 | Use Visual Studio&nbsp;2019 or Unity version >= 2020.3.42f1, 2021.3.14f1, 2022.1.23f1, 2022.2.0b16 or 2023.1.0a19 |
 | Holographic App Remoting remoting app using Unity's OpenXR plugin 1.5.1 fails to connect to remoting player if the hosting PC doesn't have other VR headsets attached. | **Fixed:**<br />2022/10/04 | Unity 2020 or Unity 2021 <br/> with Unity&nbsp;OpenXR&nbsp;plugin&nbsp;=<br/>1.5.0, 1.5.1 and 1.5.2 | If using Holographic App Remoting, use Unity&nbsp;OpenXR&nbsp;plugin&nbsp;<= 1.4.3&nbsp;or&nbsp;>=&nbsp;1.5.3|
