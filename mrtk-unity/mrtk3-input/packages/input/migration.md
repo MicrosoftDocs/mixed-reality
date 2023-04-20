@@ -36,13 +36,14 @@ In the default MRTK XR Rig the interactors are positioned underneath Left and Ri
 ## Gestures
 
 Assign input actions to various gesture input methods (currently only Windows Recognition on HL2)
+
 | Task | MRTK 2 Location | MRTK 3 Location |
 | --- | --- | --- |
-| Assign action to a gesture | Assign gestures to input action in MixedRealityGesturesProfile | Gestures on HoloLens are now recongized through the OpenXR plugin ([docs](/dotnet/api/microsoft.mixedreality.openxr.gesturerecognizer))
+| Assign action to a gesture | Assign gestures to input action in MixedRealityGesturesProfile | Gestures on HoloLens are now recongized through the OpenXR plugin ([docs](/dotnet/api/microsoft.mixedreality.openxr.gesturerecognizer)) |
 
 
 ## Speech Commands
-Enable the KeywordRecognitionSubsystem to enable speech commands on MRTK 3 ([docs]([Speech input - MRTK3 | Microsoft Learn](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/speech)))
+Enable the KeywordRecognitionSubsystem to enable speech commands on MRTK 3 ([docs](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/speech))
 
 |  Task |  MRTK 2 Location |  MRTK 3 Location |
 | --- | --- | --- |
