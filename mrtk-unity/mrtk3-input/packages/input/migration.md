@@ -36,6 +36,7 @@ In the default MRTK XR Rig the interactors are positioned underneath Left and Ri
 ## Gestures
 
 Assign input actions to various gesture input methods (currently only Windows Recognition on HL2)
+
 | Task | MRTK 2 Location | MRTK 3 Location |
 | --- | --- | --- |
 | Assign action to a gesture | Assign gestures to input action in MixedRealityGesturesProfile | Gestures on HoloLens are now recongized through the OpenXR plugin ([docs](/dotnet/api/microsoft.mixedreality.openxr.gesturerecognizer)) |
