@@ -10,12 +10,17 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 
 # Migration guide from MRTK2 to MRTK3
 
-As you begin using MRTK3, you'll notice that several concepts in MRTK v2 have been changed, replaced, or removed. This is because MRTK3 uses Unity's XR Interaction Toolkit (XRI) framework to handle interaction, and the Unity Input System plus OpenXR for input. This document will help bridge the gap between MRTK v2 concepts and their MRTK3 counterparts.
+As you begin using MRTK3, you'll notice that several concepts in MRTK v2 have been changed, replaced, or removed. This document will help bridge the gap between MRTK v2 concepts and their MRTK3 counterparts.
+
+## Interactions 
+
+MRTK3 uses Unity's XR Interaction Toolkit (XRI) framework to handle interaction, and the Unity Input System plus OpenXR for input. 
 
 > [!IMPORTANT]
 > For developers new to XRI, we recommend that you first review Unity's [XRI architecture documentation](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/architecture.html). All XRI documentation also applies to MRTK3, as most interaction and input features are simply inherited from XRI.
 
-## Terminology
+
+### Terminology
 
 | MRTK v2 term | MRTK3 term | Description |
 | ------------ | -------- | ----------- |
@@ -31,7 +36,9 @@ As you begin using MRTK3, you'll notice that several concepts in MRTK v2 have be
 | N/A | Activate | **Activate** is an extra action that can be raised on an object that has already been Selected. For instance, if a user Selects a squirt gun with the grip of the controller, the trigger fires it with an Activate action.  |
 | Data Provider | XRSubsystem + Provider | Most data providers are no longer necessary in MRTK3, since the Unity Input System and OpenXR handle most cross-platform input tasks. However, for some outliers that aren't yet covered by Unity, we provide `XRSubsystem`s that can provide data across different platforms--for example, `HandsAggregatorSubsystem` and `SpeechSubsystem`. See the [subsystems architecture documentation](subsystems.md) for more conceptual reading on our subsystems approach. |
 
-## Events
+<br/>
+
+### Events
 
 | MRTK v2 term | XRI term | Notes |
 | ------------ | -------- | ----------- |
@@ -66,7 +73,7 @@ Note: `Hand Coach`, `Tooltips`, `Object Collection`, `AppBar`, and `Progress Ind
 | [`Bounds Control`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/bounds-control) [`Bounding Box`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/bounding-box)| [`Bounds Control`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-spatialmanipulation/packages/spatialmanipulation/bounds-control) | The `BoundingBox` script has been replaced. `BoundsControl` provides an automatically-sized bounding box, the visuals of which can be customized. There are several `BoundingBox` prefabs which can be used for visuals. <br/><br/> A sample can be found in the `BoundsControlExamples` scene.|
 | [`Object Manipulator`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/object-manipulator) [`Manipulation Handler`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/manipulation-handler) | [`Object Manipulator`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-spatialmanipulation/packages/spatialmanipulation/object-manipulator) | Manipulation Handler is deprecated. Use Object Manipulator for the manipulation (move, rotate, scale) of an object by any interactor with a valid attach transform. <br/><br/> MRTK3 documentation is in currently in progress. A sample can be found in the `HandInteractionExamples` scene.|
 | [`Interactable`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/interactable)| [`StatefulInteractable`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-overview/architecture/interactables) | A sample can be found in the `InteractableButtonExamples` scene.|
-| [`Dwell`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/dwell)| `InteractorDwellManager` | In MRTK2, a `DwellHandler` was attached to objects and fired events for handling the start and end of dwell. In MRTK3, there is an `InteractorDwellManager` on the `GazeInteractor` and `Far Rays` in the `MRTK XR Rig`, which uses `StatefulInteractable` to determine if the object uses dwell or not, and if it does it selects the object for the duration of dwell. <br/> <br/> MRTK3 documentation is in currently in progress.|
+| [`Dwell`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/dwell)| `InteractorDwellManager` | In MRTK2, a `DwellHandler` was attached to objects and provided events for handling the start and end of dwell. In MRTK3, there is an `InteractorDwellManager` on the `GazeInteractor` and `Far Rays` in the `MRTK XR Rig`, which uses `StatefulInteractable` to determine if the object enables dwell or not, and if it does it selects the object for the duration of dwell. <br/> <br/> MRTK3 documentation is in currently in progress.|
 | [`Solvers`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/solvers/solver)| [`Solvers`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-spatialmanipulation/packages/spatialmanipulation/solvers/solver) | MRTK3 sample scenes are currently in progress. |
 | [`Visual Theming`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/solvers/visual-themes)| [`Data Binding and Theming`](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-data/packages/data/overview) | MRTK3 Data Binding and Theming framework is designed to make it easy to create visual elements that can be populated and updated dynamically at runtime. Not yet integrated with Unity's Canvas-based controls. |
 
