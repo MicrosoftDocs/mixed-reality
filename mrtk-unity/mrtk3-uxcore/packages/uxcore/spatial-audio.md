@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, UX, UXCore, UX Core, packa
 
 # Spatial Audio
 
-For some UX components, you will want an `AudioSource` to play sound, like a button click. In order to spatialize this sound, you'll need to use a spatializer. For new applications, the `Microsoft Spatializer` is recommended. Documentation on how to set up the Microsoft Spatializer can be found [here](windows/mixed-reality/develop/unity/spatial-sound-in-unity). 
+For some UX components, you may want an `AudioSource` to play sound, like a button click. In order to spatialize this sound, you need to use a spatializer. For new applications, the `Microsoft Spatializer` is recommended. Documentation on how to set up the Microsoft Spatializer can be found [here](windows/mixed-reality/develop/unity/spatial-sound-in-unity). 
 
 <br/>
 
