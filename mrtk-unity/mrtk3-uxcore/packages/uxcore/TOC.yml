@@ -4,6 +4,8 @@
   href: dialog-api.md
 - name: See-it, Say-it Label
   href: seeitsayit-label.md
+- name: Spatial Audio
+  href: spatial-audio.md
 - name: State visualizer
   href: state-visualizer.md
 - name: Toggle collection
