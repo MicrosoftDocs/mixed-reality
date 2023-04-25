@@ -1,5 +1,5 @@
 ---
-title: MRTK3 aueio overview
+title: MRTK3 audio overview
 description: MRTK3 audio overview
 author: davidkline-ms
 ms.author: davidkl
