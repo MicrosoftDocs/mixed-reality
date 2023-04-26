@@ -18,18 +18,18 @@ You can use See-it, Say-it labels to communicate the voice command keyword for a
 
 ### Enabling See-it, Say-it Labels
 
-In the canvas and non-canvas button prefabs, these labels are disabled by default. When the scene is created, the See It Say It Label component is responsible for enabling the label if the [input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) and [speech](/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview) packages are installed in the project. The purpose of this check is to prevent labels from appearing when voice commands aren't functional.
+In the canvas and non-canvas button prefabs, these labels are disabled by default. When the scene is created, the `See It Say It Label` component is responsible for enabling the label if the [input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) and [speech](/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview) packages are installed in the project. The purpose of this check is to prevent labels from appearing when voice commands aren't functional.
 
 <br/>
 
 ### Label Text 
 
-The See It Say It Label component also sets the text of the label to reflect the button's speech recognition keyword. This keyword can be modified through the `SpeechRecognitionKeyword` property under `Advanced StatefulInteractable Settings` in the `Pressable Button` component. 
+The `See It Say It Label` component also sets the text of the label to reflect the button's speech recognition keyword. This keyword can be modified through the `SpeechRecognitionKeyword` property under `Advanced StatefulInteractable Settings` in the `Pressable Button` component. 
 
 <br/>
 
 ### Position
-You may also choose to reposition the label relative to a chosen transform by setting `PositionControl` on the See It Say It Label component. If you are repositioning a canvas label, PositionControl should be a RectTransform. 
+You may also choose to reposition the label relative to a chosen transform by setting `PositionControl` on the `See It Say It Label` component. If you are repositioning a canvas label, PositionControl should be a RectTransform. 
 
 <br/>
 
