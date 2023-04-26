@@ -16,7 +16,7 @@ You can use See-it, Say-it labels to communicate the voice command keyword for a
 
 <br/>
 
-The implementation of See-it, Say-it labels has changed from MRTK2 to MRTK3. Mainly, in MRTK3 there are separate See-it, Say-it label prefabs, both canvas and non-canvas, and a component, `See It Say It Label`, which is used to enable the labels. The canvas and non-canvas button prefabs include the `SeeItSayItLabel-Canvas` and `SeeItSayItLabel-NonCanvas` prefabs, respectively. These GameObjects are disabled by default. When the scene is created, the See It Say It Label component is responsible for enabling the label if the [input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) and [speech](/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview) packages are installed in the project. The purpose of this check is to prevent labels from appearing when voice commands aren't functional.
+The implementation of See-it, Say-it labels has changed from MRTK2 to MRTK3. Mainly, in MRTK3 there are separate `SeeItSayItLabel-Canvas` and `SeeItSayItLabel-NonCanvas` prefabs, and a component, `See It Say It Label`, which is used to enable the labels. In the canvas and non-canvas button prefabs, these labels are disabled by default. When the scene is created, the See It Say It Label component is responsible for enabling the label if the [input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) and [speech](/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview) packages are installed in the project. The purpose of this check is to prevent labels from appearing when voice commands aren't functional.
 
 <br/>
 

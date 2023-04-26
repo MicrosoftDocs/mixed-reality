@@ -1,9 +1,9 @@
 ---
 title: MRTK3 audio overview
 description: MRTK3 audio overview
-author: davidkline-ms
-ms.author: davidkl
-ms.date: 7/29/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 4/26/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, audio, sound
 ---
