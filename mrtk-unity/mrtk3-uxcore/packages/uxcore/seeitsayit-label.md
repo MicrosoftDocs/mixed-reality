@@ -12,11 +12,13 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, UX, UXCore, UX Core, packa
 
 ![Image showing a button with a see-it, say-it label](images/seeitsayitlabel.png)
 
-You can use See-it, Say-it labels to communicate the voice command keyword for a button to the user. For the keyword to work, you have to set up [speech input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/speech).
+You can use See-it, Say-it labels to communicate the voice command keyword for a button to the user. For the keyword to work, you have to set up [speech input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/speech). The implementation of See-it, Say-it labels has changed from MRTK2 to MRTK3. Mainly, in MRTK3 there are separate `SeeItSayItLabel-Canvas` and `SeeItSayItLabel-NonCanvas` prefabs, and a component, `See It Say It Label`, which is used to enable the labels. 
 
 <br/>
 
-The implementation of See-it, Say-it labels has changed from MRTK2 to MRTK3. Mainly, in MRTK3 there are separate `SeeItSayItLabel-Canvas` and `SeeItSayItLabel-NonCanvas` prefabs, and a component, `See It Say It Label`, which is used to enable the labels. In the canvas and non-canvas button prefabs, these labels are disabled by default. When the scene is created, the See It Say It Label component is responsible for enabling the label if the [input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) and [speech](/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview) packages are installed in the project. The purpose of this check is to prevent labels from appearing when voice commands aren't functional.
+### Enabling See-it, Say-it Labels
+
+In the canvas and non-canvas button prefabs, these labels are disabled by default. When the scene is created, the See It Say It Label component is responsible for enabling the label if the [input](/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview) and [speech](/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview) packages are installed in the project. The purpose of this check is to prevent labels from appearing when voice commands aren't functional.
 
 <br/>
 
