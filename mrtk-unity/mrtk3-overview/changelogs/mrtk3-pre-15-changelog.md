@@ -9,7 +9,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 # Changelog for MRTK3 pre.15
 
-## [pre.15] - 2022-4-28 - [`4381709`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/4381709)
+## [pre.15] - 2022-4-28 - [`41a7766`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/41a77667c6d514a40b1269c6256b248b97539545)
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The full release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/11395) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
