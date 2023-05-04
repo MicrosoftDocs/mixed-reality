@@ -8,8 +8,12 @@
   href: spatial-audio.md
 - name: State visualizer
   href: state-visualizer.md
+- name: Tab View
+  href: tab-view.md
 - name: Toggle collection
   href: toggle-collection.md
+- name: Virtualized List
+  href: virtualized-list.md
 - name: Volumetric UI with Canvas
   href: canvas-ui.md
 - name: API reference

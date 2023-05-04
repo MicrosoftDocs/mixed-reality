@@ -3,7 +3,7 @@ title: Starting from a Template Project
 description: Setting up your first MRTK3 project
 author: marlenaklein-msft
 ms.author: marlenaklein
-ms.date: 5/2/2023
+ms.date: 5/5/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK
 ---

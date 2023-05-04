@@ -3,9 +3,9 @@ title: Keyboard Preview
 description: Documentation for the Keyboard Preview in MRTK3
 author: marlenaklein-msft
 ms.author: marlenaklein
-ms.date: 5/3/2023
+ms.date: 5/5/2023
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, UX, Keyboard Preview
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, MRTK, MRTK3, UX, Keyboard Preview
 ---
 
 # Keyboard Preview
