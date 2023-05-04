@@ -131,8 +131,6 @@ The `Follow` class positions an element in front of the tracked target relative 
 
 It works similarly to the RadialView solver, with additional controls to manage *Max Horizontal & Vertical View Degrees* and mechanisms to alter the object's *Orientation*.
 
-*Follow Example Scene (Assets/MRTK/Examples/Demos/Solvers/Scenes/FollowSolverExample.unity)*
-
 ### InBetween
 
 The `InBetween` class will keep the attached GameObject between two transforms. The GameObject's own `SolverHandler` *Tracked Target Type* and the `InBetween` component's *Second Tracked Target Type* property define these two transform endpoints. Generally, both types will be set to `CustomOverride` and the resulting `SolverHandler.TransformOverride` and `InBetween.SecondTransformOverride` values are set to the two tracked endpoints.

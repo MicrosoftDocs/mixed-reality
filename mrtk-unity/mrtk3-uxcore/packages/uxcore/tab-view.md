@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, UX, UXCore, UX Core, packaging
 ---
 
-# Virtualized List
+# Tab View
 ![Image showing the tab view](images/tabview.png)
 
 The `TabView` is a helper component that allows the user to switch between views at a click. It accomplishes this by enabling and disabling sub-objects based on the currently toggled index of a `ToggleCollection`.
