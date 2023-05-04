@@ -1,9 +1,9 @@
 ---
 title: Solvers
 description: Overview of Solvers in MRTK3
-author: CDiaz-MS
-ms.author: cadia
-ms.date: 4/13/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 5/3/2023
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Solvers
 ---
