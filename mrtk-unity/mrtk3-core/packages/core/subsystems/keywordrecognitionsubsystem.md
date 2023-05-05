@@ -54,7 +54,7 @@ The project should now be ready to run on device or in editor.
 
 The easiest way to use `KeywordRecognitionSubsystem` is to use it with `StatefulInteractable`s. If Step 3 under the setup section is performed, the `SpeechInteractor` will trigger select events on `StatefulInteractable`s when the conditions specified on such interactables are met (for example, a specified phrase is heard and the interactable is being gaze-hovered). See the inspector of `StatefulInteractable` and `SpeechInteractor` (MRTK XR Rig -> MRTK Speech) for configurable settings.
 
-### Using PhraseRecognitionSubsystem manually
+### Using KeywordRecognitionSubsystem manually
 
 An alternative way to use `KeywordRecognitionSubsystem` is to manually register keyword and the `UnityAction` you want to see invoked when the keyword is heard with the subsystem.
 

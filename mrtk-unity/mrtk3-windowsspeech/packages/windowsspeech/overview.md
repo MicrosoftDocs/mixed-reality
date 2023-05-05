@@ -1,5 +1,6 @@
 ---
 title: Windows Speech Package
+description: Overview of MRTK3 Windows speech package
 author: marlenaklein-msft
 ms.author: marlenaklein
 ms.date: 5/5/2023
