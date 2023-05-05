@@ -9,7 +9,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, UX, UXCore, UX Core, packa
 ---
 
 # Tab View
-![Image showing the tab view](images/tabviews.png)
+![Image showing the tab view](images/tabview.png)
 
 `TabView` is a helper component that allows the user to switch between views at a click. It accomplishes this by enabling and disabling sub-objects based on the currently toggled index of a `ToggleCollection`.
 

@@ -61,7 +61,7 @@ When creating menu or UI panels with multiple buttons, it's recommended to use a
 
 ![Constructing UI 3](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_SharedBackplate.png)
 
-## Notable Components
+## Additional Components
 
 For reference, here are some additional components responsible for handling aspects of button visuals and functionlity:
 * The visual front plate pulse observed when the button is selected is handled by an `InteractablePulse` component.
