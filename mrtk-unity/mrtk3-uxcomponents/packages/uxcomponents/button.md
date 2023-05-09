@@ -1,9 +1,9 @@
 ---
 title: Button
 description: Description of button-based controls in MRTK3
-author: Zee2
-ms.author: finnsinclair
-ms.date: 4/15/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 5/5/2023
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Button, PressableButton
 ---
 
@@ -61,5 +61,9 @@ When creating menu or UI panels with multiple buttons, it's recommended to use a
 
 ![Constructing UI 3](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_SharedBackplate.png)
 
+## Additional Components
 
-
+For reference, here are some additional components responsible for handling aspects of button visuals and functionlity:
+* The visual front plate pulse observed when the button is selected is handled by an `InteractablePulse` component.
+* The button icon may be set to an MRTK icon using `FontIconSelector`.
+* A `RectTransformColliderFitter` may optionally be used on Canvas buttons to fit its `BoxCollider` to its `RectTransform`. This is component is disabled by default for performance.

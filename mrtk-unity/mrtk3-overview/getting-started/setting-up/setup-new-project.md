@@ -1,9 +1,9 @@
 ---
 title: Setting up a new project with MRTK3
 description: Setting up a new project with MRTK3
-author: RogPodge
-ms.author: roliu
-ms.date: 1/13/2023
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 5/5/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK
 ---
@@ -18,7 +18,7 @@ You're not expected to consume every MRTK package. See [which features are usefu
 
 ### 1. Create a new Unity project
 
-Create a new Unity project with Unity 2021.3.4f1 or newer. Close the Unity project before proceeding to the next step.
+Create a new Unity project with Unity 2021.3.21f1 or newer. Close the Unity project before proceeding to the next step.
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
@@ -94,7 +94,7 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
     * **Microsoft Motion Controller Profile**
 
     > [!NOTE]
-    > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
+    > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle. Some of the warnings may be resolved manually: <br/> 1. Under **Project Settings**, navigate to **Player > Resolution and Presentation**. Ensure that **Run in Background** is unchecked. <br/> 2. For UWP, under **Player > Publishing Settings > Capabilities**, ensure that **WebCam**, **Microphone**, **SpatialPerception**, and **GazeInput** are checked if these features are needed by the application.  For more information about Window's App Capabilities see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).
 
    For standalone:
 
