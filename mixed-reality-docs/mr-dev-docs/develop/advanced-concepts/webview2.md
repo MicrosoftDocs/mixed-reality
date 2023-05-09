@@ -12,10 +12,10 @@ keywords: HoloLens, WebView2, Unity, UWP
 
 As of the Windows 11 version of the HoloLens OS (currently available to insiders), it's now possible to write applications that can take advantage of WebView2 to display rich web content. WebView2 is available directly in WinUI 2 (UWP) applications and Unity applications through the WebView2 Plugin.
 
-For WinUI2 (UWP) applications, review the [Get started with WebView2 in WinUI 2 (UWP) apps](https://learn.microsoft.com/en-us/microsoft-edge/webview2/get-started/winui2) tutorial.
+For WinUI2 (UWP) applications, review the [Get started with WebView2 in WinUI 2 (UWP) apps](/microsoft-edge/webview2/get-started/winui2) tutorial.
 
-For Unity apps, review the [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](https://learn.microsoft.com/en-us/microsoft-edge/webview2/get-started/hololens2) tutorial.
+For Unity apps, review the [Get started with WebView2 in HoloLens 2 Unity apps (Preview)](/microsoft-edge/webview2/get-started/hololens2) tutorial.
 
 ## See also
 
-* <a href="https://learn.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank">Introduction to Microsoft Edge WebView2</a>
+* <a href="/microsoft-edge/webview2/" target="_blank">Introduction to Microsoft Edge WebView2</a>
