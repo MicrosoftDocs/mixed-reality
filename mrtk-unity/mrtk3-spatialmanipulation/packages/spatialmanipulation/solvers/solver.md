@@ -1,9 +1,9 @@
 ---
 title: Solvers
 description: Overview of Solvers in MRTK3
-author: CDiaz-MS
-ms.author: cadia
-ms.date: 4/13/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 5/5/2023
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Solvers
 ---
@@ -130,8 +130,6 @@ Generally, the `RadialView` is used with *Tracked Target Type* set to `Head` so 
 The `Follow` class positions an element in front of the tracked target relative to its local forward axis. The element can be loosely constrained (also known as "tag-along") so that it doesn't follow until the tracked target moves beyond user-defined bounds.
 
 It works similarly to the RadialView solver, with additional controls to manage *Max Horizontal & Vertical View Degrees* and mechanisms to alter the object's *Orientation*.
-
-*Follow Example Scene (Assets/MRTK/Examples/Demos/Solvers/Scenes/FollowSolverExample.unity)*
 
 ### InBetween
 
