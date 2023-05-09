@@ -94,7 +94,7 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
     * **Microsoft Motion Controller Profile**
 
     > [!NOTE]
-    > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle. Some of the warnings may be resolved manually: <br/> 1. Under **Project Settings**, navigate to **Player > Resolution and Presentation**. Ensure that **Run in Background** is unchecked. <br/> 2. For UWP, under **Player > Publishing Settings > Capabilities**, ensure that **WebCam**, **Microphone**, **SpatialPerception**, and **GazeInput** are checked.  
+    > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle. Some of the warnings may be resolved manually: <br/> 1. Under **Project Settings**, navigate to **Player > Resolution and Presentation**. Ensure that **Run in Background** is unchecked. <br/> 2. For UWP, under **Player > Publishing Settings > Capabilities**, ensure that **WebCam**, **Microphone**, **SpatialPerception**, and **GazeInput** are checked if these features are needed by the application.  For more information about Window's App Capabilities see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).
 
    For standalone:
 
