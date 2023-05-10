@@ -12,7 +12,7 @@ keywords: HoloLens, WebView2, Unity, UWP
 
 Starting with the Windows 11 update for HoloLens 2, a WebView2 Preview is now available on HoloLens 2 devices.  The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  To access this preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.  See also [Update HoloLens 2](/hololens/hololens-update-hololens).
 
-WebView2 is available directly in WinUI 2 (UWP) applications, and in Unity applications through the WebView2 Unity Plugin.
+WebView2 is available directly in WinUI 2 (UWP) applications, and in Unity applications through the [WebView2 Unity Plugin](./webview2-unity-plugin.md).
 
 For WinUI2 (UWP) applications, see [Get started with WebView2 in WinUI 2 (UWP) apps](/microsoft-edge/webview2/get-started/winui2).
 
