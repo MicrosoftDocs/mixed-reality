@@ -535,6 +535,12 @@
       items:
         - name: HoloLens Research Mode
           href: advanced-concepts/research-mode.md
+    - name: WebView2
+      items:
+        - name: Using WebView2 on HoloLens
+          href: advanced-concepts/webview2.md
+        - name: WebView2 Unity Plugin API
+          href: advanced-concepts/webview2-unity-plugin.md
 - name: App quality and testing
   items:
   - name: App quality criteria
