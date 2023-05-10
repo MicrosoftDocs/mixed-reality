@@ -19,7 +19,7 @@ WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and 
 
 WebView2 and the WebView plugin are only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
-For information on getting started with the WebView plugin for Unity, see [Get started with WebView2 in HoloLens 2 Unity apps](../../get-started/hololens2.md).
+For information on getting started with the WebView plugin for Unity, see [Get started with WebView2 in HoloLens 2 Unity apps](/microsoft-edge/webview2/get-started/hololens2).
 
 
 <!-- ====================================================================== -->
@@ -249,7 +249,7 @@ public void OnPointerDown(PointerEventData eventData)
 
 Interface for interop communication between Unity code and hosted WebView code.
 
-To learn more about interop in WebView2, see [Interop of native-side and web-side code](../../how-to/communicate-btwn-web-native.md).
+To learn more about interop in WebView2, see [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native).
 
 ```c#
 public interface IWithPostMessage : IWebView
