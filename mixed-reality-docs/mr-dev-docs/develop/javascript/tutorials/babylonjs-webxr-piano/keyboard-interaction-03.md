@@ -284,7 +284,7 @@ Right now, the piano keyboard we have created is a static model that does not re
 
     ```javascript
     const pointerToKey = new Map()
-    const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
+    const pianoSound = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
 
     scene.onPointerObservable.add((pointerInfo) => {
         switch (pointerInfo.type) {
@@ -292,7 +292,7 @@ Right now, the piano keyboard we have created is a static model that does not re
                 if(pointerInfo.pickInfo.hit) {
                     let pickedMesh = pointerInfo.pickInfo.pickedMesh;
                     let pointerId = pointerInfo.event.pointerId;
-                    if (keys.has(pickedMesh)) {
+                    if (pickedMesh.parent === keyboard) {
                         pickedMesh.position.y -= 0.5; // Move the key downward
                         pointerToKey.set(pointerId, {
                             mesh: pickedMesh,
