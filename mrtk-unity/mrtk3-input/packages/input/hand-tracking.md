@@ -1,9 +1,9 @@
 ---
 title: Hand tracking
 description: Hand tracking in MRTK3
-author: keveleigh
-ms.author: kurtie
-ms.date: 6/7/2022
+author: amollis
+ms.author: AMollis
+ms.date: 5/12/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, hand tracking
 ---
@@ -23,7 +23,7 @@ Our subsystems ingest hand joint data from several sources and aggregate them in
 - `XRSDKHandsSubsystem` receives hand data from Unity's XR SDK abstraction layer (which, in turn, may be sourcing its data from OpenXR, or some other source).
 - `SyntheticHandsSubsystem` synthesizes fake hand joints based on the input actions coming from the system (such as `devicePosition`, `deviceRotation`, etc). This subsystem provides the joints you see when using input simulation in-editor.
 
-These subsystems are queried by `HandsAggregatorSubsystem`, which combines all of the sources of hand data into a central API.
+The `HandsAggregatorSubsystem` is a subsystem that combines all of the sources of hand data into a central API. It pulls skeletal joint data from all actively running `HandsSubsystems`. The MRTK implementation of a `HandsAggregatorSubsystem` is `MRTKHandsAggregatorSubsystem`, which supports lazy loading and reuse of hand data per-frame.
 
 > [!IMPORTANT]
 > Whenever you query directly for hand joint data, always query from the Aggregator, not from any of the individual hand subsystems. This way, your code will work for any source of hand data, including simulated data.
@@ -40,7 +40,7 @@ The Aggregator computes several measurements regarding the pinching gesture base
 
 The <b>Pinch Open Threshold</b> and <b>Pinch Closed Threshold</b> control the absolute world distance between the thumb and forefinger that's used to normalize the pinch progress. When the distance equals the closed threshold, the pinch progress will be 1.0, and when the distance equals the open threshold, it will be 0.0. (These thresholds are currently in world units, but will soon be normalized to the user's hand size.)<br><br>The <b>Hand Raise Camera FOV</b> controls how close to the center of the user's view the hand must be to be considered valid for pinching. <b>Hand Facing Away Tolerance</b> controls the tolerance for measuring the user's hand rotation; it determines when the user's hand is facing away.
 
-## Examples
+## Hands Aggregator Examples
 
 ```C#
 // Get a reference to the aggregator.
@@ -79,3 +79,33 @@ bool handIsValid = aggregator.TryGetPalmFacingAway(XRNode.LeftHand, out bool isL
 // "isReadyToPinch" is adjusted with the HandRaiseCameraFOV and HandFacingAwayTolerance settings in the configuration.
 bool handIsValid = aggregator.TryGetPinchProgress(XRNode.LeftHand, out bool isReadyToPinch, out bool isPinching, out float pinchAmount)
 ```
+
+## Hand Controller Prefabs
+
+ :::row:::
+    :::column:::
+         The `MRTK LeftHand Controller` and `MRTK RightHand Controller` prefabs enable you to use hand controllers in your project. These prefabs can work with both articulated and non-articulated hand controllers. They have interactors for poke, grab, far ray, and gaze pinch actions. They also show the appropriate visuals and handle the input actions from the device using the controller and interactor components attached to them. The input actions are based on the input action maps defined in the `MRTK Default Input Actions` asset. 
+    :::column-end:::
+    :::column:::
+       ![The hierarchy of the MRTK LeftHand Controller Unity prefab.](../images/mrtk-hand-controller-prefab.png)
+    :::column-end:::
+:::row-end:::
+
+> [!NOTE]
+> These prefabs are already included with the `MRTK XR Rig`, see [creating a new scene](../../../mrtk3-overview/getting-started/setting-up/setup-new-scene.md) for more details.
+
+> [!IMPORTANT]
+> If the `MRTK XR Rig's` input actions are modified so to consume actions outside of the `MRTK Default Input Actions` asset, be sure to also update the `Input Action Manager` to use the new  `Input Action Asset`. Not doing this can cause undefined behavior.
+
+The `MRTK LeftHand/RightHand Controller` prefabs contain many components to support hand controllers. One such component is MRTK's `ArticulatedHandController`, which is a specialized version of Unity XRI's `ActionBasedController`. The `ArticulatedHandController` component uses the `HandsAggregatorSubsystem` to expose hand input via a controller object. For example, this controller exposes `HandsAggregatorSubsystem's` variable pinch select event.
+
+For the controller visualization, the `MRTK LeftHand/RightHand Controller` prefab contains the `ControllerVisualizer` and `HandJointVisualizer` components. The `ControllerVisualizer` is a basic controller visualizer which renders the a controller model when one is detected. The platform controller model is used when available, otherwise a generic controller model, that has been defined set via the `fallbackControllerModel` field. The `HandJointVisualizer` is intended debugging, and draws an instanced mesh on each hand joint.
+
+For non-HoloLens platforms there is also the `RiggedHandMeshVisualizer`. By default, this visualizer is not include with the `MRTK LeftHand/RightHand Controller` prefabs. The `RiggedHandMeshVisualizer` hand visualizer that uses a rigged mesh/armature to render high-quality hand meshes, and is not recommended for AR platforms like HoloLens, both for performance and design reasons.
+
+> [!NOTE]
+> For augmented reality platforms such as HoloLens, we recommend not using any hand visualizations, design. as the conflict between the user's real hand and the slightly delayed holographic visualization can be more distracting than it's worth. However, for opaque platforms, this is a great solution.
+
+The `MRTK LeftHand/RightHand Controller` also host a set of components that enable various types of interactions. These include `PokeInteractor`,  `MRTKRayInteractor`, `GrabInteractor`, and`GrabInteractor`. For more information on these interactors visit [Interactor Architecture &#8212; MRTK3](../../../mrtk3-overview/architecture/interactors.md).
+
+Finally, the MRTK controller prefabs also contain various components that implement `IInteractionModeDetector`, `NearInteractionModeDetector` and `InteractionDetector`. These detectors inform the application's `InteractionModeManager` which interactors should be enabled.  For more information on MRTK3's detectors visit [Interaction Mode Manager &#8212; MRTK3](interaction-mode-manager.md#detectors).
