@@ -1,2 +1,6 @@
+- name: DictationSubsystem
+  href: dictationsubsystem.md
 - name: KeywordRecognitionSubsystem
   href: keywordrecognitionsubsystem.md
+- name: TextToSpeechSubsystem
+  href: texttospeechsubsystem.md

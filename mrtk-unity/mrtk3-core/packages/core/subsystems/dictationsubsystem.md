@@ -13,7 +13,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, keywor
 > [!NOTE]
 > For general information on subsystems in MRTK3, see [here](../../../../mrtk3-overview/architecture/subsystems.md).
 
-The Core Definitions package ships `DictationSubsystem`, a base implementation of `MRTKSubsystem` and `IDictationsystem` that serves as the base of subsystems responsible for dictation in MRTK3. Concrete implementation shipped as part of MRTK such as `WindowsDictationSubsystem` and other potential dictation subsystems you might build should all be based on this class. Subsystems inheriting from `DictationSubsystem` will be able to start and stop a dictation session, and will provide events that fire when speech input is being processed, when a final result is recognized, and when a dictation session is finished or faulted. Event handlers can be added to these events to handle dictation functionality.
+The Core Definitions package ships `DictationSubsystem`, a base implementation of `MRTKSubsystem` and `IDictationsystem` that serves as the base of subsystems responsible for dictation in MRTK3. Concrete implementation shipped as part of MRTK such as `WindowsDictationSubsystem` and other potential dictation subsystems you might build should all be based on this class. Subsystems inheriting from `DictationSubsystem` will allow you to start and stop a dictation session, and will provide events that are triggered when speech input is being processed, when a final result is recognized, and when a dictation session is finished or faulted. Event handlers can be added to these events to handle dictation functionality.
 
 For more specific information, refer to the documentation of the concrete `DictationSubsystem` implementation you want to use.
 
@@ -28,7 +28,7 @@ Go to **Project Settings** > **MRTK3** **Available MRTK Subsystems** and then en
 
 ### 2. Assign a configuration asset
 
-For certain subsystems, such as the `WindowsDictationSubsystem`, a [configuration asset](../../../../mrtk3-overview/architecture/subsystems.md#configuration) is required in order for it to perform normally. 
+For certain subsystems, a [configuration asset](../../../../mrtk3-overview/architecture/subsystems.md#configuration) is required in order for it to perform normally. 
 
 1. Click the subsystem you enabled in Setup 1.
 1. Check to see if an empty `Configuration Asset` slot shows up under Subsystem Details on the right. If so, create a new config by selecting **Assets** -> **Create** **MRTK** > **Subsystems** > **[name of your subsystem] Config** and then dragging the created config onto the slot. 
@@ -42,7 +42,7 @@ As an example, to use `WindowsDictationSubsystem` on UWP Platform, go to **Proje
 
 ### 4. Running the scene on device/in editor
 
-The project should now be ready to run on device or in editor. Note that you may need to configure privacy settings for dictation to work in editor. 
+The project should now be ready to run on device or in editor. Note that you may need to configure your speech privacy settings for dictation to work in editor. 
 
 ## Using DictationSubsystem
 
@@ -86,4 +86,4 @@ if (dictationSubsystem != null)
 }
 ```
 
-A full example of using `DictationSubsystem` can be found in the `DictationHandler` sample script in the `DictationExample` sample scene. 
+A full example of using `DictationSubsystem` can be found in the `DictationHandler` sample script in the `DictationExample` sample scene.
