@@ -18,7 +18,7 @@ For general information on `KeywordRecognitionSubsystem` in MRTK, [refer to the 
 
 ### Setup and Usage
 
-Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/keywordrecognitionsubsystem.md#setup) and [Using KeywordRecognitionSubsystem](../../../mrtk3-core/packages/core/subsystems/keywordrecognitionsubsystem.md#using-keywordrecognitionsubsystem-manually) sections of the `KeywordRecognitionSubsystem` article. Note that for `WindowsKeywordRecognitionSubsystem`, a configuration asset is not needed; the only capability needed in player settings is "microphone".
+Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/keywordrecognitionsubsystem.md#setup) and [Using KeywordRecognitionSubsystem](../../../mrtk3-core/packages/core/subsystems/keywordrecognitionsubsystem.md#using-keywordrecognitionsubsystem-manually) sections of the `KeywordRecognitionSubsystem` article. Note that for `WindowsKeywordRecognitionSubsystem`, a configuration asset is used to set the `Confidence Level` for interpreting speech. The only capability needed in player settings is "microphone".
 
 ## Dictation
 
@@ -33,7 +33,7 @@ For general information on `DictationSubsystem` in MRTK, [refer to the documenta
 
 ### Setup and Usage
 
-Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/dictationsubsystem.md#setup) and [Using DictationSubsystem](../../../mrtk3-core/packages/core/subsystems/dictationsubsystem.md#using-dictationsubsystem) sections of the `DictationSubsystem` article. Note that for `WindowsDictationSubsystem`, a configuration asset is not needed; the only capability needed in player settings is "microphone".
+Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/dictationsubsystem.md#setup) and [Using DictationSubsystem](../../../mrtk3-core/packages/core/subsystems/dictationsubsystem.md#using-dictationsubsystem) sections of the `DictationSubsystem` article. Note that for `WindowsDictationSubsystem`, a configuration asset is is used to set the `Confidence Level` for interpreting speech and the `Auto Silence Timeout` and `Initial Silence Timeout` for a dictation session. The only capability needed in player settings is "microphone".
 
 ## Text To Speech
 
@@ -41,7 +41,7 @@ Lastly, the Windows Speech package adds `WindowsTextToSpeechSubsystem` to your p
 
 ### Setup and Usage
 
-Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/texttospeechsubsystem.md#setup) and [Using TextToSpeechSubsystem](../../../mrtk3-core/packages/core/subsystems/texttospeechsubsystem.md#using-texttospeechsubsystem) sections of the `TextToSpeechSubsystem` article. Note that for `WindowsTextToSpeechSubsystem`, a configuration asset is not needed; however it can be useful to set custom voices.
+Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/texttospeechsubsystem.md#setup) and [Using TextToSpeechSubsystem](../../../mrtk3-core/packages/core/subsystems/texttospeechsubsystem.md#using-texttospeechsubsystem) sections of the `TextToSpeechSubsystem` article. Note that for `WindowsTextToSpeechSubsystem`, a configuration asset is used to select the `Voice` used.
 
 > [!NOTE]
 > As the names suggest, `WindowsKeywordRecognitionSubsystem`, `WindowsDictationSubsystem`, and `WindowsTextToSpeechSubsystem` only work on the Windows standalone and UWP platforms.
