@@ -44,7 +44,7 @@ The project should now be ready to run on device or in editor.
 
 ## Using TextToSpeechSubsystem
 
-To use `TextToSpeechSubsystem` in script, call `TrySpeak`. Note that you will need to pass in an `AudioSource`. 
+To use `TextToSpeechSubsystem` in script, call `TrySpeak`. Note that you need to pass in an `AudioSource`. 
 
 ```c#
 // Get the first running text to speech subsystem.
