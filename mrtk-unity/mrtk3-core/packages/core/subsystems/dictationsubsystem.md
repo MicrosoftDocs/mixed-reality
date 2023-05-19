@@ -13,7 +13,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, keywor
 > [!NOTE]
 > For general information on subsystems in MRTK3, see [here](../../../../mrtk3-overview/architecture/subsystems.md).
 
-The Core Definitions package ships `DictationSubsystem`, a base implementation of `MRTKSubsystem` and `IDictationsystem` that serves as the base of subsystems responsible for dictation in MRTK3. Concrete implementation shipped as part of MRTK such as `WindowsDictationSubsystem` and other potential dictation subsystems you might build should all be based on this class. Subsystems inheriting from `DictationSubsystem` allow you to start and stop a dictation session, and provide events that are triggered when speech input is being processed, when a final result is recognized, and when a dictation session is finished or faulted. Event handlers can be added to these events to handle dictation functionality.
+The Core Definitions package ships `DictationSubsystem`, a base implementation of `MRTKSubsystem` and `IDictationsystem` that serves as the base of subsystems responsible for dictation in MRTK3. Concrete implementation shipped as part of MRTK such as `WindowsDictationSubsystem` and other potential dictation subsystems you might build should all be based on this class. Subsystems inheriting from `DictationSubsystem` allows you to start and stop a dictation session, and provides events that are triggered when speech input is being processed, when a final result is recognized, and when a dictation session is finished or faulted. Event handlers can be added to these events to handle dictation functionality.
 
 For more specific information, refer to the documentation of the concrete `DictationSubsystem` implementation you want to use.
 

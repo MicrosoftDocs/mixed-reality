@@ -37,6 +37,7 @@ The third category is the solver itself. The following solvers provide the build
 * `Momentum`: Applies acceleration/velocity/friction to simulate momentum and springiness for an object being moved by other solvers/components.
 * [`HandConstraint`](#hand-menu-with-handconstraint-and-handconstraintpalmup): Constraints object to follow hands in a region that doesn't intersect the GameObject with the hands. Useful for hand constrained interactive content such as menus, etc. This solver is intended to work with `XRNode`.
 * [`HandConstraintPalmUp`](#hand-menu-with-handconstraint-and-handconstraintpalmup): Derives from HandConstraint but includes logic to test if the palm is facing the user before activation. This solver only works with `XRNode` controllers and will behave just like its base class with other controller types.
+* [`Overlap`](#overlap): Overlaps the tracked object.
 
 To use the Solver system, add one of the components listed above to a GameObject. Since all Solvers require a `SolverHandler`, one will be created automatically by Unity.
 
@@ -158,6 +159,10 @@ To force the associated GameObject to stay vertical in any mode other than *None
 
 > [!NOTE]
 > Use the *Orientation Blend* property to control the balance between rotation factors when *Orientation Mode* is set to *Blended*. A value of 0.0 will have orientation entirely driven by *TrackedTarget* mode, and a value of 1.0 will have orientation driven entirely by *SurfaceNormal*.
+
+### Overlap
+
+The `Overlap` is a simple solver that will keep the object's transform at the same position and rotation as the `SolverHandler's` transform target.
 
 #### Determining what surfaces can be hit
 

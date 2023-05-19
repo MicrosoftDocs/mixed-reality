@@ -1,8 +1,8 @@
 ---
 title: Constraints
 description: Overview of constraints and the constraints manager in MRTK3
-author: Zee2
-ms.author: finnsinclair
+author: AMollis
+ms.author: amollis
 ms.date: 6/6/2022
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Constraints, ConstraintManager
@@ -64,22 +64,65 @@ All of the constraints provided by MRTK share the following properties:
 - *Near*: Constraint will be used during near manipulation if selected.
 - *Far*: Constraint will be used during far manipulation if selected.
 
-
+### FaceUserConstraint
 :::row:::
     :::column:::
-        ### FaceUserConstraint<br>
         This constraint limits the rotation of an object such that it will always face the user. The **Face Away** option controls whether the positive or negative Z axis is used.<br>
     :::column-end:::
         :::column:::
        ![Demonstration of FaceUserConstraint](images/MRTK_Constraint_FaceUser.gif)<br>
     :::column-end:::
 :::row-end:::
+
+### FixedDistanceConstraint
 :::row:::
     :::column:::
-        ### MinMaxScaleConstraint<br>
+        This constraint fixes the distance between the manipulated object and another object transform on manipulation start. This is useful for behaviour such as fixing the distance from the manipulated object to the head transform. The **Constraint transform** field defaults to the camera transform, and is the other transform that the manipulated object will have a fixed distance to. <br>
+    :::column-end:::
+        :::column:::
+       ![Demonstration of FixedDistanceConstraint](images/MRTK_Constraint_FixedDistance.gif)<br>
+    :::column-end:::
+:::row-end:::
+
+### MaintainApparentSizeConstraint
+:::row:::
+    :::column:::
+        When this constraint is attached to an object, no matter how far the object is from the user, it will maintain the same apparent size to the user (i.e. it will take up the same proportion of the user's field of view). This can be used to ensure that a slate or text panel remains readable while manipulating.<br>
+    :::column-end:::
+        :::column:::
+       ![Demonstration of MaintainApparentSizeConstraint](images/MRTK_Constraint_MaintainApparentSize.gif)<br>
+    :::column-end:::
+:::row-end:::
+
+### MoveAxisConstraint
+:::row:::
+    :::column:::
+        This constraint can be used to fix along which axes a manipulated object can be moved. This can be useful for manipulating objects over the surface of a plane, or along a line. <br>
+        The **Constraint on movement** field specifies which axes to prevent movement on. By default, these axes will be global rather than local, but this can be changed below. Because this property is a flag, any number of options can be selected.<br>        
+    :::column-end:::
+        :::column:::
+       ![Demonstration of MoveAxisConstraint](images/MRTK_Constraint_MoveAxis.gif)<br>
+    :::column-end:::
+:::row-end:::
+
+### MinMaxScaleConstraint
+:::row:::
+    :::column:::
         This constraint limits the scale of an object, useful for preventing users from scaling objects to unusably small or large sizes. It works for both handle-based scaling (with [BoundsControl](bounds-control.md)) and with two-handed direct scaling (with [ObjectManipulator](object-manipulator.md)). The **Relative to initial state** option defines whether the specific **Minimum** and **Maximum scale** values are absolute values or whether they are multiplied on the initial scale of the object. <br>
     :::column-end:::
         :::column:::
        ![Demonstration of MinMaxScaleConstraint](images/MRTK_Constraint_MinMaxScale.gif)<br>
+    :::column-end:::
+:::row-end:::
+
+### RotationAxisConstraint
+:::row:::
+    :::column:::
+        This constraint can be used to fix about which axes a manipulated object can be rotated. This can be useful for keeping a manipulated object upright, but still allowing y-axis rotations, for example. <br>
+        The **Constraint on rotation** field specifies which axes to prevent rotation about. By default, these axes will be global rather than local, but this can be changed below. Because this property is a flag, any number of options can be selected.
+        <br>
+    :::column-end:::
+        :::column:::
+       ![Demonstration of RotationAxisConstraint](images/MRTK_Constraint_RotationAxis.gif)<br>
     :::column-end:::
 :::row-end:::
