@@ -2,6 +2,8 @@
   href: overview.md
 - name: Buttons
   href: button.md
+- name: Dialog
+  href: dialog.md
 - name: Slate
   href: slate.md
 - name: Slider
