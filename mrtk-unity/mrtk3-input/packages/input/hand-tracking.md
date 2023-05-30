@@ -84,28 +84,44 @@ bool handIsValid = aggregator.TryGetPinchProgress(XRNode.LeftHand, out bool isRe
 
  :::row:::
     :::column:::
-         The `MRTK LeftHand Controller` and `MRTK RightHand Controller` prefabs enable you to use hand controllers in your project. These prefabs can work with both articulated and non-articulated hand controllers. They have interactors for poke, grab, far ray, and gaze pinch actions. They also show the appropriate visuals and handle the input actions from the device using the controller and interactor components attached to them. The input actions are based on the input action maps defined in the `MRTK Default Input Actions` asset. 
+The `MRTK LeftHand Controller` and `MRTK RightHand Controller` prefabs enable you to use hand controllers in your project. These prefabs can work with both articulated and non-articulated hand controllers. They have interactors for poke, grab, far ray, and gaze pinch actions. Also, these prefabs show the appropriate visuals and handle the input actions from the device using controller and interactor components attached to them. These components in turn consume Unity's input action mappings, which declare input bindings. The prefabs, by default, use the input action mappings defined in the included `MRTK Default Input Actions` asset.
+
+Note, the hand controller prefabs are already included in the `MRTK XR Rig` prefab, see [creating a new scene](../../../mrtk3-overview/getting-started/setting-up/setup-new-scene.md) for more details. If MRTK3's XR rig is already being used, no further action is needed to support hand controllers.
     :::column-end:::
     :::column:::
-       ![The hierarchy of the MRTK LeftHand Controller Unity prefab.](../images/mrtk-hand-controller-prefab.png)
+![The hierarchy of the MRTK LeftHand Controller Unity prefab.](../images/mrtk-hand-controller-prefab.png)
     :::column-end:::
 :::row-end:::
 
-> [!NOTE]
-> These prefabs are already included with the `MRTK XR Rig`, see [creating a new scene](../../../mrtk3-overview/getting-started/setting-up/setup-new-scene.md) for more details.
-
 > [!IMPORTANT]
-> If the `MRTK XR Rig's` input actions are modified so to consume actions outside of the `MRTK Default Input Actions` asset, be sure to also update the `Input Action Manager` to use the new  `Input Action Asset`. Not doing this can cause undefined behavior.
+> If the input actions on the MRTK3's XR rig are modified and to use actions defined outside of the `MRTK Default Input Actions` asset, be sure to update MRT3's input action manager so that it points to the new input action asset. Not doing this can result in undefined behavior.
 
-The `MRTK LeftHand/RightHand Controller` prefabs contain many components to support hand controllers. One such component is MRTK's `ArticulatedHandController`, which is a specialized version of Unity XRI's `ActionBasedController`. The `ArticulatedHandController` component uses the `HandsAggregatorSubsystem` to expose hand input via a controller object. For example, this controller exposes `HandsAggregatorSubsystem's` variable pinch select event.
+MRTK3's left and right hand controller prefabs contain all the components necessary to support hand input. One such component is MRTK's `ArticulatedHandController`, which is a specialized version of Unity XR input's `ActionBasedController`. This MRTK3 controller script uses MRTK3's hand aggregator subsystem in order expose various hand input events. For example, the controller exposes the pinch select event.
 
-For the controller visualization, the `MRTK LeftHand/RightHand Controller` prefab contains the `ControllerVisualizer` and `HandJointVisualizer` components. The `ControllerVisualizer` is a basic controller visualizer which renders the a controller model when one is detected. The platform controller model is used when available, otherwise a generic controller model, that has been defined set via the `fallbackControllerModel` field. The `HandJointVisualizer` is intended debugging, and draws an instanced mesh on each hand joint.
+The hand prefabs also have scripts to enable hand controller visualization. The `HandJointVisualizer` component is intended for debugging, and draws an instanced mesh on each hand joint. While the `ControllerVisualizer` component is intended for production scenarios and, when a controller is detected, renders the corresponding controller model. The platform's controller mesh is used when available, otherwise a generic controller model, the one specified on the `fallbackControllerModel` field, is used.
 
-For non-HoloLens platforms there is also the `RiggedHandMeshVisualizer`. By default, this visualizer is not include with the `MRTK LeftHand/RightHand Controller` prefabs. The `RiggedHandMeshVisualizer` hand visualizer that uses a rigged mesh/armature to render high-quality hand meshes, and is not recommended for AR platforms like HoloLens, both for performance and design reasons.
+Non-HoloLens platforms can use the `RiggedHandMeshVisualizer` to visualize the hand. As indicated by the name, this visualizer uses a rigged mesh to render high-quality hand models, and is not recommended for AR platforms like HoloLens, both for performance and design reasons. Note, this visualizer is not configured on the default hand controller prefabs.
 
 > [!NOTE]
-> For augmented reality platforms such as HoloLens, we recommend not using any hand visualizations, design. as the conflict between the user's real hand and the slightly delayed holographic visualization can be more distracting than it's worth. However, for opaque platforms, this is a great solution.
+> For augmented reality platforms such as HoloLens, we recommend not using any hand visualizations. The conflict between the user's real hand and the slightly delayed holographic visualization can be more distracting than it's worth. However, for opaque platforms, this is a great solution.
 
-The `MRTK LeftHand/RightHand Controller` also host a set of components that enable various types of interactions. These include `PokeInteractor`,  `MRTKRayInteractor`, `GrabInteractor`, and`GrabInteractor`. For more information on these interactors visit [Interactor Architecture &#8212; MRTK3](../../../mrtk3-overview/architecture/interactors.md).
+The default hand controller prefabs also host a set of interactor components. These include `PokeInteractor`, `MRTKRayInteractor`, `GrabInteractor`, and `GrabInteractor`. For more information on these interactors visit [Interactor Architecture &#8212; MRTK3](../../../mrtk3-overview/architecture/interactors.md).
 
-Finally, the MRTK controller prefabs also contain various components that implement `IInteractionModeDetector`, `NearInteractionModeDetector` and `InteractionDetector`. These detectors inform the application's `InteractionModeManager` which interactors should be enabled.  For more information on MRTK3's detectors visit [Interaction Mode Manager &#8212; MRTK3](interaction-mode-manager.md#detectors).
+Finally, the controller prefabs contain detector components as well, `IInteractionModeDetector`, `NearInteractionModeDetector` and `InteractionDetector`. These components inform the application's interaction mode manager of which interactors should be enabled. For more information on MRTK3's detectors visit [Interaction Mode Manager &#8212; MRTK3](interaction-mode-manager.md#detectors).
+
+## Pose Sources
+
+All of MRTK3's hand interactors require a controller pose (or hand pose). The type of hand pose can vary from interactor to interactor. For example, some use Unity input actions to obtain position and rotation, while others use the index finger pose, amd some use the palm pose. Each interactor's hand pose source is defined by a class implementing MRTK3's `IPoseSource` interface. This interface declares the following:
+
+- `TryGetPose`. This method tries to get a hand pose in world space. For example, the returned pose may correspond to a hand joint pose obtained from MRTK3's hand aggregator subsystem. This method returns return if retrieving the pose was successful. Some implementation of this method, like retrieving the pose from hand joint data, can fail if the data is not available.
+
+An interactor's `IPoseSource` type is specified via the Unity inspector, and can be one of the following types:
+
+- `FallbackCompositePoseSource`. A pose source composed computed from an ordered list of pose sources. Returns the result of the first pose source which successfully returns a pose.
+- `HandBasedPoseSource`. An abstract class that helps define a pose source that's based on a specific handedness with access to MRTK3's hand aggregator subsystem.
+- `HandJointPoseSource`. A posed source which extends `HandBasedPoseSource` and tracks a specific hand joint on a specific hand.
+- `InputActionPoseSource`. A pose source which obtains a pose composed of a tracked position and rotation from the specified Unity input actions. Default input actions can be found on the `MRTK Default Input Actions` Unity asset.
+- `PinchPoseSource`. A pose source which extends `HandBasedPoseSource` and obtains the pinch pose of a specific hand from MRTK3's hand aggregator subsystem.
+- `PolyfillHandRayPoseSource`. A pose source which extends `HandBasedPoseSource` and represents a hand ray. This hand ray is constructed by deriving from the palm and knuckle positions from MRTK3's hand aggregator subsystem.
+
+The pose source types for hand interactors are already specified on MRTK3's default controller prefabs. Modifying the prefab's default pose source settings is not recommended.

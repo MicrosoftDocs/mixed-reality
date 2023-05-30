@@ -10,6 +10,8 @@
   href: system-keyboard.md
 - name: Hand tracking
   href: hand-tracking.md
+- name: Eye tracking
+  href: eye-tracking.md
 - name: Interaction Mode Manager
   href: interaction-mode-manager.md
 - name: API reference
