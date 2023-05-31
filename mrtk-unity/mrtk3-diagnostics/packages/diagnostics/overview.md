@@ -20,7 +20,7 @@ One of the most important aspects of a mixed reality experience is performance. 
 
 In the past, MRTK combined frame rate and memory utilization statistics in a visual profiler. With MRTK3, the statistics logic and the visualization are separate. Developers now have control over the visualization (if any) that's displayed in their experience. In fact, some developers may wish to forgo the visualization in favor of a log file or custom visual feedback as thresholds are encountered.
 
-MRTK3 ships with a basic performance statistics visualization `SimpleProfiler` in `MRTK Diagnostics` > `Visualizations`.
+The MRTK3 diagnostics package ships with a basic performance statistics visualization `SimpleProfiler` in `MRTK Diagnostics` > `Visualizations`. Under the hood, `MRTKPerformanceStatsSubsystem` is used to expose performance statistics, including memory usage and frame rate. 
 
 ## Other diagnostics
 

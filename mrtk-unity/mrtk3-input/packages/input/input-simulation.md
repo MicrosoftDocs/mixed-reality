@@ -1,11 +1,11 @@
 ---
 title: Input simulation
 description: Input simulation in MRTK3
-author: davidkline-ms
-ms.author: davidkl
+author: AMollis
+ms.author: amollis
 ms.date: 6/7/2022
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, input simulation
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, input simulation, input simulator
 ---
 
 # Input simulation &#8212; MRTK3
@@ -21,8 +21,18 @@ The Input Simulation Service emulates the behavior of devices and platforms that
 
 > [!WARNING]
 > Input simulation doesn't work when using Unity's XR Holographic Emulation > Emulation Mode = "Simulate in Editor." Unity's in-editor simulation will take control away from MRTK's input simulation. To use MRTK's input simulation, you'll need to set XR Holographic Emulation to:
+>
+> Emulation Mode = _"None"_.
 
-  Emulation Mode = _"None"_.
+## How to setup MRTK3 Input simulation
+
+Before adding input simulation to your scene, ensure that you have enabled the "Subsystem for Hand Synthesis" under MRTK3's project settings. For more information about configuring MRTK3's settings, see [Subsystems &#8212; MRTK3](../../../mrtk3-overview/architecture/subsystems.md#configuration). If the "Subsystem for Hand Synthesis" is not enabled, MRTK3's hand simulation will not work.
+
+Next, add the `MRTKInputSimulator` to your scene. This prefab will enable MRTK3's input simulation via the input simulator component. This component uses Unity Input System's `Input Action` assets to define keybindings for moving the simulator's camera, eye gaze, and hands. MRTK3's input simulator prefab specifies default keybindings, as described in [How to use MRTK3 Input simulation](#how-to-use-mrtk3-input-simulation-mrtk3-input-simulator-default-controls). These keybindings are configured in the default input action asset, `MRTKInputSimulatorControl`, which contains two control schemes (or control sets). One control set uses the legacy MRTK2 keybindings, and the other uses the newer MRTK3 keybindings. By default, the `MRTKInputSimulator` prefab uses the MRTK3 control set, but this can be altered by setting the simulator's `Control Set` property.
+
+![An image showing a Unity inspector for MRTK3's input simulator component."](../images/input-simulator-component.png)
+
+The input simulator's keybindings and available control sets can be modified by changing the `Input Action Reference` properties on the input simulator component. It is recommended that you create a new asset by selecting "Create > Input Actions" from the project window's right-click menu instead of changing `MRTKInputSimulatorControls`.
 
 ## How to use MRTK3 Input simulation (MRTK3 Input Simulator Default Controls)
 
