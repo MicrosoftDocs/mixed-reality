@@ -24,7 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Updated MRTK3 package dependencies that weren't updated to use com.unity.xr.interaction.toolkit 2.3.0 ([#11542](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11542))
 - Modified the CI pipeline to produce packages with a date code and an optional prerelease tag ([#11546](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11546))
-- Update Non-Canvas Dialog Prefab ([#11563](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11563))
+- Updated Non-Canvas Dialog Prefab ([#11563](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11563))
 
 ### Fixed
 
