@@ -210,4 +210,4 @@ The roadmap from public preview to general availability is detailed in the follo
 | --- | --- |
 | Public Preview | June 8, 2022 |
 | Preview updates | Approximately every 2-4 weeks until GA |
-| General Availability | February 2023 |
+| General Availability | Q3 2023 ([blog post](https://techcommunity.microsoft.com/t5/mixed-reality-blog/announcing-the-upcoming-general-availability-of-microsoft-mixed/ba-p/3833710))|
