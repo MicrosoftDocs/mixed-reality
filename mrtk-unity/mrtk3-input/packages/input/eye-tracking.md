@@ -21,7 +21,7 @@ MRTK's gaze controller prefab has an Unity XR Controller and Interactor that bin
 ![Image showing the gaze action settings within the MRTK Default Input Action Unity asset.](../images/mrtk-default-input-gaze-actions.png)
 
 > [!IMPORTANT]
-> If you want to enable eye tracking when using OpenXR, the **Eye Gaze Interaction Profile** must be added to OpenXR's interaction profile configuration. See [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk.md)   for more about configuring OpenXR settings in Unity.
+> If you want to enable eye tracking when using OpenXR, the **Eye Gaze Interaction Profile** must be added to OpenXR's interaction profile configuration. See [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk)   for more about configuring OpenXR settings in Unity.
 >
 > Also, if you are using the **Universal Windows Platform**, be sure to add the *GazeInput* capability at *Project > Project Settings > Publishing Settings > Capabilities*.
 
@@ -50,7 +50,7 @@ The script overrides some methods from the base class `XRRayInteractor` to provi
 MRTK3's gaze controller is also setup with an `InteractorDwellManager` script component. This script implements dwell-based selection on interactable objects using the XR Interaction Toolkit in Unity. It manages the dwell timers, triggers the selection, and tracks the dwell state of interactables for the specified interactor. To utilize gaze dwell-selection, the targeted interactable must be MRTK3's `StatefulInteractable` and have the `Use Gaze Dwell` flag set.
 
 > [!NOTE]
-> Dwell based selection is not recommended where hand or voice input is possible, as dwell may lead to unpredictable or unintended UI element activations. Applications may still want to consider dwell input for accessibility or in scenarios where voice and hand input are not available. For design guidance on how to best use dwell see [Eye-gaze and dwell](/windows/mixed-reality/design/gaze-and-dwell-eyes.md#challenges-of-the-eye-gaze-and-dwell-interaction-model) and [Head-gaze and dwell](/windows/mixed-reality/design/gaze-and-dwell-head.md#design-principles).
+> Dwell based selection is not recommended where hand or voice input is possible, as dwell may lead to unpredictable or unintended UI element activations. Applications may still want to consider dwell input for accessibility or in scenarios where voice and hand input are not available. For design guidance on how to best use dwell see [Eye-gaze and dwell](/windows/mixed-reality/design/gaze-and-dwell-eyes#challenges-of-the-eye-gaze-and-dwell-interaction-model) and [Head-gaze and dwell](/windows/mixed-reality/design/gaze-and-dwell-head#design-principles).
 
 After entering hover state, this interactor will keep selecting before dwell trigger time passes, after which the selection is triggered on the interactable. The dwell settings can be configured using the following:
 
