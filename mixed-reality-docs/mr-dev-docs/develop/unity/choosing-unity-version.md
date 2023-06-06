@@ -17,7 +17,7 @@ While we **recommend that you use Unity LTS (Long Term support) versions with th
 [!INCLUDE[](includes/xr/recommended-version.md)]
 
 > [!IMPORTANT]
-> Unity 2021 does not support targeting HoloLens (1st gen). These headsets remain supported in **[Unity 2019 LTS](#unity-20194-lts)** with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS through mid-2022.
+> Unity 2020 and later does not support targeting HoloLens (1st gen). These headsets remain supported in **[Unity 2019 LTS](#unity-20194-lts)** with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS through mid-2022.
 
 The best way to install and manage Unity is through the **Unity Hub**:
 
@@ -42,11 +42,11 @@ Once you have Unity 2021.3 installed, get started creating a project or upgradin
 > [!div class="nextstepaction"]
 > [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md)
 
-## Unity 2020.4 LTS
+## Unity 2020.3 LTS
 
 Unity 2020.4 LTS has reached the end of Unity's two-year Long-Term Support window and is no longer receiving updates from Unity, although your projects will continue to run.
 
-If you need to use Unity 2020, you can use **Unity 2019 LTS with OpenXR**.
+If you need to use Unity 2020, you can use **Unity 2021 LTS with OpenXR**.
 
 > [!NOTE]
 > While we recommend using OpenXR for all new projects, Unity 2020.4 also supports the [Windows XR plugin](new-openxr-project-with-mrtk.md).
