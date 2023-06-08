@@ -1,5 +1,7 @@
 - name: Overview
   href: overview.md
+- name: Fingertip visualization
+  href: fingertip-visualization.md
 - name: Input simulation
   href: input-simulation.md
 - name: Input simulation quick reference
