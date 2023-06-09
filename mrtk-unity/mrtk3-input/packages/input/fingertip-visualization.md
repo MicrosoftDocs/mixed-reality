@@ -10,6 +10,6 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, MRTK, MRTK3, Input, Poke, 
 
 # Fingertip Visualization &#8212; MRTK3
 
-The fingertip affordance helps the user recognize the distance from the target object. The ring shape visual adjusts its size based on the distance from the fingertip to the object. The fingertip visualization is primarily controlled by the `Ring Reticle` and `Ring Magnetism` scripts, which can be found used in the `MRTK LeftHand Controller` prefab. 
+The fingertip affordance helps the user recognize the distance from the target object. The ring shape visual adjusts its size based on the distance from the fingertip to the object. Fingertip visualization is primarily controlled by the `Ring Reticle` and `Ring Magnetism` scripts, which can be found used in the `MRTK XR Rig` under Camera Offset > MRTK Hand Controller > IndexTip PokeInteractor > PokeReticle > RingVisual. Other components of the visualization include the `MRTK_Ring Cursor` material and the `MRTKRayReticleVisual` script. 
 
- Other components of the visualization include the `MRTK_Ring Cursor` material. 
+## How to use the fingertip visualization
