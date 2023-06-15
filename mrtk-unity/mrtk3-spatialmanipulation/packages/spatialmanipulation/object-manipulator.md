@@ -1,9 +1,9 @@
 ---
 title: Object Manipulator
 description: Overview of ObjectManipulator in MRTK3
-author: Zee2
-ms.author: finnsinclair
-ms.date: 6/6/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 6/15/2023
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, ObjectManipulator
 ---
@@ -35,7 +35,9 @@ If you want to not allow multi-handed manipulations, set the XRI `Selection Mode
 
 ## Manipulation logic injection
 
-Developers can customize the manipulation behavior of `ObjectManipulator` without needing to subclass or otherwise modify the script itself. Simply write a new `ManipulationLogic<T>` and specify the type in the inspector. 
+Developers can customize the manipulation behavior of `ObjectManipulator` without needing to subclass or otherwise modify the script itself. Simply write a new `ManipulationLogic<T>` and specify the type in the inspector with the `ManipulationLogicTypes` property. 
+
+Similarly, developers can customize the smoothing behavior by writing a new implementation of `ITransformSmoothingLogic` and specifying the type in the inspector with the `TransformSmoothingLogicType` property.
 
 > [!IMPORTANT]
 > If you find yourself writing new manipulation logic types for a new kind of interaction or input device, you're probably going down the wrong path. The existing manipulation logic should work for arbitrary input types as long as the attach transform is well-behaved. Consider adjusting or writing a new interactor instead. Read the [Interactor architecture documentation](../../../mrtk3-overview/architecture/interactors.md) and the [Interactable architecture documentation](../../../mrtk3-overview/architecture/interactables.md) for more information on how to write well-behaved interaction logic.
