@@ -19,7 +19,7 @@ See **[MRTK Figma Toolkit](figma-toolkit.md)** page to learn about Figma Toolkit
 
 ## Prerequisites
 - See [Install the tools](../develop/install-the-tools.md) for the required software for Mixed Reality development
-- Unity 2019 or higher
+- Unity 2020 or higher
 - [MRTK-Unity 2.7.0 or higher](/windows/mixed-reality/mrtk-unity/)
 
 > [!IMPORTANT]
