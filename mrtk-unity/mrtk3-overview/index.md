@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 
 ![MRTK3 banner](images/MRTK_UX_v3_Cover.png)
 
-MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's a Microsoft-driven open source project to accelerate cross-platform mixed reality development in Unity. This new version is built on top of Unity's XR Management system and XR Interaction Toolkit. Here are some of its functions:
+MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's a Microsoft-driven open-source project to accelerate cross-platform mixed reality development in Unity. This new version is built on top of Unity's XR Management system and XR Interaction Toolkit. Here are some of its functions:
 
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
 * Enables **rapid prototyping** via in-editor simulation that allows you to see changes immediately.
@@ -27,7 +27,7 @@ MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's
 
 ## Welcome to the MRTK3 Public Preview!
 
-We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. MRTK3 is now in public preview, which represents our current snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and we look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is to come!
+We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. MRTK3 is now in public preview, which represents our current snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and we look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is coming!
 
 ### Key improvements
 
@@ -91,13 +91,13 @@ To help identify specific packages and their versions, MRTK3 provides an "about"
 
 ## Branch Status
 
-MRTK3 is currently in public preview and we don't recommend it for use in production projects. We appreciate your testing, issues and feedback while the team works towards general availability (GA).
+MRTK3 is currently in public preview, and we don't recommend it for use in production projects. We appreciate your testing, issues, and feedback while the team works towards general availability (GA).
 
 ### Early preview packages
 
 Some parts of MRTK3 are at earlier stages of the development process than others. Early preview packages can be identified in the Mixed Reality Feature Tool and Unity Package Manager by the `Early Preview` designation in their names.
 
-As of June 2022, the following components are considered to be in early preview.
+As of June 2023, the following components are in early preview.
 
 | Name | Package Name |
 | --- | --- |
@@ -107,7 +107,7 @@ As of June 2022, the following components are considered to be in early preview.
  
 The MRTK team is fully committed to releasing this functionality. It's important to note that the packages may not contain the complete feature we're planning to release; they may undergo major, breaking architectural changes before release.
 
-We very much encourage you to provide any and all feedback to help shape the final form of these early preview features.
+We very much encourage you to provide all feedback to help shape the final form of these early preview features.
 
 ## UX building blocks
 
