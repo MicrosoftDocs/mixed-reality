@@ -9,7 +9,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 # Changelog for MRTK3 pre.16
 
-## [pre.16] - 2023-5-30 - [`4d0c8b7`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/4d0c8b74f565d2001834430c0e983c9f49036601)
+## [pre.16] - 2023-5-30 - [`b4b1684`](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/b4b16846089de0fb5349e31bc26b8609e4bd5b04)
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The full release announcement is available [here](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/11586) under the [releases category of the discussions tab in our repo](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions/categories/releases).
 
@@ -29,6 +29,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - Fixed edge case duplication bug in VirtualizedScrollRectList ([#11538](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11538))
-- Fixed SolverHandler issues when handedness flag is set to "everything" (i.e. 0xFFFFFFFF or -1) ([#11543](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11543))
+- Fixed SolverHandler issues when `Handedness` flag is set to `Everything` (that is, 0xFFFFFFFF or -1) ([#11543](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11543))
 - Fixed MRTK3's Tap to Place solver to work with any hand and interactor ([#11545](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11545))
 - Fixed execution order with ProximityLights ([#11575](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11575))
