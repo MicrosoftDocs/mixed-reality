@@ -1,0 +1,34 @@
+- name: Programs and events
+  items: 
+    - name: Mixed Reality development series
+      href: journey-to-mr-series.md
+    - name: Build 2021 - Mixed Reality
+      href: mr-build.md 
+    - name: Mixed Reality Dev Days 2020 session recordings
+      href: mr-dev-days-sessions.md 
+- name: Explore the Designing Holograms app
+  href: ../discover/designing-holograms.md
+- name: New Mixed Reality Learn modules
+  href: ../discover/mr-learning-overview.md
+- name: Learn about Azure mixed reality cloud services
+  href: ../develop/mixed-reality-cloud-services.md
+- name: Set up a new OpenXR project with MRTK
+  href: ../develop/unity/new-openxr-project-with-mrtk.md
+- name: Set up a new OpenXR project without MRTK
+  href: ../develop/unity/new-openxr-project-without-mrtk.md  
+- name: Using the new HP Reverb G2 controllers
+  items: 
+    - name: Unity 
+      href: ../develop/unity/unity-reverb-g2-controllers.md
+    - name: Unreal 
+      href: ../develop/unreal/unreal-reverb-g2-controllers.md
+- name: Distributing your apps to the world
+  href: ../distribute/distribute-overview.md
+- name: Get ready for the new Microsoft Edge
+  href: new-microsoft-edge.md 
+- name: Current Mixed Reality release notes 
+  href: release-notes-may-2020.md 
+- name: Community resources 
+  href: ../discover/community.md 
+- name: Deploying HoloLens at scale 
+  href: /hololens/

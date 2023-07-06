@@ -1,0 +1,15 @@
+log/
+obj/
+_site/
+.optemp/
+_themes*/
+_repo.*/
+
+.vscode
+.DS_Store
+
+.openpublishing.buildcore.ps1
+*.icloud
+._*
+
+

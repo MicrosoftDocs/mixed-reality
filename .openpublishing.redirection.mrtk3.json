@@ -1,0 +1,85 @@
+{
+	"redirections": [
+	  {
+	    "source_path_from_root": "/mrtk-unity/mrtk3/index.md",
+	    "redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-overview",
+	    "redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-accessibility/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-accessibility/packages/accessibility/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-core/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-core/packages/core/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-data/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-data/packages/data/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-diagnostics/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-diagnostics/packages/diagnostics/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-environment/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-environment/packages/environment/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-extendedassets/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-extendedassets/packages/extendedassets/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-input/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-input/packages/input/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-spatialmanipulation/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-spatialmanipulation/packages/spatialmanipulation/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-standardassets/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-standardassets/packages/standardassets/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-uxcomponents/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcomponents/packages/uxcomponents/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-uxcore/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcore/packages/uxcore/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-windowsspeech/index.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview",
+		"redirect_document_id": false
+	  },
+	  {
+		"source_path_from_root": "/mrtk-unity/mrtk3-environment/packages/environment/overview.md",
+		"redirect_url": "https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html",
+		"redirect_document_id": false
+	  },
+		{
+		"source_path_from_root": "/mrtk-unity/mrtk3-input/packages/input/migration.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-overview/architecture/mrtk-v2-to-v3",
+		"redirect_document_id": false
+		},
+		{
+		"source_path_from_root": "/mrtk-unity/mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-core/packages/core/subsystems/keywordrecognitionsubsystem",
+		"redirect_document_id": false
+		}
+	]
+  }
+  

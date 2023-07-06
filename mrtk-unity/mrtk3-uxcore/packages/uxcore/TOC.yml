@@ -1,0 +1,20 @@
+- name: Overview
+  href: overview.md
+- name: Dialog
+  href: dialog-api.md
+- name: See-it, say-it label
+  href: seeitsayit-label.md
+- name: Spatial audio
+  href: spatial-audio.md
+- name: State visualizer
+  href: state-visualizer.md
+- name: Tab view
+  href: tab-view.md
+- name: Toggle collection
+  href: toggle-collection.md
+- name: Virtualized List
+  href: virtualized-list.md
+- name: Volumetric UI with Canvas
+  href: canvas-ui.md
+- name: API reference
+  href: https://aka.ms/mrtk3uxcoreapi

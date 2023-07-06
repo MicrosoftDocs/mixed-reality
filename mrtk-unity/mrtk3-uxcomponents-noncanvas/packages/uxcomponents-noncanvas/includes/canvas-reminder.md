@@ -1,0 +1,2 @@
+> [!NOTE]
+> In the majority of cases, [the hybrid Canvas UI prefabs](../../../../mrtk3-uxcomponents/packages/uxcomponents/overview.md) offer a much more powerful designer workflow, with dynamic resizing, reflow, alignment, padding, realtime layouts, albeit requiring prior experience with Unity UI. [You can learn more about how the hybrid Canvas UI system works here, ](../../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and [refer to the comparison table here.](../overview.md)

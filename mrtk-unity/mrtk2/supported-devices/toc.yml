@@ -1,0 +1,12 @@
+- name: Deploying to HoloLens and WMR headsets
+  href: wmr-mrtk.md
+- name: Deploying to Quest
+  href: oculus-quest-mrtk.md
+- name: Deploying to Android and iOS (AR Foundation) [Experimental]
+  href: using-ar-foundation.md
+- name: Using Leap Motion
+  href: leap-motion-mrtk.md
+- name: Detecting controllers in MRTK
+  href: controllers-mrtk.md
+- name: Detecting platform capabilities
+  href: detecting-platform-capabilities.md
