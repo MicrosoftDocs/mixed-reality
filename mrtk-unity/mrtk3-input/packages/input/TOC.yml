@@ -6,6 +6,8 @@
   href: input-simulation.md
 - name: Input simulation quick reference
   href: input-simulation-quick-ref.md  
+- name: Spatial mouse
+  href: spatial-mouse.md
 - name: Speech input
   href: speech.md
 - name: System keyboard
