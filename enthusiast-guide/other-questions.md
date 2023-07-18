@@ -97,7 +97,7 @@ Windows Mixed Reality is available in the following languages:
 You can use Windows Mixed Reality if your PC is set to a different language. However, the interface will appear in English (United States), and speech commands and dictation won't be available. The Windows Mixed Reality onscreen keyboard is English (United States) only. To enter text in another language, use a physical keyboard connected to your PC. You can also use dictation in one of the supported Windows Mixed Reality languages listed above—just select microphone on the onscreen keyboard.
 
 Windows Mixed Reality is also available in the following languages without speech commands or dictation features:
-* Chinese Traditional (Taiwan and Hong Kong)
+* Chinese Traditional (Taiwan and Hong Kong Special Administrative Region)
 * Dutch (Netherlands)
 * Korean (Korea)
 * Russian (Russia)
