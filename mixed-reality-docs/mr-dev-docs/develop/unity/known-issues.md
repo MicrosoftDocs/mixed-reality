@@ -23,7 +23,7 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Mitigation&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
 | HL2 app using URP has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. | **Investigating:**<br />2023/01/04 | Unity 2022.\*.\* <br/> with URP 13.\*.\* | Either avoid URP in Unity 2022, avoid using the default URP materials or use URP in Unity 2021.3.14+ |
-
+|An HL2 app importing both MRTK3 and Azure Spatial Anchors may present 'Guid for asset conflicts with' errors when the ARFoundation package version doesn't match the imported ARSubsystems version.|||When using ARFoundation 5.x+, manually add com.unity.xr.arsubsystems version 5.0.2 to the project's Package Manager.  You'll get a warning that ARSubsystems has been deprecated, but it can be ignored.|
 ## Resolved blocking issues
 
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Versions&nbsp;with&nbsp;fixes&nbsp;&nbsp; |
