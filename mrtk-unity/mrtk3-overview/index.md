@@ -25,7 +25,7 @@ MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's
 | Windows | Traditional flat-screen desktop (experimental)
 | And more coming soon! |
 
-## Welcome to the MRTK3 Public Preview!
+## Welcome to the MRTK3 Public Preview
 
 We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. MRTK3 is now in public preview, which represents our current snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and we look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is to come!
 
@@ -83,7 +83,7 @@ In previous versions of MRTK (HoloToolkit and MRTK v2), all packages were releas
 
 Individual versioning will enable faster servicing while providing improved developer understanding of the magnitude of changes and reducing the number of packages needing to be updated to acquire the desired fix(es).
 
-For example, if a non-breaking new feature is added to the UX core package that contains the logic for user interface behavior, the minor version number will increase (from 3.0.x to 3.1.0). Since the change is non-breaking, the UX components package, which depends upon UX core, is not required to be updated. 
+For example, if a non-breaking new feature is added to the UX core package that contains the logic for user interface behavior, the minor version number will increase (from 3.0.x to 3.1.0). Since the change is non-breaking, the UX components package, which depends upon UX core, is not required to be updated.
 
 As a result of this change, there isn't a unified MRTK3 product version.
 
@@ -104,7 +104,7 @@ As of June 2022, the following components are considered to be in early preview.
 | Accessibility | com.microsoft.mrtk.accessibility |
 | Data Binding and Theming | com.microsoft.mrtk.data |
 | Environment | com.microsoft.mrtk.environment |
- 
+
 The MRTK team is fully committed to releasing this functionality. It's important to note that the packages may not contain the complete feature we're planning to release; they may undergo major, breaking architectural changes before release.
 
 We very much encourage you to provide any and all feedback to help shape the final form of these early preview features.
@@ -166,8 +166,8 @@ We very much encourage you to provide any and all feedback to help shape the fin
 :::row-end:::
 
 ### Figma Toolkit for MRTK3 Preview
-The [prerelease of Figma Toolkit for MRTK3](https://www.figma.com/community/file/1145959192595816999) includes UI components based on Microsoft's new Mixed Reality Design Language introduced in MRTK3. You can use the 2D representations of the components in the design process for creating UI layouts and storyboards.
 
+The [prerelease of Figma Toolkit for MRTK3](https://www.figma.com/community/file/1145959192595816999) includes UI components based on Microsoft's new Mixed Reality Design Language introduced in MRTK3. You can use the 2D representations of the components in the design process for creating UI layouts and storyboards.
 
 ## Session videos from Microsoft Mixed Reality Dev Days 2022
 
@@ -200,7 +200,6 @@ The [prerelease of Figma Toolkit for MRTK3](https://www.figma.com/community/file
         **[#Open - Deploy Everywhere with OpenXR and MRTK3](/events/mixed-reality-dev-days/open-deploy-everywhere-with-openxr-and-mrtk3)**<br>
     :::column-end:::
 :::row-end:::
-
 
 ## Roadmap
 
