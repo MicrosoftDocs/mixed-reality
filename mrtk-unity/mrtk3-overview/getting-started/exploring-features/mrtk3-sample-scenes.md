@@ -10,15 +10,17 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes
 
 # Exploring MRTK3 sample scenes
 
-Unlike MRTK v2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consists of a loosely coupled collection of individual UPM packages distributed through the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), as well as through our official Git repository.
+Unlike MRTK2, MRTK3 isn't distributed as a Unity project. Instead, MRTK3 consists of a loosely coupled collection of individual UPM packages distributed through the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), as well as through our official Git repository.
 
-As a result, we no longer ship our sample scenes inside the MRTK library/package itself. Instead, we maintain the `UnityProjects` folder at the top level of the Git repository, which contains any Unity projects we want to ship. Currently, this folder includes the `MRTKDevTemplate` project, which contains all of our example scenes and is configured to align with our recommended best settings. 
+As a result, we no longer ship our sample scenes inside the MRTK library/package itself. Instead, we maintain the `UnityProjects` folder at the top level of the [Git repository](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3), which contains any Unity projects we want to ship. Currently, this folder includes the `MRTKDevTemplate` project, which contains all of our example scenes and is configured to align with our recommended best settings.
 
-We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, making editing and submitting changes easy. Clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project. 
+We also recommend using the `MRTKDevTemplate` project for local development when submitting fixes or changes. All of the packages are specified as local on-disk dependencies, making editing and submitting changes easy. Clone the repo and ensure you're on the `mrtk3` branch, and open the `MRTKDevTemplate` Unity project.
 
 Within `MRTKDevTemplate`, you can find all of our sample scenes. Most of the sample scenes are in `UnityProjects/MRTKDevTemplate/Assets/Scenes`, while some experimental or early-preview sample scenes are located in `UnityProjects/MRTKDevTemplate/Assets/Data Binding Example`.
 
 ## Included sample scenes
+
+We list below just a few of them.
 
 **HandInteractionExamples**
 
@@ -33,6 +35,10 @@ Various configurations of BoundsControl, showing both flattened and 3D bounds.
 **CanvasExample**
 
 Shows a collection of UX components built with UnityUI. These UX components are built with a combination of XRI interactables and traditional UGUI event handlers. This combination enables flexibility and responsive design across a wide variety of input methods and contexts. [For more information, see the UX Components overview.](../../../mrtk3-uxcomponents/packages/uxcomponents/overview.md)
+
+**CanvasUITearsheet**
+
+This scene showcases all available UI building blocks and their permutations in MRTK. All controls are based on the new Mixed Reality Design Language.
 
 **DialogExample**
 
@@ -54,9 +60,13 @@ An example of different styles of interactable buttons.
 
 Near interaction menu examples.
 
-**ObjectBarExample**
+**NonCanvasObjectBarExample**
 
 Demonstrates the Object Bar component, which enables horizontal or vertical arrangement of arbitrary 3D objects.
+
+**NonCanvasUIBackplateExample**
+
+The scene demonstrates `UIBackplate.prefab`, which you can use to construct various types of UI panels and menus.
 
 **SampleEmptyMRTKScene**
 
@@ -78,17 +88,9 @@ Shows a collection of toggles that control the visibility of associated game obj
 
 Demonstrates the `ToggleCollection` script, which allows multiple toggle interactables to be grouped. Only one toggle can be toggled at any given time.
 
-**UIBackplateExample**
-
-The scene demonstrates `UIBackplate.prefab`, which you can use to construct various types of UI panels and menus.
-
-**UITearSheet**
-
-This scene showcases all available UI building blocks and their permutations in MRTK. All controls are based on the new Mixed Reality Design Language.
-
 ### DataBinding and Theming sample scenes
 
-The following scenes demonstrate very early-preview functionality and are subject to large changes. 
+The following scenes demonstrate very early-preview functionality and are subject to large changes.
 
 **Assets\UX Theming Example\Scenes\AudioTheming**
 
@@ -101,7 +103,3 @@ Using Data Binding to update a battery level display.
 **Assets\UX Theming Example\Scenes\CoreUXThemingExample**
 
 Example of using Data Binding and Theming to control the look of UX Core components.
-
-**Assets\Data Binding Example\Scenes\DataBindingExamples**
-
-Demonstration of using Data Binding and Theming to bind to data sources.

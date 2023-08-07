@@ -27,7 +27,7 @@ The band pass effect is used to limit the frequencies contained in the sound as 
 A common use for band pass filtering is to simulate a low-fidelity (lo-fi) playback device, such as an AM radio or a telephony system.
 
 > [!NOTE]
-> When adding `Audio Band Pass Effect` to the sound source, it adds Unity's `Audio Low Pass Filter` and `Audio High Pass Filter` to implement the band pass effect. 
+> When adding `Audio Band Pass Effect` to the sound source, it adds Unity's `Audio Low Pass Filter` and `Audio High Pass Filter` to implement the band pass effect.
 
 The [audio lo-fi example](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk3/UnityProjects/MRTKDevTemplate/Assets/Scenes/Audio/AudioLoFiExample.unity), on GitHub, demonstrates how to use the band pass effect and how subtle it can often be.
 
