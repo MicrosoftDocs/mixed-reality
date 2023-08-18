@@ -24,7 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- MRTK3 now requires `com.unity.inputsystem` version 1.6.1 to address Mouse Input issues on HoloLens. ([11661](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11661))
+- MRTK3 now requires `com.unity.inputsystem` version 1.6.1 to address mouse input issues on HoloLens. ([11661](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11661))
 - The `CameraSettingsManager` component is now on the MRTK XR Rig prefab. This component auto configures the main camera's settings based on the device's display type (`Transparent` or `Opaque`). ([11684](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11684), [11685](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11685))
 - Refactored duplicate `LocateTargetHitPoint` methods to a common, shared location. ([11699](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11699))
 - Moved some misplaced control prefabs to proper directories. ([11707](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11707))
