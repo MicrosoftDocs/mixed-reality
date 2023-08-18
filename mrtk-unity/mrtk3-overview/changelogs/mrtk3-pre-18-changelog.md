@@ -51,5 +51,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Bounds control handles now reappear after a game object is re-enabled. ([11698](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11698))
 - Fixed XML summary block warnings. ([11706](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11706), [11719](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11719), [11723](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11723), [11724](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11724))
 - Slider now works with values outside of the default range. ([11742](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11742))
-- Cursor visuals are more stability. ([11739](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11739))
+- Cursor visuals are more stable. ([11739](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/11739))
 - The bounds control no longer "flattens" when applied to a 2D surface. ([12](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity/pull/12))
