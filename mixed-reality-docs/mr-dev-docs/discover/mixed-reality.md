@@ -67,7 +67,7 @@ Mixed reality blends both physical and digital worlds.  These two realities mark
 
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/_xpI0JosYUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/_xpI0JosYUk]
 
 <br>
 
