@@ -3,7 +3,7 @@ title: MRTK3 audio overview
 description: MRTK3 audio overview
 author: marlenaklein-msft
 ms.author: marlenaklein
-ms.date: 4/26/2023
+ms.date: 8/23/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, audio, sound
 ---
@@ -29,7 +29,7 @@ A common use for band pass filtering is to simulate a low-fidelity (lo-fi) playb
 > [!NOTE]
 > When adding `Audio Band Pass Effect` to the sound source, it adds Unity's `Audio Low Pass Filter` and `Audio High Pass Filter` to implement the band pass effect.
 
-The [audio lo-fi example](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk3/UnityProjects/MRTKDevTemplate/Assets/Scenes/Audio/AudioLoFiExample.unity), on GitHub, demonstrates how to use the band pass effect and how subtle it can often be.
+The [audio lo-fi example](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity/blob/mrtk3/UnityProjects/MRTKDevTemplate/Assets/Scenes/Audio/AudioLoFiExample.unity), on GitHub, demonstrates how to use the band pass effect and how subtle it can often be.
 
 #### Band pass filter assets
 
@@ -59,7 +59,7 @@ A common use of audio occlusion is to simulate being outside of a music venue. W
 
 The audio influencer system ensures that effects will be intelligently stacked, including multiple occluders and result in a realistic simulation of what would be heard in the physical world.
 
-The [audio occlusion example](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk3/UnityProjects/MRTKDevTemplate/Assets/Scenes/Audio/AudioOcclusionExample.unity), on GitHub, provides an example of a simple occlusion scenario with a single occluder.
+The [audio occlusion example](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity/blob/mrtk3/UnityProjects/MRTKDevTemplate/Assets/Scenes/Audio/AudioOcclusionExample.unity), on GitHub, provides an example of a simple occlusion scenario with a single occluder.
 
 ### AudioInfluencerController.cs
 
