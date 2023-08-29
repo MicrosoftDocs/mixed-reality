@@ -37,7 +37,7 @@ Users don't have an unlimited capacity for audio information.
 ### Don't rely solely on sounds
 
 Sounds that are used well are valuable to your users. But make sure your application is usable even with the sound turned off.
-* Users may be hearing impaired.
+* Users may be hard of hearing.
 * Your application may be used in a loud environment.
 * Users may have privacy concerns or other reasons to disable device audio.
 
@@ -115,7 +115,7 @@ Sounds that reinforce the *progressive stages of button actions* and other inter
 
 ### Which spatialization technology to use
 
-With headphones or the HoloLens speakers, use head-related transfer function (HRTF)-based spatialization technologies. These technologies model the sound propagation around the head in the physical world. Even when a sound source is on the far side of one's head, sound propagates to the distant ear with some attenuation and delay. Speaker panning relies only on attenuation and applies total attenuation in the left ear when sounds are on the right side, and the other way around. This technique can be uncomfortable for "normal hearing" listeners and inaccessible for listeners who have hearing impairment in one ear.
+With headphones or the HoloLens speakers, use head-related transfer function (HRTF)-based spatialization technologies. These technologies model the sound propagation around the head in the physical world. Even when a sound source is on the far side of one's head, sound propagates to the distant ear with some attenuation and delay. Speaker panning relies only on attenuation and applies total attenuation in the left ear when sounds are on the right side, and the other way around. This technique can be uncomfortable for "normal hearing" listeners and inaccessible for listeners who are hard of hearing in one ear.
 
 ## Next steps
 
