@@ -3,7 +3,7 @@ title: Setting up a new project with MRTK3
 description: Setting up a new project with MRTK3
 author: marlenaklein-msft
 ms.author: marlenaklein
-ms.date: 5/5/2023
+ms.date: 8/30/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK
 ---
@@ -58,7 +58,7 @@ Once imported, MRTK3 requires a profile to be set for the standalone target plat
 
 1. Navigate to **Edit > Project Settings**.
 1. Under **Project Settings**, navigate to **MRTK3** and then switch to the standalone tab. Note that the profile is initially unspecified.
-1. Populate the field with the default MRTK profile that ships with the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window; make sure you search in `All`. Alternatively, you can find the profile under `Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset`.
+1. Populate the field with the default MRTK profile that ships with the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window; make sure you search in `All`. Alternatively, you can find the profile under `Packages/org.mixedrealitytoolkit.core/Configuration/Default Profiles/MRTKProfile.asset`.
    >[!NOTE]
    > Not all of the MRTK subsystems are shown in the screenshot below. The MRTK subsystems that you see may be different depending on the MRTK3 packages you've added to your project.
 

@@ -1,9 +1,9 @@
 ---
 title: Mixed Reality Toolkit 3 Developer Documentation
 description: Learn about Mixed Reality Toolkit 3 for developers.
-author: MaxWang-MS
-ms.author: wangmax
-ms.date: 6/22/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 8/30/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 ---
@@ -101,9 +101,9 @@ As of June 2022, the following components are considered to be in early preview.
 
 | Name | Package Name |
 | --- | --- |
-| Accessibility | com.microsoft.mrtk.accessibility |
-| Data Binding and Theming | com.microsoft.mrtk.data |
-| Environment | com.microsoft.mrtk.environment |
+| Accessibility | org.mixedrealitytoolkit.accessibility |
+| Data Binding and Theming | org.mixedrealitytoolkit.data |
+| Environment | org.mixedrealitytoolkit.environment |
 
 The MRTK team is fully committed to releasing this functionality. It's important to note that the packages may not contain the complete feature we're planning to release; they may undergo major, breaking architectural changes before release.
 
