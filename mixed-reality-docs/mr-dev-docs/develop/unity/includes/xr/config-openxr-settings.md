@@ -8,7 +8,8 @@
 
 If you're developing for desktop VR, skip this section and go to [Configure the project for desktop VR](#configure-the-project-for-desktop-vr).
 
-1. On the menu bar, click on **Mixed Reality > Project > Apply recommended project settings for HoloLens 2** to enable the validation rules for HoloLens 2.
+1. On the menu bar, click on **Mixed Reality > Project Settings Validation > HoloLens 2 Application (UWP)** to enable the validation rules for HoloLens 2.
+   For MR OpenXR plugins before version 1.9, the menu item available is **Mixed Reality > Project > Apply recommended project settings for HoloLens 2**.
 1. In the project validation window that pops up, make sure you're on the UWP platform tab (indicated by the Windows logo), and click **Fix all** to resolve the validation issues. Note that there may be issues that remain after clicking on **Fix all**. In that case, try clicking on **Fix all** again, ignore any issues that are marked "scene specific" (if any), and go through the rest of the issues (if any) to see if there are any suggested change that you want to make.
 1. The project is almost ready for HoloLens 2 deployment at this point. Proceed to [Configure Player settings](#configure-player-settings) for the next step.
 
