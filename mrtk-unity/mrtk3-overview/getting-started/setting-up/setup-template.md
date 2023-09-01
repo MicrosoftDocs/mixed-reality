@@ -3,7 +3,7 @@ title: Starting from a Template Project
 description: Setting up your first MRTK3 project
 author: marlenaklein-msft
 ms.author: marlenaklein
-ms.date: 5/5/2023
+ms.date: 8/23/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK
 ---
@@ -14,7 +14,7 @@ The easiest way to acquire and try out MRTK3 is to explore our preconfigured pro
 
 If you work with Git using the command line, you can clone the repo while specifying the `mrtk3` branch:
 
- `git clone --branch mrtk3 https://github.com/microsoft/MixedRealityToolkit-Unity.git`
+ `git clone --branch mrtk3 https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity.git`
 
 For information on the sample scenes included in the preview, see [Exploring MRTK3 Sample Scenes](../exploring-features/mrtk3-sample-scenes.md).
 

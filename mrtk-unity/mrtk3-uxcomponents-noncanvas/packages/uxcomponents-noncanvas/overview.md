@@ -1,9 +1,9 @@
 ---
 title: UX Components (Non-Canvas)
 description: Overview of the UX Components (Non-Canvas) package
-author: Zee2
-ms.author: finnsinclair
-ms.date: 6/6/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 8/30/2023
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, Button, PressableButton, Slider, Toggle
 ---
@@ -24,6 +24,6 @@ The following table outlines a set of criteria you may wish to consider when cho
 | Learning curve | [Unity UI knowledge + experience recommended](https://learn.unity.com/tutorial/working-with-ui-in-unity) | No prior Unity UI experience required
 | 2D mouse input                  | Yes                    | Yes |
 | Rich volumetric XR input        | Yes                    | Yes |
-| Theming                         | Work-in-progress       | com.microsoft.mrtk.data |
+| Theming                         | Work-in-progress       | org.mixedrealitytoolkit.data |
 | Localization | Work-in-progress | Work-in-progress |
 | Number of UI elements on-screen | Best for small layouts | Better batching performance for hundreds/thousands of elements |

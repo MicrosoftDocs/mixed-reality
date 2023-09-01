@@ -22,9 +22,9 @@ Voice input is powered by the [same engine](/windows/uwp/design/input/speech-rec
 
 When you're using voice commands, head or eye gaze is the typical targeting mechanism, whether with a cursor to "select" or to channel your command to an application you're looking at. It may not even be required to show any gaze cursor _("see it, say it")_. Some voice commands don't require a target at all, such as "go to start" or "Hey Cortana."
 
-<br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/eHMkOpNUtR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!VIDEO https://www.youtube.com/embed/eHMkOpNUtR8]
 
 
 ## Device support
