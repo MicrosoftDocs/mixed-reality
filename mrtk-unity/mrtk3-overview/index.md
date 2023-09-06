@@ -25,9 +25,9 @@ MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's
 | Windows | Traditional flat-screen desktop (experimental)
 | And more coming soon! |
 
-## Welcome to the MRTK3 Public Preview
+## Welcome to the MRTK3
 
-We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. MRTK3 is now in public preview, which represents our current snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and we look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is to come!
+[Mixed Reality Toolkit Organization](https://github.com/MixedRealityToolkit) currently maintains MRTK3, and released MRTK3 for general availability (GA). We encourage all new HoloLens applications to be built with MRTK3.
 
 ### Key improvements
 
@@ -51,32 +51,18 @@ We hear your excitement, and we want to give you early access to our newest feat
 * Unified 2D & 3D input for gamepad, mouse, and accessibility support.
 * Data binding for branding, theming, dynamic data, and complex lists.
 
-**Accessibility**
+**Accessibility (Early Preview)**
 
 * Low vision aids.
 * Input assistance.
 
 **Long Term Support**
 
-* Minimum requirements: OpenXR, Unity 2021.3 LTS, Unity’s XR Interaction Toolkit.
-
-### What should this public preview be used for?
-
-* Try out our newest features and build prototypes.
-* Familiarize yourself with XRI and the Unity infrastructure which MRTK3 is built upon.
-* Evaluate the new packaging strategy and the a la carte dependency model.
-* Explore OpenXR compatibility and features.
-* Learn about our new UX systems and visual design language.
-
-### What should this public preview _not_ be used for?
-
-* Migrating any existing projects from 2.x to MRTK3. The current API instability could make a migration effort frustrating.
-* Writing production-ready code that expects a stable API.
-* Evaluate performance for your applications (full release may have significant performance differences compared to the codebase today).
+* Minimum requirements: OpenXR, Unity 2021.3 LTS and Unity 2022.3 LTS, Unity’s XR Interaction Toolkit.
 
 ## Versioning
 
-In previous versions of MRTK (HoloToolkit and MRTK v2), all packages were released as a complete set, marked with the same version number (ex: 2.8.0). Starting with MRTK3, each package will be individually versioned, following the [Semantic Versioning 2.0.0 specification](https://semver.org/spec/v2.0.0.html).
+In previous versions of MRTK (HoloToolkit and MRTK v2), all packages were released as a complete set, marked with the same version number (ex: 2.8.0). Starting with MRTK3, each package is individually versioned, following the [Semantic Versioning 2.0.0 specification](https://semver.org/spec/v2.0.0.html).
 
 >[!NOTE]
 >The '3' in MRTK3 is not a version number. It's an indicator of the generation of the underlying architecture, with HoloToolkit being generation one and MRTK v2.x being generation two.
@@ -91,19 +77,18 @@ To help identify specific packages and their versions, MRTK3 provides an "about"
 
 ## Branch Status
 
-MRTK3 is currently in public preview and we don't recommend it for use in production projects. We appreciate your testing, issues and feedback while the team works towards general availability (GA).
+[Mixed Reality Toolkit Organization](https://github.com/MixedRealityToolkit) currently maintains and updates MRTK3. We appreciate your feedback, and you can open bugs and feature request at the [Mixed Reality Toolkit for Unity](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity) GitHub project.
 
 ### Early preview packages
 
 Some parts of MRTK3 are at earlier stages of the development process than others. Early preview packages can be identified in the Mixed Reality Feature Tool and Unity Package Manager by the `Early Preview` designation in their names.
 
-As of June 2022, the following components are considered to be in early preview.
+As of September 2023, the following components are considered to be in early preview.
 
 | Name | Package Name |
 | --- | --- |
 | Accessibility | org.mixedrealitytoolkit.accessibility |
 | Data Binding and Theming | org.mixedrealitytoolkit.data |
-| Environment | org.mixedrealitytoolkit.environment |
 
 The MRTK team is fully committed to releasing this functionality. It's important to note that the packages may not contain the complete feature we're planning to release; they may undergo major, breaking architectural changes before release.
 
@@ -203,10 +188,10 @@ The [prerelease of Figma Toolkit for MRTK3](https://www.figma.com/community/file
 
 ## Roadmap
 
-The roadmap from public preview to general availability is detailed in the following table.
+The roadmap from public preview to general availability is detailed in the following table.  [Mixed Reality Toolkit Organization](https://github.com/MixedRealityToolkit) will announce future releases.
 
 | Release | Timeline |
 | --- | --- |
 | Public Preview | June 8, 2022 |
 | Preview updates | Approximately every 2-4 weeks until GA |
-| General Availability | Q3 2023 ([blog post](https://techcommunity.microsoft.com/t5/mixed-reality-blog/announcing-the-upcoming-general-availability-of-microsoft-mixed/ba-p/3833710))|
+| General Availability | September 6, 2023 ([blog post](https://techcommunity.microsoft.com/t5/mixed-reality-blog/announcing-the-upcoming-general-availability-of-microsoft-mixed/ba-p/3833710)) |
