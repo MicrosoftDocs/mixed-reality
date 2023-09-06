@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, overvi
 
 # Getting started with MRTK3
 
-Welcome to the MRTK3 public preview! This guide serves as a starting point for using MRTK to build and experience your app in AR/VR. It includes resources for becoming acquainted with the building blocks of MRTK, and guides users through setting up their project to deploying on device.
+Welcome to the MRTK3! This guide serves as a starting point for using MRTK to build and experience your app in AR/VR. It includes resources for becoming acquainted with the building blocks of MRTK, and guides users through setting up their project to deploying on device.
 
 ### Where should I go next?
 
