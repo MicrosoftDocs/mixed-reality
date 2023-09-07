@@ -1,8 +1,8 @@
 ---
 title: API reference
 description: MRTK3 API reference
-author: MaxWang-MS
-ms.author: wangmax
+author: AMollis
+ms.author: amollis
 ms.date: 8/4/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, API, API reference
@@ -17,7 +17,6 @@ MRTK3 is now shipping as [a set of individually versioned packages](index.md#ver
 - [MRTK Audio Effects](https://aka.ms/mrtk3audioapi)
 - [MRTK Data Binding and Theming](https://aka.ms/mrtk3dataapi)
 - [MRTK Diagnostics](https://aka.ms/mrtk3diagnosticsapi)
-- [MRTK Environment](https://aka.ms/mrtk3environmentapi)
 - [MRTK Graphics Tools](/dotnet/api/Microsoft.MixedReality.GraphicsTools)
 - [MRTK Input](https://aka.ms/mrtk3inputapi)
 - [MRTK Spatial Manipulation](https://aka.ms/mrtk3spmanipapi)
