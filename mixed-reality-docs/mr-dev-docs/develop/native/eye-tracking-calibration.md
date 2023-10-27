@@ -38,10 +38,17 @@ To check whether the current user is calibrated, call [EyesPose::IsCalibrationVa
 using namespace winrt::Windows::System::Launcher;
 using namespace winrt::Windows::Foundation;
 
-LaunchUriForResultsAsync(Uri(L"ms-hololenssetup://EyeTracking"));
+winrt::Windows::System::LauncherOptions options;
+auto package = winrt::Windows::ApplicationModel::Package::Current();
+options.TargetApplicationPackageFamilyName(L"Microsoft.HoloLensSetup_8wekyb3d8bbwe");
+winrt::Windows::System::Launcher::LaunchUriForResultsAsync(winrt::Windows::Foundation::Uri(L"ms-hololenssetup://EyeTracking"), options);
 ```
 
 LaunchUriForResultsAsync is a sister API to the more well-known LaunchUriAsync used in the first part of this document. Both methods will launch the calibration app, however the "ForResults" version ensures that focus will be returned to your application after calibration completes.
+
+LaunchUriForResultsAsync requires an additional 'options' parameter with the 'TargetApplicationPackageFamilyName' property set to match the HoloLens Setup application. If you are ever in need of the package family name string for an application installed on your HoloLens, you can find it in the 'Apps : Installed apps" section of Windows Device Portal under 'PackageRelativeId'.  Just remove the "!App" characters from the end of the string.
+
+<center><img src="images/wdp-app-name.jpg" width="50%" /> </center>
 
 Apps should not launch calibration automatically and without user interaction. Instead, we recommend a dialog explaining how eye gaze is used by the application and allowing the user calibrate or cancel.
 
