@@ -23,7 +23,7 @@ You should never launch the settings app automatically or prompt the user repeat
 Talk about the best practice of not popping the access request dialog when the app first launches.  Especially because, for the first few second of app launch, the user can't actually push the buttons themselves.  Instead, wait until the point in your application where you are first going to use eye tracking.
 
 ### Considerations for OpenXR
-If you are using OpenXR, the same rules apply, but the meshanism to request permissions is a little different. Instead of 
+If you are using OpenXR, the same rules apply, but the APIs that trigger the permissions request are a little different.  OpenXR applications will automatically request permissions after the call to xrCreateSession when using an instance that has the eye tracking extension (XR_EXT_eye_gaze_interaction) enabled. To learn more about how to use eye tracking through OpenXR, visit the [eye gaze extension documentation](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_eye_gaze_interaction) in the OpenXR specification.
 
 ## User calibration
 Once your app has access to eye tracking, the next checkpoint is user calibration. Similar to the permission request, there is a specific API that triggers a UI prompt the first time you call it.  This API is [SpatialPointerPose::Eyes](/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes).  Note that is the same API used to retrieve eye gaze pose data on each frame, so in effect, accessing the eye tracking data triggers the calibration prompt. Because of this, applications should wait until they actually intend to use the eye tracking pose data before calling this API and triggering the prompt.
