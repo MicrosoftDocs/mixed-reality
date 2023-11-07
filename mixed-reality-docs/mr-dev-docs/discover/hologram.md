@@ -14,7 +14,7 @@ HoloLens lets you view **holograms**, which are objects made of light and sound 
 
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/MVXH5V8MVQo]
 
 <br>
 

@@ -82,7 +82,7 @@ Proper use of the holographic frame is fundamental to the [performance quality](
 
 ### Volvo Cars
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/cvLdbpICVGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/cvLdbpICVGk]
 
 In the showroom experience from Volvo Cars, customers are invited to learn about a new car's capabilities in a HoloLens experience guided by a Volvo associate. Volvo faced a challenge with the holographic frame: a full-size car is too large to put right next to a user. The solution was to begin the experience with a physical landmark, a central table in the showroom, with a smaller digital model of the car placed on top of the table. This ensures the user is seeing the full car when it's introduced, allowing for a sense of spatial understanding once the car grows to its real-world scale later in the experience.
 

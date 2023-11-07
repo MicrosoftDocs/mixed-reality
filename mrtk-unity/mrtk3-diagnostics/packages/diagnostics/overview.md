@@ -1,9 +1,9 @@
 ---
 title: MRTK3 Diagnostics
 description: Mixed Reality Toolkit 3 for developers - Diagnostics overview.
-author: AMollis
-ms.author: amollis
-ms.date: 6/6/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 8/23/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, diagnostics, performance monitor
 ---
@@ -20,13 +20,13 @@ One of the most important aspects of a mixed reality experience is performance. 
 
 In the past, MRTK combined frame rate and memory utilization statistics in a visual profiler. With MRTK3, the statistics logic and the visualization are separate. Developers now have control over the visualization (if any) that's displayed in their experience. In fact, some developers may wish to forgo the visualization in favor of a log file or custom visual feedback as thresholds are encountered.
 
-MRTK3 ships with a basic performance statistics visualization `SimpleProfiler` in `MRTK Diagnostics` > `Visualizations`.
+The MRTK3 diagnostics package ships with a basic performance statistics visualization `SimpleProfiler` in `MRTK Diagnostics` > `Visualizations`. Under the hood, `MRTKPerformanceStatsSubsystem` is used to expose performance statistics, including memory usage and frame rate. 
 
 ## Other diagnostics
 
 As MRTK3 evolves, we anticipate that additional diagnostic tools will be written. 
 
-If you have feedback on tools you would like to see or would like to contribute a tool, please feel free to file an issue or pull request at https://github.com/Microsoft/MixedRealityToolkit-Unity.
+If you have feedback on tools you would like to see or would like to contribute a tool, please feel free to file an issue or pull request at https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity.
 
 ## Visual Profiler
 

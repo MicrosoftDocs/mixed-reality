@@ -11,11 +11,12 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 
-Over the last several years, we've shipped many different devices and form factors with different display types, resolutions, and user experiences. We've developed a set of best practices for designing great experiences in mixed reality, but these best practices continue to evolve as we test and evaluate designs across different products and devices. 
+Over the last several years, we've shipped many different devices and form factors with different display types, resolutions, and user experiences. We've developed a set of best practices for designing great experiences in mixed reality, but these best practices continue to evolve as we test and evaluate designs across different products and devices.
 
-We're excited to introduce the latest Mixed Reality Design Language--first showcased in the Mesh app for HoloLens--to the public through MRTK's building blocks. The new design changes aim to empower developers to build production-ready applications that are more beautiful, usable, and portable. 
+We're excited to introduce the latest Mixed Reality Design Language--first showcased in the Mesh app for HoloLens--to the public through MRTK's building blocks. The new design changes aim to empower developers to build production-ready applications that are more beautiful, usable, and portable.
 
 ## Improvements
+
 :::row:::
     :::column:::
     ![Updated geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Geometry.png)
@@ -32,7 +33,7 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
     Improved modular units that support various UI scenarios with permutations
     :::column-end:::
     :::column:::
-    ![Modular backpalte system](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Backplate.png)
+    ![Modular backplate system](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Backplate.png)
     Modular backplate system for building complex layouts that remain clear and usable
     :::column-end:::
 :::row-end:::
@@ -43,7 +44,7 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
     :::column-end:::
     :::column:::
     ![Canvas-based UI](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_CanvasUI.gif)
-    Integration with RectTransform and Unity Canvas that supports dyanmic and flexible layout 
+    Integration with RectTransform and Unity Canvas that supports dynamic and flexible layout
     :::column-end:::
 :::row-end:::
 
@@ -94,13 +95,10 @@ You can check out these example scenes for various UI elements with Mixed Realit
 - **CanvasExample.unity**: Examples of building larger layouts using the Canvas-based components.
 - **UITearSheet.unity**: Shows all available non-Canvas-based button prefab variants in MRTK.
 
-
 ![Canvas Tearsheet](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_CanvasTearsheet.png) <br>
 
 ## Examples of using Mixed Reality Design Language
 
 Explore and learn about the Mixed Reality Design Language examples in action.
 
-[Microsoft Mesh app for HoloLens 2](https://techcommunity.microsoft.com/t5/mixed-reality-blog/microsoft-mesh-app-august-2021-update-new-features/ba-p/2746856)
-
-![Mesh app for HoloLens 2](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_MeshApp.png)<br>
+[MRTK3 GitHub samples](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3/UnityProjects/MRTKDevTemplate)

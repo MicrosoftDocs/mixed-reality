@@ -38,7 +38,7 @@ Updates the dialog example scene to correctly describe the current dialog scenar
 
 ## What's new in 2.6.0
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/qfONlUCSWdg]
 <br>
 
 ### Add support for OpenXR

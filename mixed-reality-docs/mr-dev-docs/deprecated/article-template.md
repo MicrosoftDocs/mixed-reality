@@ -204,15 +204,11 @@ Action painting color field painting new objectivity stuckism modern art structu
 
 ### Edge-to-edge YouTube video 
 
-Set iframe to width="940" height="530".
 
-<br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/DilzwF90vec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/DilzwF90vec]
 
-<br>
 
-<br>
 
 ---
 
