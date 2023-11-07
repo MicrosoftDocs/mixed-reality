@@ -1,9 +1,9 @@
 ---
 title: Setting up a new project with MRTK3
 description: Setting up a new project with MRTK3
-author: RogPodge
-ms.author: roliu
-ms.date: 1/13/2023
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 8/30/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK
 ---
@@ -18,15 +18,11 @@ You're not expected to consume every MRTK package. See [which features are usefu
 
 ### 1. Create a new Unity project
 
-Create a new Unity project with Unity 2021.3.4f1 or newer. Close the Unity project before proceeding to the next step.
+Create a new Unity project with Unity 2021.3.21f1 or newer. Close the Unity project before proceeding to the next step.
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
-There are a handful of packages that MRTK3 uses that aren't part of this preview. To obtain these packages, use the [`Mixed Reality Feature Tool`](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the **Discover Features** step. 
-
-**Since MRTK3 is in early preview release, you need to check 'Show preview releases' under Settings > Feature tab.** 
-
-![MR Feature Tool - Settings](../../images/mrtk3-featuretool-settings.png)
+There are a handful of packages that MRTK3 uses that aren't part of this toolkit. To obtain these packages, use the [`Mixed Reality Feature Tool`](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the **Discover Features** step.
 
 - **Platform Support → Mixed Reality OpenXR Plugin**
 - **Spatial Audio → Microsoft Spatializer** (Optional)
@@ -37,6 +33,10 @@ For MRTK3 packages, we highly recommend the following two packages to help you g
 - **MRTK3 → MRTK UX Components**
 
 These two packages, along with their dependencies (automatically added by the Feature Tool), will enable you to explore most of our UX offerings and create projects ready to be deployed to various XR devices. You can always come back to the Feature Tool and add more packages to your project later.
+
+Be sure to select the `org.mixedrealitytoolkit.*` packages, and not the deprecated packages. The `com.microsoft.mrtk.*` packages have been deprecated, and are no longer supported.
+
+![Selecting the default MRTK3 packages in Microsoft's Mixed Reality Feature Tool](../../images/mrtk3-featuretool-setup-packages.png)
 
 > [!NOTE]
 > For more information on MRTK3 packages, see the [package overview page](../../packages/packages-overview.md).
@@ -58,7 +58,7 @@ Once imported, MRTK3 requires a profile to be set for the standalone target plat
 
 1. Navigate to **Edit > Project Settings**.
 1. Under **Project Settings**, navigate to **MRTK3** and then switch to the standalone tab. Note that the profile is initially unspecified.
-1. Populate the field with the default MRTK profile that ships wih the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window; make sure you search in `All`. Alternatively, you can find the profile under `Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset`.
+1. Populate the field with the default MRTK profile that ships with the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window; make sure you search in `All`. Alternatively, you can find the profile under `Packages/org.mixedrealitytoolkit.core/Configuration/Default Profiles/MRTKProfile.asset`.
    >[!NOTE]
    > Not all of the MRTK subsystems are shown in the screenshot below. The MRTK subsystems that you see may be different depending on the MRTK3 packages you've added to your project.
 
@@ -89,12 +89,12 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and add the following three profiles for UWP and Standalone:
 
-    * **Eye Gaze Interaction Profile**
-    * **Microsoft Hand Interaction Profile**
-    * **Microsoft Motion Controller Profile**
+    - **Eye Gaze Interaction Profile**
+    - **Microsoft Hand Interaction Profile**
+    - **Microsoft Motion Controller Profile**
 
     > [!NOTE]
-    > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
+    > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle. Some of the warnings may be resolved manually: <br/> 1. Under **Project Settings**, navigate to **Player > Resolution and Presentation**. Ensure that **Run in Background** is unchecked. <br/> 2. For UWP, under **Player > Publishing Settings > Capabilities**, ensure that **WebCam**, **Microphone**, **SpatialPerception**, and **GazeInput** are checked if these features are needed by the application.  For more information about Window's App Capabilities see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).
 
    For standalone:
 
@@ -104,12 +104,13 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
 
    [![UWP OpenXR](../../images/uwp-openxr.png)](../../images/uwp-openxr.png)
 
-1. For HoloLens 2, we recommend that you set **Depth Submission Mode** to 16-bit in the settings above. For immersive headsets, you can use 24-bit depth submission. See the [Microsoft development docs for Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) for more info.
+1. For HoloLens 2, we recommend that you set **Depth Submission Mode** to 16-bit in the settings above.
+1. For immersive headsets, you can use 24-bit depth submission. See the [Microsoft development docs for Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) for more info.
 
-### 6. Congratulations, the project setup is now finished!
+### 6. Congratulations, the project setup is now finished
 
 Proceed to [creating a new MRTK3 scene](../setting-up/setup-new-scene.md).
 
 ## Next steps
 
-Once you've finished setting up your Unity project, learn how to (experience your application on a device)[../../experience/overview.md]
+Once you've finished setting up your Unity project, learn how to [experience your application on a device](../../test-and-deploy/overview.md)

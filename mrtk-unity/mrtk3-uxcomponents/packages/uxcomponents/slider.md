@@ -18,7 +18,7 @@ As with other interactables in MRTK, the main Slider interactable doesn't render
 
 ## Layout
 
-When using Sliders in a RectTransform context, the start and end positions are calculated by the RectTransform layout system. The `CanvasSliderVisuals` script will allow you to make these visuals horizontal or vertical.
+When using Sliders in a RectTransform context, the start and end positions are calculated by the RectTransform layout system. The `CanvasSliderVisuals` script will allow you to make these visuals horizontala or vertical.
 
 ![Example Slider Configuration](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Slider_Overview.png)
 

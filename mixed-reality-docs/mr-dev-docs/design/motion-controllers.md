@@ -50,7 +50,7 @@ keywords: 6dof controllers, motion controllers, pairing, mixed reality headset, 
 
 ## Hardware details
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/1nlcdDNOdm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/1nlcdDNOdm8]
 
 Windows Mixed Reality motion controllers offer precise and responsive movement tracking in your field of view using the sensors in the immersive headset. There's no need to install hardware on the walls in your space. These motion controllers will offer the same ease of setup and portability as Windows Mixed Reality immersive headsets. Our device partners plan to market and sell these controllers on retail shelves this holiday.
 
@@ -187,7 +187,7 @@ At this point, the system will body-lock the controller to the user, tracking th
 
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/rkDpRllbLII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/rkDpRllbLII]
 
 
 ### Reasoning about tracking state explicitly

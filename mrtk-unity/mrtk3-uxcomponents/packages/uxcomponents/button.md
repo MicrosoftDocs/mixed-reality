@@ -1,9 +1,9 @@
 ---
 title: Button
 description: Description of button-based controls in MRTK3
-author: Zee2
-ms.author: finnsinclair
-ms.date: 4/15/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 5/5/2023
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Button, PressableButton
 ---
 
@@ -53,6 +53,7 @@ The `PressableButton` class is derived from `StatefulInteractable` with new and 
 ![PressableButton inspector screenshot](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_PressableButton_Inspector.png)
 
 ## Constructing UI with buttons
+
 When creating menu or UI panels with multiple buttons, it's recommended to use a shared backplate geometry. By using a shared backplate, we can reduce the visual noise and improve usability. Here are some of the examples of laying out buttons on top of the shared backplate.
 
 ![Constructing UI 1](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_ConstructingUI0.png)
@@ -61,5 +62,10 @@ When creating menu or UI panels with multiple buttons, it's recommended to use a
 
 ![Constructing UI 3](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_SharedBackplate.png)
 
+## Additional Components
 
+For reference, here are some additional components responsible for handling aspects of button visuals and functionality:
 
+- The visual front plate pulse observed when the button is selected is handled by an `InteractablePulse` component.
+- The button icon may be set to an MRTK icon using `FontIconSelector`.
+- A `RectTransformColliderFitter` may optionally be used on Canvas buttons to fit its `BoxCollider` to its `RectTransform`. This is component is disabled by default for performance.

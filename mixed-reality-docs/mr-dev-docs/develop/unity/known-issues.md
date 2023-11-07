@@ -23,6 +23,8 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Mitigation&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
 | HL2 app using URP has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. | **Investigating:**<br />2023/01/04 | Unity 2022.\*.\* <br/> with URP 13.\*.\* | Either avoid URP in Unity 2022, avoid using the default URP materials or use URP in Unity 2021.3.14+ |
+| Unable to build UWP app packages (APPX or MSIX) in Unity 2021 and 2022 | **In Progress:**<br />2023/09/29 | Reproducible with: 2021.3.30f1, 2022.3.8f1 | Use Unity 2021.3.27 or earlier. Or manually add Appx Manifest to the app's VS project. See [Unity's forum](https://forum.unity.com/threads/unity-version-2021-3-28f1-lacks-the-uwp-publish-button-in-visual-studio-build-for-package-generation.1480761/) and [Unity's Issue Tracker](https://issuetracker.unity3d.com/issues/create-app-packages-dot-dot-dot-option-is-greyed-out-when-trying-to-create-app-packages-in-visual-studio) for more details. |
+| An HL2 app importing both MRTK3 and Azure Spatial Anchors may present 'Guid for asset conflicts with' errors when the ARFoundation package version doesn't match the imported ARSubsystems version.|||When using ARFoundation 5.x+, manually add com.unity.xr.arsubsystems version 5.0.2 to the project's Package Manager. You'll get a warning that ARSubsystems has been deprecated, but it can be ignored. |
 
 ## Resolved blocking issues
 

@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # What is mixed reality?
 
-Mixed reality is the next wave in computing followed by mainframes, PCs, and smartphones. Mixed reality is going mainstream for consumers and businesses.  It liberates us from screen-bound experiences by offering instinctual interactions with data in our living spaces and with our friends.  Online explorers, in hundreds of millions around the world, have experienced mixed reality through their handheld devices.  Mobile AR offers the most mainstream mixed reality solutions today on social media. People may not even realize that the AR filters they use on Instagram are mixed reality experiences. Windows Mixed Reality takes all these user experiences to the next level with stunning holographic representations of people, high fidelity holographic 3D models, and the real world around them.
+Mixed reality is the next wave in computing following mainframes, PCs, and smartphones. Mixed reality is going mainstream for consumers and businesses.  It liberates us from screen-bound experiences by offering instinctual interactions with data in our living spaces and with our friends.  Online explorers, in hundreds of millions around the world, have experienced mixed reality through their handheld devices.  Mobile AR offers the most mainstream mixed reality solutions today on social media. People may not even realize that the AR filters they use on Instagram are mixed reality experiences. Windows Mixed Reality takes all these user experiences to the next level with stunning holographic representations of people, high fidelity holographic 3D models, and the real world around them.
 
 ![Point and commit with hands on HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
@@ -67,7 +67,7 @@ Mixed reality blends both physical and digital worlds.  These two realities mark
 
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/_xpI0JosYUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/_xpI0JosYUk]
 
 <br>
 

@@ -21,7 +21,7 @@ The full release announcement is available [here](https://github.com/microsoft/M
 - Improved and simplified subsystems boilerplate to make creating new subsystems a bit less painful (#10694)
 - Various CI improvements (#10678, #10699)
 - Improved colliders on all pressable surfaces to be more accurate and "skin-tight" (#10700)
-- Fixed StateVisualizer freaking out when an Animator is missing (#10703)
+- Fixed StateVisualizer breaking when an Animator is missing (#10703)
 - Fixed `LastHoverExit` not being called from buttons due to missing base impl call (#10705)
 - Updated MR OpenXR plugin to 1.4.2 (#10709)
 - Fixed prefab override/undo behavior in `FontIconSelectorInspector` (#10710)

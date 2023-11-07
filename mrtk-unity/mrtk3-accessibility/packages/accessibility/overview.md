@@ -20,7 +20,7 @@ The accessibility package contains features and components to enable developers 
 ### Describable Object
 
 To enable assistive technologies to describe, or read, objects in the mixed reality world, MRTK3 provides the `DescribableObject` script. By adding this script to visual components, a future reader component will be able to recognize
-the objcet and read to the user the information needed to understand the object and its place in the world.
+the object and read to the user the information needed to understand the object and its place in the world.
 
 > [!NOTE]
 > MRTK3 doesn't currently integrate with assistive readers.  `DescribableObject` is in the early stages of development and is included to allow advanced review and to gather developer feedback.
