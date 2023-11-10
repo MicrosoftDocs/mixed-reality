@@ -1,9 +1,9 @@
 ---
 title: Mixed Reality Design Language
 description: Exploring the new Mixed Reality Design Language.
-author: Zee2
-ms.author: finnsinclair
-ms.date: 4/15/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 11/8/2023
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, design, UI, design language, UX
 ---
 
@@ -101,4 +101,4 @@ You can check out these example scenes for various UI elements with Mixed Realit
 
 Explore and learn about the Mixed Reality Design Language examples in action.
 
-[MRTK3 GitHub samples](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3/UnityProjects/MRTKDevTemplate)
+[MRTK3 GitHub samples](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity/tree/main/UnityProjects/MRTKDevTemplate)
