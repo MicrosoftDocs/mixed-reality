@@ -44,7 +44,7 @@
         - name: MRTK3 Zappy's Playground
           href: unity/playground-tutorial.md
         - name: MRTK3 Aquarium
-          href: unity/mrtk3-aquarium.md          
+          href: unity/mrtk3-aquarium.md
         - name: HoloLens 2 tutorials
           items:
             - name: HoloLens 2 Fundamentals Tutorials
@@ -198,6 +198,8 @@
           displayname: Holographic Remoting
         - name: Using Vuforia
           href: unity/vuforia-development-overview.md
+        - name: Tracking-Map Management
+          href: unity/tracking-map-management-overview.md
     - name: Sample apps
       items:
         - name: HoloLens 2
@@ -571,4 +573,3 @@
       href: advanced-concepts/perception-simulation-overview.md
     - name: Standalone package (Preview)
       href: advanced-concepts/perception-simulation-standalone.md
-
