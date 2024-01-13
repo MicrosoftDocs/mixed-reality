@@ -13,7 +13,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
-## Version 2.9.3 (October 2026, 2023) <a name="v2.9.3"></a>
+## Version 2.9.3 (October 26, 2023) <a name="v2.9.3"></a>
 * Holographic Remoting using the OpenXR API now supports the [`XR_MSFT_scene_marker` extension](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker).
 * Holographic Remoting using the OpenXR API now supports GPU Adapter selection through the [`XrRemotingPreferredGraphicsAdapterMSFT` extension struct](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html).
 * Fixed Unity Hands Subsystem crash due to Timestamp assert.
