@@ -56,6 +56,12 @@
       "adobe-target": true
     },
     "fileMetadata": {
+      "ms.subservice": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "enthusiast-guide"
+      },
+      "ms.service": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "mixed-reality"
+      },
       "author" : {
         "mixed-reality-docs/enthusiast-guide/**/*.md": "paaron301"
       },
@@ -69,10 +75,8 @@
         "mixed-reality-docs/enthusiast-guide/**/*.md": "12/10/2017"
       },
       "ms.prod": {
-        "mixed-reality-docs/enthusiast-guide/**/*.md": "mixed-reality"
       },
       "ms.technology": {
-        "mixed-reality-docs/enthusiast-guide/**/*.md": "enthusiast-guide"
       },
       "titleSuffix": {
         "mixed-reality-docs/enthusiast-guide/**/*.md": "Enthusiast Guide"

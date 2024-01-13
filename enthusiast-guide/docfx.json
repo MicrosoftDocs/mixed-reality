@@ -42,6 +42,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ms.subservice": "enthusiast-guide",
+      "ms.service": "mixed-reality",
       "breadcrumb_path": "/windows/mixed-reality/enthusiast-guide/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-Hololens",
@@ -52,8 +54,6 @@
       "author": "sean-kerawala",
       "ms.author": "sekerawa",
       "ms.date": "09/16/2020",
-      "ms.prod": "mixed-reality",
-      "ms.technology": "enthusiast-guide",
       "keywords": "mixed reality, virtual reality, vr, hololens",
       "searchScope":["Mixed Reality","Windows Mixed Reality"],
       "adobe-target": true
