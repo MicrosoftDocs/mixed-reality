@@ -25,7 +25,7 @@ If you have a Unity project that's already set up for OpenXR (you have the Unity
 
 ## Configure the project to use the Mixed Reality OpenXR Plugin
 - If you're targeting HoloLens 2, see [configure for HoloLens 2 via Project Validation ](new-openxr-project-without-mrtk.md#configure-the-project-for-the-hololens-2-via-project-validation-mr-openxr-16) for further instructions. Alternatively, to apply recommended settings by hand, see [configure for HoloLens 2 manually](new-openxr-project-without-mrtk.md#configure-the-project-for-the-hololens-2-manually).
-- If you're targeting Windows Mixed Reality headsets, see [configure for desktop VR](new-openxr-project-without-mrtk.md#configure-the-project-for-desktop-vr).
+- If you're targeting Windows Mixed Reality headsets, see [configure for desktop VR](new-openxr-project-without-mrtk.md#configure-the-project-for-desktop-vr-via-project-validation-mr-openxr-19).
 
 ## See also
 

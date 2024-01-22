@@ -1,9 +1,9 @@
 ---
 title: MRTK3 Diagnostics
 description: Mixed Reality Toolkit 3 for developers - Diagnostics overview.
-author: AMollis
-ms.author: amollis
-ms.date: 6/6/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 8/23/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, diagnostics, performance monitor
 ---
@@ -26,7 +26,7 @@ The MRTK3 diagnostics package ships with a basic performance statistics visualiz
 
 As MRTK3 evolves, we anticipate that additional diagnostic tools will be written. 
 
-If you have feedback on tools you would like to see or would like to contribute a tool, please feel free to file an issue or pull request at https://github.com/Microsoft/MixedRealityToolkit-Unity.
+If you have feedback on tools you would like to see or would like to contribute a tool, please feel free to file an issue or pull request at https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity.
 
 ## Visual Profiler
 

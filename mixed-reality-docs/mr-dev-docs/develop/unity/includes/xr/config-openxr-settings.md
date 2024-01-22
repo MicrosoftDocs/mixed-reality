@@ -6,22 +6,23 @@
 
 ## Configure the project for the HoloLens 2 via Project Validation (MR OpenXR 1.6+)
 
-If you're developing for desktop VR, skip this section and go to [Configure the project for desktop VR](#configure-the-project-for-desktop-vr).
+If you're developing for desktop VR, skip this section and go to [Configure the project for desktop VR](#configure-the-project-for-desktop-vr-via-project-validation-mr-openxr-19).
 
-1. On the menu bar, click on **Mixed Reality > Project > Apply recommended project settings for HoloLens 2** to enable the validation rules for HoloLens 2.
-1. In the project validation window that pops up, make sure you're on the UWP platform tab (indicated by the Windows logo), and click **Fix all** to resolve the validation issues. Note that there may be issues that remain after clicking on **Fix all**. In that case, try clicking on **Fix all** again, ignore any issues that are marked "scene specific" (if any), and go through the rest of the issues (if any) to see if there are any suggested change that you want to make.
+1. On the menu bar, click on **Mixed Reality > Project Validation Settings > HoloLens 2 Application (UWP)** to enable the validation rules for HoloLens 2.
+   For MR OpenXR plugins before version 1.9, the menu item available is **Mixed Reality > Project > Apply recommended project settings for HoloLens 2**.
+1. In the project validation window that pops up, make sure you're on the UWP platform tab (indicated by the Windows logo), and click **Fix all** to resolve the validation issues. Note that there may be issues that remain after clicking on **Fix all**. In that case, try clicking on **Fix all** again, ignore any issues that are marked "scene specific" (if any), and go through the rest of the issues (if any) to see if there are any suggested changes that you want to make.
 1. The project is almost ready for HoloLens 2 deployment at this point. Proceed to [Configure Player settings](#configure-player-settings) for the next step.
 
 ## Configure the project for the HoloLens 2 manually
 
-If you're developing for desktop VR, skip this section and go to [Configure the project for desktop VR](#configure-the-project-for-desktop-vr).
+If you're developing for desktop VR, skip this section and go to [Configure the project for desktop VR](#configure-the-project-for-desktop-vr-via-project-validation-mr-openxr-19).
 
 1. Make sure the **Project Settings** window is open. If not, on the menu bar, select **Edit** > **Project Settings**.
 1. In the **Project Settings** window, ensure that you're on the **XR Plug-in Management** page and in the **Universal Windows Platform** tab.
 
     :::image type="content" source="../../images/012-xr-plugin-mgmt-page.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and Universal Windows Platform tab.":::
 
- 1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
+ 1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **OpenXR**.
 
     :::image type="content" source="../../images/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window, inside the Universal Windows Platform, with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
 
@@ -31,14 +32,19 @@ If you're developing for desktop VR, skip this section and go to [Configure the 
 
 Note that there's a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved. To find out how to address this, skip the next section about configuring for VR and continue on with the following section, [Resolving incompatible settings](#resolving-incompatible-settings).
 
-## Configure the project for desktop VR
+## Configure the project for desktop VR via Project Validation (MR OpenXR 1.9+)
+
+1. On the menu bar, click on **Mixed Reality > Project Validation Settings > Win32 Application (Standalone)** to enable the validation rules for a desktop XR app.
+1. In the project validation window that pops up, make sure you're on the Standalone platform tab, and click **Fix all** to resolve the validation issues. Note that there may be issues that remain after clicking on **Fix all**. In that case, try clicking on **Fix all** again, ignore any issues that are marked "scene specific" (if any), and go through the rest of the issues (if any) to see if there are any suggested changes that you want to make.
+
+## Configure the project for desktop VR manually
 
 1. Make sure the **Project Settings** window is open. If not, go to the menu bar, select **Edit** > **Project Settings**.
 1. In the **Project Settings** window, ensure that you're on the **XR Plug-in Management** page and in the **PC, Mac & Linux Standalone** tab.
 
     :::image type="content" source="../../images/028-xr-plugin-mgmt-only.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and PC, Mac & Linux Standalone tab.":::
 
- 1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
+ 1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **OpenXR**.
 
     :::image type="content" source="../../images/031-init-xr-on-startup.png" alt-text="Screenshot of the Project Settings Window, inside the PC, Mac & Linux Standalone tab, with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
 

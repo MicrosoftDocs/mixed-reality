@@ -1,9 +1,9 @@
 ---
 title: Unity UI Sample Scene
 description: Illustrated walkthrough of featured UI elements
-author: Species521
-ms.author: wettigmarti
-ms.date: 06/01/2022
+author: marlenaklein-msft
+ms.author: marlenaklein
+ms.date: 8/23/2023
 ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, UnityUI
 ---
@@ -50,5 +50,5 @@ It's possible to integrate 3D meshes in your UI builds too.
 
 ## Related articles
 
-* [Mixed Reality Toolkit on GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity)
+* [Mixed Reality Toolkit on GitHub](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity)
 * [Graphics Tools Standard Shader sample scene](../standard-shader.md)

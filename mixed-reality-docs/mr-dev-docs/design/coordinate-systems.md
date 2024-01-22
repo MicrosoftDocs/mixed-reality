@@ -12,9 +12,9 @@ keywords: coordinate system, spatial coordinate system, orientation-only, seated
 
 At their core, mixed reality apps place [holograms](../discover/hologram.md) in your world that look like and sound real objects. This involves precisely positioning and orienting those holograms at meaningful places in the world, whether the world is their physical room or a virtual realm you've created. Windows provides various real-world coordinate systems for expressing geometry--these are known as **spatial coordinate systems**. You can use these systems to reason about hologram position, orientation, [gaze](gaze-and-commit.md) ray, or [hand positions](hands-and-tools.md).
 
-<br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/TneGSeqVAXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+>[!VIDEO https://www.youtube.com/embed/TneGSeqVAXQ]
+
 
 ## Device support
 

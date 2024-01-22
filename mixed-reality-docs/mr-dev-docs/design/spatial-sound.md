@@ -14,11 +14,9 @@ In real life, spatial sound is vital. When someone calls your name, you know whi
 
 In a mixed reality app, you may have to look up, down, from side to side, or behind you to find something that's happening. At times, it can be unclear where you should look. Spatial sound connects holograms more deeply to the mixed-reality world and supplies information about the environment and object state. You can provide cues from the direction you want to draw attention to; this helps users to maintain awareness of their real-world surroundings and can guide them to their next steps. This increases user confidence in gesture and voice interactions.
 
-<br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
 
-<br>
 
  Use of sounds in mixed reality requires a different approach than in touch and keyboard-and-mouse applications. Key sound design decisions include which sounds to spatialize and which interactions to sonify. For detailed guidance, see our [Spatial sound best practices](spatial-sound-design.md) article.
 
@@ -28,7 +26,7 @@ Spatialization is the directional component of spatial sound. For a 7.1 home the
 
  For suggestions on effective use of spatialization in your application, see [Spatial sound best practices](spatial-sound-design.md).
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/PTPvx7mDon4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/PTPvx7mDon4]
 
 ## Device support
 

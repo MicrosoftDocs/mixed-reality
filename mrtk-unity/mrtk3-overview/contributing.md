@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, open s
 
 MRTK3 is an open-source project under the MIT license. Community contributions are welcome and appreciated, both for new features and bug fixes.
 
-Contributing to MRTK3 is easy. We recommend using the `MRTKDevTemplate` Unity project as a convenient development testbed, as it already includes all of the MRTK3 packages as local on-disk dependencies. [For more information, see the documentation on the MRTKDevTemplate project for more details on sample scenes and local on-disk dependencies.](getting-started/exploring-features/mrtk3-sample-scenes.md)
+Contributing to MRTK3 is easy. We recommend using the `MRTKDevTemplate` Unity project as a convenient development testbed, as it already includes all the MRTK3 packages as local on-disk dependencies. [For more information, see the documentation on the MRTKDevTemplate project for more details on sample scenes and local on-disk dependencies.](getting-started/exploring-features/mrtk3-sample-scenes.md)
 
 ## Contribution guide
 
@@ -27,24 +27,24 @@ git clone --branch mrtk3 YOUR_GIT_URL
 3. Create a new branch for your changes or fixes.
 
 ```
-git checkout -b foobar_fix
+git checkout -b yourchange_fix
 ```
 
 4. Open the `MRTKDevTemplate` template project located in `UnityProjects/MRTKDevTemplate`. You can add the project to your Unity Hub for easy access.
 
 5. Make your desired changes and create unit tests that ensure your changes work as expected. Make sure to test across in-editor and deployed to device. Commit your changes to your branch. Publish your branch to your fork upstream.
 
-6. Open a pull request on the MRTK repo, targeting the `mrtk3` branch. Make sure to accurately describe the changes you've made, and apply relevant labels to your pull request for better categorization and triage. If you're a new contributor to MRTK, you may need to sign our contribution agreement.
+6. Open a pull request on the MRTK repo, targeting the `mrtk3` branch. Make sure to accurately describe the changes you've made and apply relevant labels to your pull request for better categorization and triage. If you're a new contributor to MRTK, you may need to sign our contribution agreement.
 
-7. Address any fixes requested by the community or the maintenance team, and merge your PR after approval.
+7. Address any fixes requested by the community or the maintenance team and merge your PR after approval.
 
 ## Writing tests
 
 Tests are a critical part of ensuring MRTK is a reliable foundation for high-quality mixed reality applications. Any new features that are added should have unit tests to ensure their functionality remains correct as other changes are made to the codebase in the future. 
 
-To write unit tests, we recommend that you first take a look at the existing unit tests and learn how the MRTK test utilities and simulator are used to mock XR input. You can mock hand input, gaze, HMD position, and other basic input-related features. Here's some general advice for writing good unit tests:
+To write unit tests, we recommend that you first look at the existing unit tests and learn how the MRTK test utilities and simulator are used to mock XR input. You can mock hand input, gaze, HMD position, and other basic input-related features. Here's some general advice for writing good unit tests:
 
-- Try to write more granular tests that evaluate smaller pieces of functionality, rather than larger monolithic tests. More granular unit tests allow maintainers to see which specific feature has been broken. More general end-to-end functionality tests are also appreciated, but ensure that each smaller part of your feature is well-tested to begin with.
+- Try to write more granular tests that evaluate smaller pieces of functionality, rather than larger monolithic tests. More granular unit tests allow maintainers to see which specific feature has been broken. More general end-to-end functionality tests are also appreciated but ensure that each smaller part of your feature is well tested to begin with.
 - Make sure your test (and your feature) doesn't make any assumptions about the orientation or location of the user. Your tests and features should work at any arbitrary offset or rotation from the world origin.
 - If your tests mock user input, make sure to subclass our `BaseRuntimeInputTests`, which ensures that the proper test harness is set up and torn down.
 - Use NUnit parameterization to easily increase the variety and flexibility of your test. [See the documentation for parameterized NUnit tests here.](https://docs.nunit.org/articles/nunit/technical-notes/usage/Parameterized-Tests.html)

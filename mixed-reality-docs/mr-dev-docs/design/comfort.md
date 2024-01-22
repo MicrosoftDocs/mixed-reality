@@ -32,9 +32,8 @@ To view objects clearly, humans must [accommodate](https://en.wikipedia.org/wiki
 
 In most head-mounted displays, users will always accommodate to the focal distance of the display to get a sharp image, but converge to the distance of the object of interest to get a single image. When users accommodate and converge to different distances, the natural link between the two cues is broken, leading to visual discomfort or fatigue.
 
-<br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/-606oZKLa_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
 
 ### Guidance for holographic devices
 

@@ -14,6 +14,8 @@ If you're new to Holographic Remoting, you may want to [read our overview](holog
 
 >[!IMPORTANT]
 >This document describes the creation of a remote application for HoloLens 2 using the [HolographicSpace API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
+>
+>**Deprecation notice**: The 2.9.x release line will be the last to support Windows Holographic APIs for application development. Upcoming versions will only support OpenXR for application development. Independent of that we recommend the use of OpenXR in your application for all new application development. Existing applications using 2.9 or older will continue to work unaffected of upcoming changes.
 
 Holographic Remoting apps can stream remotely rendered content to HoloLens 2 and Windows Mixed Reality immersive headsets. You can also access more system resources and integrate remote [immersive views](../../design/app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real time.
 
