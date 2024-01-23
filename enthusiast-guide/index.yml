@@ -11,8 +11,6 @@ metadata:
   description: Jump into the expansive world of virtual reality and experience next-level immersive gaming, travel, and streaming. Here you can learn how to get started and advance with VR using Windows Mixed Reality. 
   # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: hub-page # Required
-  ms.prod: mixed-reality
-  ms.technology: enthusiast-guide
   author: qianw211 #Required; your GitHub user alias, with correct capitalization.
   ms.author: qianwen #Required; microsoft alias of author; optional team alias.
 

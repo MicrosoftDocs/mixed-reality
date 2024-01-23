@@ -12,9 +12,9 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initia
 
 The easiest way to acquire and try out MRTK3 is to explore our preconfigured project. This project contains references to all of the current MRTK3 packages, and comes pre-configured with the project settings required to deploy to device. Clone the project from [the MRTK3 GitHub repo](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity). After that, you can simply launch Unity (2021.3.21f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the sample scenes in the Editor by using remoting or deploying them to devices.
 
-If you work with Git using the command line, you can clone the repo while specifying the `mrtk3` branch:
+If you work with Git using the command line, you can clone the repo while specifying the `main` branch:
 
- `git clone --branch mrtk3 https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity.git`
+ `git clone --branch main https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity.git`
 
 For information on the sample scenes included in the preview, see [Exploring MRTK3 Sample Scenes](../exploring-features/mrtk3-sample-scenes.md).
 
