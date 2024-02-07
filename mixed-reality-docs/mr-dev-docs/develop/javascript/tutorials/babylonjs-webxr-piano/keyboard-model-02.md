@@ -3,7 +3,6 @@ title: Build a 3D piano model
 description: Learn how to create a 3D piano model by coding using Babylon.js
 author: vtieto
 ms.author: vinnietieto
-ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
