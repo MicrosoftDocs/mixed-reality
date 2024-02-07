@@ -46,10 +46,10 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ms.service": "mixed-reality",
       "breadcrumb_path": "/windows/mixed-reality/mrtk-unreal/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
-      "ms.prod": "mixed-reality",
       "searchScope":[
         "Mixed Reality",
         "MRTK Unreal"
