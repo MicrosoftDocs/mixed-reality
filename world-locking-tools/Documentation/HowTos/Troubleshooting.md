@@ -4,7 +4,7 @@ description: Notes on things that have gone wrong and what was done to fix them.
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 10/06/2021
-ms.prod: mixed-reality
+ms.service: mixed-reality
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---
