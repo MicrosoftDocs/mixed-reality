@@ -3,7 +3,6 @@ title: Building a piano in WebXR using BabylonJS
 description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
 author: vtieto
 ms.author: ayyonet
-ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
