@@ -9,7 +9,7 @@ metadata:
   title: Mixed Reality documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Explore the expanding world of Mixed Reality applications with the Mixed Reality Toolkit (MRTK), Windows Mixed Reality, Unity, Unreal, and more for HoloLens and Windows Immersive Headsets. # Required; article description that is displayed in search results. < 160 chars.
   services: service
-  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-storage
   ms.subservice: subservice # Optional; Remove if no subservice is used.
   ms.topic: hub-page # Required
   ms.collection: collection # Optional; Remove if no collection is used.
