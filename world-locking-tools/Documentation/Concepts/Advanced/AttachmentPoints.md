@@ -4,7 +4,7 @@ description: Discrete points at which to pin the virtual and physical worlds tog
 author: fast-slow-still
 ms.author: mafinc
 ms.date: 10/06/2021
-ms.prod: mixed-reality
+ms.service: mixed-reality
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---

@@ -4,7 +4,7 @@ description: A sample using ray cast to the spatial mesh to pin the virtual to p
 author: fast-slow-still
 ms.author: mafinc
 ms.date: 10/06/2021
-ms.prod: mixed-reality
+ms.service: mixed-reality
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---

@@ -12,4 +12,4 @@ keywords: volumetric video, holographic video, mixed reality video, hologram, mi
 # How it works - Mixed Reality Capture Studios
 
 >[!NOTE]
->If you are interested in learning more about Mixed Reality Capture Studios for Volumetric Video, please visit this [link](https://www.arcturus.studio/press/microsoft-partnership).
+>If you are interested in learning more about Mixed Reality Capture Studios for Volumetric Video, please visit this [link](https://www.arcturus.studio/blog/microsoft-partnership).

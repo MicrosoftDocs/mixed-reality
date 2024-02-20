@@ -3,7 +3,6 @@ title: Play the 3D piano
 description: Learn how to add interactions to a virtual piano using Babylon.js
 author: vtieto
 ms.author: vinnietieto
-ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
