@@ -1,3 +1,14 @@
+---
+title: Managing Eye Tracking Access and Calibration
+description: Learn how to manage the ET permission and calibration process for users on HoloLens 2. This document includes a descripion of the steps involved, best practices for how to make the experience as smooth as possible, and explicit recommended API guidance on how to manually launch the calibration prompt for your user if needed.
+author: caseymeekhof
+ms.author: cmeekhof
+ms.date: 02/20/2024
+ms.topic: article
+keywords: eye-gaze, eye tracking, directx, input, holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
+
+---
+
 # Managing Eye Tracking Access and Calibration
 Eye tracking on HoloLens 2 provides powerful capabilities for supercharging user interactions.  However, there are two user checkpoints that must complete successfully in order for eye tracking to work in your app.  The two checkpoints are (a) approving eye tracking access for your app, and (b) completing eye tracking calibration on the device.  The system automatically prompts to complete these as needed, but it is possible for the user to accidentally decline something and get stuck. This document outlines best practices for navigating the eye tracking checkpoints and helping the user retry when needed, ensuring a smooth and quality experience with your application.
 
@@ -6,7 +17,7 @@ In order to utilize eye tracking, your app must first request access. This is do
 
 <center><img src="images/gaze-access-request.jpg" width="50%" /> </center>
 
-The access request dialog only appears once, on your application's first launch. Once the user has made their choice, the system remembers their preference and applies it to all future access requests automatically for that signed-in user. If the user wants to change their preference later, they can do it via the 'App permissions' section of the 'Privacy' page in the HoloLens 'Settings' app.  Because the preference is sticky, the user can unfortunately get into a state where eye tracking is off and they don't know how to fix it.  If eye tracking is an important part of your app experience, and you detect that eye tracking access has been denied, you can help the user by directly launching the settings app to the correct page. This is done through a call to [Launcher::LaunchUriAsync](https://learn.microsoft.com/en-us/uwp/api/windows.system.launcher.launchuriasync) with the string "ms-settings:privacy-eyetracker".
+The access request dialog only appears once, on your application's first launch. Once the user has made their choice, the system remembers their preference and applies it to all future access requests automatically for that signed-in user. If the user wants to change their preference later, they can do it via the 'App permissions' section of the 'Privacy' page in the HoloLens 'Settings' app.  Because the preference is sticky, the user can unfortunately get into a state where eye tracking is off and they don't know how to fix it.  If eye tracking is an important part of your app experience, and you detect that eye tracking access has been denied, you can help the user by directly launching the settings app to the correct page. This is done through a call to [Launcher::LaunchUriAsync](https://learn.microsoft.com/uwp/api/windows.system.launcher.launchuriasync) with the string "ms-settings:privacy-eyetracker".
 
 ```cpp
 using namespace winrt::Windows::System::Launcher;
@@ -30,7 +41,7 @@ Once your app has access to eye tracking, the next checkpoint is user calibratio
 
 HoloLens caches calibrations, and auto-swaps when it detects that a calibrated user has put the device on.  So this prompt will only appear for users that have not calibrated their eye gaze on the device.  If an uncalibrated user presses "Cancel" at the promt to decline calibration, their eye gaze will not be available to any applications on the device.  HoloLens remembers their selection and will not prompt again until the device is removed and put back on.  While important for privacy purposes, this can create confusion for users if they accidentally cancel the prompt are then not able to use eye tracking in your application.
 
-To check whether the current user is calibrated, call [EyesPose::IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  If the current user is not calibrated, you should ideally fall back to interactions that are not dependent on eye gaze.  However, if eye gaze is critical for your experience and you need to ensure that all of your users are calibrated, you can manually invoke the calibration app using [Launcher::LaunchUriForResultsAsync](https://learn.microsoft.com/en-us/uwp/api/windows.system.launcher.launchuriforresultsasync) with the string "ms-hololenssetup://EyeTracking".
+To check whether the current user is calibrated, call [EyesPose::IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  If the current user is not calibrated, you should ideally fall back to interactions that are not dependent on eye gaze.  However, if eye gaze is critical for your experience and you need to ensure that all of your users are calibrated, you can manually invoke the calibration app using [Launcher::LaunchUriForResultsAsync](https://learn.microsoft.com/uwp/api/windows.system.launcher.launchuriforresultsasync) with the string "ms-hololenssetup://EyeTracking".
 
 ```cpp
 using namespace winrt::Windows::System::Launcher;
