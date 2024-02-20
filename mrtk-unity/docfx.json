@@ -86,9 +86,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ms.service": "mixed-reality",
       "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-MRTK",
-      "ms.prod": "mixed-reality",
       "ms.topic": "conceptual",
       "titleSuffix": "Mixed Reality Toolkit",
       "feedback_system": "GitHub",

@@ -6,7 +6,7 @@ summary: World-lock entire scenes, rather than objects, without need for anchors
 metadata:
   title: World Locking Tools documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Landing page for World Locking Tools # Required; article description that is displayed in search results. < 160 chars.
-  ms.prod: mixed-reality
+  ms.service: mixed-reality
   ms.localizationpriority: high
   keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
   ms.topic: landing-page # Required
