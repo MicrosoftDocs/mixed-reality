@@ -6,7 +6,7 @@ In order to utilize eye tracking, your app must first request access. This is do
 
 <center><img src="images/gaze-access-request.jpg" width="50%" /> </center>
 
-The access request dialog only appears once, on your application's first launch. Once the user has made their choice, the system remembers their preference and applies it to all future access requests automatically. If the user wants to change their preference later, they can do it via the 'App permissions' section of the 'Privacy' page in the HoloLens 'Settings' app.  Because the preference is sticky, the user can unfortunately get into a state where eye tracking is off and they don't know how to fix it.  If eye tracking is an important part of your app experience, and you detect that eye tracking access has been denied, you can help the user by directly launching the settings app to the correct page. This is done through a call to [Launcher::LaunchUriAsync](https://learn.microsoft.com/en-us/uwp/api/windows.system.launcher.launchuriasync) with the string "ms-settings:privacy-eyetracker".
+The access request dialog only appears once, on your application's first launch. Once the user has made their choice, the system remembers their preference and applies it to all future access requests automatically for that signed-in user. If the user wants to change their preference later, they can do it via the 'App permissions' section of the 'Privacy' page in the HoloLens 'Settings' app.  Because the preference is sticky, the user can unfortunately get into a state where eye tracking is off and they don't know how to fix it.  If eye tracking is an important part of your app experience, and you detect that eye tracking access has been denied, you can help the user by directly launching the settings app to the correct page. This is done through a call to [Launcher::LaunchUriAsync](https://learn.microsoft.com/en-us/uwp/api/windows.system.launcher.launchuriasync) with the string "ms-settings:privacy-eyetracker".
 
 ```cpp
 using namespace winrt::Windows::System::Launcher;
@@ -15,7 +15,7 @@ using namespace winrt::Windows::Foundation;
 LaunchUriAsync(Uri(L"ms-settings:privacy-eyetracker"));
 ```
 
-You should never launch the settings app automatically or prompt the user repeatedly. Instead, find a relavant location in your UI where you can communicate the current state of ET accesss, explain the the value of eye tracking for your application, and provide a button for the user to launch it themselves.
+You should avoid launching the settings app automatically or prompt the user repeatedly. Instead, find a relavant location in your UI where you can communicate the current state of ET accesss, explain the the value of eye tracking for your application, and provide a button for the user to launch it themselves.
 
 ### Delaying the access request
 A common reason for accidentally declining the access request is the user being spammed by multiple popups when the app first launches. A best practice here is to wait and request access only at the first moment when eye tracking will be used by your app. For example, the first time an ET-optimized menu appears. As a result, the user will have more context and less distraction while making their choice, reducing the chance that they will need to change it later.
@@ -42,7 +42,7 @@ options.TargetApplicationPackageFamilyName(L"Microsoft.HoloLensSetup_8wekyb3d8bb
 winrt::Windows::System::Launcher::LaunchUriForResultsAsync(winrt::Windows::Foundation::Uri(L"ms-hololenssetup://EyeTracking"), options);
 ```
 
-LaunchUriForResultsAsync is a sibling of the more well-known LaunchUriAsync API, which has already been [documented](https://stackoverflow.com/questions/56877610/can-i-trigger-the-hololens-calibration-sequence-from-inside-my-application/57051643#57051643) as a method for launching the calibration app.  However, the LaunchUriAsync method *does not* guarantee a return back to your application after calibration is complete.  In most cases, it will simply return to the shell. The LaunchUriForResultsAsync API *does* guarantee a return back to your application, and is therefore a much better experience for the user.
+LaunchUriForResultsAsync is a sibling of the more well-known LaunchUriAsync API, which has already been [suggested](https://stackoverflow.com/questions/56877610/can-i-trigger-the-hololens-calibration-sequence-from-inside-my-application/57051643#57051643) as a method for launching the calibration app.  However, the LaunchUriAsync method *does not* guarantee a return back to your application after calibration is complete.  In most cases, it will simply return to the shell. The LaunchUriForResultsAsync API *does* guarantee a return back to your application, and is therefore a much better experience for the user.
 
 LaunchUriForResultsAsync requires an additional 'options' parameter with the 'TargetApplicationPackageFamilyName' property set to match the HoloLens Setup application. If you are ever in need of the package family name string for an application installed on your HoloLens, you can find it in the 'Apps : Installed apps" section of Windows Device Portal under 'PackageRelativeId'.  Just remove the "!App" characters from the end of the string.
 
