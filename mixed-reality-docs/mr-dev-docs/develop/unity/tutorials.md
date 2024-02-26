@@ -43,5 +43,10 @@ Zappy's Playground is a cross-platform sample for intermediate MRTK developers t
 
 > [!div class="nextstepaction"]
 > [MRTK3 tutorial Zappy's Playground](https://github.com/microsoft/ZappysPlayground)
+> 
+## Azure Communication Services Showcase
 
+The Azure Communication Services Showcase demonstrates how to use [Azure Communication Services](https://learn.microsoft.com/azure/communication-services/overview) (ACS) within an immersive mixed reality application, running on HoloLens 2. The app uses Microsoft Graph, Azure Communication Services APIs, and MRTK3 to allow users to access their Microsoft Teams contacts and participate in calls and meetings via HoloLens 2.
 
+> [!div class="nextstepaction"]
+> [Azure Communication Services Showcase](https://github.com/microsoft/MixedReality-AzureCommunicationServices-Sample)
