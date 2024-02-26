@@ -21,3 +21,4 @@ Advanced concepts include:
 - [Using the Windows device portal](using-the-windows-device-portal.md)
 - [HoloLens research mode](research-mode.md)
 - [WebView2](webview2.md)
+- [Eye Tracking Access and Calibration](eye-tracking-calibration.md)
