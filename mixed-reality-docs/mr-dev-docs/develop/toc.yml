@@ -45,6 +45,8 @@
           href: unity/playground-tutorial.md
         - name: MRTK3 Aquarium
           href: unity/mrtk3-aquarium.md
+        - name: Video Calling and Teams Integration
+          href: unity/acsshowcase.md
         - name: HoloLens 2 tutorials
           items:
             - name: HoloLens 2 Fundamentals Tutorials
@@ -543,6 +545,8 @@
           href: advanced-concepts/webview2.md
         - name: WebView2 Unity Plugin API
           href: advanced-concepts/webview2-unity-plugin.md
+    - name: Eye Tracking Access and Calibration
+      href: advanced-concepts/eye-tracking-calibration.md
 - name: App quality and testing
   items:
   - name: App quality criteria
