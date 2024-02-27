@@ -545,6 +545,8 @@
           href: advanced-concepts/webview2.md
         - name: WebView2 Unity Plugin API
           href: advanced-concepts/webview2-unity-plugin.md
+    - name: Eye Tracking Access and Calibration
+      href: advanced-concepts/eye-tracking-calibration.md
 - name: App quality and testing
   items:
   - name: App quality criteria
