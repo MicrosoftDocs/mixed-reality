@@ -25,10 +25,10 @@ Recorded with HoloLens 2 using Mixed Reality Capture
 Checkout the <a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**Release**</a>page on GitHub.
 
 ## Upgrading the project for HoloLens 2 with MRTK
-You can find HoloLens 2 porting story from the article: <a href="https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/periodic-table-of-the-elements#porting-story-for-hololens-2" target="_blank">**Bringing the Periodic Table of the Elements app to HoloLens 2 with MRTK v2 (2019)**</a>
+You can find HoloLens 2 porting story from the article: <a href="/windows/mixed-reality/develop/unity/periodic-table-of-the-elements#porting-story-for-hololens-2" target="_blank">**Bringing the Periodic Table of the Elements app to HoloLens 2 with MRTK v2 (2019)**</a>
 
 ## OpenXR 
-Read a story on updating Periodic Table project to Unity 2020 + OpenXR pipeline: <a href="https://learn.microsoft.com/en-us/windows/mixed-reality/develop/porting-apps/migrate-a-unity-2019-project-to-openxr" target="_blank">**Updating MRTK Mixed Reality Project to OpenXR+Unity 2020: Periodic Table of the Elements for HoloLens 2 (2021)**</a>
+Read a story on updating Periodic Table project to Unity 2020 + OpenXR pipeline: <a href="https://learn.microsoft.com/windows/mixed-reality/develop/porting-apps/migrate-a-unity-2019-project-to-openxr" target="_blank">**Updating MRTK Mixed Reality Project to OpenXR+Unity 2020: Periodic Table of the Elements for HoloLens 2 (2021)**</a>
 
 ## Design story 
 Check out the design story on the Periodic Table of the Elements app: [**Periodic Table of the Elements 1.0**](periodic-table-of-the-elements.md)
