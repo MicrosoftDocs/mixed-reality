@@ -1,11 +1,12 @@
 ---
 title: Initial setup of World Locking Tools
 description: Detailed step-by-step instructions on integrating World Locking Tools into a project.
-author: fast-slow-still
-ms.author: mafinc
+author: AMollis
+ms.author: amollis
 ms.date: 10/06/2021
 ms.service: mixed-reality
 ms.localizationpriority: high
+ms.topic: concept-article
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---
 
