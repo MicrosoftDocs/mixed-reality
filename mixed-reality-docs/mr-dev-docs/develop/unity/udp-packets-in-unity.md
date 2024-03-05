@@ -29,6 +29,3 @@ You can download a complete DatagramSocket UDP sample app from the link below:
 
 > [!div class="nextstepaction"]
 > [Install the tools](/samples/microsoft/windows-universal-samples/datagramsocket/)
-
-## See also 
-* [Experiments with Shared Holograms and Azure Blob Storage/UDP Multicasting](https://mtaulty.com/2017/12/29/experiments-with-shared-holograms-and-azure-blob-storage-udp-multicasting-part-1/)

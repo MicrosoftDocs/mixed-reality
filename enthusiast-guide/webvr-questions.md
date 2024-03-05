@@ -63,7 +63,7 @@ This is expected behavior. For security reasons, only the active browser tab can
 
 The website may be using the OGG audio file format, which Microsoft Edge doesn't currently support.
 
-You can report broken sites directly to the Microsoft Edge browser team in the [issue tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/), or via twitter using [#EdgeBug hashtag](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/).
+You can report broken sites directly via twitter using [#EdgeBug hashtag](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/).
 
 ## Why does haptic feedback not work in WebVR with motion controllers
 
