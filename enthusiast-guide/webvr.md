@@ -34,7 +34,7 @@ The developer documentation is located here: [WebVR Developer Documentation](/mi
 
 ## I've found a website with WebVR that doesn't work in Windows Mixed Reality. What do I do
 
-You can report broken sites directly to the Microsoft Edge browser team in the [issue tracker](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/), or via twitter using [#EdgeBug hashtag](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/).
+You can report broken sites directly via twitter using [#EdgeBug hashtag](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/).
 
 You can also log bugs using the Windows Feedback Hub app under category:
 
