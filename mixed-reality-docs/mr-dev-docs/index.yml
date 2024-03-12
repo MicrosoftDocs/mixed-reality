@@ -149,7 +149,7 @@ tools:
     # Card
     - title: Windows XR Plugin for Unity 
       imageSrc: images/icon-plugin.png
-      url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
+      url: /windows/mixed-reality/develop/unity/choosing-unity-version
     # Card
     - title: OpenXR Specifications 
       imageSrc: images/Final_mrdl_logo.png

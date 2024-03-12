@@ -41,7 +41,7 @@ To reiterate, the .NET scripting back-end is being deprecated in Unity 2018 and 
 
 > [!NOTE]
 > The IL2CPP scripting backend can cause longer build times from Unity to Visual Studio. Developers should set up their developer machine for [optimizing IL2CPP build times](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).
-> You might also benefit from setting up a [cache server](https://docs.unity3d.com/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes and assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and re-processed when modified. This process can be done once, saved in a cache server, and then shared with other developers to save time, as opposed to every developer processing the re-import of new changes locally.
+> You might also benefit from setting up a [cache server](https://docs.unity3d.com/2020.3/Documentation/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes and assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and re-processed when modified. This process can be done once, saved in a cache server, and then shared with other developers to save time, as opposed to every developer processing the re-import of new changes locally.
 
 After addressing any breaking changes that result from moving to the updated Unity version, build and test your current applications on HoloLens (1st gen). This is a good time to create and save a commit into source control.
 

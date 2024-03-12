@@ -24,7 +24,7 @@ Support for .NET scripting back-end in Unity was deprecated in Unity 2018 and re
    - Select **Add an exclusion** and select the folder containing your Unity project code and build outputs
 3) Use an SSD for building
 
-Review [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info. Also, review [Debugging on IL2CPP Scripting Back-end](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).
+Review [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info. Also, review [Debugging on IL2CPP Scripting Back-end](https://docs.unity3d.com/Manual/uwp-il2cpp-scripting.html).
 
 Consider installing the [*UnityScriptAnalyzer* Visual Studio extension](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer). This tool analyzes your Unity C# scripts for code that can be written in a more optimized manner.
 

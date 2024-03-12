@@ -51,7 +51,7 @@ The following list shows the JavaScript frameworks and APIs for building immersi
 * [WebXR Device API documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [WebXR Samples](https://immersive-web.github.io/webxr-samples/)
 * [Immersiveweb.dev](https://immersiveweb.dev/)
-* [Using Babylon.js to create WebXR experiences](https://doc.babylonjs.com/how_to/introduction_to_webxr)
+* [Using Babylon.js to create WebXR experiences](/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01)
 * [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 * [Windows Mixed Reality and the new Microsoft Edge](../../whats-new/new-microsoft-edge.md)

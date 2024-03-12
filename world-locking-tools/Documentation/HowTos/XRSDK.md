@@ -1,11 +1,12 @@
 ---
 title: Cross Platform using Unity's XR SDK Plugin system
 description: Building HoloLens and mobile applications leveraging World Locking Tools using Unity's XR SDK Plugin system.
-author: fast-slow-still
-ms.author: mafinc
+author: AMollis
+ms.author: amollis
 ms.date: 10/06/2021
 ms.service: mixed-reality
 ms.localizationpriority: high
+ms.topic: concept-article
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---
 

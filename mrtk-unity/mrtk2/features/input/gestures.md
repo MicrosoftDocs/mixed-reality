@@ -15,7 +15,7 @@ Gestures are input events based on human hands. There are two types of devices t
 
   For more information on HoloLens gestures see the [Windows Mixed Reality Gestures documentation](/windows/mixed-reality/gestures).
 
-  [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) wraps the [Unity XR.WSA.Input.GestureRecognizer](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.GestureRecognizer.html) to consume Unity's gesture events from HoloLens devices.
+  [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager?view=mixed-reality-toolkit-unity-2020-dotnet-2.8.0&preserve-view=true) wraps the [Unity XR.WSA.Input.GestureRecognizer](/windows/mixed-reality/develop/unity/gestures-in-unity) to consume Unity's gesture events from HoloLens devices.
 
 - Touch screen devices.
 
