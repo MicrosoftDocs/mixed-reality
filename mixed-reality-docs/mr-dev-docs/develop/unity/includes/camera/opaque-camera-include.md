@@ -26,4 +26,4 @@ You can use script code to determine at runtime whether the headset is immersive
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type:** *HolographicSettings*
 
-You can use script code to determine at runtime whether the headset is immersive or holographic by checking [HolographicSettings.IsDisplayOpaque](https://forum.unity.com/threads/platform-dependent-compilation-for-hololens.542754/).
+You can use script code to determine at runtime whether the headset is immersive or holographic by checking [HolographicSettings.IsDisplayOpaque](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html).
