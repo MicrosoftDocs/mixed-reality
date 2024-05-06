@@ -24,7 +24,7 @@ As the user moves around the environment, AnchorManager grows the graph of ancho
   * Add a new anchor.
   * Add edges from the new anchor to all existing anchors less than Y meters from the new anchor.
 
-The values of 'X' and 'Y' above are constants in the AnchorManager, as MinAnchorDistance and MaxAnchorDistance respectively. These could be converted to properties, giving more flexibility at the cost of complexity in the WorldLockingContext API surface. However, the current values of 1 meter and 1.2 meters, respectively, have been satisfactory to date.
+The values of 'X' and 'Y' above are constants in the AnchorManager, as MinNewAnchorDistance and MaxAnchorEdgeLength respectively. These could be converted to properties, giving more flexibility at the cost of complexity in the WorldLockingContext API surface. However, the current values of 1 meter and 1.2 meters, respectively, have been satisfactory to date.
 
 The above algorithm grows the graph of anchors in the space traversed by the user during the initial exploration, eventually settling into a static network.
 
