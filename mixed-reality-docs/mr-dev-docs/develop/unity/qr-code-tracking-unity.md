@@ -29,13 +29,13 @@ Permission must be requested before you construct a QRCodeWatcher object.
 
 While QR code detection requires the `webcam` capability, the detection occurs using the device's tracking cameras. This provides a wider detection FOV and better battery life compared to detection with the device's photo/video (PV) camera.
 
-You can use the QR code detection API in Unity without importing MRTK by installing the NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity). If you want to get a feel for how it works, download the [sample Unity app](https://github.com/yl-msft/QRTracking). The sample app has examples for displaying a holographic square over QR codes and associated data such as GUID, physical size, timestamp, and decoded data.
+You can use the QR code detection API in Unity without importing MRTK by installing the NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity). If you want to get a feel for how it works, download the [sample Unity app](https://github.com/microsoft/MixedReality-QRCode-Sample/tree/main). The sample app has examples for displaying a holographic square over QR codes and associated data such as GUID, physical size, timestamp, and decoded data.
 
 ## Using OpenXR
 
 When using the OpenXR plugin, grab the [`SpatialGraphNodeId` from the QR API](../native/qr-code-tracking-cs-cpp.md#qr-code-tracking-api-reference) and use the `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API to locate the QR code.
 
-For reference, we have a [QR tracking sample project on GitHub](https://github.com/microsoft/MixedReality-QRCode-Sample) with more a detailed usage explanation for the [`SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
+For reference, we have a [QR tracking sample project on GitHub](https://github.com/microsoft/MixedReality-QRCode-Sample/tree/OpenXR) with more a detailed usage explanation for the [`SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
 
 ## Getting the coordinate system for a QR code
 
