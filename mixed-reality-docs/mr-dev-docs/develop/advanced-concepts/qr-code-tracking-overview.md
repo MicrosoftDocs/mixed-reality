@@ -48,8 +48,8 @@ In this article, you'll learn about:
 
 | Feature          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|:------------------:|
-| OpenXR         | | :heavy_check_mark: (with OpenXR Runtime version 113) | |
-| Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113) | |
+| OpenXR         | | :heavy_check_mark: (with OpenXR Runtime version 113 and OpenXR [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension) | |
+| Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [ARMarker](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarker)) | |
 | Legacy QR SDK  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 > [!NOTE]
@@ -125,11 +125,11 @@ For recommendations on where and how to place QR codes, refer to [Environment co
 
 ### What capabilities are needed?
 
-You need to add webcam capabilities to enable QR codes for your application.
+To enable QR code tracking in your HoloLens application, add the webcam capability to the application’s manifest. If you are developing in Unity, you can configure this from the player settings.
 
 Additionally, users may be prompted by the permissions dialog to grant your app webcam permissions. This only happens once over the lifetime of an app. In cases such as the app explicitly requesting webcam access, the dialog will not reappear.
 
-For Unity apps, enabling [ARMarkerManager](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) in a scene can trigger the dialog to appear.
+For Unity apps with the WebCam capability, enabling [ARMarkerManager](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) in a scene can trigger the webcam permission dialog to appear.
 
 For native OpenXR C++ apps, initial calls to [xrComputeNewSceneMSFT](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#xrComputeNewSceneMSFT) with `XrNewSceneComputeInfoMSFT::requestedFeatures` containing `XR_SCENE_COMPUTE_FEATURE_MARKER_MSFT` can trigger the permissions dialog.
 
@@ -164,11 +164,11 @@ QR tracking is automatic on HoloLens 2, and you'll need the "webcam" capability 
 
 ### Where do I find the API plugin files?
 
-Applications should use the HoloLen’s OpenXR Runtime for detecting QR Codes. OpenXR Tools for Windows Mixed Reality ([source code](https://github.com/microsoft/OpenXR-MixedReality/releases/tag/113.2403.5001)) provides QR code support on HoloLens devices with OpenXR Runtime 113.2403.5001 or greater).
+Applications should use the HoloLen’s OpenXR Runtime for detecting QR Codes. OpenXR for Windows Mixed Reality ([113.2403.5001](https://github.com/microsoft/OpenXR-MixedReality/releases/tag/113.2403.5001) or greater) provides QR code support on HoloLens devices.
 
 For Unity apps, QR code support is provided through the [`ARMarkerManager`](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) component provided with [Mixed Reality OpenXR Plugin](https://www.microsoft.com/download/details.aspx?id=102778).
 
-For QR code support in non-Unity apps, use the  OpenXR 1.0 [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension.
+For QR code support in non-Unity apps, use the OpenXR [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension.
 
 > [!NOTE]
 > The following is specific to the legacy QR code APIs. We recommend using the OpenXR implementation for QR codes instead.
@@ -191,7 +191,7 @@ To use ARMarkerManager in your app, you first need to run the Mixed Reality Feat
 
 <img src="images\Mixed_Reality_Feature_Tool_Mixed_Reality_OpenXR_Plugin_Feature.png" alt="Mixed Reality Feature Tool OpenXR Plugin Feature Selected">
 
-The MR Feature Tool also simplifies package management and can be used to find, update, and add the Mixed Reality features your app requires. See [Welcome to the Mixed Reality Feature Tool](https://learn.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to learn more about using the tool.
+See [Welcome to the Mixed Reality Feature Tool](https://learn.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to learn about the tool.
 
 The general procedure next is to:
 
