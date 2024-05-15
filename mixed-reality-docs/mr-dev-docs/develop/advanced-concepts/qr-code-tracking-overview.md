@@ -46,7 +46,7 @@ In this article, you'll learn about:
 
 ## Device support
 
-| Feature          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
+| Product          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|:------------------:|
 | OpenXR         | | :heavy_check_mark: (with OpenXR Runtime version 113 and OpenXR [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension) | |
 | Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [ARMarker](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarker)) | |
@@ -54,8 +54,8 @@ In this article, you'll learn about:
 
 > [!NOTE]
 > The following is specific to the legacy QR code APIs. We recommend using the OpenXR implementation for QR codes instead.
->
-> Using the legacy QR code SDK, QR code tracking with immersive Windows Mixed Reality headsets on desktop PCs is supported on Windows 10 Version 2004 and higher. Use the `Microsoft.MixedReality.QRCodeWatcher.IsSupported()` API to determine whether the feature is supported on the current device.
+
+Using the legacy QR code SDK, QR code tracking with immersive Windows Mixed Reality headsets on desktop PCs is supported on Windows 10 Version 2004 and higher. Use the `Microsoft.MixedReality.QRCodeWatcher.IsSupported()` API to determine whether the feature is supported on the current device.
 
 ## Supported QR code versions
 
