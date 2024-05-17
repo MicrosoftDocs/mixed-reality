@@ -209,15 +209,7 @@ QR code detection in OpenXR is provided through the [XR_MSFT_scene_marker](https
 
 To enable QR code support, both the XR_MSFT_scene_marker and [XR_MSFT_scene_understanding](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_understanding) extensions must be enabled.
 
-Typically, the next steps would be to:
-
-  1. Verify whether marker detection is a supported feature.
-  1. Create a scene observer handle.
-  1. Compute a new scene and poll its state once completed.
-  1. Retrieve a handle for the scene.
-  1. Get detected QR codes from the scene’s components.
-
-For a more detailed step-by-step, see the [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#_overview_22) extension overview in the OpenXR 1.0 specification.
+For a detailed step-by-step, see the [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#_overview_22) extension overview in the OpenXR 1.0 specification.
 
 For an example of how to use QR codes, see [Scene_QRCode.cpp](https://github.com/microsoft/OpenXR-MixedReality/blob/main/samples/SceneUnderstandingUwp/Scene_QRCode.cpp) in the [SceneUnderstandingUwp](https://github.com/microsoft/OpenXR-MixedReality/blob/main/samples/SceneUnderstandingUwp/) sample on GitHub.
 
