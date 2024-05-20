@@ -1,11 +1,12 @@
 ---
 title: Setting up and running the WLT+ASA samples
 description: Step-by-step instructions on deploying the sample combining WLT and ASA to persist and share coordinate spaces.
-author: fast-slow-still
-ms.author: mafinc
+author: AMollis
+ms.author: amollis
 ms.date: 10/06/2021
 ms.service: mixed-reality
 ms.localizationpriority: high
+ms.topic: concept-article
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK, ASA
 ---
 

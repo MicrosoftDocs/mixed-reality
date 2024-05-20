@@ -45,8 +45,6 @@ Read the following articles from Unity for more details with this rendering appr
 
 >[!NOTE]
 > One common issue with Single Pass Instanced Rendering occurs if developers already have existing custom shaders not written for instancing. After enabling this feature, developers may notice some GameObjects only render in one eye. This is because the associated custom shaders do not have the appropriate properties for instancing.
->
-> See [Single Pass Stereo Rendering for HoloLens](https://docs.unity3d.com/Manual/SinglePassStereoRenderingHoloLens.html) from Unity for how to address this problem
 
 ### Enable depth buffer sharing
 
@@ -87,7 +85,7 @@ Unity has deprecated support for the .NET scripting backend and thus recommends 
 Read [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info.
 
 > [!NOTE]
-> Furthermore, it may be beneficial to setup a [Cache Server](https://docs.unity3d.com/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes/assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and thus re-processed when modified. This process can be done once and saved in a Cache Server and consequently shared with other developers to save time, instead of every developer processing the re-import of new changes locally.
+> Furthermore, it may be beneficial to setup a [Cache Server](https://docs.unity3d.com/2020.3/Documentation/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes/assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and thus re-processed when modified. This process can be done once and saved in a Cache Server and consequently shared with other developers to save time, instead of every developer processing the re-import of new changes locally.
 
 ## Publishing properties
 

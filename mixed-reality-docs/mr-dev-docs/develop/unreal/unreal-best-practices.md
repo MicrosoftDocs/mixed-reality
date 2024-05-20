@@ -22,7 +22,7 @@ If you need the equivalent of a "constructor" in blueprints, use Unreals' [const
 
 ## 3D buttons and textures
 
-It's natural to think about performance when creating or planning to use 3D buttons in mixed reality applications. However, not everything has to be made from meshes to be perceived as 3D. You have the option of using Paper2D with carefully crafted textures to get that 3D look. This works really well for buttons that "seem" 3D, but are just photoshopped images on a quad. A fancy version of these is called a [sprite](https://docs.unrealengine.com/AnimatingObjects/Paper2D/Sprites/index.html).
+It's natural to think about performance when creating or planning to use 3D buttons in mixed reality applications. However, not everything has to be made from meshes to be perceived as 3D. You have the option of using Paper2D with carefully crafted textures to get that 3D look. This works really well for buttons that "seem" 3D, but are just photoshopped images on a quad. A fancy version of these is called a [sprite](https://docs.unrealengine.com/5.3/paper-2d-sprite-editor-in-unreal-engine/).
 
 ## Variants
 

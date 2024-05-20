@@ -46,7 +46,7 @@ Learn how to get started with our tutorials.
 * [WebXR Device API documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [Immersiveweb.dev](https://immersiveweb.dev/)
 * [WebXR Samples](https://immersive-web.github.io/webxr-samples/)
-* [Using Babylon.js to create WebXR experiences](https://doc.babylonjs.com/how_to/introduction_to_webxr)
+* [Using Babylon.js to create WebXR experiences](/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01)
 * [Windows Mixed Reality and the new Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
 * [Immersive Web W3C Github](https://github.com/immersive-web)
 * [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))

@@ -1,11 +1,12 @@
 ---
 title: World Locking Tools combined with Azure Spatial Anchors
 description: An approach to leveraging the complementary capabilities of World Locking Tools and Azure Spatial Anchors together.
-author: fast-slow-still
-ms.author: mafinc
+author: AMollis
+ms.author: amollis
 ms.date: 10/06/2021
 ms.service: mixed-reality
 ms.localizationpriority: high
+ms.topic: concept-article
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---
 

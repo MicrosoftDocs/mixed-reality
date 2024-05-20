@@ -1,11 +1,12 @@
 ---
 title: Understanding the ARSessionOrigin
 description: Explaining the industry standard concept of the Session Origin in plain terms.
-author: fast-slow-still
-ms.author: mafinc
+author: AMollis
+ms.author: amollis
 ms.date: 10/06/2021
 ms.service: mixed-reality
 ms.localizationpriority: high
+ms.topic: concept-article
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---
 

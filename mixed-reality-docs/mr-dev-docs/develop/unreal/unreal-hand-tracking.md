@@ -151,7 +151,7 @@ If you need anything more complicated, such as drawing a hand mesh with a custom
 Getting hand pose works for close interactions like grabbing objects or pressing buttons. However, sometimes you need to work with holograms that are far away from your users. This can be accomplished with hand rays, which can be used as pointing devices in both C++ and Blueprints. You can draw a ray from your hand to a far point and, with some help from Unreal ray tracing, select a hologram that would otherwise be out of reach. 
 
 > [!IMPORTANT]
-> Since all function results change every frame, they're all made callable. For more information about pure and impure or callable functions, see the Blueprint user guid on [functions](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
+> Since all function results change every frame, they're all made callable. For more information about pure and impure or callable functions, see the Blueprint user guid on [functions](https://docs.unrealengine.com/5.3/quick-start-guide-for-blueprints-visual-scripting-in-unreal-engine/).
 
 [!INCLUDE[](includes/tabs-tracking-hand-ray.md)]
 

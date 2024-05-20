@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, holograms, HoloLens 2, eye tracking, gaze input
 
 # UMG and keyboard in Unreal
 
-Unreal Motion Graphics (UMG) is Unreal Engine’s built-in UI system, used to create interfaces such as menus and text boxes. User interfaces built with UMG consist of widgets. We'll guide you through creating a new widget, adding it to world space, and enabling interaction using the system keyboard as an example. You can learn more about UMG in the official Unreal Engine [documentation](https://docs.unrealengine.com/en-US/Engine/UMG/index.html). 
+Unreal Motion Graphics (UMG) is Unreal Engine’s built-in UI system, used to create interfaces such as menus and text boxes. User interfaces built with UMG consist of widgets. We'll guide you through creating a new widget, adding it to world space, and enabling interaction using the system keyboard as an example. You can learn more about UMG in the official Unreal Engine [documentation](https://docs.unrealengine.com/5.3/umg-editor-reference-for-unreal-engine/). 
 
 ## Create a new widget
 
@@ -76,5 +76,5 @@ Now, when you deploy the app to the HoloLens 2, you’ll see a hand ray extendin
 > The HoloLens system keyboard requires Unreal Engine 4.26 or later. Additionally, the keyboard will not appear when your app is being streamed from the Unreal editor to the headset, only when the app is running on device.
 
 ## See Also:
-* [Unreal's UMG documentation](https://docs.unrealengine.com/Engine/UMG/index.html)
-* [Unreal's UMG tutorials](https://docs.unrealengine.com/Programming/Tutorials/UMG/index.html)
+* [Unreal's UMG documentation](https://docs.unrealengine.com/5.3/umg-editor-reference-for-unreal-engine/)
+* [Unreal's UMG tutorials](https://dev.epicgames.com/community/learning/courses/l3p/unreal-engine-your-first-hour-in-umg/6o5/introduction)

@@ -16,6 +16,16 @@ For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hol
 
 |  Build |  Release Date |  Notes |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.22621.1376](https://go.microsoft.com/fwlink/?linkid=2271450) | May 14, 2024 | Windows Holographic, version 24H1 May 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.20348.1603](https://go.microsoft.com/fwlink/?linkid=2272211) | May 14, 2024 | Windows Holographic, version 22H2 May 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.22621.1272](https://go.microsoft.com/fwlink/?linkid=2267337) | April 09, 2024 | Windows Holographic, version 23H2 April 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.20348.1600](https://go.microsoft.com/fwlink/?linkid=2267336) | April 09, 2024 | Windows Holographic, version 22H2 April 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.22621.1266](https://go.microsoft.com/fwlink/?linkid=2263070) | March 12, 2024 | Windows Holographic, version 23H2 March 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.20348.1596](https://go.microsoft.com/fwlink/?linkid=2263168) | March 12, 2024 | Windows Holographic, version 22H2 March 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.22621.1263](https://go.microsoft.com/fwlink/?linkid=2260721) | February 13, 2024 | Windows Holographic, version 23H2 February 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.20348.1593](https://go.microsoft.com/fwlink/?linkid=2260720) | February 13, 2024 | Windows Holographic, version 22H2 February 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.22621.1258](https://go.microsoft.com/fwlink/?linkid=2257515) | January 09, 2024 | Windows Holographic, version 23H2 January 2024 Update. |
+|  [HoloLens 2 Emulator build 10.0.20348.1590](https://go.microsoft.com/fwlink/?linkid=2257277) | January 09, 2024 | Windows Holographic, version 22H2 January 2024 Update. |
 |  [HoloLens 2 Emulator build 10.0.22621.1254](https://go.microsoft.com/fwlink/?linkid=2255470) | December 12, 2023 | Windows Holographic, version 23H2 December 2023 Update. |
 |  [HoloLens 2 Emulator build 10.0.20348.1584](https://go.microsoft.com/fwlink/?linkid=2255553) | December 12, 2023 | Windows Holographic, version 22H2 December 2023 Update. |
 |  [HoloLens 2 Emulator build 10.0.22621.1252](https://go.microsoft.com/fwlink/?linkid=2252188) | November 14, 2023 | Windows Holographic, version 23H2 November 2023 Update. |

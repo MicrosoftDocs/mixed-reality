@@ -71,7 +71,7 @@ You can find scripts and prefabs for the Periodic Table of the Elements app on t
 
 Read the story on how Periodic Table of the Elements app was updated with HoloLens 2's instinctual interactions.
 
-[Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+[Periodic Table of the Elements 2.0](/windows/mixed-reality/develop/unity/periodic-table-of-the-elements-2)
 
 
 
