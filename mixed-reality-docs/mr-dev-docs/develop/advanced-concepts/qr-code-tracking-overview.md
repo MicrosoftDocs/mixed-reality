@@ -49,7 +49,7 @@ In this article, you'll learn about:
 | Product          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|:------------------:|
 | OpenXR         | | :heavy_check_mark: (with OpenXR Runtime version 113 and OpenXR [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension) | |
-| Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [ARMarker](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarker)) | |
+| Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [ARMarkerManager](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager)) | |
 | Legacy QR SDK  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 > [!NOTE]
