@@ -158,7 +158,7 @@ Windows Mixed Reality requires 10 GB of free disk space for setup and best perfo
 
 ### This PC is running an edition of Windows that doesn't support Windows Mixed Reality
 
-Windows Mixed Reality works on [Windows 10 Home](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab), [Windows 10 Pro](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab), and [Windows 11](https://www.microsoft.com/software-download/windows11). You'll need to install one of those editions to use Windows Mixed Reality.
+Windows Mixed Reality works on [Windows 10 Home](https://www.microsoft.com/software-download/windows10), [Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796), and [Windows 11](https://www.microsoft.com/software-download/windows11). You'll need to install one of those editions to use Windows Mixed Reality.
 
 ### This PC isn't running the latest version of Windows 10
 

@@ -124,5 +124,5 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 
 ## See also
 
-* <a href="https://docs.unrealengine.com/develping-for-hololens-in-unreal-engine/" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
+* <a href="/windows/mixed-reality/develop/unreal/unreal-deploying" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
 * <a href="https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html" target="_blank">Unreal performance guidelines for mobile devices</a>
