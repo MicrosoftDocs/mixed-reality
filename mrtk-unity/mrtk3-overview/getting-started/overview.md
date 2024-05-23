@@ -1,8 +1,8 @@
 ---
 title: Getting Started with MRTK3
 description: Overview of how to get started with MRTK3
-author: RogPodge
-ms.author: roliu
+author: AMollis
+ms.author: amollis
 ms.date: 1/12/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, overview, setup, deployment, remoting, new project, getting started, tutorial, introduction, intro

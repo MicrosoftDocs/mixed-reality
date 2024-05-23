@@ -1,8 +1,8 @@
 ---
 title: Setting up the Development Environment
 description: Setting up the Development Environment
-author: RogPodge
-ms.author: roliu
+author: AMollis
+ms.author: amollis
 ms.date: 1/13/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK, Quest, Oculus, Meta

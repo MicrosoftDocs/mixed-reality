@@ -1,8 +1,8 @@
 ---
 title: Choosing a Unity version and XR plugin
 description: Stay up to date on the latest Unity and XR plugin recommendations for HoloLens application development.
-author: qianw211
-ms.author: qianwen
+author: AMollis
+ms.author: amollis
 ms.date: 01/10/2022
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
@@ -19,7 +19,7 @@ While we **recommend that you use Unity LTS (Long Term support) versions with th
 > [!IMPORTANT]
 > Unity 2020 and later does not support targeting HoloLens (1st gen). These headsets remain supported in [Unity 2019 LTS](#unity-20194-lts) with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS.
 >
-> Also, while we recommend using Unity 2022.3 LTS, an app using the Universal Render Pipeline (URP) has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. We recommend URP apps use Unity 2021 or Unity 6 Preview. For more information check out [known issues in certain Unity versions](unity/known-issues.md).
+> Also, while we recommend using Unity 2022.3 LTS, an app using the Universal Render Pipeline (URP) has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. We recommend URP apps use Unity 2021 or Unity 6 Preview. For more information check out [known issues in certain Unity versions](known-issues.md).
 
 The best way to install and manage Unity is through the **Unity Hub**:
 
