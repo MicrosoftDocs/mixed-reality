@@ -17,16 +17,15 @@ While we **recommend that you use Unity LTS (Long Term support) versions with th
 [!INCLUDE[](includes/xr/recommended-version.md)]
 
 > [!IMPORTANT]
-> Unity 2020 and later does not support targeting HoloLens (1st gen). These headsets remain supported in **[Unity 2019 LTS](#unity-20194-lts)** with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS.
+> Unity 2020 and later does not support targeting HoloLens (1st gen). These headsets remain supported in [Unity 2019 LTS](#unity-20194-lts) with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS.
+>
+> Also, while we recommend using Unity 2022.3 LTS, an app using the Universal Render Pipeline (URP) has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. We recommend URP apps use Unity 2021 or Unity 6 Preview. For more information check out [known issues in certain Unity versions](unity/known-issues.md).
 
 The best way to install and manage Unity is through the **Unity Hub**:
 
 1. Install <a href="https://unity3d.com/get-unity/download" target="_blank">**Unity Hub**</a>.
 2. Select the **Installs** tab and choose **Add**.
 3. Select **Unity 2022.3 LTS** **Unity 2021.3 LTS** and click **Next**.
-
-> [!NOTE]
-> While we recommend using Unity 2022.3, an app using the Universal Render Pipeline (URP) has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. We recommend URP apps use Unity 2021 or Unity 6 Preview. For more information check out [known issues in certain Unity versions](unity/known-issues.md).
 
 ![Unity Hub install new version](images/unity-hub-img-01.png)
 
