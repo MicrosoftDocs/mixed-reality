@@ -1,8 +1,8 @@
 ---
 title: Getting Started with MRTK3
 description: Overview of how to get started with MRTK3
-author: RogPodge
-ms.author: roliu
+author: AMollis
+ms.author: amollis
 ms.date: 1/12/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, overview, setup, deployment, remoting, new project, getting started, tutorial, introduction, intro
@@ -27,6 +27,6 @@ To acquire and use MRTK3, the following software tools are required.
 | Software | Version | Notes
 | --- | --- | --- |
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
-| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, **make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues)** |
+| Unity | 2021.3.21f1+ or 2022.3 LTS | Recommend using an LTS release, **make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues)** |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
