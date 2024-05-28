@@ -20,3 +20,4 @@ To recenter a reference space such as `LOCAL` space or `STAGE` space:
 3. Call `xrDestroySpace` on the old reference space handle and start using your new recentered reference space in its place.
 
 Be sure to stash away the `XrReferenceSpaceCreateInfo` struct you use in step 2, so that the next time you need to recenter, you can add the then-current `VIEW` pose to the struct's accumulated `poseInReferenceSpace` field.
+An alternative is to keep an additional `XrSpace` with an identity `poseInReferenceSpace` solely for determining this offset.
