@@ -1,8 +1,8 @@
 ---
 title: Choosing a Unity version and XR plugin
 description: Stay up to date on the latest Unity and XR plugin recommendations for HoloLens application development.
-author: qianw211
-ms.author: qianwen
+author: AMollis
+ms.author: amollis
 ms.date: 01/10/2022
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
@@ -12,18 +12,21 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 
 While we **recommend that you use Unity LTS (Long Term support) versions with the latest Mixed Reality OpenXR plugin** for HoloLens 2 and Windows Mixed Reality development, you can build apps with other Unity configurations as well.
 
-## Unity 2021.3 LTS (Recommended)
+## Unity 2022.3 LTS (Recommended) or Unity 2021.3 LTS
 
 [!INCLUDE[](includes/xr/recommended-version.md)]
 
 > [!IMPORTANT]
-> Unity 2020 and later does not support targeting HoloLens (1st gen). These headsets remain supported in **[Unity 2019 LTS](#unity-20194-lts)** with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS.
+> Unity 2020 and later does not support targeting HoloLens (1st gen). These headsets remain supported in [Unity 2019 LTS](#unity-20194-lts) with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS.
 
 The best way to install and manage Unity is through the **Unity Hub**:
 
 1. Install <a href="https://unity3d.com/get-unity/download" target="_blank">**Unity Hub**</a>.
 2. Select the **Installs** tab and choose **Add**.
-3. Select **Unity 2021.3 LTS** and click **Next**.
+3. Select **Unity 2022.3 LTS** **Unity 2021.3 LTS** and click **Next**.
+
+> [!NOTE]
+> Also, while we recommend using Unity 2022.3 LTS, an app using the Universal Render Pipeline (URP) has worse render performance in Unity 2022 compared to Unity 2021 when using the default URP Lit material. We recommend URP apps use Unity 2021 or Unity 6 Preview. For more information check out [known issues in certain Unity versions](known-issues.md).
 
 ![Unity Hub install new version](images/unity-hub-img-01.png)
 
@@ -37,7 +40,7 @@ The best way to install and manage Unity is through the **Unity Hub**:
 
 ![Unity Windows Build Support option](../images/Unity_Install_Option_UWP2.png)
 
-Once you have Unity 2021.3 installed, get started creating a project or upgrading an existing project using the Mixed Reality OpenXR plugin:
+Once you have Unity 2022.3 or Unity 2021.3 installed, get started creating a project or upgrading an existing project using the Mixed Reality OpenXR plugin:
 
 > [!div class="nextstepaction"]
 > [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md)
@@ -51,7 +54,7 @@ If you need to use Unity 2020, you can use **Unity 2020 LTS with OpenXR**.
 > [!NOTE]
 > While we recommend using OpenXR for projects, Unity 2020.3 also supports the Windows XR plugin.
 
-If you have a Unity 2020 project, you should consider planning for a migration forward to Unity 2021.3 LTS and the Mixed Reality OpenXR plugin.
+If you have a Unity 2020 project, you should consider planning for a migration forward to Unity 2022.3 LTS and the Mixed Reality OpenXR plugin.
 
 ## Unity 2019.4 LTS
 
