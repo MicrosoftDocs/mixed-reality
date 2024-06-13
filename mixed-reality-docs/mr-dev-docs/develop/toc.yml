@@ -183,7 +183,7 @@
           href: unity/keyboard-input-in-unity.md
         - name: Hologram stability
           href: unity/hologram-stability-unity.md
-        - name: QR code tracking API reference
+        - name: QR code tracking
           href: unity/qr-code-tracking-unity.md
         - name: UDP packets in UWP apps
           href: unity/udp-packets-in-unity.md
