@@ -58,7 +58,7 @@ MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's
 
 **Long Term Support**
 
-* Minimum requirements: OpenXR, Unity 2021.3 LTS and Unity 2022.3 LTS, Unity’s XR Interaction Toolkit.
+* Minimum requirements: OpenXR, Unity 2021.3 LTS or Unity 2022.3 LTS, Unity’s XR Interaction Toolkit.
 
 ## Versioning
 

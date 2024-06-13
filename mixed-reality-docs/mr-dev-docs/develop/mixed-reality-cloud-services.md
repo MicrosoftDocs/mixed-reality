@@ -10,18 +10,6 @@ ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, cloud services, Azure, remote rendering, spatial anchors, cognitive services, cognition, unity, machine learning, speech translation, computer vision, Microsoft Graph
 ---
 
----
-layout: LandingPage
-title: Azure mixed reality cloud services overview
-description: Learn about all the Azure mixed reality cloud services you can integrate into your Unity or Unreal applications.
-author: hferrone
-ms.author: v-haferr
-ms.date: 12/9/2020
-ms.topic: overview
-ms.localizationpriority: high
-keywords: Mixed Reality, develop, development, HoloLens, cloud services, Azure, remote rendering, spatial anchors, cognitive services, cognition, unity, machine learning, speech translation, computer vision, Microsoft Graph
----
-
 # Azure Mixed Reality cloud services overview
 
 ![ Azure Spatial Anchors image](../design/images/AzureSpatialAnchors.jpg)
