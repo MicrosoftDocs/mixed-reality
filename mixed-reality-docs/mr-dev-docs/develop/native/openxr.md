@@ -14,7 +14,7 @@ keywords: OpenXR, roadmap, extensions, Khronos, BasicXRApp, DirectX, native, nat
 
 OpenXR is an open royalty-free API standard from <a href="https://www.khronos.org/" target="_blank">Khronos</a>, providing engines with native access to a range of devices across the [mixed reality spectrum](../../discover/mixed-reality.md).
 
-You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive VR headset on the desktop.  If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
+You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive VR headset on the desktop. If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
 
 ## Why OpenXR?
 
@@ -24,23 +24,24 @@ The OpenXR API uses a loader to connect your application directly to your headse
 
 ## What is OpenXR?
 
-The OpenXR API provides the core pose prediction, frame timing, and spatial input functionality you'll need to build an engine that can target both holographic and immersive devices.
+The OpenXR API provides the core pose prediction, frame timing, and spatial input functionality you need to build an engine that can target both holographic and immersive devices.
 
-To learn about the OpenXR API, check out the OpenXR 1.0 <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">specification</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">API reference</a>, and <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">quick reference guide</a>.  For more information, see the <a href="https://www.khronos.org/openxr/" target="_blank">Khronos OpenXR page</a>.
+To learn about the OpenXR API, check out the OpenXR 1.0 <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">specification</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">API reference</a>, and <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">quick reference guide</a>. For more information, see the <a href="https://www.khronos.org/openxr/" target="_blank">Khronos OpenXR page</a>.
 
-To target the full feature set of HoloLens 2, you'll also use cross-vendor and vendor-specific OpenXR extensions that enable additional features beyond the OpenXR 1.0 core, such as articulated hand tracking, eye tracking, spatial mapping, and spatial anchors. For more information, see the [Roadmap section](#roadmap) below on the extensions coming later this year.
+To target the full feature set of HoloLens 2, you also use cross-vendor and vendor-specific OpenXR extensions.
+These enable features such as articulated hand tracking, eye tracking, spatial mapping, and spatial anchors. For more information, see the [Roadmap section](#roadmap) on the extensions coming later this year.
 
-OpenXR isn't itself a mixed reality engine.  Instead, OpenXR enables engines like Unity and Unreal to write portable code once that can then access the native platform features of the user's holographic or immersive device, whatever vendor built that platform.
+OpenXR isn't itself a mixed reality engine. Instead, OpenXR enables engines like Unity and Unreal to write portable code once that can then access the native platform features of the user's holographic or immersive device, whatever vendor built that platform.
 
 ## Roadmap
 
-The OpenXR specification defines an extension mechanism that enables runtime implementers to expose additional functionality beyond the [core features](#what-is-openxr) defined in the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">base OpenXR 1.0 specification</a>.
+The OpenXR specification defines an extension mechanism that enables runtime implementers to expose other functionality beyond the [core features](#what-is-openxr) defined in the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">base OpenXR 1.0 specification</a>.
 
 There are three kinds of OpenXR extensions:
-* **Vendor extensions (for example, `XR_MSFT_...`):** Enables per-vendor innovation in hardware or software features.  Any runtime vendor can introduce and ship a vendor extension at any time.
-  * **Experimental vendor extensions (for example, `XR_MSFTX_...`):** Experimental vendor extensions being previewed to gather feedback.  `XR_MSFTX_...` extensions are for developer devices only and will be removed when the real extension ships.  To experiment with them, you can [enable preview extensions on your developer device](openxr-getting-started.md#using-preview-extensions).
-* **Cross-vendor `EXT` extensions:** Cross-vendor extensions that multiple companies define and implement.  Groups of interested companies can introduce EXT extensions at any time.
-* **Official `KHR` extensions:** Official Khronos extensions ratified as part of a core spec release.  KHR extensions are covered by the same license as the core spec itself.
+* **Vendor extensions (for example, `XR_MSFT_...`):** Enables per-vendor innovation in hardware or software features. Any runtime vendor can introduce and ship a vendor extension at any time.
+ * **Experimental vendor extensions (for example, `XR_MSFTX_...`):** Experimental vendor extensions being previewed to gather feedback. `XR_MSFTX_...` extensions are for developer devices only and are removed when the real extension ships. To experiment with them, you can [enable preview extensions on your developer device](openxr-getting-started.md#using-preview-extensions).
+* **Cross-vendor `EXT` extensions:** Cross-vendor extensions that multiple companies define and implement. Groups of interested companies can introduce EXT extensions at any time.
+* **Official `KHR` extensions:** Official Khronos extensions ratified as part of a core spec release. KHR extensions are covered by the same license as the core spec itself.
 
 The Windows Mixed Reality OpenXR Runtime supports a set of `MSFT` and `EXT` extensions that brings the full set of HoloLens 2 features to OpenXR applications:
 
@@ -61,14 +62,15 @@ The Windows Mixed Reality OpenXR Runtime supports a set of `MSFT` and `EXT` exte
 | [Mixed Reality Capture<br />(third render from PV camera)](../advanced-concepts/mixed-reality-capture-overview.md#render-from-the-pv-camera-opt-in)<p>*HoloLens 2 only*</p> | **`MSFT` extensions released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_secondary_view_configuration">XR_MSFT_secondary_view_configuration</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_first_person_observer">XR_MSFT_first_person_observer</a></code> |
 | Motion controller interaction profiles<br />(Samsung Odyssey and HP Reverb G2) | **`MSFT` extensions released in runtime 103:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_samsung_odyssey_controller">XR_EXT_samsung_odyssey_controller</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_hp_mixed_reality_controller">XR_EXT_hp_mixed_reality_controller</a></code> |
 | [Motion controller render models](../../design/motion-controllers.md#rendering-the-motion-controller-model) | **`MSFT` extension released in runtime 104:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_controller_model">XR_MSFT_controller_model</a></code> |
-| [Scene understanding (planes, meshes)](../../design/scene-understanding.md)<p>*HoloLens 2 only*</p> | **`MSFT` extension released in runtime 106:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_understanding">XR_MSFT_scene_understanding</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_understanding_serialization">XR_MSFT_scene_understanding_serialization</a></code> |
+| [Scene understanding (planes, meshes)](../../design/scene-understanding.md)<p>*HoloLens 2 only*</p> | **`MSFT` extension released in runtime 106:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_understanding">XR_MSFT_scene_understanding</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_understanding_serialization">XR_MSFT_scene_understanding_serialization</a></code>
+| Scene marker (QR Codes) <p>*HoloLens 2 only*</p> | **`MSFT` extension released in runtime 113:** <br /><code><a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker">XR_MSFT_scene_marker</a></code> |
 | [Composition layer reprojection modes<br />(auto-planar or orientation-only reprojection)](../advanced-concepts/hologram-stability.md#reprojection) | **`MSFT` extension released in runtime 106:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_composition_layer_reprojection">XR_MSFT_composition_layer_reprojection</a></code> |
 | Interop with other Mixed Reality SDKs<br />(for example, [QR](../advanced-concepts/qr-code-tracking-overview.md)) | **`MSFT` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_spatial_graph_bridge">XR_MSFT_spatial_graph_bridge</a></code> |
 | Interop with UWP CoreWindow API<br />(for example, for keyboard/mouse) | **`MSFT` extension released in runtime 103:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_holographic_window_attachment">XR_MSFT_holographic_window_attachment</a></code>
 | Interop with legacy Mixed Reality WinRT APIs<br />(for example, <code><a href="/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager">SpatialAnchorTransferManager</a></code>)) | <p>**`MSFT` extension released in runtime 105:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_perception_anchor_interop">XR_MSFT_perception_anchor_interop</a></code> |
 | Other cross-vendor extensions | <p>**Official `KHR` extensions released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_composition_layer_depth" target="_blank">XR_KHR_composition_layer_depth</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_visibility_mask" target="_blank">XR_KHR_visibility_mask</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_win32_convert_performance_counter_time" target="_blank">XR_KHR_win32_convert_performance_counter_time</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_composition_layer_color_scale_bias" target="_blank">XR_KHR_composition_layer_color_scale_bias</a></code></p><p>**`EXT` extensions released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_win32_appcontainer_compatible" target="_blank">XR_EXT_win32_appcontainer_compatible</a></code><br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_debug_utils" target="_blank">XR_EXT_debug_utils</a></code></p> |
 
-While some of these extensions may start out as vendor-specific `MSFT` extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor `EXT` or `KHR` extensions for many of these feature areas. Cross-vendor extensions will make the code you write for those features portable across runtime vendors, as with the core specification.
+While some of these extensions may start out as vendor-specific `MSFT` extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor `EXT` or `KHR` extensions for many of these feature areas. Cross-vendor extensions make the code you write for those features portable across runtime vendors, as with the core specification.
 
 ## Where can you use OpenXR?
 
@@ -76,25 +78,25 @@ While some of these extensions may start out as vendor-specific `MSFT` extension
 
 *Minecraft's new RenderDragon engine has built its desktop VR support using OpenXR!*
 
-Microsoft has been working with Unity and Epic Games to ensure the future of mixed reality is open, not just for HoloLens 2, but across the full breadth of PC VR, including [HP’s new Reverb G2 headset](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  OpenXR powers the cross-vendor VR support for major titles shipping today, such as Minecraft and Microsoft Flight Simulator!  For more information on developing for HoloLens (1st gen), see the [release notes](/hololens/hololens1-release-notes).
+Microsoft has been working with Unity and Epic Games to ensure the future of mixed reality is open, not just for HoloLens 2, but across the full breadth of PC VR, including [HP’s new Reverb G2 headset](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1). OpenXR powers the cross-vendor VR support for major titles shipping today, such as Minecraft and Microsoft Flight Simulator! For more information on developing for HoloLens (1st gen), see the [release notes](/hololens/hololens1-release-notes).
 
 To learn how you can get started with OpenXR in Unity, Unreal Engine or your own engine, read on!
 
 ### OpenXR in Unity
 
-Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows Mixed Reality development is **Unity 2020.3 LTS** with the Mixed Reality OpenXR plugin.  This plugin includes support for the OpenXR extensions that light up the [full capabilities of HoloLens 2 and Windows Mixed Reality headsets](#roadmap), including hand/eye tracking, spatial anchors and HP Reverb G2 controllers.  MRTK-Unity supports OpenXR as of [MRTK 2.7](/training/paths/beginner-hololens-2-tutorials/?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project).  For more information about getting started with Unity 2020 and OpenXR, see [Choosing a Unity version and XR plugin](../unity/choosing-unity-version.md).
+Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows Mixed Reality development is **Unity 2020.3 LTS** with the Mixed Reality OpenXR plugin. This plugin includes support for the OpenXR extensions that light up the [full capabilities of HoloLens 2 and Windows Mixed Reality headsets](#roadmap), including hand/eye tracking, spatial anchors, and HP Reverb G2 controllers. MRTK-Unity supports OpenXR as of [MRTK 2.7](/training/paths/beginner-hololens-2-tutorials/?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project). For more information about getting started with Unity 2020 and OpenXR, see [Choosing a Unity version and XR plugin](../unity/choosing-unity-version.md).
 
-If you are developing for HoloLens (1st gen), you'll need to continue using **Unity 2019.4 LTS** with the legacy WinRT API backend.  If you’re targeting the new HP Reverb G2 controller in a Unity 2019 app, see our [HP Reverb G2 input docs](../unity/unity-reverb-g2-controllers.md).
+If you're developing for HoloLens (1st gen), you need to continue using **Unity 2019.4 LTS** with the legacy WinRT API backend. If you’re targeting the new HP Reverb G2 controller in a Unity 2019 app, see our [HP Reverb G2 input docs](../unity/unity-reverb-g2-controllers.md).
 
-Starting in **Unity 2021.3 LTS**, OpenXR will be the only supported Unity backend for targeting HoloLens 2 and Windows Mixed Reality headsets.
+Starting in **Unity 2021.3 LTS**, OpenXR is the only supported Unity backend for targeting HoloLens 2 and Windows Mixed Reality headsets.
 
 ### OpenXR in Unreal Engine
 
-Unreal Engine 4.23 was the first major game engine release to ship preview support for OpenXR 1.0!  Now in **Unreal Engine 4.26**, support for HoloLens 2, Windows Mixed Reality and other desktop VR headsets is available through Unreal Engine's built-in OpenXR support.  Unreal Engine 4.26 also supports [Microsoft's OpenXR extension plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal), enabling hand interaction and HP Reverb G2 controller support, lighting up the [full feature set of HoloLens 2 and Windows Mixed Reality headsets](#roadmap).  Unreal Engine 4.26 is available today on the [Epic Games Launcher](https://www.unrealengine.com/download/creators), with MRTK-Unreal 0.12 supporting OpenXR projects.
+Unreal Engine 4.23 was the first major game engine release to ship preview support for OpenXR 1.0! Now in **Unreal Engine 4.26**, support for HoloLens 2, Windows Mixed Reality, and other desktop VR headsets is available through Unreal Engine's built-in OpenXR support. Unreal Engine 4.26 also supports [Microsoft's OpenXR extension plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal). This enables hand interaction and HP Reverb G2 controller support, lighting up the [full feature set of HoloLens 2 and Windows Mixed Reality headsets](#roadmap). Unreal Engine 4.26 is available today on the [Epic Games Launcher](https://www.unrealengine.com/download/creators), with MRTK-Unreal 0.12 supporting OpenXR projects.
 
 ### OpenXR for native development
 
-You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive VR headset on the desktop.  If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
+You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive VR headset on the desktop. If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
 
 To start developing OpenXR applications for HoloLens 2 or Windows Mixed Reality VR headsets, see [how to get started with OpenXR development](openxr-getting-started.md).
 
