@@ -10,11 +10,14 @@ keywords: ar, qr, qr code, ar marker, hololens2, tracking, armarker, armarkerman
 
 # QR codes in Unity
 
-This article walks you through adding QR code detection to your Unity app, describes the important components and concepts you need to use, provides tutorials covering common QR code usage, as well as information about the [AR Marker sample scenario](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/SampleScenarios/Scenarios/MarkerSample/Scripts) that demonstrates of a QR code-enabled scene and example scripts.
+HoloLens 2 headsets can track and detect QR codes that can be used to provide holograms and other AR features. This article guides you through everything you need to know to start using QR codes in your Unity app, including:
+
+* Adding QR code detection to your Unity app.
+* Understanding important concepts and Unity components you need to use.
+* Provides tutorials that cover common QR code usage.
+* Introduces the [AR Marker sample scenario](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/SampleScenarios/Scenarios/MarkerSample/Scripts) that demonstrates of a QR code-enabled scene and example scripts.
 
 Before continuing with this article, we recommend going through the [QR codes overview](../advanced-concepts/qr-code-tracking-overview.md).
-
-HoloLens 2 headsets can track and detect QR codes that can be used to provide holograms and other AR features. This topic walks you through everything you need to know to start using QR codes in your Unity app.
 
 ![Tracked QR Code](images/QR-Code-Tracking.png)
 
@@ -41,7 +44,7 @@ The [Mixed Reality OpenXR Plugin](https://assetstore.unity.com/packages/add-ons/
 To import the package:
 
 1. [Download](https://www.microsoft.com/download/details.aspx?id=102778) and run the Mixed Reality Feature Tool.
-1. Install the Mixed Reality OpenXR Plugin as indicated below:
+1. Install the Mixed Reality OpenXR Plugin as indicated:
   ![Install Mixed Reality OpenXR Plugin](images/Mixed-Reality-Feature-Tool-Mixed-Reality-OpenXR-Plugin-Feature.png)
 
 The Mixed Reality Feature Tool also simplifies package management and can be used to find, update, and add the Mixed Reality features your app requires. See [Welcome to the Mixed Reality Feature Tool](./mixed-reality-openxr-plugin.md) for detailed instructions on how to use the tool.
@@ -54,7 +57,7 @@ To enable **WebCam** capabilities:
 
 1. Open your Unity project.
 1. Click **Edit** in the Unity editor’s app menu.
-1. Go to **Project Settings > Player** and select the **UWP** tab as shown below.
+1. Go to **Project Settings > Player** and select the **UWP** tab as shown:
 ![UWP Tab Settings](images/Player-Settings-UWP-Settings.png)
 1. Enable **WebCam** in the **Capabilities** list.
   ![WebCam Capabilities Enabled](images/Player-Settings-WebCam-Cap.png)
@@ -74,7 +77,7 @@ This dialog is shown to users only once, typically when entering a scene contain
 
 ### Building QR code detection into a scene
 
-QR code detection must be built into every scene you want to use QR codes in. This requires:
+QR code detection must be built into every scene you want to use QR codes in, which requires:
 
 * A [`GameObject`](https://docs.unity3d.com/Manual/Hierarchy.html) with [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) attached. [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) is solely responsible for creating, updating, and removing every `GameObject` for detected QR codes.
 * A prefab with [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) attached.
@@ -90,7 +93,7 @@ To make a prefab for QR codes:
 1. Add the [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker)component to the prefab, located under **Script > Microsoft.MixedReality.OpenXR > ARMarker**.<br/>
   ![Adding the ARMarker Component](images/Add-ARMarker-Component.png)
 
-You now have a basic prefab to work with. You likely want your app to visually represent QR codes that have been detected in the environment. The next section walks you through how to add a visual reprentation for QR codes.
+You now have a basic prefab to work with. You likely want your app to visually represent QR codes that are detected in the environment. The next section walks you through how to add a visual representation for QR codes.
 
 ### Adding Visuals
 
@@ -119,9 +122,9 @@ To add [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkerman
 
 ## Keeping track of QR code changes
 
-[`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) contains the [`markersChanged`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager.markerschanged) event, which provides [`ARMarkersChangedEventArgs`](/dotnet/api/microsoft.mixedreality.openxr.armarkerschangedeventargs) to subscribers. Use these event arguments to track which QR codes have been added or removed from detection or updated pose data.
+[`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) contains the [`markersChanged`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager.markerschanged) event, which provides [`ARMarkersChangedEventArgs`](/dotnet/api/microsoft.mixedreality.openxr.armarkerschangedeventargs) to subscribers. Use these event arguments to track which QR codes are added or removed from detection or updated pose data.
 
-The following code demonstrates subscribing to the [`ARMarkerManager.markersChanged`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager.markerschanged) event, using its event arguments to iterate through the [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) objects [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) is handling and writing to Debug whether they have been added, removed, or updated.
+The following code demonstrates subscribing to the [`ARMarkerManager.markersChanged`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager.markerschanged) event, using its event arguments to iterate through the [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) objects [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) is handling and writing to Debug whether they are added, removed, or updated.
 
 ```csharp
 using System;
@@ -153,7 +156,7 @@ void OnQRCodesChanged(ARMarkersChangedEventArgs args)
 
 ## Getting the time a QR code was last detected
 
-Use the [`ARMarker.lastSeenTime`](/dotnet/api/microsoft.mixedreality.openxr.armarker.lastseentime) property to determine when the device last tracked a detected QR code and the amount of time, if any, tracking has been lost. Time is measured in the number of seconds since Unity started your application and is analogous to [`UnityEngine.Time.realtimeSinceStartup`](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Time-realtimeSinceStartup.html).
+Use the [`ARMarker.lastSeenTime`](/dotnet/api/microsoft.mixedreality.openxr.armarker.lastseentime) property to determine when the device last tracked a detected QR code and the amount of time, if any, tracking is lost. Time is measured in the number of seconds since Unity started your application and is analogous to [`UnityEngine.Time.realtimeSinceStartup`](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Time-realtimeSinceStartup.html).
 
 ## Using a QR code's trackable ID
 
@@ -257,7 +260,7 @@ To obtain the QR code's size in meters, use the property [`ARMarker.size`](/dotn
 
 Use the `ARMarker.transform` property to obtain the rotation and world space position of the QR code's transform, and [`ARMarker.center`](/dotnet/api/microsoft.mixedreality.openxr.armarker.center) to QR code's 2D coordinates relative to the QR code's transform. The transform itself is centered according to whether [`ARMarker.transformMode`](/dotnet/api/microsoft.mixedreality.openxr.armarker.transformmode) (the *transform mode*) is set to [`TransformMode.MostStable`](/dotnet/api/microsoft.mixedreality.openxr.transformmode) (*most stable*, the QR code's top-left) or [`TransformMode.Center`](/dotnet/api/microsoft.mixedreality.openxr.transformmode) (*center*, the QR code's geometric center).
 
-Use the [`ARMarkerManager.defaultTransformMode`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager.defaulttransformmode) field to set the transform mode [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) creates new [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) objects with. The field is initialized with the `Default Transform Mode` field is set to in the Unity Inspector as shown below:
+Use the [`ARMarkerManager.defaultTransformMode`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager.defaulttransformmode) field to set the transform mode [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) creates new [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) objects with. The field is initialized with the `Default Transform Mode` field is set to in the Unity Inspector as shown:
 
 ![The ARMarkerManager Component's Default Transform Mode Inspector Field](images/ARMarkerManager-DefaultTransformMode.png)
 
@@ -300,7 +303,7 @@ The sample provided with the OpenXR Plugin package contains a QR code-enabled sc
 
 ![AR Marker Sample Scenario](images/ARMarker-Sample-Scene.jpg)
 
-The scene is located in **Assets > ARMarker** as shown below:
+The scene is located in **Assets > ARMarker** as shown:
 ![ARMarker Scene Asset Location](images/ARMarker-Sample-Scene-Location.png)
 
 You can find the C# scripts used in the scene in the [OpenXR Unity Mixed Reality Samples repo](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main) on GitHub:
