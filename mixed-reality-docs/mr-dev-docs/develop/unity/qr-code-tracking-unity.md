@@ -87,7 +87,7 @@ To use QR codes in your scene, you need to create a prefab for QR codes. [`ARMar
 To make a prefab for QR codes:
 
 1. [Create a new prefab](https://docs.unity3d.com/Manual/CreatingPrefabs.html) for your project.
-1. Add the [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker)component to the prefab, located under **Script > Microsoft.MixedReality.OpenXR > ARMarker**.
+1. Add the [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker)component to the prefab, located under **Script > Microsoft.MixedReality.OpenXR > ARMarker**.<br/>
   ![Adding the ARMarker Component](images/Add-ARMarker-Component.png)
 
 You now have a basic prefab to work with. You likely want your app to visually represent QR codes that have been detected in the environment. The next section walks you through how to add a visual reprentation for QR codes.
@@ -110,7 +110,7 @@ To do so:
 To add [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) to your scene:
 
 1. Place a [`GameObject`](https://docs.unity3d.com/Manual/Hierarchy.html) into your scene.
-1. Add the [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) component to the `GameObject`, located under **Script > Microsoft.MixedReality.OpenXR > ARMarkerManager**.
+1. Add the [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) component to the `GameObject`, located under **Script > Microsoft.MixedReality.OpenXR > ARMarkerManager**.<br/>
   ![Adding the ARMarkerManager Component](images/Add-ARMarkerManager-Component.png)
 1. Set the [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) **Marker Prefab** field to the prefab you created in the previous section.
   ![Marker Prefab Field Set](images/ARMarkerManager-Prefab-Specified.png)
