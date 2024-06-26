@@ -51,7 +51,7 @@ In this article, you'll learn about:
 | Product          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|:------------------:|
 | OpenXR         | | :heavy_check_mark: (with OpenXR Runtime version 113 and OpenXR [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension) | |
-| Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [ARMarkerManager](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager)) | |
+| Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager)) | |
 | Legacy QR SDK  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 > [!NOTE]
@@ -193,19 +193,19 @@ To use [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkerman
 
 To import the package:
 
-1. [Download](/unity/mixed-reality-openxr-plugin.md#download-and-install-the-mixed-reality-feature-tool) and run the Mixed Reality Feature Tool.
-1. [Install](/unity/mixed-reality-openxr-plugin.md#import-the-mixed-reality-openxr-plugin) the OpenXR plugin.
+1. [Download](mixed-reality/develop/unity/mixed-reality-openxr-plugin.md#download-and-install-the-mixed-reality-feature-tool) and run the Mixed Reality Feature Tool.
+1. [Install](mixed-reality/develop/unity/mixed-reality-openxr-plugin.md#import-the-mixed-reality-openxr-plugin) the OpenXR plugin.
 
-See [Welcome to the Mixed Reality Feature Tool](/unity/welcome-to-mr-feature-tool.md) for detailed instructions on how to use the tool.
+See [Welcome to the Mixed Reality Feature Tool](mixed-reality/develop/unity/welcome-to-mr-feature-tool.md) for detailed instructions on how to use the tool.
 
 The general procedure next is to:
 
 1. In your Unity project, enable **WebCam** capabilities.
 1. Create a prefab and attach the [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) component as shown:<br/>
-  <img src="images\ARMarkerManager_Prefab_Configuration.png" alt="Prefab with ARMarker and ARMarkerScale attached">
+  ![Prefab specified](../unity/images/ARMarker-Manager-Prefab-Configuration.png)
 1. Open a scene you want QR codes to be detected when running.
 1. Attach [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) to a GameObject in your scene and set **Marker Prefab** to the prefab you created.<br/>
-  ![Foo](/advanced-concepts/images/ARMarkerManager-Prefab-Specified.png)
+  ![Prefab specified](../unity/images/ARMarkerManager-Prefab-Specified.png)
 
 For more detailed instructions and information, go to [QR codes in Unity](/mixed-reality/develop/unity/qr-code-tracking-unity).
 
