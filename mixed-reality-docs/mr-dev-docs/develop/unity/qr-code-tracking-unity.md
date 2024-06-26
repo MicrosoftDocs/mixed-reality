@@ -43,11 +43,10 @@ The [Mixed Reality OpenXR Plugin](https://assetstore.unity.com/packages/add-ons/
 
 To import the package:
 
-1. [Download](https://www.microsoft.com/download/details.aspx?id=102778) and run the Mixed Reality Feature Tool.
-1. Install the Mixed Reality OpenXR Plugin as indicated:
-  ![Install Mixed Reality OpenXR Plugin](images/Mixed-Reality-Feature-Tool-Mixed-Reality-OpenXR-Plugin-Feature.png)
+1. [Download](./mixed-reality-openxr-plugin.md#download-and-install-the-mixed-reality-feature-tool) and run the Mixed Reality Feature Tool.
+1. [Install](./mixed-reality-openxr-plugin.md#import-the-mixed-reality-openxr-plugin) the OpenXR plugin.
 
-The Mixed Reality Feature Tool also simplifies package management and can be used to find, update, and add the Mixed Reality features your app requires. See [Welcome to the Mixed Reality Feature Tool](./mixed-reality-openxr-plugin.md) for detailed instructions on how to use the tool.
+The Mixed Reality Feature Tool also simplifies package management and can be used to find, update, and add the Mixed Reality features your app requires. See [Welcome to the Mixed Reality Feature Tool](./welcome-to-mr-feature-tool.md) for detailed instructions on how to use the tool.
 
 ### Enabling WebCam capabilities
 
@@ -58,7 +57,7 @@ To enable **WebCam** capabilities:
 1. Open your Unity project.
 1. Click **Edit** in the Unity editor’s app menu.
 1. Go to **Project Settings > Player** and select the **UWP** tab as shown:
-![UWP Tab Settings](images/Player-Settings-UWP-Settings.png)
+  ![UWP Tab Settings](images/Player-Settings-UWP-Settings.png)
 1. Enable **WebCam** in the **Capabilities** list.
   ![WebCam Capabilities Enabled](images/Player-Settings-WebCam-Cap.png)
 1. Exit **Project Settings**.
@@ -160,7 +159,7 @@ Use the [`ARMarker.lastSeenTime`](/dotnet/api/microsoft.mixedreality.openxr.arma
 
 ## Using a QR code's trackable ID
 
-QR codes are [trackables](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.1/manual/architecture/managers.html#trackables-and-trackable-managers), which are anything an AR device can detect and track in a physical environment. Trackables derive from the type [`ARTrackable<TSessionRelativeDataTTrackable>`](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.0/api/UnityEngine.XR.ARFoundation.ARTrackable-2.html) that provides an ID, tracking state, pose, and other data.
+QR codes are [trackables](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.1/manual/architecture/managers.html#trackables-and-trackable-managers), which are anything an AR device can detect and track in a physical environment. Trackables derive from the type [`ARTrackable<TSessionRelativeData, TTrackable>`](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.0/api/UnityEngine.XR.ARFoundation.ARTrackable-2.html) that provides an ID, tracking state, pose, and other data.
 
 The trackable ID for a QR code can be passed into [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) methods to get the QR code’s properties, raw byte data, and string representation, and to set the transform mode for the QR code. These methods allow you to retrieve data for a QR code without having to hold on to an [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) object reference.
 
@@ -214,7 +213,7 @@ void OnQRCodesChanged(ARMarkersChangedEventArgs args)
 To get the version and type of a detected QR code:
 
 1. Call [`ARMarker.GetQRCodeProperties()`](/dotnet/api/microsoft.mixedreality.openxr.armarker.getqrcodeproperties), which returns a [`QRCodeProperties`](/dotnet/api/microsoft.mixedreality.openxr.qrcodeproperties) instance.
-1. Access the field [`/dotnet/api/microsoft.mixedreality.openxr.qrcodeproperties.type`] in the return value to get the QR code's type. The value is either [`QRCodeType.QRCode`](/dotnet/api/microsoft.mixedreality.openxr.qrcodetype) or [`QRCodeType.MicroQRCode`](/dotnet/api/microsoft.mixedreality.openxr.qrcodetype).
+1. Access the field [`QRCodeProperties`](/dotnet/api/microsoft.mixedreality.openxr.qrcodeproperties) in the return value to get the QR code's type. The value is either [`QRCodeType.QRCode`](/dotnet/api/microsoft.mixedreality.openxr.qrcodetype) or [`QRCodeType.MicroQRCode`](/dotnet/api/microsoft.mixedreality.openxr.qrcodetype).
 1. Access the return value's [`QRCodeProperties.version`](/dotnet/api/microsoft.mixedreality.openxr.qrcodeproperties.version) field to get the QR code's version. The value ranges from 1 to 40 if the type is [`QRCodeType.QRCode`](/dotnet/api/microsoft.mixedreality.openxr.qrcodetype), and from 1 to 4 if the type is [`QRCodeType.MicroQRCode`](/dotnet/api/microsoft.mixedreality.openxr.qrcodetype).
 
 As an alternative, pass an [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) object's trackable ID to [`ARMarkerManager.GetQRCodeProperties(TrackableId)`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager.getqrcodeproperties) to get a QR code's type and version.
