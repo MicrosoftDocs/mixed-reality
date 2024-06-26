@@ -193,11 +193,11 @@ To use [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkerman
 
 To import the package:
 
-1. [Download](/mixed-reality/develop/unity/mixed-reality-openxr-plugin.md#download-and-install-the-mixed-reality-feature-tool) and run the Mixed Reality Feature Tool.
-1. [Install](/mixed-reality/develop/unity/mixed-reality-openxr-plugin.md#import-the-mixed-reality-openxr-plugin) the OpenXR plugin.
+1. [Download](~/develop/unity/mixed-reality-openxr-plugin.md#download-and-install-the-mixed-reality-feature-tool) and run the Mixed Reality Feature Tool.
+1. [Install](~/develop/unity/mixed-reality-openxr-plugin.md#import-the-mixed-reality-openxr-plugin) the OpenXR plugin.
 
-See [Welcome to the Mixed Reality Feature Tool](/mixed-reality/develop/unity/welcome-to-mr-feature-tool.md) for detailed instructions on how to use the tool.
-/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool.md
+See [Welcome to the Mixed Reality Feature Tool](~/develop/unity/welcome-to-mr-feature-tool.md) for detailed instructions on how to use the tool.
+
 The general procedure next is to:
 
 1. In your Unity project, enable **WebCam** capabilities.
@@ -207,7 +207,7 @@ The general procedure next is to:
 1. Attach [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) to a GameObject in your scene and set **Marker Prefab** to the prefab you created.<br/>
   ![Prefab specified](../unity/images/ARMarkerManager-Prefab-Specified.png)
 
-For more detailed instructions and information, go to [QR codes in Unity](/mixed-reality/develop/unity/qr-code-tracking-unity.md).
+For more detailed instructions and information, go to [QR codes in Unity](~/develop/unity/qr-code-tracking-unity.md).
 
 For an example of how to use QR codes in your Unity app, see the [QR code sample scenario](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/SampleScenarios/Scenarios/MarkerSample) on GitHub.
 
