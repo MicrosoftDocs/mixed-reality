@@ -1,8 +1,8 @@
 ---
 title: Periodic Table of the Elements 2.0 for HoloLens 2
 description: Periodic Table of the Elements is a sample app updated for HoloLens 2's fully articulated hand-tracking and eye-tracking input.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 07/27/2021
 ms.topic: article
 keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, OpenXR, Open XR, Unity

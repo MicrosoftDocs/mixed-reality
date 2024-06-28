@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) Basics 101 - Complete project with device
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the basics of Windows Mixed Reality.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10

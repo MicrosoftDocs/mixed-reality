@@ -1,8 +1,8 @@
 ---
 title: Deploying to Android and iOS (AR Foundation) [Experimental]
 description: Documentation to configure MRTK for Android and iOS (ARFoundation) in unity
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
 ---

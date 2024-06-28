@@ -1,8 +1,8 @@
 ---
 title: Getting started with MRTK2 and XR SDK
 description: Landing page for MRTK with XR SDK
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, XR SDK
 ---

@@ -1,8 +1,8 @@
 ---
 title: Shader
 description: Learn how the Mixed Reality Toolkit Standard shader provides various types of visual effects that can be used with holograms in your mixed reality apps.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux, shader, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, visual effects

@@ -1,8 +1,8 @@
 ---
 title: Welcome to the Mixed Reality Feature Tool
 description: Learn the basics of the MR Feature Tool for HoloLens and VR development.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 09/16/2021
 ms.topic: article
 ms.localizationpriority: high

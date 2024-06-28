@@ -1,8 +1,8 @@
 ---
 title: Mixed reality UX elements
 description: Learn how to design your apps for mixed reality devices with foundational elements, common controls, and behaviors.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX design, Mixed Reality UX, UX, app patterns, controls, style, HoloLens, interaction, spatial interaction, spatial UI, UX elements, behaviors, building blocks, typography, color, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality OpenXR plugin release notes
 description: Find the latest Mixed Reality OpenXR plugin releases and related notes on GitHub.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 04/07/2022
 ms.topic: article
 ms.localizationpriority: high

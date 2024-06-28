@@ -1,8 +1,8 @@
 ---
 title: Standard assets overview
 description: Mixed Reality Toolkit 3 for developers - Standard assets overview.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 6/7/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, assets

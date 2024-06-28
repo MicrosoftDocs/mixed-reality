@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) Sharing 240 - Multiple HoloLens devices
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of sharing holograms.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, sharing, networking, academy, tutorial, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10

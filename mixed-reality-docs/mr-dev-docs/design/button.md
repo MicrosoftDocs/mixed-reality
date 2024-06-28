@@ -1,8 +1,8 @@
 ---
 title: Button
 description: Learn how to trigger an immediate action with buttons, which is one of mixed reality's foundational components.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, button

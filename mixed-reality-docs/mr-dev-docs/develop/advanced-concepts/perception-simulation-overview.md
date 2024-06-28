@@ -1,8 +1,8 @@
 ---
 title: Perception simulation
 description: A guide to using the Perception Simulation library to automate simulated input for immersive applications
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 11/1/2022
 ms.topic: article
 keywords: HoloLens, simulation, testing

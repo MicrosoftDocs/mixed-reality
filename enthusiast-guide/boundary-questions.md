@@ -1,8 +1,8 @@
 ---
 title: Boundary FAQs
 description: Windows Mixed Reality frequently asked questions about boundaries that go beyond standard consumer support issues.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 05/20/2022
 ms.topic: faq
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Boundary

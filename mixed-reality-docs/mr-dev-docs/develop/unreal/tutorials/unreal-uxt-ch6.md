@@ -1,8 +1,8 @@
 ---
 title: 6. Packaging & deploying to device or emulator
 description: Part 6 of 6 in a tutorial series to build a chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high

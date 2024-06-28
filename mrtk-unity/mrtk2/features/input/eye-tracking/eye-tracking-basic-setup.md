@@ -1,8 +1,8 @@
 ---
 title: Eye Tracking Basic Setup
 description: How to set up Eye Tracking in MRTK
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 12/19/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Eye Tracking
 ---

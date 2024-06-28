@@ -1,8 +1,8 @@
 ---
 title: Surfaces
 description: Learn how to create tactile sensations with visual, audio, and articulated hand-tracking in the Surfaces sample app.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset

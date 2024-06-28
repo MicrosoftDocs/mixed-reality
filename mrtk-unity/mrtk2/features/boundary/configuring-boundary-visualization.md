@@ -1,8 +1,8 @@
 ---
 title: Configuring boundary visualization
 description: Details to configure the Boundary system in MRTK
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Boundary System,
 ---

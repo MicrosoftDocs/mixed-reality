@@ -1,8 +1,8 @@
 ---
 title: Diagnostics system overview
 description: Documentation to enable and disable diagnostics in MRTK
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

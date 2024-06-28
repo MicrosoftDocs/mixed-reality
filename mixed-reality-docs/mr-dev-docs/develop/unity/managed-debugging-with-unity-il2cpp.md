@@ -1,8 +1,8 @@
 ---
 title: Managed debugging with Unity
 description: This article covers how to run a managed debugger on your Unity IL2CPP UWP project.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 10/22/2019
 ms.topic: article
 keywords: unity, visual studio, debugging, il2cpp, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP

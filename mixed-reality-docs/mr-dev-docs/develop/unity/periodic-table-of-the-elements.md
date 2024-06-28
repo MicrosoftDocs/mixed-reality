@@ -1,8 +1,8 @@
 ---
 title: Periodic Table of the Elements
 description: Learn how to lay out an array of objects in 3D space with various surface types using an Object collection with the Periodic Table of the Elements sample app.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset

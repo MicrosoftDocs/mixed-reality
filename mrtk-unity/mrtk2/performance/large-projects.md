@@ -1,8 +1,8 @@
 ---
 title: Using MRTK2 in large projects
 description: Tips for consumers of MRTK with large projects.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

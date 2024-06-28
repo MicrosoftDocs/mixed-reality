@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) Input 211 - Gesture
 description: Follow this coding walkthrough using Unity, Visual Studio, and HoloLens to learn the details of gesture concepts.
-author: Sean-Kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gesture, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10
