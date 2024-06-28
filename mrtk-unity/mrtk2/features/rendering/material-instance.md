@@ -1,8 +1,8 @@
 ---
 title: Material instance
 description: Documentation on Material Instance and its uses in MRTK
-author: keveleigh
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MaterialInstance,
 ---

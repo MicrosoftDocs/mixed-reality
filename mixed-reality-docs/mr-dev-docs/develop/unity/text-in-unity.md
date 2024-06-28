@@ -1,8 +1,8 @@
 ---
 title: Text in Unity
 description: To display text in Unity, there are two types of text components you can use—UI Text and 3D Text Mesh.
-author: cre8ivepark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, Controls, font, typography, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit

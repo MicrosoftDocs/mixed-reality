@@ -1,8 +1,8 @@
 ---
 title: Near menu
 description: Learn how to use near menus, which are a collection of buttons on a panel that follow you with tag-along behavior in a mixed reality environment.
-author: cre8ivepark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux, menu, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

@@ -1,8 +1,8 @@
 ---
 title: Discovering and acquiring features
 description: Discover and download Mixed Reality features.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high

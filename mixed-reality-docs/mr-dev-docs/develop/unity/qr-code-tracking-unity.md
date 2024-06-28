@@ -300,8 +300,6 @@ void OnMarkersChanged(ARMarkersChangedEventArgs args)
 
 The sample provided with the OpenXR Plugin package contains a QR code-enabled scene that provides an example of how [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) and [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) can be used.
 
-![AR Marker Sample Scenario](images/ARMarker-Sample-Scene.jpg)
-
 The scene is located in **Assets > ARMarker** as shown:
 ![ARMarker Scene Asset Location](images/ARMarker-Sample-Scene-Location.png)
 

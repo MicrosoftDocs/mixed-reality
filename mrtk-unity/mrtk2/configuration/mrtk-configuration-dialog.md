@@ -1,8 +1,8 @@
 ---
 title: MRTK2 configuration dialog
 description: Configure MRTK in Unity Project
-author: polar-kev
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Unity
 ---

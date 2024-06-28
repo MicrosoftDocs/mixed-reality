@@ -1,8 +1,8 @@
 ---
 title: Buttons
 description: Overview on Buttons in MRTK
-author: cre8ivepark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK Buttons
 ---

@@ -1,8 +1,8 @@
 ---
 title: MRTK3 tools overview
 description: MRTK3 tools overview
-author: davidkline-ms
-ms.author: davidkl
+author: lolambean
+ms.author: lolab
 ms.date: 8/12/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, tools, utilities

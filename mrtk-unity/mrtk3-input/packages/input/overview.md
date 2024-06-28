@@ -1,8 +1,8 @@
 ---
 title: MRTK3 input overview
 description: MRTK3 input overview
-author: keveleigh
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 6/8/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, input

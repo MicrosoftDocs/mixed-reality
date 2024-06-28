@@ -1,8 +1,8 @@
 ---
 title: Displaying progress
 description: Learn how progress controls provides feedback to the user that a long-running operation is underway in your mixed reality apps.
-author: cre8ivepark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, controls, ui, ux, progress indicator, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

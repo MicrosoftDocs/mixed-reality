@@ -1,8 +1,8 @@
 ---
 title: Welcome to the Mixed Reality Feature Tool
 description: Learn the basics of the MR Feature Tool for HoloLens and VR development.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 09/16/2021
 ms.topic: article
 ms.localizationpriority: high
@@ -26,11 +26,11 @@ Before you can run the Mixed Reality Feature Tool, you'll need:
 
 > [!NOTE]
 > If the PC is on a network managed by an organization, make sure access to the following URLs is allowed:
-> * https://aka.ms/*
-> * https://learn.microsoft.com/*
-> * https://pkgs.dev.azure.com/*
-> * https://feeds.dev.azure.com/*
-> * https://mixedrealitycloud.pkgs.visualstudio.com/* (for special early access users only)
+> `https://aka.ms/`
+> `https://learn.microsoft.com/`
+> `https://pkgs.dev.azure.com/`
+> `https://feeds.dev.azure.com/`
+> `https://mixedrealitycloud.pkgs.visualstudio.com/` (for special early access users only)
 
 ## Download
 

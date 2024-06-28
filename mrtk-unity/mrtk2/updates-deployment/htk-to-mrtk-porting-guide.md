@@ -1,8 +1,8 @@
 ---
 title: Upgrading from HoloToolkit
 description: Migration from HoloLens Toolkit (HTK) to Mixed Reality Toolkit (MRTK).
-author: keveleigh
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, HTK,
 ---

@@ -1,8 +1,8 @@
 ---
 title: Get help for Windows Mixed Reality
 description: Get setup instructions, tips and tricks, and general help and information for Windows Mixed Reality headsets.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 06/22/2022
 ms.topic: end-user-help
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,

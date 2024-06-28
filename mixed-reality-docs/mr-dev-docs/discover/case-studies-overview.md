@@ -1,8 +1,8 @@
 ---
 title: Case study overview
 description: Access stories, learnings, and experiences the Mixed Reality team has found and documented along the way.
-author: grbury 
-ms.author: vinnietieto
+author: lolambean
+ms.author: lolab
 ms.date: 12/30/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios, case studies, mixed reality headset, windows mixed reality headset, virtual reality headset

@@ -1,8 +1,8 @@
 ---
 title: Spatial mesh visualization
 description: Learn about design guidelines and physical environment understanding with spatial mesh visualization in MRTK.
-author: cre8ivepark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Mixed Reality, HoloLens, UI Controls, interaction, ui, ux, UX Design, spatial UI, spatial interaction, 3D UI, 3D UX, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

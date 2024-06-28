@@ -1,8 +1,8 @@
 ---
 title: Recommended adapters for Windows Mixed Reality PCs
 description: List of recommended adapters for use with Windows Mixed Reality headsets if your PC doesn't have full-sized USB and HDMI ports.
-author: qianw211    
-ms.author: qianwen   
+author: lolambean
+ms.author: lolab   
 ms.date: 11/22/2022
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, adapter, dongle, HDMI, USB, DisplayPort

@@ -1,8 +1,8 @@
 ---
 title: Camera system overview
 description: Landing page for camera system in MRTK
-author: polar-kev
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Camera,
 ---
