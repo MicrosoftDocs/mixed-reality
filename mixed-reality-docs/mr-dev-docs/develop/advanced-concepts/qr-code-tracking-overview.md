@@ -32,6 +32,8 @@ In this article, you'll learn about:
   * [What capabilities are needed?](#what-capabilities-are-needed)
   * [How do I make the QR Code Tracking Feature work on HoloLens 2 devices?](#how-do-i-make-the-qr-code-tracking-feature-work-on-hololens-2-devices)
   * [Where do I find the API plugin files?](#where-do-i-find-the-api-plugin-files)
+  * [How do I prepare a Unity app to use ARMarkerManager to detect QR codes?](#how-do-i-prepare-a-unity-app-to-use-armarkermanager-to-detect-qr-codes)
+  * [How do I prepare a non-Unity app to use OpenXR to detect QR codes?](#how-do-i-prepare-a-non-unity-app-to-use-openxr-to-detect-qr-codes)
   * [How do I prepare a UWP to use Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-a-uwp-to-use-microsoftmixedrealityqrqrcodewatcher)
   * [How do I prepare Unity with the Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-unity-with-the-microsoftmixedrealityqrqrcodewatcher)
   * [How can I make QR codes?](#how-can-i-make-qr-codes)
@@ -49,7 +51,7 @@ In this article, you'll learn about:
 | Product          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|:------------------:|
 | OpenXR         | | :heavy_check_mark: (with OpenXR Runtime version 113 and OpenXR [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension) | |
-| Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [ARMarkerManager](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager)) | |
+| Mixed Reality Unity Plugin   | | :heavy_check_mark: (with OpenXR Runtime version 113 and Mixed Reality Unity Plugin [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager)) | |
 | Legacy QR SDK  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 > [!NOTE]
@@ -129,7 +131,7 @@ To enable QR code tracking in your HoloLens application, add the webcam capabili
 
 Additionally, users may be prompted by the permissions dialog to grant your app webcam permissions. This only happens once over the lifetime of an app. In cases such as the app explicitly requesting webcam access, the dialog will not reappear.
 
-For Unity apps with the WebCam capability, enabling [ARMarkerManager](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) in a scene can trigger the webcam permission dialog to appear.
+For Unity apps with the WebCam capability, enabling [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) in a scene can trigger the webcam permission dialog to appear.
 
 For native OpenXR C++ apps, initial calls to [xrComputeNewSceneMSFT](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#xrComputeNewSceneMSFT) with `XrNewSceneComputeInfoMSFT::requestedFeatures` containing `XR_SCENE_COMPUTE_FEATURE_MARKER_MSFT` can trigger the permissions dialog.
 
@@ -166,7 +168,7 @@ QR tracking is automatic on HoloLens 2, and you'll need the "webcam" capability 
 
 Applications should use the HoloLen’s OpenXR Runtime for detecting QR Codes. OpenXR for Windows Mixed Reality ([113.2403.5001](https://github.com/microsoft/OpenXR-MixedReality/releases/tag/113.2403.5001) or greater) provides QR code support on HoloLens devices.
 
-For Unity apps, QR code support is provided through the [`ARMarkerManager`](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) component provided with [Mixed Reality OpenXR Plugin](https://www.microsoft.com/download/details.aspx?id=102778).
+For Unity apps, QR code support is provided through the [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) component provided with [Mixed Reality OpenXR Plugin](https://www.microsoft.com/download/details.aspx?id=102778).
 
 For QR code support in non-Unity apps, use the OpenXR [XR_MSFT_scene_marker](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_scene_marker) extension.
 
@@ -179,27 +181,33 @@ All the required files and documentation can be found here on NuGet here:
 
 ### How do I prepare a Unity app to use ARMarkerManager to detect QR codes?
 
-In Unity apps, the [ARMarkerManager](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) component is used to handle how QR code detection within a physical environment is represented in a scene. ARMarkerManager provides:
+In Unity apps, the [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) component is used to handle how QR code detection within a physical environment is represented in a scene. [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) provides:
 
 * Events for notifying subscribers when a detected QR code has been added to the manager, updated, or removed.
 
-* A collection of [ARMarker](https://learn.microsoft.com/dotnet/api/microsoft.mixedreality.openxr.armarker) trackables for QR codes under detection.
+* A collection of [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) trackables for QR codes under detection.
 
 * Methods returning data for QR codes as specified by trackable ID.
 
-To use ARMarkerManager in your app, you first need to run the Mixed Reality Feature Tool ([download](https://www.microsoft.com/en-my/download/details.aspx?id=102778)) and install the Mixed Reality OpenXR Plugin as indicated below:
+To use [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) in your app, you need to import the [Mixed Reality OpenXR Plugin](https://assetstore.unity.com/packages/add-ons/mixed-reality-openxr-plugin-275111#releases) package.
 
-<img src="images\Mixed_Reality_Feature_Tool_Mixed_Reality_OpenXR_Plugin_Feature.png" alt="Mixed Reality Feature Tool OpenXR Plugin Feature Selected">
+To import the package:
 
-See [Welcome to the Mixed Reality Feature Tool](https://learn.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to learn about the tool.
+1. [Download](../unity/mixed-reality-openxr-plugin.md#download-and-install-the-mixed-reality-feature-tool) and run the Mixed Reality Feature Tool.
+1. [Install](../unity/mixed-reality-openxr-plugin.md#import-the-mixed-reality-openxr-plugin) the OpenXR plugin.
+
+See [Welcome to the Mixed Reality Feature Tool](../unity/welcome-to-mr-feature-tool.md) for detailed instructions on how to use the tool.
 
 The general procedure next is to:
 
-1. In your Unity project, create a prefab and attach the ARMarker and ARMarkerScale components to it as shown below:
-  <img src="images\ARMarkerManager_Prefab_Configuration.png" alt="Prefab with ARMarker and ARMarkerScale attached">
+1. In your Unity project, enable **WebCam** capabilities.
+1. Create a prefab and attach the [`ARMarker`](/dotnet/api/microsoft.mixedreality.openxr.armarker) component as shown:<br/>
+  ![Prefab configured](../unity/images/ARMarker-Manager-Prefab-Configuration.png)
 1. Open a scene you want QR codes to be detected when running.
-1. Attach ARMarkerManager to a GameObject in your scene and set **Marker Prefab** to the prefab you created.
-  <img src="images\ARMarkerManager_Prefab_Specified.png" alt="ARMarkerManager attached to GameObject and Prefab Selected">
+1. Attach [`ARMarkerManager`](/dotnet/api/microsoft.mixedreality.openxr.armarkermanager) to a GameObject in your scene and set **Marker Prefab** to the prefab you created.<br/>
+  ![Prefab specified](../unity/images/ARMarkerManager-Prefab-Specified.png)
+
+For more detailed instructions and information, go to [QR codes in Unity](../unity/qr-code-tracking-unity.md).
 
 For an example of how to use QR codes in your Unity app, see the [QR code sample scenario](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/SampleScenarios/Scenarios/MarkerSample) on GitHub.
 
