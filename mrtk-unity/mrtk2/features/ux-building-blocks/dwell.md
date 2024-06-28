@@ -1,8 +1,8 @@
 ---
 title: Dwell
 description: Dwell interaction
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 05/20/2021
 keywords: Dwell, Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 monikerRange: '>= mrtkunity-2021-05' 

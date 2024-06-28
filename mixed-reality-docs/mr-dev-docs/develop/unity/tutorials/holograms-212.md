@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) Input 212 - Voice
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of voice concepts.
-author: keveleigh
-ms.author: kurtie
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, voice, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10

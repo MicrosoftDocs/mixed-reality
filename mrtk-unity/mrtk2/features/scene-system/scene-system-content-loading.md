@@ -1,8 +1,8 @@
 ---
 title: Scene system content loading
 description: Documentation loading Scene system with MRTK
-author: polar-kev
-ms.author: kurtie
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

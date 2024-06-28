@@ -1,8 +1,8 @@
 ---
 title: Slate
 description: Lean about slates, a thin window style control for displaying 2D content using the Mixed Reality Toolkit.
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, Slate, MRTK, Mixed Reality Toolkit

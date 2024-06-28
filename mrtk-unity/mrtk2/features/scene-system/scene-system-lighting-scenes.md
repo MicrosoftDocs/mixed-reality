@@ -1,8 +1,8 @@
 ---
 title: Scene System Lighting Scenes
 description: Documentation on Lighting in the scene.
-author: polar-kev
-ms.author: alexturn
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

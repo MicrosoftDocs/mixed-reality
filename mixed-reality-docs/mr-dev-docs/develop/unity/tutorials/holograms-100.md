@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) Basics 100 - Getting started with Unity
 description: Learn how to create your first basic mixed reality "hello world" application for HoloLens and Windows Mixed Reality devices.
-author: keveleigh
-ms.author: kurtie
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get started, hologram, academy, tutorial, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset

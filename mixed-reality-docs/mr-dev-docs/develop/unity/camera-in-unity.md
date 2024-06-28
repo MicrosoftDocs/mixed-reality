@@ -1,8 +1,8 @@
 ---
 title: Camera setup in Unity
 description: Learn how to set up and use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering.
-author: keveleigh
-ms.author: kurtie
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 03/25/2021
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holographic rendering, holographic, immersive, focus point, depth buffer, orientation-only, positional, opaque, transparent, clip, mixed reality headset, windows mixed reality headset, virtual reality headset

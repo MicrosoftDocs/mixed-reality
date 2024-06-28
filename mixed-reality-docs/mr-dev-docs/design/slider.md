@@ -1,8 +1,8 @@
 ---
 title: Slider
 description: Learn how to use the Slider UI component to set a value by moving a knob or lever on a track using the Mixed Reality Toolkit.
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, slider, MRTK, Mixed Reality Toolkit

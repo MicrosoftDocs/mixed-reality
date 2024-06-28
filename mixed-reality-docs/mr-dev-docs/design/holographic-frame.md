@@ -1,8 +1,8 @@
 ---
 title: Holographic frame
 description: Learn how users see the world of mixed reality through the holographic frame and how to best design the experience.
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, holographic frame, field of view, FOV, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, interactions, navigation, menu

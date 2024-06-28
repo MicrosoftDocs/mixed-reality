@@ -1,8 +1,8 @@
 ---
 title: Accessibility 
 description: Mixed Reality Toolkit 3 for developers - Accessibility overview.
-author: davidkline-ms
-ms.author: davidkl
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 6/6/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, accessibility

@@ -1,8 +1,8 @@
 ---
 title: Build window
 description: Documentation on using the build window in MRTK for Unity.
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 04/06/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, build, build window, tools
 ---

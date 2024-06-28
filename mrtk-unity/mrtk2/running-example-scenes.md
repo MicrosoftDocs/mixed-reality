@@ -1,8 +1,8 @@
 ---
 title: Example scenes
 description: Learn how to acquire and use MRTK's example scenes.
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 06/07/2021
 ms.topic: article
 keywords: mixed reality toolkit, MRTK, examples, HoloLens, HoloLens 2, shaders, tooltips, hand interaction, clipping, bounding boxes, buttons, hand menus, slate, slider

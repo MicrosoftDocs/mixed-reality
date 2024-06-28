@@ -1,8 +1,8 @@
 ---
 title: Using the Windows Mixed Reality simulator
 description: The Windows Mixed Reality simulator allows you to test mixed reality apps on your PC without a Windows Mixed Reality immersive headset.
-author: pbarnettms
-ms.author: pbarnett
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 04/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Simulator, Testing

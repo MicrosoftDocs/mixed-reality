@@ -1,8 +1,8 @@
 ---
 title: Authors
 description:  List of MRTK Authors
-author: keveleigh
-ms.author: kurtie
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 12/01/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, C#, Contributors, Community
 ---
@@ -49,7 +49,6 @@ The Microsoft Mixed Reality Toolkit is a collaborative project containing contri
 - Daniel Hofmann (danielhofmann-ms)
 - David Evans (phosphoer)
 - David Johnson (djohnsomsft)
-- David Kline (davidkline-ms)
 - deibich
 - deibu
 - Derek (derekfreed)

@@ -1,8 +1,8 @@
 ---
 title: Pull requests
 description: Details related to GitHub pull requests.
-author: polar-kev
-ms.author: kurtie
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, PR,
 ---

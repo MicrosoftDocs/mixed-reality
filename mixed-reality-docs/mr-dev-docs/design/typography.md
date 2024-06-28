@@ -1,8 +1,8 @@
 ---
 title: Typography
 description: Learn how to design and implement text as an important element for delivering information in your mixed reality app experience.
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, style, font, typography, ui, ux, text, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens

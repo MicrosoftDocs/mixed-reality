@@ -1,8 +1,8 @@
 ---
 title: Dialog
 description: Learn about dialog overlays in MRTK and how to use them in Mixed Reality applications.
-author: cre8ivepark
-ms.author: dongpark
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Mixed Reality, HoloLens, UI Controls, interaction, ui, ux, UX Design, spatial UI, spatial interaction, 3D UI, 3D UX, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

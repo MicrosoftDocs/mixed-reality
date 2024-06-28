@@ -1,8 +1,8 @@
 ---
 title: Extended Assets Overview
 description: Overview of MRTK3 Extended Assets
-author: davidkline-ms
-ms.author: davidkl
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 6/29/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, Extended Assets

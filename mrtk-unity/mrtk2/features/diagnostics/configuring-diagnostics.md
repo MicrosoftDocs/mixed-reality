@@ -1,8 +1,8 @@
 ---
 title: Configuring the diagnostics system 
 description: Documentation to configure diagnostics in MRTK
-author: davidkline-ms
-ms.author: davidkl
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

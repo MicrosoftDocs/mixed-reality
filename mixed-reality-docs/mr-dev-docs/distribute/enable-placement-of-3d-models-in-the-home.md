@@ -1,8 +1,8 @@
 ---
 title: Enable placement of 3D models in the home
 description: Learn how to place 3D models from your website or application in the Windows Mixed Reality home.
-author: thmignon
-ms.author: v-chmccl
+author: Sean-Kerawala
+ms.author: sekerawa
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, model, place in home, place, world, modeling, mixed reality home, web, app, mixed reality headset, windows mixed reality headset, virtual reality headset
