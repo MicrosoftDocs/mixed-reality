@@ -1,8 +1,8 @@
 ---
 title: Configuring mesh observers via code
 description: describes the key mechanisms and APIs to programmatically configure the Spatial Awareness system
-author: davidkline-ms
-ms.author: davidkl
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

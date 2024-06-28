@@ -1,8 +1,8 @@
 ---
 title: Spatial mapping in Unity
 description: Learn how to use and manage rendering and colliding with the real-world geometry around you in Unity mixed reality apps.
-author: davidkline-ms
-ms.author: davidkl
+author: lolambean
+ms.author: lolab
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit

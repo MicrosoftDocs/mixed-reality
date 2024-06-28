@@ -1,8 +1,8 @@
 ---
 title: Surface magnetism
 description: Using the surface magnetism technique, you can place a holographic object on a real-world physical surface. 
-author: cre8ivepark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, surface magnetism

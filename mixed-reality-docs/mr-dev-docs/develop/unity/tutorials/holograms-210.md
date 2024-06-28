@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) Input 210 - Gaze
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of gaze concepts.
-author: keveleigh
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gaze, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10

@@ -1,8 +1,8 @@
 ---
 title: Hover light
 description: Documentation on HoverLight with Examples in MRTK
-author: keveleigh
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Hover Light,
 ---

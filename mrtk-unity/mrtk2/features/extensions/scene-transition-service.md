@@ -1,8 +1,8 @@
 ---
 title: Scene transition service
 description: documentation for Scene Transition in MRTK
-author: davidkline-ms
-ms.author: davidkl
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, SceneTransition,
 ---

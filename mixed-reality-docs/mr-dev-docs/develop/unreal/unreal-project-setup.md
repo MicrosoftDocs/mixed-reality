@@ -1,8 +1,8 @@
 ---
 title: Setting up your Unreal project
 description: Learn how to set up your project wit the latest version of Unreal Engine and the Mixed Reality Feature Tool.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 4/28/2021
 ms.topic: tutorial
 ms.localizationpriority: high

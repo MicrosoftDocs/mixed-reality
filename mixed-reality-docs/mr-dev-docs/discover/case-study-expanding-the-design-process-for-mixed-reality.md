@@ -1,8 +1,8 @@
 ---
 title: Design process for mixed reality
 description: Learn how to add techniques to your design process that help your team think spatially while easily envisioning mixed reality experiences.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, process, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, bodystorming, storyboards, feedback

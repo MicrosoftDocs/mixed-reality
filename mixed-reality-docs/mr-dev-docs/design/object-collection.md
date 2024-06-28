@@ -1,8 +1,8 @@
 ---
 title: Object collection
 description: Object collection is a layout control, which helps you lay out an array of objects in a predefined three-dimensional shape.
-author: cre8ivepark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, controls, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, object collection, 2D, 3D, MRTK, Mixed Reality Toolkit

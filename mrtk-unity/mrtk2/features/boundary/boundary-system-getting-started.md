@@ -1,8 +1,8 @@
 ---
 title: Boundary system overview
 description: Landing page for boundary system in MRTK
-author: davidkline-ms
-ms.author: davidkl
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Boundary System,
 ---

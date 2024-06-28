@@ -1,8 +1,8 @@
 ---
 title: Before you buy - FAQs
 description: Answers to frequently asked questions potential buyers may have before purchasing a Windows Mixed reality headset and compatible PC.
-author: qianw211    
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, pre-sale, research, purchase, before you buy
@@ -221,7 +221,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Can I play my Xbox One games in Windows Mixed Reality?
 
-**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10 and Windows 11. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our instructions here: <http://support.xbox.com/games/game-setup/how-to-use-game-streaming>
+**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10 and Windows 11. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our [instructions](https://support.xbox.com/games/game-setup/how-to-use-game-streaming).
 
 ## SteamVR
 

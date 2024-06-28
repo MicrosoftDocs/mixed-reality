@@ -1,8 +1,8 @@
 ---
 title: Migration window
 description: Documentation on how to migrate to an update in MRTK
-author: keveleigh
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

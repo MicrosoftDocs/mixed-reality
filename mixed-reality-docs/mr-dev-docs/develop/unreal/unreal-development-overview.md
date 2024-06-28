@@ -1,8 +1,8 @@
 ---
 title: Unreal Development Overview
 description: Get started with mixed reality development for HoloLens and VR with our guide to developing mixed reality applications using Unreal Engine 4.0 or Unreal Engine 5.0.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high

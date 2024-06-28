@@ -1,8 +1,8 @@
 ---
 title: Approve project changes
 description: Learn how to review and approve project changes by using the Mixed Reality Feature Tool for HoloLens and VR development.
-author: sean-kerawala
-ms.author: sekerawa
+author: lolambean
+ms.author: lolab
 ms.date: 05/20/2022
 ms.topic: how-to
 ms.localizationpriority: high

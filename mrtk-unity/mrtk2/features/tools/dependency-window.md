@@ -1,8 +1,8 @@
 ---
 title: Dependency window
 description: Documentation on usage of dependency window in MRTK
-author: keveleigh
-ms.author: kurtie
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
