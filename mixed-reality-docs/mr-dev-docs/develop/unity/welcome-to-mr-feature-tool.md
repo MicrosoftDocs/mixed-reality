@@ -26,11 +26,11 @@ Before you can run the Mixed Reality Feature Tool, you'll need:
 
 > [!NOTE]
 > If the PC is on a network managed by an organization, make sure access to the following URLs is allowed:
-> * https://aka.ms/*
-> * https://learn.microsoft.com/*
-> * https://pkgs.dev.azure.com/*
-> * https://feeds.dev.azure.com/*
-> * https://mixedrealitycloud.pkgs.visualstudio.com/* (for special early access users only)
+> `https://aka.ms/`
+> `https://learn.microsoft.com/`
+> `https://pkgs.dev.azure.com/`
+> `https://feeds.dev.azure.com/`
+> `https://mixedrealitycloud.pkgs.visualstudio.com/` (for special early access users only)
 
 ## Download
 

@@ -221,7 +221,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Can I play my Xbox One games in Windows Mixed Reality?
 
-**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10 and Windows 11. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our instructions here: <http://support.xbox.com/games/game-setup/how-to-use-game-streaming>
+**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10 and Windows 11. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our [instructions](https://support.xbox.com/games/game-setup/how-to-use-game-streaming).
 
 ## SteamVR
 
