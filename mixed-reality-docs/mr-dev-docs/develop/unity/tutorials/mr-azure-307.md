@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) and Azure 307 - Machine learning
 description: Complete this course to learn how to implement Azure Machine Learning Studio (classic) within a mixed reality application.
-author: drneil
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, machine learning, ml, machine learning studio, hololens, immersive, vr, Windows 10, Visual Studio

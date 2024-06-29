@@ -1,8 +1,8 @@
 ---
 title: Babylon.js tutorial to interact with 3D objects
 description: Learn how to use Babylon.js and interact with 3D objects.
-author: bgener
-ms.author: ayyonet
+author: lolambean
+ms.author: lolab
 ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web

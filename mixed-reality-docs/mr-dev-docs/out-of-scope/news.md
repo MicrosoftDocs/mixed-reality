@@ -1,8 +1,8 @@
 ---
 title: Mixed reality news
 description: We are excited to share mixed reality news with you! We’re looking forward to hearing your feedback and would like to invite you to join the conversation.
-author: grbury
-ms.author: grbury
+author: lolambean
+ms.author: lolab
 ms.date: 10/21/2019
 ms.topic: article
 keywords: Mixed Reality, develop, development, design, HoloLens, Azure services, news, HoloLens 2

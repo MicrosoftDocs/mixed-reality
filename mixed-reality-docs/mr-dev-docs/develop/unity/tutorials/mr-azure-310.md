@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) and Azure 310 - Object detection
 description: Complete this course to learn how to train and use a machine learning model to recognize similar objects and their position in the real world.
-author: drneil
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, custom vision, object detection, mixed reality, academy, unity, tutorial, api, hololens, Windows 10, Visual Studio

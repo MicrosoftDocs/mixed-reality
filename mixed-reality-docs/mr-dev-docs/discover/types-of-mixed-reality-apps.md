@@ -1,8 +1,8 @@
 ---
 title: Types of mixed reality apps
 description: Learn about the experiences supported by the Mixed Reality platform, from immersive environments to light information layering over a user’s environment.
-author: rwinj
-ms.author: willyang
+author: lolambean
+ms.author: lolab
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, app patterns, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens

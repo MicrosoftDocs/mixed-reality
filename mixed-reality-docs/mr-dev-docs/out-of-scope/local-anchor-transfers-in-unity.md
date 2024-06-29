@@ -1,8 +1,8 @@
 ---
 title: Local anchor transfers in Unity
 description: Learn how to transfer anchors between multiple HoloLens devices in a Unity mixed reality application.
-author: fieldsjacksong
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch, SpatialPerception, transfer, local anchor transfer, anchor export, anchor import

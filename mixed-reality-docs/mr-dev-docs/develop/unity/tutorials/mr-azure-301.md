@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) and Azure 301 - Language translation
 description: Complete this course to learn how to implement the Azure Translator Text API within a mixed reality application.
-author: drneil
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr, language translation, Windows 10, Visual Studio

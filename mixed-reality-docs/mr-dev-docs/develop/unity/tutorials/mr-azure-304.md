@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) and Azure 304 - Face recognition
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
-author: drneil
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition, hololens, immersive, vr, Windows 10, Visual Studio

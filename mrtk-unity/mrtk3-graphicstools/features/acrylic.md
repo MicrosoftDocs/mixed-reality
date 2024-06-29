@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality Graphics Tools Acrylic Layer System
 description: Learn about the Mixed Reality Graphics Tools Acrylic Layer System.
-author: chinezenwosu-ms
-ms.author: chinezenwosu
+author: lolambean
+ms.author: lolab
 ms.date: 06/01/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Acrylic Layer System
