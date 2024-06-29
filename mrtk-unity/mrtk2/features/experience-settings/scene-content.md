@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality scene content
 description: Documentation on the Mixed Reality Scene Content Component
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 04/13/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 monikerRange: '>= mrtkunity-2021-05'

@@ -1,8 +1,8 @@
 ---
 title: Unity development for VR
 description: Getting started building mixed reality apps in Unity for VR and Windows Mixed Reality immersive headsets.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 1/10/2022
 ms.topic: article
 ms.localizationpriority: high

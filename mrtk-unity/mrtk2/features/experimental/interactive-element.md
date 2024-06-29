@@ -1,8 +1,8 @@
 ---
 title: Interactive Element
 description: Documentation of InteractiveElement MRTK
-author: CDiaz-MS
-ms.author: cadia
+author: lolambean
+ms.author: lolab
 ms.date: 02/22/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Interactive Element, Interactable
 ---

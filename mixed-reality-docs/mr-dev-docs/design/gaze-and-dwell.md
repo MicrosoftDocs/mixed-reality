@@ -1,8 +1,8 @@
 ---
 title: Gaze and dwell
 description: Get a general overview of the eye and head gaze-and-dwell input model for mixed reality applications.
-author:  sostel
-ms.author: sostel
+author: lolambean
+ms.author: lolab
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Mixed Reality, gaze, dwell, interaction, design, eye tracking, head tracking, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

@@ -1,8 +1,8 @@
 ---
 title: Publishing to the Microsoft Store
 description: Learn how to package, certify, and publish your Unreal Mixed Reality applications to the Microsoft Store.
-author: hferrone
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high

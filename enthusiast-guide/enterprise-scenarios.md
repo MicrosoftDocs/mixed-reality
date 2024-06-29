@@ -1,8 +1,8 @@
 ---
 title: Enterprise use cases with Windows Mixed Reality
 description: Learn about Windows Mixed Reality for Enterprise - hardware, backpack PCs, tracking, configuration, and support.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 3/16/2022
 ms.topic: article
 keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiuser, cloud services, azure

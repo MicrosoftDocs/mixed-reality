@@ -1,8 +1,8 @@
 ---
 title: Designing content for holographic display
 description: Learn about design guidelines and best practices for holographic display on HoloLens devices.
-author: yoonpark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI design, holographic display, content design, dark theme, light theme, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, design, pixels

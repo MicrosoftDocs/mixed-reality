@@ -1,8 +1,8 @@
 ---
 title: Iteration and debugging
 description: Iteration and debugging
-author: MaxWang-MS
-ms.author: wangmax
+author: lolambean
+ms.author: lolab
 ms.date: 6/3/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, debugging

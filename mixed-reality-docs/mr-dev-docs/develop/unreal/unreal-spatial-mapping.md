@@ -1,8 +1,8 @@
 ---
 title: Spatial Mapping in Unreal
 description: Learn how to use spatial mapping and meshes in Unreal mixed reality applications for HoloLens devices.
-author: hferrone
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high

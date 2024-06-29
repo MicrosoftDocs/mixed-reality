@@ -1,8 +1,8 @@
 ---
 title: Gaze Input in Unreal
 description: Learn how to set up and use gaze input with eye tracking and head orientation for HoloLens apps in Unreal.
-author: hferrone
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, HoloLens 2, eye tracking, gaze input, head mounted display, Unreal engine, mixed reality headset, windows mixed reality headset, virtual reality headset

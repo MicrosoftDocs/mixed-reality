@@ -1,8 +1,8 @@
 ---
 title: Input System Terminology
 description: Different input system terms in MRTK.
-author: cDiaz-MS
-ms.author: cadia
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Input,
 ---

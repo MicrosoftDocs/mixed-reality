@@ -1,8 +1,8 @@
 ---
 title: WinRT in Unreal
 description: Learn how to write and manage custom WinRT features in Unreal mixed reality apps for HoloLens devices.
-author: hferrone
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, WinRT, DLL

@@ -1,8 +1,8 @@
 ---
 title: Detecting controllers in MRTK2
 description: Documentation on using various controllers with MRTK
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 05/13/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Controllers, HP Reverb, Oculus, HTC Vive, Hands
 ---

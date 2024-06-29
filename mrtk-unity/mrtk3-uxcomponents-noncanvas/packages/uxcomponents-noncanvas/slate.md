@@ -1,8 +1,8 @@
 ---
 title: Slate
 description: Slates in MRTK3
-author: Zee2
-ms.author: finnsinclair
+author: lolambean
+ms.author: lolab
 ms.date: 6/6/2022
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Slate

@@ -1,8 +1,8 @@
 ---
 title: Journey into Mixed Reality development (for beginners)
 description: Get started with your Mixed Reality development journey
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 1/27/2022
 ms.topic: article
 keywords: event, calendar, academy, schedule, build, microsoft, Journey, Mixed Reality development, beginners

@@ -1,8 +1,8 @@
 ---
 title: Toggle Collection
 description: Description of toggle collections in MRTK3
-author: Zee2
-ms.author: finnsinclair
+author: lolambean
+ms.author: lolab
 ms.date: 9/19/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Button, PressableButton, Toggle, ToggleCollection, radio button, toggle
 ---

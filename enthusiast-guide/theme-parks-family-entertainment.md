@@ -1,8 +1,8 @@
 ---
 title: Theme Parks and Family Entertainment Centers (LBE)
 description: Location-Based Entertainment - Theme Parks and Family Entertainment Centers
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 3/15/2022
 ms.topic: article
 keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiuser, cloud services, azure, prototyping, manufacturing

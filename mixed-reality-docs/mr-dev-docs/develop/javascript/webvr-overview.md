@@ -1,8 +1,8 @@
 ---
 title: WebVR Overview
 description: Learn the basics of using and developing for WebVR applications running on Windows Mixed Reality immersive headsets.
-author: yonet
-ms.author: ayyonet
+author: lolambean
+ms.author: lolab
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW

@@ -1,8 +1,8 @@
 ---
 title: Choosing your engine
 description: Get introduced to the engine choices available for Mixed Reality development for HoloLens and VR. 
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 11/10/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity

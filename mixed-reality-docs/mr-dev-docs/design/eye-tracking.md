@@ -1,8 +1,8 @@
 ---
 title: Eye tracking overview
 description: Learn about eye tracking for HoloLens 2 and the new levels of human understanding if affords in holographic experiences.
-author: sostel
-ms.author: vinnietieto
+author: lolambean
+ms.author: lolab
 ms.date: 12/22/2021
 ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions

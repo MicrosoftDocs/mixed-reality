@@ -1,8 +1,8 @@
 ---
 title: App quality criteria
 description: This document describes the top factors impacting the quality of mixed reality apps.
-author: cjdgit
-ms.author: crderr
+author: lolambean
+ms.author: lolab
 ms.date: 03/21/2018
 ms.topic: article
 keywords: app quality criteria, mixed reality, mixed reality app, mixed reality headset, windows mixed reality headset, virtual reality headset

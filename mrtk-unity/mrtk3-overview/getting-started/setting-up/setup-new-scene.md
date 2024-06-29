@@ -1,8 +1,8 @@
 ---
 title: Creating a new scene with MRTK3
 description: Creating a new scene with MRTK3
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 1/13/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup, setup, Mixed Reality Toolkit, MRTK, Quest, Oculus, Meta
