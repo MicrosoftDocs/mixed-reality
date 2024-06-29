@@ -1,8 +1,8 @@
 ---
 title: Eye-gaze and commit
 description: Learn about the eye-gaze and commit input model.
-author: sostel
-ms.author: sostel
+author: lolambean
+ms.author: lolab
 ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high

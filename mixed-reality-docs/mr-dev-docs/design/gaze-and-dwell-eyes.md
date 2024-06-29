@@ -1,8 +1,8 @@
 ---
 title: Eye-gaze and dwell
 description: Get started with an overview of the eye-gaze and dwell input model, including interaction models, design guidelines, and unique challenges.
-author: sostel
-ms.author: sostel
+author: lolambean
+ms.author: lolab
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high

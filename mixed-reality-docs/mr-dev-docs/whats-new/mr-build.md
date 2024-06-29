@@ -1,8 +1,8 @@
 ---
 title: Microsoft Build 2021 - Mixed Reality Sessions
 description: Join Mixed Reality sessions at Build 2021! 
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 10/11/2021
 ms.topic: article
 keywords: event, calendar, academy, schedule, build, microsoft

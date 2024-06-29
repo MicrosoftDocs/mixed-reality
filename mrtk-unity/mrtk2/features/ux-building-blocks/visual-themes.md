@@ -1,8 +1,8 @@
 ---
 title: Visual themes
 description: Overview Visual Themes flexible control of UX assets in MRTK
-author: CDiaz-MS
-ms.author: cadia
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK Themes,
 ---

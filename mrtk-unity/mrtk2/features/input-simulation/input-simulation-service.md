@@ -1,8 +1,8 @@
 ---
 title: Input simulation service
 description: Documentation on Input simulation service in MRTK
-author: CDiaz-MS
-ms.author: cadia
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

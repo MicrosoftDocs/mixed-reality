@@ -1,8 +1,8 @@
 ---
 title: Gaze and commit
 description: Learn about the gaze and commit input model, including two types of gaze (head-gaze and eye-gaze), and various types of commit.
-author: sostel
-ms.author: sostel
+author: lolambean
+ms.author: lolab
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Mixed Reality, gaze, gaze targeting, interaction, design, eye tracking, head tracking, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

@@ -1,8 +1,8 @@
 ---
 title: Measure Tool
 description: Learn about the Measure Tools.
-author: breezinstein
-ms.author: adogundi
+author: lolambean
+ms.author: lolab
 ms.date: 03/06/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Measure Tool

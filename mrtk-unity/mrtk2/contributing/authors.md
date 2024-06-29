@@ -73,7 +73,6 @@ The Microsoft Mixed Reality Toolkit is a collaborative project containing contri
 - George Johnston (gejohnst)
 - gilbdev (gilbdev)
 - Grace Lee (grayclee)
-- Graham Bury (grbury)
 - Harrison Ferrone (hferrone)
 - Harrison Yu (harrisonyu)
 - hybridherbst
@@ -157,7 +156,7 @@ The Microsoft Mixed Reality Toolkit is a collaborative project containing contri
 - Shinya Tachihara (decoc)
 - Simon (Darkside) Jackson (SimonDarksideJ)
 - Simon Ferquel (simonferquel)
-- sostel
+
 - Srinjoy Majumdar (srinjoym)
 - Stefan Wasserbauer (wassx)
 - Stephen Hodgson (StephenHodgson)

@@ -1,8 +1,8 @@
 ---
 title: MRTK Figma Bridge for Unity
 description: MRTK Figma Bridge for Unity allows you to bring the layout from Figma Toolkit into Unity 
-author: dongpark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, HoloLens, MRTK, Mixed Reality Toolkit

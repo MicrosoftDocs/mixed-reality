@@ -1,8 +1,8 @@
 ---
 title: Start designing and prototyping
 description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
-author: grbury 
-ms.author: grbury
+author: lolambean
+ms.author: lolab
 ms.date: 6/7/2022
 ms.topic: article
 ms.localizationpriority: high

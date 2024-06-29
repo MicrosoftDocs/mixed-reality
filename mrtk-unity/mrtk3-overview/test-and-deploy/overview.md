@@ -1,8 +1,8 @@
 ---
 title: Test and Experience Overview
 description: Overview of how to test and experience your application on a device.
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 1/13/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, overview, setup, deployment, remoting, new project, getting started, tutorial, introduction, intro

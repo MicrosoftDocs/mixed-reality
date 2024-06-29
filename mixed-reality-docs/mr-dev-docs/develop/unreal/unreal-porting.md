@@ -1,8 +1,8 @@
 ---
 title: Upgrading projects in Unreal
 description: Keep up to date with version upgrade steps, API changes, and deprecations for your Unreal projects.
-author: hferrone
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high

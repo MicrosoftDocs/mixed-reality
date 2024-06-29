@@ -1,8 +1,8 @@
 ---
 title: Azure Spatial Anchors in Unreal
 description: Learn how to create, manage, and locate existing Azure Spatial Anchors in Unreal mixed reality applications.
-author: hferrone
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high

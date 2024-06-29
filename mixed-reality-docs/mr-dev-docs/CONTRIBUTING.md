@@ -1,8 +1,8 @@
 ---
 title: Contributing instructions
 description: Learn how to contribute to the Mixed Reality developer documentation using GitHub-flavored Markdown. 
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 11/30/2021
 ms.topic: article
 ---

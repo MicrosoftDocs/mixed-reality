@@ -1,8 +1,8 @@
 ---
 title: Using Leap Motion and Ultraleap
 description: Documentation to configure for Leap Motion / Ultraleap 
-author: CDiaz-ms
-ms.author: cadia
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Leap Motion, Ultraleap
 ---
