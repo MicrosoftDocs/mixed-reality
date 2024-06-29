@@ -2,8 +2,8 @@
 title: HoloLens (1st gen) and Azure 309 - Application insights
 description: With this tutorial, get started learning how to collect analytics about user behavior within a mixed reality application using the Azure Application Insights Service.
 ms.custom: kr2b-contr-experiment
-author: drneil
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, application insights, hololens, immersive, vr, Windows 10, Visual Studio

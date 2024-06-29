@@ -1,8 +1,8 @@
 ---
 title: SteamVR FAQs
 description: SteamVR Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
-author: qianwen
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 09/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, SteamVR

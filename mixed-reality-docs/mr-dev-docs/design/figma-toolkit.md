@@ -1,8 +1,8 @@
 ---
 title: MRTK Figma Toolkit
 description: Download Figma file which contains assets for common UI building blocks.
-author: dongpark
-ms.author: dongpark
+author: lolambean
+ms.author: lolab
 ms.date: 6/7/2022
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, HoloLens, MRTK, Mixed Reality Toolkit
