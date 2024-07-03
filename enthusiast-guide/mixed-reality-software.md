@@ -1,8 +1,8 @@
 ---
 title: Software overview and release history
 description: An overview of the major software components for Windows Mixed Reality, immersive headsets, and their release history.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 11/19/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version history

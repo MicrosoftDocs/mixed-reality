@@ -1,8 +1,8 @@
 ---
 title: MRTK3 Tutorials
 description: Resource for our MRTK3 tutorials
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 1/13/2023
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, tutorial, in editor tutorial

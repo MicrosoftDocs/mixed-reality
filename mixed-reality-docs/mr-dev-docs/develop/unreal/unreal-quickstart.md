@@ -1,8 +1,8 @@
 ---
 title: Creating your first HoloLens Unreal application
 description: Learn how to correctly configure an Unreal project with scene objects and input interactions for HoloLens mixed reality development. 
-author: hferrone
-ms.author: safarooq
+author: lolambean
+ms.author: lolab
 ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high

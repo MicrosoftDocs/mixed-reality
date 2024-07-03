@@ -1,8 +1,8 @@
 ---
 title: Dialog API
 description: Description of the Dialog API in MRTK3 UXCore
-author: Zee2
-ms.author: finnsinclair
+author: lolambean
+ms.author: lolab
 ms.date: 12/19/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Dialog, UI
 ---

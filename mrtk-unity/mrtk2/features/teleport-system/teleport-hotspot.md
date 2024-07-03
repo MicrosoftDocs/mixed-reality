@@ -1,8 +1,8 @@
 ---
 title: Teleport hotspot
 description: Documentation on the Teleport Hotspot Component in MRTK
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 03/25/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport system, Teleport hotspot
 monikerRange: '>= mrtkunity-2021-05'

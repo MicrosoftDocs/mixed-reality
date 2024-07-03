@@ -1,8 +1,8 @@
 ---
 title: Spatial Manipulation
 description: Overview of the Spatial Manipulation package
-author: Zee2
-ms.author: finnsinclair
+author: lolambean
+ms.author: lolab
 ms.date: 6/6/2022
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Solvers, ObjectManipulator, BoundsControl

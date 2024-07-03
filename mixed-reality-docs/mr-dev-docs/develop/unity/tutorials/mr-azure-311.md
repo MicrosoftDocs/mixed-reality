@@ -1,8 +1,8 @@
 ---
 title: HoloLens (1st gen) and Azure 311 - Microsoft Graph
 description: Complete this course to learn how to leverage Microsoft Graph, and connect to the data that drives productivity, within a mixed reality application.
-author: drneil
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, hololens, immersive, vr, Windows 10, Visual Studio

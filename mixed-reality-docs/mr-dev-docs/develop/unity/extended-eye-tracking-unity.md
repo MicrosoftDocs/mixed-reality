@@ -1,8 +1,8 @@
 ---
 title: Extended eye tracking in Unity
 description: Learn about extended eye tracking for Unity development for HoloLens 2.
-author: magdavuko   
-ms.author: magdav
+author: lolambean
+ms.author: lolab
 ms.date: 08/23/2022
 ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions, API reference, Unity

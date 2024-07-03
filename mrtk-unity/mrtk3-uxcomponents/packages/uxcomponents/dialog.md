@@ -1,8 +1,8 @@
 ---
 title: Dialog
 description: Description of included dialog prefabs in MRTK3 UX Components
-author: Zee2
-ms.author: finnsinclair
+author: lolambean
+ms.author: lolab
 ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Dialog, UI
 ---

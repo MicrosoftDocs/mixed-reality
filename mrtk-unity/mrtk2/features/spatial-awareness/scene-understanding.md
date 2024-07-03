@@ -1,8 +1,8 @@
 ---
 title: Scene understanding observer
 description: describes Scene Understanding in MRTK
-author: MaxWang-MS
-ms.author: wangmax
+author: lolambean
+ms.author: lolab
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scene Understanding
 ---

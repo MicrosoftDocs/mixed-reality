@@ -1,8 +1,8 @@
 ---
 title: Writing and running tests
 description: Unit tests to check reliability of MRTK.
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UnitTest,
 ---

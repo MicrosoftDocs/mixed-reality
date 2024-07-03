@@ -1,8 +1,8 @@
 ---
 title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in Mixed Reality apps on HoloLens 2.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 4/14/2022
 ms.topic: article
 keywords: VR, LBE, location based entertainment, vr arcade, arcade, immersive, QR, QR code, QR code detection, HoloLens 2, QR code tracking

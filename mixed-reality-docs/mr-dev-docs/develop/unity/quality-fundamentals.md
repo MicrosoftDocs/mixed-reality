@@ -1,8 +1,8 @@
 ---
 title: Quality Fundamentals
 description: Learn about the Quality Fundamentals of designing mixed reality applications.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 07/15/2021
 ms.topic: article
 keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset

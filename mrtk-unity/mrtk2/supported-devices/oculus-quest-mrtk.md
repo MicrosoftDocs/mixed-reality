@@ -1,8 +1,8 @@
 ---
 title: Deploying to Quest
 description: Documentation to configure for Quest in MRTK
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 01/10/2023
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus, Meta, Quest
 ---

@@ -1,8 +1,8 @@
 ---
 title: HoloLens Photo/Video Camera in Unreal
 description: Learn how to use the HoloLens photo and video camera for Mixed Reality Capture and object location in Unreal.
-author: hferrone
-ms.author: jacksonf
+author: lolambean
+ms.author: lolab
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high

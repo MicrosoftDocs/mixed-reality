@@ -2,13 +2,12 @@
 title: Install Windows Mixed Reality in offline environments and WSUS 
 description: Learn how to enable Windows Mixed Reality apps in WSUS or block the Windows Mixed Reality portal in enterprises.
 ms.reviewer: 
-manager: sekerawa
 keyboards: ["mr", "mr portal", "mixed reality portal", "mixed reality"]
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.topic: article
 appliesto:
     - Windows 10 and Windows 11

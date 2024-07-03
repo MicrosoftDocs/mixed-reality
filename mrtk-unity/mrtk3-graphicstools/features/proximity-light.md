@@ -1,8 +1,8 @@
 ---
 title: Proximity Light
 description: Learn about the Graphics Tools proximity lights.
-author: tayomadein
-ms.author: omadein
+author: lolambean
+ms.author: lolab
 ms.date: 05/05/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Proximity Light

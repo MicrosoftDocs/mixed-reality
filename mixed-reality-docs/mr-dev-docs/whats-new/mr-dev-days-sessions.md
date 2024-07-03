@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality Dev Days 2020 session recordings
 description: Session descriptions and links to session recordings from Mixed Reality Dev Days, May 2020.
-author: jessemcculloch 
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 06/23/2022
 ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect

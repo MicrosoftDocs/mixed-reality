@@ -1,8 +1,8 @@
 ---
 title: Sliders
 description: Overview of Sliders MRTK
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 06/18/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Sliders,
 ---

@@ -1,8 +1,8 @@
 ---
 title: Core system
 description: Input system, device managers, and data providers in MRTK
-author: cDiaz-MS
-ms.author: cadia
+author: lolambean
+ms.author: lolab
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Events
 ---

@@ -1,8 +1,8 @@
 ---
 title: Release Notes
 description: MRTK3 Release Notes
-author: MaxWang-MS
-ms.author: wangmax
+author: lolambean
+ms.author: lolab
 ms.date: 6/3/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, release notes

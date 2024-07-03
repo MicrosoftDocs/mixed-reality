@@ -1,8 +1,8 @@
 ---
 title: MRTK 2.7 release notes
 description: Release notes for MRTK version 2.7
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 12/16/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap, OpenXR
 ms.localizationpriority: high

@@ -1,8 +1,8 @@
 ---
 title: Data Binding and Theming Framework -- MRTK3
 description: Overview of MRTK3 Data Binding and Theming Framework
-author: MaxWang-MS
-ms.author: wangmax
+author: lolambean
+ms.author: lolab
 ms.date: 6/5/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit

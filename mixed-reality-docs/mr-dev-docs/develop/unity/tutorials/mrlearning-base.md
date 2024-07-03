@@ -1,8 +1,8 @@
 ---
 title: Tutorial overview and objectives
 description: Overview for course that teaches you how to implement Azure Face Recognition within a mixed reality application.
-author: jessemcculloch
-ms.author: jemccull
+author: lolambean
+ms.author: lolab
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens

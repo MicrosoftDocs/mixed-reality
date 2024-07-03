@@ -1,8 +1,8 @@
 ---
 title: Eye-gaze-based interaction
 description: Learn about eye and gaze-based interactions on HoloLens 2 and the new levels of context and human understanding if affords in holographic experiences.
-author: sostel
-ms.author: sostel
+author: lolambean
+ms.author: lolab
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Eye Tracking, Mixed Reality, Input, eye-gaze, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, design, interactions

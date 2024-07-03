@@ -1,8 +1,8 @@
 ---
 title: Material recommendations in Unreal
 description: Overview of materials in Unreal engine.
-author: hferrone
-ms.author: safarooq
+author: lolambean
+ms.author: lolab
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, development, materials, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset

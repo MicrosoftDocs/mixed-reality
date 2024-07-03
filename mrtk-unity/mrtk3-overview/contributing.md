@@ -1,8 +1,8 @@
 ---
 title: Contributing to MRTK3
 description: Overview of how to contribute to the MRTK3 open source project.
-author: Zee2
-ms.author: finnsinclair
+author: lolambean
+ms.author: lolab
 ms.date: 12/21/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, open source, contributing, contributors, contribution, pull request

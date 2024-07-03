@@ -1,8 +1,8 @@
 ---
 title: Plug in your headset
 description: Learn how to connect your Windows Mixed Reality headset to USB 3.0, HDMI, and headphones.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 11/22/2022
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, headset, setup, get started

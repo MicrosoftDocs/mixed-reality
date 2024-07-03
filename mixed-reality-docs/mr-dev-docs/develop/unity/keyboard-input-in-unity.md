@@ -1,8 +1,8 @@
 ---
 title: Keyboard input in Unity
 description: Unity provides the TouchScreenKeyboard class for accepting keyboard input when there's no physical keyboard available.
-author: MaxWang-MS
-ms.author: wangmax
+author: lolambean
+ms.author: lolab
 ms.date: 03/30/2021
 ms.topic: article
 keywords: keyboard, input, unity, touchscreenkeyboard, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, HoloLens 2

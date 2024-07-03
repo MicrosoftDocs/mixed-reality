@@ -1,8 +1,8 @@
 ---
 title: Perception simulation - standalone package (Preview)
 description: A guide to using the Perception Simulation standalone package release
-author: pbarnettms
-ms.author: pbarnett
+author: lolambean
+ms.author: lolab
 ms.date: 10/21/2022
 ms.topic: article
 keywords: HoloLens, simulation, testing

@@ -1,8 +1,8 @@
 ---
 title: Porting HoloLens (1st Gen) apps to HoloLens 2
 description: Designed for developers who have an existing app on HoloLens (1st gen) and older MRTK versions who are looking to port to MRTK version 2 and HoloLens 2.
-author: hferrone
-ms.author: grbury
+author: lolambean
+ms.author: lolab
 ms.date: 10/29/2021
 ms.topic: article
 ms.localizationpriority: high

@@ -1,8 +1,8 @@
 ---
 title: Release notes - May 2020
 description: Stay up to date on the Windows Mixed Reality release notes for the Windows 10 May 2020 update.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 9/24/2021
 ms.topic: article
 keywords: release notes, version, windows 10, build, 19h1, os, may 2020

@@ -1,8 +1,8 @@
 ---
 title: Introduction to the Babylon.js and WebXR tutorials
 description: Complete this course to learn how to use Babylon.js and create basic Mixed Reality application.
-author: vtieto
-ms.author: ayyonet
+author: lolambean
+ms.author: lolab
 ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web

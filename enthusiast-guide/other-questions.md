@@ -1,8 +1,8 @@
 ---
 title: Immersive hardware realted FAQ
 description: Additional Windows Mixed Reality troubleshooting tips that go beyond our standard consumer support documentation.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 1/9/2023
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Uninstalling Windows Mixed Reality, Supported Languages

@@ -1,8 +1,8 @@
 ---
 title: Deploy an MRTK3 project to a Quest device
 description: Mixed Reality Toolkit 3 for developers - Quest deployment.
-author: RogPodge
-ms.author: roliu
+author: lolambean
+ms.author: lolab
 ms.date: 6/3/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest, Deployment

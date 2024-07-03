@@ -1,8 +1,8 @@
 ---
 title: MRTK3 pre.9 changelog
 description: Changelog for MRTK3 pre.9
-author: maxwang-ms
-ms.author: wangmax
+author: lolambean
+ms.author: lolab
 ms.date: 08/08/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, MRTK3 preview, MRTK3 public preview, changelog, MRTK3 changelog
 ---

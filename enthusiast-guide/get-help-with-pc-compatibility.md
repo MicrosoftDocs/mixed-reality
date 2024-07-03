@@ -1,8 +1,8 @@
 ---
 title: Get help with PC compatibility 
 description: Keep up to date with resources for solving PC compatibility issues when working with Windows Mixed Reality applications and devices.
-author: qianw211
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs

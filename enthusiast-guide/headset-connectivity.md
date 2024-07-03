@@ -1,8 +1,8 @@
 ---
 title: Headset connectivity FAQs
 description: Headset connectivity Windows Mixed Reality headset connectivity troubleshooting that goes beyond our standard consumer support documentation.
-author: qianwen
-ms.author: qianwen
+author: lolambean
+ms.author: lolab
 ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Headset
