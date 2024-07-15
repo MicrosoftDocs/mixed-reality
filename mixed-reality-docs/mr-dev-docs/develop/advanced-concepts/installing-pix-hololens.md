@@ -14,7 +14,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 ## Prerequisites
 
-1. Latest version of [PIX](https://devblogs.microsoft.com/pix/download) installed on the PC.
+1. Version **2308.30** of [PIX](https://devblogs.microsoft.com/pix/download) installed on the PC.
 1. Latest [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) for **IPoverUSB** to be able to connect the HoloLens 2 to a PC via USB.
 1. An **ARM64** build of your application. PIX only supports ARM64.
 1. The HoloLens2 needs to be connected to the PC via a USB cable.
