@@ -56,16 +56,10 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         *August 2016*
     :::column-end:::
     :::column:::
-       [![3 HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
-        **[3 HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+       [![3D HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
+        **[3D HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
         HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through user testing, prototyping, and trial and error.<br>
         *July 2016*
-    :::column-end:::
-    :::column:::
-        [![How it works - Mixed Reality Capture Studios](images/mr-capture-studio-hero.png)](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)
-        **[How it works - Mixed Reality Capture Studios](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)**<br>
-        Microsoft Mixed Reality Capture Studios enables content creators to create 360-degree holograms from real life subjects that can be used in applications across augmented reality, virtual reality, and 2D screens.<br>
-        *July 2016*    
     :::column-end:::
 :::row-end:::
 
