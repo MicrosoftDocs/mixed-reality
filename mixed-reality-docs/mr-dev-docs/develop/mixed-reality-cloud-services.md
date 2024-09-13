@@ -61,17 +61,6 @@ The service can be developed in a host of environments and deployed to a large g
 * Xamarin for iOS
 * Xamarin for Android
 
-### Azure Object Anchors
-
-[Azure Object Anchors](/azure/object-anchors/), or AOA, is a mixed reality service that helps you create rich, immersive experiences by automatically aligning 3D content with physical objects. Gain contextual understanding of objects without the need for markers or manual alignment. Save significant touch labor, reduce alignment errors, and improve user experiences by building mixed reality applications with Object Anchors.
-
-Azure Object Anchors are especially tailored to common Mixed Reality use cases, including:
-* **Training**: Create Mixed Reality training experiences for your workers, without the need to place markers or spend time manually adjusting hologram alignment.
-* **Task Guidance**: Walking employees through a set of tasks can be greatly simplified when using Mixed Reality.
-* **Asset Finding**: If you already have a 3D model of some object in your physical space, Azure Object Anchors can enable you to locate and track instances of that object in your physical environment.
-
-![Virtual overlay of azure object anchors on an open car engine](images/aoa-img-01.png)
-
 ## Cognitive Services
 
 :::row:::
