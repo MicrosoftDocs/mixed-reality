@@ -61,12 +61,6 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through user testing, prototyping, and trial and error.<br>
         *July 2016*
     :::column-end:::
-    :::column:::
-        [![How it works - Mixed Reality Capture Studios](images/mr-capture-studio-hero.png)](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)
-        **[How it works - Mixed Reality Capture Studios](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)**<br>
-        Microsoft Mixed Reality Capture Studios enables content creators to create 360-degree holograms from real life subjects that can be used in applications across augmented reality, virtual reality, and 2D screens.<br>
-        *July 2016*    
-    :::column-end:::
 :::row-end:::
 
 ---
