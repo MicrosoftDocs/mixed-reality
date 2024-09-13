@@ -56,8 +56,8 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         *August 2016*
     :::column-end:::
     :::column:::
-       [![3 HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
-        **[3 HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+       [![3D HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
+        **[3D HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
         HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through user testing, prototyping, and trial and error.<br>
         *July 2016*
     :::column-end:::
