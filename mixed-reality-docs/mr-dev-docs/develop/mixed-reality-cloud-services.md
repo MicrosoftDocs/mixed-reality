@@ -22,7 +22,7 @@ Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial
 
 >[!Note]
 >- Azure Spatial Anchors (ASA) will be retired on November 20, 2024. [Learn more](https://azure.microsoft.com/updates/azure-spatial-anchors-retirement/).
->- Azure Remote Rendering (ARR) will be retired on September 30, 2025. [Learn more](https://azure.microsoft.com/en-us/updates/v2/azure-remote-rendering-retirement/).
+>- Azure Remote Rendering (ARR) will be retired on September 30, 2025. [Learn more](https://azure.microsoft.com/updates/v2/azure-remote-rendering-retirement/).
 
 ### Azure Remote Rendering
 
