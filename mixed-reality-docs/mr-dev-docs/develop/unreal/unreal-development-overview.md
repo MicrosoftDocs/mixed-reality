@@ -13,7 +13,7 @@ keywords: Unreal, Unreal Engine 4, Unreal Engine 4.27, Unreal Engine 5.0, UE5, U
 ![Unreal banner logo](../images/unreal_logo_banner.png)
 
 > [!IMPORTANT]
-> Microsoft & Unreal have discontinued support for the Unreal Engine for HoloLens 2. Customers can continue using Unreal Engine to develop applications for HoloLens 2, but support has been discontinued (no bug fixes, content updates or technical support). Existing applications will continue to run on the last version of Unreal 4. Applications for HoloLens 2 can alternatively be **[developed with Unity](/unity/unity-development-overview.md)**.
+> Microsoft & Unreal have discontinued support for the Unreal Engine for HoloLens 2. Customers can continue using Unreal Engine to develop applications for HoloLens 2, but support has been discontinued (no bug fixes, content updates or technical support). Existing applications will continue to run on the last version of Unreal 4. Applications for HoloLens 2 can alternatively be **[developed with Unity](unity/unity-development-overview.md)**.
 
 
 Getting started with <a href="/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Unreal Engine 5 has full support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) devices.
