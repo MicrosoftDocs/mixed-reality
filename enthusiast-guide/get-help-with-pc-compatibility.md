@@ -14,6 +14,10 @@ appliesto:
 
 When you're setting up Windows Mixed Reality or using the [Mixed Reality Portal](install-windows-mixed-reality.md), you'll get a report on whether your PC is up to the task. We've broken out specific details on what you might see in the sections below.
 
+>[!NOTE]
+>Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+>Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
+
 Before going any further, try the most common fixes below: 
 
 > [!div class="checklist"]
@@ -160,13 +164,11 @@ Windows Mixed Reality requires 10 GB of free disk space for setup and best perfo
 
 Windows Mixed Reality works on [Windows 10 Home](https://www.microsoft.com/software-download/windows10), [Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796), and [Windows 11](https://www.microsoft.com/software-download/windows11). You'll need to install one of those editions to use Windows Mixed Reality.
 
-### This PC isn't running the latest version of Windows 10
+### This PC isn't running a supported version of Windows 10
+>[!NOTE]
+>Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+>Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
 
-Windows Mixed Reality requires the Windows 10 Fall Creators Update. [Update your PC](https://support.microsoft.com/help/4028685) and try again.
-
-### This PC isn't running the latest version of Windows 11
-
-Windows Mixed Reality requires the Windows 11 latest release. [Update your PC](https://www.microsoft.com/software-download/windows11) and try again.
 
 ### This PC has no USB 3.0 port
 
