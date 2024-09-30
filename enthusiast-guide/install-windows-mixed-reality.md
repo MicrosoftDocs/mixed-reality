@@ -10,7 +10,15 @@ appliesto:
     - Windows 10
 ---
 
+>[!NOTE]
+>Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+>
+>Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
+
+
+
 # Install Windows Mixed Reality software
+
 
 > [!div class="nextstepaction"]
 > [Get Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
