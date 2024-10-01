@@ -20,6 +20,10 @@ Unlock what every human is an expert at—the three-dimensional, physical world 
 
 Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial Anchors** help developers build compelling immersive experiences on a variety of platforms. These services allow you to integrate spatial awareness into your projects when you're making applications for 3D training, predictive equipment maintenance, and design review, all in the context of your users’ environments.
 
+>[!Note]
+>- Azure Spatial Anchors (ASA) will be retired on November 20, 2024. [Learn more](https://azure.microsoft.com/updates/azure-spatial-anchors-retirement/).
+>- Azure Remote Rendering (ARR) will be retired on September 30, 2025. [Learn more](https://azure.microsoft.com/updates/v2/azure-remote-rendering-retirement/).
+
 ### Azure Remote Rendering
 
 [Azure Remote Rendering](/azure/remote-rendering/), or ARR, is a service that lets you render highly complex 3D models in real time and stream them to a device. ARR is now generally available and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
