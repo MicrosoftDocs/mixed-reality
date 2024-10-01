@@ -14,7 +14,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 ![Graphics Tools](images/MRTKBanner.png)
 
-## Getting started with Graphic Tools
+## Getting started with Graphics Tools
 
 If using MRTK, follow the getting started docs found [here](../mrtk3-overview/index.md). If you wish to use the Graphics Tools plugin on its own, read the instructions in the Graphics Tools [GitHub repository](https://github.com/microsoft/MixedReality-GraphicsTools-Unity).
 
