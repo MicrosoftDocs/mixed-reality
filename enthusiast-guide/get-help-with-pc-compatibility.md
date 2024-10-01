@@ -49,8 +49,6 @@ If you're seeing the **Supports some features** message, your PC can run some Wi
 * [This PC's processor won't work with Windows Mixed Reality](#this-pcs-processor-wont-work-with-windows-mixed-reality)
 * [This PC doesn't have enough free disk space to run Windows Mixed Reality](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
 * [This PC is running an edition of Windows that doesn't support Windows Mixed Reality](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
-* [This PC isn't running the latest version of Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
-* [This PC isn't running the latest version of Windows 11](#this-pc-isnt-running-the-latest-version-of-windows-11)
 * [This PC has no USB 3.0 port](#this-pc-has-no-usb-30-port)
 * [You can't run this app via remote desktop](#you-cant-run-this-app-via-remote-desktop)
 
