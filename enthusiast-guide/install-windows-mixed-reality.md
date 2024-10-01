@@ -15,6 +15,12 @@ appliesto:
 > [!div class="nextstepaction"]
 > [Get Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
 
+>[!NOTE]
+>Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+>
+>Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
+
+
 ## Launch Mixed Reality Portal
 
 After you plug in your Windows Mixed Reality headset and the driver installs successfully, the Mixed Reality Portal (MRP) will automatically launch on your Desktop. If the portal doesn't launch, you can always open the Mixed Reality portal from **Start > Mixed Reality Portal**. Once the portal has started, select **Get Started**
