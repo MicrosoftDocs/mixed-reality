@@ -140,7 +140,8 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### What Windows version supports Windows Mixed Reality?
 
-**Quick Answer:** You must have Windows 10 Fall Creators Update (version 1709) or greater, or Windows 11 installed. Download and run [Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
+**Quick Answer:** Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer. Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
+
 
 ### Does the Windows Mixed Reality platform support Rift and Vive hardware?
 
