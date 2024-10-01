@@ -24,7 +24,10 @@ Organizations and businesses that operate in offline environments or use [Window
 1. [Check your version of Windows.](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
    >[!NOTE]
-   >You must be on at least Windows 10, version 20H2, or newer to run Windows Mixed Reality.
+   >
+   >Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+   >
+   >Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
 
 2. The Windows Mixed Reality FOD file is downloaded from Windows Update. To reach Windows Update, select the **Start** button, then select **Settings > Windows Update**. Select **Check for updates** and if updates are available, install them. 
 

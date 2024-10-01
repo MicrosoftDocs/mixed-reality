@@ -14,9 +14,9 @@ appliesto:
 
 ## General Questions
 
-### Where can I buy a Windows Mixed Reality ready PC or headset
+### Where can I buy a Windows Mixed Reality headset
 
-**Quick Answer:** Devices are no longer manufactured or sold.
+**Quick Answer:** Headsets are no longer manufactured or sold.
 
 ### Where can I buy standalone motion controllers
 
