@@ -16,17 +16,7 @@ appliesto:
 
 ### Where can I buy a Windows Mixed Reality ready PC or headset
 
-**Quick Answer:** You can buy a Windows Mixed Reality ready PC or headset at an approved local retailer or online from different retailers, including the Microsoft Store. Find a Windows Mixed Reality ready PC or headset online: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
-
-### Where can I try Windows Mixed Reality
-
-**Quick Answer:** You can try Windows Mixed Reality at a [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) near you.
-
-* Find Microsoft Reactor events on Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
-
-### Which manufacturers are selling Windows Mixed Reality devices
-
-**Quick Answer:** Headsets and motion controllers are currently available from HP. See <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**Quick Answer:** Devices are no longer manufactured or sold.
 
 ### Where can I buy standalone motion controllers
 
@@ -82,8 +72,8 @@ Find out more about [inside-out tracking](./tracking-system.md).
 | Fujitsu FMV Headset | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None |Software | Fall 2017 | [Fujitsu](http://pr.fujitsu.com/jp/news/2017/10/17.html) |
 | HP Reverb | 4320x2160 | LCD | Up to 90 Hz | 114˚ | Integrated + 3.5-mm jack | Built-in |Software | Spring 2019| [HP](https://www.vr-compare.com/headset/hpreverb) |
 | HP VR1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [HP](https://www.hp.com/us-en/shop/cv/mixed-reality-headset) |
-| HP Reverb G2 | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Fall 2020 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-virtual-reality-headset) |
-| HP Reverb G2 Omnicept | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Spring 2021 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-omnicept-edition-%282e5q4av%29) |
+| HP Reverb G2 | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Fall 2020 | NA |
+| HP Reverb G2 Omnicept | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Spring 2021 | NA |
 | Lenovo Explorer | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Lenovo](https://support.lenovo.com/us/en/solutions/pd500067-overview-for-lenovo-explorer) |
 | Medion ERAZER MR X1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Medion](https://www.medion.com/de/shop/p/gaming-zubehoer-medion-erazer-x1000-mr-glasses-inkl-2-motion-controller-7-34-cm-2-89--lc-display-gaming-zubehoer-bis-zu-105-sichtfeld-2-kameras-zur-bewegungserfassung-30023616A1?clear=true#specs) |
 | Samsung HMD Odyssey | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | None | Mechanical | Fall 2017 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-mixed-reality/) |
