@@ -29,6 +29,13 @@ To better understand if your PC can run Windows Mixed Reality, download and inst
 
 Remember, your experience will vary depending on your unique PC configuration. Additionally, you'll also need to make sure your PC has the [right ports](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) for the Windows Mixed Reality immersive headset that you're using.
 
+
+>[!NOTE]
+>Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+>
+>Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
+
+
 >[!NOTE]
 >Guidelines for development PCs are higher than those for consumer PCs running mixed reality apps. If you're a mixed reality developer, see the [Introduction to mixed reality development](/windows/mixed-reality/develop/development).
 
@@ -67,14 +74,14 @@ Because of the higher resolution capabilities of certain headsets like the [HP R
 - 8-GB RAM or more  
 - 1x Display Port 1.3  
 - 1x USB 3.0 Type-C with power delivery (or included power adapter) 
-- [Windows 10 Version 20H2 or later](before-you-start.md#make-sure-you-have-windows-10-version-20h2-or-newer-installed)
+- Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer. Windows Mixed Reality support is limited to [Windows 10, version 20H2 through Windows 11, version 23H2](before-you-start.md)
  
 **All Other WMR Compatible Headsets** <br>
 For all other HMDs, refer to the following requirements:
 
 |Component| Windows Mixed Reality 90 Hz PCs | Windows Mixed Reality 60 Hz PCs |
 | --- | --- | --- |
-| Operating System | [Windows 10 Version 20H2 or later](before-you-start.md#make-sure-you-have-windows-10-version-20h2-or-newer-installed) - Home, Pro, Business, or Education. <br/>    **Note**: Not supported on N versions or Windows 10 Pro in S Mode. | [Windows 10 Version 20H2 or later](before-you-start.md#make-sure-you-have-windows-10-version-20h2-or-newer-installed) - Home, Pro, Business, or Education. <br/>   **Note**: Not supported on N versions or Windows 10 Pro in S Mode. |
+| Operating System | [Windows 10, version 20H2 through Windows 11, version 23H2](before-you-start.md) - Home, Pro, Business, or Education. <br/>    **Note**: Not supported on N versions or Windows 10 Pro in S Mode. | [Windows 10, version 20H2 through Windows 11, version 23H2](before-you-start.md) - Home, Pro, Business, or Education. <br/>   **Note**: Not supported on N versions or Windows 10 Pro in S Mode. |
 | Processor | <ul> <li> Intel Core i5 4590 (4th generation), quad-core (or better) </li> <li> AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better) </li> </ul> | <ul> <li> Intel Core i5 7200U (7th generation mobile), dual-core with Intel Hyper-Threading Technology enabled (or better) </li> <li> AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better) </li> </ul> |
 | RAM | 8 GB DDR3 (or better) | 8 GB DDR3 dual channel (or better) |
 | Free disk space | At least 10 GB | At least 10 GB |

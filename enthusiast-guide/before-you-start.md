@@ -15,7 +15,8 @@ appliesto:
 ## What you'll need to run Windows Mixed Reality
 
 * A [Windows Mixed Reality head mounted display (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
-* A [Windows Mixed Reality compatible PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) running [Windows 10 Version 20H2](/windows/release-health/status-windows-10-20h2) or later or [Windows 11](/windows/release-health/windows11-release-information).
+* Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+* Windows Mixed Reality support is limited to [Windows Mixed Reality compatible PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) [Windows 10 Version 20H2](/windows/release-health/status-windows-10-20h2) through [Windows 11, version 23H2](/windows/release-health/windows11-release-information).
 * A reliable internet connection.
 * Display, USB, and Bluetooth adapters (if not pre-built into HMD or PC).
 * Windows Mixed Reality motion controllers, an Xbox gamepad, or a mouse and keyboard.
