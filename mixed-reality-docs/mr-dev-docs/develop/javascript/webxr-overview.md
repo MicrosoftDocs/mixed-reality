@@ -15,21 +15,21 @@ keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mix
 
 # WebXR development with JavaScript
 
-JavaScript is one of the most popular programming languages in the world! It's simple, lightweight, and widely used on the Web. Leverage the power of your JavaScript and Web skills to create more engaging Mixed Reality experiences.
+JavaScript is one of the most popular programming languages in the world! It's simple, lightweight, and widely used on the Web. Create more engaging Mixed Reality experiences by applying the power of your JavaScript and Web skills.
 
 ## Mixed Reality applications on the web
 
-Mixed Reality features are available on the Web through [WebXR](webxr-overview.md). You can see virtual reality (VR) and augmented reality (AR) content in a compatible WebXR-enabled browser without installing any additional software or plugins. You can use that same browser with a physical device like the HoloLens 2.
+Mixed Reality features are available on the Web through [WebXR](webxr-overview.md). You can see virtual reality (VR) and augmented reality (AR) content in a compatible WebXR-enabled browser without installing any more software or plugins. You can use that same browser with a physical device like the HoloLens 2.
 
 The [**WebXR Device API**](https://www.w3.org/TR/webxr/) is for accessing virtual reality (VR) and augmented reality (AR) devices, including sensors and head-mounted displays, on the Web. The WebXR Device API is available on Microsoft Edge and Chrome version 79, and later versions support WebXR as a default. You can check the latest browser support status for WebXR at [caniuse.com](https://caniuse.com/#search=webxr).
 
 | WebXR feature | Availability |
 |---------|---------|
-|[WebXR Device API (w3.org)](https://www.w3.org/TR/webxr/) | Edge 81 on Windows Desktop <br>Edge 91 on Hololens 2|
-|[WebXR Augmented Reality Module - Level 1 (w3.org)](https://www.w3.org/TR/webxr-ar-module-1/)|Edge 91. Hololens 2 only|
-|[WebXR Hand Input Module - Level 1 (w3.org)](https://www.w3.org/TR/webxr-hand-input-1/)|Edge 93. Hololens 2 only|
-|[WebXR Anchors Module (immersive-web.github.io)](https://immersive-web.github.io/anchors/)|Edge 93. Hololens 2 only|
-|[WebXR Hit Test Module (immersive-web.github.io)](https://immersive-web.github.io/hit-test/)|Edge 93. Hololens 2 only |
+|[WebXR Device API (w3.org)](https://www.w3.org/TR/webxr/) | Edge 81 on Windows Desktop <br>Edge 91 on HoloLens 2|
+|[WebXR Augmented Reality Module - Level 1 (w3.org)](https://www.w3.org/TR/webxr-ar-module-1/)|Edge 91. HoloLens 2 only|
+|[WebXR Hand Input Module - Level 1 (w3.org)](https://www.w3.org/TR/webxr-hand-input-1/)|Edge 93. HoloLens 2 only|
+|[WebXR Anchors Module (immersive-web.github.io)](https://immersive-web.github.io/anchors/)|Edge 93. HoloLens 2 only|
+|[WebXR Hit Test Module (immersive-web.github.io)](https://immersive-web.github.io/hit-test/)|Edge 93. HoloLens 2 only |
 
 ### Viewing WebXR
 
