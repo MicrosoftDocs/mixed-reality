@@ -20,6 +20,8 @@ The [**WebXR Device API**](https://www.w3.org/TR/webxr/) is for accessing virtua
 
 > [!NOTE]
 > **WebVR** is deprecated and is not available in current browsers, so it should not be used for any new development. You'll need to migrate any existing **WebVR** implementations forward to **WebXR**.
+>
+> Support for **WebXR** is discontinued (no bug fixes, content updates or technical support). Existing applications continue to work.
 
 | WebXR feature | Availability |
 |---------|---------|
