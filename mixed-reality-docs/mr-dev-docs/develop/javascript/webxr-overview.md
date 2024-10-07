@@ -12,7 +12,7 @@ keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mix
 > **WebVR** is deprecated and is not available in current browsers, so it should not be used for any new development. You'll need to migrate any existing **WebVR** implementations forward to **WebXR**.
 >
 > Support for **WebXR** is discontinued (no bug fixes, content updates or technical support). Existing applications continue to work.
-
+> 
 
 # WebXR development with JavaScript
 
