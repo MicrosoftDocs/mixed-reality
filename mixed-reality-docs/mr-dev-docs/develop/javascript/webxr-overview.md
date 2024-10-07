@@ -8,6 +8,11 @@ ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW, JavaScript
 ---
 
+> [!IMPORTANT]
+> **WebVR** is deprecated and is not available in current browsers, so it should not be used for any new development. You'll need to migrate any existing **WebVR** implementations forward to **WebXR**.
+>
+> Support for **WebXR** is discontinued (no bug fixes, content updates or technical support). Existing applications continue to work.
+
 # WebXR development with JavaScript
 
 JavaScript is one of the most popular programming languages in the world! It's simple, lightweight, and widely used on the Web. Leverage the power of your JavaScript and Web skills to create more engaging Mixed Reality experiences.
@@ -17,11 +22,6 @@ JavaScript is one of the most popular programming languages in the world! It's s
 Mixed Reality features are available on the Web through [WebXR](webxr-overview.md). You can see virtual reality (VR) and augmented reality (AR) content in a compatible WebXR-enabled browser without installing any additional software or plugins. You can use that same browser with a physical device like the HoloLens 2.
 
 The [**WebXR Device API**](https://www.w3.org/TR/webxr/) is for accessing virtual reality (VR) and augmented reality (AR) devices, including sensors and head-mounted displays, on the Web. The WebXR Device API is available on Microsoft Edge and Chrome version 79, and later versions support WebXR as a default. You can check the latest browser support status for WebXR at [caniuse.com](https://caniuse.com/#search=webxr).
-
-> [!NOTE]
-> **WebVR** is deprecated and is not available in current browsers, so it should not be used for any new development. You'll need to migrate any existing **WebVR** implementations forward to **WebXR**.
->
-> Support for **WebXR** is discontinued (no bug fixes, content updates or technical support). Existing applications continue to work.
 
 | WebXR feature | Availability |
 |---------|---------|
