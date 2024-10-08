@@ -13,7 +13,7 @@ keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mix
 > [!IMPORTANT]
 > **WebVR** is deprecated and is not available in current browsers, so it should not be used for any new development. You'll need to migrate any existing **WebVR** implementations forward to **WebXR**.
 >
-> Support for **WebXR** is discontinued (no bug fixes, content updates or technical support). Existing applications continue to work.
+> Support for **WebXR** is discontinued (no bug fixes, content updates or technical support).
 
 JavaScript is one of the most popular programming languages in the world! It's simple, lightweight, and widely used on the Web. Create more engaging Mixed Reality experiences by applying the power of your JavaScript and Web skills.
 
