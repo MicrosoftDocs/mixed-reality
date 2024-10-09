@@ -16,6 +16,9 @@ Getting started in World Locking Tools can be as simple as dragging a prefab int
 
 However, understanding the work the Unity layer of World Locking Tools performs, and the underlying FrozenWorld engine, can be helpful and educational.
 
+> [!NOTE]
+> **World Locking Tools** continues to be available. However, support for **World Locking Tools** will be discontinued November 12th 2024 (no bug fixes, content updates or technical support), and we can therefore make no guarantees that applications will continue to work for any extended period of time.
+
 ## Goals of this documentation
 
 The first goal is to establish an understanding of what World Locking Tools is trying to do. This insight can help in setting expectations for what problems World Locking Tools can solve, and what problems are out of its scope.
